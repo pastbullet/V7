@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0099",
+  "type": "table",
+  "caption": "Table 95 – CSR Payload",
+  "pages": [
+    114
+  ],
+  "bbox": [
+    94.33,
+    170.62,
+    541.67,
+    273.99
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 114
+}

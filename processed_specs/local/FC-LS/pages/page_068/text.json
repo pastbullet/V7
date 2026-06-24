@@ -1,0 +1,713 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 68,
+  "spans": [
+    {
+      "span_id": "p068_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0002",
+      "text": " 49",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0003",
+      "text": "B)",
+      "bbox": [
+        122.4,
+        57.65,
+        132.38,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0004",
+      "text": " Address Format:",
+      "bbox": [
+        132.38,
+        57.65,
+        217.96,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p068_s0005",
+      "text": " The format of the Address Format field is shown in table 37.",
+      "bbox": [
+        217.98,
+        57.65,
+        485.16,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p068_s0006",
+      "text": "4.2.18.8  Reply Sequence",
+      "bbox": [
+        96.0,
+        310.97,
+        214.86,
+        322.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0007",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        334.96,
+        138.19,
+        346.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0008",
+      "text": "LS_RJT signifies the rejection of the RSCN command",
+      "bbox": [
+        138.18,
+        334.96,
+        375.93,
+        346.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p068_s0009",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        358.96,
+        142.05,
+        370.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0010",
+      "text": "LS_ACC signifies acceptance of the RSCN Request.  The format of the LS_ACC Payload",
+      "bbox": [
+        142.08,
+        358.96,
+        539.94,
+        370.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p068_s0011",
+      "text": "is shown in table 38.",
+      "bbox": [
+        96.0,
+        370.96,
+        186.53,
+        382.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0012",
+      "text": "4.2.19",
+      "bbox": [
+        96.0,
+        478.96,
+        123.74,
+        490.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0013",
+      "text": "State Change Registration (SCR)",
+      "bbox": [
+        133.74,
+        478.96,
+        289.27,
+        490.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0014",
+      "text": "4.2.19.1  Description",
+      "bbox": [
+        96.0,
+        502.96,
+        192.63,
+        514.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0015",
+      "text": "The SCR ELS requests the Fabric Controller or Nx_Port to add the Nx_Port that is sending the SCR",
+      "bbox": [
+        96.0,
+        526.96,
+        540.01,
+        538.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0016",
+      "text": "Request to the list of Nx_Ports registered to receive the RSCN ELS.",
+      "bbox": [
+        96.0,
+        538.96,
+        396.54,
+        550.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0017",
+      "text": "4.2.19.2  Protocol",
+      "bbox": [
+        96.0,
+        562.96,
+        178.22,
+        574.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0018",
+      "text": "a) State Change Registration Request Sequence",
+      "bbox": [
+        106.02,
+        586.96,
+        327.39,
+        598.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0019",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence",
+      "bbox": [
+        106.02,
+        610.96,
+        287.89,
+        622.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0020",
+      "text": "4.2.19.3  Request Sequence",
+      "bbox": [
+        96.0,
+        635.02,
+        227.06,
+        646.14
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0021",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        659.02,
+        157.1,
+        670.14
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0022",
+      "text": "The S_ID designates the Nx_Port requesting registration for State Change Notification.",
+      "bbox": [
+        157.08,
+        659.02,
+        540.06,
+        670.14
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p068_s0023",
+      "text": "The D_ID designates either the Fabric Controller, FFFFFDh, or the address of the Nx_Port from",
+      "bbox": [
+        96.0,
+        671.02,
+        539.9,
+        682.14
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0024",
+      "text": "which RSCNs are desired.",
+      "bbox": [
+        96.0,
+        683.02,
+        213.15,
+        694.14
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0025",
+      "text": " Table 37 – Address Format",
+      "bbox": [
+        252.72,
+        79.66,
+        383.22,
+        90.78
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0026",
+      "text": "Format",
+      "bbox": [
+        281.64,
+        101.62,
+        315.51,
+        112.74
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0027",
+      "text": "Value",
+      "bbox": [
+        499.09,
+        101.62,
+        525.75,
+        112.74
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0028",
+      "text": "Port Address - Bytes 1, 2, and 3 of the affected Port_ID are valid, and indicate a single ",
+      "bbox": [
+        106.14,
+        123.64,
+        490.56,
+        134.76
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0029",
+      "text": "Nx_Port or service with a well-known address.",
+      "bbox": [
+        106.14,
+        135.64,
+        310.48,
+        146.76
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0030",
+      "text": "0",
+      "bbox": [
+        509.64,
+        125.62,
+        515.18,
+        136.74
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0031",
+      "text": "Area Address Group - Bytes 1 and 2 of the affected Port_ID are valid, and indicates a ",
+      "bbox": [
+        106.14,
+        157.66,
+        486.06,
+        168.78
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0032",
+      "text": "group of addresses that encompass an Area of E_Port or Nx_Port addresses.  Byte 3 ",
+      "bbox": [
+        106.14,
+        169.66,
+        486.2,
+        180.78
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0033",
+      "text": "shall be zero.  Any links and ports within the area may be affected.",
+      "bbox": [
+        106.14,
+        181.66,
+        399.96,
+        192.78
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0034",
+      "text": "1",
+      "bbox": [
+        509.64,
+        159.64,
+        515.18,
+        170.76
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0035",
+      "text": "Domain Address Group - Byte 1 of the affected Port_ID is valid, and indicates a group of ",
+      "bbox": [
+        106.14,
+        203.62,
+        492.42,
+        214.74
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0036",
+      "text": "addresses that encompass a Domain.  Bytes 2 and 3 shall be zero.  Any links and ports ",
+      "bbox": [
+        106.14,
+        215.62,
+        492.15,
+        226.74
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0037",
+      "text": "within the domain may be affected.",
+      "bbox": [
+        106.14,
+        227.62,
+        260.58,
+        238.74
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0038",
+      "text": "2",
+      "bbox": [
+        509.64,
+        205.66,
+        515.18,
+        216.78
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0039",
+      "text": "Fabric Address Group - This format indicates a group of addresses that encompass the ",
+      "bbox": [
+        106.14,
+        249.64,
+        492.19,
+        260.76
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0040",
+      "text": "entire Fabric of Nx_Port addresses.  Bytes 1, 2 and 3 shall be zero.  Any links and ports ",
+      "bbox": [
+        106.14,
+        261.64,
+        492.25,
+        272.76
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0041",
+      "text": "within the area may be affected.",
+      "bbox": [
+        106.14,
+        273.64,
+        247.83,
+        284.76
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0042",
+      "text": "3",
+      "bbox": [
+        509.64,
+        251.62,
+        515.18,
+        262.74
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0043",
+      "text": " Table 38 – RSCN LS_ACC Payload",
+      "bbox": [
+        234.96,
+        392.98,
+        401.0,
+        404.1
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0044",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        415.0,
+        133.06,
+        426.12
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0045",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        427.0,
+        136.34,
+        438.12
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0046",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        415.0,
+        233.97,
+        426.12
+      ],
+      "block_index": 25,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0047",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        415.0,
+        328.41,
+        426.12
+      ],
+      "block_index": 25,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0048",
+      "text": "15         ..       08",
+      "bbox": [
+        354.79,
+        415.0,
+        427.0,
+        426.12
+      ],
+      "block_index": 25,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0049",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        415.0,
+        522.83,
+        426.12
+      ],
+      "block_index": 25,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0050",
+      "text": "0",
+      "bbox": [
+        120.84,
+        443.98,
+        126.38,
+        455.1
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0051",
+      "text": "02h",
+      "bbox": [
+        149.88,
+        443.98,
+        166.51,
+        455.1
+      ],
+      "block_index": 26,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0052",
+      "text": "00h",
+      "bbox": [
+        247.07,
+        443.98,
+        263.71,
+        455.1
+      ],
+      "block_index": 26,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0053",
+      "text": "00h",
+      "bbox": [
+        344.27,
+        443.98,
+        360.96,
+        455.1
+      ],
+      "block_index": 26,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p068_s0054",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        443.98,
+        458.16,
+        455.1
+      ],
+      "block_index": 26,
+      "line_index": 5,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0040",
+    "table_0041"
+  ]
+}

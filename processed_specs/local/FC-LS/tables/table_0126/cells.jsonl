@@ -1,0 +1,10 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Value", "page": 133, "bbox": [105.53, 110.09, 158.91, 129.99]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Description", "page": 133, "bbox": [158.91, 110.09, 530.49, 129.99]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "01h", "page": 133, "bbox": [105.53, 129.99, 158.91, 152.01]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Critical. Abort the EVFP transaction if the descriptor is unsupported.a", "page": 133, "bbox": [158.91, 129.99, 530.49, 152.01]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "02h", "page": 133, "bbox": [105.53, 152.01, 158.91, 184.05]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Non critical. Skip the descriptor if unsupported and continue the EVFP\ntransaction.a", "page": 133, "bbox": [158.91, 152.01, 530.49, 184.05]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "all others", "page": 133, "bbox": [105.53, 184.05, 158.91, 205.68]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Reserved", "page": 133, "bbox": [158.91, 184.05, 530.49, 205.68]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "a The Descriptor Control provides extensibility to the protocol. An implementation supporting a subset\nof the descriptors is able to process the unknown ones as specified by the Descriptor Control value.", "page": 133, "bbox": [105.53, 205.68, 530.49, 240.17]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "", "page": 133, "bbox": [0.0, 0.0, 0.0, 0.0]}

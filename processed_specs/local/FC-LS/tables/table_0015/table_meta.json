@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0015",
+  "type": "table",
+  "caption": "Table 12 – LOGO Payload",
+  "pages": [
+    50
+  ],
+  "bbox": [
+    99.71,
+    291.96,
+    536.29,
+    388.32
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 50,
+  "logical_table": false
+}

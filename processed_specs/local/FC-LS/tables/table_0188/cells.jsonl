@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 195, "bbox": [91.68, 447.99, 131.58, 476.34]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 195, "bbox": [131.58, 447.99, 234.45, 476.34]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 195, "bbox": [234.45, 447.99, 337.29, 476.34]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08", "page": 195, "bbox": [337.29, 447.99, 440.19, 476.34]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00", "page": 195, "bbox": [440.19, 447.99, 542.7, 476.34]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "62", "page": 195, "bbox": [91.68, 476.34, 131.58, 505.66]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Reserved", "page": 195, "bbox": [131.58, 476.34, 234.45, 505.66]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "CS_Transfer_Accurac\ny", "page": 195, "bbox": [234.45, 476.34, 337.29, 505.66]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "CS_Implemented_MS\nB", "page": 195, "bbox": [337.29, 476.34, 440.19, 505.66]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "CS_Implemented_LS\nB", "page": 195, "bbox": [440.19, 476.34, 542.7, 505.66]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "63", "page": 195, "bbox": [91.68, 505.66, 131.58, 522.33]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Reserved", "page": 195, "bbox": [131.58, 505.66, 542.7, 522.33]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 195, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "", "page": 195, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "", "page": 195, "bbox": [0.0, 0.0, 0.0, 0.0]}

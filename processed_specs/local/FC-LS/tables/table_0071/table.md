@@ -1,0 +1,4 @@
+| Description | Value |
+| --- | --- |
+| Common Link Incident Record | 00h |
+| Specific-coded value | 01h - FFh |

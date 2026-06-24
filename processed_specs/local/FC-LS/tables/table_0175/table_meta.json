@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0175",
+  "type": "table",
+  "caption": "Table 163 – Class 2 and 3 Preference Bit Function",
+  "pages": [
+    183
+  ],
+  "bbox": [
+    117.04,
+    279.82,
+    518.96,
+    423.82
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 183,
+  "logical_table": false
+}

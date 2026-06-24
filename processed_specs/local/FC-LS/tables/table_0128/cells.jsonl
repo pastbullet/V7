@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 133, "bbox": [99.6, 555.99, 147.9, 584.04]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 133, "bbox": [147.9, 555.99, 245.13, 584.04]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 133, "bbox": [245.13, 555.99, 342.33, 584.04]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08", "page": 133, "bbox": [342.33, 555.99, 439.53, 584.04]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00", "page": 133, "bbox": [439.53, 555.99, 536.4, 584.04]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 133, "bbox": [99.6, 584.04, 147.9, 615.62]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Descriptor Control =\n01h", "page": 133, "bbox": [147.9, 584.04, 245.13, 615.62]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Descriptor Type =\n01h", "page": 133, "bbox": [245.13, 584.04, 342.33, 615.62]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "Descriptor Length = 0004h", "page": 133, "bbox": [342.33, 584.04, 536.4, 615.62]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "", "page": 133, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 133, "bbox": [99.6, 615.62, 147.9, 634.35]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Administrative Tagging Mode", "page": 133, "bbox": [147.9, 615.62, 536.4, 634.35]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 133, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "", "page": 133, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "", "page": 133, "bbox": [0.0, 0.0, 0.0, 0.0]}

@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0019",
+  "type": "table",
+  "caption": "Table 16 – Connection Status Codes",
+  "pages": [
+    52
+  ],
+  "bbox": [
+    98.38,
+    122.62,
+    537.31,
+    523.35
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 52,
+  "logical_table": false
+}

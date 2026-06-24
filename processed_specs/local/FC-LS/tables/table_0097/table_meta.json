@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0097",
+  "type": "table",
+  "caption": "Table 93 – TPRLO logout parameter page",
+  "pages": [
+    112
+  ],
+  "bbox": [
+    162.11,
+    363.84,
+    473.89,
+    658.84
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 112,
+  "logical_table": false
+}

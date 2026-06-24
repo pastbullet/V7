@@ -1,0 +1,740 @@
+{
+  "doc_id": "FC-LS",
+  "accepted_count": 8,
+  "unresolved_count": 4,
+  "invalid_count": 3,
+  "accepted": [
+    {
+      "unit_id": "fc_ls_fabric_login_proc",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0007",
+          "quote": "Login with the Fabric is required for all Nx_Ports, regardless of the class supported."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p153_s0027",
+          "quote": "The explicit Fabric Login procedure shall require an Nx_Port to transmit a Fabric Login (FLOGI) Link"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p153_s0033",
+          "quote": "The Nx_Port shall transmit the FLOGI in a new Exchange."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0004",
+          "quote": "The following are possible responses the Nx_Port may receive when transmitting a FLOGI:"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p156_s0014",
+          "quote": "The Originator of the FLOGI request considers Fabric Login to have ended when"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p156_s0028",
+          "quote": "The Responder of the FLOGI request considers Fabric Login to have ended when"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0026",
+          "quote": "During a Login with the Fabric, if the Nx_Port was previously logged in with the Fabric and the"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fc_ls_fabric_login_responses",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0003",
+          "quote": "6.2.2.3  Responses to Explicit Fabric Login"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0005",
+          "quote": "a) LS_ACC reply Sequence with OX_ID equal to the OX_ID of the FLOGI"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0016",
+          "quote": "b) LS_ACC reply Sequence with OX_ID equal to the OX_ID of the FLOGI"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0025",
+          "quote": "F_BSY with OX_ID equal to the OX_ID of the FLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0031",
+          "quote": "e) F_RJT Sequence with OX_ID equal to the OX_ID of the FLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0003",
+          "quote": "g) LS_RJT Sequence with OX_ID equal to the OX_ID of the FLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0009",
+          "quote": "h) No Response may indicate a delivery error, e.g., error on the physical transport."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0013",
+          "quote": "If the received N_Port_Name is equal to its N_Port_Name, then the Nx_Port is connected to it-"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fc_ls_nport_login_proc",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p156_s0044",
+          "quote": "N_Port Login follows the Fabric Login procedure."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0006",
+          "quote": "The explicit N_Port Login procedure shall require an Nx_Port to transmit a PLOGI Link request Se-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0022",
+          "quote": "The destination Nx_Port explicit Login procedure requires transmission of a N_Port Login (PLOGI)"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0034",
+          "quote": "6.3.2.4  N_Port Login - No Fabric present"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fc_ls_nport_login_responses_fabric",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p158_s0033",
+          "quote": "6.3.2.3  Responses to N_Port Login - Fabric present"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0036",
+          "quote": "a) LS_ACC reply Sequence with OX_ID equal to the OX_ID of the PLOGI"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0044",
+          "quote": "b) F_BSY with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0004",
+          "quote": "F_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0009",
+          "quote": "d) P_BSY Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0011",
+          "quote": "e) P_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0016",
+          "quote": "PLOGI Sequence.  The D_ID is the N_Port_ID of receiving Nx_Port."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0024",
+          "quote": "g) LS_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0028",
+          "quote": "h) No Response may indicate a delivery error, e.g., error on the physical transport."
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fc_ls_nport_login_responses_no_fabric",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p160_s0003",
+          "quote": "6.3.2.5  Responses to N_Port Login - No Fabric present"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0006",
+          "quote": "a) LS_ACC reply Sequence with OX_ID equal to the OX_ID of the PLOGI"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0014",
+          "quote": "b) P_BSY Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0017",
+          "quote": "P_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0021",
+          "quote": "d) LS_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0025",
+          "quote": "e) PLOGI Sequence.  The D_ID is the address identifier of receiving Nx_Port."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0034",
+          "quote": "No Response may indicate a delivery error, e.g., error on the physical transport."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0037",
+          "quote": "g) If the received N_Port_Name is equal to its N_Port_Name, then the Nx_Port is connected to it-"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fc_ls_prli_proc",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p197_s0009",
+          "quote": "The Process Login (PRLI) ELS request shall be used to establish the operating environment between"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0023",
+          "quote": "b) Explicit Process Login is accomplished by using the PRLI ELS Sequence within a separate Ex-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p198_s0004",
+          "quote": "PRLI, if required, is performed after N_Port Login is successful and prior to other FC-4 transfers."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p198_s0014",
+          "quote": "An image pair may be established or modified with a PRLI request and LS_ACC reply Sequence set."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0003",
+          "quote": "The Nx_Port originating the PRLI request shall not consider the image pair to be established until it"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0008",
+          "quote": "If a link error is detected when a PRLI request is received, the appropriate response, if any, is made,"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0012",
+          "quote": "If an LS_RJT is sent in response to a PRLI request for an image pair that is already established, the"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fc_ls_prlo_proc",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p202_s0007",
+          "quote": "The Process Logout (PRLO) ELS request shall be used to request invalidation of the operating envi-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0009",
+          "quote": "frees resources committed by a previous PRLI function."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0013",
+          "quote": "TYPE-specific Service Parameter settings may be reset or image pairs removed with a PRLO re-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0019",
+          "quote": "If a PRLO request is received for an image pair or FC-4 TYPE that does not exist, the request is ac-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0021",
+          "quote": "The Nx_Port originating the PRLO request shall not consider an image pair to be removed until it re-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0031",
+          "quote": "A PRLO page identifies a particular image pair to logout by marking either or both the Originator Pro-"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fc_ls_logo_proc",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p049_s0028",
+          "quote": "The LOGO ELS provides a method for explicitly removing service between two Nx_Port_IDs or be-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p050_s0008",
+          "quote": "For an explicit Nx_Port Logout, the S_ID field designates the source Nx_Port_ID re-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p050_s0010",
+          "quote": "explicit Fabric Logout originated by an Nx_Port, the S_ID field shall be the Nx_Port_ID to be logged"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p050_s0021",
+          "quote": "LS_ACC signifies that service has been removed for the N_Port_ID indicated in the pay-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0010",
+          "quote": "port it shall reply with a LOGO ELS Sequence, or with an LS_RJT ELS Sequence with a reason code"
+        }
+      ],
+      "related_assets": [
+        {
+          "type": "table",
+          "asset_id": "table_0015"
+        },
+        {
+          "type": "table",
+          "asset_id": "table_0016"
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "unit_id": "fc_ls_login_els_message",
+      "title": "Login ELS message structure for FLOGI and PLOGI",
+      "kind": "message_structure",
+      "reason": "Section 4.2.7 defines a shared login ELS request/reply structure for FLOGI and PLOGI, while deferring the actual payload layout to table 149 and service-parameter definitions in section 6.6.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p048_s0006",
+          "quote": "The FLOGI/PLOGI ELS shall transfer Service Parameters from the initiating Nx_Port to the FC_Port"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p049_s0009",
+          "quote": "a) FLOGI or PLOGI Request Sequence"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p049_s0017",
+          "quote": "The format of the Payload is shown in table 149.  The Service Parameters are defined in"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p049_s0024",
+          "quote": "format of the LS_ACC Payload is shown in table 149.  The Service Parameters are defined in 6.6."
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fc_ls_login_payload_table149",
+      "title": "Login payload table dependency",
+      "kind": "message_structure",
+      "reason": "The FLOGI/PLOGI request and LS_ACC reply both cite table 149 as the payload format, but that table was not inspected, so the concrete field layout remains unresolved.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p049_s0017",
+          "quote": "The format of the Payload is shown in table 149.  The Service Parameters are defined in"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p049_s0024",
+          "quote": "format of the LS_ACC Payload is shown in table 149.  The Service Parameters are defined in 6.6."
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fc_ls_service_parameter_tables",
+      "title": "Login service-parameter applicability tables",
+      "kind": "message_structure",
+      "reason": "Fabric and N_Port login procedures repeatedly reference applicability tables 150 and 155 for the common and class service parameters, but those tables were not inspected in this run.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0035",
+          "quote": "The Service Parameters are as specified for F_Port Login in 6.6.  The applicability of the Service Pa-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p153_s0036",
+          "quote": "rameters to Fabric Login are given in tables 150 and 155."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p157_s0013",
+          "quote": "The N_Port Common Service Parameters during N_Port Login are specified in 6.6.2 (See table 150"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p157_s0014",
+          "quote": "for applicability).  The N_Port Class Service Parameters during N_Port Login are specified in 6.6.5"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p157_s0015",
+          "quote": "(See table 155 for applicability)."
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fc_ls_prli_image_pair_figures",
+      "title": "PRLI image and image-pair figure dependency",
+      "kind": "other",
+      "reason": "The PRLI introduction depends on figure-defined concepts for image and image-pair identification, but usable figure evidence was not obtained from the figure assets in this run.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p197_s0025",
+          "quote": "A group of related processes is known as an image and is identified by the Process_Associator (see"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0026",
+          "quote": "figure 4).  The combination of the D_ID, Responder Process_Associator, S_ID and Originator"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0027",
+          "quote": "Process_Associator identify the image pair (see figure 5)."
+        }
+      ],
+      "related_assets": [
+        {
+          "type": "figure",
+          "asset_id": "figure_0005"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0006"
+        }
+      ]
+    }
+  ],
+  "invalid": [
+    {
+      "unit_id": "fc_ls_prli_modes_and_pa",
+      "title": "Process login PA relationships and operating modes",
+      "kind": "procedure",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p199_s0022",
+          "quote": "PRLI/PRLO Relationships"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0026",
+          "quote": "7.1.2.2  PA not supported"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0031",
+          "quote": "7.1.2.3  PA required by originator, supported by responder"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p200_s0003",
+          "quote": "7.1.2.4  PA required by responder, supported by originator"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p200_s0016",
+          "quote": "7.1.2.5  PA required by originator and responder"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p200_s0029",
+          "quote": "7.1.3.1  Informative mode"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p200_s0032",
+          "quote": "7.1.3.2  Binding mode"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p201_s0008",
+          "quote": "7.1.4  Protocol"
+        }
+      ],
+      "related_assets": [],
+      "invalid_refs": [
+        {
+          "ref": {
+            "type": "text_span",
+            "span_id": "p201_s0008",
+            "quote": "7.1.4  Protocol"
+          },
+          "reason": "quote not found in text span"
+        }
+      ],
+      "invalid_assets": []
+    },
+    {
+      "unit_id": "fc_ls_virtual_fabrics_flogi",
+      "title": "Virtual Fabrics negotiation during FLOGI",
+      "kind": "procedure",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p203_s0014",
+          "quote": "The use of Virtual Fabrics is negotiated when FLOGI is performed via the Virtual Fabrics bit of the"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p203_s0016",
+          "quote": "When set to one in the FLOGI request, the Virtual Fabrics bit indicates that the sending N_Port may"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p203_s0017",
+          "quote": "negotiate Virtual Fabrics parameters. When set to one in the FLOGI LS_ACC reply, the Virtual Fab-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p203_s0018",
+          "quote": "rics bit indicates that the Fabric requires the N_Port to initiate an EVFP transaction (see 4.2.43). Ta-"
+        },
+        {
+          "type": "table_cell",
+          "table_id": "table_0192",
+          "cell_id": "r5c1",
+          "text": "Virtual Fabrics Bit = 1b"
+        },
+        {
+          "type": "table_cell",
+          "table_id": "table_0192",
+          "cell_id": "r5c2",
+          "text": "Virtual Fabrics Allowed"
+        },
+        {
+          "type": "table_cell",
+          "table_id": "table_0192",
+          "cell_id": "r5c3",
+          "text": "LS_ACC with Virtual Fabrics Bit = 1b"
+        }
+      ],
+      "related_assets": [
+        {
+          "type": "table",
+          "asset_id": "table_0192"
+        }
+      ],
+      "invalid_refs": [
+        {
+          "ref": {
+            "type": "table_cell",
+            "table_id": "table_0192",
+            "cell_id": "r5c1",
+            "text": "Virtual Fabrics Bit = 1b"
+          },
+          "reason": "table_cell requires asset_id and cell_id"
+        },
+        {
+          "ref": {
+            "type": "table_cell",
+            "table_id": "table_0192",
+            "cell_id": "r5c2",
+            "text": "Virtual Fabrics Allowed"
+          },
+          "reason": "table_cell requires asset_id and cell_id"
+        },
+        {
+          "ref": {
+            "type": "table_cell",
+            "table_id": "table_0192",
+            "cell_id": "r5c3",
+            "text": "LS_ACC with Virtual Fabrics Bit = 1b"
+          },
+          "reason": "table_cell requires asset_id and cell_id"
+        }
+      ],
+      "invalid_assets": []
+    },
+    {
+      "unit_id": "fc_ls_els_login_prereq",
+      "title": "ELS login prerequisite and command codes",
+      "kind": "other",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0030",
+          "quote": "shall not be issued prior to completion of N_Port Login.  Table 3 applies to ELSs sent to or received"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p036_s0031",
+          "quote": "by all valid addresses, including well known addresses.  FLOGI is required before all ELSs if a Fabric"
+        },
+        {
+          "type": "table_cell",
+          "table_id": "table_0003",
+          "cell_id": "r4c2",
+          "text": "N_Port Login"
+        },
+        {
+          "type": "table_cell",
+          "table_id": "table_0003",
+          "cell_id": "r4c3",
+          "text": "PLOGI"
+        },
+        {
+          "type": "table_cell",
+          "table_id": "table_0003",
+          "cell_id": "r5c2",
+          "text": "F_Port Login"
+        },
+        {
+          "type": "table_cell",
+          "table_id": "table_0003",
+          "cell_id": "r5c3",
+          "text": "FLOGI"
+        },
+        {
+          "type": "table_cell",
+          "table_id": "table_0003",
+          "cell_id": "r12c2",
+          "text": "Process Login"
+        },
+        {
+          "type": "table_cell",
+          "table_id": "table_0003",
+          "cell_id": "r12c3",
+          "text": "PRLI"
+        },
+        {
+          "type": "table_cell",
+          "table_id": "table_0003",
+          "cell_id": "r13c2",
+          "text": "Process Logout"
+        },
+        {
+          "type": "table_cell",
+          "table_id": "table_0003",
+          "cell_id": "r13c3",
+          "text": "PRLO"
+        }
+      ],
+      "related_assets": [
+        {
+          "type": "table",
+          "asset_id": "table_0003"
+        }
+      ],
+      "invalid_refs": [
+        {
+          "ref": {
+            "type": "table_cell",
+            "table_id": "table_0003",
+            "cell_id": "r4c2",
+            "text": "N_Port Login"
+          },
+          "reason": "table_cell requires asset_id and cell_id"
+        },
+        {
+          "ref": {
+            "type": "table_cell",
+            "table_id": "table_0003",
+            "cell_id": "r4c3",
+            "text": "PLOGI"
+          },
+          "reason": "table_cell requires asset_id and cell_id"
+        },
+        {
+          "ref": {
+            "type": "table_cell",
+            "table_id": "table_0003",
+            "cell_id": "r5c2",
+            "text": "F_Port Login"
+          },
+          "reason": "table_cell requires asset_id and cell_id"
+        },
+        {
+          "ref": {
+            "type": "table_cell",
+            "table_id": "table_0003",
+            "cell_id": "r5c3",
+            "text": "FLOGI"
+          },
+          "reason": "table_cell requires asset_id and cell_id"
+        },
+        {
+          "ref": {
+            "type": "table_cell",
+            "table_id": "table_0003",
+            "cell_id": "r12c2",
+            "text": "Process Login"
+          },
+          "reason": "table_cell requires asset_id and cell_id"
+        },
+        {
+          "ref": {
+            "type": "table_cell",
+            "table_id": "table_0003",
+            "cell_id": "r12c3",
+            "text": "PRLI"
+          },
+          "reason": "table_cell requires asset_id and cell_id"
+        },
+        {
+          "ref": {
+            "type": "table_cell",
+            "table_id": "table_0003",
+            "cell_id": "r13c2",
+            "text": "Process Logout"
+          },
+          "reason": "table_cell requires asset_id and cell_id"
+        },
+        {
+          "ref": {
+            "type": "table_cell",
+            "table_id": "table_0003",
+            "cell_id": "r13c3",
+            "text": "PRLO"
+          },
+          "reason": "table_cell requires asset_id and cell_id"
+        }
+      ],
+      "invalid_assets": []
+    }
+  ]
+}

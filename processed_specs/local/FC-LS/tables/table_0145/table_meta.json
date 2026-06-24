@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0145",
+  "type": "table",
+  "caption": "Table 141 – FFI_RMUN Payload",
+  "pages": [
+    143
+  ],
+  "bbox": [
+    100.13,
+    255.96,
+    536.06,
+    386.34
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 143
+}

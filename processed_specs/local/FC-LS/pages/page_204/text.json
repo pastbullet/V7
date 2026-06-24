@@ -1,0 +1,1386 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 204,
+  "spans": [
+    {
+      "span_id": "p204_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0002",
+      "text": " 185",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0003",
+      "text": "EVFP transaction. Figure 6 shows the initialization process to enable Virtual Fabrics and Logical",
+      "bbox": [
+        96.0,
+        57.65,
+        539.61,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0004",
+      "text": "N_Ports.",
+      "bbox": [
+        96.0,
+        69.65,
+        134.89,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0005",
+      "text": "State P1: FLOGI.",
+      "bbox": [
+        96.0,
+        647.03,
+        174.98,
+        658.14
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0006",
+      "text": " The N_Port performs FLOGI. The N_Port_Name of the Logical N_Port associated",
+      "bbox": [
+        174.96,
+        647.03,
+        540.05,
+        658.14
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0007",
+      "text": "with the Port VF_ID shall be used by the N_Port in the FLOGI request; the Fabric_Name of the Virtu-",
+      "bbox": [
+        96.0,
+        659.03,
+        540.06,
+        670.14
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0008",
+      "text": "al Fabric associated with the Port VF_ID shall be used by the F_Port in the FLOGI LS_ACC.",
+      "bbox": [
+        96.0,
+        671.03,
+        503.15,
+        682.14
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0009",
+      "text": " Figure 6 – Logical N_Port Initialization",
+      "bbox": [
+        221.94,
+        618.82,
+        405.78,
+        629.94
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0010",
+      "text": "P5",
+      "bbox": [
+        295.92,
+        241.82,
+        306.92,
+        251.86
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0011",
+      "text": "(1)",
+      "bbox": [
+        306.9,
+        239.84,
+        315.66,
+        247.88
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0012",
+      "text": ": FLOGI",
+      "bbox": [
+        315.66,
+        241.82,
+        348.66,
+        251.86
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0013",
+      "text": "Transmit FLOGI",
+      "bbox": [
+        290.04,
+        251.29,
+        354.5,
+        261.34
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0014",
+      "text": "P4: EVFP",
+      "bbox": [
+        246.9,
+        209.17,
+        286.88,
+        219.22
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0015",
+      "text": "Perform EVFP",
+      "bbox": [
+        237.96,
+        218.71,
+        295.93,
+        228.76
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0016",
+      "text": "P6",
+      "bbox": [
+        357.12,
+        281.78,
+        368.12,
+        291.82
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0017",
+      "text": "(1)",
+      "bbox": [
+        368.1,
+        279.8,
+        376.92,
+        287.84
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0018",
+      "text": ": AUTH_ELS",
+      "bbox": [
+        376.92,
+        281.78,
+        429.8,
+        291.82
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0019",
+      "text": "Authentication",
+      "bbox": [
+        364.98,
+        291.32,
+        421.92,
+        301.36
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0020",
+      "text": "P7",
+      "bbox": [
+        419.94,
+        241.51,
+        430.88,
+        251.56
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0021",
+      "text": "(1)",
+      "bbox": [
+        430.92,
+        239.54,
+        439.68,
+        247.58
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0022",
+      "text": ": Logical N_Port",
+      "bbox": [
+        439.68,
+        241.51,
+        508.63,
+        251.56
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0023",
+      "text": "Continue Operation",
+      "bbox": [
+        425.28,
+        250.99,
+        503.19,
+        261.04
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0024",
+      "text": "...",
+      "bbox": [
+        384.36,
+        428.51,
+        392.65,
+        439.62
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0025",
+      "text": "P4:P5",
+      "bbox": [
+        268.68,
+        292.5,
+        287.73,
+        300.27
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0026",
+      "text": "(1)",
+      "bbox": [
+        287.7,
+        290.93,
+        294.54,
+        297.16
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0027",
+      "text": "P5",
+      "bbox": [
+        339.18,
+        308.88,
+        347.73,
+        316.65
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0028",
+      "text": "(1)",
+      "bbox": [
+        347.76,
+        307.31,
+        354.54,
+        313.54
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0029",
+      "text": ":P6",
+      "bbox": [
+        354.54,
+        308.88,
+        365.01,
+        316.65
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0030",
+      "text": "(1)",
+      "bbox": [
+        365.04,
+        307.31,
+        371.88,
+        313.54
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p204_s0031",
+      "text": "P6",
+      "bbox": [
+        409.5,
+        316.14,
+        418.05,
+        323.91
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0032",
+      "text": "(1)",
+      "bbox": [
+        418.08,
+        314.63,
+        424.86,
+        320.86
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0033",
+      "text": ":P7",
+      "bbox": [
+        424.86,
+        316.14,
+        435.33,
+        323.91
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0034",
+      "text": "(1)",
+      "bbox": [
+        435.36,
+        314.63,
+        442.2,
+        320.86
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p204_s0035",
+      "text": "P5",
+      "bbox": [
+        375.9,
+        268.44,
+        384.45,
+        276.21
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0036",
+      "text": "(1)",
+      "bbox": [
+        384.48,
+        266.87,
+        391.26,
+        273.1
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0037",
+      "text": ":P7",
+      "bbox": [
+        391.26,
+        268.44,
+        401.73,
+        276.21
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0038",
+      "text": "(1)",
+      "bbox": [
+        401.76,
+        266.87,
+        408.6,
+        273.1
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p204_s0039",
+      "text": "P1: FLOGI",
+      "bbox": [
+        113.76,
+        95.77,
+        157.74,
+        105.82
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0040",
+      "text": "Perform FLOGI",
+      "bbox": [
+        105.06,
+        105.25,
+        166.55,
+        115.3
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0041",
+      "text": "P2: AUTH_ELS",
+      "bbox": [
+        167.52,
+        145.15,
+        231.42,
+        155.2
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0042",
+      "text": "Authentication",
+      "bbox": [
+        171.0,
+        154.63,
+        227.95,
+        164.68
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0043",
+      "text": "P3: N_Port",
+      "bbox": [
+        374.1,
+        95.47,
+        420.04,
+        105.52
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0044",
+      "text": "Continue Operation",
+      "bbox": [
+        358.08,
+        105.01,
+        435.96,
+        115.06
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0045",
+      "text": "P1:P2",
+      "bbox": [
+        152.7,
+        194.76,
+        171.69,
+        202.53
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0046",
+      "text": "P2:P3",
+      "bbox": [
+        211.74,
+        177.66,
+        230.79,
+        185.43
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0047",
+      "text": "P1:P3",
+      "bbox": [
+        189.42,
+        127.44,
+        208.41,
+        135.21
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0048",
+      "text": "P5",
+      "bbox": [
+        307.62,
+        335.42,
+        318.62,
+        345.46
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0049",
+      "text": "(2)",
+      "bbox": [
+        318.66,
+        333.44,
+        327.48,
+        341.48
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0050",
+      "text": ": FLOGI",
+      "bbox": [
+        327.42,
+        335.42,
+        360.41,
+        345.46
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0051",
+      "text": "Transmit FLOGI",
+      "bbox": [
+        301.8,
+        344.89,
+        366.25,
+        354.94
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0052",
+      "text": "P6",
+      "bbox": [
+        368.88,
+        375.43,
+        379.88,
+        385.48
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0053",
+      "text": "(2)",
+      "bbox": [
+        379.86,
+        373.46,
+        388.62,
+        381.5
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0054",
+      "text": ": AUTH_ELS",
+      "bbox": [
+        388.62,
+        375.43,
+        441.6,
+        385.48
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0055",
+      "text": "Authentication",
+      "bbox": [
+        376.74,
+        384.91,
+        433.65,
+        394.96
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0056",
+      "text": "P7",
+      "bbox": [
+        431.64,
+        335.12,
+        442.64,
+        345.16
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0057",
+      "text": "(2)",
+      "bbox": [
+        442.68,
+        333.14,
+        451.44,
+        341.18
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0058",
+      "text": ": Logical N_Port",
+      "bbox": [
+        451.44,
+        335.12,
+        520.38,
+        345.16
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0059",
+      "text": "Continue Operation",
+      "bbox": [
+        437.04,
+        344.66,
+        514.95,
+        354.7
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0060",
+      "text": "P4:P5",
+      "bbox": [
+        269.16,
+        386.1,
+        288.21,
+        393.87
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0061",
+      "text": "(2)",
+      "bbox": [
+        288.24,
+        384.59,
+        295.02,
+        390.82
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0062",
+      "text": "P5",
+      "bbox": [
+        350.94,
+        402.48,
+        359.49,
+        410.25
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0063",
+      "text": "(2)",
+      "bbox": [
+        359.52,
+        400.97,
+        366.36,
+        407.2
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0064",
+      "text": ":P6",
+      "bbox": [
+        366.3,
+        402.48,
+        376.77,
+        410.25
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0065",
+      "text": "(2)",
+      "bbox": [
+        376.8,
+        400.97,
+        383.64,
+        407.2
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p204_s0066",
+      "text": "P6",
+      "bbox": [
+        421.26,
+        409.8,
+        429.81,
+        417.57
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0067",
+      "text": "(2)",
+      "bbox": [
+        429.84,
+        408.23,
+        436.68,
+        414.46
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0068",
+      "text": ":P7",
+      "bbox": [
+        436.62,
+        409.8,
+        447.09,
+        417.57
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0069",
+      "text": "(2)",
+      "bbox": [
+        447.12,
+        408.23,
+        453.96,
+        414.46
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p204_s0070",
+      "text": "P5",
+      "bbox": [
+        387.66,
+        362.1,
+        396.21,
+        369.87
+      ],
+      "block_index": 27,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0071",
+      "text": "(2)",
+      "bbox": [
+        396.18,
+        360.53,
+        403.02,
+        366.76
+      ],
+      "block_index": 27,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0072",
+      "text": ":P7",
+      "bbox": [
+        403.02,
+        362.1,
+        413.49,
+        369.87
+      ],
+      "block_index": 27,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0073",
+      "text": "(2)",
+      "bbox": [
+        413.52,
+        360.53,
+        420.36,
+        366.76
+      ],
+      "block_index": 27,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p204_s0074",
+      "text": "P5",
+      "bbox": [
+        319.2,
+        450.32,
+        330.2,
+        460.36
+      ],
+      "block_index": 28,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0075",
+      "text": "(n)",
+      "bbox": [
+        330.18,
+        448.34,
+        339.36,
+        456.38
+      ],
+      "block_index": 28,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0076",
+      "text": ": FLOGI",
+      "bbox": [
+        339.36,
+        450.32,
+        372.36,
+        460.36
+      ],
+      "block_index": 28,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0077",
+      "text": "Transmit FLOGI",
+      "bbox": [
+        313.56,
+        459.79,
+        377.97,
+        469.84
+      ],
+      "block_index": 28,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0078",
+      "text": "P6",
+      "bbox": [
+        380.4,
+        490.28,
+        391.4,
+        500.32
+      ],
+      "block_index": 29,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0079",
+      "text": "(n)",
+      "bbox": [
+        391.44,
+        488.3,
+        400.62,
+        496.34
+      ],
+      "block_index": 29,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0080",
+      "text": ": AUTH_ELS",
+      "bbox": [
+        400.62,
+        490.28,
+        453.5,
+        500.32
+      ],
+      "block_index": 29,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0081",
+      "text": "Authentication",
+      "bbox": [
+        388.5,
+        499.82,
+        445.44,
+        509.86
+      ],
+      "block_index": 29,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0082",
+      "text": "P7",
+      "bbox": [
+        443.22,
+        450.02,
+        454.22,
+        460.06
+      ],
+      "block_index": 30,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0083",
+      "text": "(n)",
+      "bbox": [
+        454.2,
+        448.04,
+        463.38,
+        456.08
+      ],
+      "block_index": 30,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0084",
+      "text": ": Logical N_Port",
+      "bbox": [
+        463.38,
+        450.02,
+        532.33,
+        460.06
+      ],
+      "block_index": 30,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0085",
+      "text": "Continue Operation",
+      "bbox": [
+        448.8,
+        459.49,
+        526.68,
+        469.54
+      ],
+      "block_index": 30,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0086",
+      "text": "P4:P5",
+      "bbox": [
+        269.04,
+        501.0,
+        288.09,
+        508.77
+      ],
+      "block_index": 31,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0087",
+      "text": "(n)",
+      "bbox": [
+        288.12,
+        499.43,
+        294.9,
+        505.66
+      ],
+      "block_index": 31,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0088",
+      "text": "P5",
+      "bbox": [
+        362.7,
+        517.38,
+        371.19,
+        525.15
+      ],
+      "block_index": 32,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0089",
+      "text": "(n)",
+      "bbox": [
+        371.22,
+        515.81,
+        378.06,
+        522.04
+      ],
+      "block_index": 32,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0090",
+      "text": ":P6",
+      "bbox": [
+        378.06,
+        517.38,
+        388.53,
+        525.15
+      ],
+      "block_index": 32,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0091",
+      "text": "(n)",
+      "bbox": [
+        388.56,
+        515.81,
+        395.4,
+        522.04
+      ],
+      "block_index": 32,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p204_s0092",
+      "text": "P6",
+      "bbox": [
+        433.02,
+        524.7,
+        441.57,
+        532.47
+      ],
+      "block_index": 33,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0093",
+      "text": "(n)",
+      "bbox": [
+        441.54,
+        523.13,
+        448.38,
+        529.36
+      ],
+      "block_index": 33,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0094",
+      "text": ":P7",
+      "bbox": [
+        448.38,
+        524.7,
+        458.85,
+        532.47
+      ],
+      "block_index": 33,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0095",
+      "text": "(n)",
+      "bbox": [
+        458.88,
+        523.13,
+        465.72,
+        529.36
+      ],
+      "block_index": 33,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p204_s0096",
+      "text": "P5",
+      "bbox": [
+        399.42,
+        476.94,
+        407.91,
+        484.71
+      ],
+      "block_index": 34,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0097",
+      "text": "(n)",
+      "bbox": [
+        407.94,
+        475.43,
+        414.78,
+        481.66
+      ],
+      "block_index": 34,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p204_s0098",
+      "text": ":P7",
+      "bbox": [
+        414.78,
+        476.94,
+        425.25,
+        484.71
+      ],
+      "block_index": 34,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p204_s0099",
+      "text": "(n)",
+      "bbox": [
+        425.28,
+        475.43,
+        432.12,
+        481.66
+      ],
+      "block_index": 34,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p204_s0100",
+      "text": "P2:P4",
+      "bbox": [
+        211.92,
+        262.26,
+        230.97,
+        270.03
+      ],
+      "block_index": 35,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0101",
+      "text": "P1:P4",
+      "bbox": [
+        153.18,
+        312.12,
+        172.23,
+        319.89
+      ],
+      "block_index": 36,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0102",
+      "text": "P4:P1",
+      "bbox": [
+        269.1,
+        537.24,
+        288.09,
+        545.01
+      ],
+      "block_index": 37,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0103",
+      "text": "P4:P8",
+      "bbox": [
+        269.1,
+        591.66,
+        288.09,
+        599.43
+      ],
+      "block_index": 38,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0104",
+      "text": "P8: Isolated",
+      "bbox": [
+        314.64,
+        557.41,
+        365.07,
+        567.46
+      ],
+      "block_index": 39,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0105",
+      "text": "Link Offline",
+      "bbox": [
+        317.4,
+        566.95,
+        362.41,
+        577.0
+      ],
+      "block_index": 39,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p204_s0106",
+      "text": "P4:P1",
+      "bbox": [
+        104.4,
+        291.24,
+        123.39,
+        299.01
+      ],
+      "block_index": 40,
+      "line_index": 1,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

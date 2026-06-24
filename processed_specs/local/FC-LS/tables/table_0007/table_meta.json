@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0007",
+  "type": "table",
+  "caption": "Table 4 – Responses to Received ELSs",
+  "pages": [
+    41
+  ],
+  "bbox": [
+    96.02,
+    122.28,
+    539.78,
+    316.48
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 41,
+  "logical_table": false
+}

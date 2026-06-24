@@ -1,0 +1,751 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 121,
+  "spans": [
+    {
+      "span_id": "p121_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0002",
+      "text": " 102",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0003",
+      "text": "a)",
+      "bbox": [
+        106.02,
+        57.65,
+        114.91,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0004",
+      "text": " Payload Length:",
+      "bbox": [
+        114.91,
+        57.65,
+        200.37,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p121_s0005",
+      "text": " Bytes 2-3 of Word 0 contain a 16-bit value that specifies the length M of the",
+      "bbox": [
+        200.4,
+        57.65,
+        539.96,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p121_s0006",
+      "text": "RNFT LS_ACC Payload in bytes.",
+      "bbox": [
+        122.4,
+        69.65,
+        269.6,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0007",
+      "text": "M = 8 + N*4",
+      "bbox": [
+        132.0,
+        94.97,
+        185.32,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0008",
+      "text": "where",
+      "bbox": [
+        132.0,
+        118.97,
+        159.19,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0009",
+      "text": "N is the number of FC-4 Entries contained in the Payload. ",
+      "bbox": [
+        132.0,
+        142.96,
+        390.25,
+        154.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0010",
+      "text": "b)",
+      "bbox": [
+        106.02,
+        166.96,
+        114.92,
+        178.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0011",
+      "text": " List Length:",
+      "bbox": [
+        114.92,
+        166.96,
+        180.1,
+        178.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p121_s0012",
+      "text": " Byte 1 of Word 1 contains an 8-bit value that specifies the total number of FC-4",
+      "bbox": [
+        180.06,
+        166.96,
+        540.01,
+        178.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p121_s0013",
+      "text": "protocols supported by the responder.",
+      "bbox": [
+        122.4,
+        178.96,
+        290.72,
+        190.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0014",
+      "text": "If List Length exceeds Index+N then the originator may request additional records with another",
+      "bbox": [
+        122.4,
+        202.96,
+        539.98,
+        214.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0015",
+      "text": "RNFT in which Index is increased by N.",
+      "bbox": [
+        122.4,
+        214.96,
+        297.4,
+        226.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0016",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        238.96,
+        114.38,
+        250.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0017",
+      "text": "Index:",
+      "bbox": [
+        122.4,
+        238.96,
+        151.84,
+        250.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0018",
+      "text": " Byte 3 of Word 1 contains an 8-bit value that specifies the index of the first FC-4 Entry",
+      "bbox": [
+        151.8,
+        238.96,
+        539.96,
+        250.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p121_s0019",
+      "text": "returned in the RNFT reply.",
+      "bbox": [
+        122.4,
+        250.96,
+        243.48,
+        262.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0020",
+      "text": "d)",
+      "bbox": [
+        106.02,
+        274.96,
+        114.92,
+        286.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0021",
+      "text": " FC-4 Entry:",
+      "bbox": [
+        114.92,
+        274.96,
+        176.23,
+        286.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p121_s0022",
+      "text": " The FC-4 Entry record contains a FC-4 Entry and is shown in table 106.",
+      "bbox": [
+        176.28,
+        274.96,
+        496.15,
+        286.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p121_s0023",
+      "text": "A)",
+      "bbox": [
+        122.4,
+        382.96,
+        132.38,
+        394.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0024",
+      "text": " FC-4 Type:",
+      "bbox": [
+        132.38,
+        382.96,
+        191.3,
+        394.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p121_s0025",
+      "text": " The FC-4 TYPE code of a FC-4 protocol that is supported by the sending",
+      "bbox": [
+        191.28,
+        382.96,
+        539.99,
+        394.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p121_s0026",
+      "text": "Nx_Port.  The values are defined in FC-FS-2",
+      "bbox": [
+        138.0,
+        394.96,
+        335.73,
+        406.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0027",
+      "text": ".",
+      "bbox": [
+        335.76,
+        394.96,
+        338.53,
+        406.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p121_s0028",
+      "text": "B)",
+      "bbox": [
+        122.4,
+        418.96,
+        132.38,
+        430.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0029",
+      "text": " FC-4 Qualifier:",
+      "bbox": [
+        132.38,
+        418.96,
+        207.27,
+        430.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p121_s0030",
+      "text": " The FC-4 Qualifier may be used to distinguish between two protocols that",
+      "bbox": [
+        207.3,
+        418.96,
+        540.05,
+        430.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p121_s0031",
+      "text": "use the same FC-4 TYPE code.",
+      "bbox": [
+        138.0,
+        430.96,
+        279.06,
+        442.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0032",
+      "text": "For  FC-4 type codes that are reserved or assigned for specific use in this standard {CWC:",
+      "bbox": [
+        122.4,
+        454.96,
+        539.97,
+        466.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0033",
+      "text": "Should this be 00h to DFh?} (00h - 68h), the value of the FC-4 Qualifier shall be zero.",
+      "bbox": [
+        122.4,
+        466.96,
+        499.59,
+        478.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0034",
+      "text": "For Vendor specific FC-4 TYPE codes (E0h through FFh), the FC-4 Qualifier shall be selected",
+      "bbox": [
+        122.4,
+        490.96,
+        539.93,
+        502.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0035",
+      "text": "from one of the 24-bit Company_ID values assigned by the IEEE Registration Authority to the",
+      "bbox": [
+        122.4,
+        502.96,
+        540.03,
+        514.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0036",
+      "text": "organization that defines the Vendor specific FC-4 protocol, and that Company_ID shall be",
+      "bbox": [
+        122.4,
+        514.96,
+        539.87,
+        526.08
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0037",
+      "text": "used to qualify that FC-4 TYPE in all implementations.  It is up to the organization that defines",
+      "bbox": [
+        122.4,
+        526.96,
+        539.99,
+        538.08
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0038",
+      "text": "the Vendor specific FC-4 protocol to assure that the protocol has a unique qualified FC-4 Type.",
+      "bbox": [
+        122.4,
+        538.96,
+        540.06,
+        550.08
+      ],
+      "block_index": 14,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0039",
+      "text": "4.2.39",
+      "bbox": [
+        96.0,
+        562.96,
+        123.78,
+        574.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0040",
+      "text": "Scan Remote Loop (SRL)",
+      "bbox": [
+        133.78,
+        562.96,
+        253.69,
+        574.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0041",
+      "text": "4.2.39.1  Description",
+      "bbox": [
+        96.0,
+        586.96,
+        192.64,
+        598.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0042",
+      "text": "The SRL ELS shall require a switch to scan attached loops to determine if any L_Ports have been",
+      "bbox": [
+        96.0,
+        610.96,
+        539.96,
+        622.07
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0043",
+      "text": "disabled or removed.  If the switch determines any L_Ports that are currently logged in with the Fab-",
+      "bbox": [
+        96.0,
+        622.96,
+        540.1,
+        634.07
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0044",
+      "text": "ric have been removed or disabled it shall update the name server and send an RSCN to all regis-",
+      "bbox": [
+        96.0,
+        634.96,
+        540.12,
+        646.07
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0045",
+      "text": "tered Nx_Ports.",
+      "bbox": [
+        96.0,
+        647.02,
+        165.44,
+        658.13
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0046",
+      "text": "The SRL Payload indicates whether the switch shall scan all attached loops or a single loop.  If a sin-",
+      "bbox": [
+        96.0,
+        671.02,
+        540.07,
+        682.13
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0047",
+      "text": "gle loop is to be scanned the Payload shall contain the FL_Port_ID of the loop to be scanned.",
+      "bbox": [
+        96.0,
+        683.02,
+        508.72,
+        694.13
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0048",
+      "text": " Table 106 – RNFT FC-4 Entry",
+      "bbox": [
+        248.28,
+        296.98,
+        387.66,
+        308.09
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0049",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        319.0,
+        133.06,
+        330.11
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0050",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        331.0,
+        136.35,
+        342.11
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0051",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        319.0,
+        233.97,
+        330.11
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0052",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        319.0,
+        328.42,
+        330.11
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0053",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        319.0,
+        427.0,
+        330.11
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0054",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        319.0,
+        522.83,
+        330.11
+      ],
+      "block_index": 20,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0055",
+      "text": "1",
+      "bbox": [
+        120.84,
+        347.98,
+        126.38,
+        359.09
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0056",
+      "text": "FC-4 Type",
+      "bbox": [
+        149.88,
+        347.98,
+        197.1,
+        359.09
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p121_s0057",
+      "text": "FC-4 Qualifier",
+      "bbox": [
+        247.12,
+        347.98,
+        309.27,
+        359.09
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0109"
+  ]
+}

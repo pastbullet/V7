@@ -1,0 +1,74 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "RLIR (79h)",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "Link Incident Record\nFormat",
+      "Common Link\nIncident Record\nLength",
+      "Common\nLink Incident-\nDescriptor Length",
+      "Specific Link Incident\nRecord Length"
+    ],
+    [
+      "2",
+      "MSB Common Link Incident Record\n(m) (m=4 or 16)\nLSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "m+1",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "m+2",
+      "Common Link Incident Descriptor\nIQ IC EPAI (domain/area of ISL)",
+      null,
+      null,
+      null
+    ],
+    [
+      "m+3",
+      "Specific Link Incident Record\n(0-max bytes)",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "n",
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

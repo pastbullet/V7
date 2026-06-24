@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0163",
+  "type": "table",
+  "caption": "Table 153 – Common Service Parameters - FLOGI LS_ACC",
+  "pages": [
+    170
+  ],
+  "bbox": [
+    91.88,
+    280.07,
+    542.36,
+    388.32
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 170,
+  "logical_table": false
+}

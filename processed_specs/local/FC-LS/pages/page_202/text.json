@@ -1,0 +1,541 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 202,
+  "spans": [
+    {
+      "span_id": "p202_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0002",
+      "text": " 183",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0003",
+      "text": "Each page identifies a Binding mode PRLI operation between the Originator Nx_Port and one image",
+      "bbox": [
+        96.0,
+        57.65,
+        539.86,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0004",
+      "text": "at the Responder Nx_Port.",
+      "bbox": [
+        96.0,
+        69.65,
+        214.33,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0005",
+      "text": "7.2",
+      "bbox": [
+        96.0,
+        94.97,
+        109.88,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0006",
+      "text": "Process Logout",
+      "bbox": [
+        119.88,
+        94.97,
+        195.35,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0007",
+      "text": "The Process Logout (PRLO) ELS request shall be used to request invalidation of the operating envi-",
+      "bbox": [
+        96.0,
+        118.97,
+        540.05,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0008",
+      "text": "ronment between an image at the initiating Nx_Port and an image at the recipient Nx_Port.  PRLO",
+      "bbox": [
+        96.0,
+        130.97,
+        540.02,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0009",
+      "text": "frees resources committed by a previous PRLI function.  ULP behavior following successful execu-",
+      "bbox": [
+        96.0,
+        142.96,
+        540.02,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0010",
+      "text": "tion of the PRLO function is specified in the corresponding FC-4 standard. ",
+      "bbox": [
+        96.0,
+        154.96,
+        425.43,
+        166.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0011",
+      "text": "Examples of PRLO usage include image re-configuration and TYPE-specific reset of Process Login",
+      "bbox": [
+        96.0,
+        178.96,
+        540.0,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0012",
+      "text": "Service Parameters.",
+      "bbox": [
+        96.0,
+        190.96,
+        186.46,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0013",
+      "text": "TYPE-specific Service Parameter settings may be reset or image pairs removed with a PRLO re-",
+      "bbox": [
+        96.0,
+        214.96,
+        540.15,
+        226.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0014",
+      "text": "quest and LS_ACC reply Sequence set.  Other TYPE-specific Service Parameter settings or image",
+      "bbox": [
+        96.0,
+        226.96,
+        539.88,
+        238.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0015",
+      "text": "pairs associated with the same or different image pairs or Nx_Ports shall be unaffected.  After TYPE-",
+      "bbox": [
+        96.0,
+        238.96,
+        540.1,
+        250.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0016",
+      "text": "specific Service Parameter settings are reset or image pair is removed, Information Units may not be",
+      "bbox": [
+        96.0,
+        250.96,
+        539.86,
+        262.08
+      ],
+      "block_index": 7,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0017",
+      "text": "sent or received for the specified FC-4 TYPE using that image pair and Nx_Port combination speci-",
+      "bbox": [
+        96.0,
+        262.96,
+        539.95,
+        274.08
+      ],
+      "block_index": 7,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0018",
+      "text": "fied in the PRLO request.",
+      "bbox": [
+        96.0,
+        274.96,
+        208.22,
+        286.08
+      ],
+      "block_index": 7,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0019",
+      "text": "If a PRLO request is received for an image pair or FC-4 TYPE that does not exist, the request is ac-",
+      "bbox": [
+        96.0,
+        298.96,
+        539.99,
+        310.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0020",
+      "text": "cepted, provided that no link errors are detected, and the LS_ACC response is sent.",
+      "bbox": [
+        96.0,
+        310.96,
+        467.11,
+        322.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0021",
+      "text": "The Nx_Port originating the PRLO request shall not consider an image pair to be removed until it re-",
+      "bbox": [
+        96.0,
+        334.96,
+        540.04,
+        346.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0022",
+      "text": "ceives an LS_ACC reply Sequence.  The Nx_Port responding to the PRLO request shall not consider",
+      "bbox": [
+        96.0,
+        346.96,
+        539.99,
+        358.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0023",
+      "text": "an image pair to be removed or TYPE-specific Service Parameter settings to be reset, as appropri-",
+      "bbox": [
+        96.0,
+        358.96,
+        539.96,
+        370.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0024",
+      "text": "ate, until the LS_ACC reply Sequence is sent.  An Nx_Port that receives a P_BSY, F_BSY, P_RJT,",
+      "bbox": [
+        96.0,
+        370.96,
+        540.03,
+        382.08
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0025",
+      "text": "or F_RJT reply in response to a PRLO request may retry the PRLO request.  The number of retries is",
+      "bbox": [
+        96.0,
+        382.96,
+        540.0,
+        394.08
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0026",
+      "text": "system dependent.",
+      "bbox": [
+        96.0,
+        394.96,
+        180.45,
+        406.08
+      ],
+      "block_index": 9,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0027",
+      "text": "Unless the requesting Nx_Port receives a valid response to a PRLO request, that Nx_Port shall not",
+      "bbox": [
+        96.0,
+        418.96,
+        540.02,
+        430.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0028",
+      "text": "assume that the requested action has or has not taken place. If the Nx_Port that originates a PRLO",
+      "bbox": [
+        96.0,
+        430.96,
+        540.03,
+        442.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0029",
+      "text": "request receives no valid response, the Nx_Port should retry the request.  The number of retries is",
+      "bbox": [
+        96.0,
+        442.96,
+        539.91,
+        454.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0030",
+      "text": "vendor unique.",
+      "bbox": [
+        96.0,
+        454.96,
+        162.03,
+        466.08
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0031",
+      "text": "A PRLO page identifies a particular image pair to logout by marking either or both the Originator Pro-",
+      "bbox": [
+        96.0,
+        478.96,
+        540.03,
+        490.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0032",
+      "text": "cess Associator and the Responder Process Associator.  Only that image pair is logged out.  No fur-",
+      "bbox": [
+        96.0,
+        490.96,
+        540.02,
+        502.07
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0033",
+      "text": "ther communication for the affected FC-4(s) is possible between these two images.  It is the",
+      "bbox": [
+        96.0,
+        502.96,
+        539.93,
+        514.07
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0034",
+      "text": "responsibility of the ULPs to ensure that all active operations over an image pair have been orderly",
+      "bbox": [
+        96.0,
+        514.96,
+        539.92,
+        526.07
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0035",
+      "text": "and properly terminated prior to issuing a PRLO request. Following PRLO execution, all active Se-",
+      "bbox": [
+        96.0,
+        526.96,
+        540.04,
+        538.07
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0036",
+      "text": "quences and Exchanges shall be terminated by invoking Abort Sequence (ABTS). On-going opera-",
+      "bbox": [
+        96.0,
+        538.96,
+        539.92,
+        550.07
+      ],
+      "block_index": 11,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0037",
+      "text": "tions and states for other image pairs are not affected.",
+      "bbox": [
+        96.0,
+        550.96,
+        335.38,
+        562.07
+      ],
+      "block_index": 11,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0038",
+      "text": "If a ULP attempts to communicate over an image pair that has not been established or has been ab-",
+      "bbox": [
+        96.0,
+        574.96,
+        540.08,
+        586.07
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0039",
+      "text": "normally terminated, the communication shall be acknowledged in the normal manner.  The Origina-",
+      "bbox": [
+        96.0,
+        586.96,
+        540.06,
+        598.07
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0040",
+      "text": "tor may then perform a PRLO operation for the affected image pair in order to properly terminate the",
+      "bbox": [
+        96.0,
+        598.96,
+        539.96,
+        610.07
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p202_s0041",
+      "text": "operating environment at both the Originator and Responder.",
+      "bbox": [
+        96.0,
+        610.96,
+        365.98,
+        622.07
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

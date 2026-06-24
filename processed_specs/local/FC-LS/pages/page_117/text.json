@@ -1,0 +1,752 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 117,
+  "spans": [
+    {
+      "span_id": "p117_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0002",
+      "text": " 98",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0003",
+      "text": "4.2.36",
+      "bbox": [
+        96.0,
+        57.65,
+        123.74,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0004",
+      "text": "Clock Synchronization Update (CSU)",
+      "bbox": [
+        133.8,
+        57.65,
+        308.76,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0005",
+      "text": "4.2.36.1  Description",
+      "bbox": [
+        96.0,
+        82.97,
+        192.63,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0006",
+      "text": "The CSU ELS is used by the Clock Synchronization Server to send its current clock value to its cli-",
+      "bbox": [
+        96.0,
+        106.97,
+        539.98,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0007",
+      "text": "ents (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        118.97,
+        184.26,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0008",
+      "text": "4.2.36.2  Protocol",
+      "bbox": [
+        96.0,
+        142.96,
+        178.22,
+        154.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0009",
+      "text": "a)",
+      "bbox": [
+        114.0,
+        166.96,
+        122.84,
+        178.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0010",
+      "text": "Clock Synchronization Update Request Sequence",
+      "bbox": [
+        132.0,
+        166.96,
+        353.69,
+        178.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0011",
+      "text": "b)",
+      "bbox": [
+        114.0,
+        181.96,
+        122.84,
+        193.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0012",
+      "text": "No Reply Sequence",
+      "bbox": [
+        132.0,
+        181.96,
+        220.84,
+        193.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0013",
+      "text": "4.2.36.3  Request Sequence",
+      "bbox": [
+        96.0,
+        202.96,
+        227.06,
+        214.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0014",
+      "text": "Information Category: ",
+      "bbox": [
+        96.0,
+        226.96,
+        203.21,
+        238.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0015",
+      "text": "The Information Category value (Header word 0, bits 24-27) shall indicate",
+      "bbox": [
+        203.16,
+        226.96,
+        539.96,
+        238.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p117_s0016",
+      "text": "Solicited Data (0001b).",
+      "bbox": [
+        96.0,
+        238.96,
+        197.73,
+        250.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0017",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        262.96,
+        157.1,
+        274.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0018",
+      "text": "The S_ID field designates the Clock Synchronization Server well-known address",
+      "bbox": [
+        157.08,
+        262.96,
+        539.96,
+        274.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p117_s0019",
+      "text": "(FFFFF6h).  The D_ID field designates the Nx_Port(s) that is/are to receive the clock information.",
+      "bbox": [
+        96.0,
+        274.96,
+        524.95,
+        286.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0020",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        298.96,
+        140.41,
+        310.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0021",
+      "text": "The format of the Payload is shown in table 99.",
+      "bbox": [
+        140.4,
+        298.96,
+        348.7,
+        310.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p117_s0022",
+      "text": "The meaning of the Clock Count field is given in table 100.",
+      "bbox": [
+        96.0,
+        454.96,
+        354.34,
+        466.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0023",
+      "text": "The bit values are derived from clock frequencies that are used in 1Gbits/s Fibre Channel and shall",
+      "bbox": [
+        96.0,
+        683.02,
+        539.97,
+        694.14
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0024",
+      "text": "be defined as follows.  The value of the Bit 7 in Word 2 shall be equal to 1/106,25MHz, roughly 9,4",
+      "bbox": [
+        96.0,
+        695.02,
+        539.86,
+        706.14
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0025",
+      "text": " Table 99 – CSU Payload",
+      "bbox": [
+        259.98,
+        320.98,
+        376.11,
+        332.1
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0026",
+      "text": "Bits",
+      "bbox": [
+        117.72,
+        344.98,
+        136.28,
+        356.1
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0027",
+      "text": "Word",
+      "bbox": [
+        103.68,
+        356.98,
+        129.03,
+        368.1
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0028",
+      "text": "31        ..         24",
+      "bbox": [
+        152.4,
+        344.98,
+        227.4,
+        356.1
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0029",
+      "text": "23        ..       16",
+      "bbox": [
+        253.3,
+        344.98,
+        322.71,
+        356.1
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0030",
+      "text": "15         ..       08",
+      "bbox": [
+        353.71,
+        344.98,
+        425.9,
+        356.1
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0031",
+      "text": "07        ..       00",
+      "bbox": [
+        458.64,
+        344.98,
+        528.05,
+        356.1
+      ],
+      "block_index": 16,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0032",
+      "text": "0",
+      "bbox": [
+        113.58,
+        377.98,
+        119.12,
+        389.1
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0033",
+      "text": "CSU (69h)",
+      "bbox": [
+        166.32,
+        376.0,
+        213.55,
+        387.12
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0034",
+      "text": "Reserved",
+      "bbox": [
+        370.19,
+        376.0,
+        412.94,
+        387.12
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0035",
+      "text": "1",
+      "bbox": [
+        113.58,
+        398.98,
+        119.12,
+        410.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0036",
+      "text": "Clock Count",
+      "bbox": [
+        313.62,
+        403.48,
+        368.04,
+        414.6
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0037",
+      "text": "(8 bytes)",
+      "bbox": [
+        321.36,
+        415.48,
+        360.28,
+        426.6
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0038",
+      "text": "2",
+      "bbox": [
+        113.58,
+        419.98,
+        119.12,
+        431.1
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0039",
+      "text": " Table 100 – Clock Count Field Meaning",
+      "bbox": [
+        224.16,
+        476.98,
+        411.91,
+        488.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0040",
+      "text": "Byte Number",
+      "bbox": [
+        178.92,
+        499.0,
+        241.03,
+        510.12
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0041",
+      "text": "Meaning",
+      "bbox": [
+        333.69,
+        499.0,
+        374.18,
+        510.12
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0042",
+      "text": "0",
+      "bbox": [
+        207.24,
+        518.98,
+        212.78,
+        530.1
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0043",
+      "text": "Counter value, byte 0 (MSB)",
+      "bbox": [
+        250.62,
+        518.98,
+        376.66,
+        530.1
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0044",
+      "text": "1",
+      "bbox": [
+        207.24,
+        536.98,
+        212.78,
+        548.1
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0045",
+      "text": "Counter value, byte 1",
+      "bbox": [
+        250.62,
+        536.98,
+        345.52,
+        548.1
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0046",
+      "text": "2",
+      "bbox": [
+        207.24,
+        554.98,
+        212.78,
+        566.1
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0047",
+      "text": "Counter value, byte 2",
+      "bbox": [
+        250.62,
+        554.98,
+        345.52,
+        566.1
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0048",
+      "text": "3",
+      "bbox": [
+        207.24,
+        572.98,
+        212.78,
+        584.1
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0049",
+      "text": "Counter value, byte 3",
+      "bbox": [
+        250.62,
+        572.98,
+        345.52,
+        584.1
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0050",
+      "text": "4",
+      "bbox": [
+        207.24,
+        590.98,
+        212.78,
+        602.1
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0051",
+      "text": "Counter value, byte 4",
+      "bbox": [
+        250.62,
+        590.98,
+        345.52,
+        602.1
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0052",
+      "text": "5",
+      "bbox": [
+        207.24,
+        608.98,
+        212.78,
+        620.1
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0053",
+      "text": "Counter value, byte 5",
+      "bbox": [
+        250.62,
+        608.98,
+        345.52,
+        620.1
+      ],
+      "block_index": 26,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0054",
+      "text": "6",
+      "bbox": [
+        207.24,
+        626.98,
+        212.78,
+        638.1
+      ],
+      "block_index": 27,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0055",
+      "text": "Counter value, byte 6",
+      "bbox": [
+        250.62,
+        626.98,
+        345.52,
+        638.1
+      ],
+      "block_index": 27,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0056",
+      "text": "7",
+      "bbox": [
+        207.24,
+        644.98,
+        212.78,
+        656.1
+      ],
+      "block_index": 28,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p117_s0057",
+      "text": "Counter value, byte 7 (LSB)",
+      "bbox": [
+        250.62,
+        644.98,
+        373.89,
+        656.1
+      ],
+      "block_index": 28,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0103",
+    "table_0104"
+  ]
+}

@@ -1,0 +1,804 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 126,
+  "spans": [
+    {
+      "span_id": "p126_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0002",
+      "text": " 107",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0003",
+      "text": "rent Bit Error Rate reporting parameters being enforced.  If no Bit Error Rate reporting is being",
+      "bbox": [
+        122.4,
+        57.65,
+        539.91,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0004",
+      "text": "enforced, words 2 and 3 shall be set to zero.",
+      "bbox": [
+        122.4,
+        69.65,
+        319.04,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0005",
+      "text": "4.2.41",
+      "bbox": [
+        96.0,
+        94.97,
+        123.78,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0006",
+      "text": "Report Port Speed Capabilities (RPSC)",
+      "bbox": [
+        133.84,
+        94.97,
+        317.59,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0007",
+      "text": "4.2.41.1  Description",
+      "bbox": [
+        96.0,
+        118.97,
+        192.63,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0008",
+      "text": "The RPSC ELS shall provide a method for a Port to report its current and potential link operating",
+      "bbox": [
+        96.0,
+        142.96,
+        539.96,
+        154.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0009",
+      "text": "speeds.  The normal response to an RPSC ELS Sequence shall be a LS_ACC ELS Sequence.  If the",
+      "bbox": [
+        96.0,
+        154.96,
+        539.94,
+        166.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0010",
+      "text": "recipient Port does not support the RPSC ELS, it shall reply with an LS_RJT ELS Sequence with a",
+      "bbox": [
+        96.0,
+        166.96,
+        539.89,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0011",
+      "text": "reason code of \"Command not supported\".",
+      "bbox": [
+        96.0,
+        178.96,
+        284.77,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0012",
+      "text": "4.2.41.2  Protocol",
+      "bbox": [
+        96.0,
+        202.96,
+        178.22,
+        214.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0013",
+      "text": "a) RPSC Request Sequence",
+      "bbox": [
+        106.02,
+        226.96,
+        237.88,
+        238.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0014",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence",
+      "bbox": [
+        106.02,
+        250.96,
+        287.89,
+        262.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0015",
+      "text": "4.2.41.3  Request Sequence",
+      "bbox": [
+        96.0,
+        274.96,
+        227.06,
+        286.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0016",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        298.96,
+        157.1,
+        310.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0017",
+      "text": "The S_ID designates the source port that is requesting port speeds.  The D_ID field",
+      "bbox": [
+        157.08,
+        298.96,
+        539.97,
+        310.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p126_s0018",
+      "text": "designates the recipient that is to process the RPSC request.  If the recipient is a Domain Controller,",
+      "bbox": [
+        96.0,
+        310.96,
+        540.12,
+        322.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0019",
+      "text": "the request is for all the ports within that domain.",
+      "bbox": [
+        96.0,
+        322.96,
+        310.96,
+        334.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0020",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        346.96,
+        140.41,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0021",
+      "text": "The format of the RPSC Payload is shown in table 112.",
+      "bbox": [
+        140.4,
+        346.96,
+        384.85,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p126_s0022",
+      "text": "4.2.41.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        454.96,
+        214.86,
+        466.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0023",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        478.96,
+        138.19,
+        490.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0024",
+      "text": "LS_RJT signifies the rejection of the RPSC Request",
+      "bbox": [
+        138.18,
+        478.96,
+        368.69,
+        490.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p126_s0025",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        502.96,
+        142.05,
+        514.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0026",
+      "text": "LS_ACC signifies acceptance of the RPSC Request and its Accept Payload.  The format",
+      "bbox": [
+        142.08,
+        502.96,
+        539.97,
+        514.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p126_s0027",
+      "text": "of the LS_ACC Payload is shown in table 113.",
+      "bbox": [
+        96.0,
+        514.96,
+        300.41,
+        526.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0028",
+      "text": " Table 112 – RPSC Payload",
+      "bbox": [
+        253.86,
+        368.98,
+        382.14,
+        380.1
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0029",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        391.0,
+        133.06,
+        402.12
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0030",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        403.0,
+        136.34,
+        414.12
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0031",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        391.0,
+        233.97,
+        402.12
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0032",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        391.0,
+        328.41,
+        402.12
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0033",
+      "text": "15         ..       08",
+      "bbox": [
+        354.79,
+        391.0,
+        427.0,
+        402.12
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0034",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        391.0,
+        522.83,
+        402.12
+      ],
+      "block_index": 17,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0035",
+      "text": "0",
+      "bbox": [
+        120.84,
+        419.98,
+        126.38,
+        431.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0036",
+      "text": "RPSC (7Dh)",
+      "bbox": [
+        149.88,
+        419.98,
+        205.4,
+        431.1
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0037",
+      "text": "00h",
+      "bbox": [
+        247.08,
+        419.98,
+        263.72,
+        431.1
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0038",
+      "text": "00h",
+      "bbox": [
+        344.28,
+        419.98,
+        360.97,
+        431.1
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0039",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        419.98,
+        458.16,
+        431.1
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0040",
+      "text": " Table 113 – RPSC LS_ACC Payload",
+      "bbox": [
+        232.44,
+        560.98,
+        403.51,
+        572.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0041",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        583.0,
+        133.06,
+        594.12
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0042",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        595.0,
+        136.35,
+        606.11
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0043",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        583.0,
+        233.97,
+        594.12
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0044",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        583.0,
+        328.41,
+        594.12
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0045",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        583.0,
+        427.0,
+        594.12
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0046",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        583.0,
+        522.83,
+        594.12
+      ],
+      "block_index": 20,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0047",
+      "text": "0",
+      "bbox": [
+        120.84,
+        611.98,
+        126.38,
+        623.09
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0048",
+      "text": "02h",
+      "bbox": [
+        149.88,
+        611.98,
+        166.51,
+        623.09
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0049",
+      "text": "Reserved",
+      "bbox": [
+        247.07,
+        611.98,
+        289.81,
+        623.09
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0050",
+      "text": "Number of entries",
+      "bbox": [
+        344.27,
+        611.98,
+        423.69,
+        623.09
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0051",
+      "text": "1",
+      "bbox": [
+        120.84,
+        628.96,
+        126.38,
+        640.07
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0052",
+      "text": "Port Speed Capabilities (Port 1)",
+      "bbox": [
+        149.88,
+        628.96,
+        290.38,
+        640.07
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0053",
+      "text": "Port Operating Speed (Port 1)",
+      "bbox": [
+        344.28,
+        628.96,
+        477.08,
+        640.07
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0054",
+      "text": "2",
+      "bbox": [
+        120.84,
+        646.0,
+        126.38,
+        657.11
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0055",
+      "text": "Port Speed Capabilities (Port 2)",
+      "bbox": [
+        149.88,
+        646.0,
+        290.39,
+        657.11
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0056",
+      "text": "Port Operating Speed (Port 2)",
+      "bbox": [
+        344.28,
+        646.0,
+        477.08,
+        657.11
+      ],
+      "block_index": 23,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0057",
+      "text": "..",
+      "bbox": [
+        120.84,
+        664.0,
+        126.37,
+        675.11
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0058",
+      "text": "...",
+      "bbox": [
+        338.16,
+        665.02,
+        346.46,
+        676.13
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0059",
+      "text": "n",
+      "bbox": [
+        120.54,
+        682.0,
+        126.63,
+        693.11
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0060",
+      "text": "Port Speed Capabilities (Port n)",
+      "bbox": [
+        149.88,
+        682.0,
+        290.39,
+        693.11
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p126_s0061",
+      "text": "Port Operating Speed (Port n)",
+      "bbox": [
+        344.28,
+        682.0,
+        477.08,
+        693.11
+      ],
+      "block_index": 25,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0116",
+    "table_0117"
+  ]
+}

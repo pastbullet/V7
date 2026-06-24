@@ -1,0 +1,647 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 182,
+  "spans": [
+    {
+      "span_id": "p182_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0002",
+      "text": " 163",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0003",
+      "text": "6.6.5.4.5  Priority/Preemption",
+      "bbox": [
+        96.0,
+        57.65,
+        233.13,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0004",
+      "text": "0 = Priority/Preemption is not supported",
+      "bbox": [
+        96.0,
+        82.97,
+        271.86,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0005",
+      "text": "1 = Priority/Preemption is supported",
+      "bbox": [
+        96.0,
+        94.97,
+        255.18,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0006",
+      "text": "The Priority/Preemption bit (word 0, bit 23) has meaning in Class 1, 2, 3, and 6.",
+      "bbox": [
+        96.0,
+        118.97,
+        445.85,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0007",
+      "text": "When an Nx_Port performs Login with a Fabric, it shall request support for Priority and Preemption",
+      "bbox": [
+        96.0,
+        142.96,
+        539.86,
+        154.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0008",
+      "text": "by setting the Priority and Preemption bit (word 0, bit 23) to one.  If is set to one in the LS_ACC, then",
+      "bbox": [
+        96.0,
+        154.96,
+        539.9,
+        166.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0009",
+      "text": "both the Nx_Port and Fabric have agreed that Priority and Preemption are available for use.",
+      "bbox": [
+        96.0,
+        166.96,
+        501.58,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0010",
+      "text": "The set of values specified in table 162 give the meaning of the combination of the Priority and Pre-",
+      "bbox": [
+        96.0,
+        190.96,
+        540.1,
+        202.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0011",
+      "text": "emption bit.",
+      "bbox": [
+        96.0,
+        202.96,
+        147.66,
+        214.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0012",
+      "text": "6.6.5.4.6  Preference",
+      "bbox": [
+        96.0,
+        374.98,
+        192.03,
+        386.1
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0013",
+      "text": "6.6.5.4.6.1  Nx_Port",
+      "bbox": [
+        96.0,
+        394.96,
+        187.09,
+        406.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0014",
+      "text": "0 = non-zero CS_CTL may be tolerated",
+      "bbox": [
+        96.0,
+        418.96,
+        270.68,
+        430.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0015",
+      "text": "1 = non-zero CS_CTL shall be tolerated",
+      "bbox": [
+        96.0,
+        430.96,
+        272.32,
+        442.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0016",
+      "text": "When an Nx_Port performs Login with another Nx_Port, it shall indicate tolerance for non-zero",
+      "bbox": [
+        96.0,
+        454.96,
+        539.91,
+        466.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0017",
+      "text": "CS_CTL within the Class of Service by setting the Preference bit (word 0, bit 22) to one.  The other",
+      "bbox": [
+        96.0,
+        466.96,
+        540.03,
+        478.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0018",
+      "text": "Nx_Port indicates tolerance for non-zero CS_CTL by setting this bit to one in the LS_ACC.  An",
+      "bbox": [
+        96.0,
+        478.96,
+        539.98,
+        490.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0019",
+      "text": "Nx_Port that tolerates a non-zero CS_CTL shall not reject or otherwise deprecate a frame solely be-",
+      "bbox": [
+        96.0,
+        490.96,
+        540.08,
+        502.08
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0020",
+      "text": "cause the CS_CTL field is non-zero.",
+      "bbox": [
+        96.0,
+        502.96,
+        256.51,
+        514.08
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0021",
+      "text": "NOTE 16 – Even if an Nx_Port never intends to set the PREF bit to any value other than zero, the Nx_Port",
+      "bbox": [
+        105.0,
+        527.17,
+        539.91,
+        537.22
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0022",
+      "text": "may still have reason to set the login Preference bit to one.  Setting the bit to one indicates to the other",
+      "bbox": [
+        105.0,
+        538.22,
+        540.03,
+        548.26
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0023",
+      "text": "Nx_Port that the Nx_Port shall accept frames with a non-zero CS_CTL field value.",
+      "bbox": [
+        105.0,
+        549.2,
+        431.12,
+        559.24
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0024",
+      "text": "In Class 2 and 3, if this bit is set to one, the Nx_Port shall tolerate the PREF field in the CS_CTL field",
+      "bbox": [
+        96.0,
+        574.97,
+        539.97,
+        586.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0025",
+      "text": "of the Frame_Header.  Tolerance for CS_CTL as a Sequence Initiator means that the PREF field",
+      "bbox": [
+        96.0,
+        586.97,
+        539.98,
+        598.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0026",
+      "text": "may specify Preference to the Fabric.  Tolerance for CS_CTL as a Sequence Recipient means that",
+      "bbox": [
+        96.0,
+        598.97,
+        539.98,
+        610.08
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0027",
+      "text": "the Nx_Port shall ignore the PREF field (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        610.97,
+        339.26,
+        622.08
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0028",
+      "text": "This Preference Bit has no meaning in Class 1, and Class 6.",
+      "bbox": [
+        96.0,
+        635.03,
+        362.59,
+        646.14
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0029",
+      "text": "6.6.5.4.6.2  Fx_Port",
+      "bbox": [
+        96.0,
+        659.03,
+        185.96,
+        670.14
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0030",
+      "text": "0 = Normal delivery",
+      "bbox": [
+        96.0,
+        683.03,
+        182.33,
+        694.14
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0031",
+      "text": "1 = Preferred delivery functional",
+      "bbox": [
+        96.0,
+        695.02,
+        237.35,
+        706.14
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0032",
+      "text": " Table 162 – Fabric Login Priority and Preemption Support",
+      "bbox": [
+        179.7,
+        224.98,
+        456.26,
+        236.1
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0033",
+      "text": "Nx_Port",
+      "bbox": [
+        106.92,
+        247.0,
+        145.27,
+        258.12
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0034",
+      "text": "Fx_Port",
+      "bbox": [
+        171.47,
+        247.0,
+        208.63,
+        258.12
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0035",
+      "text": "Meaning",
+      "bbox": [
+        361.68,
+        247.0,
+        402.24,
+        258.12
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0036",
+      "text": "0",
+      "bbox": [
+        96.12,
+        263.98,
+        101.66,
+        275.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0037",
+      "text": "0",
+      "bbox": [
+        160.08,
+        263.98,
+        165.62,
+        275.1
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0038",
+      "text": "Neither supports Priority and Preemption",
+      "bbox": [
+        224.04,
+        263.98,
+        404.5,
+        275.1
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0039",
+      "text": "0",
+      "bbox": [
+        96.12,
+        280.96,
+        101.66,
+        292.08
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0040",
+      "text": "1",
+      "bbox": [
+        160.08,
+        280.96,
+        165.62,
+        292.08
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0041",
+      "text": "Fabric is capable of supporting Priority and Preemption",
+      "bbox": [
+        224.04,
+        280.96,
+        467.4,
+        292.08
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0042",
+      "text": "1",
+      "bbox": [
+        96.12,
+        304.0,
+        101.66,
+        315.12
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0043",
+      "text": "0",
+      "bbox": [
+        160.08,
+        304.0,
+        165.62,
+        315.12
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0044",
+      "text": "Nx_Port support requested, Fabric does not support Priority and ",
+      "bbox": [
+        224.04,
+        298.0,
+        510.1,
+        309.12
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0045",
+      "text": "Preemption",
+      "bbox": [
+        224.04,
+        310.0,
+        275.11,
+        321.12
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0046",
+      "text": "1",
+      "bbox": [
+        96.12,
+        332.98,
+        101.66,
+        344.1
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0047",
+      "text": "1",
+      "bbox": [
+        160.08,
+        332.98,
+        165.62,
+        344.1
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0048",
+      "text": "Nx_Port requested, Fabric is capable of supporting Priority and ",
+      "bbox": [
+        224.04,
+        326.98,
+        505.13,
+        338.1
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p182_s0049",
+      "text": "Preemption, available for use",
+      "bbox": [
+        224.04,
+        338.98,
+        353.46,
+        350.1
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0174"
+  ]
+}

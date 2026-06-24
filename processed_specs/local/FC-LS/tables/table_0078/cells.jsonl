@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 98, "bbox": [99.6, 435.99, 147.9, 464.34]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 98, "bbox": [147.9, 435.99, 245.13, 464.34]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 98, "bbox": [245.13, 435.99, 342.33, 464.34]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08", "page": 98, "bbox": [342.33, 435.99, 439.53, 464.34]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00", "page": 98, "bbox": [439.53, 435.99, 536.4, 464.34]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 98, "bbox": [99.6, 464.34, 147.9, 481.52]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "LIRR (7Ah)", "page": 98, "bbox": [147.9, 464.34, 245.13, 481.52]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "00h", "page": 98, "bbox": [245.13, 464.34, 342.33, 481.52]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "00h", "page": 98, "bbox": [342.33, 464.34, 439.53, 481.52]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "00h", "page": 98, "bbox": [439.53, 464.34, 536.4, 481.52]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 98, "bbox": [99.6, 481.52, 147.9, 509.84]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Registration Function", "page": 98, "bbox": [147.9, 481.52, 245.13, 509.84]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "Link Incident Record-\nRegistration Format", "page": 98, "bbox": [245.13, 481.52, 342.33, 509.84]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "Reserved", "page": 98, "bbox": [342.33, 481.52, 536.4, 509.84]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "", "page": 98, "bbox": [0.0, 0.0, 0.0, 0.0]}

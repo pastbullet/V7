@@ -1,0 +1,39 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "02h",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "MSB ECHO data\n(up to max frame length - 4,\nany byte boundary)\nExcludes word 0 of ECHO Payload. LSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "n",
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

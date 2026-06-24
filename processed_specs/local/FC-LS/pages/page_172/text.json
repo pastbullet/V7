@@ -1,0 +1,528 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 172,
+  "spans": [
+    {
+      "span_id": "p172_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0002",
+      "text": " 153",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0003",
+      "text": "6.6.2.4.7  Multiple N_Port_ID Assignment",
+      "bbox": [
+        96.0,
+        57.65,
+        289.27,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0004",
+      "text": "0 = not supported",
+      "bbox": [
+        96.0,
+        82.97,
+        174.01,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0005",
+      "text": "1 = supported",
+      "bbox": [
+        96.0,
+        94.97,
+        157.4,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0006",
+      "text": "When the Multiple N_Port_ID Support bit (word 1, bit 31) in the FLOGI request is one, the Multiple",
+      "bbox": [
+        96.0,
+        118.97,
+        539.96,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0007",
+      "text": "N_Port_ID Assignment bit (word 1, bit 29) shall be set to one if the F_Port supplying this parameter is",
+      "bbox": [
+        96.0,
+        130.97,
+        540.03,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0008",
+      "text": "capable of assigning multiple N_Port IDs to the attached N_Port using the FDISC ELS. The Multiple",
+      "bbox": [
+        96.0,
+        142.96,
+        539.98,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0009",
+      "text": "N_Port_ID Assignment bit shall be set to zero when the Multiple N_Port_ID Support bit in the FLOGI",
+      "bbox": [
+        96.0,
+        154.96,
+        540.06,
+        166.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0010",
+      "text": "request is zero or to indicate that the F_Port is not capable of assigning multiple N_Port IDs to the at-",
+      "bbox": [
+        96.0,
+        166.96,
+        539.99,
+        178.08
+      ],
+      "block_index": 5,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0011",
+      "text": "tached N_Port when the Multiple N_Port ID Support bit in the FLOGI request is one. This bit is only",
+      "bbox": [
+        96.0,
+        178.96,
+        540.04,
+        190.08
+      ],
+      "block_index": 5,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0012",
+      "text": "meaningful in the FLOGI LS_ACC, it is not meaningful in the FLOGI request.",
+      "bbox": [
+        96.0,
+        190.96,
+        434.23,
+        202.08
+      ],
+      "block_index": 5,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0013",
+      "text": "NOTE 14 – The definition above has been modified from previous revisions of the standard.",
+      "bbox": [
+        105.0,
+        215.17,
+        469.14,
+        225.22
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0014",
+      "text": "6.6.2.4.8  N_Port/F_Port",
+      "bbox": [
+        96.0,
+        238.97,
+        207.61,
+        250.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0015",
+      "text": "0 = Nx_Port",
+      "bbox": [
+        96.0,
+        262.97,
+        149.05,
+        274.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0016",
+      "text": "1 = Fx_Port",
+      "bbox": [
+        96.0,
+        274.97,
+        147.91,
+        286.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0017",
+      "text": "An Nx_Port shall set tThe N_Port/F_Port bit (word 1, bit 28) to zero for PLOGI, PLOGI LS_ACC and",
+      "bbox": [
+        96.0,
+        298.97,
+        540.01,
+        310.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0018",
+      "text": "FLOGI. If an Nx_Port is connected in a Fabric topology, the Fx_Port shall set the N_Port/F_Port bit to",
+      "bbox": [
+        96.0,
+        310.97,
+        539.93,
+        322.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0019",
+      "text": "one in the FLOGI LS_ACC. If an Nx_Port is connected in a point-to-point topology, the N_Port shall",
+      "bbox": [
+        96.0,
+        322.96,
+        540.03,
+        334.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0020",
+      "text": "set the N_Port/F_Port bit to zero in the FLOGI LS_ACC.",
+      "bbox": [
+        96.0,
+        334.96,
+        343.68,
+        346.08
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0021",
+      "text": "6.6.2.4.9  BB_Credit Management",
+      "bbox": [
+        96.0,
+        358.96,
+        253.11,
+        370.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0022",
+      "text": "0 = BB_Credit management specified in FC-FS-2",
+      "bbox": [
+        96.0,
+        382.96,
+        313.46,
+        394.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0023",
+      "text": "shall be used.",
+      "bbox": [
+        316.26,
+        382.96,
+        377.88,
+        394.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p172_s0024",
+      "text": "1 = Alternate BB_Credit management specified in FC-AL-2 shall be used.",
+      "bbox": [
+        96.0,
+        394.96,
+        420.19,
+        406.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0025",
+      "text": "The BB_Credit Management bit (word 1, bit 27) specifies the type of BB_Credit Management to be",
+      "bbox": [
+        96.0,
+        418.96,
+        539.86,
+        430.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0026",
+      "text": "used.",
+      "bbox": [
+        96.0,
+        430.96,
+        120.42,
+        442.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0027",
+      "text": "6.6.2.4.10   E_D_TOV Resolution",
+      "bbox": [
+        96.0,
+        454.96,
+        248.72,
+        466.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0028",
+      "text": "0 = 1 millisecond",
+      "bbox": [
+        96.0,
+        478.96,
+        170.64,
+        490.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0029",
+      "text": "1 = 1 nanosecond",
+      "bbox": [
+        96.0,
+        490.96,
+        175.7,
+        502.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0030",
+      "text": "The E_D_TOV resolution bit (word 1, bit 26) indicates the resolution of the E_D_TOV timer.  If the bit",
+      "bbox": [
+        96.0,
+        514.96,
+        539.93,
+        526.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0031",
+      "text": "is set to zero, the timer shall be in increments of 1 millisecond.  If the bit is set to one, the timer shall",
+      "bbox": [
+        96.0,
+        526.96,
+        540.03,
+        538.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0032",
+      "text": "be in increments of 1 nanosecond. See FC-FS-2 for the definition of E_D_TOV.",
+      "bbox": [
+        96.0,
+        538.96,
+        446.53,
+        550.08
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0033",
+      "text": "6.6.2.4.11  Multicast",
+      "bbox": [
+        96.0,
+        562.96,
+        189.33,
+        574.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0034",
+      "text": "0 = Multicast not supported by the Fabric",
+      "bbox": [
+        96.0,
+        586.96,
+        276.75,
+        598.08
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0035",
+      "text": "1 = Multicast supported by the Fabric",
+      "bbox": [
+        96.0,
+        598.96,
+        260.13,
+        610.08
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0036",
+      "text": "The Multicast bit (word 1, bit 25) indicates whether multicast is supported by the Fabric or not.  It is",
+      "bbox": [
+        96.0,
+        622.96,
+        539.98,
+        634.08
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0037",
+      "text": "only meaningful in the FLOGI LS_ACC.  For multicast requirements see FC-FS-2.",
+      "bbox": [
+        96.0,
+        635.02,
+        456.98,
+        646.13
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0038",
+      "text": "6.6.2.4.12  Broadcast",
+      "bbox": [
+        96.0,
+        659.02,
+        194.9,
+        670.13
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0039",
+      "text": "0 = Broadcast not supported by the Fabric",
+      "bbox": [
+        96.0,
+        683.02,
+        282.39,
+        694.13
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p172_s0040",
+      "text": "1 = Broadcast supported by the Fabric",
+      "bbox": [
+        96.0,
+        695.02,
+        265.68,
+        706.13
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

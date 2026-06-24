@@ -1,0 +1,1295 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 9,
+  "spans": [
+    {
+      "span_id": "p009_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0002",
+      "text": " ix",
+      "bbox": [
+        523.02,
+        723.59,
+        532.98,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0003",
+      "text": "Task Group T11.3 on Fibre Channel Protocols, which developed and reviewed this standard, had the",
+      "bbox": [
+        96.0,
+        57.65,
+        539.99,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0004",
+      "text": "following members:",
+      "bbox": [
+        96.0,
+        69.65,
+        182.01,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0005",
+      "text": "Craig W. Carlson, Chair",
+      "bbox": [
+        96.0,
+        94.97,
+        201.48,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0006",
+      "text": "William Martin, Vice-Chair",
+      "bbox": [
+        96.0,
+        106.97,
+        210.91,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0007",
+      "text": "Bob Nixon, Secretary",
+      "bbox": [
+        96.0,
+        118.97,
+        190.31,
+        130.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0008",
+      "text": "Company",
+      "bbox": [
+        108.0,
+        142.96,
+        150.73,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0009",
+      "text": "Name",
+      "bbox": [
+        228.01,
+        142.96,
+        254.65,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0010",
+      "text": "Avago",
+      "bbox": [
+        108.0,
+        166.96,
+        136.3,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0011",
+      "text": "Randy Clark",
+      "bbox": [
+        228.02,
+        166.96,
+        283.0,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0012",
+      "text": "Broadcom",
+      "bbox": [
+        108.0,
+        178.96,
+        153.44,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0013",
+      "text": "Ali Ghiasi",
+      "bbox": [
+        227.95,
+        178.96,
+        270.15,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0014",
+      "text": "Broadcom",
+      "bbox": [
+        108.0,
+        190.96,
+        153.49,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0015",
+      "text": "Scott Powell",
+      "bbox": [
+        227.99,
+        190.96,
+        282.92,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0016",
+      "text": "Brocade",
+      "bbox": [
+        108.0,
+        202.96,
+        145.2,
+        214.08
+      ],
+      "block_index": 6,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0017",
+      "text": "Steven L. Wilson",
+      "bbox": [
+        227.98,
+        202.96,
+        302.97,
+        214.08
+      ],
+      "block_index": 6,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0018",
+      "text": "Brocade",
+      "bbox": [
+        108.0,
+        214.96,
+        145.18,
+        226.08
+      ],
+      "block_index": 6,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0019",
+      "text": "Robert Snively",
+      "bbox": [
+        227.96,
+        214.96,
+        292.96,
+        226.08
+      ],
+      "block_index": 6,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0020",
+      "text": "CIENA",
+      "bbox": [
+        108.0,
+        226.96,
+        138.55,
+        238.08
+      ],
+      "block_index": 6,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0021",
+      "text": "Sashi Thiagarajan",
+      "bbox": [
+        228.03,
+        226.96,
+        308.5,
+        238.08
+      ],
+      "block_index": 6,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0022",
+      "text": "CIENA",
+      "bbox": [
+        108.0,
+        238.96,
+        138.53,
+        250.08
+      ],
+      "block_index": 6,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0023",
+      "text": "Chris Janz",
+      "bbox": [
+        228.0,
+        238.96,
+        275.12,
+        250.08
+      ],
+      "block_index": 6,
+      "line_index": 14,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0024",
+      "text": "Cisco Systems",
+      "bbox": [
+        108.0,
+        250.96,
+        174.08,
+        262.08
+      ],
+      "block_index": 6,
+      "line_index": 15,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0025",
+      "text": "Claudio DeSanti",
+      "bbox": [
+        228.02,
+        250.96,
+        300.17,
+        262.08
+      ],
+      "block_index": 6,
+      "line_index": 16,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0026",
+      "text": "Cisco Systems",
+      "bbox": [
+        108.0,
+        262.96,
+        174.08,
+        274.08
+      ],
+      "block_index": 6,
+      "line_index": 17,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0027",
+      "text": "Fabio Maino",
+      "bbox": [
+        228.02,
+        262.96,
+        282.97,
+        274.08
+      ],
+      "block_index": 6,
+      "line_index": 18,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0028",
+      "text": "Corrigent",
+      "bbox": [
+        108.0,
+        274.96,
+        149.07,
+        286.08
+      ],
+      "block_index": 6,
+      "line_index": 19,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0029",
+      "text": "Moran Roth",
+      "bbox": [
+        228.03,
+        274.96,
+        280.22,
+        286.08
+      ],
+      "block_index": 6,
+      "line_index": 20,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0030",
+      "text": "Corrigent",
+      "bbox": [
+        108.0,
+        286.96,
+        149.06,
+        298.08
+      ],
+      "block_index": 6,
+      "line_index": 21,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0031",
+      "text": "Luis Aguirre-Torres",
+      "bbox": [
+        228.01,
+        286.96,
+        313.49,
+        298.08
+      ],
+      "block_index": 6,
+      "line_index": 22,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0032",
+      "text": "EMC",
+      "bbox": [
+        108.0,
+        298.96,
+        130.17,
+        310.08
+      ],
+      "block_index": 6,
+      "line_index": 23,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0033",
+      "text": "Gary S. Robinson",
+      "bbox": [
+        227.97,
+        298.96,
+        306.83,
+        310.08
+      ],
+      "block_index": 6,
+      "line_index": 24,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0034",
+      "text": "EMC",
+      "bbox": [
+        108.0,
+        310.96,
+        130.17,
+        322.08
+      ],
+      "block_index": 6,
+      "line_index": 25,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0035",
+      "text": "David Black",
+      "bbox": [
+        227.98,
+        310.96,
+        280.71,
+        322.08
+      ],
+      "block_index": 6,
+      "line_index": 26,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0036",
+      "text": "Emulex",
+      "bbox": [
+        108.0,
+        322.96,
+        141.29,
+        334.08
+      ],
+      "block_index": 6,
+      "line_index": 27,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0037",
+      "text": "Bob Nixon",
+      "bbox": [
+        227.99,
+        322.96,
+        274.1,
+        334.08
+      ],
+      "block_index": 6,
+      "line_index": 28,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0038",
+      "text": "Emulex",
+      "bbox": [
+        108.0,
+        334.96,
+        141.27,
+        346.08
+      ],
+      "block_index": 6,
+      "line_index": 29,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0039",
+      "text": "Ken Hirata",
+      "bbox": [
+        227.97,
+        334.96,
+        275.17,
+        346.08
+      ],
+      "block_index": 6,
+      "line_index": 30,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0040",
+      "text": "ENDL",
+      "bbox": [
+        108.0,
+        346.96,
+        134.61,
+        358.08
+      ],
+      "block_index": 6,
+      "line_index": 31,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0041",
+      "text": "Ralph Weber",
+      "bbox": [
+        228.01,
+        346.96,
+        286.28,
+        358.08
+      ],
+      "block_index": 6,
+      "line_index": 32,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0042",
+      "text": "ENDL",
+      "bbox": [
+        108.0,
+        358.96,
+        134.6,
+        370.08
+      ],
+      "block_index": 6,
+      "line_index": 33,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0043",
+      "text": "Dal Allan",
+      "bbox": [
+        228.01,
+        358.96,
+        267.95,
+        370.08
+      ],
+      "block_index": 6,
+      "line_index": 34,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0044",
+      "text": "Finisar",
+      "bbox": [
+        108.0,
+        370.96,
+        137.95,
+        382.08
+      ],
+      "block_index": 6,
+      "line_index": 35,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0045",
+      "text": "Mike Lawson",
+      "bbox": [
+        227.99,
+        370.96,
+        286.25,
+        382.08
+      ],
+      "block_index": 6,
+      "line_index": 36,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0046",
+      "text": "Finisar",
+      "bbox": [
+        108.0,
+        382.96,
+        137.98,
+        394.08
+      ],
+      "block_index": 6,
+      "line_index": 37,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0047",
+      "text": "Henry Poelstra",
+      "bbox": [
+        228.02,
+        382.96,
+        294.1,
+        394.08
+      ],
+      "block_index": 6,
+      "line_index": 38,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0048",
+      "text": "FSI",
+      "bbox": [
+        108.0,
+        394.96,
+        123.55,
+        406.08
+      ],
+      "block_index": 6,
+      "line_index": 39,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0049",
+      "text": "Gary Stephens",
+      "bbox": [
+        228.0,
+        394.96,
+        294.67,
+        406.08
+      ],
+      "block_index": 6,
+      "line_index": 40,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0050",
+      "text": "Fujitsu",
+      "bbox": [
+        108.0,
+        406.96,
+        137.45,
+        418.08
+      ],
+      "block_index": 6,
+      "line_index": 41,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0051",
+      "text": "Mike Fitzpatrick",
+      "bbox": [
+        228.03,
+        406.96,
+        297.4,
+        418.08
+      ],
+      "block_index": 6,
+      "line_index": 42,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0052",
+      "text": "HGST",
+      "bbox": [
+        108.0,
+        418.96,
+        135.71,
+        430.08
+      ],
+      "block_index": 6,
+      "line_index": 43,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0053",
+      "text": "Dan Colegrove",
+      "bbox": [
+        227.96,
+        418.96,
+        294.58,
+        430.08
+      ],
+      "block_index": 6,
+      "line_index": 44,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0054",
+      "text": "HGST",
+      "bbox": [
+        108.0,
+        430.96,
+        135.72,
+        442.08
+      ],
+      "block_index": 6,
+      "line_index": 45,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0055",
+      "text": "Sally Castillo",
+      "bbox": [
+        227.97,
+        430.96,
+        285.16,
+        442.08
+      ],
+      "block_index": 6,
+      "line_index": 46,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0056",
+      "text": "Hitachi America",
+      "bbox": [
+        108.0,
+        442.96,
+        177.94,
+        454.08
+      ],
+      "block_index": 6,
+      "line_index": 47,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0057",
+      "text": "Hidehisa Shitomi",
+      "bbox": [
+        228.02,
+        442.96,
+        302.97,
+        454.08
+      ],
+      "block_index": 6,
+      "line_index": 48,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0058",
+      "text": "Hitachi America",
+      "bbox": [
+        108.0,
+        454.96,
+        177.91,
+        466.08
+      ],
+      "block_index": 6,
+      "line_index": 49,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0059",
+      "text": "Nobuyuki Osaki",
+      "bbox": [
+        227.99,
+        454.96,
+        297.94,
+        466.08
+      ],
+      "block_index": 6,
+      "line_index": 50,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0060",
+      "text": "Hitachi DS",
+      "bbox": [
+        108.0,
+        466.96,
+        155.13,
+        478.08
+      ],
+      "block_index": 6,
+      "line_index": 51,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0061",
+      "text": "Eric Hibbard",
+      "bbox": [
+        227.99,
+        466.96,
+        282.94,
+        478.08
+      ],
+      "block_index": 6,
+      "line_index": 52,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0062",
+      "text": "HP",
+      "bbox": [
+        108.0,
+        478.96,
+        121.85,
+        490.08
+      ],
+      "block_index": 6,
+      "line_index": 53,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0063",
+      "text": "Don Fraser",
+      "bbox": [
+        228.0,
+        478.96,
+        277.98,
+        490.08
+      ],
+      "block_index": 6,
+      "line_index": 54,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0064",
+      "text": "HP",
+      "bbox": [
+        108.0,
+        490.96,
+        121.84,
+        502.08
+      ],
+      "block_index": 6,
+      "line_index": 55,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0065",
+      "text": "Bill Ham",
+      "bbox": [
+        228.0,
+        490.96,
+        265.14,
+        502.08
+      ],
+      "block_index": 6,
+      "line_index": 56,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0066",
+      "text": "IBM",
+      "bbox": [
+        108.0,
+        502.96,
+        125.72,
+        514.07
+      ],
+      "block_index": 6,
+      "line_index": 57,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0067",
+      "text": "Scott Carlson",
+      "bbox": [
+        228.01,
+        502.96,
+        287.92,
+        514.07
+      ],
+      "block_index": 6,
+      "line_index": 58,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0068",
+      "text": "IBM",
+      "bbox": [
+        108.0,
+        514.96,
+        125.74,
+        526.07
+      ],
+      "block_index": 6,
+      "line_index": 59,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0069",
+      "text": "Roger Hathorn",
+      "bbox": [
+        228.03,
+        514.96,
+        293.51,
+        526.07
+      ],
+      "block_index": 6,
+      "line_index": 60,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0070",
+      "text": "Intel",
+      "bbox": [
+        108.0,
+        526.96,
+        126.94,
+        538.07
+      ],
+      "block_index": 6,
+      "line_index": 61,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0071",
+      "text": "Schelto Van Doorn",
+      "bbox": [
+        228.04,
+        526.96,
+        311.88,
+        538.07
+      ],
+      "block_index": 6,
+      "line_index": 62,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0072",
+      "text": "Intel",
+      "bbox": [
+        108.0,
+        538.96,
+        126.88,
+        550.07
+      ],
+      "block_index": 6,
+      "line_index": 63,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0073",
+      "text": "Ramamurthy Krithivas",
+      "bbox": [
+        227.99,
+        538.96,
+        326.26,
+        550.07
+      ],
+      "block_index": 6,
+      "line_index": 64,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0074",
+      "text": "LSI Logic",
+      "bbox": [
+        108.0,
+        550.96,
+        149.67,
+        562.07
+      ],
+      "block_index": 6,
+      "line_index": 65,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0075",
+      "text": "Curtis Ridgeway",
+      "bbox": [
+        228.03,
+        550.96,
+        300.72,
+        562.07
+      ],
+      "block_index": 6,
+      "line_index": 66,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0076",
+      "text": "LSI Logic",
+      "bbox": [
+        108.0,
+        562.96,
+        149.63,
+        574.07
+      ],
+      "block_index": 6,
+      "line_index": 67,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0077",
+      "text": "Michael Jenkins",
+      "bbox": [
+        227.99,
+        562.96,
+        299.08,
+        574.07
+      ],
+      "block_index": 6,
+      "line_index": 68,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0078",
+      "text": "Lucent",
+      "bbox": [
+        108.0,
+        574.96,
+        138.0,
+        586.07
+      ],
+      "block_index": 6,
+      "line_index": 69,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0079",
+      "text": "Richard DiPasquale",
+      "bbox": [
+        227.99,
+        574.96,
+        316.3,
+        586.07
+      ],
+      "block_index": 6,
+      "line_index": 70,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0080",
+      "text": "Marvell",
+      "bbox": [
+        108.0,
+        586.96,
+        140.23,
+        598.07
+      ],
+      "block_index": 6,
+      "line_index": 71,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0081",
+      "text": "Paul Wassenberg",
+      "bbox": [
+        228.01,
+        586.96,
+        306.86,
+        598.07
+      ],
+      "block_index": 6,
+      "line_index": 72,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0082",
+      "text": "Marvell",
+      "bbox": [
+        108.0,
+        598.96,
+        140.23,
+        610.07
+      ],
+      "block_index": 6,
+      "line_index": 73,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0083",
+      "text": "David Geddes",
+      "bbox": [
+        228.01,
+        598.96,
+        291.3,
+        610.07
+      ],
+      "block_index": 6,
+      "line_index": 74,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0084",
+      "text": "McData",
+      "bbox": [
+        108.0,
+        610.96,
+        142.42,
+        622.07
+      ],
+      "block_index": 6,
+      "line_index": 75,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0085",
+      "text": "Scott Kipp",
+      "bbox": [
+        228.02,
+        610.96,
+        273.57,
+        622.07
+      ],
+      "block_index": 6,
+      "line_index": 76,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0086",
+      "text": "McData",
+      "bbox": [
+        108.0,
+        622.96,
+        142.42,
+        634.07
+      ],
+      "block_index": 6,
+      "line_index": 77,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0087",
+      "text": "Larry Hofer",
+      "bbox": [
+        228.02,
+        622.96,
+        277.99,
+        634.07
+      ],
+      "block_index": 6,
+      "line_index": 78,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0088",
+      "text": "Microsoft",
+      "bbox": [
+        108.0,
+        635.02,
+        148.55,
+        646.13
+      ],
+      "block_index": 6,
+      "line_index": 79,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0089",
+      "text": "Robert Griswold",
+      "bbox": [
+        228.04,
+        635.02,
+        299.59,
+        646.13
+      ],
+      "block_index": 6,
+      "line_index": 80,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0090",
+      "text": "Microsoft",
+      "bbox": [
+        108.0,
+        647.02,
+        148.51,
+        658.13
+      ],
+      "block_index": 6,
+      "line_index": 81,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0091",
+      "text": "Jeff Mastro",
+      "bbox": [
+        228.0,
+        647.02,
+        277.39,
+        658.13
+      ],
+      "block_index": 6,
+      "line_index": 82,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0092",
+      "text": "Microsoft",
+      "bbox": [
+        108.0,
+        659.02,
+        148.53,
+        670.13
+      ],
+      "block_index": 6,
+      "line_index": 83,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0093",
+      "text": "Jeffrey Goldner",
+      "bbox": [
+        228.03,
+        659.02,
+        296.29,
+        670.13
+      ],
+      "block_index": 6,
+      "line_index": 84,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0094",
+      "text": "NORTEL",
+      "bbox": [
+        108.0,
+        671.02,
+        148.5,
+        682.13
+      ],
+      "block_index": 6,
+      "line_index": 85,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0095",
+      "text": "Graham Copley",
+      "bbox": [
+        227.98,
+        671.02,
+        297.95,
+        682.13
+      ],
+      "block_index": 6,
+      "line_index": 86,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0096",
+      "text": "Northrop Grumman",
+      "bbox": [
+        108.0,
+        683.02,
+        194.01,
+        694.13
+      ],
+      "block_index": 6,
+      "line_index": 87,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0097",
+      "text": "James Nelson",
+      "bbox": [
+        227.95,
+        683.02,
+        291.31,
+        694.13
+      ],
+      "block_index": 6,
+      "line_index": 88,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0098",
+      "text": "PacketLight",
+      "bbox": [
+        108.0,
+        695.02,
+        160.25,
+        706.13
+      ],
+      "block_index": 6,
+      "line_index": 89,
+      "span_index": 1
+    },
+    {
+      "span_id": "p009_s0099",
+      "text": "Eyal Gabay",
+      "bbox": [
+        228.04,
+        695.02,
+        279.67,
+        706.13
+      ],
+      "block_index": 6,
+      "line_index": 90,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

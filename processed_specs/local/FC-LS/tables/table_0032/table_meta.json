@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0032",
+  "type": "table",
+  "caption": "Table 29 – LINIT LS_ACC Payload",
+  "pages": [
+    61
+  ],
+  "bbox": [
+    99.6,
+    507.99,
+    536.4,
+    570.06
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 61,
+  "logical_table": false
+}

@@ -1,0 +1,123 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "MSB Incident port N_Port_Name\nLSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "1",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "2",
+      "MSB Incident port Node_Name\nLSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "3",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "4",
+      "Incident Port Type",
+      "Incident Port_ID",
+      null,
+      null
+    ],
+    [
+      "5",
+      "MSB Connected port N_Port_Name\nLSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "6",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "7",
+      "MSB Connected port Node_Name\nLSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "8",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "9",
+      "MSB Fabric_Name\nLSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "10",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "11",
+      "Incident Physical Port number",
+      null,
+      null,
+      null
+    ],
+    [
+      "12",
+      "Transaction ID",
+      null,
+      null,
+      null
+    ],
+    [
+      "13",
+      "reserved",
+      null,
+      null,
+      "Time Stamp Format"
+    ],
+    [
+      "14",
+      "MSB Time Stamp\nLSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "15",
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

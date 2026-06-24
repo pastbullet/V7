@@ -1,0 +1,779 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 61,
+  "spans": [
+    {
+      "span_id": "p061_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0002",
+      "text": " 42",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0003",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        57.65,
+        140.41,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0004",
+      "text": "The format of the LINIT Request Payload is shown in table 27.",
+      "bbox": [
+        140.4,
+        57.65,
+        415.93,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p061_s0005",
+      "text": "The Initialization Function",
+      "bbox": [
+        96.0,
+        178.97,
+        209.53,
+        190.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0006",
+      "text": "field defines modifications of the initialization to be performed.  The format",
+      "bbox": [
+        212.34,
+        178.97,
+        540.08,
+        190.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p061_s0007",
+      "text": "of the Initialization Function is shown in table 28",
+      "bbox": [
+        96.0,
+        190.97,
+        307.66,
+        202.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0008",
+      "text": ".",
+      "bbox": [
+        307.68,
+        189.12,
+        311.02,
+        202.51
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p061_s0009",
+      "text": "The LIP Byte 3 field is the 3rd byte of the LIP to be originated.  The LIP Byte 4 field is the 4th byte of",
+      "bbox": [
+        96.0,
+        358.97,
+        540.08,
+        370.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0010",
+      "text": "the LIP Primitive Sequence to be originated.  LIP Byte 3 and LIP Byte 4 should only be set to values",
+      "bbox": [
+        96.0,
+        370.97,
+        540.0,
+        382.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0011",
+      "text": "permitted by FC-AL-2.",
+      "bbox": [
+        96.0,
+        382.97,
+        194.33,
+        394.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0012",
+      "text": "4.2.16.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        406.97,
+        214.86,
+        418.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0013",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        430.97,
+        138.19,
+        442.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0014",
+      "text": "LS_RJT signifies the rejection of the LINIT command",
+      "bbox": [
+        138.18,
+        430.97,
+        372.06,
+        442.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p061_s0015",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        454.96,
+        142.05,
+        466.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0016",
+      "text": "LS_ACC signifies acceptance of the LINIT Request and completion of Loop Initialization.",
+      "bbox": [
+        142.08,
+        454.96,
+        539.96,
+        466.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p061_s0017",
+      "text": "The format of the LS_ACC Payload is shown in table 29.",
+      "bbox": [
+        96.0,
+        466.96,
+        346.06,
+        478.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0018",
+      "text": " Table 27 – LINIT Payload",
+      "bbox": [
+        258.0,
+        79.66,
+        377.95,
+        90.78
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0019",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        101.62,
+        133.06,
+        112.74
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0020",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        113.62,
+        136.35,
+        124.74
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0021",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        101.62,
+        233.97,
+        112.74
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0022",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        101.62,
+        328.41,
+        112.74
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0023",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        101.62,
+        427.0,
+        112.74
+      ],
+      "block_index": 10,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0024",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        101.62,
+        522.83,
+        112.74
+      ],
+      "block_index": 10,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0025",
+      "text": "0",
+      "bbox": [
+        120.84,
+        130.67,
+        126.38,
+        141.78
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0026",
+      "text": "LINIT (70h)",
+      "bbox": [
+        149.88,
+        130.67,
+        200.46,
+        141.78
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0027",
+      "text": "00h",
+      "bbox": [
+        247.12,
+        130.67,
+        263.76,
+        141.78
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0028",
+      "text": "00h",
+      "bbox": [
+        344.32,
+        130.67,
+        361.0,
+        141.78
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0029",
+      "text": "00h",
+      "bbox": [
+        441.5,
+        130.67,
+        458.19,
+        141.78
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0030",
+      "text": "1",
+      "bbox": [
+        120.84,
+        147.64,
+        126.38,
+        158.76
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0031",
+      "text": "Reserved",
+      "bbox": [
+        149.88,
+        147.64,
+        192.6,
+        158.76
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0032",
+      "text": "Initialization Function LIP byte 3",
+      "bbox": [
+        247.06,
+        147.64,
+        389.25,
+        158.76
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0033",
+      "text": "LIP byte 4",
+      "bbox": [
+        441.43,
+        147.64,
+        486.46,
+        158.76
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0034",
+      "text": " Table 28 – Initialization Function",
+      "bbox": [
+        239.7,
+        212.98,
+        396.25,
+        224.1
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0035",
+      "text": "Function",
+      "bbox": [
+        275.28,
+        235.0,
+        317.48,
+        246.12
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0036",
+      "text": "Value",
+      "bbox": [
+        484.68,
+        235.0,
+        511.36,
+        246.12
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0037",
+      "text": "Normal Initialization - The Fabric determines the best method by which to ",
+      "bbox": [
+        118.38,
+        256.96,
+        444.41,
+        268.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0038",
+      "text": "complete the initialization.",
+      "bbox": [
+        118.38,
+        268.96,
+        232.82,
+        280.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0039",
+      "text": "0",
+      "bbox": [
+        495.24,
+        259.0,
+        500.78,
+        270.12
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0040",
+      "text": "Force Login - The L_bit shall be set in the Loop Initialization Soft Assigned (LISA) ",
+      "bbox": [
+        118.38,
+        290.98,
+        475.8,
+        302.1
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0041",
+      "text": "Sequence to force all affected L_Ports to perform FLOGI.",
+      "bbox": [
+        118.38,
+        302.98,
+        371.73,
+        314.1
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0042",
+      "text": "1",
+      "bbox": [
+        495.24,
+        292.96,
+        500.78,
+        304.08
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0043",
+      "text": "Reserved",
+      "bbox": [
+        118.38,
+        325.96,
+        161.07,
+        337.08
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0044",
+      "text": "2 - 255",
+      "bbox": [
+        482.46,
+        326.98,
+        513.56,
+        338.1
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0045",
+      "text": " Table 29 – LINIT LS_ACC Payload",
+      "bbox": [
+        236.64,
+        488.98,
+        399.31,
+        500.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0046",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        511.0,
+        133.06,
+        522.12
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0047",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        523.0,
+        136.35,
+        534.12
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0048",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        511.0,
+        233.97,
+        522.12
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0049",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        511.0,
+        328.42,
+        522.12
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0050",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        511.0,
+        427.0,
+        522.12
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0051",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        511.0,
+        522.83,
+        522.12
+      ],
+      "block_index": 19,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0052",
+      "text": "0",
+      "bbox": [
+        120.84,
+        539.98,
+        126.38,
+        551.1
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0053",
+      "text": "02h",
+      "bbox": [
+        149.88,
+        539.98,
+        166.52,
+        551.1
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0054",
+      "text": "00h",
+      "bbox": [
+        247.08,
+        539.98,
+        263.71,
+        551.1
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0055",
+      "text": "00h",
+      "bbox": [
+        344.27,
+        539.98,
+        360.97,
+        551.1
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0056",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        539.98,
+        458.16,
+        551.1
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0057",
+      "text": "1",
+      "bbox": [
+        120.84,
+        556.96,
+        126.38,
+        568.08
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0058",
+      "text": "Reserved",
+      "bbox": [
+        149.88,
+        556.96,
+        192.61,
+        568.08
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p061_s0059",
+      "text": "Status",
+      "bbox": [
+        441.47,
+        556.96,
+        469.8,
+        568.08
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0027",
+    "table_0031",
+    "table_0032"
+  ]
+}

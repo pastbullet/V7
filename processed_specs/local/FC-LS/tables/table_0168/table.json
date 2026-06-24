@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 12",
+      "11 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "Service Options",
+      null,
+      "Initiator Control",
+      null,
+      null
+    ],
+    [
+      "1",
+      "Recipient Control",
+      null,
+      "Reserved",
+      null,
+      null
+    ],
+    [
+      "2",
+      "Reserved",
+      "Total Concurrent\nSequences",
+      "Nx_Port End-to-end Credit",
+      null,
+      null
+    ],
+    [
+      "3",
+      "Reserved",
+      "Open Sequences per\nExchange",
+      "Reserved",
+      null,
+      null
+    ]
+  ]
+}

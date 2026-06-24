@@ -1,0 +1,647 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 180,
+  "spans": [
+    {
+      "span_id": "p180_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0002",
+      "text": " 161",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0003",
+      "text": "The Class 1 and Class 6 Service Parameters are given in words 9 - 12.  The Class 2 Service Param-",
+      "bbox": [
+        96.0,
+        57.65,
+        539.93,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0004",
+      "text": "eters are given in words 13 - 16.  The Class 3 Service Parameters are given in words 17 - 20.",
+      "bbox": [
+        96.0,
+        69.65,
+        508.56,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0005",
+      "text": "There is no separate set of class service parameters for Class 6.  The Class 1 service parameters",
+      "bbox": [
+        96.0,
+        94.97,
+        540.0,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0006",
+      "text": "are used for Class 6.",
+      "bbox": [
+        96.0,
+        106.97,
+        188.15,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0007",
+      "text": "6.6.5.4  Service options",
+      "bbox": [
+        96.0,
+        130.97,
+        206.54,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0008",
+      "text": "6.6.5.4.1  Introduction",
+      "bbox": [
+        96.0,
+        154.96,
+        198.74,
+        166.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0009",
+      "text": "The service options shall specify optional features of a class of service supported by the port supply-",
+      "bbox": [
+        96.0,
+        178.96,
+        540.11,
+        190.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0010",
+      "text": "ing the service parameters.",
+      "bbox": [
+        96.0,
+        190.96,
+        216.53,
+        202.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0011",
+      "text": "6.6.5.4.2  Intermix Mode",
+      "bbox": [
+        96.0,
+        214.96,
+        208.12,
+        226.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0012",
+      "text": "0 = Intermix not requested",
+      "bbox": [
+        96.0,
+        238.96,
+        212.36,
+        250.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0013",
+      "text": "1 = Intermix requested",
+      "bbox": [
+        96.0,
+        250.96,
+        195.68,
+        262.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0014",
+      "text": "The Intermix Mode bit (word 0, bit 30) only has meaning in Class 1 and 6.  It has no meaning in Class",
+      "bbox": [
+        96.0,
+        274.96,
+        540.0,
+        286.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0015",
+      "text": "2, and Class 3.",
+      "bbox": [
+        96.0,
+        286.96,
+        162.66,
+        298.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0016",
+      "text": "All N_Ports and Fabrics supporting Class 1 shall support exclusive connections.  An N_Port support-",
+      "bbox": [
+        96.0,
+        310.96,
+        540.04,
+        322.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0017",
+      "text": "ing exclusive connections may only transmit and receive frames from the N_Port to which an existing",
+      "bbox": [
+        96.0,
+        322.96,
+        540.04,
+        334.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0018",
+      "text": "Class 1 Connection is pending or established.  Exclusive connections require that the Fabric transmit",
+      "bbox": [
+        96.0,
+        334.96,
+        540.09,
+        346.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0019",
+      "text": "an F_BSY frame, as appropriate, in response to Class 2 frames and connect-request Data frames",
+      "bbox": [
+        96.0,
+        346.96,
+        540.0,
+        358.08
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0020",
+      "text": "(SOFc1) issued by a third N_Port targeted for one of the two N_Ports engaged in a Class 1 Connec-",
+      "bbox": [
+        96.0,
+        358.96,
+        540.17,
+        370.08
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0021",
+      "text": "tion.",
+      "bbox": [
+        96.0,
+        370.96,
+        114.85,
+        382.08
+      ],
+      "block_index": 11,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0022",
+      "text": "An Intermixed dedicated connection specifies that the Fabric may insert or extract Class 2 or Class 3",
+      "bbox": [
+        96.0,
+        394.96,
+        539.88,
+        406.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0023",
+      "text": "frames while a Class 1 Connection is established.  Support for Intermix is optional by both N_Ports",
+      "bbox": [
+        96.0,
+        406.96,
+        539.94,
+        418.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0024",
+      "text": "and Fabrics.  When an N_Port performs Login with a Fabric, it shall request support for Intermix by",
+      "bbox": [
+        96.0,
+        418.96,
+        539.94,
+        430.08
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0025",
+      "text": "setting the Intermix Mode bit to one.  If the Fabric responds with bit 30 set to one in the LS_ACC, In-",
+      "bbox": [
+        96.0,
+        430.96,
+        540.11,
+        442.08
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0026",
+      "text": "termix shall be functional.",
+      "bbox": [
+        96.0,
+        442.96,
+        208.77,
+        454.08
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0027",
+      "text": "For Fabric Login, table 159 specifies the meaning of the combination of the Intermix Mode bit for the",
+      "bbox": [
+        96.0,
+        466.96,
+        539.97,
+        478.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0028",
+      "text": "requesting N_Port and the applicable F_Port.",
+      "bbox": [
+        96.0,
+        478.96,
+        295.97,
+        490.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0029",
+      "text": "For N_Port Login, this bit indicates that Intermix is functional between the N_Port setting this bit and",
+      "bbox": [
+        96.0,
+        622.96,
+        540.06,
+        634.07
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0030",
+      "text": "the port to which it is attached.  In a point-to-point topology if both N_Ports indicate Intermix support,",
+      "bbox": [
+        96.0,
+        635.02,
+        540.0,
+        646.13
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0031",
+      "text": "then Intermix is functional.  Otherwise, Class 1 dedicated connections shall be removed before trans-",
+      "bbox": [
+        96.0,
+        647.02,
+        540.15,
+        658.13
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0032",
+      "text": "mission of Class 2 or Class 3 frames.",
+      "bbox": [
+        96.0,
+        659.02,
+        260.91,
+        670.13
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0033",
+      "text": "See FC-FS-2 for Intermix requirements.",
+      "bbox": [
+        96.0,
+        683.02,
+        271.47,
+        694.13
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0034",
+      "text": " Table 159 – Intermix Mode Support",
+      "bbox": [
+        233.88,
+        500.98,
+        402.13,
+        512.09
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0035",
+      "text": "Nx_Port",
+      "bbox": [
+        99.3,
+        523.0,
+        137.6,
+        534.11
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0036",
+      "text": "Fx_Port",
+      "bbox": [
+        147.72,
+        523.0,
+        184.9,
+        534.11
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0037",
+      "text": "Meaning",
+      "bbox": [
+        345.57,
+        523.0,
+        386.13,
+        534.11
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0038",
+      "text": "0",
+      "bbox": [
+        96.48,
+        539.98,
+        102.02,
+        551.09
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0039",
+      "text": "0",
+      "bbox": [
+        144.36,
+        539.98,
+        149.9,
+        551.09
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0040",
+      "text": "Neither supports",
+      "bbox": [
+        192.3,
+        539.98,
+        265.55,
+        551.09
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0041",
+      "text": "0",
+      "bbox": [
+        96.48,
+        556.96,
+        102.02,
+        568.07
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0042",
+      "text": "1",
+      "bbox": [
+        144.36,
+        556.96,
+        149.9,
+        568.07
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0043",
+      "text": "Fabric is capable of supporting, Intermix not functional",
+      "bbox": [
+        192.3,
+        556.96,
+        431.64,
+        568.07
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0044",
+      "text": "1",
+      "bbox": [
+        96.48,
+        574.0,
+        102.02,
+        585.11
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0045",
+      "text": "0",
+      "bbox": [
+        144.36,
+        574.0,
+        149.9,
+        585.11
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0046",
+      "text": "Nx_Port support requested, Fabric does not support",
+      "bbox": [
+        192.3,
+        574.0,
+        422.22,
+        585.11
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0047",
+      "text": "1",
+      "bbox": [
+        96.48,
+        590.98,
+        102.02,
+        602.09
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0048",
+      "text": "1",
+      "bbox": [
+        144.36,
+        590.98,
+        149.9,
+        602.09
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p180_s0049",
+      "text": "Nx_Port requested, Fabric is capable of supporting, Intermix is functional",
+      "bbox": [
+        192.3,
+        590.98,
+        513.88,
+        602.09
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0171"
+  ]
+}

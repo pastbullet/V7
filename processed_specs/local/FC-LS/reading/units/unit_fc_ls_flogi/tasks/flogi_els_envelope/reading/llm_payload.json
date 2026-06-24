@@ -1,0 +1,130 @@
+{
+  "doc_id": "FC-LS.pdf",
+  "unit_id": "unit_fc_ls_flogi__flogi_els_envelope",
+  "reading_md": "FC-LS section 4 defines the generic ELS envelope used to identify FLOGI. An ELS request or reply is a single Sequence, with the ELS_Command code carried in the first word of the Payload of the first frame; the first byte of that Payload is the ELS_Command code and later frames in the Sequence do not repeat it. Table 3 identifies FLOGI (F_Port Login) with ELS_Command value 04h. ELS frames use TYPE 01h. R_CTL is set per Table 2, where routing 0010b with information 0010b denotes Request and routing 0010b with information 0011b denotes Reply. The request and corresponding reply are required to occur within a single Exchange.",
+  "claim_candidates": [
+    {
+      "claim_id": "els_command_location",
+      "text": "The ELS_Command code is carried in the first word of the Payload of the first frame of the Sequence, and the first byte of the Payload is the ELS_Command code.",
+      "kind": "field_presence",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0009",
+          "quote": "or reply is composed of a single Sequence with the ELS_Command code being specified in the first"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p036_s0010",
+          "quote": "word of the Payload of the first frame of the Sequence."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p036_s0020",
+          "quote": "The first byte of the Payload (ELS_Command code) of the request or reply Sequence shall be as"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p036_s0021",
+          "quote": "shown in table 3."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_els_command_code",
+      "text": "FLOGI ELS command code is 04h.",
+      "kind": "other",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "table_cell",
+          "asset_id": "table_0003",
+          "cell_id": "r5c1",
+          "quote": "04h"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0003",
+          "cell_id": "r5c2",
+          "quote": "F_Port Login"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0003",
+          "cell_id": "r5c3",
+          "quote": "FLOGI"
+        }
+      ]
+    },
+    {
+      "claim_id": "els_frame_type",
+      "text": "The TYPE field for ELS frames shall be set to 01h.",
+      "kind": "field_presence",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0018",
+          "quote": "The TYPE field for ELS frames shall be set to 01h."
+        }
+      ]
+    },
+    {
+      "claim_id": "els_r_ctl_request_reply",
+      "text": "For ELS frames, R_CTL request uses information category 0010b and reply uses information category 0011b under routing 0010b.",
+      "kind": "field_presence",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0019",
+          "quote": "The R_CTL shall be set as specified in table 2."
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0002",
+          "cell_id": "r3c1",
+          "quote": "0010b"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0002",
+          "cell_id": "r4c2",
+          "quote": "0010b"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0002",
+          "cell_id": "r4c3",
+          "quote": "Request"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0002",
+          "cell_id": "r5c2",
+          "quote": "0011b"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0002",
+          "cell_id": "r5c3",
+          "quote": "Reply"
+        }
+      ]
+    },
+    {
+      "claim_id": "els_single_exchange_scope",
+      "text": "An ELS request and the corresponding reply shall be performed within a single Exchange.",
+      "kind": "completion_condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0016",
+          "quote": "An ELS request and the corresponding reply shall be performed within a single Exchange."
+        }
+      ]
+    }
+  ]
+}

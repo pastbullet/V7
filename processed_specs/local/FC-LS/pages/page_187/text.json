@@ -1,0 +1,699 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 187,
+  "spans": [
+    {
+      "span_id": "p187_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0002",
+      "text": " 168",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0003",
+      "text": "6.6.5.6.2  ACK_0 capability",
+      "bbox": [
+        96.0,
+        57.65,
+        221.98,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0004",
+      "text": "0 = ACK_0 incapable",
+      "bbox": [
+        96.0,
+        82.97,
+        190.15,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0005",
+      "text": "1 = ACK_0 capable",
+      "bbox": [
+        96.0,
+        94.97,
+        182.34,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0006",
+      "text": "The ACK_0 capability bit (word 1, bit 31) specifies that the Nx_Port supplying these Class Service",
+      "bbox": [
+        96.0,
+        118.97,
+        539.9,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0007",
+      "text": "Parameters may or may not be capable of support for ACK_0 as a Sequence Recipient for acknowl-",
+      "bbox": [
+        96.0,
+        130.97,
+        540.11,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0008",
+      "text": "edgement of an entire Sequence in either Discard or Process Exchange Error Policies.  As a Se-",
+      "bbox": [
+        96.0,
+        142.96,
+        540.14,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0009",
+      "text": "quence Recipient an Nx_Port shall support infinite buffering and be capable of transmitting ACK_0",
+      "bbox": [
+        96.0,
+        154.96,
+        539.99,
+        166.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0010",
+      "text": "frames in response to Data frame transmission.  ACK_0 support is applicable to acknowledged class",
+      "bbox": [
+        96.0,
+        166.96,
+        539.96,
+        178.08
+      ],
+      "block_index": 5,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0011",
+      "text": "of service Sequences (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        178.96,
+        260.9,
+        190.08
+      ],
+      "block_index": 5,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0012",
+      "text": "The conditions under which ACK_0 is supported are defined in table 168 and described in the follow-",
+      "bbox": [
+        96.0,
+        202.96,
+        540.03,
+        214.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0013",
+      "text": "ing text. ",
+      "bbox": [
+        96.0,
+        214.96,
+        133.77,
+        226.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0014",
+      "text": "If one Nx_Port (e.g., Nx_Port A) is capable of receiving ACK_0 as a Sequence Initiator (Word 0, Bit",
+      "bbox": [
+        96.0,
+        370.96,
+        540.02,
+        382.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0015",
+      "text": "11 set to one) and the other Nx_Port (e.g., Nx_Port B) is capable of transmitting ACK_0 as a Se-",
+      "bbox": [
+        96.0,
+        382.96,
+        540.22,
+        394.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0016",
+      "text": "quence Recipient (Word 1, Bit 31 set to one), then ACK_0 may be used when Nx_Port A is the Se-",
+      "bbox": [
+        96.0,
+        394.96,
+        539.99,
+        406.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0017",
+      "text": "quence Initiator and Nx_Port B is the Sequence Recipient.  Otherwise, ACK_0 shall not be supported",
+      "bbox": [
+        96.0,
+        406.96,
+        539.95,
+        418.08
+      ],
+      "block_index": 7,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0018",
+      "text": "while Nx_Port A is the Sequence Initiator and Nx_Port B is the Sequence Recipient.",
+      "bbox": [
+        96.0,
+        418.96,
+        466.59,
+        430.08
+      ],
+      "block_index": 7,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0019",
+      "text": "ACK_0 capability may be asymmetrical for a single Nx_Port (i.e., an Nx_Port may be capable pro-",
+      "bbox": [
+        96.0,
+        442.96,
+        540.1,
+        454.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0020",
+      "text": "cessing ACK_0 as a Sequence Initiator, but not be capable of ACK_0 transmission as a Sequence",
+      "bbox": [
+        96.0,
+        454.96,
+        539.97,
+        466.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0021",
+      "text": "Recipient.  Similarly, an Nx_Port may be capable of generating ACK_0 as a Sequence Recipient, but",
+      "bbox": [
+        96.0,
+        466.96,
+        540.04,
+        478.08
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0022",
+      "text": "not be capable of ACK_0 reception as a Sequence Initiator).  If an Nx_Port sets both Word 0, bit 11",
+      "bbox": [
+        96.0,
+        478.96,
+        539.95,
+        490.08
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0023",
+      "text": "and Word 1, bit 31 to one, then it is capable of ACK_0 support as either a Sequence Initiator or a Se-",
+      "bbox": [
+        96.0,
+        490.96,
+        540.07,
+        502.08
+      ],
+      "block_index": 8,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0024",
+      "text": "quence Recipient.",
+      "bbox": [
+        96.0,
+        502.96,
+        176.0,
+        514.08
+      ],
+      "block_index": 8,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0025",
+      "text": "6.6.5.6.3  X_ID interlock",
+      "bbox": [
+        96.0,
+        526.96,
+        207.07,
+        538.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0026",
+      "text": "0 = X_ID interlock not required",
+      "bbox": [
+        96.0,
+        550.96,
+        231.17,
+        562.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0027",
+      "text": "1 = X_ID interlock required",
+      "bbox": [
+        96.0,
+        562.96,
+        214.51,
+        574.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0028",
+      "text": "X_ID interlock (word 1, bit 29)",
+      "bbox": [
+        96.0,
+        586.96,
+        226.7,
+        598.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0029",
+      "text": "only applies to Class 1 and Class 2.  This bit indicates that the Nx_Port",
+      "bbox": [
+        229.32,
+        586.96,
+        539.97,
+        598.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p187_s0030",
+      "text": "supplying this parameter requires that an interlock be used during X_ID assignment in Class 1 and 2.",
+      "bbox": [
+        96.0,
+        598.96,
+        540.07,
+        610.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0031",
+      "text": "In X_ID assignment, the Sequence Initiator shall set the Recipient X_ID value to FFFFh in the first",
+      "bbox": [
+        96.0,
+        610.96,
+        539.99,
+        622.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0032",
+      "text": "Data frame of a Sequence and the Recipient shall supply its X_ID in the ACK frame corresponding to",
+      "bbox": [
+        96.0,
+        622.96,
+        540.07,
+        634.08
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0033",
+      "text": "the first Data frame of a Sequence.  The Sequence Initiator shall not transmit additional frames until",
+      "bbox": [
+        96.0,
+        634.96,
+        540.08,
+        646.08
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0034",
+      "text": "the corresponding ACK is received.  Following reception of the ACK, the Sequence Initiator continues",
+      "bbox": [
+        96.0,
+        647.02,
+        539.97,
+        658.14
+      ],
+      "block_index": 11,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0035",
+      "text": "transmission of the Sequence using both assigned X_ID values (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        659.02,
+        445.39,
+        670.13
+      ],
+      "block_index": 11,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0036",
+      "text": " Table 168 – ACK_0 Support Conditions (Recipient Control)",
+      "bbox": [
+        177.48,
+        236.98,
+        458.51,
+        248.09
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0037",
+      "text": "Nx_Port A",
+      "bbox": [
+        151.26,
+        259.0,
+        199.56,
+        270.11
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0038",
+      "text": "Word 0, Bit 11",
+      "bbox": [
+        142.14,
+        271.0,
+        208.83,
+        282.11
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0039",
+      "text": "Nx_Port B",
+      "bbox": [
+        237.66,
+        259.0,
+        285.97,
+        270.11
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0040",
+      "text": "Word 1, Bit 31",
+      "bbox": [
+        228.54,
+        271.0,
+        295.21,
+        282.11
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0041",
+      "text": "Nx_Port A as Sequence Recipient",
+      "bbox": [
+        324.47,
+        271.0,
+        484.4,
+        282.11
+      ],
+      "block_index": 13,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0042",
+      "text": "0",
+      "bbox": [
+        134.22,
+        287.98,
+        139.76,
+        299.09
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0043",
+      "text": "0",
+      "bbox": [
+        220.62,
+        287.98,
+        226.16,
+        299.09
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0044",
+      "text": "ACK_0 not supported ",
+      "bbox": [
+        307.02,
+        287.98,
+        405.33,
+        299.09
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0045",
+      "text": "0",
+      "bbox": [
+        134.22,
+        304.96,
+        139.76,
+        316.07
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0046",
+      "text": "1",
+      "bbox": [
+        220.62,
+        304.96,
+        226.16,
+        316.07
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0047",
+      "text": "ACK_0 not supported ",
+      "bbox": [
+        307.02,
+        304.96,
+        405.33,
+        316.07
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0048",
+      "text": "1",
+      "bbox": [
+        134.22,
+        322.0,
+        139.76,
+        333.11
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0049",
+      "text": "0",
+      "bbox": [
+        220.62,
+        322.0,
+        226.16,
+        333.11
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0050",
+      "text": "ACK_0 not supported ",
+      "bbox": [
+        307.02,
+        322.0,
+        405.33,
+        333.11
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0051",
+      "text": "1",
+      "bbox": [
+        134.22,
+        338.98,
+        139.76,
+        350.09
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0052",
+      "text": "1",
+      "bbox": [
+        220.62,
+        338.98,
+        226.16,
+        350.09
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p187_s0053",
+      "text": "ACK_0 supported ",
+      "bbox": [
+        307.02,
+        338.98,
+        388.66,
+        350.09
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0180"
+  ]
+}

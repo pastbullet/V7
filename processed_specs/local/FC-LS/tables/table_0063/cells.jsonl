@@ -1,0 +1,10 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Value", "page": 84, "bbox": [97.45, 351.64, 204.63, 373.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Description", "page": 84, "bbox": [204.63, 351.64, 538.55, 373.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00h", "page": 84, "bbox": [97.45, 373.32, 204.63, 407.37]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "The RNID Accept Payload only contains the Common Identification Data\n(see Table 61).", "page": 84, "bbox": [204.63, 373.32, 538.55, 407.37]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "01h – DEh", "page": 84, "bbox": [97.45, 407.37, 204.63, 465.39]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "The RNID Accept Payload may contain the Common Identification Data and\nshall contain the Specific Identification Data for the ULP that is assigned an\nFC-4 frame type (see FC-FS-2) equal to the value of the Node Identification\nData Format from the RNID Payload (see Table 58).", "page": 84, "bbox": [204.63, 407.37, 538.55, 465.39]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "DFh", "page": 84, "bbox": [97.45, 465.39, 204.63, 499.35]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "The RNID Accept Payload shall contain the Common Identification Data\nand General Topology Discovery format Specific Identification Data.", "page": 84, "bbox": [204.63, 465.39, 538.55, 499.35]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "E0h – FFh", "page": 84, "bbox": [97.45, 499.35, 204.63, 533.04]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "The RNID Accept Payload may contain the Common Identification Data and\nshall contain vendor specific Specific Identification Data.", "page": 84, "bbox": [204.63, 499.35, 538.55, 533.04]}

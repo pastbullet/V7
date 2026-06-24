@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "N_Port Login\nRequired? (see\ntable 3)",
+      "Logged in with Source N_Port?",
+      null
+    ],
+    [
+      null,
+      "Yes",
+      "No"
+    ],
+    [
+      "Yes",
+      "Respond as appropriate for the ELS\nand the current state of the Nx_Port",
+      "If a reply sequence is defined for the\nELS, originate a LOGO ELS Exchange\nto the sender of the received ELS or\nreply with an LS_RJT ELS Sequence\nwith a reason code of \"Unable to\nperform command request\" and a\nreason code explanation of \"N_Port\nLogin required\".\nIf a reply sequence is not defined for the\nELS, it shall be discarded"
+    ],
+    [
+      "No",
+      "Respond as appropriate for the ELS\nand the current state of the Nx_Port.",
+      "Respond as appropriate for the ELS\nand the current state of the Nx_Port."
+    ]
+  ]
+}

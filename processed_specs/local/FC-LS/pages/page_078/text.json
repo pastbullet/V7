@@ -1,0 +1,699 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 78,
+  "spans": [
+    {
+      "span_id": "p078_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0002",
+      "text": " 59",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0003",
+      "text": "The PRLO LS_ACC logout parameter response page format fields shall be defined as follows:",
+      "bbox": [
+        96.0,
+        57.65,
+        511.46,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0004",
+      "text": "a)",
+      "bbox": [
+        106.02,
+        82.97,
+        114.91,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0005",
+      "text": " TYPE code or common logout parameters:",
+      "bbox": [
+        114.91,
+        82.97,
+        329.51,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p078_s0006",
+      "text": " Identifies the protocol associated with this Lo-",
+      "bbox": [
+        329.46,
+        82.97,
+        540.11,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p078_s0007",
+      "text": "gout Parameter Response page.  If byte 0 of the first word of a Logout Parameter Response",
+      "bbox": [
+        122.4,
+        94.97,
+        539.99,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0008",
+      "text": "page contains the value 00h, the Logout Parameter page contains Logout Parameters com-",
+      "bbox": [
+        122.4,
+        106.97,
+        540.02,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0009",
+      "text": "mon to all FC-4 Types at that image pair or Nx_Port pair.  If byte 0 of the first word of a Logout",
+      "bbox": [
+        122.4,
+        118.97,
+        540.14,
+        130.08
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0010",
+      "text": "Parameter Response page contains a value other than 00h, the Logout Parameter page con-",
+      "bbox": [
+        122.4,
+        130.97,
+        539.92,
+        142.08
+      ],
+      "block_index": 4,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0011",
+      "text": "tains Logout Parameters for the FC-4 TYPE indicated.",
+      "bbox": [
+        122.4,
+        142.96,
+        361.76,
+        154.08
+      ],
+      "block_index": 4,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0012",
+      "text": "b)",
+      "bbox": [
+        106.02,
+        166.96,
+        114.91,
+        178.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0013",
+      "text": " TYPE code extension:",
+      "bbox": [
+        114.91,
+        166.96,
+        227.35,
+        178.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p078_s0014",
+      "text": " Reserved for future use.",
+      "bbox": [
+        227.34,
+        166.96,
+        337.27,
+        178.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p078_s0015",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        190.96,
+        114.38,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0016",
+      "text": "Originator Process_Associator validity:",
+      "bbox": [
+        122.4,
+        190.96,
+        311.15,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0017",
+      "text": " Identifies the process or group of processes within",
+      "bbox": [
+        311.1,
+        190.96,
+        539.93,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p078_s0018",
+      "text": "the Originator (see FC-FS-2).",
+      "bbox": [
+        122.4,
+        202.96,
+        252.36,
+        214.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0019",
+      "text": "0 = not meaningful",
+      "bbox": [
+        122.4,
+        226.96,
+        204.85,
+        238.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0020",
+      "text": "1 = meaningful",
+      "bbox": [
+        122.4,
+        238.96,
+        188.2,
+        250.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0021",
+      "text": "d)",
+      "bbox": [
+        106.02,
+        262.96,
+        114.91,
+        274.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0022",
+      "text": " Responder Process_Associator validity:",
+      "bbox": [
+        114.91,
+        262.96,
+        314.24,
+        274.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p078_s0023",
+      "text": " Identifies the process or group of processes within",
+      "bbox": [
+        314.22,
+        262.96,
+        539.95,
+        274.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p078_s0024",
+      "text": "the Responder (see FC-FS-2).",
+      "bbox": [
+        122.4,
+        274.96,
+        257.35,
+        286.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0025",
+      "text": "0 = not meaningful",
+      "bbox": [
+        122.4,
+        298.96,
+        204.85,
+        310.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0026",
+      "text": "1 = meaningful",
+      "bbox": [
+        122.4,
+        310.96,
+        188.2,
+        322.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0027",
+      "text": "e)",
+      "bbox": [
+        106.02,
+        334.96,
+        114.91,
+        346.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0028",
+      "text": " Response code:",
+      "bbox": [
+        114.91,
+        334.96,
+        199.47,
+        346.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p078_s0029",
+      "text": " The Response code field contains an encoded binary value indicating the re-",
+      "bbox": [
+        199.5,
+        334.96,
+        540.07,
+        346.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p078_s0030",
+      "text": "sult of the PRLO Request and the status of the image pair.  The meanings of the encoded Re-",
+      "bbox": [
+        122.4,
+        346.96,
+        539.99,
+        358.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0031",
+      "text": "sponse code values are shown in table 51.",
+      "bbox": [
+        122.4,
+        358.96,
+        311.28,
+        370.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0032",
+      "text": " Table 51 – PRLO accept response code",
+      "bbox": [
+        223.26,
+        380.98,
+        412.8,
+        392.1
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0033",
+      "text": "Encoded Value",
+      "bbox": [
+        108.48,
+        403.0,
+        180.16,
+        414.12
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0034",
+      "text": "Word 0, Bits 11-8",
+      "bbox": [
+        103.8,
+        415.0,
+        184.94,
+        426.12
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0035",
+      "text": "Description",
+      "bbox": [
+        335.58,
+        415.0,
+        390.52,
+        426.12
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0036",
+      "text": "0000b",
+      "bbox": [
+        130.44,
+        439.0,
+        158.17,
+        450.12
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0037",
+      "text": "Reserved",
+      "bbox": [
+        191.34,
+        437.98,
+        234.13,
+        449.1
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0038",
+      "text": "0001b",
+      "bbox": [
+        130.44,
+        463.0,
+        158.17,
+        474.12
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0039",
+      "text": "Request executed",
+      "bbox": [
+        191.34,
+        461.98,
+        271.88,
+        473.1
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0040",
+      "text": "0010b - 0011b",
+      "bbox": [
+        112.08,
+        487.0,
+        176.54,
+        498.11
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0041",
+      "text": "Reserved",
+      "bbox": [
+        191.34,
+        485.98,
+        234.13,
+        497.09
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0042",
+      "text": "0100b",
+      "bbox": [
+        130.44,
+        511.0,
+        158.17,
+        522.12
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0043",
+      "text": "The Exchange recipient corresponding to the Responder Process_Associator ",
+      "bbox": [
+        191.34,
+        508.96,
+        535.72,
+        520.08
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0044",
+      "text": "specified in the PRLO Request and PRLO LS_ACC response does not exist.  ",
+      "bbox": [
+        191.34,
+        520.96,
+        535.66,
+        532.08
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0045",
+      "text": "The PRLO Request shall not be retried.",
+      "bbox": [
+        191.34,
+        532.96,
+        366.41,
+        544.08
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0046",
+      "text": "0101b - 0110b",
+      "bbox": [
+        112.08,
+        556.96,
+        176.54,
+        568.07
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0047",
+      "text": "Reserved",
+      "bbox": [
+        191.34,
+        556.0,
+        234.13,
+        567.11
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0048",
+      "text": "0111b",
+      "bbox": [
+        130.44,
+        580.96,
+        158.17,
+        592.07
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0049",
+      "text": "Obsolete",
+      "bbox": [
+        191.34,
+        580.0,
+        231.3,
+        591.11
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0050",
+      "text": "1000b",
+      "bbox": [
+        130.44,
+        604.96,
+        158.17,
+        616.07
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0051",
+      "text": "Obsolete",
+      "bbox": [
+        191.34,
+        604.0,
+        231.3,
+        615.11
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0052",
+      "text": "1001b - 1111b",
+      "bbox": [
+        112.08,
+        628.96,
+        176.54,
+        640.07
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p078_s0053",
+      "text": "Reserved",
+      "bbox": [
+        191.34,
+        628.0,
+        234.13,
+        639.11
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0054"
+  ]
+}

@@ -1,0 +1,2 @@
+| Function<br>Reserved<br>Fabric Detected registration - Register to receive all RSCN Requests issued by the<br>Fabric Controller for events detected by the Fabric.<br>Nx_Port Detected registration - Register to receive all RSCN Requests issued for events<br>detected by the affected Nx_Port.<br>Full registration - Register to receive all RSCN Requests issued. The RSCN Request<br>shall return all affected N_Port_ID pages.<br>Reserved<br>Clear registration - Remove any current RSCN registrations. | Value<br>0<br>1<br>2<br>3<br>4 - 254<br>255 |
+| --- | --- |

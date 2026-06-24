@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0117",
+  "type": "table",
+  "caption": "Table 113 – RPSC LS_ACC Payload",
+  "pages": [
+    126
+  ],
+  "bbox": [
+    99.8,
+    580.0,
+    536.2,
+    695.04
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 126,
+  "logical_table": false
+}

@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Nx_Port\nWord 0, Bit 22",
+      "Fx_Port\nWord 0, Bit 22",
+      "Meaning"
+    ],
+    [
+      "0",
+      "0",
+      "Preferred delivery by the Fabric may be\nfunctional"
+    ],
+    [
+      "0",
+      "1",
+      "Preferred delivery by the Fabric shall be\nfunctional"
+    ],
+    [
+      "1",
+      "0",
+      "Nx_Port support requested, Preferred delivery\nby the Fabric may be functional"
+    ],
+    [
+      "1",
+      "1",
+      "Nx_Port requested, Fabric agrees, Preferred\ndelivery by the Fabric shall be functional"
+    ]
+  ]
+}

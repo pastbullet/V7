@@ -1,0 +1,25 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "LIRR (7Ah)",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "Registration Function",
+      "Link Incident Record-\nRegistration Format",
+      "Reserved",
+      null
+    ]
+  ]
+}

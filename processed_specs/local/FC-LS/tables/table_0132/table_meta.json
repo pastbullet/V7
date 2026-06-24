@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0132",
+  "type": "table",
+  "caption": "Table 128 – Locally-Enabled VF_ID List Descriptor",
+  "pages": [
+    135
+  ],
+  "bbox": [
+    100.05,
+    123.96,
+    536.29,
+    234.33
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 135
+}

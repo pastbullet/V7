@@ -1,0 +1,21 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Error Condition", "page": 131, "bbox": [100.55, 165.75, 274.95, 187.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Reason Code", "page": 131, "bbox": [274.95, 165.75, 395.13, 187.32]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Reason Code Explanation", "page": 131, "bbox": [395.13, 165.75, 535.45, 187.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "EVFP ELS not supported", "page": 131, "bbox": [100.55, 187.32, 274.95, 211.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Command not supported", "page": 131, "bbox": [274.95, 187.32, 395.13, 211.35]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "No additional explanation", "page": 131, "bbox": [395.13, 187.32, 535.45, 211.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "EVFP collision", "page": 131, "bbox": [100.55, 211.35, 274.95, 247.35]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Command already in\nprogress", "page": 131, "bbox": [274.95, 211.35, 395.13, 247.35]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "No additional explanation", "page": 131, "bbox": [395.13, 211.35, 535.45, 247.35]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "Protocol Version not supported", "page": 131, "bbox": [100.55, 247.35, 274.95, 271.35]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Protocol error", "page": 131, "bbox": [274.95, 247.35, 395.13, 271.35]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "No additional explanation", "page": 131, "bbox": [395.13, 247.35, 535.45, 271.35]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "EVFP_COMMIT before EVFP_SYNC", "page": 131, "bbox": [100.55, 271.35, 274.95, 295.35]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Logical error", "page": 131, "bbox": [274.95, 271.35, 395.13, 295.35]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "No additional explanation", "page": 131, "bbox": [395.13, 271.35, 535.45, 295.35]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "Insufficient Resources", "page": 131, "bbox": [100.55, 295.35, 274.95, 331.35]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "Unable to perform\ncommand request", "page": 131, "bbox": [274.95, 295.35, 395.13, 331.35]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "No additional explanation", "page": 131, "bbox": [395.13, 295.35, 535.45, 331.35]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "Invalid Payload Message", "page": 131, "bbox": [100.55, 331.35, 274.95, 354.82]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "Protocol error", "page": 131, "bbox": [274.95, 331.35, 395.13, 354.82]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "No additional explanation", "page": 131, "bbox": [395.13, 331.35, 535.45, 354.82]}

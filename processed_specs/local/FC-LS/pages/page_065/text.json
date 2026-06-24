@@ -1,0 +1,554 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 65,
+  "spans": [
+    {
+      "span_id": "p065_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0002",
+      "text": " 46",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0003",
+      "text": "more storage has become available).  The sender of the RSCN Request may coalesce several",
+      "bbox": [
+        96.0,
+        57.65,
+        540.01,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0004",
+      "text": "events into a single report.",
+      "bbox": [
+        96.0,
+        69.65,
+        213.17,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0005",
+      "text": "A RSCN Request may be sent by the Fabric to notify registered Nx_Ports of changes detected by the",
+      "bbox": [
+        96.0,
+        94.97,
+        540.0,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0006",
+      "text": "Fabric.  The Fabric Controller (FFFFFDh) issues the RSCN Request to the registered Nx_Ports.  An",
+      "bbox": [
+        96.0,
+        106.97,
+        539.96,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0007",
+      "text": "Nx_Port may also issue a RSCN Request to the Fabric Controller or another Nx_Port to indicate",
+      "bbox": [
+        96.0,
+        118.97,
+        539.92,
+        130.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0008",
+      "text": "changes of state within the Nx_Port that are not otherwise detectable by the Fabric. ",
+      "bbox": [
+        96.0,
+        130.97,
+        467.05,
+        142.08
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0009",
+      "text": "The Payload of a RSCN Request includes a list containing the addresses of the affected Nx_Ports.",
+      "bbox": [
+        96.0,
+        154.96,
+        539.94,
+        166.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0010",
+      "text": "The RSCN includes a summary indication of the type of state change being reported to assist in ana-",
+      "bbox": [
+        96.0,
+        166.96,
+        540.08,
+        178.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0011",
+      "text": "lyzing the change.  The sending of RSCN between Nx_Ports, neither of which are the Fabric Control-",
+      "bbox": [
+        96.0,
+        178.96,
+        540.13,
+        190.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0012",
+      "text": "ler, is permitted.",
+      "bbox": [
+        96.0,
+        190.96,
+        167.05,
+        202.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0013",
+      "text": "4.2.18.2  RSCNs issued by the Fabric Controller",
+      "bbox": [
+        96.0,
+        214.96,
+        321.51,
+        226.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0014",
+      "text": "The Fabric Controller shall issue an RSCN Request to all registered Nx_Ports for an affected",
+      "bbox": [
+        96.0,
+        238.96,
+        539.98,
+        250.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0015",
+      "text": "Nx_Port when the Fabric detects an event.  The Fabric Controller shall ensure that any Fabric-provid-",
+      "bbox": [
+        96.0,
+        250.96,
+        540.07,
+        262.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0016",
+      "text": "ed resources (e.g., the Name Service) have received updates to reflect changes caused by the",
+      "bbox": [
+        96.0,
+        262.96,
+        539.97,
+        274.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0017",
+      "text": "event, prior to issuing the RSCN for the event.  An event may include any of the following:",
+      "bbox": [
+        96.0,
+        274.96,
+        492.01,
+        286.08
+      ],
+      "block_index": 7,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0018",
+      "text": "a) an implicit Fabric Logout of the affected Nx_Port, including Loss-of-Signal, NOS, and OLS, or",
+      "bbox": [
+        106.02,
+        298.96,
+        539.97,
+        310.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0019",
+      "text": "when the Fabric receives a FLOGI that contains new or different information from a port that",
+      "bbox": [
+        122.4,
+        310.96,
+        540.01,
+        322.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0020",
+      "text": "had already completed FLOGI;",
+      "bbox": [
+        122.4,
+        322.96,
+        258.99,
+        334.08
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0021",
+      "text": "b) a loop initialization of the affected L_Port, and the L_bit was set in the LISA Sequence;",
+      "bbox": [
+        106.02,
+        346.96,
+        504.61,
+        358.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0022",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        370.96,
+        114.34,
+        382.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0023",
+      "text": "a Fabric Login from an affected Nx_Port not previously logged in;",
+      "bbox": [
+        122.37,
+        370.96,
+        410.14,
+        382.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0024",
+      "text": "d) the Fabric path between the affected Nx_Port and any other Nx_Port has changed (e.g., a",
+      "bbox": [
+        106.02,
+        394.96,
+        540.1,
+        406.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0025",
+      "text": "change to the Fabric routing tables that affects the ability of the Fabric to deliver frames in or-",
+      "bbox": [
+        122.4,
+        406.96,
+        540.01,
+        418.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0026",
+      "text": "der, or an E_Port initialization or failure); ",
+      "bbox": [
+        122.4,
+        418.96,
+        303.47,
+        430.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0027",
+      "text": "e) any other Fabric-detected state change of the affected Nx_Port;",
+      "bbox": [
+        106.02,
+        442.96,
+        404.03,
+        454.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0028",
+      "text": "f)",
+      "bbox": [
+        106.02,
+        466.96,
+        112.13,
+        478.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0029",
+      "text": "the affected Nx_Port issues an RSCN Request to the Fabric Controller.",
+      "bbox": [
+        122.37,
+        466.96,
+        436.91,
+        478.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0030",
+      "text": "A registered Nx_Port that receives an RSCN Request may perform any operation to determine the",
+      "bbox": [
+        96.0,
+        490.96,
+        540.0,
+        502.07
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0031",
+      "text": "nature of the state change.  These operations include the PDISC ELS, the ADISC ELS, a query to the",
+      "bbox": [
+        96.0,
+        502.96,
+        539.98,
+        514.07
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0032",
+      "text": "Name Service, or a ULP query.  The Fabric may accumulate affected Nx_Port addresses for subse-",
+      "bbox": [
+        96.0,
+        514.96,
+        540.09,
+        526.07
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0033",
+      "text": "quent delivery to reduce the volume of RSCN traffic.",
+      "bbox": [
+        96.0,
+        526.96,
+        326.51,
+        538.07
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0034",
+      "text": "4.2.18.3  RSCN issued by the affected Nx_Port",
+      "bbox": [
+        96.0,
+        550.96,
+        314.81,
+        562.07
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0035",
+      "text": "An Nx_Port shall issue an RSCN Request to the Fabric Controller or the Nx_Port that has registered",
+      "bbox": [
+        96.0,
+        574.96,
+        539.89,
+        586.07
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0036",
+      "text": "for receipt of RSCN Requests or both when an event is detected by an Nx_Port.  Fabric Controllers",
+      "bbox": [
+        96.0,
+        586.96,
+        540.01,
+        598.07
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0037",
+      "text": "are implicitly registered to receive RSCNs after a successful implicit or explicit FLOGI.  Nx_Ports, nei-",
+      "bbox": [
+        96.0,
+        598.96,
+        539.95,
+        610.07
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0038",
+      "text": "ther of which are the Fabric Controller, that request RSCNs are hereafter called registered Nx_Ports.",
+      "bbox": [
+        96.0,
+        610.96,
+        539.93,
+        622.07
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0039",
+      "text": "Unless it is providing a service associated with a well known address an Nx_Port shall only issue",
+      "bbox": [
+        96.0,
+        622.96,
+        539.94,
+        634.07
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0040",
+      "text": "RSCNs with an event qualifier of 2h or 0h.  An event may include any of the following:",
+      "bbox": [
+        96.0,
+        634.96,
+        474.2,
+        646.07
+      ],
+      "block_index": 16,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0041",
+      "text": "a) a failure within the affected Nx_Port;",
+      "bbox": [
+        106.02,
+        659.02,
+        282.97,
+        670.13
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p065_s0042",
+      "text": "b) any other important state change of the affected Nx_Port (e.g., an event defined by a FC-4).",
+      "bbox": [
+        106.02,
+        683.02,
+        528.51,
+        694.13
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

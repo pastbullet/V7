@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 120, "bbox": [99.88, 231.96, 147.9, 260.04]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 120, "bbox": [147.9, 231.96, 245.13, 260.04]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 120, "bbox": [245.13, 231.96, 342.33, 260.04]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08", "page": 120, "bbox": [342.33, 231.96, 439.53, 260.04]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00", "page": 120, "bbox": [439.53, 231.96, 536.12, 260.04]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 120, "bbox": [99.88, 260.04, 147.9, 277.43]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "RNFT (63h)", "page": 120, "bbox": [147.9, 260.04, 245.13, 277.43]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Reserved", "page": 120, "bbox": [245.13, 260.04, 342.33, 277.43]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "Maximum Size", "page": 120, "bbox": [342.33, 260.04, 536.12, 277.43]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "", "page": 120, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 120, "bbox": [99.88, 277.43, 147.9, 294.02]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Reserved", "page": 120, "bbox": [147.9, 277.43, 439.53, 294.02]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 120, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "", "page": 120, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "Index", "page": 120, "bbox": [439.53, 277.43, 536.12, 294.02]}

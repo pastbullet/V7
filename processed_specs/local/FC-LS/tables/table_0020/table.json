@@ -1,0 +1,53 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "RLS (0Fh)",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "Reserved",
+      "N_Port_ID",
+      null,
+      null
+    ],
+    [
+      "0",
+      "02h",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "MSB Link Error Status Block\n(see FC-FS-2)\n(24 bytes)\nLSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "6",
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

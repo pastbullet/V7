@@ -1,0 +1,6 @@
+| Nx_Port | Fx_Port | Meaning |
+| --- | --- | --- |
+| 0 | 0 | Neither supports |
+| 0 | 1 | Fabric is capable of supporting, Intermix not functional |
+| 1 | 0 | Nx_Port support requested, Fabric does not support |
+| 1 | 1 | Nx_Port requested, Fabric is capable of supporting, Intermix is functional |

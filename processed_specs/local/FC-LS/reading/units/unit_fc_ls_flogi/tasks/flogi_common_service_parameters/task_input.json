@@ -1,0 +1,90 @@
+{
+  "doc_id": "FC-LS.pdf",
+  "unit": {
+    "unit_id": "unit_fc_ls_flogi",
+    "title": "FC-LS Fabric Login / FLOGI",
+    "kind": "procedure_group",
+    "target_ir": [
+      "MessageIR",
+      "ProcedureIR",
+      "SessionContextIR",
+      "EnumIR"
+    ],
+    "source_anchors": [
+      "6.2 Fabric Login",
+      "Table 149",
+      "Table 150",
+      "Table 151",
+      "Table 153",
+      "Table 156",
+      "Table 158",
+      "Table 177",
+      "8 Virtual Fabrics N_Port Support"
+    ],
+    "dependencies": [
+      "Extended Link Services frame envelope",
+      "Common Service Parameters",
+      "Class Service Parameters",
+      "Virtual Fabrics / EVFP",
+      "Authentication"
+    ],
+    "priority": "vertical_seed",
+    "scope_status": "in_scope",
+    "notes": "Seed reading plan derived from FLOGI live QA traces. The plan intentionally decomposes the broad FLOGI question into focused, IR-oriented tasks."
+  },
+  "task": {
+    "task_id": "flogi_common_service_parameters",
+    "title": "FLOGI Common Service Parameters",
+    "task_type": "message_format",
+    "target_outputs": [
+      "common_service_parameter_fields",
+      "applicability",
+      "payload_bit",
+      "virtual_fabrics_bit",
+      "timeouts",
+      "evidence"
+    ],
+    "reading_goal": "Read Common Service Parameter applicability plus FLOGI request and LS_ACC Common Service Parameters. Cover Table 150, Table 151, and Table 153 with fields, applicability, Payload Bit, Virtual Fabrics bit, R_A_TOV, E_D_TOV, and FLOGI/FLOGI LS_ACC differences.",
+    "page_ranges": [
+      "167-170"
+    ],
+    "must_include_assets": [
+      {
+        "type": "table",
+        "asset_id": "table_0158"
+      },
+      {
+        "type": "table",
+        "asset_id": "table_0160"
+      },
+      {
+        "type": "table",
+        "asset_id": "table_0161"
+      },
+      {
+        "type": "table",
+        "asset_id": "table_0163"
+      }
+    ],
+    "expected_evidence_types": [
+      "text_span",
+      "table_cell"
+    ],
+    "completion_criteria": [
+      "FLOGI request Common Service Parameter fields are grounded.",
+      "FLOGI LS_ACC Common Service Parameter fields are grounded.",
+      "Table 150 continued rows are not missed.",
+      "Payload Bit and Virtual Fabrics bit applicability are grounded."
+    ],
+    "dependencies": [],
+    "budget": {
+      "max_pages": 4,
+      "max_tables": 4,
+      "max_tool_calls": 12
+    },
+    "status": "accepted",
+    "reason": "",
+    "task_dir": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_common_service_parameters",
+    "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_common_service_parameters/task_input.json"
+  }
+}

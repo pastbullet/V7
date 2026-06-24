@@ -1,0 +1,855 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 91,
+  "spans": [
+    {
+      "span_id": "p091_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0002",
+      "text": " 72",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0003",
+      "text": "The reporting port shall select ports from the registrant list for each Link Incident Record Format.  The",
+      "bbox": [
+        96.0,
+        57.65,
+        539.95,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0004",
+      "text": "RLIR shall first be sent to all registered ports that have registered to always receive RLIRs.  If no reg-",
+      "bbox": [
+        96.0,
+        69.65,
+        539.84,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0005",
+      "text": "istered ports are registered to always receive RLIR or if RLIR was not successfully transmitted to at",
+      "bbox": [
+        96.0,
+        81.65,
+        540.02,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0006",
+      "text": "least one of those ports registered to always receive RLIRs, then the reporting port shall send the",
+      "bbox": [
+        96.0,
+        93.65,
+        539.92,
+        104.76
+      ],
+      "block_index": 3,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0007",
+      "text": "RLIR to a registered port selected from among those that have registered to conditionally receive",
+      "bbox": [
+        96.0,
+        105.64,
+        539.94,
+        116.76
+      ],
+      "block_index": 3,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0008",
+      "text": "RLIR.  If RLIR is not successfully transmitted to the selected registered port registered to conditional-",
+      "bbox": [
+        96.0,
+        117.64,
+        540.07,
+        128.76
+      ],
+      "block_index": 3,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0009",
+      "text": "ly receive RLIR, the sending port shall select another port, if any, from the established registration",
+      "bbox": [
+        96.0,
+        129.64,
+        539.91,
+        140.76
+      ],
+      "block_index": 3,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0010",
+      "text": "list.  The RLIR ELS is considered successfully transmitted if a LS_ACC is received for the RLIR with-",
+      "bbox": [
+        96.0,
+        141.64,
+        539.99,
+        152.76
+      ],
+      "block_index": 3,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0011",
+      "text": "in 2xR_A_TOV.",
+      "bbox": [
+        96.0,
+        153.64,
+        165.43,
+        164.76
+      ],
+      "block_index": 3,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0012",
+      "text": "If a reporting port is not able to successfully deliver a RLIR ELS to a registered port, the registered",
+      "bbox": [
+        96.0,
+        178.96,
+        540.08,
+        190.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0013",
+      "text": "port’s registration for the incident port may be discarded.  If a reporting node is not able to successful-",
+      "bbox": [
+        96.0,
+        190.96,
+        540.01,
+        202.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0014",
+      "text": "ly deliver an RLIR ELS through a particular reporting port, it may select a different reporting port and",
+      "bbox": [
+        96.0,
+        202.96,
+        539.93,
+        214.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0015",
+      "text": "try again.  If no registration is established, it is vendor specific as to whether the incident port’s report-",
+      "bbox": [
+        96.0,
+        214.96,
+        540.12,
+        226.08
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0016",
+      "text": "ing node generates and retains or discards the Link Incident Record.",
+      "bbox": [
+        96.0,
+        226.96,
+        398.82,
+        238.08
+      ],
+      "block_index": 4,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0017",
+      "text": "4.2.24.3  Protocol",
+      "bbox": [
+        96.0,
+        250.96,
+        178.22,
+        262.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0018",
+      "text": "a) RLIR Request Sequence",
+      "bbox": [
+        106.02,
+        274.96,
+        232.97,
+        286.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0019",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence",
+      "bbox": [
+        106.02,
+        298.96,
+        287.89,
+        310.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0020",
+      "text": "4.2.24.4  Request Sequence",
+      "bbox": [
+        96.0,
+        322.96,
+        227.06,
+        334.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0021",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        346.96,
+        157.1,
+        358.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0022",
+      "text": "The S_ID designates the reporting port that is providing the Link Incident Record.  The",
+      "bbox": [
+        157.08,
+        346.96,
+        539.97,
+        358.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p091_s0023",
+      "text": "D_ID field designates the registered port.",
+      "bbox": [
+        96.0,
+        358.96,
+        277.68,
+        370.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0024",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        382.96,
+        140.41,
+        394.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0025",
+      "text": "The format of the RLIR Payload is shown in table 67.",
+      "bbox": [
+        140.4,
+        382.96,
+        374.3,
+        394.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p091_s0026",
+      "text": " Table 67 – RLIR Payload",
+      "bbox": [
+        258.84,
+        404.98,
+        377.13,
+        416.1
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0027",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        427.0,
+        133.06,
+        438.12
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0028",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        439.0,
+        136.35,
+        450.12
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0029",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        427.0,
+        233.97,
+        438.12
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0030",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        427.0,
+        328.41,
+        438.12
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0031",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        427.0,
+        427.0,
+        438.12
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0032",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        427.0,
+        522.83,
+        438.12
+      ],
+      "block_index": 12,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0033",
+      "text": "0",
+      "bbox": [
+        120.84,
+        455.98,
+        126.38,
+        467.1
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0034",
+      "text": "RLIR (79h)",
+      "bbox": [
+        149.88,
+        455.98,
+        198.75,
+        467.1
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0035",
+      "text": "00h",
+      "bbox": [
+        247.09,
+        455.98,
+        263.78,
+        467.1
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0036",
+      "text": "00h",
+      "bbox": [
+        344.28,
+        455.98,
+        360.96,
+        467.1
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0037",
+      "text": "00h",
+      "bbox": [
+        441.46,
+        455.98,
+        458.14,
+        467.1
+      ],
+      "block_index": 13,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0038",
+      "text": "1",
+      "bbox": [
+        120.84,
+        484.96,
+        126.38,
+        496.07
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0039",
+      "text": "Link Incident Record ",
+      "bbox": [
+        149.88,
+        478.96,
+        243.8,
+        490.07
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0040",
+      "text": "Format",
+      "bbox": [
+        149.88,
+        490.96,
+        181.51,
+        502.07
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0041",
+      "text": "Common Link ",
+      "bbox": [
+        247.08,
+        472.96,
+        311.54,
+        484.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0042",
+      "text": "Incident Record ",
+      "bbox": [
+        247.08,
+        484.96,
+        319.86,
+        496.07
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0043",
+      "text": "Length",
+      "bbox": [
+        247.08,
+        496.96,
+        277.64,
+        508.07
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0044",
+      "text": "Common ",
+      "bbox": [
+        344.28,
+        472.96,
+        387.6,
+        484.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0045",
+      "text": "Link Incident-",
+      "bbox": [
+        344.28,
+        484.96,
+        403.76,
+        496.07
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0046",
+      "text": "Descriptor Length",
+      "bbox": [
+        344.28,
+        496.96,
+        423.16,
+        508.07
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0047",
+      "text": "Specific Link Incident ",
+      "bbox": [
+        441.48,
+        478.96,
+        536.49,
+        490.07
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0048",
+      "text": "Record Length",
+      "bbox": [
+        441.48,
+        490.96,
+        507.01,
+        502.07
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0049",
+      "text": "2",
+      "bbox": [
+        120.84,
+        514.0,
+        126.38,
+        525.12
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0050",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        514.0,
+        171.52,
+        525.12
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0051",
+      "text": "Common Link Incident Record",
+      "bbox": [
+        275.1,
+        515.98,
+        409.57,
+        527.1
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0052",
+      "text": "(m) (m=4 or 16)",
+      "bbox": [
+        307.44,
+        527.98,
+        377.1,
+        539.1
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0053",
+      "text": "..",
+      "bbox": [
+        120.84,
+        530.98,
+        126.37,
+        542.1
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0054",
+      "text": "m+1",
+      "bbox": [
+        113.46,
+        547.96,
+        133.7,
+        559.07
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0055",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        547.96,
+        460.36,
+        559.07
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0056",
+      "text": "m+2",
+      "bbox": [
+        113.46,
+        573.46,
+        133.7,
+        584.57
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0057",
+      "text": "Common Link Incident Descriptor",
+      "bbox": [
+        149.88,
+        565.0,
+        297.66,
+        576.11
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0058",
+      "text": "IQ",
+      "bbox": [
+        149.88,
+        581.98,
+        160.43,
+        593.09
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0059",
+      "text": "IC",
+      "bbox": [
+        247.06,
+        581.98,
+        257.06,
+        593.09
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0060",
+      "text": "EPAI (domain/area of ISL)",
+      "bbox": [
+        344.24,
+        581.98,
+        460.93,
+        593.09
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0061",
+      "text": "m+3",
+      "bbox": [
+        113.46,
+        598.96,
+        133.7,
+        610.07
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0062",
+      "text": "Specific Link Incident Record",
+      "bbox": [
+        277.86,
+        601.0,
+        406.68,
+        612.11
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0063",
+      "text": "(0-max bytes)",
+      "bbox": [
+        311.76,
+        613.0,
+        372.86,
+        624.11
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0064",
+      "text": "..",
+      "bbox": [
+        120.84,
+        616.0,
+        126.37,
+        627.11
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p091_s0065",
+      "text": "n",
+      "bbox": [
+        120.54,
+        632.98,
+        126.62,
+        644.09
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0070"
+  ]
+}

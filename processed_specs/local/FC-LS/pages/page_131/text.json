@@ -1,0 +1,413 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 131,
+  "spans": [
+    {
+      "span_id": "p131_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0002",
+      "text": " 112",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0003",
+      "text": "The fields in table 118 are the same as defined in table 116.",
+      "bbox": [
+        96.0,
+        57.65,
+        360.85,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0004",
+      "text": "Service Reject (LS_RJT)",
+      "bbox": [
+        105.96,
+        82.97,
+        216.01,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0005",
+      "text": "Signifies the rejection of the EVFP request",
+      "bbox": [
+        115.98,
+        94.97,
+        303.72,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0006",
+      "text": "Table 119 shows the use of reason codes and reason code explanations under some error condi-",
+      "bbox": [
+        96.0,
+        118.97,
+        539.82,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0007",
+      "text": "tions.",
+      "bbox": [
+        96.0,
+        130.97,
+        119.89,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0008",
+      "text": " Table 119 – LS_RJT Reason Codes for EVFP",
+      "bbox": [
+        211.08,
+        152.98,
+        424.88,
+        164.1
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0009",
+      "text": "Error Condition",
+      "bbox": [
+        150.42,
+        169.0,
+        224.32,
+        180.12
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0010",
+      "text": "Reason Code",
+      "bbox": [
+        303.07,
+        169.0,
+        366.94,
+        180.12
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0011",
+      "text": "Reason Code Explanation",
+      "bbox": [
+        404.06,
+        169.0,
+        527.4,
+        180.12
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0012",
+      "text": "EVFP ELS not supported",
+      "bbox": [
+        102.72,
+        191.98,
+        214.3,
+        203.1
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0013",
+      "text": "Command not supported",
+      "bbox": [
+        280.02,
+        193.0,
+        389.94,
+        204.12
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0014",
+      "text": "No additional explanation",
+      "bbox": [
+        409.54,
+        193.0,
+        521.78,
+        204.12
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0015",
+      "text": "EVFP collision",
+      "bbox": [
+        102.72,
+        221.98,
+        167.11,
+        233.1
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0016",
+      "text": "Command already in ",
+      "bbox": [
+        288.9,
+        217.0,
+        383.91,
+        228.12
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0017",
+      "text": "progress",
+      "bbox": [
+        315.54,
+        229.0,
+        354.42,
+        240.12
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0018",
+      "text": "No additional explanation",
+      "bbox": [
+        409.56,
+        223.0,
+        521.71,
+        234.12
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0019",
+      "text": "Protocol Version not supported",
+      "bbox": [
+        102.72,
+        251.98,
+        239.9,
+        263.1
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0020",
+      "text": "Protocol error",
+      "bbox": [
+        304.74,
+        253.0,
+        365.25,
+        264.12
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0021",
+      "text": "No additional explanation",
+      "bbox": [
+        409.57,
+        253.0,
+        521.76,
+        264.12
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0022",
+      "text": "EVFP_COMMIT before EVFP_SYNC",
+      "bbox": [
+        102.72,
+        275.98,
+        268.19,
+        287.1
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0023",
+      "text": "Logical error",
+      "bbox": [
+        307.26,
+        277.0,
+        362.73,
+        288.12
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0024",
+      "text": "No additional explanation",
+      "bbox": [
+        409.52,
+        277.0,
+        521.73,
+        288.12
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0025",
+      "text": "Insufficient Resources",
+      "bbox": [
+        102.72,
+        305.98,
+        200.97,
+        317.1
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0026",
+      "text": "Unable to perform ",
+      "bbox": [
+        295.02,
+        301.0,
+        377.8,
+        312.12
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0027",
+      "text": "command request",
+      "bbox": [
+        295.02,
+        313.0,
+        375.02,
+        324.12
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0028",
+      "text": "No additional explanation",
+      "bbox": [
+        409.56,
+        307.0,
+        521.71,
+        318.12
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0029",
+      "text": "Invalid Payload Message",
+      "bbox": [
+        102.72,
+        335.98,
+        213.75,
+        347.1
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0030",
+      "text": "Protocol error",
+      "bbox": [
+        304.74,
+        337.0,
+        365.25,
+        348.12
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p131_s0031",
+      "text": "No additional explanation",
+      "bbox": [
+        409.57,
+        337.0,
+        521.76,
+        348.12
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0123"
+  ]
+}

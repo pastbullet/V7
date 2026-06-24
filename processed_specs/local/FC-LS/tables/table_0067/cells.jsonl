@@ -1,0 +1,26 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bit position", "page": 88, "bbox": [211.58, 98.28, 275.55, 120.0]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Function", "page": 88, "bbox": [275.55, 98.28, 424.42, 120.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "31", "page": 88, "bbox": [211.58, 120.0, 275.55, 144.03]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Hub", "page": 88, "bbox": [275.55, 120.0, 424.42, 144.03]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "30", "page": 88, "bbox": [211.58, 144.03, 275.55, 168.03]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Switch", "page": 88, "bbox": [275.55, 144.03, 424.42, 168.03]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "29", "page": 88, "bbox": [211.58, 168.03, 275.55, 192.03]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Gateway", "page": 88, "bbox": [275.55, 168.03, 424.42, 192.03]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "28", "page": 88, "bbox": [211.58, 192.03, 275.55, 216.03]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Storage device", "page": 88, "bbox": [275.55, 192.03, 424.42, 216.03]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "27", "page": 88, "bbox": [211.58, 216.03, 275.55, 240.03]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "Host", "page": 88, "bbox": [275.55, 216.03, 424.42, 240.03]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "26", "page": 88, "bbox": [211.58, 240.03, 275.55, 264.03]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "Storage subsystem", "page": 88, "bbox": [275.55, 240.03, 424.42, 264.03]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "25", "page": 88, "bbox": [211.58, 264.03, 275.55, 288.03]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "Storage access device", "page": 88, "bbox": [275.55, 264.03, 424.42, 288.03]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "24", "page": 88, "bbox": [211.58, 288.03, 275.55, 312.03]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "Wavelength division multiplexer", "page": 88, "bbox": [275.55, 288.03, 424.42, 312.03]}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "23", "page": 88, "bbox": [211.58, 312.03, 275.55, 336.03]}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "NAS server", "page": 88, "bbox": [275.55, 312.03, 424.42, 336.03]}
+{"cell_id": "r11c1", "row": 11, "col": 1, "text": "22", "page": 88, "bbox": [211.58, 336.03, 275.55, 360.03]}
+{"cell_id": "r11c2", "row": 11, "col": 2, "text": "Bridge", "page": 88, "bbox": [275.55, 336.03, 424.42, 360.03]}
+{"cell_id": "r12c1", "row": 12, "col": 1, "text": "21", "page": 88, "bbox": [211.58, 360.03, 275.55, 384.03]}
+{"cell_id": "r12c2", "row": 12, "col": 2, "text": "Virtualization device", "page": 88, "bbox": [275.55, 360.03, 424.42, 384.03]}
+{"cell_id": "r13c1", "row": 13, "col": 1, "text": "20-8", "page": 88, "bbox": [211.58, 384.03, 275.55, 407.7]}
+{"cell_id": "r13c2", "row": 13, "col": 2, "text": "Reserved", "page": 88, "bbox": [275.55, 384.03, 424.42, 407.7]}

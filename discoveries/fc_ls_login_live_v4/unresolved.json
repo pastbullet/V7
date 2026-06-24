@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "unit_id": "prli-image-figure-dependency",
+      "title": "PRLI image and image-pair figures dependency",
+      "kind": "other",
+      "reason": "PRLI text explicitly depends on figure 4 for Process_Associator/image identification and figure 5 for image-pair identification, but usable figure assets with stable captioned evidence were not recoverable from the processed assets inspected.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p197_s0025",
+          "quote": "A group of related processes is known as an image and is identified by the Process_Associator (see"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0027",
+          "quote": "Process_Associator identify the image pair (see figure 5)."
+        }
+      ],
+      "related_assets": []
+    }
+  ]
+}

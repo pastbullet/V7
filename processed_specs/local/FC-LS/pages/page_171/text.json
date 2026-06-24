@@ -1,0 +1,528 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 171,
+  "spans": [
+    {
+      "span_id": "p171_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0002",
+      "text": " 152",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0003",
+      "text": "6.6.2.4.2  Clean Address",
+      "bbox": [
+        96.0,
+        57.65,
+        210.42,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0004",
+      "text": "0 = No information",
+      "bbox": [
+        96.0,
+        82.97,
+        177.92,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0005",
+      "text": "1 = Clean Address",
+      "bbox": [
+        96.0,
+        94.97,
+        178.42,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0006",
+      "text": "The Clean Address bit (word 1, bit 31) provides an indication to an Nx_Port as to whether the ad-",
+      "bbox": [
+        96.0,
+        118.97,
+        540.12,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0007",
+      "text": "dress it was assigned by the Fabric had been previously used by another device within R_A_TOV.  If",
+      "bbox": [
+        96.0,
+        130.97,
+        540.09,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0008",
+      "text": "this bit is set to zero, the assigned address may or may not have been used by a previous device",
+      "bbox": [
+        96.0,
+        142.96,
+        539.98,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0009",
+      "text": "within R_A_TOV.  If this bit is set to one, the assigned address has not been used by any other de-",
+      "bbox": [
+        96.0,
+        154.96,
+        540.02,
+        166.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0010",
+      "text": "vice within R_A_TOV, or has been assigned to the current device for a previous FLOGI and not been",
+      "bbox": [
+        96.0,
+        166.96,
+        539.9,
+        178.08
+      ],
+      "block_index": 5,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0011",
+      "text": "changed within R_A_TOV.  This bit is only meaningful in the FLOGI LS_ACC, it is not meaningful in",
+      "bbox": [
+        96.0,
+        178.96,
+        539.92,
+        190.08
+      ],
+      "block_index": 5,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0012",
+      "text": "the FLOGI request.",
+      "bbox": [
+        96.0,
+        190.96,
+        181.52,
+        202.08
+      ],
+      "block_index": 5,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0013",
+      "text": "6.6.2.4.3  Multiple N_Port_ID Support",
+      "bbox": [
+        96.0,
+        214.96,
+        270.37,
+        226.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0014",
+      "text": "0 = not supported",
+      "bbox": [
+        96.0,
+        238.96,
+        174.01,
+        250.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0015",
+      "text": "1 = supported",
+      "bbox": [
+        96.0,
+        250.96,
+        157.4,
+        262.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0016",
+      "text": "The Multiple N_Port_ID Support bit (word 1, bit 31) shall be set to one to indicate that the N_Port sup-",
+      "bbox": [
+        96.0,
+        274.96,
+        540.05,
+        286.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0017",
+      "text": "plying this parameter is capable of requesting multiple N_Port_IDs using the FDISC ELS. The",
+      "bbox": [
+        96.0,
+        286.96,
+        539.93,
+        298.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0018",
+      "text": "N_Port_ID Support bit shall be set to zero to indicate that the N_Port supplying this parameter is not",
+      "bbox": [
+        96.0,
+        298.96,
+        540.01,
+        310.08
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0019",
+      "text": "capable of requesting additional N_Port_IDs. This bit is only meaningful in the FLOGI request, it is",
+      "bbox": [
+        96.0,
+        310.96,
+        540.02,
+        322.08
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0020",
+      "text": "not meaningful in the FLOGI LS_ACC.",
+      "bbox": [
+        96.0,
+        322.96,
+        265.97,
+        334.08
+      ],
+      "block_index": 8,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0021",
+      "text": "6.6.2.4.4  Random relative offset",
+      "bbox": [
+        96.0,
+        346.96,
+        248.19,
+        358.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0022",
+      "text": "0 = not supported",
+      "bbox": [
+        96.0,
+        370.96,
+        174.01,
+        382.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0023",
+      "text": "1 = supported",
+      "bbox": [
+        96.0,
+        382.96,
+        157.4,
+        394.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0024",
+      "text": "The random relative offset bit (word 1, bit 30) indicates that the Nx_Port supplying this parameter",
+      "bbox": [
+        96.0,
+        406.96,
+        539.98,
+        418.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0025",
+      "text": "shall be capable of supporting random relative offset values, if present (F_CTL bit 3).  Random val-",
+      "bbox": [
+        96.0,
+        418.96,
+        539.95,
+        430.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0026",
+      "text": "ues may increase, decrease, or otherwise fluctuate within a Sequence.  This bit shall only be applica-",
+      "bbox": [
+        96.0,
+        430.96,
+        540.05,
+        442.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0027",
+      "text": "ble to those Information Categories in which an Nx_Port supports relative offset (i.e., word 3, bits 15-",
+      "bbox": [
+        96.0,
+        442.96,
+        539.95,
+        454.08
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0028",
+      "text": "0).  See FC-FS-2 for the use of random relative offset.",
+      "bbox": [
+        96.0,
+        454.96,
+        334.81,
+        466.08
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0029",
+      "text": "This bit shall be applicable to a Sequence Initiator in addition to a Sequence Recipient for all Classes",
+      "bbox": [
+        96.0,
+        478.96,
+        540.01,
+        490.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0030",
+      "text": "of Service supported by the Nx_Port.",
+      "bbox": [
+        96.0,
+        490.96,
+        259.35,
+        502.07
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0031",
+      "text": "6.6.2.4.5  Virtual Fabrics bit",
+      "bbox": [
+        96.0,
+        514.96,
+        224.81,
+        526.07
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0032",
+      "text": "0 = not supported",
+      "bbox": [
+        96.0,
+        538.96,
+        174.01,
+        550.07
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0033",
+      "text": "1 = supported",
+      "bbox": [
+        96.0,
+        550.96,
+        157.4,
+        562.07
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0034",
+      "text": "The Virtual Fabrics bit (word 1, bit 30) indicates support for Virtual fabrics (see clause 8).",
+      "bbox": [
+        96.0,
+        574.96,
+        487.06,
+        586.07
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0035",
+      "text": "6.6.2.4.6  Valid Vendor Version Level",
+      "bbox": [
+        96.0,
+        598.96,
+        269.31,
+        610.07
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0036",
+      "text": "0 = not valid",
+      "bbox": [
+        96.0,
+        622.96,
+        150.11,
+        634.07
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0037",
+      "text": "1 = Valid ",
+      "bbox": [
+        96.0,
+        635.02,
+        137.91,
+        646.13
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0038",
+      "text": "In PLOGI, PLOGI LS_ACC, and FLOGI, if the Valid Vendor Version Level bit (word 1, bit 29) is set to",
+      "bbox": [
+        96.0,
+        659.02,
+        539.87,
+        670.13
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0039",
+      "text": "one, the Vendor Version Level (words 25 through 28 in table 149) contains valid information.  If it is",
+      "bbox": [
+        96.0,
+        671.02,
+        539.91,
+        682.13
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p171_s0040",
+      "text": "set to zero, the Vendor Version Level field is not meaningful.",
+      "bbox": [
+        96.0,
+        683.02,
+        362.56,
+        694.13
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

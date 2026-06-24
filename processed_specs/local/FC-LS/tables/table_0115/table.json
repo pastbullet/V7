@@ -1,0 +1,54 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31",
+      "30 .. 28",
+      "27 .. 24",
+      "23 .. 16",
+      "15 .. 12",
+      "11 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "02h",
+      null,
+      null,
+      "00h",
+      "00h",
+      null,
+      "00h"
+    ],
+    [
+      "1",
+      "SBRP\nRequest\nAccepted",
+      "Reserved",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "2",
+      "Error\nWindow\nexponent",
+      null,
+      "Error Window value",
+      null,
+      "Error\nInterval\nexponent",
+      "Error Interval value",
+      null
+    ],
+    [
+      "3",
+      "Error Threshold",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

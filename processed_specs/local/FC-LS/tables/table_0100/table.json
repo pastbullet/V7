@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Value",
+      "When sent to the Clock Sync Server",
+      "When sent to the Fabric Controller"
+    ],
+    [
+      "00h",
+      "Enable Clock Synchronization service to\nthis client. The CS_Accuracy,\nCS_Implemented_MSB,\nCS_Implemented_LSB, and\nCS_Update_Period fields are not\nmeaningful in the CSR Request.",
+      "Return Quality of Service parameters.\nThe CS_Accuracy,\nCS_Implemented_MSB,\nCS_Implemented_LSB, and\nCS_Update_Period fields are not\nmeaningful in the CSR Request."
+    ],
+    [
+      "01h",
+      "Enable Clock Synchronization service to\nthis client. The CS_Accuracy,\nCS_Implemented_MSB,\nCS_Implemented_LSB, and\nCS_Update_Period fields contain the\nrequested Quality of Service\nparameters.",
+      "Return Quality of Service parameters.\nThe CS_Accuracy,\nCS_Implemented_MSB,\nCS_Implemented_LSB, and\nCS_Update_Period fields contain the\nrequested Quality of Service\nparameters."
+    ],
+    [
+      "02h – FEh",
+      "Reserved",
+      "Reserved"
+    ],
+    [
+      "FFh",
+      "Disable Clock Synchronization service to\nthis client",
+      "Reserved"
+    ]
+  ]
+}

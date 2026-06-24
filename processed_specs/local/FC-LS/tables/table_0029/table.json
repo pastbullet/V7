@@ -1,0 +1,53 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "FAN (60h)",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "Reserved",
+      "Loop Fabric Address",
+      null,
+      null
+    ],
+    [
+      "2",
+      "MSB F_Port_Name\n(8 bytes) LSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "3",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "4",
+      "MSB Fabric_Name\n(8 bytes) LSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "5",
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0059",
+  "type": "table",
+  "caption": "Table 56 – TPLS accept response code",
+  "pages": [
+    82
+  ],
+  "bbox": [
+    94.53,
+    122.28,
+    541.47,
+    275.7
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 82,
+  "logical_table": false
+}

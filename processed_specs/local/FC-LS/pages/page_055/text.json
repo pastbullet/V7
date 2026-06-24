@@ -1,0 +1,686 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 55,
+  "spans": [
+    {
+      "span_id": "p055_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0002",
+      "text": " 36",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0003",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        57.65,
+        142.05,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0004",
+      "text": "LS_ACC returns the requested R_A_TOV and E_D_TOV values. The format of the",
+      "bbox": [
+        142.08,
+        57.65,
+        539.92,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p055_s0005",
+      "text": "LS_ACC Payload is shown in table 20.  E_D_TOV Timeout values are specified as a count of either",
+      "bbox": [
+        96.0,
+        69.65,
+        540.05,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0006",
+      "text": "1 ms or 1 ns increments, depending on the setting of the E_D_TOV Resolution (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        81.65,
+        513.21,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0007",
+      "text": "The Timeout Qualifier word is defined as follows:",
+      "bbox": [
+        96.0,
+        238.97,
+        311.51,
+        250.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0008",
+      "text": "a) Bits 31-27: Reserved",
+      "bbox": [
+        106.02,
+        262.97,
+        215.72,
+        274.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0009",
+      "text": "b) Bit 26: E_D_TOV Resolution",
+      "bbox": [
+        106.02,
+        286.96,
+        248.98,
+        298.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0010",
+      "text": "If the E_D_TOV Resolution bit is zero, the value specified in the E_D_TOV field shall indicate a",
+      "bbox": [
+        122.4,
+        310.96,
+        539.93,
+        322.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0011",
+      "text": "count of 1 ms increments.  If the E_D_TOV Resolution bit is one, the value specified in the",
+      "bbox": [
+        122.4,
+        322.96,
+        539.91,
+        334.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0012",
+      "text": "E_D_TOV field shall indicate a count of 1 ns increments.",
+      "bbox": [
+        122.4,
+        334.96,
+        372.33,
+        346.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0013",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        358.96,
+        114.38,
+        370.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0014",
+      "text": "Bits 25-20: Reserved",
+      "bbox": [
+        122.4,
+        358.96,
+        215.69,
+        370.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0015",
+      "text": "d) Bit 19: R_T_TOV Value",
+      "bbox": [
+        106.02,
+        382.96,
+        226.8,
+        394.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0016",
+      "text": "If this bit is set to zero, the value of R_T_TOV shall be the default value of 100 milliseconds.  If",
+      "bbox": [
+        122.4,
+        406.96,
+        540.08,
+        418.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0017",
+      "text": "it is set to one, the value of R_T_TOV shall be 100 microseconds.",
+      "bbox": [
+        122.4,
+        418.96,
+        412.91,
+        430.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0018",
+      "text": "e) Bits 18-0: Reserved",
+      "bbox": [
+        106.02,
+        442.96,
+        210.13,
+        454.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0019",
+      "text": "4.2.12",
+      "bbox": [
+        96.0,
+        466.96,
+        123.77,
+        478.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0020",
+      "text": "Reinstate Recovery Qualifier (RRQ)",
+      "bbox": [
+        133.77,
+        466.96,
+        301.5,
+        478.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0021",
+      "text": "4.2.12.1  Description",
+      "bbox": [
+        96.0,
+        490.96,
+        192.63,
+        502.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0022",
+      "text": "The RRQ ELS shall be used to notify the destination Nx_Port that the Recovery_Qualifier shall be",
+      "bbox": [
+        96.0,
+        514.96,
+        539.87,
+        526.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0023",
+      "text": "available for reuse. The Recovery_Qualifier (S_ID, D_ID, OX_ID, RX_ID, and low SEQ_CNT minus",
+      "bbox": [
+        96.0,
+        526.96,
+        540.02,
+        538.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0024",
+      "text": "high SEQ_CNT) shall be associated with an Exchange in which the Abort Sequence or Abort Ex-",
+      "bbox": [
+        96.0,
+        538.96,
+        540.1,
+        550.08
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0025",
+      "text": "change was previously performed.",
+      "bbox": [
+        96.0,
+        550.96,
+        248.19,
+        562.08
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0026",
+      "text": "In the case of Abort Exchange (i.e., ABTS-LS), the ESB and Recovery_Qualifier are immediately",
+      "bbox": [
+        96.0,
+        574.96,
+        539.9,
+        586.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0027",
+      "text": "available for reuse. In the case of Abort Sequence Protocol, the Recovery_Qualifier is purged.",
+      "bbox": [
+        96.0,
+        586.96,
+        511.02,
+        598.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0028",
+      "text": "A request to Reinstate the Recovery_Qualifier shall only be accepted if the Originator Nx_Port",
+      "bbox": [
+        96.0,
+        610.96,
+        539.93,
+        622.07
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0029",
+      "text": "N_Port_ID or the Responder Nx_Port N_Port_ID of the target Exchange is the same as the",
+      "bbox": [
+        96.0,
+        622.96,
+        539.98,
+        634.07
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0030",
+      "text": "N_Port_ID of the Nx_Port that makes the request. If the RRQ Request is not accepted, an LS_RJT",
+      "bbox": [
+        96.0,
+        634.96,
+        540.01,
+        646.07
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0031",
+      "text": "with reason code \"Unable to perform command request\" and reason code explanation \"Invalid Origi-",
+      "bbox": [
+        96.0,
+        647.02,
+        540.03,
+        658.13
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0032",
+      "text": "nator S_ID\" shall be returned.",
+      "bbox": [
+        96.0,
+        659.02,
+        227.26,
+        670.13
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0033",
+      "text": "A separate Exchange shall be used to reinstate the Recovery_Qualifier. The Payload shall contain",
+      "bbox": [
+        96.0,
+        683.02,
+        539.99,
+        694.13
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0034",
+      "text": "the OX_ID and RX_ID for the Exchange Recovery_Qualifier, in addition to the S_ID of the Nx_Port",
+      "bbox": [
+        96.0,
+        695.02,
+        539.97,
+        706.13
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0035",
+      "text": " Table 20 – RTV LS_ACC Payload",
+      "bbox": [
+        239.1,
+        103.66,
+        396.91,
+        114.77
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0036",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        125.62,
+        133.06,
+        136.73
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0037",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        137.62,
+        136.35,
+        148.73
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0038",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        125.62,
+        233.97,
+        136.73
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0039",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        125.62,
+        328.41,
+        136.73
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0040",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        125.62,
+        427.0,
+        136.73
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0041",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        125.62,
+        522.83,
+        136.73
+      ],
+      "block_index": 19,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0042",
+      "text": "0",
+      "bbox": [
+        120.84,
+        154.66,
+        126.38,
+        165.77
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0043",
+      "text": "02h",
+      "bbox": [
+        149.88,
+        154.66,
+        166.52,
+        165.77
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0044",
+      "text": "00h",
+      "bbox": [
+        247.08,
+        154.66,
+        263.71,
+        165.77
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0045",
+      "text": "00h",
+      "bbox": [
+        344.27,
+        154.66,
+        360.97,
+        165.77
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0046",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        154.66,
+        458.16,
+        165.77
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0047",
+      "text": "1",
+      "bbox": [
+        120.84,
+        171.64,
+        126.38,
+        182.75
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0048",
+      "text": "Resource_Allocation_Timeout Value (R_A_TOV) (see FC-FS-2)",
+      "bbox": [
+        149.88,
+        171.64,
+        433.14,
+        182.75
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0049",
+      "text": "2",
+      "bbox": [
+        120.84,
+        188.62,
+        126.38,
+        199.73
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0050",
+      "text": "Error_Detect_Timeout Value (E_D_TOV) (see FC-FS-2)",
+      "bbox": [
+        149.88,
+        188.62,
+        398.1,
+        199.73
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0051",
+      "text": "3",
+      "bbox": [
+        120.84,
+        205.66,
+        126.38,
+        216.77
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p055_s0052",
+      "text": "Timeout Qualifier",
+      "bbox": [
+        149.88,
+        205.66,
+        225.95,
+        216.77
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0022"
+  ]
+}

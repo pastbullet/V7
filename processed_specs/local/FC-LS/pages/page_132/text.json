@@ -1,0 +1,726 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 132,
+  "spans": [
+    {
+      "span_id": "p132_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0002",
+      "text": " 113",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0003",
+      "text": "4.2.43.2  EVFP_SYNC Message Payload",
+      "bbox": [
+        96.0,
+        57.65,
+        283.18,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0004",
+      "text": "4.2.43.2.1  Overview",
+      "bbox": [
+        96.0,
+        82.97,
+        190.44,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0005",
+      "text": "The EVFP_SYNC Message Payload carries a list of descriptors. Each descriptor is self-identifying",
+      "bbox": [
+        96.0,
+        106.97,
+        539.9,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0006",
+      "text": "(see table 121). The format of the EVFP_SYNC Message Payload is shown in table 120. This Mes-",
+      "bbox": [
+        96.0,
+        118.97,
+        539.98,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0007",
+      "text": "sage Payload is used in both EVFP_SYNC Request and EVFP_SYNC Accept.",
+      "bbox": [
+        96.0,
+        130.97,
+        443.75,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0008",
+      "text": "All descriptors share the same format, shown in table 121.",
+      "bbox": [
+        96.0,
+        454.96,
+        353.14,
+        466.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0009",
+      "text": " Table 120 – EVFP_SYNC Message Payload",
+      "bbox": [
+        215.52,
+        152.98,
+        420.42,
+        164.1
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0010",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        175.0,
+        133.06,
+        186.12
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0011",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        187.0,
+        136.35,
+        198.12
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0012",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        175.0,
+        233.97,
+        186.12
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0013",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        175.0,
+        328.41,
+        186.12
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0014",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        175.0,
+        427.0,
+        186.12
+      ],
+      "block_index": 8,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0015",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        175.0,
+        522.83,
+        186.12
+      ],
+      "block_index": 8,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0016",
+      "text": "0",
+      "bbox": [
+        120.84,
+        203.98,
+        126.38,
+        215.1
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0017",
+      "text": "Descriptor #1 = Tagging Administrative Status (see 4.2.43.2.2)",
+      "bbox": [
+        201.9,
+        213.46,
+        478.32,
+        224.58
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0018",
+      "text": "a",
+      "bbox": [
+        478.26,
+        211.3,
+        482.7,
+        220.2
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p132_s0019",
+      "text": "1",
+      "bbox": [
+        120.84,
+        220.97,
+        126.38,
+        232.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0020",
+      "text": "2",
+      "bbox": [
+        120.84,
+        238.01,
+        126.38,
+        249.12
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0021",
+      "text": "Descriptor #2 = Port VF_ID (see 4.2.43.2.3)",
+      "bbox": [
+        243.54,
+        247.49,
+        436.62,
+        258.6
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0022",
+      "text": "b",
+      "bbox": [
+        436.62,
+        245.26,
+        441.06,
+        254.16
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p132_s0023",
+      "text": "3",
+      "bbox": [
+        120.84,
+        254.99,
+        126.38,
+        266.1
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0024",
+      "text": "4",
+      "bbox": [
+        120.84,
+        271.97,
+        126.38,
+        283.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0025",
+      "text": "Descriptor #3 = Locally-Enabled VF_ID List (see 4.2.43.2.4)",
+      "bbox": [
+        208.2,
+        289.97,
+        472.27,
+        301.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0026",
+      "text": "c",
+      "bbox": [
+        472.38,
+        287.8,
+        476.37,
+        296.7
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p132_s0027",
+      "text": "..",
+      "bbox": [
+        120.84,
+        289.01,
+        126.37,
+        300.12
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0028",
+      "text": "132",
+      "bbox": [
+        115.26,
+        305.99,
+        131.9,
+        317.1
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0029",
+      "text": "...",
+      "bbox": [
+        119.4,
+        322.97,
+        127.75,
+        334.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0030",
+      "text": "...",
+      "bbox": [
+        338.16,
+        332.51,
+        346.45,
+        343.62
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0031",
+      "text": "H",
+      "bbox": [
+        120.0,
+        340.01,
+        127.19,
+        351.12
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0032",
+      "text": "...",
+      "bbox": [
+        119.4,
+        356.99,
+        127.75,
+        368.1
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0033",
+      "text": "Descriptor #m",
+      "bbox": [
+        311.22,
+        366.47,
+        373.44,
+        377.58
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0034",
+      "text": "K",
+      "bbox": [
+        120.0,
+        373.96,
+        127.19,
+        385.08
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0035",
+      "text": "a",
+      "bbox": [
+        107.52,
+        391.64,
+        111.52,
+        399.68
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0036",
+      "text": " Decriptor #1 is required to be present in EVFP_SYNC request.",
+      "bbox": [
+        111.52,
+        390.02,
+        367.1,
+        403.66
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p132_s0037",
+      "text": "b",
+      "bbox": [
+        107.52,
+        405.02,
+        111.52,
+        413.06
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0038",
+      "text": " Decriptor #2 is required to be present in EVFP_SYNC request.",
+      "bbox": [
+        111.52,
+        403.4,
+        367.1,
+        417.04
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p132_s0039",
+      "text": "c",
+      "bbox": [
+        107.52,
+        418.4,
+        111.12,
+        426.44
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0040",
+      "text": "Decriptor #3 is required to be present in EVFP_SYNC request.",
+      "bbox": [
+        118.32,
+        420.38,
+        367.1,
+        430.42
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0041",
+      "text": " Table 121 – Descriptor Format",
+      "bbox": [
+        244.98,
+        476.99,
+        391.01,
+        488.1
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0042",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        499.01,
+        133.06,
+        510.12
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0043",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        511.01,
+        136.35,
+        522.12
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0044",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        499.01,
+        233.97,
+        510.12
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0045",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        499.01,
+        328.41,
+        510.12
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0046",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        499.01,
+        427.0,
+        510.12
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0047",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        499.01,
+        522.83,
+        510.12
+      ],
+      "block_index": 18,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0048",
+      "text": "0",
+      "bbox": [
+        120.84,
+        529.01,
+        126.38,
+        540.12
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0049",
+      "text": "Descriptor Control",
+      "bbox": [
+        156.24,
+        529.97,
+        236.75,
+        541.08
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0050",
+      "text": "Descriptor Type",
+      "bbox": [
+        258.42,
+        529.97,
+        328.98,
+        541.08
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0051",
+      "text": "Descriptor Length",
+      "bbox": [
+        400.12,
+        529.97,
+        478.99,
+        541.08
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0052",
+      "text": "1",
+      "bbox": [
+        120.84,
+        547.01,
+        126.38,
+        558.12
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0053",
+      "text": "Descriptor Value",
+      "bbox": [
+        305.34,
+        560.98,
+        379.25,
+        572.1
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0054",
+      "text": "..",
+      "bbox": [
+        120.84,
+        563.98,
+        126.37,
+        575.1
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p132_s0055",
+      "text": "M",
+      "bbox": [
+        119.46,
+        580.96,
+        127.76,
+        592.08
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0124",
+    "table_0125"
+  ]
+}

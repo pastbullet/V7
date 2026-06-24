@@ -1,0 +1,452 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 150,
+  "spans": [
+    {
+      "span_id": "p150_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0002",
+      "text": " 131",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0003",
+      "text": "38h",
+      "bbox": [
+        123.66,
+        127.67,
+        140.3,
+        138.78
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0004",
+      "text": "Alias Group cannot be formed ",
+      "bbox": [
+        170.16,
+        126.65,
+        305.67,
+        137.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0005",
+      "text": "Get Alias ID",
+      "bbox": [
+        340.71,
+        126.65,
+        394.04,
+        137.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0006",
+      "text": "40h",
+      "bbox": [
+        123.66,
+        151.67,
+        140.3,
+        162.78
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0007",
+      "text": "Obsolete",
+      "bbox": [
+        170.16,
+        150.65,
+        210.14,
+        161.76
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0008",
+      "text": "41h",
+      "bbox": [
+        123.66,
+        175.67,
+        140.3,
+        186.78
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0009",
+      "text": "Obsolete",
+      "bbox": [
+        170.16,
+        174.65,
+        210.14,
+        185.76
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0010",
+      "text": "42h",
+      "bbox": [
+        123.66,
+        199.67,
+        140.3,
+        210.78
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0011",
+      "text": "Obsolete",
+      "bbox": [
+        170.16,
+        198.65,
+        210.14,
+        209.76
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0012",
+      "text": "44h",
+      "bbox": [
+        123.66,
+        223.67,
+        140.3,
+        234.78
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0013",
+      "text": "Invalid Port/Node_Name",
+      "bbox": [
+        170.16,
+        222.65,
+        279.03,
+        233.76
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0014",
+      "text": "LCLM",
+      "bbox": [
+        340.75,
+        222.65,
+        367.41,
+        233.76
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0015",
+      "text": "46h",
+      "bbox": [
+        123.66,
+        247.67,
+        140.3,
+        258.78
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0016",
+      "text": "Login Extension not supported",
+      "bbox": [
+        170.16,
+        246.65,
+        305.14,
+        257.76
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0017",
+      "text": "PLOGI, FLOGI",
+      "bbox": [
+        340.71,
+        246.65,
+        406.81,
+        257.76
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0018",
+      "text": "48h",
+      "bbox": [
+        123.66,
+        271.67,
+        140.3,
+        282.78
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0019",
+      "text": "Authentication required (see FC-SP)",
+      "bbox": [
+        170.16,
+        270.65,
+        331.23,
+        281.76
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0020",
+      "text": "PLOGI, FLOGI",
+      "bbox": [
+        340.69,
+        270.65,
+        406.82,
+        281.76
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0021",
+      "text": "50h",
+      "bbox": [
+        123.66,
+        295.67,
+        140.3,
+        306.78
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0022",
+      "text": "Periodic Scan Value not allowed",
+      "bbox": [
+        170.16,
+        294.65,
+        313.46,
+        305.76
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0023",
+      "text": "SRL",
+      "bbox": [
+        340.68,
+        294.65,
+        360.14,
+        305.76
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0024",
+      "text": "51h",
+      "bbox": [
+        123.66,
+        319.67,
+        140.3,
+        330.78
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0025",
+      "text": "Periodic Scanning not supported",
+      "bbox": [
+        170.16,
+        318.65,
+        314.62,
+        329.76
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0026",
+      "text": "SRL",
+      "bbox": [
+        340.76,
+        318.65,
+        360.19,
+        329.76
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0027",
+      "text": "Others",
+      "bbox": [
+        117.0,
+        343.67,
+        146.93,
+        354.78
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0028",
+      "text": "Reserved",
+      "bbox": [
+        170.16,
+        342.65,
+        212.95,
+        353.76
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0029",
+      "text": " Table 147 – LS_RJT Reason Code Explanations(Continued)",
+      "bbox": [
+        175.8,
+        57.64,
+        460.18,
+        68.76
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0030",
+      "text": "Encoded ",
+      "bbox": [
+        110.88,
+        79.66,
+        155.83,
+        90.78
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0031",
+      "text": "Value",
+      "bbox": [
+        118.62,
+        91.66,
+        145.28,
+        102.78
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0032",
+      "text": "(Bits 15-8)",
+      "bbox": [
+        107.82,
+        103.66,
+        156.13,
+        114.78
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0033",
+      "text": "Description",
+      "bbox": [
+        225.96,
+        103.66,
+        280.91,
+        114.78
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p150_s0034",
+      "text": "Applicable ELSs",
+      "bbox": [
+        400.29,
+        103.66,
+        478.65,
+        114.78
+      ],
+      "block_index": 14,
+      "line_index": 5,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0152"
+  ]
+}

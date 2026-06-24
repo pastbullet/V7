@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Word 62,\nBits 31-24",
+      "Meaning"
+    ],
+    [
+      "00h",
+      "The CS_Accuracy, CS_Implemented_MSB, CS_Implemented_LSB,\nand CS_Update_Period fields are not meaningful in the FLOGI/PLOGI\nRequest."
+    ],
+    [
+      "01h",
+      "The CS_Accuracy, CS_Implemented_MSB, CS_Implemented_LSB,\nand CS_Update_Period fields contain the requested Quality of Service\nParameters."
+    ],
+    [
+      "02h – FFh",
+      "Reserved"
+    ]
+  ]
+}

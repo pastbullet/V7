@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Preference\nFunctional", "page": 183, "bbox": [94.66, 495.84, 165.03, 536.34]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Sequential\ndelivery\nFunctional", "page": 183, "bbox": [165.03, 495.84, 237.99, 536.34]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Meaning", "page": 183, "bbox": [237.99, 495.84, 541.34, 536.34]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 183, "bbox": [94.66, 536.34, 165.03, 553.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "0", "page": 183, "bbox": [165.03, 536.34, 237.99, 553.35]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Frames may be delivered in any order", "page": 183, "bbox": [237.99, 536.34, 541.34, 553.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "0", "page": 183, "bbox": [94.66, 553.35, 165.03, 582.39]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "1", "page": 183, "bbox": [165.03, 553.35, 237.99, 582.39]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "Frames shall be delivered to a destination in the same order received\nfrom the source, PREF is ignored", "page": 183, "bbox": [237.99, 553.35, 541.34, 582.39]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "1", "page": 183, "bbox": [94.66, 582.39, 165.03, 611.37]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "0", "page": 183, "bbox": [165.03, 582.39, 237.99, 611.37]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Frames may be delivered in any order, but frames with PREF set to\none may be delivered prior to frames with PREF set to zero", "page": 183, "bbox": [237.99, 582.39, 541.34, 611.37]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "1", "page": 183, "bbox": [94.66, 611.37, 165.03, 675.84]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "1", "page": 183, "bbox": [165.03, 611.37, 237.99, 675.84]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "Frames with PREF set to one shall be delivered to a destination in the\nsame order received from the source relative to each other, and may\nbe delivered prior to frames with PREF set to zero; frames with PREF\nset to zero shall also be delivered to a destination in the same order\nreceived from the source relative to each other", "page": 183, "bbox": [237.99, 611.37, 541.34, 675.84]}

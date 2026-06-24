@@ -1,0 +1,775 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 206,
+  "spans": [
+    {
+      "span_id": "p206_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0002",
+      "text": " 187",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0003",
+      "text": "cation transaction (see FC-SP) in Virtual Fabric K, by using its N_Port_Name or any other appropri-",
+      "bbox": [
+        96.0,
+        57.65,
+        540.01,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0004",
+      "text": "ate identity. The corresponding Logical F_Port authenticates by using the Switch_Name of the Virtual",
+      "bbox": [
+        96.0,
+        69.65,
+        540.01,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0005",
+      "text": "Switch associated with VF_ID K or any other appropriate identity.",
+      "bbox": [
+        96.0,
+        81.65,
+        383.67,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0006",
+      "text": "Transition P5",
+      "bbox": [
+        96.0,
+        108.29,
+        160.68,
+        119.4
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0007",
+      "text": "(k)",
+      "bbox": [
+        160.74,
+        106.12,
+        170.72,
+        115.02
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p206_s0008",
+      "text": ":P7",
+      "bbox": [
+        170.76,
+        108.29,
+        186.5,
+        119.4
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p206_s0009",
+      "text": "(k)",
+      "bbox": [
+        186.6,
+        106.12,
+        196.58,
+        115.02
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p206_s0010",
+      "text": ".",
+      "bbox": [
+        196.62,
+        108.29,
+        199.39,
+        119.4
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 5
+    },
+    {
+      "span_id": "p206_s0011",
+      "text": " Occurs when the FLOGI processing in state P5 is completed, if the FLOGI",
+      "bbox": [
+        199.5,
+        108.29,
+        540.05,
+        119.4
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 6
+    },
+    {
+      "span_id": "p206_s0012",
+      "text": "LS_ACC has the Security bit set to zero.",
+      "bbox": [
+        96.0,
+        120.29,
+        274.8,
+        131.4
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0013",
+      "text": "Transition P6",
+      "bbox": [
+        96.0,
+        146.99,
+        161.07,
+        158.1
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0014",
+      "text": "(k)",
+      "bbox": [
+        161.16,
+        144.76,
+        171.2,
+        153.66
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p206_s0015",
+      "text": ":P7",
+      "bbox": [
+        171.3,
+        146.99,
+        187.1,
+        158.1
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p206_s0016",
+      "text": "(k)",
+      "bbox": [
+        187.26,
+        144.76,
+        197.24,
+        153.66
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p206_s0017",
+      "text": ".",
+      "bbox": [
+        197.4,
+        146.99,
+        200.17,
+        158.1
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 5
+    },
+    {
+      "span_id": "p206_s0018",
+      "text": " Occurs when the Authentication transaction performed in state P6",
+      "bbox": [
+        200.28,
+        146.99,
+        504.62,
+        158.1
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 6
+    },
+    {
+      "span_id": "p206_s0019",
+      "text": "(k)",
+      "bbox": [
+        504.66,
+        144.76,
+        514.22,
+        153.66
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 7
+    },
+    {
+      "span_id": "p206_s0020",
+      "text": " com-",
+      "bbox": [
+        514.38,
+        146.99,
+        540.15,
+        158.1
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 8
+    },
+    {
+      "span_id": "p206_s0021",
+      "text": "pletes successfully.",
+      "bbox": [
+        96.0,
+        158.99,
+        182.04,
+        170.1
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0022",
+      "text": "State P7",
+      "bbox": [
+        96.0,
+        190.97,
+        136.34,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0023",
+      "text": "(k)",
+      "bbox": [
+        136.44,
+        188.8,
+        146.36,
+        197.7
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p206_s0024",
+      "text": ": Logical N_Port.",
+      "bbox": [
+        146.46,
+        190.97,
+        227.87,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p206_s0025",
+      "text": " In this state the N_Port operates as VFT tagging N_Port. FC frames",
+      "bbox": [
+        228.0,
+        190.97,
+        539.96,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p206_s0026",
+      "text": "transmitted by the N_Port are tagged with the VFT_Header carrying VF_ID K. The Logical N_Port",
+      "bbox": [
+        96.0,
+        202.97,
+        539.82,
+        214.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0027",
+      "text": "continues its operations. The Logical N_Port may acquire additional N_Port_IDs in Virtual Fabric K",
+      "bbox": [
+        96.0,
+        214.97,
+        539.98,
+        226.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0028",
+      "text": "by following the N_Port_ID virtualization procedure.",
+      "bbox": [
+        96.0,
+        226.97,
+        323.18,
+        238.08
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0029",
+      "text": "Transition P4:P1.",
+      "bbox": [
+        96.0,
+        250.97,
+        177.68,
+        262.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0030",
+      "text": " Occurs when the EVFP processing determined that VFT tagging is not performed",
+      "bbox": [
+        177.66,
+        250.97,
+        540.13,
+        262.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p206_s0031",
+      "text": "and the N_Port and F_Port have the same Port VF_ID. In state P1 the N_Port shall repeat the FLOGI",
+      "bbox": [
+        96.0,
+        262.97,
+        540.1,
+        274.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0032",
+      "text": "process with the Virtual Fabrics bit set to zero in the FLOGI request, in order to acquire an N_Port_ID",
+      "bbox": [
+        96.0,
+        274.96,
+        540.02,
+        286.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0033",
+      "text": "in the Virtual Fabric identified by the Port VF_ID.",
+      "bbox": [
+        96.0,
+        286.96,
+        309.81,
+        298.08
+      ],
+      "block_index": 7,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0034",
+      "text": "Transition P4:P8.",
+      "bbox": [
+        96.0,
+        310.96,
+        177.68,
+        322.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0035",
+      "text": " Occurs when the EVFP processing determined that VFT tagging is not performed",
+      "bbox": [
+        177.66,
+        310.96,
+        540.13,
+        322.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p206_s0036",
+      "text": "and the N_Port and F_Port do not have the same Port VF_ID.",
+      "bbox": [
+        96.0,
+        322.96,
+        369.26,
+        334.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0037",
+      "text": "State P8: Isolated.",
+      "bbox": [
+        96.0,
+        346.96,
+        182.09,
+        358.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0038",
+      "text": " In this state the N_Port is offline.",
+      "bbox": [
+        182.1,
+        346.96,
+        328.71,
+        358.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p206_s0039",
+      "text": "When VFT tagging is enabled on a link, a Link Reset (see FC-FS-2) shall not change the tagging pro-",
+      "bbox": [
+        96.0,
+        370.96,
+        540.04,
+        382.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0040",
+      "text": "cess, while a Link Initialization (see FC-FS-2) shall stop the tagging process and reinitialize the link.",
+      "bbox": [
+        96.0,
+        382.96,
+        534.73,
+        394.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0041",
+      "text": "8.3",
+      "bbox": [
+        96.0,
+        406.96,
+        109.88,
+        418.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0042",
+      "text": "Configuration Information",
+      "bbox": [
+        119.88,
+        406.96,
+        243.2,
+        418.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0043",
+      "text": "A VF capable N_Port shall maintain the following configuration parameters:",
+      "bbox": [
+        96.0,
+        430.96,
+        428.15,
+        442.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0044",
+      "text": "a) Tagging Administrative Status, used to negotiate the VFT tagging operational mode of the",
+      "bbox": [
+        106.02,
+        454.96,
+        539.97,
+        466.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0045",
+      "text": "N_Port (see 4.2.43.2.2);",
+      "bbox": [
+        122.4,
+        466.96,
+        229.02,
+        478.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0046",
+      "text": "b) Port VF_ID (see 4.2.43.2.3); and",
+      "bbox": [
+        106.02,
+        490.96,
+        266.87,
+        502.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0047",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        514.96,
+        114.35,
+        526.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0048",
+      "text": "Locally-Enabled VF_ID List, used to negotiate the list of Virtual Fabrics operational over the",
+      "bbox": [
+        122.37,
+        514.96,
+        540.0,
+        526.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0049",
+      "text": "N_Port (see 4.2.43.2.4).",
+      "bbox": [
+        122.4,
+        526.96,
+        229.02,
+        538.08
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0050",
+      "text": "8.4",
+      "bbox": [
+        96.0,
+        550.96,
+        109.88,
+        562.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0051",
+      "text": "Exchange Virtual Fabrics Parameters Processing",
+      "bbox": [
+        119.88,
+        550.96,
+        353.19,
+        562.08
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0052",
+      "text": "8.4.1",
+      "bbox": [
+        96.0,
+        574.96,
+        118.22,
+        586.08
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0053",
+      "text": "Overview",
+      "bbox": [
+        128.22,
+        574.96,
+        172.62,
+        586.08
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0054",
+      "text": "The Exchange Virtual Fabrics Parameters ELS (EVFP) protocol allows a VF capable N_Port and a",
+      "bbox": [
+        96.0,
+        598.96,
+        539.97,
+        610.08
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0055",
+      "text": "VF capable F_Port to:",
+      "bbox": [
+        96.0,
+        610.96,
+        193.18,
+        622.07
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0056",
+      "text": "a) Negotiate the VFT Tagging operational mode;",
+      "bbox": [
+        106.02,
+        635.02,
+        325.17,
+        646.14
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0057",
+      "text": "b) Verify the consistency of the two Port VF_IDs; and",
+      "bbox": [
+        106.02,
+        659.02,
+        345.17,
+        670.13
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0058",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        683.02,
+        114.34,
+        694.13
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p206_s0059",
+      "text": "Establish the list of operational Virtual Fabrics across the link.",
+      "bbox": [
+        122.36,
+        683.02,
+        394.06,
+        694.13
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

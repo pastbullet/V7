@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0174",
+  "type": "table",
+  "caption": "Table 162 – Fabric Login Priority and Preemption Support",
+  "pages": [
+    182
+  ],
+  "bbox": [
+    94.77,
+    243.82,
+    541.23,
+    351.82
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 182,
+  "logical_table": false
+}

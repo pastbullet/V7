@@ -1,0 +1,67 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 ... 24\nByte 0",
+      "23 ... 16\nByte 1",
+      "15 ... 08\nByte 2",
+      "07 ... 00\nByte 3"
+    ],
+    [
+      "0",
+      "02h",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "Node Identification\nData Format",
+      "Common\nIdentification Data\nLength (0 or 16)",
+      "Reserved",
+      "Specific\nIdentification Data\nLength"
+    ],
+    [
+      "2",
+      "Common Identification Data\n(0 bytes or 16 bytes)",
+      null,
+      null,
+      null
+    ],
+    [
+      "...",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "5",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "6",
+      "Specific Identification Data (m)\n(0 - max bytes)",
+      null,
+      null,
+      null
+    ],
+    [
+      "...",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "m",
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

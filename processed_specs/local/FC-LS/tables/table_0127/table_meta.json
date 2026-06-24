@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0127",
+  "type": "table",
+  "caption": "Table 123 – Descriptor Types",
+  "pages": [
+    133
+  ],
+  "bbox": [
+    140.05,
+    315.33,
+    495.97,
+    445.25
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 133,
+  "logical_table": false
+}

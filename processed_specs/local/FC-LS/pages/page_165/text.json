@@ -1,0 +1,333 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 165,
+  "spans": [
+    {
+      "span_id": "p165_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0002",
+      "text": " 146",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0003",
+      "text": "a) Services Availability (see 6.6.7);",
+      "bbox": [
+        106.02,
+        57.65,
+        263.93,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0004",
+      "text": "b) Login Extension Data (see 6.6.8); and",
+      "bbox": [
+        106.02,
+        82.97,
+        290.23,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0005",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        106.97,
+        114.35,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0006",
+      "text": "Clock Synchronization QoS (see 6.6.9).",
+      "bbox": [
+        122.37,
+        106.97,
+        297.43,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0007",
+      "text": "If a Login of 256 bytes or more is required when the buffer conditions of the destination port are un-",
+      "bbox": [
+        96.0,
+        130.97,
+        540.07,
+        142.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0008",
+      "text": "known, a timeout may be avoided with the following procedure:",
+      "bbox": [
+        96.0,
+        142.96,
+        374.25,
+        154.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0009",
+      "text": "1) issue a Login request with the Payload Bit (see 6.6.2.4.19) set to zero;",
+      "bbox": [
+        106.02,
+        166.96,
+        432.98,
+        178.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0010",
+      "text": "2) if the Query Buffer Conditions bit (see 6.6.2.4.14) is set to one in the LS_ACC, issue an RPBC",
+      "bbox": [
+        106.02,
+        190.96,
+        540.02,
+        202.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0011",
+      "text": "ELS (see 4.2.37); and",
+      "bbox": [
+        122.4,
+        202.96,
+        219.59,
+        214.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0012",
+      "text": "3) if both the ELS Receive Data Field Size field in the RPBC LS_ACC Payload and the Buffer-to-",
+      "bbox": [
+        106.02,
+        226.96,
+        540.04,
+        238.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0013",
+      "text": "buffer Receive Data_Field Size field in the Login LS_ACC Payload are at least 256 bytes, issue",
+      "bbox": [
+        122.4,
+        238.96,
+        539.99,
+        250.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0014",
+      "text": "a Login request with the Payload Bit set to one.",
+      "bbox": [
+        122.4,
+        250.96,
+        331.23,
+        262.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0015",
+      "text": "6.6",
+      "bbox": [
+        96.0,
+        274.96,
+        109.88,
+        286.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0016",
+      "text": "Service Parameters",
+      "bbox": [
+        119.88,
+        274.96,
+        212.66,
+        286.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0017",
+      "text": "6.6.1",
+      "bbox": [
+        96.0,
+        298.96,
+        118.23,
+        310.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0018",
+      "text": "ELS and LS_ACC Payload",
+      "bbox": [
+        128.23,
+        298.96,
+        252.01,
+        310.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0019",
+      "text": "Table 149 defines the Payload format for the FLOGI and PLOGI ELSs and the LS_ACCs.  The defini-",
+      "bbox": [
+        96.0,
+        322.96,
+        540.09,
+        334.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0020",
+      "text": "tions of the parameters are applicable to PLOGI, FLOGI, PLOGI LS_ACC and FLOGI LS_ACC un-",
+      "bbox": [
+        96.0,
+        334.96,
+        539.97,
+        346.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0021",
+      "text": "less stated otherwise.",
+      "bbox": [
+        96.0,
+        346.96,
+        192.01,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0022",
+      "text": "There are no separate Class 6 login Service Parameters as Class 1 service parameters are used in-",
+      "bbox": [
+        96.0,
+        370.96,
+        540.07,
+        382.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0023",
+      "text": "stead.",
+      "bbox": [
+        96.0,
+        382.96,
+        123.2,
+        394.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0024",
+      "text": "NOTE 13 – The Link Service may further limit values supplied during Login as specified by individual Upper",
+      "bbox": [
+        105.0,
+        407.18,
+        539.94,
+        417.22
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p165_s0025",
+      "text": "Level Protocols.",
+      "bbox": [
+        105.0,
+        418.22,
+        168.95,
+        428.26
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

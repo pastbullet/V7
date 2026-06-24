@@ -1,0 +1,25 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "Descriptor Control =\n01h",
+      "Descriptor Type =\n01h",
+      "Descriptor Length = 0004h",
+      null
+    ],
+    [
+      "1",
+      "Administrative Tagging Mode",
+      null,
+      null,
+      null
+    ]
+  ]
+}

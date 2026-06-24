@@ -1,0 +1,8 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Type\nClock Synchronization Server (N_Port\nLogin only)\nOther FC_Ports (N_Port Login only)\nFabric (FLOGI LS_ACC only)", "page": 173, "bbox": [90.22, 519.64, 266.13, 622.92]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Meaning if bit set to one", "page": 173, "bbox": [266.13, 519.64, 542.5, 536.34]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "", "page": 173, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "The Clock Synchronization Server is capable of generating\nclock synchronization Primitive Signals (see FC-FS-2).", "page": 173, "bbox": [266.13, 536.34, 542.5, 565.02]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "", "page": 173, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "The FC_Port is capable of receiving the clock synchronization\nPrimitive Signals (see FC-FS-2) and acting upon them.", "page": 173, "bbox": [266.13, 565.02, 542.5, 594.04]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "", "page": 173, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "The Fabric is capable of receiving the clock synchronization\nPrimitive Signals (see FC-FS-2) and acting upon them.", "page": 173, "bbox": [266.13, 594.04, 542.5, 622.92]}

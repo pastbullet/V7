@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0066",
+  "type": "table",
+  "caption": "Table 63 – Associated Type",
+  "pages": [
+    87
+  ],
+  "bbox": [
+    143.7,
+    98.28,
+    492.3,
+    547.7
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 87,
+  "logical_table": false
+}

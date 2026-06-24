@@ -1,0 +1,79 @@
+{
+  "doc_id": "FC-LS.pdf",
+  "unit": {
+    "unit_id": "unit_fc_ls_flogi",
+    "title": "FC-LS Fabric Login / FLOGI",
+    "kind": "procedure_group",
+    "target_ir": [
+      "MessageIR",
+      "ProcedureIR",
+      "SessionContextIR",
+      "EnumIR"
+    ],
+    "source_anchors": [
+      "6.2 Fabric Login",
+      "Table 149",
+      "Table 150",
+      "Table 151",
+      "Table 153",
+      "Table 156",
+      "Table 158",
+      "Table 177",
+      "8 Virtual Fabrics N_Port Support"
+    ],
+    "dependencies": [
+      "Extended Link Services frame envelope",
+      "Common Service Parameters",
+      "Class Service Parameters",
+      "Virtual Fabrics / EVFP",
+      "Authentication"
+    ],
+    "priority": "vertical_seed",
+    "scope_status": "in_scope",
+    "notes": "Seed reading plan derived from FLOGI live QA traces. The plan intentionally decomposes the broad FLOGI question into focused, IR-oriented tasks."
+  },
+  "task": {
+    "task_id": "flogi_class_service_parameters",
+    "title": "FLOGI Class Service Parameters",
+    "task_type": "message_format",
+    "target_outputs": [
+      "class_service_parameter_fields",
+      "request_vs_ls_acc",
+      "class_constraints",
+      "evidence"
+    ],
+    "reading_goal": "Read FLOGI request and FLOGI LS_ACC Class Service Parameters. Cover Table 156 and Table 158, including Service Options, Initiator/Recipient Control, sequence/credit fields, Open Sequences per Exchange, CR_TOV, and request vs LS_ACC differences.",
+    "page_ranges": [
+      "179"
+    ],
+    "must_include_assets": [
+      {
+        "type": "table",
+        "asset_id": "table_0168"
+      },
+      {
+        "type": "table",
+        "asset_id": "table_0170"
+      }
+    ],
+    "expected_evidence_types": [
+      "text_span",
+      "table_cell"
+    ],
+    "completion_criteria": [
+      "Table 156 fields are grounded.",
+      "Table 158 fields are grounded.",
+      "Request vs LS_ACC differences are explicit."
+    ],
+    "dependencies": [],
+    "budget": {
+      "max_pages": 1,
+      "max_tables": 2,
+      "max_tool_calls": 8
+    },
+    "status": "accepted",
+    "reason": "",
+    "task_dir": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_class_service_parameters",
+    "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_class_service_parameters/task_input.json"
+  }
+}

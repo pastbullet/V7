@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0103",
+  "type": "table",
+  "caption": "Table 99 – CSU Payload",
+  "pages": [
+    117
+  ],
+  "bbox": [
+    89.49,
+    339.99,
+    543.64,
+    435.33
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 117,
+  "logical_table": false
+}

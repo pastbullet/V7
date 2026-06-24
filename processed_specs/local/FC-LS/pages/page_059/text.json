@@ -1,0 +1,673 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 59,
+  "spans": [
+    {
+      "span_id": "p059_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0002",
+      "text": " 40",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0003",
+      "text": "4.2.14.3  Request Sequence",
+      "bbox": [
+        96.0,
+        57.65,
+        227.06,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0004",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        81.65,
+        157.1,
+        92.76
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0005",
+      "text": "The D_ID field designates the destination of the request while the S_ID field designates",
+      "bbox": [
+        157.08,
+        81.65,
+        540.08,
+        92.76
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p059_s0006",
+      "text": "the source of the request.",
+      "bbox": [
+        96.0,
+        93.65,
+        209.35,
+        104.76
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0007",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        117.64,
+        140.41,
+        128.76
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0008",
+      "text": "The format of the Payload is shown in table 25.",
+      "bbox": [
+        140.4,
+        117.64,
+        348.7,
+        128.76
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p059_s0009",
+      "text": "The Payload size is limited by the smallest Data Field size supported by the destination Nx_Port and",
+      "bbox": [
+        96.0,
+        274.96,
+        540.07,
+        286.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0010",
+      "text": "the Fabric for the class being used.",
+      "bbox": [
+        96.0,
+        286.96,
+        251.58,
+        298.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0011",
+      "text": "4.2.14.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        310.96,
+        214.86,
+        322.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0012",
+      "text": "none",
+      "bbox": [
+        96.0,
+        334.96,
+        118.21,
+        346.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0013",
+      "text": "4.2.15",
+      "bbox": [
+        96.0,
+        358.96,
+        123.74,
+        370.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0014",
+      "text": "Fabric Address Notification (FAN)",
+      "bbox": [
+        133.8,
+        358.96,
+        294.33,
+        370.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0015",
+      "text": "4.2.15.1  Description",
+      "bbox": [
+        96.0,
+        382.96,
+        192.63,
+        394.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0016",
+      "text": "The FAN ELS shall be sent by a Fabric  F_Port (FFFFFEh) to all known previously logged in (via",
+      "bbox": [
+        96.0,
+        406.96,
+        539.92,
+        418.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0017",
+      "text": "FLOGI) attached NL_Ports following an initialization event. This initialization event is typically Loop",
+      "bbox": [
+        96.0,
+        418.96,
+        539.77,
+        430.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0018",
+      "text": "Initialization on an Arbitrated Loop, though other events that may cause a port to change its ID may",
+      "bbox": [
+        96.0,
+        430.96,
+        539.96,
+        442.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0019",
+      "text": "also be considered. The F_Port Controller shall report the F_Port_Name and Fabric_Name as they",
+      "bbox": [
+        96.0,
+        442.96,
+        539.95,
+        454.08
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0020",
+      "text": "were reported in the prior FLOGI, and shall report the current Loop Fabric Address. The F_Port Con-",
+      "bbox": [
+        96.0,
+        454.96,
+        539.93,
+        466.08
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0021",
+      "text": "troller shall send this ELS using the default login parameters (i.e., the parameters that are in effect",
+      "bbox": [
+        96.0,
+        466.96,
+        540.08,
+        478.08
+      ],
+      "block_index": 11,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0022",
+      "text": "prior to a FLOGI Request).",
+      "bbox": [
+        96.0,
+        478.96,
+        214.33,
+        490.08
+      ],
+      "block_index": 11,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0023",
+      "text": "The attached ports may use this information to authenticate active Exchanges and operating param-",
+      "bbox": [
+        96.0,
+        502.96,
+        540.04,
+        514.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0024",
+      "text": "eters (e.g., login BB_Credit).",
+      "bbox": [
+        96.0,
+        514.96,
+        222.04,
+        526.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0025",
+      "text": "The F_Port Controller shall report identical information to all attached NL_Ports. If the information",
+      "bbox": [
+        96.0,
+        538.96,
+        539.89,
+        550.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0026",
+      "text": "changes in any way before the F_Port Controller is able to send the service to all attached ports, the",
+      "bbox": [
+        96.0,
+        550.96,
+        540.03,
+        562.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0027",
+      "text": "F_Port Controller shall begin a new initialization event.",
+      "bbox": [
+        96.0,
+        562.96,
+        336.49,
+        574.08
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0028",
+      "text": "The attached NL_Ports shall not initiate a Reply Sequence to this ELS.",
+      "bbox": [
+        96.0,
+        586.96,
+        408.8,
+        598.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0029",
+      "text": "4.2.15.2  Protocol",
+      "bbox": [
+        96.0,
+        610.96,
+        178.22,
+        622.07
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0030",
+      "text": "a) Fabric Address Notification Request Sequence",
+      "bbox": [
+        106.02,
+        635.02,
+        329.59,
+        646.14
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0031",
+      "text": "b) No Reply Sequence",
+      "bbox": [
+        106.02,
+        659.02,
+        211.26,
+        670.13
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0032",
+      "text": " Table 25 – TEST Payload",
+      "bbox": [
+        257.7,
+        139.66,
+        378.34,
+        150.77
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0033",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        161.62,
+        133.06,
+        172.73
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0034",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        173.62,
+        136.35,
+        184.73
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0035",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        161.62,
+        233.97,
+        172.73
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0036",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        161.62,
+        328.42,
+        172.73
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0037",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        161.62,
+        427.0,
+        172.73
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0038",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        161.62,
+        522.83,
+        172.73
+      ],
+      "block_index": 19,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0039",
+      "text": "0",
+      "bbox": [
+        120.84,
+        190.66,
+        126.38,
+        201.77
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0040",
+      "text": "TEST (11h)",
+      "bbox": [
+        149.88,
+        190.66,
+        201.58,
+        201.77
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0041",
+      "text": "00h",
+      "bbox": [
+        247.1,
+        190.66,
+        263.79,
+        201.77
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0042",
+      "text": "00h",
+      "bbox": [
+        344.29,
+        190.66,
+        360.97,
+        201.77
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0043",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        190.66,
+        458.16,
+        201.77
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0044",
+      "text": "1",
+      "bbox": [
+        120.84,
+        207.64,
+        126.38,
+        218.75
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0045",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        207.64,
+        171.52,
+        218.75
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0046",
+      "text": "TEST data",
+      "bbox": [
+        318.42,
+        209.62,
+        366.11,
+        220.73
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0047",
+      "text": "(up to max Data Field size, ",
+      "bbox": [
+        282.84,
+        221.62,
+        404.57,
+        232.73
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0048",
+      "text": "any byte boundary)",
+      "bbox": [
+        299.52,
+        233.62,
+        385.09,
+        244.73
+      ],
+      "block_index": 21,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0049",
+      "text": "..",
+      "bbox": [
+        120.84,
+        224.62,
+        126.37,
+        235.73
+      ],
+      "block_index": 21,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0050",
+      "text": "n",
+      "bbox": [
+        120.54,
+        241.66,
+        126.63,
+        252.77
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p059_s0051",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        241.66,
+        460.36,
+        252.77
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0027"
+  ]
+}

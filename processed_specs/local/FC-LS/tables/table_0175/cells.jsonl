@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Nx_Port\nWord 0, Bit 22", "page": 183, "bbox": [117.04, 279.82, 210.03, 308.34]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Fx_Port\nWord 0, Bit 22", "page": 183, "bbox": [210.03, 279.82, 303.63, 308.34]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Meaning", "page": 183, "bbox": [303.63, 279.82, 518.96, 308.34]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 183, "bbox": [117.04, 308.34, 210.03, 337.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "0", "page": 183, "bbox": [210.03, 308.34, 303.63, 337.35]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Preferred delivery by the Fabric may be\nfunctional", "page": 183, "bbox": [303.63, 308.34, 518.96, 337.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "0", "page": 183, "bbox": [117.04, 337.35, 210.03, 366.39]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "1", "page": 183, "bbox": [210.03, 337.35, 303.63, 366.39]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "Preferred delivery by the Fabric shall be\nfunctional", "page": 183, "bbox": [303.63, 337.35, 518.96, 366.39]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "1", "page": 183, "bbox": [117.04, 366.39, 210.03, 395.37]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "0", "page": 183, "bbox": [210.03, 366.39, 303.63, 395.37]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Nx_Port support requested, Preferred delivery\nby the Fabric may be functional", "page": 183, "bbox": [303.63, 366.39, 518.96, 395.37]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "1", "page": 183, "bbox": [117.04, 395.37, 210.03, 423.82]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "1", "page": 183, "bbox": [210.03, 395.37, 303.63, 423.82]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "Nx_Port requested, Fabric agrees, Preferred\ndelivery by the Fabric shall be functional", "page": 183, "bbox": [303.63, 395.37, 518.96, 423.82]}

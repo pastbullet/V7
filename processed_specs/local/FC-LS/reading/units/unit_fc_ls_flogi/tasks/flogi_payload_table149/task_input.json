@@ -1,0 +1,77 @@
+{
+  "doc_id": "FC-LS.pdf",
+  "unit": {
+    "unit_id": "unit_fc_ls_flogi",
+    "title": "FC-LS Fabric Login / FLOGI",
+    "kind": "procedure_group",
+    "target_ir": [
+      "MessageIR",
+      "ProcedureIR",
+      "SessionContextIR",
+      "EnumIR"
+    ],
+    "source_anchors": [
+      "6.2 Fabric Login",
+      "Table 149",
+      "Table 150",
+      "Table 151",
+      "Table 153",
+      "Table 156",
+      "Table 158",
+      "Table 177",
+      "8 Virtual Fabrics N_Port Support"
+    ],
+    "dependencies": [
+      "Extended Link Services frame envelope",
+      "Common Service Parameters",
+      "Class Service Parameters",
+      "Virtual Fabrics / EVFP",
+      "Authentication"
+    ],
+    "priority": "vertical_seed",
+    "scope_status": "in_scope",
+    "notes": "Seed reading plan derived from FLOGI live QA traces. The plan intentionally decomposes the broad FLOGI question into focused, IR-oriented tasks."
+  },
+  "task": {
+    "task_id": "flogi_payload_table149",
+    "title": "FLOGI/PLOGI/LS_ACC payload layout from Table 149",
+    "task_type": "message_format",
+    "target_outputs": [
+      "payload_words",
+      "conditional_fields",
+      "variable_length_fields",
+      "class6_reuse_rule",
+      "evidence"
+    ],
+    "reading_goal": "Read Table 149 and its lead-in text. Produce word-by-word payload layout claims for Word 0 through Words 64-n, including Payload Bit=0 length, Payload Bit=1 extension fields, Words 21-24 obsolete, Class 6 reuse of Class 1 service parameters, and all conditional/variable-length rules.",
+    "page_ranges": [
+      "165-166"
+    ],
+    "must_include_assets": [
+      {
+        "type": "table",
+        "asset_id": "table_0157"
+      }
+    ],
+    "expected_evidence_types": [
+      "text_span",
+      "table_cell"
+    ],
+    "completion_criteria": [
+      "No Table 149 word range is summarized away.",
+      "Every word range from Word 0 through Words 64-n has a claim or explicit unresolved item.",
+      "Payload Bit 0/1 behavior is grounded.",
+      "Class 6 reuse of Class 1 parameters is grounded."
+    ],
+    "dependencies": [],
+    "budget": {
+      "max_pages": 2,
+      "max_tables": 1,
+      "max_tool_calls": 8
+    },
+    "status": "accepted",
+    "reason": "",
+    "task_dir": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_payload_table149",
+    "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_payload_table149/task_input.json"
+  }
+}

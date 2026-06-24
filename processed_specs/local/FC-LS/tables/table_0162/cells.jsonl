@@ -1,0 +1,30 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 170, "bbox": [91.88, 98.73, 141.66, 126.33]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 170, "bbox": [141.66, 98.73, 238.95, 126.33]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 170, "bbox": [238.95, 98.73, 336.27, 126.33]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 12", "page": 170, "bbox": [336.27, 98.73, 393.03, 126.33]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "11 .. 08", "page": 170, "bbox": [393.03, 98.73, 445.71, 126.33]}
+{"cell_id": "r1c6", "row": 1, "col": 6, "text": "07 .. 00", "page": 170, "bbox": [445.71, 98.73, 542.36, 126.33]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 170, "bbox": [91.88, 126.33, 141.66, 143.84]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "FC-PH Version - obsolete", "page": 170, "bbox": [141.66, 126.33, 336.27, 143.84]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "Buffer-to-buffer Credit", "page": 170, "bbox": [336.27, 126.33, 542.36, 143.84]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c6", "row": 2, "col": 6, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 170, "bbox": [91.88, 143.84, 141.66, 173.01]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Common Features (see table 150)", "page": 170, "bbox": [141.66, 143.84, 336.27, 173.01]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "BB_SC_N", "page": 170, "bbox": [336.27, 143.84, 393.03, 173.01]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "Buffer-to-buffer\nReceive Data Field size", "page": 170, "bbox": [393.03, 143.84, 542.36, 173.01]}
+{"cell_id": "r3c6", "row": 3, "col": 6, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "2", "page": 170, "bbox": [91.88, 173.01, 141.66, 202.27]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Reserved", "page": 170, "bbox": [141.66, 173.01, 238.95, 202.27]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Total Concurrent\nSequences", "page": 170, "bbox": [238.95, 173.01, 336.27, 202.27]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "Relative offset by Information Category", "page": 170, "bbox": [336.27, 173.01, 542.36, 202.27]}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c6", "row": 4, "col": 6, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "3", "page": 170, "bbox": [91.88, 202.27, 141.66, 219.0]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "E_D_TOV", "page": 170, "bbox": [141.66, 202.27, 542.36, 219.0]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c6", "row": 5, "col": 6, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}

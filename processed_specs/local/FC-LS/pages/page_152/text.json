@@ -1,0 +1,515 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 152,
+  "spans": [
+    {
+      "span_id": "p152_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0002",
+      "text": " 133",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0003",
+      "text": "6",
+      "bbox": [
+        96.0,
+        57.38,
+        102.1,
+        69.64
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0004",
+      "text": "Login and Service Parameters",
+      "bbox": [
+        114.0,
+        57.38,
+        271.54,
+        69.64
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0005",
+      "text": "6.1",
+      "bbox": [
+        96.0,
+        82.97,
+        109.88,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0006",
+      "text": "Introduction",
+      "bbox": [
+        119.88,
+        82.97,
+        178.18,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0007",
+      "text": "The Login procedure is a method by which an Nx_Port establishes its operating environment with a",
+      "bbox": [
+        96.0,
+        106.97,
+        539.95,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0008",
+      "text": "Fabric, if present, and other destination Nx_Ports with which it communicates.  Fabric Login and",
+      "bbox": [
+        96.0,
+        118.97,
+        539.82,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0009",
+      "text": "N_Port Login are both accomplished with a similar procedure using different D_IDs and possibly dif-",
+      "bbox": [
+        96.0,
+        130.97,
+        540.1,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0010",
+      "text": "ferent S_IDs.",
+      "bbox": [
+        96.0,
+        142.97,
+        154.29,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0011",
+      "text": "Login between an Nx_Port and the Fabric or between two Nx_Ports is long-lived.  The number of",
+      "bbox": [
+        96.0,
+        166.96,
+        540.01,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0012",
+      "text": "concurrent Nx_Ports with which an Nx_Port may be logged in with is a function of the Nx_Port facili-",
+      "bbox": [
+        96.0,
+        178.96,
+        539.99,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0013",
+      "text": "ties available.  There is no one to one relationship between Login and Class 1 dedicated connec-",
+      "bbox": [
+        96.0,
+        190.96,
+        540.17,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0014",
+      "text": "tions.",
+      "bbox": [
+        96.0,
+        202.96,
+        119.89,
+        214.08
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0015",
+      "text": "Login between an Nx_Port and the Fabric or between two Nx_Ports may use an explicit or implicit",
+      "bbox": [
+        96.0,
+        226.96,
+        539.98,
+        238.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0016",
+      "text": "method.  When Login is referred to throughout other sections of this standard, either the explicit or",
+      "bbox": [
+        96.0,
+        238.96,
+        540.01,
+        250.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0017",
+      "text": "implicit procedure may be used.  Implicit Login is assumed to provide the same functionality as Ex-",
+      "bbox": [
+        96.0,
+        250.96,
+        539.89,
+        262.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0018",
+      "text": "plicit Login.",
+      "bbox": [
+        96.0,
+        262.96,
+        145.96,
+        274.08
+      ],
+      "block_index": 7,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0019",
+      "text": "Explicit Login is accomplished using a Login (FLOGI or PLOGI) ELS (see 4.2.7) within a new Ex-",
+      "bbox": [
+        96.0,
+        286.96,
+        539.85,
+        298.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0020",
+      "text": "change to transfer the Service Parameters (contained in the Payload) of the Nx_Port initiating the Lo-",
+      "bbox": [
+        96.0,
+        298.96,
+        540.13,
+        310.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0021",
+      "text": "gin Exchange.  The LS_ACC contains the Service Parameters of the Responder (contained in the",
+      "bbox": [
+        96.0,
+        310.96,
+        539.83,
+        322.08
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0022",
+      "text": "Payload).",
+      "bbox": [
+        96.0,
+        322.96,
+        138.2,
+        334.08
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0023",
+      "text": "Implicit Login is a method of defining and specifying the Service Parameters of destination Nx_Ports",
+      "bbox": [
+        96.0,
+        346.96,
+        540.0,
+        358.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0024",
+      "text": "by means other than the explicit use of the Login ELS.  Specific methods of implicit Login are not de-",
+      "bbox": [
+        96.0,
+        358.96,
+        539.96,
+        370.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0025",
+      "text": "fined in this standard.",
+      "bbox": [
+        96.0,
+        370.96,
+        191.05,
+        382.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0026",
+      "text": "Implicit Fabric Login, unlike Explicit Fabric Login, does not require the support, within an Nx_Port, of",
+      "bbox": [
+        96.0,
+        394.96,
+        539.97,
+        406.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0027",
+      "text": "the FLOGI Link Service request and reply.  Implicit Fabric Login may be supported in a variety of",
+      "bbox": [
+        96.0,
+        406.96,
+        540.03,
+        418.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0028",
+      "text": "ways, requiring varying levels of support within an Nx_Port.",
+      "bbox": [
+        96.0,
+        418.96,
+        357.58,
+        430.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0029",
+      "text": "An Nx_Port determines its own native N_Port_ID through explicit or implicit Login by",
+      "bbox": [
+        96.0,
+        442.96,
+        467.63,
+        454.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0030",
+      "text": "a) the Fabric, if present,",
+      "bbox": [
+        106.02,
+        466.96,
+        216.22,
+        478.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0031",
+      "text": "b) implicit definition, or",
+      "bbox": [
+        106.02,
+        490.96,
+        210.11,
+        502.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0032",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        514.96,
+        114.35,
+        526.07
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0033",
+      "text": "assignment in the PLOGI Sequence transmitted to a destination Nx_Port attached in a point-to-",
+      "bbox": [
+        122.37,
+        514.96,
+        540.2,
+        526.07
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0034",
+      "text": "point topology.",
+      "bbox": [
+        122.4,
+        526.96,
+        187.39,
+        538.07
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0035",
+      "text": "Nx_Ports may collect Address Identifiers from other potential destination Nx_Ports from:",
+      "bbox": [
+        96.0,
+        550.96,
+        484.74,
+        562.07
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0036",
+      "text": "a) a name server function, if present,",
+      "bbox": [
+        106.02,
+        574.96,
+        273.56,
+        586.07
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0037",
+      "text": "b) implicit definition, or",
+      "bbox": [
+        106.02,
+        598.96,
+        210.11,
+        610.07
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0038",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        622.96,
+        114.34,
+        634.07
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p152_s0039",
+      "text": "an alternate initialization procedure.",
+      "bbox": [
+        122.37,
+        622.96,
+        280.13,
+        634.07
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

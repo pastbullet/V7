@@ -1,0 +1,21 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Value\n(hex)", "page": 122, "bbox": [97.14, 399.84, 147.17, 433.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Meaning", "page": 122, "bbox": [147.17, 399.84, 449.37, 433.32]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Flag Parameter", "page": 122, "bbox": [449.37, 399.84, 538.86, 433.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00", "page": 122, "bbox": [97.14, 433.32, 147.17, 457.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "All the FL_Ports within the domain shall be scanned.", "page": 122, "bbox": [147.17, 433.32, 449.37, 457.35]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Ignored", "page": 122, "bbox": [449.37, 433.32, 538.86, 457.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "01", "page": 122, "bbox": [97.14, 457.35, 147.17, 491.37]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Only the loop attached to the FL_Port addressed in the address\nidentifier of the FL_Port field shall be scanned.", "page": 122, "bbox": [147.17, 457.35, 449.37, 491.37]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "Address identifier of\nthe FL_Port", "page": 122, "bbox": [449.37, 457.35, 538.86, 491.37]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "02", "page": 122, "bbox": [97.14, 491.37, 147.17, 515.37]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Enable periodic scanning for all FL_ports.", "page": 122, "bbox": [147.17, 491.37, 449.37, 515.37]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Scan perioda", "page": 122, "bbox": [449.37, 491.37, 538.86, 515.37]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "03", "page": 122, "bbox": [97.14, 515.37, 147.17, 539.37]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Disable periodic scanning for all FL_ports.", "page": 122, "bbox": [147.17, 515.37, 449.37, 539.37]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "Ignored", "page": 122, "bbox": [449.37, 515.37, 538.86, 539.37]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "All Others", "page": 122, "bbox": [97.14, 539.37, 147.17, 562.84]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "Reserved", "page": 122, "bbox": [147.17, 539.37, 449.37, 562.84]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "", "page": 122, "bbox": [449.37, 539.37, 538.86, 562.84]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "a Scan period in seconds. If the scan period is set to zero the scan period is vendor specific. If the switch\ndoes not support this option it shall reject the SRL ELS with a reason code of \"Unable to perform command\nrequest\" and a reason code explanation of \"Periodic Scanning not supported\". If the switch does not support\nthe selected value it shall reject the SRL ELS with a reason code of \"Unable to perform command request\"\nand a reason code explanation of \"Periodic Scan Value not allowed\".", "page": 122, "bbox": [97.14, 562.84, 538.86, 632.76]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "", "page": 122, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "", "page": 122, "bbox": [0.0, 0.0, 0.0, 0.0]}

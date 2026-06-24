@@ -1,0 +1,95 @@
+{
+  "els_command_location": [
+    {
+      "type": "text_span",
+      "span_id": "p036_s0009",
+      "quote": "or reply is composed of a single Sequence with the ELS_Command code being specified in the first"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p036_s0010",
+      "quote": "word of the Payload of the first frame of the Sequence."
+    },
+    {
+      "type": "text_span",
+      "span_id": "p036_s0020",
+      "quote": "The first byte of the Payload (ELS_Command code) of the request or reply Sequence shall be as"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p036_s0021",
+      "quote": "shown in table 3."
+    }
+  ],
+  "flogi_els_command_code": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0003",
+      "cell_id": "r5c1",
+      "quote": "04h"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0003",
+      "cell_id": "r5c2",
+      "quote": "F_Port Login"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0003",
+      "cell_id": "r5c3",
+      "quote": "FLOGI"
+    }
+  ],
+  "els_frame_type": [
+    {
+      "type": "text_span",
+      "span_id": "p036_s0018",
+      "quote": "The TYPE field for ELS frames shall be set to 01h."
+    }
+  ],
+  "els_r_ctl_request_reply": [
+    {
+      "type": "text_span",
+      "span_id": "p036_s0019",
+      "quote": "The R_CTL shall be set as specified in table 2."
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0002",
+      "cell_id": "r3c1",
+      "quote": "0010b"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0002",
+      "cell_id": "r4c2",
+      "quote": "0010b"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0002",
+      "cell_id": "r4c3",
+      "quote": "Request"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0002",
+      "cell_id": "r5c2",
+      "quote": "0011b"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0002",
+      "cell_id": "r5c3",
+      "quote": "Reply"
+    }
+  ],
+  "els_single_exchange_scope": [
+    {
+      "type": "text_span",
+      "span_id": "p036_s0016",
+      "quote": "An ELS request and the corresponding reply shall be performed within a single Exchange."
+    }
+  ]
+}

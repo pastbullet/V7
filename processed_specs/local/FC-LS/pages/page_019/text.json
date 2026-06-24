@@ -1,0 +1,255 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 19,
+  "spans": [
+    {
+      "span_id": "p019_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0002",
+      "text": " xix",
+      "bbox": [
+        520.5,
+        723.59,
+        535.5,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0003",
+      "text": " Table 161 – Sequential delivery support. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 162",
+      "bbox": [
+        96.0,
+        57.65,
+        539.95,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0004",
+      "text": " Table 162 – Fabric Login Priority and Preemption Support  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 163",
+      "bbox": [
+        96.0,
+        70.97,
+        539.89,
+        82.08
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0005",
+      "text": " Table 163 – Class 2 and 3 Preference Bit Function . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 164",
+      "bbox": [
+        96.0,
+        82.96,
+        539.89,
+        94.08
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0006",
+      "text": " Table 164 – Relationship between Preferred delivery and sequential delivery. . . . . . . . . . . . . . . 164",
+      "bbox": [
+        96.0,
+        94.96,
+        539.93,
+        106.08
+      ],
+      "block_index": 3,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0007",
+      "text": " Table 165 – DiffServ QoS bit definition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 165",
+      "bbox": [
+        96.0,
+        106.96,
+        539.96,
+        118.08
+      ],
+      "block_index": 3,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0008",
+      "text": " Table 166 – Initial Process_Associator Bits Definition  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 166",
+      "bbox": [
+        96.0,
+        118.96,
+        540.05,
+        130.08
+      ],
+      "block_index": 3,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0009",
+      "text": " Table 167 – ACK_0 Support Conditions (Initiator Control) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 167",
+      "bbox": [
+        96.0,
+        130.96,
+        540.04,
+        142.08
+      ],
+      "block_index": 3,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0010",
+      "text": " Table 168 – ACK_0 Support Conditions (Recipient Control)  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 168",
+      "bbox": [
+        96.0,
+        142.96,
+        540.04,
+        154.08
+      ],
+      "block_index": 3,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0011",
+      "text": " Table 169 – Error Policy Bits Definition. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 169",
+      "bbox": [
+        96.0,
+        154.96,
+        539.96,
+        166.08
+      ],
+      "block_index": 3,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0012",
+      "text": " Table 170 – Categories per Sequence Bits Definition. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 169",
+      "bbox": [
+        96.0,
+        166.96,
+        539.87,
+        178.08
+      ],
+      "block_index": 3,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0013",
+      "text": " Table 171 – Login Extension Page format  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 173",
+      "bbox": [
+        96.0,
+        178.96,
+        539.91,
+        190.08
+      ],
+      "block_index": 3,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0014",
+      "text": " Table 172 – Page Code Definitions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 173",
+      "bbox": [
+        96.0,
+        190.96,
+        539.96,
+        202.08
+      ],
+      "block_index": 3,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0015",
+      "text": " Table 173 – Vendor Specific Page format. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 173",
+      "bbox": [
+        96.0,
+        202.96,
+        539.96,
+        214.08
+      ],
+      "block_index": 3,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0016",
+      "text": " Table 174 – N_Port Clock Synchronization QoS  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 174",
+      "bbox": [
+        96.0,
+        214.96,
+        539.96,
+        226.08
+      ],
+      "block_index": 3,
+      "line_index": 14,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0017",
+      "text": " Table 175 – FLOGI/PLOGI CS_QoS_Request. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 174",
+      "bbox": [
+        96.0,
+        226.96,
+        539.93,
+        238.08
+      ],
+      "block_index": 3,
+      "line_index": 15,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0018",
+      "text": " Table 176 – Fx_Port Clock Synchronization QoS. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 176",
+      "bbox": [
+        96.0,
+        238.96,
+        540.05,
+        250.08
+      ],
+      "block_index": 3,
+      "line_index": 16,
+      "span_index": 1
+    },
+    {
+      "span_id": "p019_s0019",
+      "text": " Table 177 – Virtual Fabrics Bit Usage. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 184",
+      "bbox": [
+        96.0,
+        250.96,
+        539.96,
+        262.08
+      ],
+      "block_index": 3,
+      "line_index": 17,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

@@ -1,0 +1,65 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 100, "bbox": [99.31, 435.99, 146.04, 464.34], "source_fragment_id": "table_0082", "source_cell_id": "r1c1"}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 100, "bbox": [146.04, 435.99, 245.11, 464.34], "source_fragment_id": "table_0082", "source_cell_id": "r1c2"}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 100, "bbox": [245.11, 435.99, 344.19, 464.34], "source_fragment_id": "table_0082", "source_cell_id": "r1c3"}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08", "page": 100, "bbox": [344.19, 435.99, 439.51, 464.34], "source_fragment_id": "table_0082", "source_cell_id": "r1c4"}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00", "page": 100, "bbox": [439.51, 435.99, 536.69, 464.34], "source_fragment_id": "table_0082", "source_cell_id": "r1c5"}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 100, "bbox": [99.31, 464.34, 146.04, 481.44], "source_fragment_id": "table_0082", "source_cell_id": "r2c1"}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "GAID (30h)", "page": 100, "bbox": [146.04, 464.34, 245.11, 481.44], "source_fragment_id": "table_0082", "source_cell_id": "r2c2"}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "00h", "page": 100, "bbox": [245.11, 464.34, 344.19, 481.44], "source_fragment_id": "table_0082", "source_cell_id": "r2c3"}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "00h", "page": 100, "bbox": [344.19, 464.34, 439.51, 481.44], "source_fragment_id": "table_0082", "source_cell_id": "r2c4"}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "00h", "page": 100, "bbox": [439.51, 464.34, 536.69, 481.44], "source_fragment_id": "table_0082", "source_cell_id": "r2c5"}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 100, "bbox": [99.31, 481.44, 146.04, 498.39], "source_fragment_id": "table_0082", "source_cell_id": "r3c1"}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "MSB Alias_Token\n(12 bytes)\nLSB", "page": 100, "bbox": [146.04, 481.44, 536.69, 532.35], "source_fragment_id": "table_0082", "source_cell_id": "r3c2"}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r3c3"}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r3c4"}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r3c5"}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "2", "page": 100, "bbox": [99.31, 498.39, 146.04, 515.37], "source_fragment_id": "table_0082", "source_cell_id": "r4c1"}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r4c2"}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r4c3"}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r4c4"}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r4c5"}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "3", "page": 100, "bbox": [99.31, 515.37, 146.04, 532.35], "source_fragment_id": "table_0082", "source_cell_id": "r5c1"}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r5c2"}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r5c3"}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r5c4"}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r5c5"}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "4", "page": 100, "bbox": [99.31, 532.35, 146.04, 549.39], "source_fragment_id": "table_0082", "source_cell_id": "r6c1"}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "Alias_SP\n(80 bytes)", "page": 100, "bbox": [146.04, 532.35, 536.69, 583.35], "source_fragment_id": "table_0082", "source_cell_id": "r6c2"}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r6c3"}
+{"cell_id": "r6c4", "row": 6, "col": 4, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r6c4"}
+{"cell_id": "r6c5", "row": 6, "col": 5, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r6c5"}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "..", "page": 100, "bbox": [99.31, 549.39, 146.04, 566.37], "source_fragment_id": "table_0082", "source_cell_id": "r7c1"}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r7c2"}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r7c3"}
+{"cell_id": "r7c4", "row": 7, "col": 4, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r7c4"}
+{"cell_id": "r7c5", "row": 7, "col": 5, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r7c5"}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "23", "page": 100, "bbox": [99.31, 566.37, 146.04, 583.35], "source_fragment_id": "table_0082", "source_cell_id": "r8c1"}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r8c2"}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r8c3"}
+{"cell_id": "r8c4", "row": 8, "col": 4, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r8c4"}
+{"cell_id": "r8c5", "row": 8, "col": 5, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r8c5"}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "24", "page": 100, "bbox": [99.31, 583.35, 146.04, 612.39], "source_fragment_id": "table_0082", "source_cell_id": "r9c1"}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "NP_List_Length\n(Number of NP_List entries = n)", "page": 100, "bbox": [146.04, 583.35, 536.69, 612.39], "source_fragment_id": "table_0082", "source_cell_id": "r9c2"}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r9c3"}
+{"cell_id": "r9c4", "row": 9, "col": 4, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r9c4"}
+{"cell_id": "r9c5", "row": 9, "col": 5, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r9c5"}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "25", "page": 100, "bbox": [99.31, 612.39, 146.04, 629.37], "source_fragment_id": "table_0082", "source_cell_id": "r10c1"}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "NP_List (1)", "page": 100, "bbox": [146.04, 612.39, 536.69, 629.37], "source_fragment_id": "table_0082", "source_cell_id": "r10c2"}
+{"cell_id": "r10c3", "row": 10, "col": 3, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r10c3"}
+{"cell_id": "r10c4", "row": 10, "col": 4, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r10c4"}
+{"cell_id": "r10c5", "row": 10, "col": 5, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r10c5"}
+{"cell_id": "r11c1", "row": 11, "col": 1, "text": "..", "page": 100, "bbox": [99.31, 629.37, 146.04, 648.39], "source_fragment_id": "table_0082", "source_cell_id": "r11c1"}
+{"cell_id": "r11c2", "row": 11, "col": 2, "text": "..", "page": 100, "bbox": [146.04, 629.37, 536.69, 648.39], "source_fragment_id": "table_0082", "source_cell_id": "r11c2"}
+{"cell_id": "r11c3", "row": 11, "col": 3, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r11c3"}
+{"cell_id": "r11c4", "row": 11, "col": 4, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r11c4"}
+{"cell_id": "r11c5", "row": 11, "col": 5, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r11c5"}
+{"cell_id": "r12c1", "row": 12, "col": 1, "text": "24 + n", "page": 100, "bbox": [99.31, 648.39, 146.04, 665.34], "source_fragment_id": "table_0082", "source_cell_id": "r12c1"}
+{"cell_id": "r12c2", "row": 12, "col": 2, "text": "NP_List (n)", "page": 100, "bbox": [146.04, 648.39, 536.69, 665.34], "source_fragment_id": "table_0082", "source_cell_id": "r12c2"}
+{"cell_id": "r12c3", "row": 12, "col": 3, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r12c3"}
+{"cell_id": "r12c4", "row": 12, "col": 4, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r12c4"}
+{"cell_id": "r12c5", "row": 12, "col": 5, "text": "", "page": 100, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0082", "source_cell_id": "r12c5"}
+{"cell_id": "r13c1", "row": 13, "col": 1, "text": "0", "page": 101, "bbox": [95.75, 283.84, 144.18, 300.9], "source_fragment_id": "table_0083", "source_cell_id": "r2c1"}
+{"cell_id": "r13c2", "row": 13, "col": 2, "text": "Reserved", "page": 101, "bbox": [144.18, 283.84, 236.67, 300.9], "source_fragment_id": "table_0083", "source_cell_id": "r2c2"}
+{"cell_id": "r13c3", "row": 13, "col": 3, "text": "N_Port_ID", "page": 101, "bbox": [236.67, 283.84, 540.25, 300.9], "source_fragment_id": "table_0083", "source_cell_id": "r2c3"}
+{"cell_id": "r13c4", "row": 13, "col": 4, "text": "", "page": 101, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0083", "source_cell_id": "r2c4"}
+{"cell_id": "r13c5", "row": 13, "col": 5, "text": "", "page": 101, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0083", "source_cell_id": "r2c5"}

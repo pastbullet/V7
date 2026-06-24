@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0120",
+  "type": "table",
+  "caption": "Table 116 – EVFP Request Payload",
+  "pages": [
+    129
+  ],
+  "bbox": [
+    100.25,
+    471.99,
+    535.87,
+    642.36
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 129,
+  "logical_table": false
+}

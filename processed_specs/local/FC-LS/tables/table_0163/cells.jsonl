@@ -1,0 +1,30 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 170, "bbox": [91.88, 280.07, 141.66, 307.7]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 170, "bbox": [141.66, 280.07, 238.95, 307.7]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 170, "bbox": [238.95, 280.07, 336.27, 307.7]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 12", "page": 170, "bbox": [336.27, 280.07, 393.03, 307.7]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "11 .. 08", "page": 170, "bbox": [393.03, 280.07, 445.71, 307.7]}
+{"cell_id": "r1c6", "row": 1, "col": 6, "text": "07 .. 00", "page": 170, "bbox": [445.71, 280.07, 542.36, 307.7]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 170, "bbox": [91.88, 307.7, 141.66, 325.18]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "FC-PH Version - obsolete", "page": 170, "bbox": [141.66, 307.7, 336.27, 325.18]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "Buffer-to-buffer Credit (Fx_Port)", "page": 170, "bbox": [336.27, 307.7, 542.36, 325.18]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c6", "row": 2, "col": 6, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 170, "bbox": [91.88, 325.18, 141.66, 354.62]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Common Features (see table 150)", "page": 170, "bbox": [141.66, 325.18, 336.27, 354.62]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "BB_SC_N", "page": 170, "bbox": [336.27, 325.18, 393.03, 354.62]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "Buffer-to-buffer\nReceive Data Field size", "page": 170, "bbox": [393.03, 325.18, 542.36, 354.62]}
+{"cell_id": "r3c6", "row": 3, "col": 6, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "2", "page": 170, "bbox": [91.88, 354.62, 141.66, 371.37]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "R_A_TOV", "page": 170, "bbox": [141.66, 354.62, 542.36, 371.37]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c6", "row": 4, "col": 6, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "3", "page": 170, "bbox": [91.88, 371.37, 141.66, 388.32]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "E_D_TOV", "page": 170, "bbox": [141.66, 371.37, 542.36, 388.32]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c6", "row": 5, "col": 6, "text": "", "page": 170, "bbox": [0.0, 0.0, 0.0, 0.0]}

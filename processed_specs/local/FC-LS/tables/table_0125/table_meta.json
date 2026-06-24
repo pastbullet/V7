@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0125",
+  "type": "table",
+  "caption": "Table 121 – Descriptor Format",
+  "pages": [
+    132
+  ],
+  "bbox": [
+    100.23,
+    495.99,
+    536.12,
+    594.36
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 132,
+  "logical_table": false
+}

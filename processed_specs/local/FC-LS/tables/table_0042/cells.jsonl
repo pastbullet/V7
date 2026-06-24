@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 69, "bbox": [102.38, 98.62, 147.9, 126.99]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 69, "bbox": [147.9, 98.62, 245.13, 126.99]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 69, "bbox": [245.13, 98.62, 342.33, 126.99]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08", "page": 69, "bbox": [342.33, 98.62, 439.53, 126.99]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00", "page": 69, "bbox": [439.53, 98.62, 533.62, 126.99]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 69, "bbox": [102.38, 126.99, 147.9, 144.25]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "SCR (62h)", "page": 69, "bbox": [147.9, 126.99, 245.13, 144.25]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "00h", "page": 69, "bbox": [245.13, 126.99, 342.33, 144.25]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "00h", "page": 69, "bbox": [342.33, 126.99, 439.53, 144.25]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "00h", "page": 69, "bbox": [439.53, 126.99, 533.62, 144.25]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "", "page": 69, "bbox": [102.38, 144.25, 147.9, 160.68]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Reserved", "page": 69, "bbox": [147.9, 144.25, 439.53, 160.68]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 69, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "", "page": 69, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "Registration Function", "page": 69, "bbox": [439.53, 144.25, 533.62, 160.68]}

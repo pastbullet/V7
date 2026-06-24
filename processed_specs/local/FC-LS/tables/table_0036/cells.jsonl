@@ -1,0 +1,14 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "State", "page": 64, "bbox": [175.55, 98.28, 408.75, 120.0]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Value", "page": 64, "bbox": [408.75, 98.28, 460.45, 120.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "Reserved", "page": 64, "bbox": [175.55, 120.0, 408.75, 144.03]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "0", "page": 64, "bbox": [408.75, 120.0, 460.45, 144.03]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "Online – The loop is not performing Loop\nInitialization, and no Failure has been detected.", "page": 64, "bbox": [175.55, 144.03, 408.75, 178.05]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "1", "page": 64, "bbox": [408.75, 144.03, 460.45, 178.05]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "Loop Failure - A Loop Failure has been detected.\nThe AL_PA that detected the failure is reported in the\nFailed Receiver field.", "page": 64, "bbox": [175.55, 178.05, 408.75, 224.01]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "2", "page": 64, "bbox": [408.75, 178.05, 460.45, 224.01]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "Initialization Failure - The FL_Port has not been able\nto complete Loop Initialization.", "page": 64, "bbox": [175.55, 224.01, 408.75, 258.03]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "3", "page": 64, "bbox": [408.75, 224.01, 460.45, 258.03]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "Initializing - The loop is currently performing Loop\nInitialization.", "page": 64, "bbox": [175.55, 258.03, 408.75, 292.05]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "4", "page": 64, "bbox": [408.75, 258.03, 460.45, 292.05]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "Reserved", "page": 64, "bbox": [175.55, 292.05, 408.75, 315.7]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "5 - 255", "page": 64, "bbox": [408.75, 292.05, 460.45, 315.7]}

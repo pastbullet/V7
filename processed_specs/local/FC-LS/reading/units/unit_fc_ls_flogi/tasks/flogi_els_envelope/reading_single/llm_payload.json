@@ -1,0 +1,117 @@
+{
+  "doc_id": "FC-LS.pdf",
+  "unit_id": "unit_fc_ls_flogi__flogi_els_envelope_single",
+  "reading_md": "In section 4.1, the specification defines the generic Extended Link Service envelope used to identify FLOGI traffic. An ELS request or reply is a single Sequence, and the ELS_Command code is carried in the first word of the Payload of the first frame of that Sequence. ELS request and corresponding reply are performed within a single Exchange. The TYPE field for ELS frames is set to 01h. R_CTL values are given by Table 2, where INFORMATION 0010b means Request and 0011b means Reply. Table 3 identifies FLOGI as the ELS command with value 04h, described as F_Port Login and abbreviated FLOGI.",
+  "claim_candidates": [
+    {
+      "claim_id": "fc_ls_flogi_els_envelope_cmd_location",
+      "text": "The ELS_Command code is specified in the first word of the Payload of the first frame of the ELS request or reply Sequence.",
+      "kind": "field_presence",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0009",
+          "quote": "or reply is composed of a single Sequence with the ELS_Command code being specified in the first"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p036_s0010",
+          "quote": "word of the Payload of the first frame of the Sequence."
+        }
+      ]
+    },
+    {
+      "claim_id": "fc_ls_flogi_els_envelope_flogi_code",
+      "text": "FLOGI uses ELS command code 04h.",
+      "kind": "other",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "table_cell",
+          "asset_id": "table_0003",
+          "cell_id": "r5c1",
+          "quote": "04h"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0003",
+          "cell_id": "r5c2",
+          "quote": "F_Port Login"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0003",
+          "cell_id": "r5c3",
+          "quote": "FLOGI"
+        }
+      ]
+    },
+    {
+      "claim_id": "fc_ls_flogi_els_envelope_type",
+      "text": "The TYPE field for ELS frames shall be set to 01h.",
+      "kind": "field_width",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0018",
+          "quote": "The TYPE field for ELS frames shall be set to 01h."
+        }
+      ]
+    },
+    {
+      "claim_id": "fc_ls_flogi_els_envelope_rctl_request",
+      "text": "For ELS frames, R_CTL INFORMATION value 0010b indicates Request.",
+      "kind": "other",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "table_cell",
+          "asset_id": "table_0002",
+          "cell_id": "r4c2",
+          "quote": "0010b"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0002",
+          "cell_id": "r4c3",
+          "quote": "Request"
+        }
+      ]
+    },
+    {
+      "claim_id": "fc_ls_flogi_els_envelope_rctl_reply",
+      "text": "For ELS frames, R_CTL INFORMATION value 0011b indicates Reply.",
+      "kind": "other",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "table_cell",
+          "asset_id": "table_0002",
+          "cell_id": "r5c2",
+          "quote": "0011b"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0002",
+          "cell_id": "r5c3",
+          "quote": "Reply"
+        }
+      ]
+    },
+    {
+      "claim_id": "fc_ls_flogi_els_envelope_single_exchange",
+      "text": "An ELS request and the corresponding reply shall be performed within a single Exchange.",
+      "kind": "completion_condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0016",
+          "quote": "An ELS request and the corresponding reply shall be performed within a single Exchange."
+        }
+      ]
+    }
+  ]
+}

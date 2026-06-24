@@ -1,0 +1,530 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 203,
+  "spans": [
+    {
+      "span_id": "p203_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0002",
+      "text": " 184",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0003",
+      "text": "8",
+      "bbox": [
+        96.0,
+        57.38,
+        102.1,
+        69.64
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0004",
+      "text": "Virtual Fabrics N_Port Support",
+      "bbox": [
+        114.0,
+        57.38,
+        274.6,
+        69.64
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0005",
+      "text": "8.1",
+      "bbox": [
+        96.0,
+        82.97,
+        109.89,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0006",
+      "text": "Overview",
+      "bbox": [
+        119.89,
+        82.97,
+        164.27,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0007",
+      "text": "The Virtual Fabric Tagging Header (VFT_Header, see FC-FS-2) allows Fibre Channel frames to be",
+      "bbox": [
+        96.0,
+        106.97,
+        539.82,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0008",
+      "text": "tagged with the Virtual Fabric Identifier (VF_ID) of the Virtual Fabric (VF) to which they belong.",
+      "bbox": [
+        96.0,
+        118.97,
+        539.99,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0009",
+      "text": "Tagged frames (i.e., frames with a VFT_Header) belonging to different Virtual Fabrics may be trans-",
+      "bbox": [
+        96.0,
+        130.97,
+        540.05,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0010",
+      "text": "mitted over the same physical link. The VFT_Header may be supported by N_Ports, F_Ports and",
+      "bbox": [
+        96.0,
+        142.97,
+        539.95,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0011",
+      "text": "E_Ports (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        154.97,
+        200.95,
+        166.08
+      ],
+      "block_index": 5,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0012",
+      "text": "8.2",
+      "bbox": [
+        96.0,
+        178.96,
+        109.88,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0013",
+      "text": "Enabling VFT Tagging on N_Ports",
+      "bbox": [
+        119.88,
+        178.96,
+        281.55,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0014",
+      "text": "The use of Virtual Fabrics is negotiated when FLOGI is performed via the Virtual Fabrics bit of the",
+      "bbox": [
+        96.0,
+        202.96,
+        539.96,
+        214.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0015",
+      "text": "FLOGI Common Service Parameters (see table 150). ",
+      "bbox": [
+        96.0,
+        214.96,
+        334.8,
+        226.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0016",
+      "text": "When set to one in the FLOGI request, the Virtual Fabrics bit indicates that the sending N_Port may",
+      "bbox": [
+        96.0,
+        238.96,
+        540.05,
+        250.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0017",
+      "text": "negotiate Virtual Fabrics parameters. When set to one in the FLOGI LS_ACC reply, the Virtual Fab-",
+      "bbox": [
+        96.0,
+        250.96,
+        540.04,
+        262.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0018",
+      "text": "rics bit indicates that the Fabric requires the N_Port to initiate an EVFP transaction (see 4.2.43). Ta-",
+      "bbox": [
+        96.0,
+        262.96,
+        540.05,
+        274.08
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0019",
+      "text": "ble 177 shows the usage of the Virtual Fabrics bit.",
+      "bbox": [
+        96.0,
+        274.96,
+        317.07,
+        286.08
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0020",
+      "text": "When the F_Port requests the N_Port to initiate an EVFP transaction, the D_ID of the FLOGI",
+      "bbox": [
+        96.0,
+        406.96,
+        539.9,
+        418.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0021",
+      "text": "LS_ACC shall be set to 000000h. In this manner the link flow control parameters (e.g., Buffer-to-buff-",
+      "bbox": [
+        96.0,
+        418.96,
+        539.75,
+        430.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0022",
+      "text": "er Credit and Buffer-to-buffer Receive Data Field size) are negotiated, but no N_Port_ID is assigned",
+      "bbox": [
+        96.0,
+        430.96,
+        539.98,
+        442.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0023",
+      "text": "to the N_Port. The N_Port may continue the initialization process by using the N_Port Controller Well",
+      "bbox": [
+        96.0,
+        442.96,
+        540.05,
+        454.08
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0024",
+      "text": "Known Address (i.e., FFFFF0h, see FC-FS-2) as S_ID to perform an Authentication transaction or an",
+      "bbox": [
+        96.0,
+        454.96,
+        539.95,
+        466.08
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0025",
+      "text": " Table 177 – Virtual Fabrics Bit Usage",
+      "bbox": [
+        229.14,
+        296.98,
+        406.94,
+        308.1
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0026",
+      "text": "Requesting Nx_Port",
+      "bbox": [
+        109.56,
+        316.96,
+        205.11,
+        328.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0027",
+      "text": "F_Port Configuration",
+      "bbox": [
+        235.21,
+        316.96,
+        335.13,
+        328.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0028",
+      "text": "Behavior",
+      "bbox": [
+        424.44,
+        316.96,
+        467.17,
+        328.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0029",
+      "text": "Virtual Fabrics Bit = 0b",
+      "bbox": [
+        108.48,
+        332.98,
+        207.03,
+        344.1
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0030",
+      "text": "Virtual Fabrics Not Allowed",
+      "bbox": [
+        220.03,
+        332.98,
+        340.01,
+        344.1
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0031",
+      "text": "LS_ACC with Virtual Fabrics Bit = 0b",
+      "bbox": [
+        364.05,
+        332.98,
+        527.11,
+        344.1
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0032",
+      "text": "Virtual Fabrics Bit = 1b",
+      "bbox": [
+        108.48,
+        349.0,
+        207.03,
+        360.12
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0033",
+      "text": "Virtual Fabrics Not Allowed",
+      "bbox": [
+        220.03,
+        349.0,
+        340.01,
+        360.12
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0034",
+      "text": "LS_ACC with Virtual Fabrics Bit = 0b",
+      "bbox": [
+        364.05,
+        349.0,
+        527.11,
+        360.12
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0035",
+      "text": "Virtual Fabrics Bit = 0b",
+      "bbox": [
+        108.48,
+        364.96,
+        207.1,
+        376.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0036",
+      "text": "Virtual Fabrics Allowed",
+      "bbox": [
+        220.1,
+        364.96,
+        321.69,
+        376.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0037",
+      "text": "LS_ACC with Virtual Fabrics Bit = 0b",
+      "bbox": [
+        364.09,
+        364.96,
+        527.07,
+        376.08
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0038",
+      "text": "Virtual Fabrics Bit = 1b",
+      "bbox": [
+        108.48,
+        380.98,
+        207.1,
+        392.1
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0039",
+      "text": "Virtual Fabrics Allowed",
+      "bbox": [
+        220.1,
+        380.98,
+        321.69,
+        392.1
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p203_s0040",
+      "text": "LS_ACC with Virtual Fabrics Bit = 1b",
+      "bbox": [
+        364.09,
+        380.98,
+        527.07,
+        392.1
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0192"
+  ]
+}

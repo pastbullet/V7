@@ -1,0 +1,3897 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 177,
+  "spans": [
+    {
+      "span_id": "p177_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0002",
+      "text": " 158",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0003",
+      "text": "Priority/Preemption",
+      "bbox": [
+        114.72,
+        180.65,
+        199.63,
+        191.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0004",
+      "text": "0",
+      "bbox": [
+        269.45,
+        180.65,
+        274.99,
+        191.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0005",
+      "text": "23",
+      "bbox": [
+        297.89,
+        180.65,
+        309.01,
+        191.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0006",
+      "text": "0",
+      "bbox": [
+        334.91,
+        180.65,
+        340.44,
+        191.76
+      ],
+      "block_index": 3,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0007",
+      "text": "y",
+      "bbox": [
+        363.94,
+        180.65,
+        368.92,
+        191.76
+      ],
+      "block_index": 3,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0008",
+      "text": "y",
+      "bbox": [
+        384.16,
+        180.65,
+        389.14,
+        191.76
+      ],
+      "block_index": 3,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0009",
+      "text": "y",
+      "bbox": [
+        404.38,
+        180.65,
+        409.36,
+        191.76
+      ],
+      "block_index": 3,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0010",
+      "text": "y",
+      "bbox": [
+        424.6,
+        180.65,
+        429.58,
+        191.76
+      ],
+      "block_index": 3,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0011",
+      "text": "y",
+      "bbox": [
+        444.82,
+        180.65,
+        449.8,
+        191.76
+      ],
+      "block_index": 3,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0012",
+      "text": "y",
+      "bbox": [
+        465.04,
+        180.65,
+        470.02,
+        191.76
+      ],
+      "block_index": 3,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0013",
+      "text": "y",
+      "bbox": [
+        485.26,
+        180.65,
+        490.24,
+        191.76
+      ],
+      "block_index": 3,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0014",
+      "text": "y",
+      "bbox": [
+        505.48,
+        180.65,
+        510.46,
+        191.76
+      ],
+      "block_index": 3,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0015",
+      "text": "y",
+      "bbox": [
+        525.7,
+        180.65,
+        530.68,
+        191.76
+      ],
+      "block_index": 3,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0016",
+      "text": "Preference ",
+      "bbox": [
+        114.72,
+        199.67,
+        166.34,
+        210.78
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0017",
+      "text": "0",
+      "bbox": [
+        269.47,
+        199.67,
+        275.01,
+        210.78
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0018",
+      "text": "22",
+      "bbox": [
+        297.91,
+        199.67,
+        309.03,
+        210.78
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0019",
+      "text": "0",
+      "bbox": [
+        334.93,
+        199.67,
+        340.47,
+        210.78
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0020",
+      "text": "n",
+      "bbox": [
+        363.67,
+        199.67,
+        369.21,
+        210.78
+      ],
+      "block_index": 4,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0021",
+      "text": "y",
+      "bbox": [
+        384.19,
+        199.67,
+        389.17,
+        210.78
+      ],
+      "block_index": 4,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0022",
+      "text": "y",
+      "bbox": [
+        404.41,
+        199.67,
+        409.39,
+        210.78
+      ],
+      "block_index": 4,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0023",
+      "text": "n",
+      "bbox": [
+        424.33,
+        199.67,
+        429.86,
+        210.78
+      ],
+      "block_index": 4,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0024",
+      "text": "y",
+      "bbox": [
+        444.85,
+        199.67,
+        449.83,
+        210.78
+      ],
+      "block_index": 4,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0025",
+      "text": "y",
+      "bbox": [
+        465.06,
+        199.67,
+        470.04,
+        210.78
+      ],
+      "block_index": 4,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0026",
+      "text": "n",
+      "bbox": [
+        484.98,
+        199.67,
+        490.52,
+        210.78
+      ],
+      "block_index": 4,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0027",
+      "text": "y",
+      "bbox": [
+        505.5,
+        199.67,
+        510.48,
+        210.78
+      ],
+      "block_index": 4,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0028",
+      "text": "y",
+      "bbox": [
+        525.72,
+        199.67,
+        530.7,
+        210.78
+      ],
+      "block_index": 4,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0029",
+      "text": "DiffServ QoS",
+      "bbox": [
+        114.72,
+        218.63,
+        173.02,
+        229.74
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0030",
+      "text": "0",
+      "bbox": [
+        269.46,
+        218.63,
+        275.0,
+        229.74
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0031",
+      "text": "21",
+      "bbox": [
+        297.9,
+        218.63,
+        309.02,
+        229.74
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0032",
+      "text": "0",
+      "bbox": [
+        334.92,
+        218.63,
+        340.45,
+        229.74
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0033",
+      "text": "n",
+      "bbox": [
+        363.66,
+        218.63,
+        369.19,
+        229.74
+      ],
+      "block_index": 5,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0034",
+      "text": "y",
+      "bbox": [
+        384.17,
+        218.63,
+        389.15,
+        229.74
+      ],
+      "block_index": 5,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0035",
+      "text": "y",
+      "bbox": [
+        404.39,
+        218.63,
+        409.37,
+        229.74
+      ],
+      "block_index": 5,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0036",
+      "text": "n",
+      "bbox": [
+        424.31,
+        218.63,
+        429.85,
+        229.74
+      ],
+      "block_index": 5,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0037",
+      "text": "y",
+      "bbox": [
+        444.83,
+        218.63,
+        449.81,
+        229.74
+      ],
+      "block_index": 5,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0038",
+      "text": "y",
+      "bbox": [
+        465.05,
+        218.63,
+        470.03,
+        229.74
+      ],
+      "block_index": 5,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0039",
+      "text": "n",
+      "bbox": [
+        484.97,
+        218.63,
+        490.51,
+        229.74
+      ],
+      "block_index": 5,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0040",
+      "text": "y",
+      "bbox": [
+        505.49,
+        218.63,
+        510.47,
+        229.74
+      ],
+      "block_index": 5,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0041",
+      "text": "y",
+      "bbox": [
+        525.71,
+        218.63,
+        530.69,
+        229.74
+      ],
+      "block_index": 5,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0042",
+      "text": "Reserved",
+      "bbox": [
+        114.72,
+        237.64,
+        157.45,
+        248.76
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0043",
+      "text": "0",
+      "bbox": [
+        269.45,
+        237.64,
+        274.99,
+        248.76
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0044",
+      "text": "20-16",
+      "bbox": [
+        290.69,
+        237.64,
+        316.2,
+        248.76
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0045",
+      "text": "0",
+      "bbox": [
+        334.91,
+        237.64,
+        340.44,
+        248.76
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0046",
+      "text": "n",
+      "bbox": [
+        363.64,
+        237.64,
+        369.18,
+        248.76
+      ],
+      "block_index": 6,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0047",
+      "text": "n",
+      "bbox": [
+        383.86,
+        237.64,
+        389.4,
+        248.76
+      ],
+      "block_index": 6,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0048",
+      "text": "n",
+      "bbox": [
+        404.08,
+        237.64,
+        409.62,
+        248.76
+      ],
+      "block_index": 6,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0049",
+      "text": "n",
+      "bbox": [
+        424.3,
+        237.64,
+        429.84,
+        248.76
+      ],
+      "block_index": 6,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0050",
+      "text": "n",
+      "bbox": [
+        444.52,
+        237.64,
+        450.06,
+        248.76
+      ],
+      "block_index": 6,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0051",
+      "text": "n",
+      "bbox": [
+        464.74,
+        237.64,
+        470.28,
+        248.76
+      ],
+      "block_index": 6,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0052",
+      "text": "n",
+      "bbox": [
+        484.96,
+        237.64,
+        490.49,
+        248.76
+      ],
+      "block_index": 6,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0053",
+      "text": "n",
+      "bbox": [
+        505.18,
+        237.64,
+        510.71,
+        248.76
+      ],
+      "block_index": 6,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0054",
+      "text": "n",
+      "bbox": [
+        525.39,
+        237.64,
+        530.93,
+        248.76
+      ],
+      "block_index": 6,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0055",
+      "text": "Initiator Control",
+      "bbox": [
+        99.72,
+        255.64,
+        167.48,
+        266.76
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0056",
+      "text": "0",
+      "bbox": [
+        269.46,
+        256.66,
+        275.0,
+        267.78
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0057",
+      "text": "15-0",
+      "bbox": [
+        293.46,
+        256.66,
+        313.45,
+        267.78
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0058",
+      "text": "X_ID Reassignment - obsolete",
+      "bbox": [
+        114.72,
+        275.62,
+        250.21,
+        286.74
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0059",
+      "text": "0",
+      "bbox": [
+        269.45,
+        275.62,
+        274.98,
+        286.74
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0060",
+      "text": "15-14",
+      "bbox": [
+        290.69,
+        275.62,
+        316.2,
+        286.74
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0061",
+      "text": "0",
+      "bbox": [
+        334.9,
+        275.62,
+        340.44,
+        286.74
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0062",
+      "text": "n",
+      "bbox": [
+        363.64,
+        275.62,
+        369.18,
+        286.74
+      ],
+      "block_index": 8,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0063",
+      "text": "n",
+      "bbox": [
+        383.86,
+        275.62,
+        389.4,
+        286.74
+      ],
+      "block_index": 8,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0064",
+      "text": "n",
+      "bbox": [
+        404.08,
+        275.62,
+        409.61,
+        286.74
+      ],
+      "block_index": 8,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0065",
+      "text": "n",
+      "bbox": [
+        424.3,
+        275.62,
+        429.83,
+        286.74
+      ],
+      "block_index": 8,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0066",
+      "text": "n",
+      "bbox": [
+        444.51,
+        275.62,
+        450.05,
+        286.74
+      ],
+      "block_index": 8,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0067",
+      "text": "n",
+      "bbox": [
+        464.73,
+        275.62,
+        470.27,
+        286.74
+      ],
+      "block_index": 8,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0068",
+      "text": "n",
+      "bbox": [
+        484.95,
+        275.62,
+        490.49,
+        286.74
+      ],
+      "block_index": 8,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0069",
+      "text": "n",
+      "bbox": [
+        505.17,
+        275.62,
+        510.71,
+        286.74
+      ],
+      "block_index": 8,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0070",
+      "text": "n",
+      "bbox": [
+        525.39,
+        275.62,
+        530.93,
+        286.74
+      ],
+      "block_index": 8,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0071",
+      "text": "Initial Responder ",
+      "bbox": [
+        114.72,
+        294.64,
+        192.4,
+        305.76
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0072",
+      "text": "Process_Associator",
+      "bbox": [
+        114.72,
+        306.64,
+        203.03,
+        317.76
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0073",
+      "text": "0",
+      "bbox": [
+        269.46,
+        294.64,
+        275.0,
+        305.76
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0074",
+      "text": "13-12",
+      "bbox": [
+        290.7,
+        294.64,
+        316.21,
+        305.76
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0075",
+      "text": "0",
+      "bbox": [
+        334.91,
+        294.64,
+        340.45,
+        305.76
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0076",
+      "text": "y",
+      "bbox": [
+        363.95,
+        294.64,
+        368.93,
+        305.76
+      ],
+      "block_index": 9,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0077",
+      "text": "y",
+      "bbox": [
+        384.17,
+        294.64,
+        389.15,
+        305.76
+      ],
+      "block_index": 9,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0078",
+      "text": "y",
+      "bbox": [
+        404.39,
+        294.64,
+        409.37,
+        305.76
+      ],
+      "block_index": 9,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0079",
+      "text": "n",
+      "bbox": [
+        424.31,
+        294.64,
+        429.85,
+        305.76
+      ],
+      "block_index": 9,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0080",
+      "text": "n",
+      "bbox": [
+        444.53,
+        294.64,
+        450.07,
+        305.76
+      ],
+      "block_index": 9,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0081",
+      "text": "n",
+      "bbox": [
+        464.75,
+        294.64,
+        470.29,
+        305.76
+      ],
+      "block_index": 9,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0082",
+      "text": "n",
+      "bbox": [
+        484.97,
+        294.64,
+        490.51,
+        305.76
+      ],
+      "block_index": 9,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0083",
+      "text": "n",
+      "bbox": [
+        505.19,
+        294.64,
+        510.72,
+        305.76
+      ],
+      "block_index": 9,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0084",
+      "text": "n",
+      "bbox": [
+        525.41,
+        294.64,
+        530.94,
+        305.76
+      ],
+      "block_index": 9,
+      "line_index": 14,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0085",
+      "text": "ACK_0 capable",
+      "bbox": [
+        114.72,
+        325.66,
+        184.09,
+        336.78
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0086",
+      "text": "0",
+      "bbox": [
+        269.45,
+        325.66,
+        274.99,
+        336.78
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0087",
+      "text": "11",
+      "bbox": [
+        297.89,
+        325.66,
+        309.01,
+        336.78
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0088",
+      "text": "0",
+      "bbox": [
+        334.91,
+        325.66,
+        340.44,
+        336.78
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0089",
+      "text": "y",
+      "bbox": [
+        363.94,
+        325.66,
+        368.92,
+        336.78
+      ],
+      "block_index": 10,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0090",
+      "text": "y",
+      "bbox": [
+        384.16,
+        325.66,
+        389.14,
+        336.78
+      ],
+      "block_index": 10,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0091",
+      "text": "n",
+      "bbox": [
+        404.08,
+        325.66,
+        409.62,
+        336.78
+      ],
+      "block_index": 10,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0092",
+      "text": "n",
+      "bbox": [
+        424.3,
+        325.66,
+        429.84,
+        336.78
+      ],
+      "block_index": 10,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0093",
+      "text": "n",
+      "bbox": [
+        444.52,
+        325.66,
+        450.06,
+        336.78
+      ],
+      "block_index": 10,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0094",
+      "text": "n",
+      "bbox": [
+        464.74,
+        325.66,
+        470.28,
+        336.78
+      ],
+      "block_index": 10,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0095",
+      "text": "n",
+      "bbox": [
+        484.96,
+        325.66,
+        490.5,
+        336.78
+      ],
+      "block_index": 10,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0096",
+      "text": "n",
+      "bbox": [
+        505.18,
+        325.66,
+        510.72,
+        336.78
+      ],
+      "block_index": 10,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0097",
+      "text": "n",
+      "bbox": [
+        525.4,
+        325.66,
+        530.94,
+        336.78
+      ],
+      "block_index": 10,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0098",
+      "text": "ACK_N Capable - obsolete",
+      "bbox": [
+        114.72,
+        344.62,
+        234.66,
+        355.74
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0099",
+      "text": "0",
+      "bbox": [
+        269.44,
+        344.62,
+        274.98,
+        355.74
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0100",
+      "text": "10",
+      "bbox": [
+        297.88,
+        344.62,
+        309.0,
+        355.74
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0101",
+      "text": "0",
+      "bbox": [
+        334.9,
+        344.62,
+        340.44,
+        355.74
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0102",
+      "text": "n",
+      "bbox": [
+        363.64,
+        344.62,
+        369.18,
+        355.74
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0103",
+      "text": "n",
+      "bbox": [
+        383.86,
+        344.62,
+        389.39,
+        355.74
+      ],
+      "block_index": 11,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0104",
+      "text": "n",
+      "bbox": [
+        404.08,
+        344.62,
+        409.61,
+        355.74
+      ],
+      "block_index": 11,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0105",
+      "text": "n",
+      "bbox": [
+        424.29,
+        344.62,
+        429.83,
+        355.74
+      ],
+      "block_index": 11,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0106",
+      "text": "n",
+      "bbox": [
+        444.51,
+        344.62,
+        450.05,
+        355.74
+      ],
+      "block_index": 11,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0107",
+      "text": "n",
+      "bbox": [
+        464.73,
+        344.62,
+        470.27,
+        355.74
+      ],
+      "block_index": 11,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0108",
+      "text": "n",
+      "bbox": [
+        484.95,
+        344.62,
+        490.49,
+        355.74
+      ],
+      "block_index": 11,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0109",
+      "text": "n",
+      "bbox": [
+        505.17,
+        344.62,
+        510.71,
+        355.74
+      ],
+      "block_index": 11,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0110",
+      "text": "n",
+      "bbox": [
+        525.39,
+        344.62,
+        530.93,
+        355.74
+      ],
+      "block_index": 11,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0111",
+      "text": "ACK generation assistance",
+      "bbox": [
+        114.72,
+        363.64,
+        235.21,
+        374.76
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0112",
+      "text": "0",
+      "bbox": [
+        269.45,
+        363.64,
+        274.98,
+        374.76
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0113",
+      "text": "9",
+      "bbox": [
+        300.65,
+        363.64,
+        306.18,
+        374.76
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0114",
+      "text": "0",
+      "bbox": [
+        334.9,
+        363.64,
+        340.44,
+        374.76
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0115",
+      "text": "y",
+      "bbox": [
+        363.94,
+        363.64,
+        368.92,
+        374.76
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0116",
+      "text": "y",
+      "bbox": [
+        384.16,
+        363.64,
+        389.14,
+        374.76
+      ],
+      "block_index": 12,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0117",
+      "text": "n",
+      "bbox": [
+        404.08,
+        363.64,
+        409.62,
+        374.76
+      ],
+      "block_index": 12,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0118",
+      "text": "n",
+      "bbox": [
+        424.3,
+        363.64,
+        429.84,
+        374.76
+      ],
+      "block_index": 12,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0119",
+      "text": "n",
+      "bbox": [
+        444.52,
+        363.64,
+        450.06,
+        374.76
+      ],
+      "block_index": 12,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0120",
+      "text": "n",
+      "bbox": [
+        464.74,
+        363.64,
+        470.28,
+        374.76
+      ],
+      "block_index": 12,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0121",
+      "text": "n",
+      "bbox": [
+        484.96,
+        363.64,
+        490.5,
+        374.76
+      ],
+      "block_index": 12,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0122",
+      "text": "n",
+      "bbox": [
+        505.18,
+        363.64,
+        510.71,
+        374.76
+      ],
+      "block_index": 12,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0123",
+      "text": "n",
+      "bbox": [
+        525.4,
+        363.64,
+        530.93,
+        374.76
+      ],
+      "block_index": 12,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0124",
+      "text": "Data compression capable - ",
+      "bbox": [
+        114.72,
+        382.66,
+        241.9,
+        393.78
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0125",
+      "text": "obsolete",
+      "bbox": [
+        114.72,
+        394.66,
+        152.47,
+        405.78
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0126",
+      "text": "0",
+      "bbox": [
+        269.46,
+        382.66,
+        275.0,
+        393.78
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0127",
+      "text": "8",
+      "bbox": [
+        300.66,
+        382.66,
+        306.2,
+        393.78
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0128",
+      "text": "0",
+      "bbox": [
+        334.92,
+        382.66,
+        340.46,
+        393.78
+      ],
+      "block_index": 13,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0129",
+      "text": "n",
+      "bbox": [
+        363.66,
+        382.66,
+        369.19,
+        393.78
+      ],
+      "block_index": 13,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0130",
+      "text": "n",
+      "bbox": [
+        383.87,
+        382.66,
+        389.41,
+        393.78
+      ],
+      "block_index": 13,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0131",
+      "text": "n",
+      "bbox": [
+        404.09,
+        382.66,
+        409.63,
+        393.78
+      ],
+      "block_index": 13,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0132",
+      "text": "n",
+      "bbox": [
+        424.31,
+        382.66,
+        429.85,
+        393.78
+      ],
+      "block_index": 13,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0133",
+      "text": "n",
+      "bbox": [
+        444.53,
+        382.66,
+        450.07,
+        393.78
+      ],
+      "block_index": 13,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0134",
+      "text": "n",
+      "bbox": [
+        464.75,
+        382.66,
+        470.29,
+        393.78
+      ],
+      "block_index": 13,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0135",
+      "text": "n",
+      "bbox": [
+        484.97,
+        382.66,
+        490.51,
+        393.78
+      ],
+      "block_index": 13,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0136",
+      "text": "n",
+      "bbox": [
+        505.19,
+        382.66,
+        510.73,
+        393.78
+      ],
+      "block_index": 13,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0137",
+      "text": "n",
+      "bbox": [
+        525.41,
+        382.66,
+        530.94,
+        393.78
+      ],
+      "block_index": 13,
+      "line_index": 14,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0138",
+      "text": "Data compression history buffer ",
+      "bbox": [
+        114.72,
+        413.62,
+        256.3,
+        424.74
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0139",
+      "text": "size - obsolete",
+      "bbox": [
+        114.72,
+        425.62,
+        179.1,
+        436.74
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0140",
+      "text": "0",
+      "bbox": [
+        269.46,
+        413.62,
+        275.0,
+        424.74
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0141",
+      "text": "7-6",
+      "bbox": [
+        296.22,
+        413.62,
+        310.63,
+        424.74
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0142",
+      "text": "0",
+      "bbox": [
+        334.92,
+        413.62,
+        340.45,
+        424.74
+      ],
+      "block_index": 14,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0143",
+      "text": "n",
+      "bbox": [
+        363.65,
+        413.62,
+        369.19,
+        424.74
+      ],
+      "block_index": 14,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0144",
+      "text": "n",
+      "bbox": [
+        383.87,
+        413.62,
+        389.41,
+        424.74
+      ],
+      "block_index": 14,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0145",
+      "text": "n",
+      "bbox": [
+        404.09,
+        413.62,
+        409.63,
+        424.74
+      ],
+      "block_index": 14,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0146",
+      "text": "n",
+      "bbox": [
+        424.31,
+        413.62,
+        429.85,
+        424.74
+      ],
+      "block_index": 14,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0147",
+      "text": "n",
+      "bbox": [
+        444.53,
+        413.62,
+        450.07,
+        424.74
+      ],
+      "block_index": 14,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0148",
+      "text": "n",
+      "bbox": [
+        464.75,
+        413.62,
+        470.29,
+        424.74
+      ],
+      "block_index": 14,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0149",
+      "text": "n",
+      "bbox": [
+        484.97,
+        413.62,
+        490.5,
+        424.74
+      ],
+      "block_index": 14,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0150",
+      "text": "n",
+      "bbox": [
+        505.19,
+        413.62,
+        510.72,
+        424.74
+      ],
+      "block_index": 14,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0151",
+      "text": "n",
+      "bbox": [
+        525.4,
+        413.62,
+        530.94,
+        424.74
+      ],
+      "block_index": 14,
+      "line_index": 14,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0152",
+      "text": "Data Encryption Capable - ",
+      "bbox": [
+        114.72,
+        444.64,
+        234.71,
+        455.76
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0153",
+      "text": "obsolete",
+      "bbox": [
+        114.72,
+        456.64,
+        152.47,
+        467.76
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0154",
+      "text": "0",
+      "bbox": [
+        269.46,
+        444.64,
+        275.0,
+        455.76
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0155",
+      "text": "5",
+      "bbox": [
+        300.66,
+        444.64,
+        306.2,
+        455.76
+      ],
+      "block_index": 15,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0156",
+      "text": "0",
+      "bbox": [
+        334.92,
+        444.64,
+        340.46,
+        455.76
+      ],
+      "block_index": 15,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0157",
+      "text": "n",
+      "bbox": [
+        363.66,
+        444.64,
+        369.19,
+        455.76
+      ],
+      "block_index": 15,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0158",
+      "text": "n",
+      "bbox": [
+        383.87,
+        444.64,
+        389.41,
+        455.76
+      ],
+      "block_index": 15,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0159",
+      "text": "n",
+      "bbox": [
+        404.09,
+        444.64,
+        409.63,
+        455.76
+      ],
+      "block_index": 15,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0160",
+      "text": "n",
+      "bbox": [
+        424.31,
+        444.64,
+        429.85,
+        455.76
+      ],
+      "block_index": 15,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0161",
+      "text": "n",
+      "bbox": [
+        444.53,
+        444.64,
+        450.07,
+        455.76
+      ],
+      "block_index": 15,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0162",
+      "text": "n",
+      "bbox": [
+        464.75,
+        444.64,
+        470.29,
+        455.76
+      ],
+      "block_index": 15,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0163",
+      "text": "n",
+      "bbox": [
+        484.97,
+        444.64,
+        490.51,
+        455.76
+      ],
+      "block_index": 15,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0164",
+      "text": "n",
+      "bbox": [
+        505.19,
+        444.64,
+        510.73,
+        455.76
+      ],
+      "block_index": 15,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0165",
+      "text": "n",
+      "bbox": [
+        525.41,
+        444.64,
+        530.94,
+        455.76
+      ],
+      "block_index": 15,
+      "line_index": 14,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0166",
+      "text": "Clock Synchronization ELS ",
+      "bbox": [
+        114.72,
+        475.66,
+        237.99,
+        486.78
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0167",
+      "text": "capable",
+      "bbox": [
+        114.72,
+        487.66,
+        149.65,
+        498.78
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0168",
+      "text": "0",
+      "bbox": [
+        269.46,
+        475.66,
+        275.0,
+        486.78
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0169",
+      "text": "4",
+      "bbox": [
+        300.66,
+        475.66,
+        306.2,
+        486.78
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0170",
+      "text": "0",
+      "bbox": [
+        334.92,
+        475.66,
+        340.46,
+        486.78
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0171",
+      "text": "y",
+      "bbox": [
+        363.96,
+        475.66,
+        368.94,
+        486.78
+      ],
+      "block_index": 16,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0172",
+      "text": "y",
+      "bbox": [
+        384.18,
+        475.66,
+        389.16,
+        486.78
+      ],
+      "block_index": 16,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0173",
+      "text": "y",
+      "bbox": [
+        404.4,
+        475.66,
+        409.38,
+        486.78
+      ],
+      "block_index": 16,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0174",
+      "text": "y",
+      "bbox": [
+        424.62,
+        475.66,
+        429.6,
+        486.78
+      ],
+      "block_index": 16,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0175",
+      "text": "y",
+      "bbox": [
+        444.83,
+        475.66,
+        449.81,
+        486.78
+      ],
+      "block_index": 16,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0176",
+      "text": "y",
+      "bbox": [
+        465.05,
+        475.66,
+        470.03,
+        486.78
+      ],
+      "block_index": 16,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0177",
+      "text": "y",
+      "bbox": [
+        485.27,
+        475.66,
+        490.25,
+        486.78
+      ],
+      "block_index": 16,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0178",
+      "text": "y",
+      "bbox": [
+        505.49,
+        475.66,
+        510.47,
+        486.78
+      ],
+      "block_index": 16,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0179",
+      "text": "y",
+      "bbox": [
+        525.71,
+        475.66,
+        530.69,
+        486.78
+      ],
+      "block_index": 16,
+      "line_index": 14,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0180",
+      "text": "Reserved",
+      "bbox": [
+        114.72,
+        506.68,
+        157.45,
+        517.8
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0181",
+      "text": "0",
+      "bbox": [
+        269.45,
+        506.68,
+        274.99,
+        517.8
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0182",
+      "text": "3-0",
+      "bbox": [
+        296.21,
+        506.68,
+        310.63,
+        517.8
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0183",
+      "text": "0",
+      "bbox": [
+        334.91,
+        506.68,
+        340.45,
+        517.8
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0184",
+      "text": "n",
+      "bbox": [
+        363.65,
+        506.68,
+        369.18,
+        517.8
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0185",
+      "text": "n",
+      "bbox": [
+        383.87,
+        506.68,
+        389.4,
+        517.8
+      ],
+      "block_index": 17,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0186",
+      "text": "n",
+      "bbox": [
+        404.08,
+        506.68,
+        409.62,
+        517.8
+      ],
+      "block_index": 17,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0187",
+      "text": "n",
+      "bbox": [
+        424.3,
+        506.68,
+        429.84,
+        517.8
+      ],
+      "block_index": 17,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0188",
+      "text": "n",
+      "bbox": [
+        444.52,
+        506.68,
+        450.06,
+        517.8
+      ],
+      "block_index": 17,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0189",
+      "text": "n",
+      "bbox": [
+        464.74,
+        506.68,
+        470.28,
+        517.8
+      ],
+      "block_index": 17,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0190",
+      "text": "n",
+      "bbox": [
+        484.96,
+        506.68,
+        490.5,
+        517.8
+      ],
+      "block_index": 17,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0191",
+      "text": "n",
+      "bbox": [
+        505.18,
+        506.68,
+        510.72,
+        517.8
+      ],
+      "block_index": 17,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0192",
+      "text": "n",
+      "bbox": [
+        525.4,
+        506.68,
+        530.94,
+        517.8
+      ],
+      "block_index": 17,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0193",
+      "text": "Recipient Control",
+      "bbox": [
+        99.72,
+        524.68,
+        176.34,
+        535.8
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0194",
+      "text": "1",
+      "bbox": [
+        269.46,
+        525.64,
+        275.0,
+        536.76
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0195",
+      "text": "31-16",
+      "bbox": [
+        290.7,
+        525.64,
+        316.21,
+        536.76
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0196",
+      "text": "ACK_0 Capable",
+      "bbox": [
+        114.72,
+        544.66,
+        186.31,
+        555.78
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0197",
+      "text": "1",
+      "bbox": [
+        269.45,
+        544.66,
+        274.99,
+        555.78
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0198",
+      "text": "31",
+      "bbox": [
+        297.89,
+        544.66,
+        309.0,
+        555.78
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0199",
+      "text": "0",
+      "bbox": [
+        334.91,
+        544.66,
+        340.44,
+        555.78
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0200",
+      "text": "y",
+      "bbox": [
+        363.94,
+        544.66,
+        368.92,
+        555.78
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0201",
+      "text": "y",
+      "bbox": [
+        384.16,
+        544.66,
+        389.14,
+        555.78
+      ],
+      "block_index": 19,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0202",
+      "text": "n",
+      "bbox": [
+        404.08,
+        544.66,
+        409.62,
+        555.78
+      ],
+      "block_index": 19,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0203",
+      "text": "n",
+      "bbox": [
+        424.3,
+        544.66,
+        429.84,
+        555.78
+      ],
+      "block_index": 19,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0204",
+      "text": "n",
+      "bbox": [
+        444.52,
+        544.66,
+        450.06,
+        555.78
+      ],
+      "block_index": 19,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0205",
+      "text": "n",
+      "bbox": [
+        464.74,
+        544.66,
+        470.28,
+        555.78
+      ],
+      "block_index": 19,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0206",
+      "text": "n",
+      "bbox": [
+        484.96,
+        544.66,
+        490.5,
+        555.78
+      ],
+      "block_index": 19,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0207",
+      "text": "n",
+      "bbox": [
+        505.18,
+        544.66,
+        510.72,
+        555.78
+      ],
+      "block_index": 19,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0208",
+      "text": "n",
+      "bbox": [
+        525.4,
+        544.66,
+        530.93,
+        555.78
+      ],
+      "block_index": 19,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0209",
+      "text": "ACK_N Capable - obsolete",
+      "bbox": [
+        114.72,
+        563.68,
+        234.66,
+        574.8
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0210",
+      "text": "1",
+      "bbox": [
+        269.44,
+        563.68,
+        274.98,
+        574.8
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0211",
+      "text": "30",
+      "bbox": [
+        297.88,
+        563.68,
+        309.0,
+        574.8
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0212",
+      "text": "0",
+      "bbox": [
+        334.9,
+        563.68,
+        340.44,
+        574.8
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0213",
+      "text": "n",
+      "bbox": [
+        363.64,
+        563.68,
+        369.18,
+        574.8
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0214",
+      "text": "n",
+      "bbox": [
+        383.86,
+        563.68,
+        389.4,
+        574.8
+      ],
+      "block_index": 20,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0215",
+      "text": "n",
+      "bbox": [
+        404.08,
+        563.68,
+        409.61,
+        574.8
+      ],
+      "block_index": 20,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0216",
+      "text": "n",
+      "bbox": [
+        424.3,
+        563.68,
+        429.83,
+        574.8
+      ],
+      "block_index": 20,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0217",
+      "text": "n",
+      "bbox": [
+        444.51,
+        563.68,
+        450.05,
+        574.8
+      ],
+      "block_index": 20,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0218",
+      "text": "n",
+      "bbox": [
+        464.73,
+        563.68,
+        470.27,
+        574.8
+      ],
+      "block_index": 20,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0219",
+      "text": "n",
+      "bbox": [
+        484.95,
+        563.68,
+        490.49,
+        574.8
+      ],
+      "block_index": 20,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0220",
+      "text": "n",
+      "bbox": [
+        505.17,
+        563.68,
+        510.71,
+        574.8
+      ],
+      "block_index": 20,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0221",
+      "text": "n",
+      "bbox": [
+        525.39,
+        563.68,
+        530.93,
+        574.8
+      ],
+      "block_index": 20,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0222",
+      "text": "X_ID interlock",
+      "bbox": [
+        114.72,
+        582.64,
+        176.88,
+        593.76
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0223",
+      "text": "1",
+      "bbox": [
+        269.46,
+        582.64,
+        274.99,
+        593.76
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0224",
+      "text": "29",
+      "bbox": [
+        297.9,
+        582.64,
+        309.01,
+        593.76
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0225",
+      "text": "1",
+      "bbox": [
+        334.91,
+        582.64,
+        340.45,
+        593.76
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0226",
+      "text": "y",
+      "bbox": [
+        363.95,
+        582.64,
+        368.93,
+        593.76
+      ],
+      "block_index": 21,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0227",
+      "text": "y",
+      "bbox": [
+        384.17,
+        582.64,
+        389.15,
+        593.76
+      ],
+      "block_index": 21,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0228",
+      "text": "n",
+      "bbox": [
+        404.09,
+        582.64,
+        409.63,
+        593.76
+      ],
+      "block_index": 21,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0229",
+      "text": "n",
+      "bbox": [
+        424.31,
+        582.64,
+        429.85,
+        593.76
+      ],
+      "block_index": 21,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0230",
+      "text": "n",
+      "bbox": [
+        444.53,
+        582.64,
+        450.07,
+        593.76
+      ],
+      "block_index": 21,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0231",
+      "text": "n",
+      "bbox": [
+        464.75,
+        582.64,
+        470.28,
+        593.76
+      ],
+      "block_index": 21,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0232",
+      "text": "n",
+      "bbox": [
+        484.97,
+        582.64,
+        490.5,
+        593.76
+      ],
+      "block_index": 21,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0233",
+      "text": "n",
+      "bbox": [
+        505.18,
+        582.64,
+        510.72,
+        593.76
+      ],
+      "block_index": 21,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0234",
+      "text": "n",
+      "bbox": [
+        525.4,
+        582.64,
+        530.94,
+        593.76
+      ],
+      "block_index": 21,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0235",
+      "text": "Error policy support",
+      "bbox": [
+        114.72,
+        601.66,
+        201.3,
+        612.78
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0236",
+      "text": "1",
+      "bbox": [
+        269.45,
+        601.66,
+        274.99,
+        612.78
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0237",
+      "text": "28-27",
+      "bbox": [
+        290.69,
+        601.66,
+        316.2,
+        612.78
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0238",
+      "text": "0",
+      "bbox": [
+        334.91,
+        601.66,
+        340.44,
+        612.78
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0239",
+      "text": "y",
+      "bbox": [
+        363.94,
+        601.66,
+        368.92,
+        612.78
+      ],
+      "block_index": 22,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0240",
+      "text": "y",
+      "bbox": [
+        384.16,
+        601.66,
+        389.14,
+        612.78
+      ],
+      "block_index": 22,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0241",
+      "text": "y",
+      "bbox": [
+        404.38,
+        601.66,
+        409.36,
+        612.78
+      ],
+      "block_index": 22,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0242",
+      "text": "n",
+      "bbox": [
+        424.3,
+        601.66,
+        429.84,
+        612.78
+      ],
+      "block_index": 22,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0243",
+      "text": "n",
+      "bbox": [
+        444.52,
+        601.66,
+        450.06,
+        612.78
+      ],
+      "block_index": 22,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0244",
+      "text": "n",
+      "bbox": [
+        464.74,
+        601.66,
+        470.28,
+        612.78
+      ],
+      "block_index": 22,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0245",
+      "text": "n",
+      "bbox": [
+        484.96,
+        601.66,
+        490.5,
+        612.78
+      ],
+      "block_index": 22,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0246",
+      "text": "n",
+      "bbox": [
+        505.18,
+        601.66,
+        510.72,
+        612.78
+      ],
+      "block_index": 22,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0247",
+      "text": "n",
+      "bbox": [
+        525.4,
+        601.66,
+        530.94,
+        612.78
+      ],
+      "block_index": 22,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0248",
+      "text": "Reserved",
+      "bbox": [
+        114.72,
+        620.68,
+        157.45,
+        631.8
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0249",
+      "text": "1",
+      "bbox": [
+        269.45,
+        620.68,
+        274.99,
+        631.8
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0250",
+      "text": "26",
+      "bbox": [
+        297.89,
+        620.68,
+        309.01,
+        631.8
+      ],
+      "block_index": 23,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0251",
+      "text": "0",
+      "bbox": [
+        334.91,
+        620.68,
+        340.45,
+        631.8
+      ],
+      "block_index": 23,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0252",
+      "text": "n",
+      "bbox": [
+        363.65,
+        620.68,
+        369.19,
+        631.8
+      ],
+      "block_index": 23,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0253",
+      "text": "n",
+      "bbox": [
+        383.87,
+        620.68,
+        389.41,
+        631.8
+      ],
+      "block_index": 23,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0254",
+      "text": "n",
+      "bbox": [
+        404.09,
+        620.68,
+        409.62,
+        631.8
+      ],
+      "block_index": 23,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0255",
+      "text": "n",
+      "bbox": [
+        424.31,
+        620.68,
+        429.84,
+        631.8
+      ],
+      "block_index": 23,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0256",
+      "text": "n",
+      "bbox": [
+        444.52,
+        620.68,
+        450.06,
+        631.8
+      ],
+      "block_index": 23,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0257",
+      "text": "n",
+      "bbox": [
+        464.74,
+        620.68,
+        470.28,
+        631.8
+      ],
+      "block_index": 23,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0258",
+      "text": "n",
+      "bbox": [
+        484.96,
+        620.68,
+        490.5,
+        631.8
+      ],
+      "block_index": 23,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0259",
+      "text": "n",
+      "bbox": [
+        505.18,
+        620.68,
+        510.72,
+        631.8
+      ],
+      "block_index": 23,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0260",
+      "text": "n",
+      "bbox": [
+        525.4,
+        620.68,
+        530.94,
+        631.8
+      ],
+      "block_index": 23,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0261",
+      "text": " Table 155 – Class Service Parameters Applicability (Continued)",
+      "bbox": [
+        166.62,
+        57.64,
+        469.33,
+        68.76
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0262",
+      "text": "Service Parameter",
+      "bbox": [
+        133.56,
+        161.62,
+        220.74,
+        172.74
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0263",
+      "text": "Word",
+      "bbox": [
+        259.46,
+        161.62,
+        284.91,
+        172.74
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0264",
+      "text": "Bits",
+      "bbox": [
+        293.95,
+        161.62,
+        312.88,
+        172.74
+      ],
+      "block_index": 25,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0265",
+      "text": "Default ",
+      "bbox": [
+        320.76,
+        137.62,
+        357.45,
+        148.74
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0266",
+      "text": "Login ",
+      "bbox": [
+        324.12,
+        149.62,
+        354.08,
+        160.74
+      ],
+      "block_index": 26,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0267",
+      "text": "Value",
+      "bbox": [
+        324.36,
+        161.62,
+        351.02,
+        172.74
+      ],
+      "block_index": 26,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0268",
+      "text": "PLOGI and ",
+      "bbox": [
+        360.84,
+        79.66,
+        415.26,
+        90.78
+      ],
+      "block_index": 27,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0269",
+      "text": "PLOGI ",
+      "bbox": [
+        371.1,
+        91.66,
+        405.03,
+        102.78
+      ],
+      "block_index": 27,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0270",
+      "text": "LS_ACC ",
+      "bbox": [
+        366.66,
+        103.66,
+        409.37,
+        114.78
+      ],
+      "block_index": 27,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0271",
+      "text": "Parameter ",
+      "bbox": [
+        362.22,
+        115.66,
+        413.88,
+        126.78
+      ],
+      "block_index": 27,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0272",
+      "text": "applicability",
+      "bbox": [
+        357.78,
+        127.66,
+        415.56,
+        138.78
+      ],
+      "block_index": 27,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0273",
+      "text": "FLOGI ",
+      "bbox": [
+        432.06,
+        91.66,
+        465.38,
+        102.78
+      ],
+      "block_index": 28,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0274",
+      "text": "Parameter ",
+      "bbox": [
+        422.88,
+        103.66,
+        474.53,
+        114.78
+      ],
+      "block_index": 28,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0275",
+      "text": "applicability",
+      "bbox": [
+        418.44,
+        115.66,
+        476.21,
+        126.78
+      ],
+      "block_index": 28,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0276",
+      "text": "FLOGI ",
+      "bbox": [
+        492.72,
+        79.66,
+        526.04,
+        90.78
+      ],
+      "block_index": 29,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0277",
+      "text": "LS_ACC ",
+      "bbox": [
+        487.98,
+        91.66,
+        530.69,
+        102.78
+      ],
+      "block_index": 29,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0278",
+      "text": "Parameter ",
+      "bbox": [
+        483.54,
+        103.66,
+        535.19,
+        114.78
+      ],
+      "block_index": 29,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0279",
+      "text": "applicability",
+      "bbox": [
+        479.1,
+        115.66,
+        536.87,
+        126.78
+      ],
+      "block_index": 29,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0280",
+      "text": "Class",
+      "bbox": [
+        373.32,
+        144.64,
+        399.98,
+        155.76
+      ],
+      "block_index": 30,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0281",
+      "text": "Class",
+      "bbox": [
+        433.98,
+        144.64,
+        460.63,
+        155.76
+      ],
+      "block_index": 30,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0282",
+      "text": "Class",
+      "bbox": [
+        494.63,
+        144.64,
+        521.3,
+        155.76
+      ],
+      "block_index": 30,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0283",
+      "text": "1",
+      "bbox": [
+        362.1,
+        161.62,
+        367.64,
+        172.74
+      ],
+      "block_index": 31,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0284",
+      "text": "a",
+      "bbox": [
+        367.68,
+        162.83,
+        370.78,
+        169.06
+      ],
+      "block_index": 31,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p177_s0285",
+      "text": "2",
+      "bbox": [
+        383.88,
+        161.63,
+        389.42,
+        172.74
+      ],
+      "block_index": 31,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0286",
+      "text": "3",
+      "bbox": [
+        404.1,
+        161.63,
+        409.64,
+        172.74
+      ],
+      "block_index": 31,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0287",
+      "text": "1",
+      "bbox": [
+        422.76,
+        161.63,
+        428.29,
+        172.74
+      ],
+      "block_index": 31,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0288",
+      "text": "a",
+      "bbox": [
+        428.34,
+        162.83,
+        431.44,
+        169.06
+      ],
+      "block_index": 31,
+      "line_index": 4,
+      "span_index": 2
+    },
+    {
+      "span_id": "p177_s0289",
+      "text": "2",
+      "bbox": [
+        444.54,
+        161.63,
+        450.08,
+        172.74
+      ],
+      "block_index": 31,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0290",
+      "text": "3",
+      "bbox": [
+        464.76,
+        161.63,
+        470.3,
+        172.74
+      ],
+      "block_index": 31,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0291",
+      "text": "1",
+      "bbox": [
+        483.42,
+        161.63,
+        488.95,
+        172.74
+      ],
+      "block_index": 31,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0292",
+      "text": "a",
+      "bbox": [
+        489.0,
+        162.83,
+        492.1,
+        169.06
+      ],
+      "block_index": 31,
+      "line_index": 7,
+      "span_index": 2
+    },
+    {
+      "span_id": "p177_s0293",
+      "text": "2",
+      "bbox": [
+        505.2,
+        161.63,
+        510.74,
+        172.74
+      ],
+      "block_index": 31,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0294",
+      "text": "3",
+      "bbox": [
+        525.42,
+        161.63,
+        530.96,
+        172.74
+      ],
+      "block_index": 31,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0295",
+      "text": "Legend:",
+      "bbox": [
+        99.72,
+        637.67,
+        135.78,
+        648.78
+      ],
+      "block_index": 32,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0296",
+      "text": "\"y\" indicates yes, applicable (i.e., has meaning);",
+      "bbox": [
+        99.72,
+        649.67,
+        311.23,
+        660.78
+      ],
+      "block_index": 32,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0297",
+      "text": "\"n\" indicates no, not applicable (i.e., has no meaning)",
+      "bbox": [
+        99.72,
+        661.67,
+        335.03,
+        672.78
+      ],
+      "block_index": 32,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0298",
+      "text": "a",
+      "bbox": [
+        105.9,
+        679.28,
+        109.9,
+        687.32
+      ],
+      "block_index": 33,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p177_s0299",
+      "text": " The Class 1 Service Parameters shall be used for Class 6.  Each has the same applicability as Class 1.",
+      "bbox": [
+        109.9,
+        677.65,
+        527.35,
+        691.3
+      ],
+      "block_index": 33,
+      "line_index": 1,
+      "span_index": 2
+    }
+  ],
+  "asset_ids": [
+    "table_0165"
+  ]
+}

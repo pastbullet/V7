@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0014",
+  "type": "table",
+  "caption": "Table 11 – ESTS LS_ACC Payload",
+  "pages": [
+    48
+  ],
+  "bbox": [
+    100.57,
+    98.62,
+    535.43,
+    517.81
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 48
+}

@@ -1,0 +1,699 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 56,
+  "spans": [
+    {
+      "span_id": "p056_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0002",
+      "text": " 37",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0003",
+      "text": "that originated the Exchange being aborted. Resources associated with the OX_ID in the Originator,",
+      "bbox": [
+        96.0,
+        57.65,
+        539.95,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0004",
+      "text": "and with the RX_ID in the Responder, shall be released following transmission and reception of the",
+      "bbox": [
+        96.0,
+        69.65,
+        539.95,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0005",
+      "text": "LS_ACC reply Sequence if the Exchange had been aborted with ABTS-LS.",
+      "bbox": [
+        96.0,
+        81.65,
+        427.65,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0006",
+      "text": "Both the Originator and Responder shall ensure that the OX_ID and RX_ID pair being terminated is",
+      "bbox": [
+        96.0,
+        106.97,
+        540.01,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0007",
+      "text": "currently associated with the OX_ID and RX_ID pair specified in the RRQ Request.",
+      "bbox": [
+        96.0,
+        118.97,
+        463.2,
+        130.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0008",
+      "text": "The Recovery_Qualifier range shall be timed out for an R_A_TOV timeout period (i.e., RRQ shall not",
+      "bbox": [
+        96.0,
+        142.96,
+        539.98,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0009",
+      "text": "be transmitted until an R_A_TOV timeout period after BA_ACC for ABTS has been received) by the",
+      "bbox": [
+        96.0,
+        154.96,
+        540.04,
+        166.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0010",
+      "text": "Nx_Port that transmitted and successfully completed the ABTS frame.",
+      "bbox": [
+        96.0,
+        166.96,
+        405.48,
+        178.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0011",
+      "text": "4.2.12.2  Protocol",
+      "bbox": [
+        96.0,
+        190.96,
+        178.22,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0012",
+      "text": "a) Reinstate Recovery Qualifier Request Sequence",
+      "bbox": [
+        106.02,
+        214.96,
+        337.34,
+        226.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0013",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence",
+      "bbox": [
+        106.02,
+        238.96,
+        287.89,
+        250.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0014",
+      "text": "4.2.12.3  Request Sequence",
+      "bbox": [
+        96.0,
+        262.96,
+        227.06,
+        274.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0015",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        286.96,
+        157.1,
+        298.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0016",
+      "text": "The D_ID field designates the destination Nx_Port of the RRQ Request Sequence",
+      "bbox": [
+        157.08,
+        286.96,
+        539.88,
+        298.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p056_s0017",
+      "text": "while the S_ID field designates the source Nx_Port that is requesting that the Recovery_Qualifier be",
+      "bbox": [
+        96.0,
+        298.96,
+        540.03,
+        310.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0018",
+      "text": "reinstated.",
+      "bbox": [
+        96.0,
+        310.96,
+        142.65,
+        322.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0019",
+      "text": "Exchange: ",
+      "bbox": [
+        96.0,
+        334.96,
+        149.26,
+        346.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0020",
+      "text": "A separate Exchange is required.",
+      "bbox": [
+        149.34,
+        334.96,
+        297.08,
+        346.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p056_s0021",
+      "text": "SEQ_ID and SEQ_CNT: ",
+      "bbox": [
+        96.0,
+        358.96,
+        208.12,
+        370.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0022",
+      "text": "The SEQ_ID and the SEQ_CNT shall be appropriate for an open Se-",
+      "bbox": [
+        208.2,
+        358.96,
+        540.35,
+        370.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p056_s0023",
+      "text": "quence.",
+      "bbox": [
+        96.0,
+        370.96,
+        131.53,
+        382.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0024",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        394.96,
+        140.41,
+        406.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0025",
+      "text": "The format of the Payload is shown in table 21.",
+      "bbox": [
+        140.4,
+        394.96,
+        348.7,
+        406.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p056_s0026",
+      "text": "4.2.12.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        586.96,
+        214.86,
+        598.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0027",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        610.96,
+        138.19,
+        622.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0028",
+      "text": "LS_RJT signifies rejection of the RRQ command.",
+      "bbox": [
+        138.18,
+        610.96,
+        355.89,
+        622.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p056_s0029",
+      "text": " Table 21 – RRQ Payload",
+      "bbox": [
+        259.38,
+        416.98,
+        376.6,
+        428.1
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0030",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        439.0,
+        133.06,
+        450.12
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0031",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        451.0,
+        136.35,
+        462.12
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0032",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        439.0,
+        233.97,
+        450.12
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0033",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        439.0,
+        328.41,
+        450.12
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0034",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        439.0,
+        427.0,
+        450.12
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0035",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        439.0,
+        522.83,
+        450.12
+      ],
+      "block_index": 17,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0036",
+      "text": "0",
+      "bbox": [
+        120.84,
+        467.98,
+        126.38,
+        479.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0037",
+      "text": "RRQ (12h)",
+      "bbox": [
+        149.88,
+        467.98,
+        198.22,
+        479.1
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0038",
+      "text": "00h",
+      "bbox": [
+        247.1,
+        467.98,
+        263.74,
+        479.1
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0039",
+      "text": "00h",
+      "bbox": [
+        344.3,
+        467.98,
+        360.97,
+        479.1
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0040",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        467.98,
+        458.15,
+        479.1
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0041",
+      "text": "1",
+      "bbox": [
+        120.84,
+        484.96,
+        126.38,
+        496.07
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0042",
+      "text": "Reserved",
+      "bbox": [
+        149.88,
+        484.96,
+        192.62,
+        496.07
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0043",
+      "text": "Exchange Originator S_ID",
+      "bbox": [
+        247.08,
+        484.96,
+        363.15,
+        496.07
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0044",
+      "text": "2",
+      "bbox": [
+        120.84,
+        502.0,
+        126.38,
+        513.11
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0045",
+      "text": "OX_ID",
+      "bbox": [
+        149.88,
+        502.0,
+        179.87,
+        513.11
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0046",
+      "text": "RX_ID",
+      "bbox": [
+        344.28,
+        502.0,
+        373.73,
+        513.11
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0047",
+      "text": "3",
+      "bbox": [
+        120.84,
+        518.98,
+        126.38,
+        530.09
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0048",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        518.98,
+        171.52,
+        530.09
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0049",
+      "text": "Association_Header (optional)",
+      "bbox": [
+        275.34,
+        520.96,
+        409.28,
+        532.07
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0050",
+      "text": "(32 bytes)",
+      "bbox": [
+        320.1,
+        532.96,
+        364.52,
+        544.07
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0051",
+      "text": "..",
+      "bbox": [
+        120.84,
+        535.96,
+        126.37,
+        547.07
+      ],
+      "block_index": 21,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0052",
+      "text": "10",
+      "bbox": [
+        118.02,
+        553.0,
+        129.14,
+        564.11
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p056_s0053",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        553.0,
+        460.36,
+        564.11
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0022"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "asset_id": "table_0155",
+  "type": "table",
+  "caption": "Table 148 – Effects of FLOGI, FDISC, & LOGO on Permanent Port Name (PPN)",
+  "pages": [
+    163,
+    164
+  ],
+  "bbox": [
+    94.08,
+    243.62,
+    541.72,
+    702.96
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 163,
+  "logical_table": true,
+  "fragment_ids": [
+    "table_0155",
+    "table_0156"
+  ],
+  "continuation": {
+    "type": "adjacent_same_header",
+    "header_source_fragment": "table_0155"
+  },
+  "fragment_crops": [
+    {
+      "fragment_id": "table_0155",
+      "pages": [
+        163
+      ],
+      "crop_path": "tables/table_0155/crop.png"
+    },
+    {
+      "fragment_id": "table_0156",
+      "pages": [
+        164
+      ],
+      "crop_path": "tables/table_0156/crop.png"
+    }
+  ]
+}

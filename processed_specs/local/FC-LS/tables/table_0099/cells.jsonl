@@ -1,0 +1,20 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 114, "bbox": [94.33, 170.62, 142.56, 202.98]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 114, "bbox": [142.56, 170.62, 239.79, 202.98]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 114, "bbox": [239.79, 170.62, 336.93, 202.98]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08", "page": 114, "bbox": [336.93, 170.62, 441.51, 202.98]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00", "page": 114, "bbox": [441.51, 170.62, 541.67, 202.98]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 114, "bbox": [94.33, 202.98, 142.56, 224.01]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "CSR (68h)", "page": 114, "bbox": [142.56, 202.98, 239.79, 224.01]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "00h", "page": 114, "bbox": [239.79, 202.98, 336.93, 224.01]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "00h", "page": 114, "bbox": [336.93, 202.98, 441.51, 224.01]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "00h", "page": 114, "bbox": [441.51, 202.98, 541.67, 224.01]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 114, "bbox": [94.33, 224.01, 142.56, 253.32]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Clock Sync Mode", "page": 114, "bbox": [142.56, 224.01, 239.79, 253.32]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "CS_Accuracy", "page": 114, "bbox": [239.79, 224.01, 336.93, 253.32]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "CS_Implemented_M\nSB", "page": 114, "bbox": [336.93, 224.01, 441.51, 253.32]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "CS_Implemented_L\nSB", "page": 114, "bbox": [441.51, 224.01, 541.67, 253.32]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "3", "page": 114, "bbox": [94.33, 253.32, 142.56, 273.99]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "CS_Update_Period", "page": 114, "bbox": [142.56, 253.32, 541.67, 273.99]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "", "page": 114, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "", "page": 114, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "", "page": 114, "bbox": [0.0, 0.0, 0.0, 0.0]}

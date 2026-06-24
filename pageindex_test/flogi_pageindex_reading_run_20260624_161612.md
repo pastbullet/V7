@@ -1,0 +1,205 @@
+<think>**Crafting answer structure**
+
+I need to finalize my answer in Chinese while ensuring I include citation tags for each page referenced. It’s important that I don't mention verifying details. I should use a macro-micro structure, providing a comprehensive yet concise response. I’ll ensure every key sentence has the appropriate tags, and I can use multiple citation tags per sentence if needed. The goal here is to be complete and systematic in my approach.</think>
+
+下面按“定位/目的 → 帧与 Payload → 主流程 → 分支与异常 → 相关机制/实现关注点”的顺序，把 FC-LS 中 FLOGI 系统梳理一遍。
+
+1. FLOGI 在整个 FC 登录体系里的位置
+
+- FLOGI 是 Fabric Login（F_Port Login）对应的 ELS，属于扩展链路服务；在有 Fabric 的场景下，其他 ELS 之前先要完成 FLOGI。<cite doc="FC-LS.pdf" page="36"/><cite doc="FC-LS.pdf" page="153"/>
+- 登录的总目标，是让 Nx_Port 与 Fabric、以及后续目标 Nx_Port 建立运行环境；显式登录时，由登录 ELS 在一个新的 Exchange 中传送发起方 Service Parameters，LS_ACC 返回应答方 Service Parameters。<cite doc="FC-LS.pdf" page="152"/>
+- 对 Fabric 而言，FLOGI 完成的事情包括：探测 Fabric 是否存在、交换 Fabric/N_Port 的运行特性与名称、可选分配或确认 N_Port_ID、初始化 buffer-to-buffer Credit，以及为后续 Authentication 和 Virtual Fabrics 协商创造条件。<cite doc="FC-LS.pdf" page="153"/>
+
+2. FLOGI 的协议封装与基本帧属性
+
+- FLOGI 是 ELS 之一；ELS 请求与对应回复在单个 Exchange 内完成，TYPE 固定为 `01h`。<cite doc="FC-LS.pdf" page="36"/>
+- ELS 的命令码放在 Payload 第一个字的第一个字节；表 3 指定 FLOGI 的 `ELS_Command code = 04h`。<cite doc="FC-LS.pdf" page="36"/><cite doc="FC-LS.pdf" page="37"/>
+- 一般 ELS 的 `R_CTL` 使用表 2 的编码：请求为 `0010b`，回复为 `0011b`。<cite doc="FC-LS.pdf" page="36"/>
+- FLOGI 请求必须在新的 Exchange 中发送；应答通常是 LS_ACC，也可能是 F_BSY / F_RJT / LS_RJT 等，仍然围绕该登录 Exchange 处理。<cite doc="FC-LS.pdf" page="153"/><cite doc="FC-LS.pdf" page="154"/><cite doc="FC-LS.pdf" page="155"/>
+
+3. FLOGI 帧/Payload 结构
+
+3.1 总体 Payload 骨架
+
+- 表 149 定义了 FLOGI、PLOGI 及相应 LS_ACC 的公共 Payload 骨架；对 FLOGI 来说，Payload 先是 `ELS_Command code`，然后依次是 `Common Service Parameters`、`Port_Name`、`Node_Name/Fabric_Name`、三组 Class Service Parameters，以及可选的扩展区。<cite doc="FC-LS.pdf" page="165"/><cite doc="FC-LS.pdf" page="166"/>
+- 其中字段布局是：
+  - `Word 0`：ELS_Command code；
+  - `Words 1-4`：Common Service Parameters（16 bytes）；
+  - `Words 5-6`：Port_Name；
+  - `Words 7-8`：Node_Name 或 Fabric_Name；
+  - `Words 9-12`：Class 1 / Class 6 Service Parameters；
+  - `Words 13-16`：Class 2 Service Parameters；
+  - `Words 17-20`：Class 3 Service Parameters；
+  - `Words 25-28`：Vendor Version Level；
+  - 若 Payload Bit=1，还可带 `Services Availability`、`Login Extension Data Length`、`Clock Synchronization QoS`、`Login Extension Data`。<cite doc="FC-LS.pdf" page="166"/>
+
+3.2 FLOGI 请求中必须承载什么
+
+- 显式 FLOGI 请求的 Payload 包含：发起 Nx_Port 的 Service Parameters、64-bit `N_Port_Name`、64-bit `Node_Name`。<cite doc="FC-LS.pdf" page="153"/>
+- 表 151给出 FLOGI 请求里 Common Service Parameters 的结构：
+  - `Word 0`：FC-PH version / Buffer-to-buffer Credit；
+  - `Word 1`：Common Features、`BB_SC_N`、Buffer-to-buffer Receive Data Field Size；
+  - `Word 2-3`：在 FLOGI 中保留。<cite doc="FC-LS.pdf" page="169"/>
+- 表 156给出 FLOGI 请求里每个 Class Service Parameters 组的结构：
+  - `Word 0`：Service Options / Initiator Control；
+  - `Word 1`：Recipient Control；
+  - `Word 2`：Total Concurrent Sequences / Nx_Port End-to-end Credit；
+  - `Word 3`：Open Sequences per Exchange。<cite doc="FC-LS.pdf" page="179"/>
+
+3.3 FLOGI LS_ACC 中返回什么
+
+- 正常的 Fabric LS_ACC 返回整个 Fabric 的 Service Parameters，以及 64-bit `F_Port_Name` 与 64-bit `Fabric_Name`。<cite doc="FC-LS.pdf" page="154"/>
+- 表 153给出 FLOGI LS_ACC 的 Common Service Parameters 结构：
+  - `Word 0`：FC-PH version / Buffer-to-buffer Credit（Fx_Port）；
+  - `Word 1`：Common Features、`BB_SC_N`、Buffer-to-buffer Receive Data Field Size；
+  - `Word 2`：`R_A_TOV`；
+  - `Word 3`：`E_D_TOV`。<cite doc="FC-LS.pdf" page="170"/>
+- 表 158给出 FLOGI LS_ACC 的 Class Service Parameters 结构：
+  - `Word 0`：Service Options / Reserved；
+  - `Word 1`：Recipient Control / Reserved；
+  - `Word 2`：Reserved；
+  - `Word 3`：`CR_TOV`。<cite doc="FC-LS.pdf" page="179"/>
+
+3.4 Common Service Parameters 里与 FLOGI 最相关的位
+
+- 表 150说明了各 Common Service Parameters 对 PLOGI、FLOGI、FLOGI LS_ACC 的适用性。对 FLOGI/FLOGI LS_ACC 特别关键的有：
+  - `Buffer-to-buffer Credit`（适用于 FLOGI 与 FLOGI LS_ACC）；
+  - `Virtual Fabrics bit`（适用于 FLOGI 与 FLOGI LS_ACC）；
+  - `Multiple N_Port_ID Support`（适用于 FLOGI）；
+  - `Multiple N_Port_ID Assignment`（适用于 FLOGI LS_ACC）；
+  - `Clean Address`（适用于 FLOGI LS_ACC）；
+  - `Query Data Buffer conditions`、`Payload Bit`、`Clock Synchronization Primitive Capable`、`R_T_TOV Value` 等也适用于 FLOGI/FLOGI LS_ACC。<cite doc="FC-LS.pdf" page="167"/><cite doc="FC-LS.pdf" page="168"/>
+- `Virtual Fabrics bit` 位于 `Word 1, bit 30`；FLOGI 请求和 FLOGI LS_ACC 都有意义。<cite doc="FC-LS.pdf" page="167"/>
+- `Payload Bit` 位于 `Word 1, bit 16`；当其为 1 时，表 149 后面的扩展字段才出现；为 0 时这些字段不出现，此时登录 Payload 长度是 116 字节。<cite doc="FC-LS.pdf" page="166"/><cite doc="FC-LS.pdf" page="168"/>
+
+3.5 若启用扩展 Payload，会多出什么
+
+- 扩展登录由 Payload Bit=1 指示，适用于 PLOGI 或 FLOGI 请求及其对应 LS_ACC。扩展内容包括：
+  - `Services Availability`；
+  - `Login Extension Data`；
+  - `Clock Synchronization QoS`。<cite doc="FC-LS.pdf" page="164"/><cite doc="FC-LS.pdf" page="165"/>
+- 当需要 256 字节以上登录 Payload，而对端缓冲能力未知时，规范建议先发 Payload Bit=0 的登录；若 LS_ACC 中 `Query Buffer Conditions` 位置 1，则再发 RPBC；若 RPBC 与登录 LS_ACC 都表明接收数据字段至少 256 字节，再发 Payload Bit=1 的登录。<cite doc="FC-LS.pdf" page="165"/>
+- 对时钟同步 QoS 而言，`FLOGI/PLOGI Request` 中 `CS_QoS_Request` 的 `00h` 表示后续 QoS 字段无意义，`01h` 表示这些字段携带请求的 QoS 参数。<cite doc="FC-LS.pdf" page="193"/>
+
+4. FLOGI 完整流程
+
+4.1 发起前提
+
+- 所有 Nx_Port 都要求与 Fabric 进行登录；在 FLOGI 完成之前，不应尝试与其他 Nx_Port 通信。<cite doc="FC-LS.pdf" page="153"/>
+- 显式 Fabric Login 要求 Nx_Port 发送 FLOGI ELS；它会替换先前的 Service Parameters，并遵循 FC-FS-2 的 Exchange、Sequence、buffer-to-buffer flow control、end-to-end flow control 规则。<cite doc="FC-LS.pdf" page="153"/>
+
+4.2 请求如何发送
+
+- Nx_Port 在新的 Exchange 中发送 FLOGI；需要分配 `OX_ID`，并把 `D_ID` 设为 F_Port 的众所周知地址 `FFFFFEh`。<cite doc="FC-LS.pdf" page="153"/>
+- 若 Nx_Port 尚未标识自己，`S_ID` 有三种关键用法：
+  - `000000h`：请求 Fabric 分配全部 24 位 `N_Port_ID`；
+  - `0000h || YY`：请求 Fabric 分配高 16 位并校验低 8 位；
+  - 已有 `XXXXXX`：带着该值进行确认/继续使用。<cite doc="FC-LS.pdf" page="153"/>
+- 其中 `0000h || YY` 的典型例子来自 FC-AL-2；低 8 位对应 `AL_PA`。<cite doc="FC-LS.pdf" page="153"/>
+
+4.3 正常成功路径（Fabric 存在）
+
+- 若收到 `LS_ACC`，且 Common Service `N_Port/F_Port bit = 1`（Fx_Port），这是 Fabric Login 的正常响应。<cite doc="FC-LS.pdf" page="154"/>
+- 此时 LS_ACC 的 `D_ID` 为 Fabric 分配或确认的 `N_Port_ID`：
+  - FLOGI `S_ID=000000h` 时，LS_ACC `D_ID=XXXXXX`；
+  - `S_ID=0000h || YY` 时，LS_ACC `D_ID=XXXXYY`；
+  - `S_ID=XXXXXX` 时，LS_ACC `D_ID` 保持同值。<cite doc="FC-LS.pdf" page="154"/>
+- LS_ACC Payload 返回整个 Fabric 的 Service Parameters、`F_Port_Name` 与 `Fabric_Name`。若返回的 `N_Port_ID`、`F_Port_Name`、`Fabric_Name` 与上次 Fabric Login 相同，Nx_Port 可继续既有通信；否则可继续进入后续 N_Port Login。<cite doc="FC-LS.pdf" page="154"/>
+
+4.4 点对点分支：对端不是 Fabric
+
+- 若对 FLOGI 的响应也是 `LS_ACC`，但 Common Service `N_Port/F_Port bit = 0`，这表示链路另一端是 Nx_Port，而不是 Fabric。<cite doc="FC-LS.pdf" page="154"/>
+- 此时 LS_ACC 的 `D_ID` 等于原 FLOGI 的 `S_ID`；Payload 带回“把所有 class 标为 invalid 的 Service Parameters”、对端 `N_Port_Name` 与 `Node_Name`。<cite doc="FC-LS.pdf" page="154"/>
+- 双方据 `N_Port_Name` 大小决定谁发起下一步 PLOGI：
+  - 收到的 `N_Port_Name` 小于本地时，本地转入 N_Port Login；
+  - 收到的 `N_Port_Name` 大于本地时，本地等待对方 PLOGI。<cite doc="FC-LS.pdf" page="154"/>
+
+4.5 失败/忙/拒绝分支
+
+- `F_BSY`：表示 Fabric busy，Nx_Port 可稍后重试 FLOGI。<cite doc="FC-LS.pdf" page="154"/>
+- `P_BSY`：表示对端 Nx_Port busy，本地可延迟后继续 N_Port Login。<cite doc="FC-LS.pdf" page="154"/>
+- `F_RJT`：Fabric 拒绝 FLOGI；若原因码是 “Class not supported”，可换 class 重发；若是 “Invalid S_ID”，则可改用不同 S_ID 重新发起。规范还分别给出了原来 `S_ID` 为 `000000h/0000h||YY` 与为 `XXXXXX` 时的重新选值方式。<cite doc="FC-LS.pdf" page="154"/>
+- `P_RJT`：表示对端是 Nx_Port；若原因码是 “Class not supported”，可改用不同 class 继续 N_Port Login；其他原因按原因码处理。<cite doc="FC-LS.pdf" page="154"/>
+- `LS_RJT`：其 `D_ID` 也是 Fabric 分配/确认的地址形式；Nx_Port 可根据原因码调整 Service Parameters 后重新发起 FLOGI。<cite doc="FC-LS.pdf" page="155"/>
+- `No Response`：视为传输/投递错误，按 FC-FS-2 做错误恢复，恢复后可重新发起 FLOGI。<cite doc="FC-LS.pdf" page="155"/>
+
+4.6 自环/自连分支
+
+- 如果通过对端返回的 `N_Port_Name` 判断“收到的名字等于自己”，则表示 Nx_Port 连接到了自己；该情况不在本标准范围内，FLOGI 被丢弃。<cite doc="FC-LS.pdf" page="155"/>
+
+4.7 Responder 是 Nx_Port 时的要求
+
+- 若一个 Nx_Port 收到 FLOGI，它必须以 `LS_ACC` 回复，并把 Common Service `Nx_Port/F_Port bit` 置为 0，明确表明这是点到点的 Nx_Port。<cite doc="FC-LS.pdf" page="155"/>
+- 回复中的 `D_ID` 等于收到 FLOGI 的 `S_ID`；Payload 要带回把收到的 FLOGI 中 classes 全标 invalid 后的 Service Parameters、以及本端 `N_Port_Name`/`Node_Name`。随后仍按双方 `N_Port_Name` 大小决定谁转入 PLOGI、谁等待。<cite doc="FC-LS.pdf" page="155"/>
+
+4.8 FLOGI 完成条件
+
+- 发起方认为 Fabric Login 结束的条件：
+  - Class 1：已向 LS_ACC 发出 ACK（`EOFt` 或 `EOFdt`）；
+  - Class 2：已向 LS_ACC 发出 ACK（`EOFt`）；
+  - Class 3：已收到 LS_ACC。<cite doc="FC-LS.pdf" page="156"/>
+- 响应方认为 Fabric Login 结束的条件：
+  - Class 1：已收到对 LS_ACC 的 ACK；
+  - Class 2：已收到对 LS_ACC 的 ACK；
+  - Class 3：已发出 LS_ACC。<cite doc="FC-LS.pdf" page="156"/>
+- 登录结束后，buffer-to-buffer Credit 的值被初始化。<cite doc="FC-LS.pdf" page="156"/>
+
+5. FLOGI 之后接什么
+
+- 若 Fabric 存在，N_Port Login 跟在 Fabric Login 之后进行；若 Fabric 不存在，则转入点到点 N_Port Login 流程。<cite doc="FC-LS.pdf" page="156"/>
+- 也就是说，FLOGI 的“主成功出口”不是直接跑业务流量，而是先确定 Fabric 环境，再决定是否/如何执行后续 PLOGI。<cite doc="FC-LS.pdf" page="154"/><cite doc="FC-LS.pdf" page="156"/>
+
+6. FLOGI 涉及的关键机制
+
+6.1 SOF / Class 选择与重试
+
+- FLOGI 只能在 Class 1/2/3 上进行；Fabric 可能不支持全部三类，因此可能需要换 class、换合适 SOF 重试。<cite doc="FC-LS.pdf" page="155"/>
+- `SOFc1` 可用于 Fabric Login 或 Relogin，`SOFi1` 不允许；Class 6 也不能用于 Fabric Login。<cite doc="FC-LS.pdf" page="155"/>
+- 若所有受支持的 SOF 都尝试过而 Fabric 仍全部拒绝或超时，则 Fabric 与 Nx_Port 不兼容，需要外部干预。<cite doc="FC-LS.pdf" page="155"/><cite doc="FC-LS.pdf" page="156"/>
+
+6.2 Relogin 与隐式 Logout
+
+- 若重新登录到 Fabric 后发现 `N_Port_ID`、`F_Port_Name`、`Fabric_Name` 与之前相同，可继续当前已建立的通信。<cite doc="FC-LS.pdf" page="155"/>
+- 若这些值发生变化，则 Nx_Port 必须对所有 Nx_Ports 做隐式 logout，并等待一个 `R_A_TOV` 后，重新进行新的 N_Port Logins。<cite doc="FC-LS.pdf" page="155"/><cite doc="FC-LS.pdf" page="162"/>
+- 若收发 `NOS` 或 `OLS`，则会隐式从 Fabric 或点到点对端登出；此后在 FLOGI 再次完成前，不应接受与其他 Nx_Ports 的通信。<cite doc="FC-LS.pdf" page="162"/>
+
+6.3 FLOGI/FDISC/LOGO 对已有 Fabric Login 的影响
+
+- 规范专门用表 148 总结了 FLOGI、FDISC、LOGO 对已有 Fabric Login 与 Permanent Port Name 的影响。<cite doc="FC-LS.pdf" page="163"/><cite doc="FC-LS.pdf" page="164"/>
+- 其中对 FLOGI 的核心影响是：在某些条件下会触发对已登录 N_Port_ID 的 implicit logout、重新分配或确认 N_Port_ID，并更新 nameserver / 发送适用的 RSCN。<cite doc="FC-LS.pdf" page="163"/><cite doc="FC-LS.pdf" page="164"/>
+
+6.4 Virtual Fabrics 协商
+
+- Virtual Fabrics 是在 FLOGI 时通过 Common Service Parameters 里的 `Virtual Fabrics bit` 协商的。<cite doc="FC-LS.pdf" page="203"/><cite doc="FC-LS.pdf" page="167"/>
+- 表 177 的逻辑很直接：
+  - 请求 bit=0、Fabric 不允许 → 回复 bit=0；
+  - 请求 bit=1、Fabric 不允许 → 回复 bit=0；
+  - 请求 bit=0、Fabric 允许 → 回复 bit=0；
+  - 请求 bit=1、Fabric 允许 → 回复 bit=1。<cite doc="FC-LS.pdf" page="203"/>
+- 若 FLOGI LS_ACC 中 Virtual Fabrics bit=1，表示 Fabric 要求 N_Port 发起 EVFP；此时 LS_ACC 的 `D_ID` 必须设为 `000000h`，说明此阶段只协商链路流控参数，不给 N_Port 分配 N_Port_ID。<cite doc="FC-LS.pdf" page="203"/>
+- 之后 N_Port 可继续初始化：必要时先做 AUTH_ELS，再做 EVFP，再针对各逻辑 N_Port/VF 重新发 FLOGI。图 6 与随后的状态描述给出了这个扩展流程。图 6内容来自图示，可能有细节近似；文字规则则在后续页面明确说明。<cite doc="FC-LS.pdf" page="204"/><cite doc="FC-LS.pdf" page="205"/><cite doc="FC-LS.pdf" page="206"/>
+
+6.5 Authentication
+
+- FLOGI 本身还承担“使后续认证成为可能”的作用；若 Nx_Port 和 Fabric 都支持认证，FLOGI 完成后可进入 Nx_Port-to-Fabric Authentication。<cite doc="FC-LS.pdf" page="153"/>
+- 在 Virtual Fabrics 场景下，若 FLOGI LS_ACC 里 Security bit=1，状态机会从 FLOGI 转入 AUTH_ELS；如果同时 Virtual Fabrics bit=1 且 `D_ID=000000h`，则认证时使用 N_Port Controller WKA 作为 `S_ID`。<cite doc="FC-LS.pdf" page="205"/>
+
+7. 一个面向实现的“最小可执行流程图”
+
+- 步骤 1：Nx_Port 上电/初始化后，先判断自己要与 Fabric 建立运行环境，于是发起显式 Fabric Login。<cite doc="FC-LS.pdf" page="152"/><cite doc="FC-LS.pdf" page="153"/>
+- 步骤 2：在新 Exchange 中发送 FLOGI，请求中带 Service Parameters、`N_Port_Name`、`Node_Name`；`D_ID=FFFFFEh`；`S_ID` 依是否已知本端地址选择 `000000h`、`0000h||YY` 或既有值。<cite doc="FC-LS.pdf" page="153"/>
+- 步骤 3：等待响应：
+  - `LS_ACC + F_Port bit=1` → Fabric 存在，得到/确认 `N_Port_ID`、`F_Port_Name`、`Fabric_Name`，进入后续 N_Port Login 或继续已有通信；<cite doc="FC-LS.pdf" page="154"/>
+  - `LS_ACC + F_Port bit=0` → 实际是点到点对端 Nx_Port，按 `N_Port_Name` 仲裁谁发 PLOGI；<cite doc="FC-LS.pdf" page="154"/><cite doc="FC-LS.pdf" page="155"/>
+  - busy/reject/no response → 按原因码、class、S_ID 或错误恢复规则重试/切换。<cite doc="FC-LS.pdf" page="154"/><cite doc="FC-LS.pdf" page="155"/>
+- 步骤 4：若启用 Security / Virtual Fabrics，则从 FLOGI 成功后继续走 AUTH_ELS、EVFP、逻辑 N_Port 的二次 FLOGI 等扩展路径。<cite doc="FC-LS.pdf" page="153"/><cite doc="FC-LS.pdf" page="203"/><cite doc="FC-LS.pdf" page="205"/><cite doc="FC-LS.pdf" page="206"/>
+- 步骤 5：在相应 Class 的完成条件满足后，Fabric Login 结束，buffer-to-buffer Credit 初始化完成。<cite doc="FC-LS.pdf" page="156"/>
+
+8. 可以抓住的几个“记忆锚点”
+
+- `ELS_Command = 04h`，`TYPE = 01h`。<cite doc="FC-LS.pdf" page="36"/><cite doc="FC-LS.pdf" page="37"/>
+- `D_ID = FFFFFEh` 发往 F_Port。<cite doc="FC-LS.pdf" page="153"/>
+- 未知地址时 `S_ID` 常用 `000000h` 或 `0000h || YY`。<cite doc="FC-LS.pdf" page="153"/>
+- 成功 LS_ACC 返回 Fabric 侧 Service Parameters + `F_Port_Name` + `Fabric_Name`。<cite doc="FC-LS.pdf" page="154"/>
+- `Virtual Fabrics bit` 是 FLOGI 阶段协商 VF 的关键开关。<cite doc="FC-LS.pdf" page="167"/><cite doc="FC-LS.pdf" page="203"/>
+- FLOGI 完成前，不要与其他 Nx_Port 通信。<cite doc="FC-LS.pdf" page="153"/>

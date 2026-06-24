@@ -1,0 +1,36 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Item", "page": 77, "bbox": [158.12, 387.84, 387.51, 409.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Word", "page": 77, "bbox": [387.51, 387.84, 426.39, 409.32]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Bit", "page": 77, "bbox": [426.39, 387.84, 477.88, 409.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "TYPE Code or Common Logout Parametersa", "page": 77, "bbox": [158.12, 409.32, 387.51, 433.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "0", "page": 77, "bbox": [387.51, 409.32, 426.39, 433.35]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "31-24", "page": 77, "bbox": [426.39, 409.32, 477.88, 433.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "TYPE Code Extension", "page": 77, "bbox": [158.12, 433.35, 387.51, 457.35]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "0", "page": 77, "bbox": [387.51, 433.35, 426.39, 457.35]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "23-16", "page": 77, "bbox": [426.39, 433.35, 477.88, 457.35]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "Originator Process_Associator Validity", "page": 77, "bbox": [158.12, 457.35, 387.51, 481.35]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "0", "page": 77, "bbox": [387.51, 457.35, 426.39, 481.35]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "15", "page": 77, "bbox": [426.39, 457.35, 477.88, 481.35]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "Responder Process_Associator Validity", "page": 77, "bbox": [158.12, 481.35, 387.51, 505.35]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "0", "page": 77, "bbox": [387.51, 481.35, 426.39, 505.35]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "14", "page": 77, "bbox": [426.39, 481.35, 477.88, 505.35]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "Reserved", "page": 77, "bbox": [158.12, 505.35, 387.51, 529.35]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "0", "page": 77, "bbox": [387.51, 505.35, 426.39, 529.35]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "13-12", "page": 77, "bbox": [426.39, 505.35, 477.88, 529.35]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "Response Code (see table 51)", "page": 77, "bbox": [158.12, 529.35, 387.51, 553.35]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "0", "page": 77, "bbox": [387.51, 529.35, 426.39, 553.35]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "11-8", "page": 77, "bbox": [426.39, 529.35, 477.88, 553.35]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "Reserved", "page": 77, "bbox": [158.12, 553.35, 387.51, 577.35]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "0", "page": 77, "bbox": [387.51, 553.35, 426.39, 577.35]}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "7-0", "page": 77, "bbox": [426.39, 553.35, 477.88, 577.35]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "Originator Process_Associator", "page": 77, "bbox": [158.12, 577.35, 387.51, 601.35]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "1", "page": 77, "bbox": [387.51, 577.35, 426.39, 601.35]}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "31-0", "page": 77, "bbox": [426.39, 577.35, 477.88, 601.35]}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "Responder Process_Associator", "page": 77, "bbox": [158.12, 601.35, 387.51, 625.35]}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "2", "page": 77, "bbox": [387.51, 601.35, 426.39, 625.35]}
+{"cell_id": "r10c3", "row": 10, "col": 3, "text": "31-0", "page": 77, "bbox": [426.39, 601.35, 477.88, 625.35]}
+{"cell_id": "r11c1", "row": 11, "col": 1, "text": "Reserved", "page": 77, "bbox": [158.12, 625.35, 387.51, 648.84]}
+{"cell_id": "r11c2", "row": 11, "col": 2, "text": "3", "page": 77, "bbox": [387.51, 625.35, 426.39, 648.84]}
+{"cell_id": "r11c3", "row": 11, "col": 3, "text": "31-0", "page": 77, "bbox": [426.39, 625.35, 477.88, 648.84]}
+{"cell_id": "r12c1", "row": 12, "col": 1, "text": "a If byte 0 of the first word of a Logout Parameter page is set to the value 00h,\nthe Logout Parameter page is common to all FC-4 Types at that image pair.", "page": 77, "bbox": [158.12, 648.84, 477.88, 685.74]}
+{"cell_id": "r12c2", "row": 12, "col": 2, "text": "", "page": 77, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r12c3", "row": 12, "col": 3, "text": "", "page": 77, "bbox": [0.0, 0.0, 0.0, 0.0]}

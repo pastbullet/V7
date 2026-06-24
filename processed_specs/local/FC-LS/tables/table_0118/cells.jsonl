@@ -1,0 +1,20 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 128, "bbox": [100.0, 219.96, 147.9, 253.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24\nByte 0", "page": 128, "bbox": [147.9, 219.96, 245.13, 253.32]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16\nByte 1", "page": 128, "bbox": [245.13, 219.96, 342.33, 253.32]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08\nByte 2", "page": 128, "bbox": [342.33, 219.96, 439.53, 253.32]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00\nByte 3", "page": 128, "bbox": [439.53, 219.96, 536.0, 253.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 128, "bbox": [100.0, 253.32, 147.9, 275.6]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "REC (13h)", "page": 128, "bbox": [147.9, 253.32, 245.13, 275.6]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "00h", "page": 128, "bbox": [245.13, 253.32, 342.33, 275.6]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "00h", "page": 128, "bbox": [342.33, 253.32, 439.53, 275.6]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "00h", "page": 128, "bbox": [439.53, 253.32, 536.0, 275.6]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 128, "bbox": [100.0, 275.6, 147.9, 297.33]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Reserved", "page": 128, "bbox": [147.9, 275.6, 245.13, 297.33]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "Exchange Originator S_ID", "page": 128, "bbox": [245.13, 275.6, 536.0, 297.33]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "", "page": 128, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "", "page": 128, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "2", "page": 128, "bbox": [100.0, 297.33, 147.9, 319.02]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "OX_ID", "page": 128, "bbox": [147.9, 297.33, 342.33, 319.02]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "", "page": 128, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "RX_ID", "page": 128, "bbox": [342.33, 297.33, 536.0, 319.02]}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "", "page": 128, "bbox": [0.0, 0.0, 0.0, 0.0]}

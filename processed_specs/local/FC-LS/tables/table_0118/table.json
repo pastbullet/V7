@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24\nByte 0",
+      "23 .. 16\nByte 1",
+      "15 .. 08\nByte 2",
+      "07 .. 00\nByte 3"
+    ],
+    [
+      "0",
+      "REC (13h)",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "Reserved",
+      "Exchange Originator S_ID",
+      null,
+      null
+    ],
+    [
+      "2",
+      "OX_ID",
+      null,
+      "RX_ID",
+      null
+    ]
+  ]
+}

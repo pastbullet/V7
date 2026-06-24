@@ -1,0 +1,786 @@
+{
+  "success": true,
+  "doc_name": "FC-LS.pdf",
+  "structure": [
+    {
+      "node_id": "0017",
+      "title": "4 Extended Link Services",
+      "summary": "Covers Extended Link Services (ELS) basics and request rules: an ELS request solicits a destination `Nx_Port` function; an ELS reply is required unless otherwise specified. Defines single-`Sequence` request/reply structure, `ELS_Command` code in the first word/first byte of `Payload`, one-`Exchange` request/reply pairing, `Last Sequence bit` termination on `LS_ACC`, and normal `Exchange`/`Sequence` management per `FC-FS-2`. Specifies frame fields: `TYPE` = `01h`, `R_CTL` values, `Payload`, `D_ID`, `S_ID`, `LFA`, valid addresses, well known addresses, and `FLOGI` before all ELSs in a Fabric. `Table 2 – Extended Link Services Routing Bits and Information Categories` defines `R_CTL` routing/info categories: `0001b` Solicited Data, `0010b` Request, `0011b` Reply, Others Reserved; note `CSU`. Content types: message/frame format, response/branch handling, completion/exception conditions, procedure/flow.",
+      "is_skeleton": true,
+      "children": [
+        {
+          "node_id": "0019",
+          "title": "4.2 Extended Link Service requests",
+          "summary": "Section `4.2 Extended Link Service requests` defines when and how a Sequence Initiator sends an ELS Sequence to solicit a destination `Nx_Port` link-level function/service. Covers request preconditions and addressing rules: ELS requests shall not be issued before completion of `N_Port Login` unless otherwise noted; `FLOGI` is required before all ELSs if a Fabric is present; `Table 3` applies to ELSs sent to or received by all valid addresses, including well known addresses. Specifies `LFA` usage: destination ID (`D_ID`) for `LINIT` and `LSTS` ELS Request Sequences, source ID (`S_ID`) in Reply Sequences; no other Sequences shall be directed to `LFA`. Content types: procedure/flow, response/branch handling, completion/exception conditions. Table `2 – Extended Link Services Routing Bits and Information Categories`: defines `R_CTL` routing/information values for ELS frames.",
+          "is_skeleton": true,
+          "children": [
+            {
+              "node_id": "0194",
+              "title": "4.2.36 Clock Synchronization Update (CSU)",
+              "summary": "Section `4.2.36 Clock Synchronization Update (CSU)` defines the `CSU` ELS used by the Clock Synchronization Server to send its current clock value to clients (`FC-FS-2`). Covers `4.2.36.1 Description`, `4.2.36.2 Protocol`, and `4.2.36.3 Request Sequence`. Protocol elements include `Clock Synchronization Update Request Sequence` and `No Reply Sequence` (response/branch handling). Request/frame details: `Information Category` in `Header word 0, bits 24-27` = `Solicited Data (0001b)`; `S_ID` = Clock Synchronization Server well-known address `FFFFF6h`; `D_ID` = receiving `Nx_Port(s)`; Payload contains `CSU (69h)` and `Clock Count` (8 bytes) (message/frame format). `Table 99 – CSU Payload`: defines payload word/bit layout. `Table 100 – Clock Count Field Meaning`: defines bytes `0`–`7`, from `MSB` to `LSB`. Content types: procedure/flow, message/frame format, response/branch handling.",
+              "is_skeleton": true,
+              "children": [
+                {
+                  "node_id": "0197",
+                  "title": "4.2.36.3 Request Sequence",
+                  "summary": "4.2.36.3 Request Sequence: request/frame definition for Clock Synchronization Update (CSU) ELS request sequence. Covers procedure/flow, message/frame format, and response/branch handling via the surrounding “Clock Synchronization Update Request Sequence” / “No Reply Sequence” context. Specifies `Information Category` in Header word 0 bits 24-27 = Solicited Data (`0001b`); `S_ID` = Clock Synchronization Server well-known address (`FFFFF6h`); `D_ID` = target `Nx_Port(s)`. Payload format is in `Table 99 – CSU Payload`, which shows `Word 0` `CSU (69h)` plus `Reserved`, and `Word 1`-`Word 2` `Clock Count` (8 bytes). `Table 100 – Clock Count Field Meaning` defines `Clock Count` byte meanings, `Byte Number` 0-7 from MSB to LSB. Also notes `Bit 7 in Word 2` equals `1/106,25MHz`, roughly `9,4 98`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 117,
+                  "end_index": 117,
+                  "subtree_start_index": 117,
+                  "subtree_end_index": 117
+                },
+                {
+                  "node_id": "0198",
+                  "title": "4.2.36.4 Reply Sequence",
+                  "summary": "Section `4.2.36.4 Reply Sequence` covers the reply behavior for Clock Sync context and states simply: `none.` Core topic: absence of a reply sequence for `4.2.36.4 Reply Sequence`. Nearby named items on the same page include transition into `4.2.37 Report Port Buffer Conditions (RPBC)`, with `RPBC`, `LS_ACC`, `LS_RJT`, reason code `\"Command not supported\"`, `S_ID`, `D_ID`, `RPBC Payload`, `ELS Buffer Parameters`, `Originator S_ID - obsolete`, and hex value `58h`. Table `101 – RPBC Payload` defines the `RPBC Payload` message/frame format fields (`RPBC (58h)`, `Reserved`, `ELS Buffer Parameters`, `Originator S_ID - obsolete`). Content types present: response/branch handling (`none` for this reply sequence; adjacent `LS_ACC or LS_RJT Reply Sequence`), message/frame format (`Table 101`).",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 118,
+                  "end_index": 118,
+                  "subtree_start_index": 118,
+                  "subtree_end_index": 118
+                }
+              ],
+              "start_index": 117,
+              "end_index": 117,
+              "subtree_start_index": 117,
+              "subtree_end_index": 118
+            },
+            {
+              "node_id": "0199",
+              "title": "4.2.37 Report Port Buffer Conditions (RPBC)",
+              "summary": "RPBC section defining how `Report Port Buffer Conditions (RPBC)` reports a Port’s buffer conditions. Covers `4.2.37.1 Description`, `4.2.37.2 Protocol`, and `4.2.37.3 Request Sequence`. Normal response is `LS_ACC`; unsupported recipient returns `LS_RJT` with reason code `Command not supported`. Protocol lists `Report Port Buffer Conditions (RPBC) Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`. Request addressing uses `S_ID` for the requesting source port and `D_ID` for the recipient processing the `RPBC` request. Payload fields: `RPBC (58h)`, `ELS Buffer Parameters`, `Originator S_ID - obsolete`, `Reserved`. `Table 101 – RPBC Payload` shows the RPBC payload word/bit layout. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0200",
+                  "title": "4.2.37.1 Description",
+                  "summary": "Describes `Report Port Buffer Conditions (RPBC)` ELS purpose: a Port reports its buffer conditions. Normal response/branch handling: `LS_ACC` ELS Sequence; if unsupported, `LS_RJT` ELS Sequence with reason code `Command not supported`. Protocol anchors present: `RPBC` Request Sequence, `LS_ACC`, `LS_RJT`, `S_ID`, `D_ID`, `RPBC Payload`, `ELS Buffer Parameters`, `Originator S_ID - obsolete`, `RPBC (58h)`. Message/frame format content is indicated via `Table 101 – RPBC Payload`, which defines the RPBC payload word/bit layout: word `0` contains `RPBC (58h)` and `Reserved`; word `1` contains `ELS Buffer Parameters`; word `2` contains `Reserved` and `Originator S_ID - obsolete`. Also notes addressing roles for `S_ID` and `D_ID`. Contains: message/frame format, response/branch handling.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 118,
+                  "end_index": 118,
+                  "subtree_start_index": 118,
+                  "subtree_end_index": 118
+                },
+                {
+                  "node_id": "0201",
+                  "title": "4.2.37.2 Protocol",
+                  "summary": "Section 4.2.37.2 Protocol defines the RPBC ELS exchange structure for `Report Port Buffer Conditions (RPBC)`: `a) Report Port Buffer Conditions (RPBC) Request Sequence` and `b) LS_ACC or LS_RJT Reply Sequence`. Core topic is the protocol-level request/reply pattern for `RPBC`, including normal and reject responses. Related payload context immediately tied to this protocol names `Table 101 – RPBC Payload`, which shows the `RPBC Payload` message/frame format: `Word 0` contains `RPBC (58h)` and `Reserved`; `Word 1` contains `ELS Buffer Parameters`; `Word 2` contains `Reserved` and `Originator S_ID - obsolete`. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 118,
+                  "end_index": 118,
+                  "subtree_start_index": 118,
+                  "subtree_end_index": 118
+                },
+                {
+                  "node_id": "0202",
+                  "title": "4.2.37.3 Request Sequence",
+                  "summary": "Section 4.2.37.3 Request Sequence defines the `Report Port Buffer Conditions (RPBC)` request message/frame format and addressing for `RPBC`. Core topic: how `S_ID` and `D_ID` are used in the `RPBC` Request Sequence, and how the `RPBC Payload` is structured. Payload format: `word 0` contains `RPBC (58h)` and `Reserved`; `word 1` contains `ELS Buffer Parameters`; `word 2` contains `Reserved` and `Originator S_ID - obsolete`. It states that the `ELS Buffer Parameter` field in `word 1` relates to the sender’s ELS buffer conditions, with contents referenced in `table 102`. Table present: `Table 101 – RPBC Payload` — defines the RPBC payload word/bit layout. Content types: message/frame format, procedure/flow.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 118,
+                  "end_index": 118,
+                  "subtree_start_index": 118,
+                  "subtree_end_index": 118
+                },
+                {
+                  "node_id": "0203",
+                  "title": "4.2.37.4 Reply Sequence",
+                  "summary": "Core topic: `4.2.37.4 Reply Sequence` for `RPBC`, defining reply outcomes `LS_RJT` and `LS_ACC` and the `RPBC LS_ACC Payload`. Content types: message/frame format; response/branch handling; completion/exception conditions.\n\n`LS_RJT` signifies rejection of the `RPBC` command. `LS_ACC` signifies acceptance of the `RPBC Request` and its `Accept Payload`; payload format is in `Table 103 – RPBC LS_ACC Payload` (shows `Word 0 = 02h Reserved`, `Word 1 = ELS Buffer Parameters`). `ELS Buffer Parameters` in `RPBC LA_ACC Payload` word 1 relates to sender ELS buffer conditions and points to `Table 102 – ELS Buffer Parameters Field` (defines `Multi-frame ELS sequence supported` and `ELS Receive Data Field Size`). Includes identifier/code `02h`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 119,
+                  "end_index": 119,
+                  "subtree_start_index": 119,
+                  "subtree_end_index": 119
+                }
+              ],
+              "start_index": 118,
+              "end_index": 118,
+              "subtree_start_index": 118,
+              "subtree_end_index": 119
+            },
+            {
+              "node_id": "0204",
+              "title": "4.2.38 Report node FC-4 Types (RNFT)",
+              "summary": "Section `4.2.38 Report node FC-4 Types (RNFT)` covers the `RNFT` ELS purpose and use: exchange of supported `FC-4` protocol lists after `N_Port Login`, request/response to verify whether a remote `Nx_Port` supports a given `FC-4` protocol. `RNFT LS_ACC` returns the requested supported protocol list; `LS_RJT` with reason code `Command not supported` may be interpreted by an FC-4 as indicating that FC-4 is not supported. Anchors present: `RNFT`, `RNFT LS_ACC`, `LS_RJT`, `N_Port Login`, `Nx_Port`, `FC-4`, `Command not supported`. Tables present from adjacent reply/payload context: `Table 102 – ELS Buffer Parameters Field` defines `Multi-frame ELS sequence supported` and `ELS Receive Data Field Size`; `Table 103 – RPBC LS_ACC Payload` shows `Word 0 = 02h Reserved`, `Word 1 ELS Buffer Parameters`. Content types: response/branch handling.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0205",
+                  "title": "4.2.38.1 Description",
+                  "summary": "Core topic: `4.2.38.1 Description` defines `Report node FC-4 Types (RNFT)` use and semantics: the `RNFT ELS` exchanges supported `FC-4` protocol lists after `N_Port Login`, letting an `Nx_Port` verify whether a remote `Nx_Port` supports a given `FC-4 protocol`. `RNFT` requests the responder’s supported `FC-4` list; `RNFT LS_ACC` returns that list to the source of the `RNFT`. Response/branch handling: a remote `Nx_Port` returning `LS_RJT` with reason code `Command not supported` may be treated by a specific `FC-4` as not supporting that `FC-4`. Related message/frame format tables present on this page: `Table 102 – ELS Buffer Parameters Field` defines `Multi-frame ELS sequence supported` and `ELS Receive Data Field Size`; `Table 103 – RPBC LS_ACC Payload` shows the `RPBC LS_ACC Payload`, including `02h` and `ELS Buffer Parameters`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 119,
+                  "end_index": 119,
+                  "subtree_start_index": 119,
+                  "subtree_end_index": 119
+                },
+                {
+                  "node_id": "0206",
+                  "title": "4.2.38.2 Protocol",
+                  "summary": "Section `4.2.38.2 Protocol` covers the RNFT protocol: `Report node FC-4 Types (RNFT) Request sequence` followed by `LS_ACC or LS_RJT Reply Sequence`. Contains `procedure/flow`, `message/frame format`, `response/branch handling`, and `completion/exception conditions`. Request-side details reference `4.2.38.3 Request Sequence`: addressing via `S_ID` and `D_ID`; request payload in `Table 104 – RNFT Payload`, with `RNFT (63h)`, `Maximum Size`, and `Index`. `Maximum Size` is a 16-bit value in `Bytes 2-3 of Word 0`; zero means the `RNFT LS_ACC` may be any size. `Index` in `Byte 3 of Word 1` selects the first `FC-4 Entry`. Reply-side details reference `4.2.38.4 Reply Sequence`: `LS_RJT` rejects `RNFT`; `LS_ACC` returns data per `Table 105 – RNFT LS_ACC Payload`, showing `02h`, `Payload Length (M)`, `List Length`, `Index`, and `FC-4 Entry` list structure.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 120,
+                  "end_index": 120,
+                  "subtree_start_index": 120,
+                  "subtree_end_index": 120
+                },
+                {
+                  "node_id": "0207",
+                  "title": "4.2.38.3 Request Sequence",
+                  "summary": "RNFT Request Sequence for Report node FC-4 Types (RNFT): defines addressing and request Payload for an RNFT request, plus the immediate reply paths `LS_ACC` or `LS_RJT`. `S_ID` identifies the source `Nx_Port`; `D_ID` identifies the destination `Nx_Port`. `Table 104 – RNFT Payload` shows the request message/frame format: `Word 0` = `RNFT (63h)`, `Reserved`, `Maximum Size`; `Word 1` = `Reserved`, `Index`. `Maximum Size` is the 16-bit value in Bytes 2-3 of `Word 0`; `Index` is Byte 3 of `Word 1`, selecting the first `FC-4 Entry` to return. `Table 105 – RNFT LS_ACC Payload` shows the `LS_ACC` reply format with `02h`, `Payload Length (M)`, `List Length`, `Index`, and `FC-4 Entry N`. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 120,
+                  "end_index": 120,
+                  "subtree_start_index": 120,
+                  "subtree_end_index": 120
+                },
+                {
+                  "node_id": "0208",
+                  "title": "4.2.38.4 Reply Sequence",
+                  "summary": "Section `4.2.38.4 Reply Sequence` covers `RNFT` reply handling for the Report node FC-4 Types request: `LS_RJT` rejects the `RNFT` command, and `LS_ACC` signifies the destination `Nx_Port` has transmitted the requested data. Content types: `response/branch handling`, `message/frame format`, `completion/exception conditions`. Exact anchors: `LS_RJT`, `LS_ACC`, `RNFT`, `Nx_Port`, `table 105`, `RNFT LS_ACC Payload`, `02h`, `Payload Length (M)`, `List Length`, `Index`, `FC-4 Entry 1`, `FC-4 Entry N`, `Word 0`, `Word 1`, `N+1`. `Table 105 – RNFT LS_ACC Payload` defines the reply payload layout, including header fields and the indexed `FC-4 Entry` list returned in the `LS_ACC`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 120,
+                  "end_index": 120,
+                  "subtree_start_index": 120,
+                  "subtree_end_index": 120
+                }
+              ],
+              "start_index": 119,
+              "end_index": 119,
+              "subtree_start_index": 119,
+              "subtree_end_index": 120
+            },
+            {
+              "node_id": "0209",
+              "title": "4.2.39 Scan Remote Loop (SRL)",
+              "summary": "4.2.39 Scan Remote Loop (SRL): ELS behavior requiring a switch to scan attached loops and detect whether any `L_Ports` have been disabled or removed. Core actions: if logged-in `L_Ports` have been removed or disabled, the switch shall update the name server and send an `RSCN` to all registered `Nx_Ports`. `SRL Payload` indicates whether to scan all attached loops or a single loop; for a single-loop scan, the Payload contains the `FL_Port_ID` of the loop to be scanned. Includes `procedure/flow`, `message/frame format`, and `completion/exception conditions`. `Table 105 – RNFT LS_ACC Payload`: defines the `RNFT LS_ACC Payload`, including `Payload Length (M)`, `List Length`, `Index`, and `FC-4 Entry` structure.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0210",
+                  "title": "4.2.39.1 Description",
+                  "summary": "Core topic: `4.2.39.1 Description` defines `Scan Remote Loop (SRL)` / `SRL ELS` behavior. A switch uses `SRL` to scan attached loops and determine whether any `L_Ports` have been disabled or removed; if logged-in `L_Ports` are removed/disabled, the switch shall update the name server and send an `RSCN` to all registered `Nx_Ports`. The `SRL Payload` indicates whether to scan all attached loops or a single loop; for a single loop, the Payload shall contain the `FL_Port_ID` of the loop to be scanned. Table `105 – RNFT LS_ACC Payload` defines/shows the `RNFT LS_ACC Payload` layout, including `Payload Length (M)` and related payload fields. Content types: `procedure/flow`, `completion/exception conditions`, `message/frame format`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 121,
+                  "end_index": 121,
+                  "subtree_start_index": 121,
+                  "subtree_end_index": 121
+                },
+                {
+                  "node_id": "0211",
+                  "title": "4.2.39.2 Protocol",
+                  "summary": "Section `4.2.39.2 Protocol` covers `Scan Remote Loop Request Sequence` and `LS_ACC or LS_RJT Reply Sequence` for `SRL` (`7Bh`) [content: procedure/flow, message/frame format, response/branch handling, completion/exception conditions]. It indexes into `4.2.39.3 Request Sequence` and `4.2.39.4 Reply Sequence`: `S_ID` = source `Nx_Port`; `D_ID` = Domain Controller address `FFFCh || Domain_ID`; payload uses `Flag` and `Flag Parameter`. `Table 107 – SRL Payload` shows the `SRL Payload` word/bit layout, including `Word 0` `SRL (7Bh)` and `Word 1` `Flag`, `Flag`, `Parameter`. `Table 108 – Flag field definitions` defines values `00`, `01`, `02`, `03`, `All Others Reserved`, scan period semantics, FL_Port address identifier use, and `LS_RJT` reason code / reason code explanation cases: `Unable to perform command request`, `Periodic Scanning not supported`, `Periodic Scan Value not allowed`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 122,
+                  "end_index": 122,
+                  "subtree_start_index": 122,
+                  "subtree_end_index": 122
+                },
+                {
+                  "node_id": "0212",
+                  "title": "4.2.39.3 Request Sequence",
+                  "summary": "Section `4.2.39.3 Request Sequence` indexes the `Scan Remote Loop` SRL request format and addressing for the `Domain Controller`. Covers `Addressing` and `Payload` for the request: `S_ID` = source `Nx_Port`; `D_ID` = destination address identifier `FFFCh || Domain_ID`, where `Domain_ID` is the queried switch domain. `Table 107 – SRL Payload` defines the SRL payload/message layout: `Word 0` contains `SRL (7Bh)` and `Reserved`; `Word 1` contains `Flag`, `Flag`, `Parameter`. `Table 108 – Flag field definitions` defines `Flag` values `00`, `01`, `02`, `03`, `All Others Reserved`, with `Flag Parameter` meanings: all `FL_Ports`, addressed `FL_Port`, enable periodic scanning, disable periodic scanning, and scan period in seconds. Includes response/branch handling via reject conditions and codes: `\"Unable to perform command request\"`, `\"Periodic Scanning not supported\"`, `\"Periodic Scan Value not allowed\"`. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 122,
+                  "end_index": 122,
+                  "subtree_start_index": 122,
+                  "subtree_end_index": 122
+                },
+                {
+                  "node_id": "0213",
+                  "title": "4.2.39.4 Reply Sequence",
+                  "summary": "Section `4.2.39.4 Reply Sequence` covers SRL reply handling for `Scan Remote Loop Request Sequence`, specifically the rejection path: `LS_RJT` signifies rejection of the `SRL Request`. Core anchors present in surrounding reply/protocol context: `LS_ACC`, `LS_RJT`, `SRL`, `S_ID`, `D_ID`, `FFFCh || Domain_ID`, `Domain_ID`, `SRL (7Bh)`, `Flag`, `Flag Parameter`, hex values `00`, `01`, `02`, `03`, and reason code/reason code explanation values `\"Unable to perform command request\"`, `\"Periodic Scanning not supported\"`, `\"Periodic Scan Value not allowed\"`. `Table 107 – SRL Payload`: defines SRL payload/message format fields. `Table 108 – Flag field definitions`: defines `Flag` values and `Flag Parameter` meanings. Content types: response/branch handling, message/frame format, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 122,
+                  "end_index": 122,
+                  "subtree_start_index": 122,
+                  "subtree_end_index": 122
+                }
+              ],
+              "start_index": 121,
+              "end_index": 121,
+              "subtree_start_index": 121,
+              "subtree_end_index": 122
+            },
+            {
+              "node_id": "0214",
+              "title": "4.2.40 Set Bit-error Reporting Parameters (SBRP)",
+              "summary": "4.2.40 Set Bit-error Reporting Parameters (SBRP): defines the `Set SBRP ELS` used to communicate bit-error reporting parameters to a Port or all Ports in a Domain: `Error Interval`, `Error Window`, `Error Threshold`, plus `Error Interval Count`. Describes threshold behavior: if `Error Interval Count` is greater than or equal to `Error Thrshold`, generate `Registered Link Incident Report (RLIR)` with Incident Code `Bit-error-rate threshold exceeded`; at end of `Error Window`, count resets to zero. Also notes SBRP can determine acceptable/current settings without changing them. Protocol content: procedure/flow via `Set Bit-error Reporting Parameters (SBRP) Request Sequence`; response/branch handling via `LS_ACC or LS_RJT Reply Sequence`; completion/exception conditions via `LS_ACC`, `LS_RJT`. References `figure 2` (illustration of parameters). Includes `Table 109 – SRL LS_ACC Payload`—defines payload fields `02h` and `Scan Period`.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0215",
+                  "title": "4.2.40.1 Description",
+                  "summary": "4.2.40.1 Description — Core topic: Set Bit-error Reporting Parameters (`SBRP`) ELS purpose and semantics for communicating bit error reporting parameters to a Port or all Ports in a Domain in a Fabric. Defines `Error Interval`, `Error Window`, `Error Interval Count`, and `Error Threshold`; if `Error Interval Count` is greater than or equal to `Error Thrshold`, generate `Registered Link Incident Report (RLIR)` with Incident Code `Bit-error-rate threshold exceeded` (see `FC-FS-2`), then reset count to zero at end of `Error Window` and repeat. States `SBRP` may determine acceptable/current settings without changing them; settings are controlled by an external controlling entity. Includes `Figure 2 – Illustration of parameters` (shows `Error Window`, `Error Interval`, and “Any Error Interval with one or more errors is counted as a single error”). Content types: procedure/flow, completion/exception conditions. Also present on page: `Table 109 – SRL LS_ACC Payload` (defines `LS_ACC` payload field `Scan Period`, opcode `02h`).",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 123,
+                  "end_index": 123,
+                  "subtree_start_index": 123,
+                  "subtree_end_index": 123
+                },
+                {
+                  "node_id": "0216",
+                  "title": "4.2.40.2 Protocol",
+                  "summary": "Section `4.2.40.2 Protocol` covers the protocol sequencing for `Set Bit-error Reporting Parameters (SBRP)`: `a) Set Bit-error Reporting Parameters (SBRP) Request Sequence` and `b) LS_ACC or LS_RJT Reply Sequence`. Core topic is how `SBRP` is issued and what reply sequence applies. Contained content types: procedure/flow, response/branch handling, completion/exception conditions. Nearby normative context names the three parameters `Error Interval`, `Error Window`, and `Error Threshold`, plus `Error Interval Count`, `Registered Link Incident Report (RLIR)`, and Incident Code `Bit-error-rate threshold exceeded`; `Figure 2 – Illustration of parameters` shows the relationship of `Error Window`, `Error Interval`, and counted bit errors. Present table: `Table 109 – SRL LS_ACC Payload` defines the `LS_ACC` payload layout with `Word 0`, `02h`, and `Scan Period` field.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 123,
+                  "end_index": 123,
+                  "subtree_start_index": 123,
+                  "subtree_end_index": 123
+                },
+                {
+                  "node_id": "0217",
+                  "title": "4.2.40.3 Request Sequence",
+                  "summary": "Defines the `SBRP` ELS `Request Sequence`: addressing and payload for requesting bit error rate reporting parameters. `S_ID` = source `Nx_Port`; `D_ID` = destination `Nx_Port` or `Domain Controller (FFFCh || <Domain_ID>)`; `Domain_ID` identifies recipient switch. Payload is the `SBRP Payload` with `SBRP (7Ch)` in Word 0 and fields `Error Flags`, `Error Window exponent`, `Error Window value`, `Error Interval exponent`, `Error Interval value`, `Error Threshold`. `Error Flags` bits: `Bit 0 – Set Error Reporting Parameters`, `Bit 1 – Report Error Reporting Parameters`, `Bits 2-31: Reserved`; bits are mutually exclusive. Exponent encodings include `0h represents 10^0` through `Fh represents 10^-15`. `Table 110 – SBRP Payload`: defines payload word/bit layout. Content types: procedure/flow, message/frame format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 124,
+                  "end_index": 124,
+                  "subtree_start_index": 124,
+                  "subtree_end_index": 124
+                },
+                {
+                  "node_id": "0218",
+                  "title": "4.2.40.4 Reply Sequence",
+                  "summary": "Section `4.2.40.4 Reply Sequence` covers SBRP reply handling for `LS_RJT` and `LS_ACC` to an `SBRP Request`, including what `LS_ACC` means when querying current parameters, accepting set parameters, or returning acceptable replacement parameters. `Table 111 – SBRP LS_ACC Payload` defines the `LS_ACC Payload` message/frame format: `Word 0 = 02h 00h 00h 00h`; `Word 1` contains `SBRP Request`, `Reserved`, `Accepted`; `Word 2` contains `Error Window exponent`, `Error Window value`, `Error Interval exponent`, `Error Interval value`; `Word 3` contains `Error Threshold`. Response/branch handling: `SBRP Request Accepted` bit `0` = accepted, bit `1` = not accepted; for set requests (`request Payload word 1 bit 0`), accepted parameters are echoed, unaccepted values are set to zero; for report requests (`request Payload word 1 bit 1`), parameters are reported. Contains: message/frame format, response/branch handling, completion/exception conditions, procedure/flow.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 125,
+                  "end_index": 125,
+                  "subtree_start_index": 125,
+                  "subtree_end_index": 125
+                }
+              ],
+              "start_index": 123,
+              "end_index": 123,
+              "subtree_start_index": 123,
+              "subtree_end_index": 125
+            },
+            {
+              "node_id": "0219",
+              "title": "4.2.41 Report Port Speed Capabilities (RPSC)",
+              "summary": "RPSC section for reporting current and potential link operating speeds via the `Report Port Speed Capabilities (RPSC)` ELS. Covers `RPSC Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`; normal response is `LS_ACC ELS Sequence`, unsupported recipients return `LS_RJT ELS Sequence` with reason code `Command not supported`. Addressing uses `S_ID` and `D_ID`; if recipient is a `Domain Controller`, request applies to all ports in that domain. Request payload format: `Table 112 – RPSC Payload`, defines word 0 as `RPSC (7Dh) 00h 00h 00h`. Accept payload format: `Table 113 – RPSC LS_ACC Payload`, defines `02h`, `Reserved`, `Number of entries`, plus repeated `Port Speed Capabilities` and `Port Operating Speed` fields for ports 1..n. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0220",
+                  "title": "4.2.41.1 Description",
+                  "summary": "RPSC ELS description for reporting a Port’s current and potential link operating speeds. Normal response/branch handling: an `RPSC ELS Sequence` returns `LS_ACC ELS Sequence`; if unsupported, recipient returns `LS_RJT ELS Sequence` with reason code `\"Command not supported\"`. Procedure/flow notes the protocol elements: `RPSC Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`. Request addressing uses `S_ID` and `D_ID`; if recipient is a `Domain Controller`, request applies to all ports in that domain. Message/frame format: `Table 112 – RPSC Payload` defines the request payload, `Word 0` = `RPSC (7Dh) 00h 00h 00h`. Response/message format: `Table 113 – RPSC LS_ACC Payload` shows `Word 0` fields `02h`, `Reserved`, `Number of entries`, followed by `Port Speed Capabilities` and `Port Operating Speed` entries for ports `1..n`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 126,
+                  "end_index": 126,
+                  "subtree_start_index": 126,
+                  "subtree_end_index": 126
+                },
+                {
+                  "node_id": "0221",
+                  "title": "4.2.41.2 Protocol",
+                  "summary": "RPSC protocol overview for `Report Port Speed Capabilities (RPSC)`: defines the exchange pattern only—`RPSC Request Sequence` followed by `LS_ACC or LS_RJT Reply Sequence`. Core decision points: normal response is `LS_ACC ELS Sequence`; unsupported recipient returns `LS_RJT ELS Sequence` with reason code `Command not supported`. Related identifiers and fields named here: `S_ID`, `D_ID`, `Domain Controller`, `RPSC Payload`, `LS_ACC Payload`, `RPSC (7Dh)`, `02h`, `Reserved`, `Number of entries`, `Port Speed Capabilities`, `Port Operating Speed`. Table 112 – `RPSC Payload`: request message/frame format, shows word 0 opcode `RPSC (7Dh)` and zeroed bytes. Table 113 – `RPSC LS_ACC Payload`: reply message/frame format, shows `02h`, `Reserved`, `Number of entries`, and per-port capability/operating-speed entries. Content types: procedure/flow, message/frame format, response/branch handling.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 126,
+                  "end_index": 126,
+                  "subtree_start_index": 126,
+                  "subtree_end_index": 126
+                },
+                {
+                  "node_id": "0222",
+                  "title": "4.2.41.3 Request Sequence",
+                  "summary": "RPSC Request Sequence for `Report Port Speed Capabilities (RPSC)`: defines addressing and request payload for an `RPSC ELS Sequence`. `S_ID` designates the source port requesting port speeds; `D_ID` designates the recipient processing the `RPSC` request; if the recipient is a `Domain Controller`, the request is for all ports within that domain. Payload format is a single-word request with `RPSC (7Dh)` and `00h` bytes. Includes `Table 112 – RPSC Payload`, which defines the `RPSC` request payload fields/word layout. Context in adjacent protocol/reply handling references `LS_ACC` or `LS_RJT` reply sequences. Content types: procedure/flow, message/frame format, response/branch handling.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 126,
+                  "end_index": 126,
+                  "subtree_start_index": 126,
+                  "subtree_end_index": 126
+                },
+                {
+                  "node_id": "0223",
+                  "title": "4.2.41.4 Reply Sequence",
+                  "summary": "Section 4.2.41.4 Reply Sequence covers `RPSC` reply behavior for `Report Port Speed Capabilities (RPSC)`: `LS_RJT` rejects the `RPSC Request`; `LS_ACC` accepts it and carries the Accept Payload. Core response/branch handling: `LS_RJT` signifies rejection of the `RPSC Request`, while `LS_ACC` signifies acceptance of the `RPSC Request` and its Accept Payload. Message/frame format: `Table 113 – RPSC LS_ACC Payload` defines the `LS_ACC` payload layout, including Word `0` fields `02h`, `Reserved`, `Number of entries`, followed by repeated entries for `Port Speed Capabilities (Port 1)` / `Port Operating Speed (Port 1)` through port `n`. Also present from this section context: `Table 112 – RPSC Payload` shows the request payload format with `RPSC (7Dh)` and `00h` fields.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 126,
+                  "end_index": 126,
+                  "subtree_start_index": 126,
+                  "subtree_end_index": 126
+                }
+              ],
+              "start_index": 126,
+              "end_index": 126,
+              "subtree_start_index": 126,
+              "subtree_end_index": 126
+            },
+            {
+              "node_id": "0224",
+              "title": "4.2.42 Read Exchange Concise (REC)",
+              "summary": "Defines `Read Exchange Concise (REC)` ELS purpose and acceptance rules for FC-4-specific Exchange status queries. `REC` requests an `Nx_Port` to return Exchange information for `RX_ID` and `OX_ID` originated by `S_ID` in the request `Payload`; acceptance requires the requester `N_Port_ID` to match the Originator or Responder `N_Port_ID` of the target Exchange. Procedure/flow and response/branch handling: Responder uses `RX_ID` and checks `OX_ID` unless `RX_ID = FFFFh`; if `RX_ID` is unassigned, identify by `S_ID` and `OX_ID`; Originator uses `OX_ID` and verifies `RX_ID`. Completion/exception conditions: return `LS_RJT` with reason code `Unable to perform command request` and explanation `Invalid Originator S_ID` or `Invalid OX_ID-RX_ID combination`. Header fields: `Parameter` field specified by FC-4; `Relative offset present bit` set to zero. No tables. No figures.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0225",
+                  "title": "4.2.42.1 Description",
+                  "summary": "Core topic: `4.2.42.1 Description` defines `REC` / `Read Exchange Concise (REC)` `ELS` usage and acceptance rules for returning Exchange information tied to `RX_ID`, `OX_ID`, and `S_ID` for an `Nx_Port` / `N_Port_ID`. Contains: [procedure/flow], [response/branch handling], [completion/exception conditions]. Key conditions: request accepted only if Originator `Nx_Port N_Port_ID` or Responder `Nx_Port N_Port_ID` of the target Exchange matches the requester; otherwise return `LS_RJT` with reason code `Unable to perform command request` and reason code explanation `Invalid Originator S_ID`. Destination lookup rules use `RX_ID`, `OX_ID`, `S_ID`; special case `RX_ID = FFFFh`. Inconsistency handling returns `LS_RJT` with `Invalid OX_ID-RX_ID combination`. Header constraints: `Parameter field` specified by the `FC-4`; `Relative offset present bit` shall be set to zero in `REC ELS` and `LS_ACC`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 127,
+                  "end_index": 127,
+                  "subtree_start_index": 127,
+                  "subtree_end_index": 127
+                },
+                {
+                  "node_id": "0226",
+                  "title": "4.2.42.2 Protocol",
+                  "summary": "Defines REC protocol sequencing and payloads for exchange information retrieval. Procedure/flow: `Read Exchange Concise (REC) Request Sequence`, then `LS_ACC or LS_RJT Reply Sequence`. Message/frame format: request addressing uses `S_ID` (requesting source port) and `D_ID` (requested recipient). `Table 114 – REC Payload` shows the `REC (13h)` request format: `Reserved`, `Exchange Originator S_ID`, `OX_ID`, `RX_ID`; `Exchange Originator S_ID` shall be the target Exchange Originator address identifier, `OX_ID` the target `Originator Exchange_ID`, and `RX_ID` the target `Responder Exchange_ID`. Response/branch handling: `LS_RJT` rejects the REC Request; `LS_ACC` accepts and returns exchange information. `Table 115 – REC LS_ACC Payload` defines reply fields: `LS_ACC (02h)`, `OX_ID`, `RX_ID`, `Reserved`, `Originator Address Identifier`, `Responder Address Identifier`, `FC4VALUE`, `E_STAT`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 128,
+                  "end_index": 128,
+                  "subtree_start_index": 128,
+                  "subtree_end_index": 128
+                },
+                {
+                  "node_id": "0227",
+                  "title": "4.2.42.3 Request Sequence",
+                  "summary": "REC Request Sequence for Read Exchange Concise (REC): procedure/flow and message/frame format for how a requester addresses and identifies the target Exchange. Addressing rules: `S_ID` designates the source port requesting exchange information; `D_ID` designates the recipient requested to provide exchange information. Payload is defined by `Table 114 – REC Payload`, which shows the `REC (13h)` request format: Word 0 `REC (13h) 00h 00h 00h`; Word 1 `Reserved`, `Exchange Originator S_ID`; Word 2 `OX_ID`, `RX_ID`. Field requirements: `Exchange Originator S_ID` = address identifier of the target Exchange Originator; `OX_ID` = Originator `Exchange_ID`; `RX_ID` = Responder `Exchange_ID`. Also references response/branch handling via `LS_ACC` or `LS_RJT` reply sequence and `Table 115 – REC LS_ACC Payload`, which shows the accepted-response payload format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 128,
+                  "end_index": 128,
+                  "subtree_start_index": 128,
+                  "subtree_end_index": 128
+                },
+                {
+                  "node_id": "0228",
+                  "title": "4.2.42.4 Reply Sequence",
+                  "summary": "Section `4.2.42.4 Reply Sequence` covers REC reply handling for `Read Exchange Concise (REC)` after the request sequence: `LS_RJT` rejects the `REC Request`; `LS_ACC` accepts it and returns requested exchange information. Contains `response/branch handling` and `message/frame format`. Exact anchors: `LS_RJT`, `LS_ACC`, `REC Request`, `REC LS_ACC Payload`, `OX_ID`, `RX_ID`, `Originator Address Identifier`, `Responder Address Identifier`, `FC4VALUE`, `E_STAT`, codes `REC (13h)` and `LS_ACC (02h)`. `Table 114 – REC Payload` defines the REC request payload fields (`Reserved`, `Exchange Originator S_ID`, `OX_ID`, `RX_ID`). `Table 115 – REC LS_ACC Payload` shows the reply payload layout with returned exchange identifiers, originator/responder address identifiers, `FC4VALUE`, and `E_STAT`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 128,
+                  "end_index": 128,
+                  "subtree_start_index": 128,
+                  "subtree_end_index": 128
+                }
+              ],
+              "start_index": 127,
+              "end_index": 127,
+              "subtree_start_index": 127,
+              "subtree_end_index": 128
+            },
+            {
+              "node_id": "0229",
+              "title": "4.2.43 Exchange Virtual Fabrics Parameters (EVFP)",
+              "summary": "Section 4.2.43 defines Exchange Virtual Fabrics Parameters (EVFP), specifically `4.2.43.1 EVFP Messages Structure` and `4.2.43.1.1 EVFP Request Sequence` for the `Exchange Virtual Fabrics Parameters (EVFP) Request Sequence`. Content type: message/frame format. It specifies `Protocol: Exchange Virtual Fabrics Parameters (EVFP) Request Sequence`, `Format: FT-1`, and addressing rules for `N_Port` and `F_Port` using `S_ID`/`D_ID` values `FFFFF0h` and `FFFFFEh` to indicate `N_Port Controller` and `F_Port Controller`. It states two EVFP message types share one request structure and gives `Table 116 – EVFP Request Payload`, which defines the EVFP request payload layout: `Protocol Version`, `Message Code`, `Transaction Identifier`, `Core N_Port_Name / Core Switch_Name`, `Reserved`, and `Message Payload Length`. `Protocol Version` shall be set to `one`; `Word 0` is `7Fh 00h 00h 00h`.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0230",
+                  "title": "4.2.43.1 EVFP Messages Structure",
+                  "summary": "Defines the **EVFP Messages Structure** for **4.2.43.1.1 EVFP Request Sequence**: **Protocol: Exchange Virtual Fabrics Parameters (EVFP) Request Sequence**, **Format: FT–1**, and addressing rules for **N_Port** and **F_Port** using **S_ID**, **D_ID**, **FFFFF0h**, and **FFFFFEh**. Covers the shared **EVFP Request** payload structure and required field values: **Protocol Version**, **Message Code**, **Transaction Identifier**, **Core N_Port_Name**, **Core Switch_Name**, **Reserved**, **Message Payload Length**, **Message Payload**; **Protocol Version** shall be set to **one**. **Table 116 – EVFP Request Payload** defines the EVFP Request payload word/bit layout. Content types: **message/frame format**, **procedure/flow** (request sequence).",
+                  "is_skeleton": false,
+                  "children": [
+                    {
+                      "node_id": "0231",
+                      "title": "4.2.43.1.1 EVFP Request Sequence",
+                      "summary": "Defines the `EVFP Request Sequence` for `Exchange Virtual Fabrics Parameters (EVFP)` as a `message/frame format`. Protocol: `Exchange Virtual Fabrics Parameters (EVFP) Request Sequence`; `Format: FT–1`. Addressing rules specify `S_ID`/`D_ID` values for `N_Port` and `F_Port`: `FFFFF0h` = `N_Port Controller`, `FFFFFEh` = `F_Port Controller`, with opposite source/destination settings depending on origin. Payload notes that all `EVFP Request` messages share one structure; `Table 116 – EVFP Request Payload` defines the common request payload layout. Exact fields/anchors present: `Protocol Version`, `Message Code`, `Transaction Identifier`, `Core N_Port_Name /`, `Core Switch_Name`, `Reserved`, `Message Payload Length`, `Message Payload`; fixed Word 0 bytes `7Fh 00h 00h 00h`; `Protocol Version` shall be set to `one`. Content types: `message/frame format`.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 129,
+                      "end_index": 129,
+                      "subtree_start_index": 129,
+                      "subtree_end_index": 129
+                    },
+                    {
+                      "node_id": "0232",
+                      "title": "4.2.43.1.2 EVFP Reply Sequence",
+                      "summary": "Core topic: `4.2.43.1.2 EVFP Reply Sequence` — EVFP reply handling for `Accept (LS_ACC)` and `Service Reject (LS_RJT)`, including shared accept payload format and reject reason-code mapping. Content types: response/branch handling, message/frame format, completion/exception conditions. `LS_ACC` signifies acceptance of the EVFP request; `Accept Payload` uses `Table 118 – EVFP Accept Payload`, showing the common message structure with fields `Protocol Version`, `Message Code`, `Transaction Identifier`, `Core N_Port_Name / Core Switch_Name`, `Reserved`, `Message Payload Length`, `Message Payload`, and word `0` value `02h 00h 00h 00h`. `LS_RJT` signifies rejection of the EVFP request; `Table 119 – LS_RJT Reason Codes for EVFP` shows error-condition to reason-code mappings such as `EVFP collision`, `Protocol Version not supported`, `EVFP_COMMIT before EVFP_SYNC`, `Invalid Payload Message`. `Table 117 – EVFP Message Codes` defines `01h EVFP_SYNC`, `02h EVFP_COMMIT`.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 130,
+                      "end_index": 131,
+                      "subtree_start_index": 130,
+                      "subtree_end_index": 131
+                    }
+                  ],
+                  "start_index": 129,
+                  "end_index": 129,
+                  "subtree_start_index": 129,
+                  "subtree_end_index": 131
+                },
+                {
+                  "node_id": "0233",
+                  "title": "4.2.43.2 EVFP_SYNC Message Payload",
+                  "summary": "Section 4.2.43.2 defines the `EVFP_SYNC Message Payload` used in both `EVFP_SYNC Request` and `EVFP_SYNC Accept`: a message/frame format carrying a self-identifying list of descriptors. Overview names required request descriptors `Descriptor #1 = Tagging Administrative Status`, `Descriptor #2 = Port VF_ID`, and `Descriptor #3 = Locally-Enabled VF_ID List`, with additional `Descriptor #m` possible. `Table 120 – EVFP_SYNC Message Payload` shows the payload layout and ordering of descriptors across words. `Table 121 – Descriptor Format` defines the common descriptor header/format: `Descriptor Control`, `Descriptor Type`, `Descriptor Length`, and `Descriptor Value`. Contains: message/frame format. No procedure/flow, state machine, timer/negotiation, response/branch handling, or completion/exception conditions beyond required descriptor presence in `EVFP_SYNC request`.",
+                  "is_skeleton": false,
+                  "children": [
+                    {
+                      "node_id": "0234",
+                      "title": "4.2.43.2.1 Overview",
+                      "summary": "Core topic: `4.2.43.2.1 Overview` for the `EVFP_SYNC Message Payload` used in `EVFP_SYNC Request` and `EVFP_SYNC Accept`. Describes a descriptor-list payload where each descriptor is self-identifying and references required request descriptors: `Descriptor #1 = Tagging Administrative Status`, `Descriptor #2 = Port VF_ID`, `Descriptor #3 = Locally-Enabled VF_ID List`, plus `Descriptor #m`. Defines shared descriptor fields `Descriptor Control`, `Descriptor Type`, `Descriptor Length`, and `Descriptor Value`. Content types: message/frame format. `Table 120 – EVFP_SYNC Message Payload`: shows overall payload layout and descriptor ordering/presence requirements. `Table 121 – Descriptor Format`: defines the common descriptor format and field layout. No figures; no procedure/flow, response/branch handling, state machine, timer/negotiation, or completion/exception conditions.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 132,
+                      "end_index": 132,
+                      "subtree_start_index": 132,
+                      "subtree_end_index": 132
+                    },
+                    {
+                      "node_id": "0235",
+                      "title": "4.2.43.2.2 Tagging Administrative Status Descriptor",
+                      "summary": "Defines the `Tagging Administrative Status Descriptor` in `4.2.43.2.2`, including EVFP descriptor metadata and the fixed descriptor layout. Covers fields `Descriptor Control`, `Descriptor Type`, `Descriptor Length`, and `Administrative Tagging Mode`; fixed values `Descriptor Length = 0004h`, `Descriptor Control = 01h`, `Descriptor Type = 01h`. Includes response/branch handling for unsupported descriptors in EVFP via control codes: `01h` = `Critical. Abort the EVFP transaction if the descriptor is unsupported.`, `02h` = `Non critical. Skip the descriptor if unsupported and continue the EVFP transaction.`, `all others Reserved`. `Table 122 – Descriptor Control Codes`: defines `Descriptor Control` code behavior. `Table 123 – Descriptor Types`: defines descriptor type codes (`01h`, `02h`, `03h`, `F0h .. FEh`). `Table 124 – Tagging Administrative Status Descriptor`: shows the message/frame format and word/bit layout.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 133,
+                      "end_index": 133,
+                      "subtree_start_index": 133,
+                      "subtree_end_index": 133
+                    },
+                    {
+                      "node_id": "0236",
+                      "title": "4.2.43.2.3 Port VF_ID Descriptor",
+                      "summary": "Covers `4.2.43.2.3 Port VF_ID Descriptor` and the immediately preceding VFT tagging context: administrative tagging modes and peer tagging negotiation for VF-capable `N_Port`/`F_Port`. Includes `Table 125 – Administrative Tagging Modes`, defining values `0000 0001h OFF`, `0000 0002h ON`, `0000 0003h AUTO` and default `AUTO`; `Table 126 – Tagging Mode Negotiation`, showing negotiated outcomes `Non Tagging` or `Tagging` for local/peer modes `OFF`/`ON`/`AUTO`; and `Table 127 – Port VF_ID Descriptor`, showing descriptor format with `Descriptor Control = 01h`, `Descriptor Type = 02h`, `Descriptor Length = 0004h`, `Port Flags`, and `Port VF_ID`. `Port Flags` reserved, zero; `Port VF_ID` uses 12 LSBs, upper 4 bits zero, default `001h`. Content types: `message/frame format`, `timer/negotiation`.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 134,
+                      "end_index": 134,
+                      "subtree_start_index": 134,
+                      "subtree_end_index": 134
+                    },
+                    {
+                      "node_id": "0237",
+                      "title": "4.2.43.2.4 Locally-Enabled VF_ID List Descriptor",
+                      "summary": "Core topic: `4.2.43.2.4 Locally-Enabled VF_ID List Descriptor` message/frame format for advertising locally enabled Virtual Fabrics on an `Interconnect_Port`. `Table 128 – Locally-Enabled VF_ID List Descriptor` defines descriptor layout: `Descriptor Length = 0200h`, `Descriptor Control = 01h`, `Descriptor Type = 03h`, and `VF_ID Bitmap`. `VF_ID Bitmap` semantics: high-order bit = `VF_ID zero`, successive bits map successive `VF_ID`, low-order bit = `VF_ID 4095`; Virtual Fabric `K` allowed if bit = one, disallowed if zero; bit for `Control VF_ID` shall be zero. Operational VF list over a link is computed by bit-wise `AND` of received `VF_ID Bitmap` and locally configured `VF_ID Bitmap`. Also references `Table 129 – Vendor Specific Descriptor`, which defines vendor-specific descriptor fields including `T10 Vendor ID`. Content types: message/frame format, timer/negotiation.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 135,
+                      "end_index": 135,
+                      "subtree_start_index": 135,
+                      "subtree_end_index": 135
+                    },
+                    {
+                      "node_id": "0238",
+                      "title": "4.2.43.2.5 Vendor Specific Descriptor",
+                      "summary": "Defines the `Vendor Specific Descriptor` format in `4.2.43.2.5`, plus adjacent descriptor/payload context for `EVFP_COMMIT`. `Table 129 – Vendor Specific Descriptor` shows the message/frame format: Word 0 contains `Descriptor Control`, `Descriptor Type`, `Descriptor Length`; Word 1 contains `T10 Vendor ID`; Words 2..N are `Vendor Specific`. `T10 Vendor ID` shall be set to the Vendor’s `T10 Vendor ID`. Also referenced: `Table 127 – Port VF_ID Descriptor`, which defines the `Port VF_ID Descriptor` layout with `Descriptor Control = 01h`, `Descriptor Type = 02h`, `Descriptor Length = 0004h`. `4.2.43.3 EVFP_COMMIT Message Payload`: both `EVFP_COMMIT Request` and `EVFP_COMMIT Accept` have no `Message Payload`. Content types: message/frame format, completion/exception conditions.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 135,
+                      "end_index": 135,
+                      "subtree_start_index": 135,
+                      "subtree_end_index": 135
+                    }
+                  ],
+                  "start_index": 132,
+                  "end_index": 132,
+                  "subtree_start_index": 132,
+                  "subtree_end_index": 135
+                },
+                {
+                  "node_id": "0239",
+                  "title": "4.2.43.3 EVFP_COMMIT Message Payload",
+                  "summary": "Core topic: `4.2.43.3 EVFP_COMMIT Message Payload` defines payload presence for `EVFP_COMMIT Request` and `EVFP_COMMIT Accept`: both have no Message Payload. Nearby carried descriptors on the same page include `4.2.43.2.4 Locally-Enabled VF_ID List Descriptor` and `4.2.43.2.5 Vendor Specific Descriptor`, with fields/identifiers `Descriptor Control`, `Descriptor Type`, `Descriptor Length = 0200h`, `01h`, `03h`, `VF_ID Bitmap`, `VF_ID zero`, `VF_ID 4095`, `Control VF_ID`, `Virtual Fabric K`, `T10 Vendor ID`, `Vendor Specific`. `Table 127 – Port VF_ID Descriptor`: shows Port VF_ID descriptor layout (`Descriptor Length = 0004h`, `Descriptor Type = 02h`). `Table 129 – Vendor Specific Descriptor`: defines vendor-specific descriptor format. Content types: message/frame format, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 135,
+                  "end_index": 135,
+                  "subtree_start_index": 135,
+                  "subtree_end_index": 135
+                }
+              ],
+              "start_index": 129,
+              "end_index": 129,
+              "subtree_start_index": 129,
+              "subtree_end_index": 135
+            },
+            {
+              "node_id": "0240",
+              "title": "4.2.44 Link Keep Alive (LKA)",
+              "summary": "Section 4.2.44 defines the Link Keep Alive (LKA) ELS for traffic generation to confirm link integrity or prevent idle link termination between a VE_Port and B_Access portal peer. Contains procedure/flow, message/frame format, response/branch handling, timer/negotiation, completion/exception conditions. LKA ELS request Sequence is a single frame; reply is an ACC reply Sequence single frame, or LS_ACC / LS_RJT reply Sequence; request shall indicate `End_Sequence` and `Sequence Initiative` transfer and use a separate Exchange. Applicable to Class F, 2, 3, and 4. Timers/conditions: `K_A_TOV` should be at least every no-traffic interval, default `1/2 E_D_TOV`; if no accept within `E_D_TOV`, abort previous Exchange and send new LKA ELS; on service reject or missing timely accept, initiator performs topology-specific exception handling. Addressing fields: `S_ID = FFFFFDh`, `D_ID = FFFFFDh`. Table 130 – LKA Payload: defines LKA Request Payload format, including Word 0 = `80h 00h 00h 00h`.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0241",
+                  "title": "4.2.44.1 Overview",
+                  "summary": "Overview of `4.2.44 Link Keep Alive (LKA)` ELS for traffic generation and link health/keepalive on backbone links between `VE_Port` or `B_Access portal` peers. Defines that `LKA ELS` request and `ACC` reply are each single-frame, single-Sequence Exchanges, separate from any other Exchange; request uses `End_Sequence`, `Sequence Initiative`, and `F_CTL` bits per `FC-FS-2`; applicable to `Class F, 2, 3, and 4`. Timer/negotiation: send at least every `K_A_TOV` when idle; default `K_A_TOV` is `1/2 E_D_TOV`; if no accept within `E_D_TOV`, retransmit in a new Exchange and abort prior Exchange. Response/branch handling and completion/exception conditions: `ACC`, service reject, missing timely accept, topology-specific exception handling. `Table 130 – LKA Payload`: defines `LKA Request Payload`, including `S_ID`, `D_ID`, and payload word `0 = 80h 00h 00h 00h`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 136,
+                  "end_index": 136,
+                  "subtree_start_index": 136,
+                  "subtree_end_index": 136
+                },
+                {
+                  "node_id": "0242",
+                  "title": "4.2.44.2 Protocol",
+                  "summary": "4.2.44.2 Protocol defines the `Link Keep Alive (LKA)` exchange pattern: `a) Link Keep Alive request Sequence; and b) LS_ACC or LS_RJT reply Sequence.` Core topic is the protocol-level message pairing for `LKA ELS` between peers. Related surrounding constraints named here include single-frame `request Sequence`, single-frame `ACC reply Sequence`, separate `Exchange`, applicability to `Class F, 2, 3, and 4`, and timers `K_A_TOV` and `E_D_TOV`. Request-side identifiers/fields called out in the adjacent request definition are `S_ID`, `D_ID`, `FFFFFDh`, and payload byte `80h`. Table present: `Table 130 – LKA Payload`, which defines the `LKA Request Payload` format (`Word 0 = 80h 00h 00h 00h`). Content types: message/frame format, response/branch handling, timer/negotiation, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 136,
+                  "end_index": 136,
+                  "subtree_start_index": 136,
+                  "subtree_end_index": 136
+                },
+                {
+                  "node_id": "0243",
+                  "title": "4.2.44.3 Request Sequence",
+                  "summary": "Defines the `4.2.44.3 Request Sequence` for `Link Keep Alive (LKA)` ELS: request addressing and request payload contents. Core details: `S_ID` shall be `FFFFFDh`, indicating the Fabric Controller of the `VE_Port` or `B_Access portal` originating the request; `D_ID` shall be `FFFFFDh`, indicating the Fabric Controller of the remote peer. Payload is the `LKA Request Payload` shown in `Table 130 – LKA Payload`, with `Word 0` bytes `80h 00h 00h 00h`. Anchors present: `Request Sequence`, `S_ID`, `D_ID`, `FFFFFDh`, `VE_Port`, `B_Access portal`, `LKA Request Payload`, `Table 130 – LKA Payload`, `Word 0`, `80h`, `00h`. Content types: message/frame format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 136,
+                  "end_index": 136,
+                  "subtree_start_index": 136,
+                  "subtree_end_index": 136
+                },
+                {
+                  "node_id": "0244",
+                  "title": "4.2.44.4 Reply Sequence",
+                  "summary": "Core topic: `4.2.44.4 Reply Sequence` for `LKA` replies. `LS_RJT` signifies rejection of the `LKA` request; `LS_ACC` signifies the connection is intact. `Table 131 – LKA LS_ACC Payload` defines the `LS_ACC` payload format: `Bits 31... 24 23... 16 15... 08 07... 00`, `Word 0`, values `02h 00h 00h 00h`. Also present on these pages: `Table 130 – LKA Payload`, which defines/shows the `LKA` payload, including `Word 0 = 80h 00h 00h 00h`. No figures. Content types: `message/frame format`, `response/branch handling`. Completion/exception conditions: positive completion via `LS_ACC`; rejection via `LS_RJT`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 137,
+                  "end_index": 137,
+                  "subtree_start_index": 137,
+                  "subtree_end_index": 137
+                }
+              ],
+              "start_index": 136,
+              "end_index": 136,
+              "subtree_start_index": 136,
+              "subtree_end_index": 137
+            },
+            {
+              "node_id": "0245",
+              "title": "4.2.45 Define FFI Domain Topology Map (FFI_DTM)",
+              "summary": "Defines `FFI_DTM` (`Define FFI Domain Topology Map`) ELS Request semantics for transferring a complete initial or replacement Domain Topology Map to the `Domain Controller` of the `AE Principal Switch`. Covers mandatory/optional support (`AE Principal Switch`, `AE Switch`, `Nx_Ports`), request/reply protocol, and addressing fields `S_ID` and `D_ID`, with `D_ID` format `FFFCxxh` where `xx` is the one-byte Domain Controller value. Response/branch handling and completion/exception conditions: if the receiver is not the `AE Principal Switch`, reply `LS_RJT` with reason code `Logical error`; if not a `Domain Controller`, reply `LS_RJT` with `Command not supported`; normal reply is `LS_ACC` or `LS_RJT`. Table present: `Table 130 – LKA Payload`, shows `LKA` payload format. Content types: procedure/flow, response/branch handling.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0246",
+                  "title": "4.2.45.1 Description",
+                  "summary": "Defines `FFI_DTM` ELS Request purpose: transfer a complete initial or replacement Domain Topology Map to the Domain Controller of the AE Principal Switch. Mandatory support for a Domain Controller in an AE Principal Switch or AE Switch capable of becoming an AE Principal Switch; optional for `Nx_Ports`. Response/branch handling and completion/exception conditions: if receiver is not the AE Principal Switch, reply `LS_RJT` with reason code `Logical error`; if destination is not a Domain Controller, reply `LS_RJT` with reason code `Command not supported`. Names protocol outcomes `LS_ACC` or `LS_RJT`. References addressing identifiers `S_ID`, `D_ID`, `FFFCxxh`, `xx`. Table `Table 130 – LKA Payload` appears nearby and defines `LKA` payload format with `80h 00h 00h 00h`. Content types: procedure/flow, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 137,
+                  "end_index": 137,
+                  "subtree_start_index": 137,
+                  "subtree_end_index": 137
+                },
+                {
+                  "node_id": "0247",
+                  "title": "4.2.45.2 Protocol",
+                  "summary": "4.2.45.2 Protocol — defines the protocol flow for `Define FFI Domain Topology Map (FFI_DTM)`: `a) FFI Domain Topology Map Request Sequence; and b) LS_ACC or LS_RJT Reply Sequence.` Core topic is the request/reply structure for `FFI_DTM` transfer of a Domain Topology Map to the `Domain Controller` of the `AE Principal Switch`. Exact anchors present in surrounding protocol context: `FFI_DTM`, `LS_ACC`, `LS_RJT`, `S_ID`, `D_ID`, `FFFCxxh`, `Logical error`, `Command not supported`. `Table 130 – LKA Payload` shows the `LKA Payload` layout/format, including `80h 00h 00h 00h`. No figures. Content types: procedure/flow, response/branch handling, message/frame format, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 137,
+                  "end_index": 137,
+                  "subtree_start_index": 137,
+                  "subtree_end_index": 137
+                },
+                {
+                  "node_id": "0248",
+                  "title": "4.2.45.3 Request Sequence",
+                  "summary": "Defines `FFI_DTM` `Request Sequence` addressing for transferring an FFI Domain Topology Map to the Domain Controller of the AE Principal Switch. Core rule: `S_ID` designates the `Nx_Port` sending an FFI Domain Topology Map; `D_ID` designates the Domain Controller of the AE Principal Switch in the form `FFFCxxh`, where `xx` is the one-byte value assigned to the Domain Controller. Context anchors present in surrounding `4.2.45` definition/protocol: `LS_ACC`, `LS_RJT`, reason codes `Logical error` and `Command not supported`. Content types: procedure/flow, message/frame format, response/branch handling. Table present: `Table 130 – LKA Payload` — shows `LKA` payload word/bit layout (`80h 00h 00h 00h`), adjacent reference material rather than `FFI_DTM` fields. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 137,
+                  "end_index": 137,
+                  "subtree_start_index": 137,
+                  "subtree_end_index": 137
+                },
+                {
+                  "node_id": "0249",
+                  "title": "4.2.45.4 Reply Sequence",
+                  "summary": "Section `4.2.45.4 Reply Sequence` covers `FFI_DTM` reply handling for the `FFI_DTM Request`: `LS_RJT` rejects the request and carries an appropriate reject reason code; `LS_ACC` accepts the request and uses the `FFI_DTM LS_ACC Payload` format. Contains: `response/branch handling`, `message/frame format`, `completion/exception conditions`. Exact reply codes/values: `LS_RJT`, `LS_ACC`, `02h 00h 00h 00h`. Table content referenced with this section: `Table 132 – FFI_DTM Payload` shows the `FFI_DTM (A0h)` request payload layout and fields `Payload Length`, `FFI Incarnation Number`, `Number of FFI Link State Records`, `FFI Link State Records`; `Table 133 – FFI_DTM LS_ACC Payload` defines the one-word `LS_ACC` payload for `FFI_DTM`. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 138,
+                  "end_index": 138,
+                  "subtree_start_index": 138,
+                  "subtree_end_index": 138
+                }
+              ],
+              "start_index": 137,
+              "end_index": 137,
+              "subtree_start_index": 137,
+              "subtree_end_index": 138
+            },
+            {
+              "node_id": "0250",
+              "title": "4.2.46 Request FFI Domain Topology Map (FFI_RTM)",
+              "summary": "Core topic: `4.2.46 Request FFI Domain Topology Map (FFI_RTM)` — `FFI_RTM` ELS Request asks the Domain Controller of the `AE Principal Switch` to return the current `Domain Topology Map` in the `LS_ACC Reply Sequence`. Mandatory support for a Domain Controller in an `AE Principal Switch` or AE Switch capable of becoming one; optional for `Nx_Ports`. Named anchors present: `FFI_RTM`, `ELS Request`, `Domain Controller`, `AE Principal Switch`, `Domain Topology Map`, `LS_ACC Reply Sequence`, `Nx_Ports`. Content types: response/branch handling, completion/exception conditions. Nearby referenced reply behavior and formats: `LS_RJT`, `LS_ACC`, `FFI_DTM`, `FFI_DTM Request`, `FFI_DTM LS_ACC Payload`, `Table 132 – FFI_DTM Payload` (defines request payload fields), `Table 133 – FFI_DTM LS_ACC Payload` (shows `LS_ACC` payload `02h 00h 00h 00h`).",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0251",
+                  "title": "4.2.46.1 Description",
+                  "summary": "Core topic: `4.2.46.1 Description` defines `Request FFI Domain Topology Map (FFI_RTM)`: the `FFI_RTM ELS Request` asks the Domain Controller of the AE Principal Switch to return the current Domain Topology Map in the `LS_ACC Reply Sequence`. Mandatory support: Domain Controller in an AE Principal Switch or AE Switch capable of becoming an AE Principal Switch; optional for `Nx_Ports`. Nearby response/format context included on this page: `FFI_DTM Request Payload`, `FFI_DTM (A0h)`, `Payload Length`, `FFI Incarnation Number`, `Number of FFI Link State Records`, `FFI Link State Records`, `LS_RJT`, `LS_ACC`, `02h`, minimum `28`, maximum `65532`, minimum record count `2`. Table `132 – FFI_DTM Payload`: defines request payload word/field layout. Table `133 – FFI_DTM LS_ACC Payload`: shows `LS_ACC` payload format. Content types: message/frame format; response/branch handling.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 138,
+                  "end_index": 138,
+                  "subtree_start_index": 138,
+                  "subtree_end_index": 138
+                },
+                {
+                  "node_id": "0252",
+                  "title": "4.2.46.2 Protocol",
+                  "summary": "Defines the `FFI_RTM` Protocol for Domain Topology Map exchange: procedure/flow is `FFI Domain Topology Map Request Sequence` followed by `LS_ACC or LS_RJT Reply Sequence`; includes message/frame format and response/branch handling. Request addressing uses `S_ID` for the requesting `Nx_Port` and `D_ID` = `FFFCxxh` for the `Domain Controller` of the `AE Principal Switch`; `FFI_RTM Request Payload` is in `Table 134 – FFI_RTM Payload` with `Word 0` = `FFI_RTM (A1h) 00h 00h 00h`. Reply handling: `LS_RJT` returns an appropriate reject reason code; `LS_ACC` means the `AE Principal Switch` transmitted the requested data. `Table 135 – FFI_RTM LS_ACC Payload` shows `02h`, `Payload Length`, `FFI Incarnation Number`, `Reserved`, `Number of FFI Link State Records`, and `FFI Link State Records`; completion/exception conditions include `Payload Length` multiple-of-4, minimum `28 bytes`, maximum `65532`. `Table 133 – FFI_DTM LS_ACC Payload` shows the `FFI_DTM` `LS_ACC` payload layout.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 139,
+                  "end_index": 139,
+                  "subtree_start_index": 139,
+                  "subtree_end_index": 139
+                },
+                {
+                  "node_id": "0253",
+                  "title": "4.2.46.3 Request Sequence",
+                  "summary": "Request Sequence for `FFI_RTM` Domain Topology Map retrieval: addressing and request payload sent to the `Domain Controller of the AE Principal Switch`. `S_ID` identifies the requesting `Nx_Port`; `D_ID` designates the Domain Controller as `FFFCxxh`, where `xx` is the one-byte assigned value. Payload/message format: `Table 134 – FFI_RTM Payload` shows word 0 = `FFI_RTM (A1h) 00h 00h 00h`. Procedure/flow includes `FFI Domain Topology Map Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`. Response/branch handling and completion/exception conditions: non-`AE Principal Switch` Domain Controller returns `LS_RJT` with reason code `Logical error`; a destination that is not a `Domain Controller` returns `LS_RJT` with reason code `Command not supported.` `Table 135 – FFI_RTM LS_ACC Payload` defines reply fields `Payload Length`, `FFI Incarnation Number`, `Number of FFI Link State Records`, and `FFI Link State Records`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 139,
+                  "end_index": 139,
+                  "subtree_start_index": 139,
+                  "subtree_end_index": 139
+                },
+                {
+                  "node_id": "0254",
+                  "title": "4.2.46.4 Reply Sequence",
+                  "summary": "Core topic: `4.2.46.4 Reply Sequence` for `FFI_RTM` replies, defining `LS_RJT` rejection and `LS_ACC` acceptance semantics plus `FFI_RTM LS_ACC Payload` layout. Contains: response/branch handling, message/frame format, completion/exception conditions. `LS_RJT` signifies rejection of the `FFI_RTM Request` and carries an appropriate reject reason code. `LS_ACC` signifies acceptance of a valid `FFI_RTM Request` and that the `AE Principal Switch` has transmitted the requested data. `Table 135 – FFI_RTM LS_ACC Payload` shows the `LS_ACC` payload format: word `0` = `02h`, `00h`, `Payload Length`; word `1` = `FFI Incarnation Number`; word `2` = `Reserved`, `Reserved`, `Number of FFI Link State Records`; words `3..n` = `FFI Link State Records`. `Payload Length` is inclusive of word `0`, multiple of 4 bytes, minimum `28 bytes`, maximum `65532`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 139,
+                  "end_index": 139,
+                  "subtree_start_index": 139,
+                  "subtree_end_index": 139
+                }
+              ],
+              "start_index": 138,
+              "end_index": 138,
+              "subtree_start_index": 138,
+              "subtree_end_index": 139
+            },
+            {
+              "node_id": "0255",
+              "title": "4.2.47 FFI AE Principal Switch Selector (FFI_PSS)",
+              "summary": "4.2.47 `FFI AE Principal Switch Selector (FFI_PSS)`: ELS request used to command an AE Switch that is not currently the `AE Principal Switch` to become the `AE Principal Switch`. Covers `FFI_PSS`, `LS_ACC`, `LS_RJT`, `Domain Controller`, `Nx_Port`, `S_ID`, `D_ID`, `FFFCxxh`, reason codes `Logical error` and `Command not supported`, and payload opcode `FFI_PSS (A2h)` with `00h` bytes. Contains procedure/flow: request then `LS_ACC or LS_RJT Reply Sequence`; response/branch handling: reject if already `AE Principal Switch`, not capable, or destination is not a `Domain Controller`; message/frame format: request addressing and payload fields. `Table 136 – FFI_PSS Payload`: defines request payload format. `Table 135 – FFI_RTM LS_ACC Payload`: defines `LS_ACC` payload layout.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0256",
+                  "title": "4.2.47.1 Description",
+                  "summary": "FFI AE Principal Switch Selector (`FFI_PSS`) description: ELS Request sent to an AE Switch that is not currently the AE Principal Switch to command it to become the AE Principal Switch. Mandatory support for a Domain Controller in an AE Principal Switch or an AE Switch capable of becoming an AE Principal Switch; optional for `Nx_Ports`. Response/branch handling and completion/exception conditions: if recipient Domain Controller currently is the AE Principal Switch or is not capable, reply `LS_RJT` with reason code `Logical error`; if destination is not a Domain Controller, reply `LS_RJT` with reason code `Command not supported`. Also names protocol elements `LS_ACC`, `LS_RJT`, `S_ID`, `D_ID`, `FFFCxxh`, `FFI_PSS (A2h)`, and `Table 136 – FFI_PSS Payload` defining the request payload format. Contains: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 140,
+                  "end_index": 140,
+                  "subtree_start_index": 140,
+                  "subtree_end_index": 140
+                },
+                {
+                  "node_id": "0257",
+                  "title": "4.2.47.2 Protocol",
+                  "summary": "4.2.47.2 `Protocol` for `FFI AE Principal Switch Selector (FFI_PSS)`: defines the exchange as `a) FFI AE Principal Switch Selector Request Sequence; and b) LS_ACC or LS_RJT Reply Sequence.` Core topic is the `FFI_PSS` protocol flow for commanding an `AE Switch` to become the `AE Principal Switch`. Exact anchors appearing with this protocol context include `FFI_PSS`, `LS_ACC`, `LS_RJT`, `Logical error`, `Command not supported`, `S_ID`, `D_ID`, `FFFCxxh`, `xx`, `FFI_PSS (A2h)`, `00h`, and `Table 136 – FFI_PSS Payload` (request payload format). Also present: `Table 135 – FFI_RTM LS_ACC Payload`, which defines the `FFI_RTM` `LS_ACC` payload layout (`02h`, `Payload Length`). Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 140,
+                  "end_index": 140,
+                  "subtree_start_index": 140,
+                  "subtree_end_index": 140
+                },
+                {
+                  "node_id": "0258",
+                  "title": "4.2.47.3 Request Sequence",
+                  "summary": "Section `4.2.47.3 Request Sequence` covers the `FFI_PSS` ELS request sequence for selecting an `AE Principal Switch`: `S_ID` identifies the `Nx_Port` requesting the change; `D_ID` identifies the `Domain Controller` of an `AE Switch` that is not the current `AE Principal Switch` but can become one, addressed as `FFFCxxh` where `xx` is the one-byte assigned value. Payload is the `FFI_PSS Request Payload` defined by `Table 136 – FFI_PSS Payload`, which shows the request message/frame format: `Word 0` = `FFI_PSS (A2h) 00h 00h 00h`. Related response/branch handling is `LS_ACC` or `LS_RJT Reply Sequence`, with `LS_RJT` carrying a reject reason code. Content types: procedure/flow, message/frame format, response/branch handling.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 140,
+                  "end_index": 140,
+                  "subtree_start_index": 140,
+                  "subtree_end_index": 140
+                },
+                {
+                  "node_id": "0259",
+                  "title": "4.2.47.4 Reply Sequence",
+                  "summary": "Section 4.2.47.4 Reply Sequence covers FFI_PSS reply handling: `LS_RJT` is the reply sequence for rejection of an `FFI_PSS Request`, and the `LS_RJT` reply contains an appropriate reject reason code. Core topic: response/branch handling for `FFI_PSS` failure/rejection outcomes. Named anchors present in the surrounding `FFI_PSS` definition on this page include `FFI_PSS`, `LS_RJT`, `LS_ACC`, `FFI AE Principal Switch Selector (FFI_PSS)`, `S_ID`, `D_ID`, `FFFCxxh`, `A2h`, `00h`, and `Table 136 – FFI_PSS Payload` (request payload format). Also present on these pages: `Table 135 – FFI_RTM LS_ACC Payload`, which defines the `FFI_RTM` `LS_ACC` payload layout. Content types: response/branch handling, completion/exception conditions, message/frame format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 140,
+                  "end_index": 140,
+                  "subtree_start_index": 140,
+                  "subtree_end_index": 140
+                }
+              ],
+              "start_index": 140,
+              "end_index": 140,
+              "subtree_start_index": 140,
+              "subtree_end_index": 140
+            },
+            {
+              "node_id": "0260",
+              "title": "4.2.48 FFI Map Update Registration (FFI_MUR)",
+              "summary": "Section `4.2.48 FFI Map Update Registration (FFI_MUR)` covers the `FFI_MUR` ELS Request used to add or remove the sending `Nx_Port` (`S_ID`) to/from the list of `Nx_Ports` registered to receive `FFI_RMUN` ELS Requests; destination `D_ID` is the Domain Controller of the AE Principal Switch in form `FFFCxxh`. Includes `procedure/flow`: `FFI Map Update Registration Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`. Includes `response/branch handling` and `completion/exception conditions`: if receiver is not the AE Principal Switch Domain Controller, reply `LS_RJT` reason code `Logical error`; if destination is not a Domain Controller, reply `LS_RJT` reason code `Command not supported`. Includes `message/frame format`: `Table 138 – FFI_MUR Payload`, defining payload fields `FFI_MUR (A3h)` and `Registration Function`.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0261",
+                  "title": "4.2.48.1 Description",
+                  "summary": "Core topic: `4.2.48.1 Description` for `FFI Map Update Registration (FFI_MUR)` ELS Request—registers or removes the sending `Nx_Port` (`S_ID`) to/from the list of `Nx_Ports` that receive `FFI_RMUN` ELS Requests; applies to the `Domain Controller` of the `AE Principal Switch`. Support is mandatory for a `Domain Controller` in an `AE Principal Switch` or capable `AE Switch`, optional for `Nx_Ports`. Response/branch handling and completion/exception conditions: if receiver is not the `AE Principal Switch`, reply `LS_RJT` with reason code `Logical error`; if destination is not a `Domain Controller`, reply `LS_RJT` with reason code `Command not supported`. Procedure/flow noted: request plus `LS_ACC` or `LS_RJT` reply sequence. Message/frame format: `Table 138 – FFI_MUR Payload`, defines request payload fields including `FFI_MUR (A3h)` and `Registration Function`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 141,
+                  "end_index": 141,
+                  "subtree_start_index": 141,
+                  "subtree_end_index": 141
+                }
+              ],
+              "start_index": 141,
+              "end_index": 141,
+              "subtree_start_index": 141,
+              "subtree_end_index": 142
+            }
+          ],
+          "start_index": 36,
+          "end_index": 36,
+          "subtree_start_index": 36,
+          "subtree_end_index": 145
+        }
+      ],
+      "start_index": 36,
+      "end_index": 36,
+      "subtree_start_index": 36,
+      "subtree_end_index": 150
+    }
+  ],
+  "next_steps": {
+    "options": [
+      "Request next part with part: 5",
+      "Jump to last part with part: 7",
+      "Request previous part with part: 3",
+      "Proceed to get_page_content() for specific sections"
+    ],
+    "summary": "Showing part 4 of 7."
+  },
+  "pagination": {
+    "part": "4",
+    "has_more": true,
+    "total_parts": "7"
+  },
+  "total_parts": "7"
+}

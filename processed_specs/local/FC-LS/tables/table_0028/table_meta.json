@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0028",
+  "type": "table",
+  "caption": "Table 25 – TEST Payload",
+  "pages": [
+    59
+  ],
+  "bbox": [
+    99.94,
+    158.62,
+    536.06,
+    255.0
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 59
+}

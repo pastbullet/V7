@@ -1,0 +1,1022 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 22,
+  "spans": [
+    {
+      "span_id": "p022_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0002",
+      "text": " 3",
+      "bbox": [
+        523.86,
+        723.59,
+        532.16,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0003",
+      "text": "3",
+      "bbox": [
+        96.0,
+        57.38,
+        102.1,
+        69.64
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0004",
+      "text": "Definitions and conventions",
+      "bbox": [
+        114.0,
+        57.38,
+        261.11,
+        69.64
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0005",
+      "text": "3.1",
+      "bbox": [
+        96.0,
+        82.97,
+        109.89,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0006",
+      "text": "Overview",
+      "bbox": [
+        119.89,
+        82.97,
+        164.27,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0007",
+      "text": "For FC-LS, the following definitions, conventions, abbreviations, acronyms, and symbols apply.",
+      "bbox": [
+        96.0,
+        106.97,
+        515.37,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0008",
+      "text": "3.2",
+      "bbox": [
+        96.0,
+        130.97,
+        109.88,
+        142.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0009",
+      "text": "Definitions",
+      "bbox": [
+        119.88,
+        130.97,
+        171.51,
+        142.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0010",
+      "text": "3.2.1",
+      "bbox": [
+        96.0,
+        154.97,
+        118.22,
+        166.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0011",
+      "text": "acknowledged class: ",
+      "bbox": [
+        128.22,
+        154.97,
+        230.94,
+        166.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0012",
+      "text": "Any class of service that acknowledges a transfer.",
+      "bbox": [
+        231.0,
+        154.97,
+        452.65,
+        166.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0013",
+      "text": "3.2.2",
+      "bbox": [
+        96.0,
+        178.96,
+        118.23,
+        190.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0014",
+      "text": "address identifier: ",
+      "bbox": [
+        128.23,
+        178.96,
+        217.43,
+        190.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0015",
+      "text": "An address value used to identify source (S_ID) or destination (D_ID) of a",
+      "bbox": [
+        217.08,
+        178.96,
+        540.0,
+        190.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0016",
+      "text": "frame (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        190.96,
+        190.92,
+        202.08
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0017",
+      "text": "3.2.3",
+      "bbox": [
+        96.0,
+        214.96,
+        119.81,
+        226.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0018",
+      "text": "AE Principal Switch: ",
+      "bbox": [
+        130.23,
+        214.96,
+        238.71,
+        226.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0019",
+      "text": "An AE Switch has no Uplinks and assumes the primary role of",
+      "bbox": [
+        239.4,
+        214.96,
+        539.94,
+        226.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0020",
+      "text": "distributing the Domain Topology Map in an Avionics Fabric ",
+      "bbox": [
+        96.0,
+        226.96,
+        361.99,
+        238.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0021",
+      "text": "(see FC-SW-4)",
+      "bbox": [
+        362.04,
+        226.96,
+        429.28,
+        238.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0022",
+      "text": ".",
+      "bbox": [
+        429.24,
+        226.96,
+        432.01,
+        238.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 3
+    },
+    {
+      "span_id": "p022_s0023",
+      "text": "3.2.4",
+      "bbox": [
+        96.0,
+        250.96,
+        118.24,
+        262.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0024",
+      "text": "AE Secondary Principal Switch: ",
+      "bbox": [
+        128.25,
+        250.96,
+        281.87,
+        262.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0025",
+      "text": "An AE Switch that is capable of becoming the AE Principal",
+      "bbox": [
+        281.82,
+        250.96,
+        540.08,
+        262.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0026",
+      "text": "Switch ",
+      "bbox": [
+        96.0,
+        262.96,
+        128.17,
+        274.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0027",
+      "text": "(see FC-SW-4)",
+      "bbox": [
+        128.22,
+        262.96,
+        195.38,
+        274.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0028",
+      "text": ".",
+      "bbox": [
+        195.42,
+        262.96,
+        198.19,
+        274.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 3
+    },
+    {
+      "span_id": "p022_s0029",
+      "text": "3.2.5",
+      "bbox": [
+        96.0,
+        286.96,
+        118.24,
+        298.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0030",
+      "text": "AE Switch: ",
+      "bbox": [
+        128.24,
+        286.96,
+        183.25,
+        298.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0031",
+      "text": "An AE-Capable Switch that has activated at least one AE_Port. AE Switches are",
+      "bbox": [
+        183.36,
+        286.96,
+        540.09,
+        298.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0032",
+      "text": "required to implement the requirements defined for Fast Fabric Intialization in ",
+      "bbox": [
+        96.0,
+        298.96,
+        439.21,
+        310.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0033",
+      "text": "FC-SW-4",
+      "bbox": [
+        439.26,
+        298.96,
+        480.92,
+        310.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0034",
+      "text": ".",
+      "bbox": [
+        480.9,
+        298.96,
+        483.67,
+        310.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 3
+    },
+    {
+      "span_id": "p022_s0035",
+      "text": "3.2.6",
+      "bbox": [
+        96.0,
+        322.96,
+        118.23,
+        334.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0036",
+      "text": "Alias_ID: ",
+      "bbox": [
+        128.23,
+        322.96,
+        173.77,
+        334.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0037",
+      "text": "An address identifier recognized by one or more Nx_Ports or the Alias Server, if the",
+      "bbox": [
+        173.58,
+        322.96,
+        539.89,
+        334.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0038",
+      "text": "Nx_Port has registered with the Alias Server as a member of a group.   An Alias_ID may be common",
+      "bbox": [
+        96.0,
+        334.96,
+        539.86,
+        346.08
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0039",
+      "text": "to multiple Nx_Ports (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        346.96,
+        254.83,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0040",
+      "text": "3.2.7",
+      "bbox": [
+        96.0,
+        370.96,
+        120.14,
+        382.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0041",
+      "text": "Alias_Token: ",
+      "bbox": [
+        130.62,
+        370.96,
+        201.37,
+        382.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0042",
+      "text": "A 12-byte field to indicate the type of Alias_ID and certain properties",
+      "bbox": [
+        202.14,
+        370.96,
+        540.06,
+        382.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0043",
+      "text": "associated with the Alias_ID (see FC-GS-5).",
+      "bbox": [
+        96.0,
+        382.96,
+        291.91,
+        394.08
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0044",
+      "text": "3.2.8",
+      "bbox": [
+        96.0,
+        406.96,
+        118.31,
+        418.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0045",
+      "text": "Arbitrated Loop topology: ",
+      "bbox": [
+        128.37,
+        406.96,
+        255.95,
+        418.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0046",
+      "text": "A Fibre Channel topology where L_Ports use arbitration to gain",
+      "bbox": [
+        256.26,
+        406.96,
+        539.88,
+        418.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0047",
+      "text": "access to the loop (see FC-AL-2).",
+      "bbox": [
+        96.0,
+        418.96,
+        245.39,
+        430.08
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0048",
+      "text": "3.2.9",
+      "bbox": [
+        96.0,
+        442.96,
+        118.23,
+        454.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0049",
+      "text": "Association_Header: ",
+      "bbox": [
+        128.23,
+        442.96,
+        230.4,
+        454.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0050",
+      "text": "See FC-FS-2.",
+      "bbox": [
+        230.4,
+        442.96,
+        292.03,
+        454.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0051",
+      "text": "3.2.10",
+      "bbox": [
+        96.0,
+        466.96,
+        123.75,
+        478.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0052",
+      "text": "Avionics Fabric: ",
+      "bbox": [
+        133.81,
+        466.96,
+        214.38,
+        478.08
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0053",
+      "text": "A Fibre Channel Fabric that contains at least one AE Switch and supports",
+      "bbox": [
+        214.32,
+        466.96,
+        539.99,
+        478.08
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0054",
+      "text": "all the requirements defined for Fast Fabric Intialization in ",
+      "bbox": [
+        96.0,
+        478.96,
+        352.7,
+        490.08
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0055",
+      "text": "FC-SW-4",
+      "bbox": [
+        352.62,
+        478.96,
+        394.22,
+        490.08
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0056",
+      "text": ".",
+      "bbox": [
+        394.26,
+        478.96,
+        397.03,
+        490.08
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 3
+    },
+    {
+      "span_id": "p022_s0057",
+      "text": "3.2.11",
+      "bbox": [
+        96.0,
+        502.96,
+        123.77,
+        514.07
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0058",
+      "text": "buffer-to-buffer credit (BB_Credit): ",
+      "bbox": [
+        133.83,
+        502.96,
+        301.28,
+        514.07
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0059",
+      "text": "The limiting value for BB_Credit_CNT in the buffer-to-",
+      "bbox": [
+        301.5,
+        502.96,
+        540.04,
+        514.07
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0060",
+      "text": "buffer flow control model (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        514.96,
+        274.29,
+        526.07
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0061",
+      "text": "3.2.12",
+      "bbox": [
+        96.0,
+        538.96,
+        124.46,
+        550.07
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0062",
+      "text": "buffer-to-buffer Credit_Count (BB_Credit_CNT): ",
+      "bbox": [
+        134.58,
+        538.96,
+        370.25,
+        550.07
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0063",
+      "text": "A counter used in the buffer-to-buffer",
+      "bbox": [
+        370.62,
+        538.96,
+        540.03,
+        550.07
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0064",
+      "text": "flow control model (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        550.96,
+        245.96,
+        562.07
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0065",
+      "text": "3.2.13",
+      "bbox": [
+        96.0,
+        574.96,
+        124.59,
+        586.07
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0066",
+      "text": "B_Port: ",
+      "bbox": [
+        134.77,
+        574.96,
+        174.7,
+        586.07
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0067",
+      "text": "A bridge port is a Fabric inter-element port used to connect bridge devices with",
+      "bbox": [
+        175.2,
+        574.96,
+        539.99,
+        586.07
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0068",
+      "text": "E_Ports on a switch.  The B_Port provides a subset of the E_Port functionality (see FC-SW-3.).",
+      "bbox": [
+        96.0,
+        586.96,
+        516.45,
+        598.07
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0069",
+      "text": "3.2.14",
+      "bbox": [
+        96.0,
+        610.96,
+        123.73,
+        622.07
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0070",
+      "text": "buffer: ",
+      "bbox": [
+        133.79,
+        610.96,
+        168.24,
+        622.07
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0071",
+      "text": "A logical construct that holds a single frame.",
+      "bbox": [
+        168.18,
+        610.96,
+        363.71,
+        622.07
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0072",
+      "text": "3.2.15",
+      "bbox": [
+        96.0,
+        635.02,
+        123.76,
+        646.13
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0073",
+      "text": "circuit: ",
+      "bbox": [
+        133.82,
+        635.02,
+        169.87,
+        646.13
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0074",
+      "text": "A bi-directional path within the Fabric.",
+      "bbox": [
+        169.86,
+        635.02,
+        336.55,
+        646.13
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0075",
+      "text": "3.2.16",
+      "bbox": [
+        96.0,
+        659.02,
+        123.86,
+        670.13
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0076",
+      "text": "class of service: ",
+      "bbox": [
+        133.92,
+        659.02,
+        215.13,
+        670.13
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p022_s0077",
+      "text": "Type of frame delivery service used by the communicating Nx_Ports that",
+      "bbox": [
+        215.4,
+        659.02,
+        540.04,
+        670.13
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p022_s0078",
+      "text": "may also be supported through a Fabric (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        671.02,
+        342.09,
+        682.13
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

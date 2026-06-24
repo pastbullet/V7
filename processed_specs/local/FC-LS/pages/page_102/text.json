@@ -1,0 +1,712 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 102,
+  "spans": [
+    {
+      "span_id": "p102_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0002",
+      "text": " 83",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0003",
+      "text": "4.2.27.2  Protocol",
+      "bbox": [
+        96.0,
+        57.65,
+        178.22,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0004",
+      "text": "a) FACT Request Sequence",
+      "bbox": [
+        106.02,
+        82.97,
+        236.21,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0005",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence",
+      "bbox": [
+        106.02,
+        106.97,
+        287.89,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0006",
+      "text": "4.2.27.3  Request Sequence",
+      "bbox": [
+        96.0,
+        130.97,
+        227.06,
+        142.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0007",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        154.96,
+        157.1,
+        166.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0008",
+      "text": "The S_ID designates the Alias Server (FFFFF8h).  The D_ID field designates the Fab-",
+      "bbox": [
+        157.08,
+        154.96,
+        540.08,
+        166.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p102_s0009",
+      "text": "ric Controller (FFFFFDh).",
+      "bbox": [
+        96.0,
+        166.96,
+        208.17,
+        178.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0010",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        190.96,
+        140.41,
+        202.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0011",
+      "text": "The Payload of the request contains a list of the Nx_Ports for which the Alias_ID is to be",
+      "bbox": [
+        140.4,
+        190.96,
+        539.99,
+        202.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p102_s0012",
+      "text": "recognized and the Alias_ID to be recognized as an Alias_ID.  The format of the Payload is shown in",
+      "bbox": [
+        96.0,
+        202.96,
+        539.86,
+        214.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0013",
+      "text": "table 81.",
+      "bbox": [
+        96.0,
+        214.96,
+        134.36,
+        226.08
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0014",
+      "text": "a)",
+      "bbox": [
+        106.02,
+        442.96,
+        114.91,
+        454.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0015",
+      "text": " Alias Group Identifier (Alias_ID):",
+      "bbox": [
+        114.91,
+        442.96,
+        278.11,
+        454.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p102_s0016",
+      "text": " This is the Alias_ID that the Fabric shall recognize for the",
+      "bbox": [
+        277.98,
+        442.96,
+        539.96,
+        454.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p102_s0017",
+      "text": "Nx_Ports in the list, in addition to their native address identifiers.",
+      "bbox": [
+        122.4,
+        454.96,
+        406.26,
+        466.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0018",
+      "text": "b)",
+      "bbox": [
+        106.02,
+        478.96,
+        114.91,
+        490.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0019",
+      "text": " Nx_Port List Length (NP_List_Length): ",
+      "bbox": [
+        114.91,
+        478.96,
+        309.27,
+        490.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p102_s0020",
+      "text": "The NP_List_Length specifies the number of entries",
+      "bbox": [
+        309.42,
+        478.96,
+        540.08,
+        490.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p102_s0021",
+      "text": "in the following NP_List.",
+      "bbox": [
+        122.4,
+        490.96,
+        229.03,
+        502.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0022",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        514.96,
+        114.38,
+        526.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0023",
+      "text": "Nx_Port List (NP_List):",
+      "bbox": [
+        122.4,
+        514.96,
+        235.79,
+        526.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0024",
+      "text": " The NP_List contains one entry for each Nx_Port for which the",
+      "bbox": [
+        235.74,
+        514.96,
+        540.06,
+        526.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p102_s0025",
+      "text": "Alias_ID is to be assigned as an Alias_ID.  The N_Port_ID shall be right aligned within the",
+      "bbox": [
+        122.4,
+        526.96,
+        539.95,
+        538.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0026",
+      "text": "NP_List entry (i.e., the high-order byte of the entry shall be ignored and the low-order 3 bytes",
+      "bbox": [
+        122.4,
+        538.96,
+        539.98,
+        550.08
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0027",
+      "text": "shall contain the N_Port_ID).",
+      "bbox": [
+        122.4,
+        550.96,
+        250.15,
+        562.08
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0028",
+      "text": "4.2.27.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        574.96,
+        214.86,
+        586.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0029",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        598.96,
+        138.19,
+        610.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0030",
+      "text": "LS_RJT signifies the rejection of the FACT Request. n LS_RJT with a reason code of \"Un-",
+      "bbox": [
+        138.18,
+        598.96,
+        540.1,
+        610.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p102_s0031",
+      "text": "able to perform command request\" shall be returned if an Alias_ID is not activated as an Alias_ID.",
+      "bbox": [
+        96.0,
+        610.96,
+        527.92,
+        622.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0032",
+      "text": " Table 81 – Fabric Activate Alias_ID Payload",
+      "bbox": [
+        213.54,
+        260.98,
+        422.54,
+        272.1
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0033",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        283.0,
+        133.06,
+        294.12
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0034",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        295.0,
+        136.35,
+        306.12
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0035",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        283.0,
+        233.97,
+        294.12
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0036",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        283.0,
+        328.41,
+        294.12
+      ],
+      "block_index": 15,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0037",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        283.0,
+        427.0,
+        294.12
+      ],
+      "block_index": 15,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0038",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        283.0,
+        522.83,
+        294.12
+      ],
+      "block_index": 15,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0039",
+      "text": "0",
+      "bbox": [
+        120.84,
+        311.98,
+        126.38,
+        323.1
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0040",
+      "text": "FACT (31h)",
+      "bbox": [
+        149.88,
+        311.98,
+        202.12,
+        323.1
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0041",
+      "text": "00h",
+      "bbox": [
+        247.1,
+        311.98,
+        263.78,
+        323.1
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0042",
+      "text": "00h",
+      "bbox": [
+        344.28,
+        311.98,
+        360.97,
+        323.1
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0043",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        311.98,
+        458.15,
+        323.1
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0044",
+      "text": "1",
+      "bbox": [
+        120.84,
+        328.96,
+        126.38,
+        340.08
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0045",
+      "text": "Alias_ID",
+      "bbox": [
+        149.88,
+        328.96,
+        187.05,
+        340.08
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0046",
+      "text": "2",
+      "bbox": [
+        120.84,
+        352.0,
+        126.38,
+        363.12
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0047",
+      "text": "NP_List_Length",
+      "bbox": [
+        149.88,
+        346.0,
+        221.01,
+        357.12
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0048",
+      "text": "(Number of NP_List entries = n)",
+      "bbox": [
+        149.88,
+        358.0,
+        290.77,
+        369.12
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0049",
+      "text": "3",
+      "bbox": [
+        120.84,
+        374.98,
+        126.38,
+        386.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0050",
+      "text": "NP_List (1)",
+      "bbox": [
+        149.88,
+        374.98,
+        199.86,
+        386.1
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0051",
+      "text": "..",
+      "bbox": [
+        120.84,
+        392.98,
+        126.37,
+        404.1
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0052",
+      "text": "..",
+      "bbox": [
+        339.54,
+        394.0,
+        345.07,
+        405.12
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0053",
+      "text": "2 + n",
+      "bbox": [
+        112.08,
+        410.98,
+        135.09,
+        422.1
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p102_s0054",
+      "text": "NP_List (n)",
+      "bbox": [
+        149.88,
+        410.98,
+        199.86,
+        422.1
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0084"
+  ]
+}

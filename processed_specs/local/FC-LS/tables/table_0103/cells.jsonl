@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord\n0\n1\n2", "page": 117, "bbox": [89.49, 339.99, 140.88, 435.33]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 117, "bbox": [140.88, 339.99, 239.0, 371.84]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 117, "bbox": [239.0, 339.99, 337.11, 371.84]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08", "page": 117, "bbox": [337.11, 339.99, 442.7, 371.84]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00", "page": 117, "bbox": [442.7, 339.99, 543.64, 371.84]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "", "page": 117, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "CSU (69h)", "page": 117, "bbox": [140.88, 371.84, 239.0, 393.54]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Reserved", "page": 117, "bbox": [239.0, 371.84, 543.64, 393.54]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "", "page": 117, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "", "page": 117, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "", "page": 117, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Clock Count\n(8 bytes)", "page": 117, "bbox": [140.88, 393.54, 543.64, 435.33]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 117, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "", "page": 117, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "", "page": 117, "bbox": [0.0, 0.0, 0.0, 0.0]}

@@ -1,0 +1,739 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 181,
+  "spans": [
+    {
+      "span_id": "p181_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0002",
+      "text": " 162",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0003",
+      "text": "6.6.5.4.3  Stacked Connect-requests",
+      "bbox": [
+        96.0,
+        57.65,
+        266.46,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0004",
+      "text": "The Stack Connect-request bits (word 0, bits 29 - 28) are used in the Fabric Login procedure.  They",
+      "bbox": [
+        96.0,
+        82.97,
+        540.07,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0005",
+      "text": "are only meaningful for Class 1 in the FLOGI LS_ACC.  They are not meaningful for other classes",
+      "bbox": [
+        96.0,
+        94.97,
+        540.02,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0006",
+      "text": "and other Class 1 login frames.  Table 160 specifies the meaning of the combination of word 0 bits 29",
+      "bbox": [
+        96.0,
+        106.97,
+        540.04,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0007",
+      "text": "and 28.",
+      "bbox": [
+        96.0,
+        118.97,
+        129.3,
+        130.08
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0008",
+      "text": "Support for stacked connect-requests is optional in both a Fabric and Nx_Port.  Both an Nx_Port's",
+      "bbox": [
+        96.0,
+        262.97,
+        540.0,
+        274.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0009",
+      "text": "and Fx_Port's behavior change if stacked connect-requests are functional (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        274.96,
+        490.67,
+        286.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0010",
+      "text": "6.6.5.4.4  Sequential delivery",
+      "bbox": [
+        96.0,
+        298.96,
+        231.57,
+        310.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0011",
+      "text": "0 = Out of order delivery allowed",
+      "bbox": [
+        96.0,
+        322.96,
+        240.02,
+        334.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0012",
+      "text": "1 = Sequential delivery requested",
+      "bbox": [
+        96.0,
+        334.96,
+        244.6,
+        346.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0013",
+      "text": "The Sequential delivery bit (word 0, bit 27) is only meaningful for the class 2 and 3 N_Port Class Ser-",
+      "bbox": [
+        96.0,
+        358.96,
+        540.08,
+        370.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0014",
+      "text": "vice Parameters in Fabric Login.  Out of order frame delivery in class 2 and 3 is the default function",
+      "bbox": [
+        96.0,
+        370.96,
+        540.0,
+        382.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0015",
+      "text": "by a Fabric.  It is not meaningful for Class 1, or Class 6 or for N_Port Login.",
+      "bbox": [
+        96.0,
+        382.96,
+        428.7,
+        394.08
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0016",
+      "text": "If this bit is set to one by an Nx_Port, it is requesting that all frames delivered to the Nx_Port request-",
+      "bbox": [
+        96.0,
+        406.96,
+        540.07,
+        418.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0017",
+      "text": "ing this function be delivered in the same order in which the frames were transmitted by the source",
+      "bbox": [
+        96.0,
+        418.96,
+        539.87,
+        430.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0018",
+      "text": "Nx_Port.  If this bit is set to one by the Fx_Port in the LS_ACC, the Fx_Port shall deliver Class 2 and",
+      "bbox": [
+        96.0,
+        430.96,
+        539.92,
+        442.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0019",
+      "text": "3 frames in the same order as transmitted from any one Nx_Port in the absence of Fabric events",
+      "bbox": [
+        96.0,
+        442.96,
+        540.0,
+        454.08
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0020",
+      "text": "(e.g., Fabric reconfiguration or zoning changes).",
+      "bbox": [
+        96.0,
+        454.96,
+        308.75,
+        466.08
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0021",
+      "text": "A Fabric supporting the sequential delivery feature routes Class 2 and 3 frames via a fixed route",
+      "bbox": [
+        96.0,
+        478.96,
+        539.92,
+        490.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0022",
+      "text": "through the Fabric to provide in-order frame delivery.  This feature does not imply any other alteration",
+      "bbox": [
+        96.0,
+        490.96,
+        539.92,
+        502.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0023",
+      "text": "to the normal class of service functions (e.g., F_BSY responses are still possible in Class 2 and",
+      "bbox": [
+        96.0,
+        502.96,
+        539.99,
+        514.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0024",
+      "text": "Class 3 frames may still be discarded by the Fabric based on normal Class 2 and 3 rules).",
+      "bbox": [
+        96.0,
+        514.96,
+        493.62,
+        526.08
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0025",
+      "text": "If this bit is set to one, the Fabric attempts to maintain the order of delivery of both Data and",
+      "bbox": [
+        96.0,
+        538.96,
+        539.96,
+        550.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0026",
+      "text": "Link_Control (Class 2 only) frames to the Nx_Port requesting this feature in the same order in which",
+      "bbox": [
+        96.0,
+        550.96,
+        540.04,
+        562.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0027",
+      "text": "the frames were transmitted.  Table 161 specifies the meaning of the combination of the Sequential",
+      "bbox": [
+        96.0,
+        562.96,
+        540.04,
+        574.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0028",
+      "text": "delivery bit for the requesting Nx_Port and the applicable Fx_Port.",
+      "bbox": [
+        96.0,
+        574.96,
+        387.59,
+        586.08
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0029",
+      "text": " Table 160 – Stacked Connect-request support Login Bits",
+      "bbox": [
+        182.22,
+        140.98,
+        453.81,
+        152.1
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0030",
+      "text": "Word 0, bits 29 - 28",
+      "bbox": [
+        128.46,
+        163.0,
+        219.49,
+        174.11
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0031",
+      "text": "Meaning",
+      "bbox": [
+        369.71,
+        163.0,
+        410.24,
+        174.11
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0032",
+      "text": "00b",
+      "bbox": [
+        103.98,
+        179.98,
+        120.61,
+        191.09
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0033",
+      "text": "Stacked Connect-request not supported",
+      "bbox": [
+        247.97,
+        179.98,
+        424.62,
+        191.09
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0034",
+      "text": "01b",
+      "bbox": [
+        103.98,
+        196.96,
+        120.61,
+        208.07
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0035",
+      "text": "Lock-Down Mode",
+      "bbox": [
+        247.97,
+        196.96,
+        325.76,
+        208.07
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0036",
+      "text": "10b",
+      "bbox": [
+        103.98,
+        214.0,
+        120.61,
+        225.11
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0037",
+      "text": "Transparent Mode",
+      "bbox": [
+        247.97,
+        214.0,
+        329.69,
+        225.11
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0038",
+      "text": "11b",
+      "bbox": [
+        103.98,
+        230.98,
+        120.6,
+        242.09
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0039",
+      "text": "Reserved",
+      "bbox": [
+        247.96,
+        230.98,
+        290.7,
+        242.09
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0040",
+      "text": " Table 161 – Sequential delivery support",
+      "bbox": [
+        222.72,
+        596.98,
+        413.33,
+        608.09
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0041",
+      "text": "Nx_Port",
+      "bbox": [
+        97.92,
+        619.0,
+        136.2,
+        630.11
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0042",
+      "text": "Fx_Port",
+      "bbox": [
+        146.68,
+        619.0,
+        183.92,
+        630.11
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0043",
+      "text": "Meaning",
+      "bbox": [
+        345.96,
+        619.0,
+        386.52,
+        630.11
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0044",
+      "text": "0",
+      "bbox": [
+        94.98,
+        635.98,
+        100.52,
+        647.09
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0045",
+      "text": "0",
+      "bbox": [
+        143.22,
+        635.98,
+        148.76,
+        647.09
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0046",
+      "text": "Neither supports",
+      "bbox": [
+        191.4,
+        635.98,
+        264.71,
+        647.09
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0047",
+      "text": "0",
+      "bbox": [
+        94.98,
+        653.02,
+        100.52,
+        664.13
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0048",
+      "text": "1",
+      "bbox": [
+        143.22,
+        653.02,
+        148.76,
+        664.13
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0049",
+      "text": "Fabric is capable of supporting, Sequential delivery is functional",
+      "bbox": [
+        191.4,
+        653.02,
+        473.1,
+        664.13
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0050",
+      "text": "1",
+      "bbox": [
+        94.98,
+        670.0,
+        100.52,
+        681.11
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0051",
+      "text": "0",
+      "bbox": [
+        143.22,
+        670.0,
+        148.76,
+        681.11
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0052",
+      "text": "Nx_Port support requested, Fabric does not support",
+      "bbox": [
+        191.4,
+        670.0,
+        421.42,
+        681.11
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0053",
+      "text": "1",
+      "bbox": [
+        94.98,
+        692.98,
+        100.52,
+        704.09
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0054",
+      "text": "1",
+      "bbox": [
+        143.22,
+        692.98,
+        148.76,
+        704.09
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0055",
+      "text": "Nx_Port requested, Fabric is capable of supporting, Sequential delivery is ",
+      "bbox": [
+        191.4,
+        686.98,
+        519.17,
+        698.09
+      ],
+      "block_index": 23,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p181_s0056",
+      "text": "functional",
+      "bbox": [
+        191.4,
+        698.98,
+        234.18,
+        710.09
+      ],
+      "block_index": 23,
+      "line_index": 4,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0172",
+    "table_0173"
+  ]
+}

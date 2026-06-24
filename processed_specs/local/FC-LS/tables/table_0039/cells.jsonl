@@ -1,0 +1,45 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "RSCN event Qualifier", "page": 67, "bbox": [101.47, 267.62, 356.47, 311.34]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Value", "page": 67, "bbox": [356.47, 267.62, 534.47, 289.04]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Bit 5", "page": 67, "bbox": [356.47, 289.04, 400.53, 311.34]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Bit 4", "page": 67, "bbox": [400.53, 289.04, 444.48, 311.34]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "Bit 3", "page": 67, "bbox": [444.48, 289.04, 490.71, 311.34]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "Bit 2", "page": 67, "bbox": [490.71, 289.04, 534.47, 311.34]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "Event is not specified", "page": 67, "bbox": [101.47, 311.34, 356.47, 335.37]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "0", "page": 67, "bbox": [356.47, 311.34, 400.53, 335.37]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "0", "page": 67, "bbox": [400.53, 311.34, 444.48, 335.37]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "0", "page": 67, "bbox": [444.48, 311.34, 490.71, 335.37]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "0", "page": 67, "bbox": [490.71, 311.34, 534.47, 335.37]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "CHANGED NAME SERVER OBJECT - An object\nmaintained by the Name Server has changed state for the\nport, area or domain indicated by the affected Port_ID.", "page": 67, "bbox": [101.47, 335.37, 356.47, 381.39]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "0", "page": 67, "bbox": [356.47, 335.37, 400.53, 381.39]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "0", "page": 67, "bbox": [400.53, 335.37, 444.48, 381.39]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "0", "page": 67, "bbox": [444.48, 335.37, 490.71, 381.39]}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "1", "page": 67, "bbox": [490.71, 335.37, 534.47, 381.39]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "CHANGED PORT ATTRIBUTE - An internal state of the\nport specified by the affected Port_ID has changed. The\nchange of state is identified in a protocol specific manner.", "page": 67, "bbox": [101.47, 381.39, 356.47, 427.35]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "0", "page": 67, "bbox": [356.47, 381.39, 400.53, 427.35]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "0", "page": 67, "bbox": [400.53, 381.39, 444.48, 427.35]}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "1", "page": 67, "bbox": [444.48, 381.39, 490.71, 427.35]}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "0", "page": 67, "bbox": [490.71, 381.39, 534.47, 427.35]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "CHANGED SERVICE OBJECT - An object maintained by\nthe service identified by the well-known address contained\nin affected Port_ID has changed state. This Event\nQualifier value shall not be used by services accessed\nthrough N_Port_ID that are not well-known addresses.", "page": 67, "bbox": [101.47, 427.35, 356.47, 497.37]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "0", "page": 67, "bbox": [356.47, 427.35, 400.53, 497.37]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "0", "page": 67, "bbox": [400.53, 427.35, 444.48, 497.37]}
+{"cell_id": "r6c4", "row": 6, "col": 4, "text": "1", "page": 67, "bbox": [444.48, 427.35, 490.71, 497.37]}
+{"cell_id": "r6c5", "row": 6, "col": 5, "text": "1", "page": 67, "bbox": [490.71, 427.35, 534.47, 497.37]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "CHANGED SWITCH CONFIGURATION - Switch\nconfiguration has changed for the area or domain\nspecified by the affected Port_ID.", "page": 67, "bbox": [101.47, 497.37, 356.47, 543.39]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "0", "page": 67, "bbox": [356.47, 497.37, 400.53, 543.39]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "1", "page": 67, "bbox": [400.53, 497.37, 444.48, 543.39]}
+{"cell_id": "r7c4", "row": 7, "col": 4, "text": "0", "page": 67, "bbox": [444.48, 497.37, 490.71, 543.39]}
+{"cell_id": "r7c5", "row": 7, "col": 5, "text": "0", "page": 67, "bbox": [490.71, 497.37, 534.47, 543.39]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "REMOVED OBJECT - The port, area or domain indicated\nby the affected Port_ID is no longer accessible on the\nFabric.", "page": 67, "bbox": [101.47, 543.39, 356.47, 589.66]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "0", "page": 67, "bbox": [356.47, 543.39, 400.53, 589.66]}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "1", "page": 67, "bbox": [400.53, 543.39, 444.48, 589.66]}
+{"cell_id": "r8c4", "row": 8, "col": 4, "text": "0", "page": 67, "bbox": [444.48, 543.39, 490.71, 589.66]}
+{"cell_id": "r8c5", "row": 8, "col": 5, "text": "1", "page": 67, "bbox": [490.71, 543.39, 534.47, 589.66]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "Reserved", "page": 67, "bbox": [101.47, 589.66, 356.47, 611.04]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "All Other Values", "page": 67, "bbox": [356.47, 589.66, 534.47, 611.04]}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r9c4", "row": 9, "col": 4, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r9c5", "row": 9, "col": 5, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}

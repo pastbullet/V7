@@ -1,0 +1,1096 @@
+{
+  "checklist_id": "fc_ls_flogi_table149_v1",
+  "checklist_title": "FC-LS FLOGI + Table 149 reading acceptance checklist",
+  "status": "failed",
+  "score": 0.76,
+  "passed_count": 38,
+  "total_count": 50,
+  "by_category": {
+    "flogi_functions": {
+      "passed": 5,
+      "total": 7
+    },
+    "request_setup": {
+      "passed": 4,
+      "total": 4
+    },
+    "response_branches": {
+      "passed": 7,
+      "total": 10
+    },
+    "completion_conditions": {
+      "passed": 6,
+      "total": 6
+    },
+    "sof_relogin": {
+      "passed": 3,
+      "total": 4
+    },
+    "table149_payload": {
+      "passed": 12,
+      "total": 18
+    },
+    "vf_evfp_coverage": {
+      "passed": 1,
+      "total": 1
+    }
+  },
+  "cite_pages": [
+    36,
+    37,
+    152,
+    153,
+    154,
+    155,
+    156,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    179,
+    193,
+    203,
+    204,
+    205,
+    206
+  ],
+  "retrieved_pages": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    179,
+    193,
+    203,
+    204,
+    205,
+    206
+  ],
+  "items": [
+    {
+      "id": "flogi_function_detect_fabric",
+      "category": "flogi_functions",
+      "description": "FLOGI detects whether a Fabric exists.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        153
+      ],
+      "matched_cite_pages": [
+        153
+      ],
+      "matched_retrieved_pages": [
+        153
+      ]
+    },
+    {
+      "id": "flogi_function_get_fabric_params_names",
+      "category": "flogi_functions",
+      "description": "FLOGI obtains Fabric operating characteristics, F_Port_Name, and Fabric_Name.",
+      "status": "failed",
+      "coverage_pass": false,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [
+        "Fabric operating characteristics"
+      ],
+      "expected_cite_pages": [
+        153
+      ],
+      "matched_cite_pages": [
+        153
+      ],
+      "matched_retrieved_pages": [
+        153
+      ]
+    },
+    {
+      "id": "flogi_function_send_nx_params_names",
+      "category": "flogi_functions",
+      "description": "FLOGI provides Nx_Port operating characteristics, N_Port_Name, and Node_Name to the Fabric.",
+      "status": "failed",
+      "coverage_pass": false,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [
+        "Nx_Port characteristics"
+      ],
+      "expected_cite_pages": [
+        153
+      ],
+      "matched_cite_pages": [
+        153
+      ],
+      "matched_retrieved_pages": [
+        153
+      ]
+    },
+    {
+      "id": "flogi_function_assign_confirm_n_port_id",
+      "category": "flogi_functions",
+      "description": "FLOGI lets Fabric assign or confirm the originator N_Port_ID.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        153
+      ],
+      "matched_cite_pages": [
+        153
+      ],
+      "matched_retrieved_pages": [
+        153
+      ]
+    },
+    {
+      "id": "flogi_function_initialize_bb_credit",
+      "category": "flogi_functions",
+      "description": "FLOGI initializes buffer-to-buffer Credit.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        153,
+        156
+      ],
+      "matched_cite_pages": [
+        153,
+        156
+      ],
+      "matched_retrieved_pages": [
+        153,
+        156
+      ]
+    },
+    {
+      "id": "flogi_function_authentication_entry",
+      "category": "flogi_functions",
+      "description": "FLOGI can enable subsequent Nx_Port-to-Fabric Authentication when both support it.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        153
+      ],
+      "matched_cite_pages": [
+        153
+      ],
+      "matched_retrieved_pages": [
+        153
+      ]
+    },
+    {
+      "id": "flogi_function_virtual_fabrics_entry",
+      "category": "flogi_functions",
+      "description": "FLOGI can enable subsequent Virtual Fabrics parameter negotiation when both support it.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        153
+      ],
+      "matched_cite_pages": [
+        153
+      ],
+      "matched_retrieved_pages": [
+        153
+      ]
+    },
+    {
+      "id": "flogi_request_new_exchange_oxid",
+      "category": "request_setup",
+      "description": "Explicit Fabric Login sends FLOGI in a new Exchange and the Nx_Port assigns OX_ID.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        153
+      ],
+      "matched_cite_pages": [
+        153
+      ],
+      "matched_retrieved_pages": [
+        153
+      ]
+    },
+    {
+      "id": "flogi_request_d_id",
+      "category": "request_setup",
+      "description": "FLOGI D_ID is the well-known F_Port address FFFFFEh.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        153
+      ],
+      "matched_cite_pages": [
+        153
+      ],
+      "matched_retrieved_pages": [
+        153
+      ]
+    },
+    {
+      "id": "flogi_request_s_id_zero",
+      "category": "request_setup",
+      "description": "S_ID 000000h requests assignment of all 24 bits of N_Port_ID.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        153
+      ],
+      "matched_cite_pages": [
+        153
+      ],
+      "matched_retrieved_pages": [
+        153
+      ]
+    },
+    {
+      "id": "flogi_request_s_id_yy",
+      "category": "request_setup",
+      "description": "S_ID 0000h||YY requests upper 16 bits and validation of lower 8 bits / AL_PA.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        153
+      ],
+      "matched_cite_pages": [
+        153
+      ],
+      "matched_retrieved_pages": [
+        153
+      ]
+    },
+    {
+      "id": "response_ls_acc_fabric",
+      "category": "response_branches",
+      "description": "LS_ACC with N_Port/F_Port bit 1 is normal Fabric success and returns assigned/confirmed D_ID plus Fabric parameters/names.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        154
+      ],
+      "matched_cite_pages": [
+        154
+      ],
+      "matched_retrieved_pages": [
+        154
+      ]
+    },
+    {
+      "id": "response_ls_acc_point_to_point",
+      "category": "response_branches",
+      "description": "LS_ACC with N_Port/F_Port bit 0 means point-to-point Nx_Port; compare N_Port_Name to decide PLOGI originator.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        154,
+        155
+      ],
+      "matched_cite_pages": [
+        154,
+        155
+      ],
+      "matched_retrieved_pages": [
+        154,
+        155
+      ]
+    },
+    {
+      "id": "response_f_bsy",
+      "category": "response_branches",
+      "description": "F_BSY means Fabric busy and FLOGI may be retried later.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        154
+      ],
+      "matched_cite_pages": [
+        154
+      ],
+      "matched_retrieved_pages": [
+        154
+      ]
+    },
+    {
+      "id": "response_p_bsy",
+      "category": "response_branches",
+      "description": "P_BSY means point-to-point Nx_Port busy; continue N_Port Login after delay.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        154
+      ],
+      "matched_cite_pages": [
+        154
+      ],
+      "matched_retrieved_pages": [
+        154
+      ]
+    },
+    {
+      "id": "response_f_rjt_class_not_supported",
+      "category": "response_branches",
+      "description": "F_RJT with Class not supported can retry FLOGI with another class/SOF.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        154,
+        155,
+        156
+      ],
+      "matched_cite_pages": [
+        154,
+        155,
+        156
+      ],
+      "matched_retrieved_pages": [
+        154,
+        155,
+        156
+      ]
+    },
+    {
+      "id": "response_f_rjt_invalid_s_id",
+      "category": "response_branches",
+      "description": "F_RJT with Invalid S_ID can retry using another S_ID form.",
+      "status": "failed",
+      "coverage_pass": false,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [
+        "retry S_ID"
+      ],
+      "expected_cite_pages": [
+        154
+      ],
+      "matched_cite_pages": [
+        154
+      ],
+      "matched_retrieved_pages": [
+        154
+      ]
+    },
+    {
+      "id": "response_p_rjt",
+      "category": "response_branches",
+      "description": "P_RJT is point-to-point rejection and Class not supported can continue N_Port Login with another class.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        154
+      ],
+      "matched_cite_pages": [
+        154
+      ],
+      "matched_retrieved_pages": [
+        154
+      ]
+    },
+    {
+      "id": "response_ls_rjt",
+      "category": "response_branches",
+      "description": "LS_RJT handling depends on reason code and may modify Service Parameters before retrying FLOGI.",
+      "status": "failed",
+      "coverage_pass": false,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [
+        "reason code"
+      ],
+      "expected_cite_pages": [
+        155
+      ],
+      "matched_cite_pages": [
+        155
+      ],
+      "matched_retrieved_pages": [
+        155
+      ]
+    },
+    {
+      "id": "response_no_response",
+      "category": "response_branches",
+      "description": "No response means possible physical transmission error; perform FC-FS-2 recovery and retry FLOGI.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        155
+      ],
+      "matched_cite_pages": [
+        155
+      ],
+      "matched_retrieved_pages": [
+        155
+      ]
+    },
+    {
+      "id": "response_self_connection",
+      "category": "response_branches",
+      "description": "If the received N_Port_Name equals the originator's own N_Port_Name, the port is connected to itself and FLOGI is discarded/out of scope.",
+      "status": "failed",
+      "coverage_pass": false,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [
+        "self N_Port_Name"
+      ],
+      "expected_cite_pages": [
+        155
+      ],
+      "matched_cite_pages": [
+        155
+      ],
+      "matched_retrieved_pages": [
+        155
+      ]
+    },
+    {
+      "id": "completion_originator_class1",
+      "category": "completion_conditions",
+      "description": "Originator completes Class 1 Fabric Login after transmitting ACK to LS_ACC with EOFt or EOFdt.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        156
+      ],
+      "matched_cite_pages": [
+        156
+      ],
+      "matched_retrieved_pages": [
+        156
+      ]
+    },
+    {
+      "id": "completion_originator_class2",
+      "category": "completion_conditions",
+      "description": "Originator completes Class 2 Fabric Login after transmitting ACK to LS_ACC with EOFt.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        156
+      ],
+      "matched_cite_pages": [
+        156
+      ],
+      "matched_retrieved_pages": [
+        156
+      ]
+    },
+    {
+      "id": "completion_originator_class3",
+      "category": "completion_conditions",
+      "description": "Originator completes Class 3 Fabric Login when LS_ACC is received.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        156
+      ],
+      "matched_cite_pages": [
+        156
+      ],
+      "matched_retrieved_pages": [
+        156
+      ]
+    },
+    {
+      "id": "completion_responder_class1",
+      "category": "completion_conditions",
+      "description": "Responder completes Class 1 Fabric Login after receiving ACK to LS_ACC with EOFt or EOFdt.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        156
+      ],
+      "matched_cite_pages": [
+        156
+      ],
+      "matched_retrieved_pages": [
+        156
+      ]
+    },
+    {
+      "id": "completion_responder_class2",
+      "category": "completion_conditions",
+      "description": "Responder completes Class 2 Fabric Login after receiving ACK to LS_ACC with EOFt.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        156
+      ],
+      "matched_cite_pages": [
+        156
+      ],
+      "matched_retrieved_pages": [
+        156
+      ]
+    },
+    {
+      "id": "completion_responder_class3",
+      "category": "completion_conditions",
+      "description": "Responder completes Class 3 Fabric Login after transmitting LS_ACC.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        156
+      ],
+      "matched_cite_pages": [
+        156
+      ],
+      "matched_retrieved_pages": [
+        156
+      ]
+    },
+    {
+      "id": "sof_class_scope",
+      "category": "sof_relogin",
+      "description": "Fabric Login only uses Class 1/2/3; Class 6 is not allowed.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        155
+      ],
+      "matched_cite_pages": [
+        155
+      ],
+      "matched_retrieved_pages": [
+        155
+      ]
+    },
+    {
+      "id": "sof_sofc1_sofi1",
+      "category": "sof_relogin",
+      "description": "SOFc1 may be used for Fabric Login/Relogin; SOFi1 shall not be used.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        155
+      ],
+      "matched_cite_pages": [
+        155
+      ],
+      "matched_retrieved_pages": [
+        155
+      ]
+    },
+    {
+      "id": "relogin_same_identity",
+      "category": "sof_relogin",
+      "description": "If new N_Port_ID, F_Port_Name, and Fabric_Name are the same as before, the Nx_Port may continue existing operations.",
+      "status": "failed",
+      "coverage_pass": false,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [
+        "continue operations"
+      ],
+      "expected_cite_pages": [
+        155
+      ],
+      "matched_cite_pages": [
+        155
+      ],
+      "matched_retrieved_pages": [
+        155
+      ]
+    },
+    {
+      "id": "relogin_changed_identity_implicit_logout_ra_tov",
+      "category": "sof_relogin",
+      "description": "If N_Port_ID, F_Port_Name, or Fabric_Name changes, Nx_Port performs implicit logout for all Nx_Ports and waits R_A_TOV before communication.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        155
+      ],
+      "matched_cite_pages": [
+        155
+      ],
+      "matched_retrieved_pages": [
+        155
+      ]
+    },
+    {
+      "id": "table149_scope",
+      "category": "table149_payload",
+      "description": "Table 149 defines the payload format for FLOGI, PLOGI, and LS_ACC.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        165,
+        166
+      ],
+      "matched_cite_pages": [
+        165,
+        166
+      ],
+      "matched_retrieved_pages": [
+        165,
+        166
+      ]
+    },
+    {
+      "id": "table149_word0",
+      "category": "table149_payload",
+      "description": "Word 0 is ELS_Command code.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        166
+      ],
+      "matched_cite_pages": [
+        166
+      ],
+      "matched_retrieved_pages": [
+        166
+      ]
+    },
+    {
+      "id": "table149_words1_4",
+      "category": "table149_payload",
+      "description": "Words 1-4 are Common Service Parameters (16 bytes).",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        166
+      ],
+      "matched_cite_pages": [
+        166
+      ],
+      "matched_retrieved_pages": [
+        166
+      ]
+    },
+    {
+      "id": "table149_words5_6",
+      "category": "table149_payload",
+      "description": "Words 5-6 are Port_Name.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        166
+      ],
+      "matched_cite_pages": [
+        166
+      ],
+      "matched_retrieved_pages": [
+        166
+      ]
+    },
+    {
+      "id": "table149_words7_8",
+      "category": "table149_payload",
+      "description": "Words 7-8 are Node_Name or Fabric_Name.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        166
+      ],
+      "matched_cite_pages": [
+        166
+      ],
+      "matched_retrieved_pages": [
+        166
+      ]
+    },
+    {
+      "id": "table149_words9_12",
+      "category": "table149_payload",
+      "description": "Words 9-12 are Class 1 and Class 6 Service Parameters.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        166
+      ],
+      "matched_cite_pages": [
+        166
+      ],
+      "matched_retrieved_pages": [
+        166
+      ]
+    },
+    {
+      "id": "table149_class6_uses_class1",
+      "category": "table149_payload",
+      "description": "Class 6 has no separate login Service Parameters; Class 1 parameters are used instead.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        165
+      ],
+      "matched_cite_pages": [
+        165
+      ],
+      "matched_retrieved_pages": [
+        165
+      ]
+    },
+    {
+      "id": "table149_words13_16",
+      "category": "table149_payload",
+      "description": "Words 13-16 are Class 2 Service Parameters.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        166
+      ],
+      "matched_cite_pages": [
+        166
+      ],
+      "matched_retrieved_pages": [
+        166
+      ]
+    },
+    {
+      "id": "table149_words17_20",
+      "category": "table149_payload",
+      "description": "Words 17-20 are Class 3 Service Parameters.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        166
+      ],
+      "matched_cite_pages": [
+        166
+      ],
+      "matched_retrieved_pages": [
+        166
+      ]
+    },
+    {
+      "id": "table149_words21_24",
+      "category": "table149_payload",
+      "description": "Words 21-24 are Obsolete.",
+      "status": "failed",
+      "coverage_pass": false,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [
+        "Words 21-24",
+        "Obsolete"
+      ],
+      "expected_cite_pages": [
+        166
+      ],
+      "matched_cite_pages": [
+        166
+      ],
+      "matched_retrieved_pages": [
+        166
+      ]
+    },
+    {
+      "id": "table149_words25_28",
+      "category": "table149_payload",
+      "description": "Words 25-28 are Vendor Version Level (16 bytes).",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        166
+      ],
+      "matched_cite_pages": [
+        166
+      ],
+      "matched_retrieved_pages": [
+        166
+      ]
+    },
+    {
+      "id": "table149_words29_30",
+      "category": "table149_payload",
+      "description": "Words 29-30 are Services Availability and only present when Payload Bit is 1.",
+      "status": "failed",
+      "coverage_pass": false,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [
+        "Words 29-30"
+      ],
+      "expected_cite_pages": [
+        166
+      ],
+      "matched_cite_pages": [
+        166
+      ],
+      "matched_retrieved_pages": [
+        166
+      ]
+    },
+    {
+      "id": "table149_word31",
+      "category": "table149_payload",
+      "description": "Word 31 is Login Extension Data Length and only present when Payload Bit is 1.",
+      "status": "failed",
+      "coverage_pass": false,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [
+        "Word 31"
+      ],
+      "expected_cite_pages": [
+        166
+      ],
+      "matched_cite_pages": [
+        166
+      ],
+      "matched_retrieved_pages": [
+        166
+      ]
+    },
+    {
+      "id": "table149_words32_61",
+      "category": "table149_payload",
+      "description": "Words 32-61 are Reserved in the Payload-Bit extension area.",
+      "status": "failed",
+      "coverage_pass": false,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [
+        "Words 32-61"
+      ],
+      "expected_cite_pages": [
+        166
+      ],
+      "matched_cite_pages": [
+        166
+      ],
+      "matched_retrieved_pages": [
+        166
+      ]
+    },
+    {
+      "id": "table149_words62_63",
+      "category": "table149_payload",
+      "description": "Words 62-63 are Clock Synchronization QoS and only present when Payload Bit is 1.",
+      "status": "failed",
+      "coverage_pass": false,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [
+        "Words 62-63"
+      ],
+      "expected_cite_pages": [
+        166
+      ],
+      "matched_cite_pages": [
+        166
+      ],
+      "matched_retrieved_pages": [
+        166
+      ]
+    },
+    {
+      "id": "table149_words64_to_n",
+      "category": "table149_payload",
+      "description": "Words 64-n are Login Extension Data if any.",
+      "status": "failed",
+      "coverage_pass": false,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [
+        "Words 64-n"
+      ],
+      "expected_cite_pages": [
+        166
+      ],
+      "matched_cite_pages": [
+        166
+      ],
+      "matched_retrieved_pages": [
+        166
+      ]
+    },
+    {
+      "id": "table149_payload_bit_zero_length",
+      "category": "table149_payload",
+      "description": "When Payload Bit is 0, extension fields are absent and the payload is 116 bytes long.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        166
+      ],
+      "matched_cite_pages": [
+        166
+      ],
+      "matched_retrieved_pages": [
+        166
+      ]
+    },
+    {
+      "id": "table149_payload_bit_one_variable",
+      "category": "table149_payload",
+      "description": "When Payload Bit is 1, extension fields such as Services Availability, Clock Synchronization QoS, and Login Extension Data may be present.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        166
+      ],
+      "matched_cite_pages": [
+        166
+      ],
+      "matched_retrieved_pages": [
+        166
+      ]
+    },
+    {
+      "id": "vf_evfp_support_pages",
+      "category": "vf_evfp_coverage",
+      "description": "Long FLOGI reading should follow the Virtual Fabrics / EVFP dependency rather than only mention VF from page 153.",
+      "status": "passed",
+      "coverage_pass": true,
+      "cite_page_pass": true,
+      "retrieved_page_pass": true,
+      "missing_groups": [],
+      "expected_cite_pages": [
+        203,
+        204,
+        205,
+        206
+      ],
+      "matched_cite_pages": [
+        203,
+        204,
+        205,
+        206
+      ],
+      "matched_retrieved_pages": [
+        203,
+        204,
+        205,
+        206
+      ]
+    }
+  ]
+}

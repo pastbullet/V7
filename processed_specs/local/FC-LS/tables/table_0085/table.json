@@ -1,0 +1,53 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "FACT (31h)",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "Alias_ID",
+      null,
+      null,
+      null
+    ],
+    [
+      "2",
+      "NP_List_Length\n(Number of NP_List entries = n)",
+      null,
+      null,
+      null
+    ],
+    [
+      "3",
+      "NP_List (1)",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      "..",
+      null,
+      null,
+      null
+    ],
+    [
+      "2 + n",
+      "NP_List (n)",
+      null,
+      null,
+      null
+    ]
+  ]
+}

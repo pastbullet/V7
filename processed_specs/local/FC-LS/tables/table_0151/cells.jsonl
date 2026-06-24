@@ -1,0 +1,30 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Encoded Value\n(Bits 23-16)", "page": 147, "bbox": [98.31, 327.84, 180.52, 361.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Description", "page": 147, "bbox": [180.52, 327.84, 333.63, 361.32]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Explanation", "page": 147, "bbox": [333.63, 327.84, 537.69, 361.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "01h", "page": 147, "bbox": [98.31, 361.32, 180.52, 395.37]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Invalid ELS_Command code", "page": 147, "bbox": [180.52, 361.32, 333.63, 395.37]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "The ELS_Command code in the Sequence\nbeing rejected is invalid.", "page": 147, "bbox": [333.63, 361.32, 537.69, 395.37]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "03h", "page": 147, "bbox": [98.31, 395.37, 180.52, 453.39]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Logical error", "page": 147, "bbox": [180.52, 395.37, 333.63, 453.39]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "The request identified by the ELS_Command\ncode and Payload content is invalid or\nlogically inconsistent for the conditions\npresent.", "page": 147, "bbox": [333.63, 395.37, 537.69, 453.39]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "05h", "page": 147, "bbox": [98.31, 453.39, 180.52, 487.35]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Logical busy", "page": 147, "bbox": [180.52, 453.39, 333.63, 487.35]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "The Link Service is logically busy and unable\nto process the request at this time.", "page": 147, "bbox": [333.63, 453.39, 537.69, 487.35]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "07h", "page": 147, "bbox": [98.31, 487.35, 180.52, 533.37]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Protocol error", "page": 147, "bbox": [180.52, 487.35, 333.63, 533.37]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "This indicates that an error has been detected\nthat violates the rules of the ELS Protocol that\nare not specified by other error codes.", "page": 147, "bbox": [333.63, 487.35, 537.69, 533.37]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "09h", "page": 147, "bbox": [98.31, 533.37, 180.52, 567.39]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "Unable to perform command\nrequest", "page": 147, "bbox": [180.52, 533.37, 333.63, 567.39]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "The Recipient of a Link Service command is\nunable to perform the request at this time.", "page": 147, "bbox": [333.63, 533.37, 537.69, 567.39]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "0Bh", "page": 147, "bbox": [98.31, 567.39, 180.52, 601.35]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "Command not supported", "page": 147, "bbox": [180.52, 567.39, 333.63, 601.35]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "The Recipient of a Link Service command\ndoes not support the command requested.", "page": 147, "bbox": [333.63, 567.39, 537.69, 601.35]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "0Eh", "page": 147, "bbox": [98.31, 601.35, 180.52, 625.35]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "Command already in progress", "page": 147, "bbox": [180.52, 601.35, 333.63, 625.35]}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "", "page": 147, "bbox": [333.63, 601.35, 537.69, 625.35]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "FFh", "page": 147, "bbox": [98.31, 625.35, 180.52, 659.37]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "Vendor specific error (See bits 7-0)", "page": 147, "bbox": [180.52, 625.35, 333.63, 659.37]}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "The Vendor specific error bits may be used by\nVendors to specify additional reason codes.", "page": 147, "bbox": [333.63, 625.35, 537.69, 659.37]}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "Others", "page": 147, "bbox": [98.31, 659.37, 180.52, 682.84]}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "Reserved", "page": 147, "bbox": [180.52, 659.37, 333.63, 682.84]}
+{"cell_id": "r10c3", "row": 10, "col": 3, "text": "", "page": 147, "bbox": [333.63, 659.37, 537.69, 682.84]}

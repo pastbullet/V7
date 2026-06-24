@@ -1,0 +1,632 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 194,
+  "spans": [
+    {
+      "span_id": "p194_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0002",
+      "text": " 175",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0003",
+      "text": "When sent to the Fabric during FLOGI, these bits indicate the accuracy that the Fabric is requested",
+      "bbox": [
+        96.0,
+        57.65,
+        539.97,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0004",
+      "text": "to maintain in passing along to the clients the clock synchronization value it receives from the Clock",
+      "bbox": [
+        96.0,
+        69.65,
+        540.06,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0005",
+      "text": "Synchronization Server (FFFFF6h).",
+      "bbox": [
+        96.0,
+        81.65,
+        253.14,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0006",
+      "text": "When sent to the Clock Synchronization Server (FFFFF6h), these bits indicate the requested accura-",
+      "bbox": [
+        96.0,
+        106.97,
+        540.14,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0007",
+      "text": "cy of the clock synchronization value as it leaves the server port.",
+      "bbox": [
+        96.0,
+        118.97,
+        380.94,
+        130.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0008",
+      "text": "When received from the Clock Synchronization Server (i.e., FFFFF6h), these bits indicate the accu-",
+      "bbox": [
+        96.0,
+        142.96,
+        540.06,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0009",
+      "text": "racy of the clock synchronization value as it leaves the server port.  Specifically, the server shall sup-",
+      "bbox": [
+        96.0,
+        154.96,
+        540.08,
+        166.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0010",
+      "text": "ply a CS_Accuracy value such that the Clock Synchronization value is always within the range of:",
+      "bbox": [
+        96.0,
+        166.96,
+        525.9,
+        178.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0011",
+      "text": "T_reference ",
+      "bbox": [
+        120.0,
+        190.96,
+        176.66,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0012",
+      "text": "±",
+      "bbox": [
+        176.64,
+        189.97,
+        182.1,
+        202.16
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p194_s0013",
+      "text": " (0.5 + CS_Accuracy_Mantissa  * 2",
+      "bbox": [
+        182.16,
+        190.96,
+        337.34,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p194_s0014",
+      "text": "-4",
+      "bbox": [
+        337.38,
+        188.8,
+        344.52,
+        197.7
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p194_s0015",
+      "text": ")* 2",
+      "bbox": [
+        344.52,
+        190.97,
+        360.01,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 5
+    },
+    {
+      "span_id": "p194_s0016",
+      "text": "(CS_Accuracy_Exponent-30)",
+      "bbox": [
+        360.06,
+        186.49,
+        484.32,
+        197.21
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 6
+    },
+    {
+      "span_id": "p194_s0017",
+      "text": ",",
+      "bbox": [
+        484.32,
+        190.97,
+        487.09,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 7
+    },
+    {
+      "span_id": "p194_s0018",
+      "text": "where",
+      "bbox": [
+        120.0,
+        214.97,
+        147.19,
+        226.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0019",
+      "text": "a) T_reference is the clock reference value internal to the server ",
+      "bbox": [
+        106.02,
+        238.97,
+        396.87,
+        250.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0020",
+      "text": "b) CS_Accuracy_Mantissa is a value from 000b to 111b'",
+      "bbox": [
+        106.02,
+        262.97,
+        359.24,
+        274.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0021",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        286.96,
+        114.34,
+        298.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0022",
+      "text": "CS_Accuracy_Exponent is a value from 00000b to 11111b'",
+      "bbox": [
+        122.37,
+        286.96,
+        383.69,
+        298.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0023",
+      "text": "Example #1, if CS_Accuracy Mantissa and Exponent are set to 001b and 01011b, respectively, the",
+      "bbox": [
+        96.0,
+        310.96,
+        539.85,
+        322.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0024",
+      "text": "Clock Synchronization value as it exits the server shall always be within the range of: ",
+      "bbox": [
+        96.0,
+        322.96,
+        473.73,
+        334.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0025",
+      "text": "T_reference ",
+      "bbox": [
+        120.0,
+        346.96,
+        176.66,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0026",
+      "text": "± ",
+      "bbox": [
+        176.64,
+        345.97,
+        184.64,
+        358.16
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p194_s0027",
+      "text": "1,073 ",
+      "bbox": [
+        184.62,
+        346.96,
+        212.42,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p194_s0028",
+      "text": "μ",
+      "bbox": [
+        212.4,
+        345.97,
+        218.14,
+        358.16
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p194_s0029",
+      "text": "sec",
+      "bbox": [
+        218.16,
+        346.96,
+        233.7,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 5
+    },
+    {
+      "span_id": "p194_s0030",
+      "text": "Example #2, if CS_Accuracy Mantissa and Exponent are set to 111b and 11000b, respectively, the",
+      "bbox": [
+        96.0,
+        370.96,
+        539.85,
+        382.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0031",
+      "text": "Clock Synchronization value as it exits the server shall always be within the range of:",
+      "bbox": [
+        96.0,
+        382.96,
+        470.99,
+        394.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0032",
+      "text": "T_reference ",
+      "bbox": [
+        120.0,
+        406.96,
+        176.66,
+        418.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0033",
+      "text": "± ",
+      "bbox": [
+        176.64,
+        405.97,
+        184.64,
+        418.16
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p194_s0034",
+      "text": "14,65 msec",
+      "bbox": [
+        184.62,
+        406.96,
+        236.26,
+        418.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p194_s0035",
+      "text": "6.6.9.1.4  Clock Synchronization Implemented MSB",
+      "bbox": [
+        96.0,
+        430.96,
+        337.64,
+        442.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0036",
+      "text": "The Clock Synchronization Implemented MSB field (word 62, bits 13 - 8) is a 6-bit value.  Word 62,",
+      "bbox": [
+        96.0,
+        454.96,
+        539.98,
+        466.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0037",
+      "text": "bits 15-14 are reserved and shall be set to zero.",
+      "bbox": [
+        96.0,
+        466.96,
+        307.61,
+        478.08
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0038",
+      "text": "When sent to the Clock Synchronization Server (i.e., FFFFF6h) during PLOGI, these bits indicate the",
+      "bbox": [
+        96.0,
+        490.96,
+        540.02,
+        502.08
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0039",
+      "text": "requested most significant bit position within the 64-bit Clock Count field in the CSU ELS Payload.",
+      "bbox": [
+        96.0,
+        502.96,
+        528.23,
+        514.08
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0040",
+      "text": "When received from the Clock Synchronization Server (i.e., FFFFF6h) this field represents the most",
+      "bbox": [
+        96.0,
+        526.96,
+        540.0,
+        538.08
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0041",
+      "text": "significant bit position within the 64-bit Clock Count field that contains meaningful information.",
+      "bbox": [
+        96.0,
+        538.96,
+        508.11,
+        550.08
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0042",
+      "text": "NOTE 20 – The value in the Clock Count field shall wrap around to zero when an overflow occurs from the",
+      "bbox": [
+        105.0,
+        563.17,
+        540.11,
+        573.22
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0043",
+      "text": "Clock Synchronization Implemented MSB.",
+      "bbox": [
+        105.0,
+        574.22,
+        272.8,
+        584.26
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0044",
+      "text": "(e.g., a value of 110111b indicates that the MSB of byte 1 of the Clock Count field is the highest bit",
+      "bbox": [
+        96.0,
+        598.97,
+        539.96,
+        610.08
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0045",
+      "text": "that contains meaningful information).",
+      "bbox": [
+        96.0,
+        610.97,
+        262.67,
+        622.08
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0046",
+      "text": "6.6.9.1.5  Clock Synchronization Implemented LSB",
+      "bbox": [
+        96.0,
+        635.03,
+        335.48,
+        646.14
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0047",
+      "text": "The Clock Synchronization Implemented LSB field (word 62, bits 13 - 8) field is a 6-bit value.  Word",
+      "bbox": [
+        96.0,
+        659.03,
+        539.91,
+        670.14
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p194_s0048",
+      "text": "62, bits 7-6 are reserved and shall be set to zero.",
+      "bbox": [
+        96.0,
+        671.03,
+        313.2,
+        682.14
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

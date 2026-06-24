@@ -1,0 +1,1142 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 114,
+  "spans": [
+    {
+      "span_id": "p114_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0002",
+      "text": " 95",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0003",
+      "text": "4.2.35.3  Request Sequence",
+      "bbox": [
+        96.0,
+        57.65,
+        227.06,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0004",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        81.65,
+        157.1,
+        92.76
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0005",
+      "text": "The S_ID field designates the source Nx_Port requesting Clock Synchronization up-",
+      "bbox": [
+        157.08,
+        81.65,
+        540.17,
+        92.76
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p114_s0006",
+      "text": "dates.  The D_ID field designates either the Clock Synchronization Server (FFFFF6h) or the Fabric",
+      "bbox": [
+        96.0,
+        93.65,
+        539.91,
+        104.76
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0007",
+      "text": "Controller (FFFFFDh).",
+      "bbox": [
+        96.0,
+        105.64,
+        194.83,
+        116.76
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0008",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        129.64,
+        140.41,
+        140.76
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0009",
+      "text": "The format of the Payload is shown in table 95.",
+      "bbox": [
+        140.4,
+        129.64,
+        348.7,
+        140.76
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p114_s0010",
+      "text": "a)",
+      "bbox": [
+        106.02,
+        286.96,
+        114.91,
+        298.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0011",
+      "text": " Clock Sync Mode:",
+      "bbox": [
+        114.91,
+        286.96,
+        209.07,
+        298.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p114_s0012",
+      "text": " The meaning of the Clock Sync Mode byte in the CSR Payload is defined",
+      "bbox": [
+        209.1,
+        286.96,
+        539.97,
+        298.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p114_s0013",
+      "text": "in table 96;",
+      "bbox": [
+        122.4,
+        298.96,
+        171.26,
+        310.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0014",
+      "text": "b)",
+      "bbox": [
+        106.02,
+        598.96,
+        114.91,
+        610.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0015",
+      "text": " CS_Accuracy (Mantissa and Exponent):",
+      "bbox": [
+        114.91,
+        598.96,
+        318.97,
+        610.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p114_s0016",
+      "text": " This field contains the CS_Accuracy_Mantissa",
+      "bbox": [
+        318.9,
+        598.96,
+        539.98,
+        610.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p114_s0017",
+      "text": "(Bits 23-21) and CS_Accuracy_Exponent (Bits 20-16).These bits indicate the requested accu-",
+      "bbox": [
+        122.4,
+        610.96,
+        540.06,
+        622.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0018",
+      "text": "racy of the Clock Synchronization value as it leaves the server port.  Specifically, the request is",
+      "bbox": [
+        122.4,
+        622.96,
+        540.03,
+        634.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0019",
+      "text": "that the Clock Count value is always within the range of:",
+      "bbox": [
+        122.4,
+        634.96,
+        370.13,
+        646.08
+      ],
+      "block_index": 7,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0020",
+      "text": "T_reference ",
+      "bbox": [
+        132.0,
+        659.02,
+        188.66,
+        670.14
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0021",
+      "text": "±",
+      "bbox": [
+        188.64,
+        658.03,
+        194.1,
+        670.22
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p114_s0022",
+      "text": " (0.5 + CS_Accuracy_Mantissa  * 2",
+      "bbox": [
+        194.16,
+        659.02,
+        349.34,
+        670.14
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p114_s0023",
+      "text": "-4",
+      "bbox": [
+        349.38,
+        656.8,
+        356.52,
+        665.7
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p114_s0024",
+      "text": ")* 2",
+      "bbox": [
+        356.52,
+        659.03,
+        372.01,
+        670.14
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 5
+    },
+    {
+      "span_id": "p114_s0025",
+      "text": "(CS_Accuracy_Exponent-30)",
+      "bbox": [
+        372.06,
+        656.8,
+        475.54,
+        665.7
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 6
+    },
+    {
+      "span_id": "p114_s0026",
+      "text": ",",
+      "bbox": [
+        475.62,
+        659.03,
+        478.39,
+        670.14
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 7
+    },
+    {
+      "span_id": "p114_s0027",
+      "text": "where",
+      "bbox": [
+        122.4,
+        683.03,
+        149.59,
+        694.14
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0028",
+      "text": " Table 95 – CSR Payload",
+      "bbox": [
+        259.98,
+        151.67,
+        376.11,
+        162.78
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0029",
+      "text": "Bits",
+      "bbox": [
+        119.4,
+        175.67,
+        138.02,
+        186.78
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0030",
+      "text": "Word",
+      "bbox": [
+        105.6,
+        187.67,
+        130.95,
+        198.78
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0031",
+      "text": "31        ..         24",
+      "bbox": [
+        153.66,
+        175.67,
+        228.65,
+        186.78
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0032",
+      "text": "23        ..       16",
+      "bbox": [
+        253.59,
+        175.67,
+        323.0,
+        186.78
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0033",
+      "text": "15         ..       08",
+      "bbox": [
+        353.04,
+        175.67,
+        425.21,
+        186.78
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0034",
+      "text": "07        ..       00",
+      "bbox": [
+        456.93,
+        175.67,
+        526.35,
+        186.78
+      ],
+      "block_index": 11,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0035",
+      "text": "0",
+      "bbox": [
+        115.5,
+        208.67,
+        121.04,
+        219.78
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0036",
+      "text": "CSR (68h)",
+      "bbox": [
+        167.58,
+        206.63,
+        214.8,
+        217.74
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0037",
+      "text": "00h",
+      "bbox": [
+        279.94,
+        206.63,
+        296.58,
+        217.74
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0038",
+      "text": "00h",
+      "bbox": [
+        380.8,
+        206.63,
+        397.5,
+        217.74
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0039",
+      "text": "00h",
+      "bbox": [
+        483.4,
+        206.63,
+        500.04,
+        217.74
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0040",
+      "text": "1",
+      "bbox": [
+        115.5,
+        233.63,
+        121.04,
+        244.74
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0041",
+      "text": "Clock Sync Mode",
+      "bbox": [
+        152.28,
+        227.63,
+        230.02,
+        238.74
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0042",
+      "text": "CS_Accuracy",
+      "bbox": [
+        258.08,
+        227.63,
+        318.59,
+        238.74
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0043",
+      "text": "CS_Implemented_M",
+      "bbox": [
+        343.67,
+        227.63,
+        434.64,
+        238.74
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0044",
+      "text": "SB",
+      "bbox": [
+        382.5,
+        239.63,
+        395.8,
+        250.74
+      ],
+      "block_index": 13,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0045",
+      "text": "CS_Implemented_L",
+      "bbox": [
+        447.6,
+        227.63,
+        535.92,
+        238.74
+      ],
+      "block_index": 13,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0046",
+      "text": "SB",
+      "bbox": [
+        485.1,
+        239.63,
+        498.4,
+        250.74
+      ],
+      "block_index": 13,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0047",
+      "text": "3",
+      "bbox": [
+        115.5,
+        258.65,
+        121.04,
+        269.76
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0048",
+      "text": "CS_Update_Period",
+      "bbox": [
+        299.22,
+        256.67,
+        385.32,
+        267.78
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0049",
+      "text": " Table 96 – CSR Clock Sync Mode Meaning",
+      "bbox": [
+        216.06,
+        320.98,
+        419.96,
+        332.1
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0050",
+      "text": "Value",
+      "bbox": [
+        115.68,
+        343.0,
+        141.84,
+        354.12
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0051",
+      "text": "When sent to the Clock Sync Server",
+      "bbox": [
+        173.14,
+        343.0,
+        344.18,
+        354.12
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0052",
+      "text": "When sent to the Fabric Controller",
+      "bbox": [
+        365.98,
+        343.0,
+        529.86,
+        354.12
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0053",
+      "text": "00h",
+      "bbox": [
+        120.42,
+        362.98,
+        137.05,
+        374.1
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0054",
+      "text": "Enable Clock Synchronization service to ",
+      "bbox": [
+        168.59,
+        362.98,
+        348.91,
+        374.1
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0055",
+      "text": "this client.  The CS_Accuracy, ",
+      "bbox": [
+        168.6,
+        374.98,
+        304.01,
+        386.1
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0056",
+      "text": "CS_Implemented_MSB, ",
+      "bbox": [
+        168.6,
+        386.98,
+        278.56,
+        398.1
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0057",
+      "text": "CS_Implemented_LSB, and ",
+      "bbox": [
+        168.6,
+        398.98,
+        295.23,
+        410.1
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0058",
+      "text": "CS_Update_Period fields are not ",
+      "bbox": [
+        168.6,
+        410.98,
+        317.47,
+        422.1
+      ],
+      "block_index": 17,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0059",
+      "text": "meaningful in the CSR Request.",
+      "bbox": [
+        168.6,
+        422.98,
+        311.3,
+        434.1
+      ],
+      "block_index": 17,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0060",
+      "text": "Return Quality of Service parameters.  ",
+      "bbox": [
+        357.84,
+        362.98,
+        530.39,
+        374.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0061",
+      "text": "The CS_Accuracy, ",
+      "bbox": [
+        357.84,
+        374.98,
+        443.18,
+        386.1
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0062",
+      "text": "CS_Implemented_MSB, ",
+      "bbox": [
+        357.84,
+        386.98,
+        467.8,
+        398.1
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0063",
+      "text": "CS_Implemented_LSB, and ",
+      "bbox": [
+        357.84,
+        398.98,
+        484.48,
+        410.1
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0064",
+      "text": "CS_Update_Period fields are not ",
+      "bbox": [
+        357.84,
+        410.98,
+        506.66,
+        422.1
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0065",
+      "text": "meaningful in the CSR Request.",
+      "bbox": [
+        357.84,
+        422.98,
+        500.48,
+        434.1
+      ],
+      "block_index": 18,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0066",
+      "text": "01h",
+      "bbox": [
+        120.42,
+        440.98,
+        137.05,
+        452.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0067",
+      "text": "Enable Clock Synchronization service to ",
+      "bbox": [
+        168.59,
+        440.98,
+        348.91,
+        452.1
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0068",
+      "text": "this client.  The CS_Accuracy, ",
+      "bbox": [
+        168.6,
+        452.98,
+        304.01,
+        464.1
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0069",
+      "text": "CS_Implemented_MSB, ",
+      "bbox": [
+        168.6,
+        464.98,
+        278.56,
+        476.1
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0070",
+      "text": "CS_Implemented_LSB, and ",
+      "bbox": [
+        168.6,
+        476.98,
+        295.23,
+        488.1
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0071",
+      "text": "CS_Update_Period fields contain the ",
+      "bbox": [
+        168.6,
+        488.98,
+        335.12,
+        500.1
+      ],
+      "block_index": 19,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0072",
+      "text": "requested Quality of Service ",
+      "bbox": [
+        168.6,
+        500.98,
+        296.91,
+        512.1
+      ],
+      "block_index": 19,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0073",
+      "text": "parameters.",
+      "bbox": [
+        168.6,
+        512.98,
+        221.78,
+        524.1
+      ],
+      "block_index": 19,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0074",
+      "text": "Return Quality of Service parameters.  ",
+      "bbox": [
+        357.84,
+        440.98,
+        530.39,
+        452.1
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0075",
+      "text": "The CS_Accuracy, ",
+      "bbox": [
+        357.84,
+        452.98,
+        443.18,
+        464.1
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0076",
+      "text": "CS_Implemented_MSB, ",
+      "bbox": [
+        357.84,
+        464.98,
+        467.8,
+        476.1
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0077",
+      "text": "CS_Implemented_LSB, and ",
+      "bbox": [
+        357.84,
+        476.98,
+        484.48,
+        488.1
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0078",
+      "text": "CS_Update_Period fields contain the ",
+      "bbox": [
+        357.84,
+        488.98,
+        524.34,
+        500.1
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0079",
+      "text": "requested Quality of Service ",
+      "bbox": [
+        357.84,
+        500.98,
+        486.12,
+        512.1
+      ],
+      "block_index": 20,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0080",
+      "text": "parameters.",
+      "bbox": [
+        357.84,
+        512.98,
+        411.02,
+        524.1
+      ],
+      "block_index": 20,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0081",
+      "text": "02h – FEh",
+      "bbox": [
+        105.72,
+        530.98,
+        151.84,
+        542.09
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0082",
+      "text": "Reserved",
+      "bbox": [
+        168.62,
+        530.98,
+        211.36,
+        542.09
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0083",
+      "text": "Reserved",
+      "bbox": [
+        357.86,
+        530.98,
+        400.61,
+        542.09
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0084",
+      "text": "FFh",
+      "bbox": [
+        119.88,
+        548.98,
+        137.61,
+        560.09
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0085",
+      "text": "Disable Clock Synchronization service to ",
+      "bbox": [
+        168.61,
+        548.98,
+        349.3,
+        560.09
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0086",
+      "text": "this client",
+      "bbox": [
+        168.6,
+        560.98,
+        210.31,
+        572.09
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p114_s0087",
+      "text": "Reserved",
+      "bbox": [
+        357.84,
+        548.98,
+        400.53,
+        560.09
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0098",
+    "table_0100"
+  ]
+}

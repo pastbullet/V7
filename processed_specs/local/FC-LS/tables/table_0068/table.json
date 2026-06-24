@@ -1,0 +1,44 @@
+{
+  "rows": [
+    [
+      "Value",
+      "Protocol",
+      "Reference"
+    ],
+    [
+      "00h",
+      "IP/UDP/SNMP",
+      "See RFC 791, RFC 2460, RFC 768, RFC 1157, and RFC 1901"
+    ],
+    [
+      "01h",
+      "IP/TCP/Telnet",
+      "See RFC 791, RFC 2460, RFC 793 and RFC 854"
+    ],
+    [
+      "02h",
+      "IP/TCP/HTTP",
+      "See RFC 791, RFC 2460, RFC 793, and RFC 2616"
+    ],
+    [
+      "03h",
+      "IP/TCP/HTTPS",
+      "See RFC 791, RFC 2460, RFC 793, and RFC 2818"
+    ],
+    [
+      "04h",
+      "IP/TCP/HTTP/X\nML",
+      "See RFC 791, RFC 2460, RFC 793, RFC 2616, CIMa, XMLb, CIM-\nXMLc, and CIM-HTTPd"
+    ],
+    [
+      "05h - FFh",
+      "Reserved",
+      ""
+    ],
+    [
+      "a Distributed Management Task Force, Common Information Model (CIM) in XML, Version 2.2, June 14,\n1999\nb World Wide Web consortium, Extensible Markup Language (XML) 1.0, Second Edition, October, 6, 2000\nc Distributed Management Task Force, Specification for the Representation of CIM in XML (CIM-XML),\nVersion 2.0, July 20, 1999\nd Distributed Management Task Force, Specification for CIM Operations over HTTP (CIM-HTTP), Version\n1.0, August 11, 1999",
+      null,
+      null
+    ]
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "status": "accepted",
+  "doc_id": "FC-LS.pdf",
+  "processed_doc_root": "processed_specs/local/FC-LS",
+  "bundle_dir": "bundles/fc_ls_flogi_live",
+  "summary": {
+    "passed": 8,
+    "failed": 0,
+    "total": 8
+  },
+  "checks": [
+    {
+      "id": "agent_prompt_tool_discipline",
+      "status": "passed",
+      "detail": "Agent-visible tools and prompts enforce SpecIndex reading order and raw evidence discipline.",
+      "evidence": {
+        "missing_tools": [],
+        "forbidden_tools": [],
+        "missing_prompt_terms": [],
+        "prompt_paths": [
+          "/Users/zwy/毕设/V7/src/agent/prompts/reading_claim_system.txt",
+          "/Users/zwy/毕设/V7/src/agent/prompts/unit_discovery_system.txt"
+        ]
+      }
+    },
+    {
+      "id": "processed_page_assets",
+      "status": "passed",
+      "detail": "Processed pages have page images, span ids, span bboxes, text, and page asset refs.",
+      "evidence": {
+        "page_count": 210,
+        "span_count": 12808,
+        "asset_ref_count": 204,
+        "missing": []
+      }
+    },
+    {
+      "id": "page_span_tool_shape",
+      "status": "passed",
+      "detail": "get_page_content exposes text_spans, asset_refs, page image, and metadata.",
+      "evidence": {
+        "keys": [
+          "asset_refs",
+          "metadata",
+          "page",
+          "page_image_path",
+          "text",
+          "text_spans"
+        ]
+      }
+    },
+    {
+      "id": "asset_logical_objects",
+      "status": "passed",
+      "detail": "Asset manifest exposes table/figure objects; tables have stable cells; at least one cross-page logical table is recorded.",
+      "evidence": {
+        "asset_count": 154,
+        "table_count": 142,
+        "figure_count": 12,
+        "logical_table_count": 33,
+        "cell_count": 5937,
+        "missing": []
+      }
+    },
+    {
+      "id": "discovery_reports",
+      "status": "passed",
+      "detail": "discovery_reports have verify reports with accepted evidence and no invalid refs.",
+      "evidence": {
+        "accepted_total": 28,
+        "bad": []
+      }
+    },
+    {
+      "id": "reading_reports",
+      "status": "passed",
+      "detail": "reading_reports have verify reports with accepted evidence and no invalid refs.",
+      "evidence": {
+        "accepted_total": 113,
+        "bad": []
+      }
+    },
+    {
+      "id": "bundle_claim_evidence",
+      "status": "passed",
+      "detail": "Bundled IR-input claims use only raw evidence refs and pass structural re-verification.",
+      "evidence": {
+        "claim_count": 113,
+        "evidence_type_counts": {
+          "text_span": 162,
+          "table_cell": 71
+        },
+        "bad": []
+      }
+    },
+    {
+      "id": "coverage_terms",
+      "status": "passed",
+      "detail": "Configured acceptance terms appear in verified claim text.",
+      "evidence": {
+        "terms": [
+          "Table 149",
+          "Payload Bit",
+          "Login Extension Data",
+          "FLOGI",
+          "LS_ACC",
+          "F_BSY",
+          "P_BSY",
+          "F_RJT",
+          "P_RJT",
+          "LS_RJT",
+          "SOF",
+          "R_CTL",
+          "TYPE field",
+          "ELS_Command",
+          "D_ID",
+          "S_ID",
+          "OX_ID"
+        ],
+        "missing": []
+      }
+    }
+  ]
+}

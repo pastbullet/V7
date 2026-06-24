@@ -1,0 +1,773 @@
+{
+  "success": true,
+  "doc_name": "FC-LS.pdf",
+  "structure": [
+    {
+      "node_id": "0017",
+      "title": "4 Extended Link Services",
+      "summary": "Covers Extended Link Services (ELS) basics and request rules: an ELS request solicits a destination `Nx_Port` function; an ELS reply is required unless otherwise specified. Defines single-`Sequence` request/reply structure, `ELS_Command` code in the first word/first byte of `Payload`, one-`Exchange` request/reply pairing, `Last Sequence bit` termination on `LS_ACC`, and normal `Exchange`/`Sequence` management per `FC-FS-2`. Specifies frame fields: `TYPE` = `01h`, `R_CTL` values, `Payload`, `D_ID`, `S_ID`, `LFA`, valid addresses, well known addresses, and `FLOGI` before all ELSs in a Fabric. `Table 2 – Extended Link Services Routing Bits and Information Categories` defines `R_CTL` routing/info categories: `0001b` Solicited Data, `0010b` Request, `0011b` Reply, Others Reserved; note `CSU`. Content types: message/frame format, response/branch handling, completion/exception conditions, procedure/flow.",
+      "is_skeleton": true,
+      "children": [
+        {
+          "node_id": "0019",
+          "title": "4.2 Extended Link Service requests",
+          "summary": "Section `4.2 Extended Link Service requests` defines when and how a Sequence Initiator sends an ELS Sequence to solicit a destination `Nx_Port` link-level function/service. Covers request preconditions and addressing rules: ELS requests shall not be issued before completion of `N_Port Login` unless otherwise noted; `FLOGI` is required before all ELSs if a Fabric is present; `Table 3` applies to ELSs sent to or received by all valid addresses, including well known addresses. Specifies `LFA` usage: destination ID (`D_ID`) for `LINIT` and `LSTS` ELS Request Sequences, source ID (`S_ID`) in Reply Sequences; no other Sequences shall be directed to `LFA`. Content types: procedure/flow, response/branch handling, completion/exception conditions. Table `2 – Extended Link Services Routing Bits and Information Categories`: defines `R_CTL` routing/information values for ELS frames.",
+          "is_skeleton": true,
+          "children": [
+            {
+              "node_id": "0132",
+              "title": "4.2.24 Registered Link Incident Report (RLIR)",
+              "summary": "Section 4.2.24 defines the Registered Link Incident Report (`RLIR`) `ELS`: how a reporting `Nx_Port` sends a `Link Incident Record` for an incident port to a registered `Nx_Port`, with roles/terms `incident port`, `connected port`, `connected node`, `reporting port`, `registered port`, and `reporting node`. Response/branch handling: normal reply is `LS_ACC` `ELS Sequence` with no Payload; unsupported `RLIR` returns `LS_RJT` with reason code `\"Command not supported\"`; unacceptable record type returns `LS_RJT` with `\"Unable to perform command request\"`. Procedure/flow: recognize incidents when an incident code is defined in `table 72`, generate one record per incident, send `RLIR ELSs` to registered recipients, then discard after all required sends. Completion/exception conditions: vendor-specific record capacity, discard oldest record on overflow, optional delay after `Link Failure`, report only if failure persists past FC-4 timeout. Tables/Figures: `table 72` (incident codes referenced for recognition); no figures.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0133",
+                  "title": "4.2.24.1 Description",
+                  "summary": "Defines `4.2.24 Registered Link Incident Report (RLIR)` purpose and terminology for link incident reporting: `incident port`, `connected port`, `connected node`, `reporting port`, `registered port`, `reporting node`. Core behavior: `RLIR ELS` lets a reporting `Nx_Port` send a `Link Incident Record` to a registered `Nx_Port`; normal response is `LS_ACC ELS Sequence` with no Payload. Response/branch handling: unsupported recipient returns `LS_RJT ELS Sequence` with reason code `Command not supported`; unsupported record type returns `LS_RJT ELS Sequence` with reason code `Unable to perform command request`. Mentions incident recognition via incident code in `table 72`; if a registered recipient exists, a `Link Incident Record` is created and reported. Exception/completion conditions: delayed reporting after `Link Failure`; some `FC-4` recovery may suppress reporting unless timeout persists beyond FC-4 specified period. Content types: procedure/flow, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 90,
+                  "end_index": 90,
+                  "subtree_start_index": 90,
+                  "subtree_end_index": 90
+                },
+                {
+                  "node_id": "0134",
+                  "title": "4.2.24.2 Link Incident reporting procedure",
+                  "summary": "Procedure/flow for `4.2.24.2 Link Incident reporting procedure`: how a reporting node and reporting port handle creation, retention, transmission, and discard of `Link Incident Record` objects after a link incident. Core rules: the incident port’s reporting node generates one `Link Incident Record` per link incident; record capacity is vendor specific; on resource exhaustion, the oldest `Link Incident Record` is discarded and the new record retained. The selected reporting port presents records by sending `RLIR ELSs` to ports registered as valid recipients of `Link Incident Records`; after sending all required `RLIR ELSs` containing the `Link Incident Record`, the port may discard the record. Content types: procedure/flow; completion/exception conditions (resource exhaustion, post-send discard). Tables: none. Figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 90,
+                  "end_index": 90,
+                  "subtree_start_index": 90,
+                  "subtree_end_index": 90
+                },
+                {
+                  "node_id": "0135",
+                  "title": "4.2.24.3 Protocol",
+                  "summary": "Section `4.2.24.3 Protocol` covers RLIR delivery protocol selection and the `RLIR Request Sequence` / `LS_ACC or LS_RJT Reply Sequence` for sending a `RLIR ELS` from reporting port to registered port. Includes procedure/flow, response/branch handling, timer/negotiation, completion/exception conditions, and message/frame format. Key rules: send first to ports registered to always receive `RLIR`; on failure, try ports registered to conditionally receive `RLIR`; `RLIR ELS` is successfully transmitted only if `LS_ACC` is received within `2xR_A_TOV`; registration may be discarded after unsuccessful delivery; vendor specific behavior if no registration exists. `S_ID` = reporting port, `D_ID` = registered port. Table 67 – RLIR Payload: defines `RLIR Payload` layout, including `RLIR (79h)`, `Common Link Incident Record Length`, `Common Link Incident-Format Descriptor Length`, `Common Link Incident Descriptor`, `IQ`, `IC`, `EPAI (domain/area of ISL)`, and `Specific Link Incident Record`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 91,
+                  "end_index": 91,
+                  "subtree_start_index": 91,
+                  "subtree_end_index": 91
+                },
+                {
+                  "node_id": "0136",
+                  "title": "4.2.24.4 Request Sequence",
+                  "summary": "RLIR Request Sequence message/frame format for `RLIR` ELS payload and field semantics: addressing uses `S_ID` = reporting port, `D_ID` = registered port; payload starts `RLIR (79h)`. Covers `Link Incident Record Format`, `Common Link Incident Record Length`, `Common Link Incident Descriptor Length`, `Specific Link Incident Record Length`, `Common Link Incident Record`, `Common Link Incident Descriptor`, `Incident Qualifier (IQ)`, `Incident Code (IC)`, `Expansion Port address identifier (EPAI)`, `Transaction ID`, `Time Stamp Format`, `Time Stamp`; identifiers include `N_Port_Name`, `Node_Name`, `Port_ID`, `Fabric_Name`; values/codes include `00h`, `01h-FFh`, `4h`, `16`, `64`, `0`, `252`; states/conditions mention `Link-Failure`, `Offline State`, `OL3 State`, `LF1 State`, `R_T_TOV`. Tables: Table 67 – RLIR Payload (payload layout); Table 68 – Link Incident Record Format (format codes); Table 69 – Common Link Incident Record Data (record fields); Table 70 – Time Stamp Format values (timestamp encodings); Table 71 – Incident Qualifier / Continued (IQ bit meanings, severity/FRU/E_Port flags); Table 72 – Incident Code values (incident types). Content types: message/frame format, timer/negotiation, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 91,
+                  "end_index": 96,
+                  "subtree_start_index": 91,
+                  "subtree_end_index": 96
+                },
+                {
+                  "node_id": "0137",
+                  "title": "4.2.24.5 Reply Sequence",
+                  "summary": "Section `4.2.24.5 Reply Sequence` covers RLIR reply handling: `LS_RJT` rejects the `RLIR Request`; `LS_ACC` accepts the `RLIR Request` and its `Link Incident Record`. Includes `Table 73 – RLIR LS_ACC Payload`, which defines the `LS_ACC Payload` message/frame format: `Bits 31 .. 24`, `23 .. 16`, `15 .. 08`, `07 .. 00`; `Word 0 = 02h 00h 00h 00h`. Contained content types: response/branch handling, message/frame format, completion/exception conditions. Page text immediately continues into `4.2.25 Link Incident Record Registration (LIRR)`: `LIRR ELS` registration/de-registration procedure/flow, normal response `LS_ACC` with no Payload, exception `LS_RJT` with reason code `Command not supported` or `Unable to perform command request`, and destination identifier `Management Server (FFFFFAh)`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 97,
+                  "end_index": 97,
+                  "subtree_start_index": 97,
+                  "subtree_end_index": 97
+                }
+              ],
+              "start_index": 90,
+              "end_index": 90,
+              "subtree_start_index": 90,
+              "subtree_end_index": 97
+            },
+            {
+              "node_id": "0138",
+              "title": "4.2.25 Link Incident Record Registration (LIRR)",
+              "summary": "Section `4.2.25 Link Incident Record Registration (LIRR)` covers `LIRR ELS` registration/de-registration of an `Nx_Port` to receive `Registered Link Incident Report (RLIR) ELS`, including Fabric registration to `Management Server (FFFFFAh)`. Describes `4.2.25.1 Description` and `4.2.25.2 Registration for Link Incident Records`: when to send `LIRR ELS`, use of ports of interest, required determination of address identifier(s), and per-format recipient registration lists. Response/branch handling: normal response is `LS_ACC ELS Sequence` with no Payload; unsupported `LIRR ELS` returns `LS_RJT ELS Sequence` with reason code `Command not supported`; failures or unsupported format return `Unable to perform command request`; duplicate register/de-register and unregistered de-registration both accept with `LS_ACC` and no further action. Table `73 – RLIR LS_ACC Payload` shows the `LS_ACC Payload` format/value `02h 00h 00h 00h`. Content types: procedure/flow, response/branch handling, completion/exception conditions, message/frame format.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0139",
+                  "title": "4.2.25.1 Description",
+                  "summary": "4.2.25.1 Description — Link Incident Record Registration (LIRR) ELS: core topic is registering or de-registering a source Nx_Port to receive Registered Link Incident Report (RLIR) ELS notifications, including Fabric registration via Management Server (`FFFFFAh`). Refers to 4.2.24.1 for terms. Normal response to a `LIRR ELS Sequence` is `LS_ACC ELS Sequence` with no Payload. If unsupported, recipient returns `LS_RJT ELS Sequence` with reason code `Command not supported`; if unable to perform registration function or format unsupported, returns `LS_RJT ELS Sequence` with reason code `Unable to perform command request`. Contains: procedure/flow, response/branch handling, completion/exception conditions. Table 73 – RLIR LS_ACC Payload: defines `LS_ACC Payload` format for `RLIR Request`; value shown is Word 0 = `02h 00h 00h 00h`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 97,
+                  "end_index": 97,
+                  "subtree_start_index": 97,
+                  "subtree_end_index": 97
+                },
+                {
+                  "node_id": "0140",
+                  "title": "4.2.25.2 Registration for Link Incident Records",
+                  "summary": "Section `4.2.25.2 Registration for Link Incident Records` covers procedure/flow and response/branch handling for `LIRR ELS` registration/de-registration of an `Nx_Port` to receive `Link Incident Records` from `ports of interest`. A `ULP` registers after determining its address identifier and the address identifiers of ports of interest, indicating the registration format; recipient returns `LS_ACC ELS` with no Payload. De-registration also uses `LIRR ELS` with indicated format. Completion/exception conditions: de-registering a port not registered returns `LS_ACC ELS` and no further action; registering a port already registered for the specified format returns `LS_ACC ELS` and no further action. Recipient maintains separate established registration lists for each registration format. Includes `Table 73 – RLIR LS_ACC Payload`, showing the `LS_ACC Payload` format with `Word 0 = 02h 00h 00h 00h` (message/frame format).",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 97,
+                  "end_index": 97,
+                  "subtree_start_index": 97,
+                  "subtree_end_index": 97
+                },
+                {
+                  "node_id": "0141",
+                  "title": "4.2.25.3 Responsibilities of Valid-Registered Recipients",
+                  "summary": "Core topic: responsibilities of valid-registered recipients for Link Incident Records and mismatch handling. A valid-registered recipient shall receive/process Link Incident Records generated per Link Incident reporting procedure (`4.2.24.2`); ULP coordination is out of scope. If a valid registered recipient receives a Link Incident Record whose format does not match its registration format, the recipient port shall reject the `RLIR ELS` with reason code `Unable to perform command request`. Related surrounding conditions on this page: Logout between a node and a valid-registered-recipient node causes de-registration; full registration list causes rejection with `unable to perform command request`. Table present: `Table 73 – RLIR LS_ACC Payload` — defines `RLIR LS_ACC Payload`. Named anchors: `RLIR ELS`, `Link Incident Records`, `Link Incident reporting procedure`, `Unable to perform command request`, `Table 73 – RLIR LS_ACC Payload`. Content types: response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 98,
+                  "end_index": 98,
+                  "subtree_start_index": 98,
+                  "subtree_end_index": 98
+                },
+                {
+                  "node_id": "0142",
+                  "title": "4.2.25.4 Protocol",
+                  "summary": "4.2.25.4 Protocol: defines the protocol outline for Link Incident Record registration, specifically `LIRR Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`. Core anchors and identifiers present in the provided text: `LIRR`, `RLIR`, `LS_ACC`, `LS_RJT`, `S_ID`, `D_ID`, `LIRR Payload`, `Link Incident Record Registration Function`, `Registration Format`, `7Ah`, `02h`, reason code `Unable to perform command request`. Related behavioral conditions referenced in adjacent protocol text: add/remove registration, de-registration on `Logout`, rejection when registration list is full, rejection for format mismatch. Table present: `Table 73 – RLIR LS_ACC Payload`, which defines/shows the `RLIR LS_ACC Payload` layout. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 98,
+                  "end_index": 98,
+                  "subtree_start_index": 98,
+                  "subtree_end_index": 98
+                },
+                {
+                  "node_id": "0143",
+                  "title": "4.2.25.5 Request Sequence",
+                  "summary": "Covers `4.2.25.5 Request Sequence` for `LIRR` registration requests for Link Incident Records: addressing and payload definition for the request message. Content types: `procedure/flow`, `message/frame format`. `Addressing`: `S_ID` = source port requesting registration for Link Incident Records; `D_ID` = port receiving the registration request. `Payload`: `LIRR Payload` format shown in `Table 74 – LIRR Payload`, including `Word 0` = `LIRR (7Ah) 00h 00h 00h`, and `Word 1` fields `Link Incident Record-Registration Function`, `Reserved`, `Registration Format`. Field rule present: `Registration Function` specifies mode of registration, i.e., whether the recipient node adds or removes the sending `Nx_Port` to or from its list of registered recipients. No figures. No explicit response/branch handling, state machine, timer/negotiation, or completion/exception conditions in this subsection.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 98,
+                  "end_index": 98,
+                  "subtree_start_index": 98,
+                  "subtree_end_index": 98
+                },
+                {
+                  "node_id": "0144",
+                  "title": "4.2.25.6 Reply Sequence",
+                  "summary": "Section `4.2.25.6 Reply Sequence` covers response/branch handling for `LIRR Request`: `LS_RJT` signifies rejection of the `LIRR Request`. Nearby context on the same page defines request parameters used by this exchange: field `Registration Function` in `Table 75 – Registration Function` (defines registration actions/codes `00h Reserved`, `01h Set registration – conditionally receive`, `02h Set registration – always receive`, `FFh Clear registration`, `03h - FEh Reserved`) and `Link Incident Record-Registration Format` / `Link Incident Record-Registration Type` in `Table 76 – Link Incident Record-Registration Format` (defines format codes `00h Common Format`, `01h - FFh Specific-coded value`). Content types present: response/branch handling, message/frame format, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 99,
+                  "end_index": 99,
+                  "subtree_start_index": 99,
+                  "subtree_end_index": 99
+                }
+              ],
+              "start_index": 97,
+              "end_index": 97,
+              "subtree_start_index": 97,
+              "subtree_end_index": 99
+            },
+            {
+              "node_id": "0145",
+              "title": "4.2.26 Get Alias_ID (GAID)",
+              "summary": "Section 4.2.26 **Get Alias_ID (GAID)** covers the `GAID` ELS used by the Alias Server to request a unique `Alias_ID` for an Alias Group identified by `Alias_Token`; includes **procedure/flow**, **message/frame format**, and **response/branch handling**. Named anchors: `GAID`, `LS_ACC`, `LS_RJT`, `Alias_ID`, `Alias_Token`, `Alias_SP`, `NP_List_Length`, `NP_List`, `S_ID`, `D_ID`, `FFFFF8h`, `FFFFFDh`, `GAID (30h)`, `02h`. Protocol items: `GAID Request Sequence`; `LS_ACC or LS_RJT Reply Sequence`. Addressing specifies `S_ID` = Alias Server (`FFFFF8h`), `D_ID` = Fabric Controller (`FFFFFDh`). `Table 77 – LIRR LS_ACC Payload`: defines `LS_ACC` payload for `LIRR Request`/`RLIR ELSs` acceptance (`02h 00h 00h 00h`). `Table 78 – GAID Payload`: defines `GAID` payload layout, including `Alias_Token`, `Alias_SP`, `NP_List_Length`, and `NP_List (1..n)`.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0146",
+                  "title": "4.2.26.1 Description",
+                  "summary": "Core topic: `4.2.26.1 Description` defines `GAID` (`Get Alias_ID`) as an ELS sent to the `Fabric Controller` by the `Alias Server` to request a unique `Alias_ID` associated with the Alias Group identified by `Alias_Token`; references `FC-FS-2` and `FC-GS-5`. Named anchors present: `GAID`, `Alias_ID`, `Fabric Controller`, `Alias Server`, `Alias_Token`, `LS_ACC`, `LS_RJT`, `S_ID`, `D_ID`, `FFFFF8h`, `FFFFFDh`, `GAID (30h)`, `Alias_SP`, `NP_List_Length`, `NP_List`, `MSB`, `LSB`. `Table 77 – LIRR LS_ACC Payload`: shows `LS_ACC` payload format, including `02h 00h 00h 00h`. `Table 78 – GAID Payload`: defines `GAID` payload fields/word layout, including `Alias_Token`, `Alias_SP`, `NP_List_Length`, and `NP_List` entries. Content types: message/frame format, response/branch handling, procedure/flow.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 100,
+                  "end_index": 100,
+                  "subtree_start_index": 100,
+                  "subtree_end_index": 100
+                },
+                {
+                  "node_id": "0147",
+                  "title": "4.2.26.2 Protocol",
+                  "summary": "Defines `4.2.26.2 Protocol` for `Get Alias_ID (GAID)`: the protocol-level exchange overview for obtaining a unique `Alias_ID` associated with an `Alias Group` via `Alias_Token`. Contains procedure/flow and response/branch handling only: `a) GAID Request Sequence` and `b) LS_ACC or LS_RJT Reply Sequence`. Named anchors present: `GAID`, `Alias_ID`, `Alias Group`, `Alias_Token`, `LS_ACC`, `LS_RJT`, `Fabric Controller`, `Alias Server`, `GAID (30h)`, `S_ID`, `D_ID`, `FFFFF8h`, `FFFFFDh`. Table references in nearby protocol context: `Table 77 – LIRR LS_ACC Payload` shows `LS_ACC` payload format (`02h 00h 00h 00h`); `Table 78 – GAID Payload` defines the `GAID` request payload fields including `Alias_Token`, `Alias_SP`, `NP_List_Length`, and `NP_List`. No figures, state machine, or timer/negotiation content.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 100,
+                  "end_index": 100,
+                  "subtree_start_index": 100,
+                  "subtree_end_index": 100
+                },
+                {
+                  "node_id": "0148",
+                  "title": "4.2.26.3 Request Sequence",
+                  "summary": "Section 4.2.26.3 `Request Sequence` covers the `GAID` request sequence for `Get Alias_ID (GAID)`: addressing and request payload layout sent to the Fabric Controller. Core identifiers/codes: `S_ID` = Alias Server (`FFFFF8h`), `D_ID` = Fabric Controller (`FFFFFDh`), `GAID (30h)`, `Alias_Token`, `Alias_SP`, `NP_List_Length`, `NP_List`, `MSB`, `LSB`, “Number of `NP_List` entries = n”. `Table 78 – GAID Payload` shows/defines the `GAID` payload format: Word 0 opcode `30h`, Words 1–3 `Alias_Token` (12 bytes), Word 4 `Alias_SP`, Word 23 `NP_List_Length`, Words 25..`24 + n` `NP_List` entries. Also present on this page: `Table 77 – LIRR LS_ACC Payload`, which defines the `LS_ACC` payload (`02h 00h 00h 00h`) for `LIRR`. Content types: procedure/flow, message/frame format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 100,
+                  "end_index": 100,
+                  "subtree_start_index": 100,
+                  "subtree_end_index": 100
+                },
+                {
+                  "node_id": "0149",
+                  "title": "4.2.26.4 Reply Sequence",
+                  "summary": "Core topic: `4.2.26.4 Reply Sequence` for `GAID Request` / Get Alias_ID response behavior. Content types: `response/branch handling`, `message/frame format`, `completion/exception conditions`. `LS_RJT` rejects the `GAID Request` when an `Alias_ID` is not generated; returns reason code `Unable to perform command request` with reason code explanation from `table 147`. `LS_ACC` indicates successful completion; payload format in `Table 80 – Get Alias_ID LS_ACC Payload`, showing `Word 0 = 02h 00h 00h 00h` and `Word 1 = Alias Group Identifier`; the `Alias Group Identifier` field contains the `Alias_ID` the `Nx_Port` shall recognize in addition to its native address identifier. Also referenced in adjacent context: `Table 78 – GAID Payload`, defines the `GAID` payload/request format. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 101,
+                  "end_index": 101,
+                  "subtree_start_index": 101,
+                  "subtree_end_index": 101
+                }
+              ],
+              "start_index": 100,
+              "end_index": 100,
+              "subtree_start_index": 100,
+              "subtree_end_index": 101
+            },
+            {
+              "node_id": "0150",
+              "title": "4.2.27 Fabric Activate Alias_ID (FACT)",
+              "summary": "Core topic: `4.2.27 Fabric Activate Alias_ID (FACT)` — `FACT` ELS sent by the `Alias Server` to the `Fabric Controller` to assign the passed `Alias_ID` as an `Alias_ID` for the passed `Nx_Ports`. Nearby anchors on this page include `Alias Group Service Parameters (Alias_SP)`, `Nx_Port List Length (NP_List_Length)`, `Nx_Port List (NP_List)`, `N_Port_ID`, `Alias_ID`, `NP_List`, `GAID Request`, `LS_RJT`, `LS_ACC`, reason code `Unable to perform command request`, `Alias Group Identifier`, and hex values `30h`, `02h`, `00h`. `Table 78 – GAID Payload`: defines the `GAID` payload/message format. `Table 80 – Get Alias_ID LS_ACC Payload`: defines successful `LS_ACC` reply payload carrying `Alias Group Identifier`. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0151",
+                  "title": "4.2.27.1 Description",
+                  "summary": "Core topic: `4.2.27.1 Description` defines `Fabric Activate Alias_ID (FACT)`—the `FACT ELS` sent to the `Fabric Controller` by the `Alias Server` to cause it to assign the passed `Alias_ID` as an `Alias_ID` for the passed `Nx_Ports`. Nearby referenced context includes `Alias_SP`, `NP_List_Length`, `NP_List`, `N_Port_ID`, `Alias_ID`, `LS_RJT`, `LS_ACC`, reason code `Unable to perform command request`, `Get Alias_ID LS_ACC Payload`, `02h 00h 00h 00h`, and `Alias Group Identifier`. Tables: `Table 78 – GAID Payload` shows the `GAID (30h)` payload/message format; `Table 80 – Get Alias_ID LS_ACC Payload` defines the successful `LS_ACC` payload carrying `Alias Group Identifier`. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 101,
+                  "end_index": 101,
+                  "subtree_start_index": 101,
+                  "subtree_end_index": 101
+                },
+                {
+                  "node_id": "0152",
+                  "title": "4.2.27.2 Protocol",
+                  "summary": "Covers `4.2.27.2 Protocol` for Fabric Activate Alias_ID: `FACT Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`, with follow-on `4.2.27.3 Request Sequence` and `4.2.27.4 Reply Sequence`. [procedure/flow] [message/frame format] [response/branch handling] [completion/exception conditions] Key identifiers and codes: `S_ID`=`FFFFF8h` (Alias Server), `D_ID`=`FFFFFDh` (Fabric Controller), `FACT (31h)`, `Alias_ID`, `NP_List_Length`, `NP_List`, `N_Port_ID`, `LS_RJT`, reason code `\"Unable to perform command request\"`. Defines request payload semantics and addressing, including right-aligned `N_Port_ID` in `NP_List` low-order 3 bytes. `Table 81 – Fabric Activate Alias_ID Payload`: defines request payload word/bit layout for `FACT`, `Alias_ID`, `NP_List_Length`, and `NP_List`. `Table 80 – Get Alias_ID LS_ACC Payload`: shows `LS_ACC` payload layout.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 102,
+                  "end_index": 102,
+                  "subtree_start_index": 102,
+                  "subtree_end_index": 102
+                },
+                {
+                  "node_id": "0153",
+                  "title": "4.2.27.3 Request Sequence",
+                  "summary": "Core topic: `4.2.27.3 Request Sequence` for `FACT Request Sequence` (Fabric Activate Alias_ID), defining addressing and request payload layout for activating an `Alias_ID` for listed `Nx_Ports`. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions. Addressing uses `S_ID` = Alias Server (`FFFFF8h`) and `D_ID` = Fabric Controller (`FFFFFDh`). Payload fields: `FACT (31h)`, `Alias_ID`, `NP_List_Length`, `NP_List`; `NP_List_Length` gives number of `NP_List` entries, and each `N_Port_ID` in `NP_List` is right aligned with high-order byte ignored and low-order 3 bytes containing the `N_Port_ID`. References `Table 81 – Fabric Activate Alias_ID Payload` for request format. Related response note: `LS_ACC or LS_RJT Reply Sequence`; `LS_RJT` may return reason code `Unable to perform command request` if an `Alias_ID` is not activated. `Table 80 – Get Alias_ID LS_ACC Payload`: shows `LS_ACC` payload format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 102,
+                  "end_index": 102,
+                  "subtree_start_index": 102,
+                  "subtree_end_index": 102
+                },
+                {
+                  "node_id": "0154",
+                  "title": "4.2.27.4 Reply Sequence",
+                  "summary": "Section `4.2.27.4 Reply Sequence` covers FACT reply handling for Fabric Activate Alias_ID, specifically `LS_RJT` behavior after a `FACT Request`. Core rule: `LS_RJT` signifies rejection of the `FACT Request`; an `LS_RJT` with reason code `\"Unable to perform command request\"` shall be returned if an `Alias_ID` is not activated as an Alias_ID. Related named anchors present in context: `FACT`, `LS_ACC`, `LS_RJT`, `S_ID`, `D_ID`, `FFFFF8h`, `FFFFFDh`, `Alias_ID`, `NP_List_Length`, `NP_List`, `N_Port_ID`, `Table 81 – Fabric Activate Alias_ID Payload` (request payload format/fields). Table present: `Table 80 – Get Alias_ID LS_ACC Payload` — shows `LS_ACC` payload layout. Content types: response/branch handling, completion/exception conditions, message/frame format, procedure/flow.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 102,
+                  "end_index": 102,
+                  "subtree_start_index": 102,
+                  "subtree_end_index": 102
+                }
+              ],
+              "start_index": 101,
+              "end_index": 101,
+              "subtree_start_index": 101,
+              "subtree_end_index": 102
+            },
+            {
+              "node_id": "0155",
+              "title": "4.2.28 Fabric Deactivate Alias_ID (FDACT)",
+              "summary": "Core topic: `Fabric Deactivate Alias_ID (FDACT)` ELS used by the `Alias Server` to ask the `Fabric Controller` to deassign an `Alias_ID` as an Alias Group identifier for specified `Nx_Ports`; when no `Nx_Ports` remain active for that `Alias_ID`, the Fabric Controller frees it for reassignment. [procedure/flow] `4.2.28.2 Protocol`: `FDACT Request Sequence`; `LS_ACC or LS_RJT Reply Sequence`. [message/frame format] `4.2.28.3 Request Sequence`: `S_ID` = `FFFFF8h`, `D_ID` = `FFFFFDh`; payload fields `FDACT (32h)`, `Alias_ID`, `NP_List_Length`, `NP_List`, `NP_List (1)` … `NP_List (n)`. [response/branch handling] success via `LS_ACC`, reject via `LS_RJT`. [completion/exception conditions] deactivation completion/freeing condition stated. Tables: `Table 82 – Fabric Activate Alias_ID LS_ACC Payload` shows successful `LS_ACC` payload (`02h 00h 00h 00h`); `Table 83 – Fabric Deactivate Alias_ID Payload` defines the `FDACT` request payload layout.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0156",
+                  "title": "4.2.28.1 Description",
+                  "summary": "Section 4.2.28.1/related text covers `FDACT` (Fabric Deactivate Alias_ID) ELS purpose and adjacent reply/request formats: Alias Server sends `FDACT` to Fabric Controller to deassign an `Alias_ID` as an Alias Group identifier for specified `Nx_Ports`; when no `Nx_Ports` remain active, Fabric Controller frees the `Alias_ID` for reassignment. Includes response/branch handling: `LS_ACC` or `LS_RJT` reply sequence; completion condition: successful completion indicated by `LS_ACC`. Exact identifiers/codes: `S_ID`=`FFFFF8h`, `D_ID`=`FFFFFDh`, `FDACT (32h)`, `02h`, `Alias_ID`, `NP_List_Length`, `NP_List`. Message/frame format present. Table 82 – Fabric Activate Alias_ID LS_ACC Payload: shows `LS_ACC` payload format (`02h 00h 00h 00h`). Table 83 – Fabric Deactivate Alias_ID Payload: defines request payload layout and `NP_List` entries. Procedure/flow present via request/reply sequence names.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 103,
+                  "end_index": 103,
+                  "subtree_start_index": 103,
+                  "subtree_end_index": 103
+                },
+                {
+                  "node_id": "0157",
+                  "title": "4.2.28.2 Protocol",
+                  "summary": "Section `4.2.28.2 Protocol` indexes the `Fabric Deactivate Alias_ID (FDACT)` exchange at a protocol-outline level: `a) FDACT Request Sequence` and `b) LS_ACC or LS_RJT Reply Sequence`. Core topic: protocol steps for sending `FDACT` from `Alias Server` to `Fabric Controller` to deactivate an `Alias_ID` for specified `Nx_Ports`. Named anchors present in surrounding section context: `S_ID`, `D_ID`, `FFFFF8h`, `FFFFFDh`, `FDACT (32h)`, `Alias_ID`, `NP_List_Length`, `NP_List`, `LS_ACC`, `LS_RJT`. Table `83 – Fabric Deactivate Alias_ID Payload` shows the request payload/message format, including `Word 0` opcode `FDACT (32h)` and fields `Alias_ID`, `NP_List_Length`, `NP_List`. Content types: procedure/flow, message/frame format, response/branch handling.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 103,
+                  "end_index": 103,
+                  "subtree_start_index": 103,
+                  "subtree_end_index": 103
+                },
+                {
+                  "node_id": "0158",
+                  "title": "4.2.28.3 Request Sequence",
+                  "summary": "4.2.28.3 Request Sequence: FDACT request framing for Fabric Deactivate Alias_ID, including addressing and Payload contents sent by the Alias Server to the Fabric Controller. Addressing uses `S_ID` = `FFFFF8h` (Alias Server) and `D_ID` = `FFFFFDh` (Fabric Controller). Payload fields: `FDACT (32h)`, `Alias_ID`, `NP_List_Length`, and `NP_List` entries (`NP_List (1)` ... `NP_List (n)`), where `Alias_ID` is the Alias Group ID to deactivate and `NP_List_Length` gives the number of `NP_List` entries. Table 83 – Fabric Deactivate Alias_ID Payload: defines the FDACT Payload word/bit layout. Table 80 – Get Alias_ID LS_ACC Payload: shows the `LS_ACC` Payload format (`02h 00h 00h 00h`). Also references `LS_ACC` / `LS_RJT` reply sequence and `Table 82 – Fabric Activate Alias_ID LS_ACC Payload`. Content types: procedure/flow, message/frame format, response/branch handling.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 103,
+                  "end_index": 103,
+                  "subtree_start_index": 103,
+                  "subtree_end_index": 103
+                },
+                {
+                  "node_id": "0159",
+                  "title": "4.2.28.4 Reply Sequence",
+                  "summary": "Section `4.2.28.4 Reply Sequence` covers `FDACT` reply behavior and the transition into `4.2.29 N_Port Activate Alias_ID (NACT)`. Core content: `LS_RJT` and `LS_ACC` handling for `FDACT Request`, including completion/exception conditions and response/branch handling. `LS_RJT` signifies rejection of the `FDACT Request`; reason code `\"Unable to perform command request\"` is returned if the `Alias_ID` is not deactivated as an `Alias_ID`. `LS_ACC` success payload is defined by `Table 84 – Fabric Deactivate Alias_ID LS_ACC Payload`, showing `Word 0 = 02h 00h 00h 00h`. Also includes `NACT` overview/protocol: `NACT ELS`, `Alias Server`, `Nx_Port`, `LS_ACC or LS_RJT`, `S_ID = FFFFF8h`, `D_ID`, `Payload`, `Alias_Token`, `Service Parameters`, `Alias_ID`, and reference to `table 85`. Present content types: response/branch handling, message/frame format, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 104,
+                  "end_index": 104,
+                  "subtree_start_index": 104,
+                  "subtree_end_index": 104
+                }
+              ],
+              "start_index": 103,
+              "end_index": 103,
+              "subtree_start_index": 103,
+              "subtree_end_index": 104
+            },
+            {
+              "node_id": "0160",
+              "title": "4.2.29 N_Port Activate Alias_ID (NACT)",
+              "summary": "Core topic: `4.2.29 N_Port Activate Alias_ID (NACT)` defines the `NACT` ELS sent by `Alias Server` (`FFFFF8h`) to an `Nx_Port` to cause it to assign the passed `Alias_ID` as an `Alias_ID`. Content types: procedure/flow, message/frame format, response/branch handling. Protocol anchors: `4.2.29.2 Protocol` = `a) NACT Request Sequence`, `b) LS_ACC or LS_RJT`. Reply/format anchors: `4.2.29.3 Reply Sequence`; `S_ID` designates the `Alias Server (FFFFF8h)`; `D_ID` designates the receiving `Nx_Port`; request `Payload` contains `Alias_Token`, `Service Parameters`, and `Alias_ID`; payload format is “shown in `table 85`”. Table present: `Table 83 – Fabric Deactivate Alias_ID Payload` — shows `FDACT (32h)` payload word layout.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0161",
+                  "title": "4.2.29.1 Description",
+                  "summary": "Core topic: `4.2.29.1 Description` defines `N_Port Activate Alias_ID (NACT)`: the `NACT ELS` is sent to an `Nx_Port` by `Alias Server` (see `FC-FS-2`) to cause it to assign the passed `Alias_ID` as an `Alias_ID`. Nearby anchors on this page: `4.2.29.2 Protocol` lists `NACT Request Sequence` then `LS_ACC or LS_RJT`; `4.2.29.3 Reply Sequence` gives `S_ID = FFFFF8h`, `D_ID`, and request `Payload` contents: `Alias_Token`, `Service Parameters`, `Alias_ID`, with format in `table 85`. Also present from preceding context: `LS_RJT`, `Unable to perform command request`, `LS_ACC`, `Table 84 – Fabric Deactivate Alias_ID LS_ACC Payload` (successful completion payload, word `0 = 02h 00h 00h 00h`). Table present: `Table 83 – Fabric Deactivate Alias_ID Payload` shows `FDACT (32h)` payload layout. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 104,
+                  "end_index": 104,
+                  "subtree_start_index": 104,
+                  "subtree_end_index": 104
+                },
+                {
+                  "node_id": "0162",
+                  "title": "4.2.29.2 Protocol",
+                  "summary": "Core topic: `4.2.29.2 Protocol` for `N_Port Activate Alias_ID (NACT)`—the `NACT` ELS sent by `Alias Server` (`FC-FS-2`) to an `Nx_Port` to assign an `Alias_ID`. Content types: procedure/flow (`a) NACT Request Sequence`, `b) LS_ACC or LS_RJT`), response/branch handling, message/frame format, completion/exception conditions. Related reply/addressing details in `4.2.29.3 Reply Sequence`: `S_ID` = `Alias Server (FFFFF8h)`, `D_ID` = receiving `Nx_Port`; request Payload carries `Alias_Token`, `Service Parameters`, `Alias_ID`, format in `table 85`. Response anchors present: `LS_ACC`, `LS_RJT`. `Table 84 – Fabric Deactivate Alias_ID LS_ACC Payload` shows successful-completion payload with `02h 00h 00h 00h`. `Table 83 – Fabric Deactivate Alias_ID Payload` defines the `FDACT (32h)` request payload format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 104,
+                  "end_index": 104,
+                  "subtree_start_index": 104,
+                  "subtree_end_index": 104
+                },
+                {
+                  "node_id": "0163",
+                  "title": "4.2.29.3 Reply Sequence",
+                  "summary": "4.2.29.3 `Reply Sequence` — `N_Port Activate Alias_ID (NACT)` reply/request addressing and payload summary for sending `NACT` to an `Nx_Port`. Core anchors: `S_ID`, `Alias Server`, `FFFFF8h`, `D_ID`, `Nx_Port`, `Payload`, `Alias_Token`, `Alias Group`, `Service Parameters`, `Alias_ID`, `table 85`. States that `S_ID` designates the `Alias Server (FFFFF8h)` and `D_ID` designates the receiving `Nx_Port`; payload contains the `Alias_Token` of the `Alias Group` being joined, associated `Service Parameters`, and the `Alias_ID` to assign. Content types: message/frame format, response/branch handling. Table present in section context: `Table 83 – Fabric Deactivate Alias_ID Payload` — defines `FDACT (32h)` payload layout. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 104,
+                  "end_index": 104,
+                  "subtree_start_index": 104,
+                  "subtree_end_index": 104
+                },
+                {
+                  "node_id": "0164",
+                  "title": "4.2.29.4 Reply Sequence",
+                  "summary": "Core topic: `4.2.29.4 Reply Sequence` for `NACT Request` rejection behavior. Content types: response/branch handling, completion/exception conditions. `LS_RJT` signifies rejection of the `NACT Request`; an `LS_RJT` shall be returned if `Alias_ID` is unable to be activated as an `Alias_ID`. Required code details: reason code `\"Unable to perform command request\"` plus reason code explanation in `table 147`. Nearby payload/context on the same page references `Table 85 – N_Port Activate Alias_ID Payload` with `FACT (33h)`, `Alias_Token`, `Alias_ID`, `Alias_SP`, `LS_ACC`, `Alias_Class`, `Alias_Qualifier`, `Nx_Port`, `FC-GS-5`, `FC-FS-2`, and note on `Common Service Parameters` / `Class 3 Service Parameters`. Table present: `Table 83 – Fabric Deactivate Alias_ID Payload` — defines the `FDACT (32h)` payload format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 105,
+                  "end_index": 105,
+                  "subtree_start_index": 105,
+                  "subtree_end_index": 105
+                }
+              ],
+              "start_index": 104,
+              "end_index": 104,
+              "subtree_start_index": 104,
+              "subtree_end_index": 105
+            },
+            {
+              "node_id": "0165",
+              "title": "4.2.30 N_Port Deactivate Alias_ID (NDACT)",
+              "summary": "4.2.30 `N_Port Deactivate Alias_ID (NDACT)`: defines the ELS used by `Alias Server` to cause an `Nx_Port` to deactivate a passed `Alias_ID` as an Alias_ID. Contains `procedure/flow`, `message/frame format`, `response/branch handling`, and `completion/exception conditions`: `NDACT Request Sequence`; `LS_ACC or LS_RJT Reply Sequence`; `LS_RJT` returned if the `Alias_ID` is unable to be deactivated, with reason code `Unable to perform command request` and a reason code explanation from table 147. Addressing and identifiers: `S_ID` = `Alias Server (FFFFF8h)`, `D_ID` = receiving `Nx_Port`; payload fields include `NDACT (34h)` and `Alias Group Identifier (Alias_ID)`. `Table 87 – N_Port Deactivate Alias_ID Payload`: defines request payload format. `Table 83 – Fabric Deactivate Alias_ID Payload`: shows `Fabric Deactivate Alias_ID` payload format.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0166",
+                  "title": "4.2.30.1 Description",
+                  "summary": "Covers `4.2.30.1 Description` for `N_Port Deactivate Alias_ID (NDACT)`: the `NDACT ELS` is sent by `Alias Server` to an `Nx_Port` to deactivate the passed `Alias_ID` as an `Alias_ID`. Nearby section content includes procedure/flow and message/frame format: protocol lists `NDACT Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`; request addressing uses `S_ID` = `Alias Server (FFFFF8h)` and `D_ID` = receiving `Nx_Port`; payload carries `Alias_ID` to be deactivated. Response/branch handling and completion/exception conditions: `LS_ACC` notifies successful deactivation; `LS_RJT` rejects when deactivation cannot be performed, with reason code `Unable to perform command request` and reason code explanations in `table 147`. `Table 87 – N_Port Deactivate Alias_ID Payload` shows request payload format, including `NDACT (34h)` and `Alias Group Identifier (Alias_ID)`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 106,
+                  "end_index": 106,
+                  "subtree_start_index": 106,
+                  "subtree_end_index": 106
+                },
+                {
+                  "node_id": "0167",
+                  "title": "4.2.30.2 Protocol",
+                  "summary": "Core topic: `4.2.30.2 Protocol` for `N_Port Deactivate Alias_ID (NDACT)`—the protocol consists only of `a) NDACT Request Sequence` and `b) LS_ACC or LS_RJT Reply Sequence`. Content types: procedure/flow, response/branch handling, message/frame format, completion/exception conditions. Related request/reply details on this page: `S_ID` = Alias Server `FFFFF8h`, `D_ID` = receiving `Nx_Port`; request `Payload` carries `Alias_ID`; `Nx_Port` shall transmit `LS_ACC`; `LS_RJT` rejects when Alias_ID cannot be deactivated, with reason code `Unable to perform command request` and a reason code explanation from `table 147`. Tables: `Table 83 – Fabric Deactivate Alias_ID Payload` shows `FDACT (32h)` payload format; `Table 87 – N_Port Deactivate Alias_ID Payload` defines `NDACT (34h)` request payload and `Alias Group Identifier (Alias_ID)`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 106,
+                  "end_index": 106,
+                  "subtree_start_index": 106,
+                  "subtree_end_index": 106
+                },
+                {
+                  "node_id": "0168",
+                  "title": "4.2.30.3 Request Sequence",
+                  "summary": "Core topic: `4.2.30.3 Request Sequence` for `N_Port Deactivate Alias_ID (NDACT)` request delivery to an `Nx_Port`. Contains `procedure/flow`, `message/frame format`, `response/branch handling`, and `completion/exception conditions`. Addressing rules: `S_ID` designates the `Alias Server (FFFFF8h)`; `D_ID` designates the receiving `Nx_Port`. Payload rules: request payload contains `Alias_ID`; `Table 87 – N_Port Deactivate Alias_ID Payload` shows the request format: Word `0` = `NDACT (34h) 00h 00h 00h`, Word `1` = `Alias_ID`. Field detail: `Alias Group Identifier (Alias_ID)` shall contain the `Alias_ID` the `Nx_Port` no longer recognizes. Completion/response linkage in section context: `Nx_Port` shall transmit `LS_ACC` to notify deactivation; `LS_RJT` signifies rejection if the `Alias_ID` is unable to be deactivated. `Table 87` defines NDACT payload format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 106,
+                  "end_index": 106,
+                  "subtree_start_index": 106,
+                  "subtree_end_index": 106
+                },
+                {
+                  "node_id": "0169",
+                  "title": "4.2.30.4 Reply Sequence",
+                  "summary": "Core topic: `4.2.30.4 Reply Sequence` for `N_Port Deactivate Alias_ID (NDACT)` reply behavior. Contains `response/branch handling` and `completion/exception conditions`; relates to prior `procedure/flow` and `message/frame format` context for `NDACT Request Sequence` / `LS_ACC or LS_RJT Reply Sequence`. `LS_RJT` signifies rejection of the `NDACT Request`; it shall be returned if the `Alias_ID` is unable to be deactivated as an `Alias_ID`. Required error signaling: reason code `\"Unable to perform command request\"` plus one of the reason code explanations in `table 147`. Named anchors present: `NDACT`, `LS_RJT`, `LS_ACC`, `Alias_ID`, `S_ID`, `D_ID`, `Nx_Port`, `Alias Server`, `FFFFF8h`, `34h`. Tables: `Table 83 – Fabric Deactivate Alias_ID Payload` shows `FDACT (32h)` payload layout; `Table 87 – N_Port Deactivate Alias_ID Payload` defines the `NDACT (34h)` request payload and `Alias Group Identifier (Alias_ID)` field.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 106,
+                  "end_index": 106,
+                  "subtree_start_index": 106,
+                  "subtree_end_index": 106
+                }
+              ],
+              "start_index": 106,
+              "end_index": 106,
+              "subtree_start_index": 106,
+              "subtree_end_index": 106
+            },
+            {
+              "node_id": "0170",
+              "title": "4.2.31 Discover N_Port/Service Parameters (PDISC)",
+              "summary": "Covers `4.2.31 Discover N_Port/Service Parameters (PDISC)`: purpose and protocol for transferring Service Parameters from initiating `Nx_Port` to the `Nx_Port` at `D_ID` without affecting the operating environment, open `Sequences`, or open `Exchanges`. Anchors: `PDISC`, `LS_ACC`, `LS_RJT`, `PLOGI`, `ELS_Command`, `Service Parameters`, `Nx_Port`, `D_ID`, `LR`, `loop initialization`, `4.2.7`, `4.3.2`. Content types: procedure/flow (`PDISC Sequence`; `LS_ACC or LS_RJT Reply Sequence`), message/frame format (Payload in `PDISC` and `LS_ACC` identical to `PLOGI`/corresponding `LS_ACC` except `ELS_Command`), response/branch handling (`LS_ACC` vs `LS_RJT`; no response if `LR` or loop initialization occurs first), completion/exception conditions (`PDISC` Service Parameters ignored; `LS_ACC` ignored if `LR`/loop initialization occurred between request and reply). Table `87 – N_Port Deactivate Alias_ID Payload`: shows payload layout with `NDACT (34h)`.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0171",
+                  "title": "4.2.31.1 Description",
+                  "summary": "Covers `4.2.31.1 Description` for `Discover N_Port/Service Parameters (PDISC)`: the `PDISC ELS` transfers `Service Parameters` from the initiating `Nx_Port` to the `Nx_Port` associated with `D_ID` without affecting the operating environment, enabling exchange without terminating open `Sequences` or open `Exchanges`. Named anchors present in this section context: `PDISC`, `PLOGI`, `LS_ACC`, `LS_RJT`, `D_ID`, `Nx_Port`, `ELS_Command`, `LR`, `FDISC`, `Fx_Port`, `F_Port_ID`, `FFFFFEh`, `LS_ACC Payload`, `N_Port Deactivate Alias_ID`, `02h`, `00h`, `34h`. Content types: procedure/flow (`PDISC Sequence`; `LS_ACC or LS_RJT Reply Sequence`), response/branch handling, completion/exception conditions (ignore `PDISC` parameters; no reply if `LR`/loop initialization occurs before `LS_ACC`; ignore `LS_ACC` if `LR`/loop initialization occurred). Table `88 – N_Port Deactivate Alias_ID LS_ACC Payload`: shows `LS_ACC` payload format. Table `87 – N_Port Deactivate Alias_ID Payload`: defines `NDACT (34h)` payload fields.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 107,
+                  "end_index": 107,
+                  "subtree_start_index": 107,
+                  "subtree_end_index": 107
+                },
+                {
+                  "node_id": "0172",
+                  "title": "4.2.31.2 Protocol",
+                  "summary": "Covers `4.2.31.2 Protocol` for `Discover N_Port/Service Parameters (PDISC)`: protocol sequencing only—`a) PDISC Sequence` and `b) LS_ACC or LS_RJT Reply Sequence`—with nearby context on `LS_ACC`, `LS_RJT`, `PLOGI`, `FDISC`, and `F_Port_ID` `FFFFFEh`. Includes `Table 88 – N_Port Deactivate Alias_ID LS_ACC Payload`, showing the `LS_ACC` payload format for successful completion with `Word 0` bytes `02h 00h 00h 00h`; references failure reply `LS_RJT`. Also contains `Table 87 – N_Port Deactivate Alias_ID Payload`, defining the `NDACT (34h)` payload format. Notes completion/exception conditions tied to `LS_ACC` success and `LS_RJT` inability handling. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 107,
+                  "end_index": 107,
+                  "subtree_start_index": 107,
+                  "subtree_end_index": 107
+                },
+                {
+                  "node_id": "0173",
+                  "title": "4.2.31.3 Request Sequence",
+                  "summary": "4.2.31.3 Request Sequence — PDISC request semantics and payload equivalence. Core topic: `PDISC` `Request Sequence` uses Payloads in `PDISC` and `LS_ACC` that are, except for `ELS_Command`, identical to `PLOGI` (see `4.2.7`) and corresponding `LS_ACC` (see `4.3.2`). `Service Parameters` exchanged in `PDISC` shall not modify the operating environment or Service Parameters between the two ports; `Service Parameters` contained in `PDISC` shall be ignored and no error condition reported. Contains: `message/frame format`, `response/branch handling`, `completion/exception conditions`. Named anchors: `PDISC`, `LS_ACC`, `ELS_Command`, `PLOGI`, `Service Parameters`. Table `87 – N_Port Deactivate Alias_ID Payload`: defines `NDACT (34h)` payload layout/fields (`31 .. 24`, `23 .. 16`, `15 .. 08`, `07 .. 00`).",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 107,
+                  "end_index": 107,
+                  "subtree_start_index": 107,
+                  "subtree_end_index": 107
+                },
+                {
+                  "node_id": "0174",
+                  "title": "4.2.31.4 Reply Sequence",
+                  "summary": "4.2.31.4 Reply Sequence covers `PDISC` reply handling and exception/completion conditions for `LS_ACC`/`LS_RJT`. Rule: no response is sent to a `PDISC` if `LR` or loop initialization occurs before `LS_ACC` is sent; an `LS_ACC` for a `PDISC` is ignored if `LR` or loop initialization occurred between the `PDISC` and the `LS_ACC`. Nearby named anchors on this page include `4.2.31 Discover N_Port/Service Parameters (PDISC)`, `4.2.31.3 Request Sequence`, `PLOGI`, `ELS_Command`, and `4.2.32 Discover F_Port Service Parameters (FDISC)`. Table `87 – N_Port Deactivate Alias_ID Payload` defines the `NDACT (34h)` payload word/byte layout. Content types: response/branch handling, completion/exception conditions, message/frame format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 107,
+                  "end_index": 107,
+                  "subtree_start_index": 107,
+                  "subtree_end_index": 107
+                }
+              ],
+              "start_index": 107,
+              "end_index": 107,
+              "subtree_start_index": 107,
+              "subtree_end_index": 107
+            },
+            {
+              "node_id": "0175",
+              "title": "4.2.32 Discover F_Port Service Parameters (FDISC)",
+              "summary": "Core topic: `4.2.32 Discover F_Port Service Parameters (FDISC)` — `FDISC ELS` transfers `Service Parameters` from the initiating `Nx_Port` to the `Fx_Port` at well-known `F_Port_ID` `FFFFFEh`, enabling exchange of `Service Parameters` and assignment of additional `N_Port_IDs` without changing service parameters. Exact anchors: `4.2.32.1 Description`, `4.2.32.2 Protocol`, `FDISC Sequence`, `LS_ACC`, `LS_RJT`, `Nx_Port`, `Fx_Port`, `F_Port_ID`, `FFFFFEh`, `N_Port_IDs`. Content types: procedure/flow (`a) FDISC Sequence`, `b) LS_ACC, LS_RJT Reply Sequence`); response/branch handling (`LS_ACC`, `LS_RJT`). Table present: `Table 87 – N_Port Deactivate Alias_ID Payload` — defines the `NDACT (34h)` payload layout (`Word`, bit columns `31 .. 24`, `23 .. 16`, `15 .. 08`, `07 .. 00`). Figures: none.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0176",
+                  "title": "4.2.32.1 Description",
+                  "summary": "4.2.32.1 Description — FDISC / Discover F_Port Service Parameters: defines the FDISC ELS purpose and scope: transfer of Service Parameters from initiating Nx_Port to Fx_Port at well-known F_Port_ID `FFFFFEh`, enabling exchange of Service Parameters and assignment of additional `N_Port_IDs` without changing service parameters. Named anchors present: `FDISC`, `ELS`, `Service Parameters`, `Nx_Port`, `Fx_Port`, `F_Port_ID`, `FFFFFEh`, `N_Port_IDs`, `LS_ACC`, `LS_RJT`. Also adjacent response/protocol anchor: 4.2.32.2 Protocol lists `FDISC Sequence` and `LS_ACC, LS_RJT Reply Sequence`. Table 87 – N_Port Deactivate Alias_ID Payload: defines `NDACT (34h)` payload format (`00h` fields shown). Content types: message/frame format; response/branch handling.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 107,
+                  "end_index": 107,
+                  "subtree_start_index": 107,
+                  "subtree_end_index": 107
+                },
+                {
+                  "node_id": "0177",
+                  "title": "4.2.32.2 Protocol",
+                  "summary": "Section `4.2.32.2 Protocol` covers the `FDISC` ELS protocol exchange for `Discover F_Port Service Parameters`: `a) FDISC Sequence` and `b) LS_ACC, LS_RJT Reply Sequence`. Core topic is the protocol-level sequence and reply choices for `FDISC` at well-known `F_Port_ID` `FFFFFEh`, tied to assignment of additional `N_Port_IDs` without changing service parameters. Contains: procedure/flow, response/branch handling. Exact anchors present in surrounding section text tied to this protocol context: `FDISC`, `LS_ACC`, `LS_RJT`, `Fx_Port`, `Nx_Port`, `F_Port_ID`, `FFFFFEh`, `N_Port_IDs`. Table present on these pages: `Table 87 – N_Port Deactivate Alias_ID Payload`, showing the `NDACT (34h)` payload/message format with byte fields `31 .. 24`, `23 .. 16`, `15 .. 08`, `07 .. 00`; related nearby completion condition uses `Table 88 – N_Port Deactivate Alias_ID LS_ACC Payload` with `02h 00h 00h 00h`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 107,
+                  "end_index": 107,
+                  "subtree_start_index": 107,
+                  "subtree_end_index": 107
+                },
+                {
+                  "node_id": "0178",
+                  "title": "4.2.32.3 Request Sequence",
+                  "summary": "Covers `FDISC` request behavior and its immediate branching into reply handling context for additional Fabric login. Core rules: `Payload` in `FDISC` and corresponding `LS_ACC` matches `FLOGI`/`LS_ACC` except `ELS_Command`; behavior depends on `S_ID` and `N_Port_ID`. If `S_ID` = zero, `FDISC` transfers `N_Port Name` and `node name` to request assignment/login of an additional `N_Port_ID`; sender must already have one `N_Port_ID` logged in, and `Service Parameters` shall not be modified. If `S_ID` is a previously-assigned `N_Port_ID`, `FDISC` carries matching `N_Port_Name` and `node name`; `Service Parameters` are ignored and no error reported. Response/branch handling and completion/exception conditions include `D_ID`, `F_RJT`, reason code `Login required`, class-specific handling for `Class 1`, `Class 2`, `Class 3`. No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 108,
+                  "end_index": 108,
+                  "subtree_start_index": 108,
+                  "subtree_end_index": 108
+                },
+                {
+                  "node_id": "0179",
+                  "title": "4.2.32.4 Reply Sequence",
+                  "summary": "FDISC `Reply Sequence` response/branch handling and completion/exception conditions: defines `LS_ACC`/`F_RJT` behavior based on `S_ID` in the `FDISC ELS`. If `S_ID` is zero, `D_ID` in `LS_ACC` is the additional `N_Port_ID` being assigned, and the Fabric considers `Fabric Login` complete for that additional `N_Port_ID`. If `S_ID` is not zero and is currently logged in, `D_ID` of `LS_ACC` is set to the `S_ID` of the `FDISC ELS`. Error branch: if `S_ID` = zero and no `N_Port ID` is logged in, or `S_ID` is a non-zero `N_Port_ID` not currently logged, return `F_RJT` with reason code `Login required` to the `S_ID` for `Class 1`/`Class 2`; discard for `Class 3`. No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 108,
+                  "end_index": 108,
+                  "subtree_start_index": 108,
+                  "subtree_end_index": 108
+                }
+              ],
+              "start_index": 107,
+              "end_index": 107,
+              "subtree_start_index": 107,
+              "subtree_end_index": 108
+            },
+            {
+              "node_id": "0180",
+              "title": "4.2.33 Discover Address (ADISC)",
+              "summary": "Core topic: `4.2.33 Discover Address (ADISC)` defines the `ADISC` ELS used to exchange addresses and identifiers of communicating `Nx_Ports`. Named anchors present: `ADISC`, `Discover Address (ADISC)`, `Nx_Ports`, `ADISC Sequence`, `LS_ACC`, `LS_RJT Reply Sequence`. Scope is minimal: `4.2.33.1 Description` states the purpose; `4.2.33.2 Protocol` lists two protocol elements, `a) ADISC Sequence` and `b) LS_ACC or LS_RJT Reply Sequence`. Content types: [procedure/flow] sequence names only; [response/branch handling] `LS_ACC` or `LS_RJT` reply path. No message/frame format, state machine, timer/negotiation, or completion/exception conditions are specified in this section text. Tables: none. Figures: none.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0181",
+                  "title": "4.2.33.1 Description",
+                  "summary": "Section `4.2.33.1 Description` defines the core purpose of `Discover Address (ADISC)`: the `ADISC ELS` shall exchange addresses and identifiers of communicating `Nx_Ports`. Named anchors present: `Discover Address (ADISC)`, `ADISC`, `ADISC ELS`, `Nx_Ports`, `4.2.33.1 Description`, `4.2.33.2 Protocol`, `ADISC Sequence`, `LS_ACC`, `LS_RJT Reply Sequence`. Content types: `message/frame format` not present; `procedure/flow` present only by forward reference to `ADISC Sequence`; `response/branch handling` present only by forward reference to `LS_ACC or LS_RJT Reply Sequence`; `state machine` not present; `timer/negotiation` not present; `completion/exception conditions` not present. Tables: none. Figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 108,
+                  "end_index": 108,
+                  "subtree_start_index": 108,
+                  "subtree_end_index": 108
+                },
+                {
+                  "node_id": "0182",
+                  "title": "4.2.33.2 Protocol",
+                  "summary": "Core topic: `4.2.33.2 Protocol` for `Discover Address (ADISC)`; defines the exchange structure for communicating `Nx_Ports`. Named anchors present verbatim: `ADISC`, `ADISC Sequence`, `LS_ACC`, `LS_RJT`, `LS_ACC or LS_RJT Reply Sequence`, `Nx_Ports`. Content is minimal and procedural: step `a)` identifies the `ADISC Sequence`; step `b)` identifies the reply path as `LS_ACC or LS_RJT Reply Sequence`. Use this section when a question asks which command/reply sequences govern `ADISC`, or whether the response branch is acceptance (`LS_ACC`) versus rejection (`LS_RJT`). Content types present: procedure/flow, response/branch handling. Tables: none. Figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 108,
+                  "end_index": 108,
+                  "subtree_start_index": 108,
+                  "subtree_end_index": 108
+                },
+                {
+                  "node_id": "0183",
+                  "title": "4.2.33.3 Request Sequence",
+                  "summary": "Defines the ADISC request message/frame format and request sequence contents for `ADISC Request`; contains `message/frame format` (no figures, no state machine, no timer/negotiation). `Table 89 – ADISC Request payload` shows the `ADISC Request payload` word/bit layout and originator-identification fields. Exact anchors: `ADISC (52h)`, `Hard Address of Originator`, `N_Port_Name of Originator`, `Node_Name of Originator`, `N_Port_ID of Originator`, `Reserved`, `L_Port_ID`, `Domain address`, `Area address`, `AL_PA`, `LIHA sequence`, `FC-AL-2`, `S_ID`, `ADISC Request frame`. Specifies `Hard Address of Originator` as a 24-bit `L_Port_ID`; if no hard address or no `FC-AL-2` capability, report zeroes. `N_Port_ID of Originator` is the 24-bit `S_ID` from the `ADISC Request frame` header.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 109,
+                  "end_index": 109,
+                  "subtree_start_index": 109,
+                  "subtree_end_index": 109
+                },
+                {
+                  "node_id": "0184",
+                  "title": "4.2.33.4 Reply Sequence",
+                  "summary": "Reply Sequence for `ADISC` `LS_ACC`: specifies the `LS_ACC Payload` reply format in `Table 90 – ADISC LS_ACC Payload` (shows payload layout/fields) and the acceptance rules tied to `LR` or loop initialization. Fields/identifiers: `02h`, `Reserved`, `Hard Address of Responder`, `N_Port_Name of Responder`, `Node_Name of Responder`, `N_Port_ID of Responder`, `L_Port_ID`, `Domain`, `Area`, `AL_PA`, `LIHA`, `FC-AL-2`, `S_ID`, `ADISC`, `LS_ACC`, `LR`. `Hard Address` is a 24-bit `L_Port_ID`; report zeroes if no hard address or no `FC-AL-2` capability. `N_Port_ID of Responder` is the 24-bit `S_ID` from the `ADISC LS_ACC` frame header. `Table 91` summarizes responses to `FDISC`, `PDISC` and `ADISC` (response summary). `Table 89 – ADISC Request payload` defines/shows the `ADISC` request payload. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 110,
+                  "end_index": 110,
+                  "subtree_start_index": 110,
+                  "subtree_end_index": 110
+                }
+              ],
+              "start_index": 108,
+              "end_index": 108,
+              "subtree_start_index": 108,
+              "subtree_end_index": 110
+            },
+            {
+              "node_id": "0185",
+              "title": "4.2.34 Third Party Process Logout (TPRLO)",
+              "summary": "Core topic: `4.2.34 Third Party Process Logout (TPRLO)` defines the `TPRLO` ELS purpose and basic protocol for invalidating operating environments at a recipient `Nx_Port` for a specified `TYPE`, equivalent to prior `Process Login` participants issuing `PRLO`. Content types: procedure/flow, response/branch handling, completion/exception conditions. Protocol anchors: `TPRLO Request Sequence`; `LS_ACC or LS_RJT Reply Sequence`; Request Sequence addressing with `S_ID` = initiating `Nx_Port`, `D_ID` = destination `Nx_Port`. Related carryover table: `Table 91 – Response summary to FDISC/PDISC` shows reply behavior for `FDISC`, `PDISC`, `ADISC` by responding port/status/class, including `LS_ACC`, `LS_RJT`, `F_RJT`, `LOGO`, `Discard`, states `Logged in`/`Not Logged in`, and reason codes `Unable to perform command request`, `N_Port Login required`, `Login required`, `Command not supported`, `Request notsupported`.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0186",
+                  "title": "4.2.34.1 Description",
+                  "summary": "Section `4.2.34.1 Description` defines `Third Party Process Logout (TPRLO)`: the `TPRLO ELS` invalidates operating environments at the recipient `Nx_Port` for the specified `TYPE`, removing image pairs and associated resources, and has the same effect as if all `Nx_Ports` that performed `Process Login` for that `TYPE` had performed `PRLO` with the recipient `Nx_Port`. Nearby protocol/context anchors included on this page: `4.2.34.2 Protocol` (`TPRLO Request Sequence`, `LS_ACC or LS_RJT Reply Sequence`) and `4.2.34.3 Request Sequence` with `S_ID` and `D_ID` field roles for initiating and destination `Nx_Port`. `Table 91 – Response summary to FDISC/PDISC`: response matrix for `FDISC`, `PDISC`, `ADISC` by `Logged in`/`Not Logged in`, `Responding Nx_Port`, `Responding F_Port Controller`, and `LS_ACC`/`LS_RJT`/`F_RJT`/`Discard` outcomes. Content types: response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 111,
+                  "end_index": 111,
+                  "subtree_start_index": 111,
+                  "subtree_end_index": 111
+                },
+                {
+                  "node_id": "0187",
+                  "title": "4.2.34.2 Protocol",
+                  "summary": "TPRLO protocol overview. Section `4.2.34.2 Protocol` defines the `Third Party Process Logout (TPRLO)` exchange at a high level: `a) TPRLO Request Sequence` and `b) LS_ACC or LS_RJT Reply Sequence`. Core topic is the request/reply protocol for `TPRLO`, with adjacent context that `S_ID` designates the initiating `Nx_Port` and `D_ID` designates the destination `Nx_Port`. Includes nearby response handling reference from `Table 91 – Response summary to FDISC/PDISC`, which shows outcomes for `FDISC`, `PDISC`, `ADISC` by `Responding Port Status` (`Logged in`, `Not Logged in`) and responder type/class (`Responding Nx_Port`, `Responding F_Port Controller`, `Class 1, 2, or 3`, `Class 1, or 2`, `Class 3`), including `LS_ACC`, `LS_RJT`, `F_RJT`, `LOGO`. Content types: procedure/flow, response/branch handling.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 111,
+                  "end_index": 111,
+                  "subtree_start_index": 111,
+                  "subtree_end_index": 111
+                },
+                {
+                  "node_id": "0188",
+                  "title": "4.2.34.3 Request Sequence",
+                  "summary": "Section `4.2.34.3 Request Sequence` covers the `TPRLO` ELS request sequence: `S_ID` designates the Nx_Port initiating `TPRLO`, `D_ID` designates the destination Nx_Port. Includes [procedure/flow], [message/frame format], [response/branch handling], [completion/exception conditions]. `Table 91 – Response summary to FDISC/PDISC` shows responses for `FDISC`, `PDISC`, `ADISC` by responding port status (`Logged in`, `Not Logged in`) and responder type/class, including `LS_ACC`, `LS_RJT`, `F_RJT`, `LOGO`, `Discard`, reason codes `\"Unable to perform command request\"`, `\"N_Port Login required\"`, `\"Command not supported\"`, `\"Request not supported\"`, `\"Login required\"`. `Table 92 – TPRLO Payload` defines payload words/fields: `TPRLO (24h)`, `Obsolete (10h)`, `Payload Length` (shall be `20`), `Logout Parameter page`. `Table 93 – TPRLO logout parameter page` defines `TYPE Code or Common Service Parameters`, `TYPE Code Extension`, `Global Process Logout`, obsolete validity/associator/N_Port_ID fields, and reserved bits.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 111,
+                  "end_index": 112,
+                  "subtree_start_index": 111,
+                  "subtree_end_index": 112
+                }
+              ],
+              "start_index": 111,
+              "end_index": 111,
+              "subtree_start_index": 111,
+              "subtree_end_index": 112
+            },
+            {
+              "node_id": "0189",
+              "title": "4.2.35 Clock Synchronization Request (CSR)",
+              "summary": "Section `4.2.35 Clock Synchronization Request (CSR)` covers the `CSR ELS` used to request the `Clock Synchronization Server` to either send or quit sending periodic `Clock Synchronization Update (CSU) ELS frames` or `Clock Synchronization primitives`, depending on the implemented method (`see FC-FS-2`). Named anchors present: `4.2.35.1 Description`, `4.2.35.2 Protocol`, `Clock Synchronization Request Sequence`, `LS_ACC`, `LS_RJT`, `LS_ACC or LS_RJT Reply Sequence`. Content types: procedure/flow (request and reply sequences), response/branch handling (`LS_ACC` or `LS_RJT`), completion/exception conditions (accept vs reject reply). Table present in section material: `Table 94 – TPRLO LS_ACC Payload` — defines `TPRLO LS_ACC Payload` fields including `02h`, `Obsolete (10h)`, `Payload Length`, and `Logout Parameter page` (carryover table adjacent to CSR text).",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0190",
+                  "title": "4.2.35.1 Description",
+                  "summary": "Section `4.2.35.1 Description` defines the purpose of the `Clock Synchronization Request (CSR)` ELS. Core topic: `CSR` is used to request the `Clock Synchronization Server` to either send or quit sending periodic `Clock Synchronization Update (CSU)` ELS frames or `Clock Synchronization primitives`, depending on the method implemented (`FC-FS-2`). Contains: message/frame purpose, timer/negotiation context via periodic synchronization behavior. Nearby named protocol anchors introduced with this section family: `4.2.35.2 Protocol`, `Clock Synchronization Request Sequence`, `LS_ACC`, `LS_RJT`, `LS_ACC or LS_RJT Reply Sequence`. Also present on the page is `Table 94 – TPRLO LS_ACC Payload`, which shows the `TPRLO LS_ACC Payload` format, including `Payload Length`, `Logout Parameter page`, `02h`, obsolete `10h`, and value `20` (contextual adjacent table).",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 113,
+                  "end_index": 113,
+                  "subtree_start_index": 113,
+                  "subtree_end_index": 113
+                },
+                {
+                  "node_id": "0191",
+                  "title": "4.2.35.2 Protocol",
+                  "summary": "Section `4.2.35.2 Protocol` covers `Clock Synchronization Request (CSR)` protocol handling. Content is minimal and contains a `procedure/flow` plus `response/branch handling`: `a) Clock Synchronization Request Sequence`; `b) LS_ACC or LS_RJT Reply Sequence`. This section indicates the exchange pattern for the `CSR ELS`, specifically request sequencing and acceptance/reject reply sequencing, but provides no frame fields, timers, states, or exceptions beyond the named reply alternatives `LS_ACC` and `LS_RJT`. Nearby carried-over reference on the same page: `Table 94 – TPRLO LS_ACC Payload` — shows the `TPRLO LS_ACC Payload` format/definition, including `02h`, obsolete `10h`, `Payload Length`, and `Logout Parameter page`; not a CSR table. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 113,
+                  "end_index": 113,
+                  "subtree_start_index": 113,
+                  "subtree_end_index": 113
+                },
+                {
+                  "node_id": "0192",
+                  "title": "4.2.35.3 Request Sequence",
+                  "summary": "Section `4.2.35.3 Request Sequence` defines the `CSR` request for Clock Synchronization updates: addressing uses `S_ID` as requesting source `Nx_Port`, and `D_ID` as `Clock Synchronization Server (FFFFF6h)` or `Fabric Controller (FFFFFDh)`. Contains `procedure/flow`, `message/frame format`, and `response/branch handling`. Payload is `Table 95 – CSR Payload`, showing `Word 0` `CSR (68h)` and fields `Clock Sync Mode`, `CS_Accuracy`, `CS_Implemented_M`, `CS_Implemented_L`, `CS_Update_Period`. `Table 96 – CSR Clock Sync Mode Meaning` defines `Clock Sync Mode` values `00h`, `01h`, `02h–FEh`, `FFh`, with different meanings when sent to the `Clock Sync Server` versus the `Fabric Controller` (enable, return requested/unspecified Quality of Service parameters, disable, reserved). Also defines `CS_Accuracy_Mantissa` and `CS_Accuracy_Exponent` bit fields and the `T_reference ± ...` accuracy expression.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 114,
+                  "end_index": 114,
+                  "subtree_start_index": 114,
+                  "subtree_end_index": 114
+                },
+                {
+                  "node_id": "0193",
+                  "title": "4.2.35.4 Reply Sequence",
+                  "summary": "Core topic: `4.2.35.4 Reply Sequence` for Clock Synchronization Request/Reply handling of `CSR`. Response/branch handling: `LS_RJT` = rejection of the `CSR` command; `LS_ACC` = server agrees to perform the action requested in the `CSR Payload`. Message/frame format: `LS_ACC Payload` includes `Clock Sync Mode`, `CS_Accuracy`, `CS_Implemented_MSB`, `CS_Implemented_LSB`, `CS_Update_Period`; `Clock Sync Mode` in the `CSR LS_ACC Payload` shall contain the value received in the `CSR Payload`. `Table 97 – CSR LS_ACC Payload`: shows `LS_ACC` payload word/bit layout, including `Word 0 = 02h 00h 00h 00h`. `Table 98 – CSU Clock Sync Mode Meaning`: defines `00h` = enabled, `01h - FEh` = reserved, `FFh` = disabled. Also defines `CS_Accuracy_Mantissa`, `CS_Accuracy_Exponent`, `T_reference`, and semantic meanings of implemented MSB/LSB and update period.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 115,
+                  "end_index": 116,
+                  "subtree_start_index": 115,
+                  "subtree_end_index": 116
+                }
+              ],
+              "start_index": 113,
+              "end_index": 113,
+              "subtree_start_index": 113,
+              "subtree_end_index": 116
+            },
+            {
+              "node_id": "0194",
+              "title": "4.2.36 Clock Synchronization Update (CSU)",
+              "summary": "Section `4.2.36 Clock Synchronization Update (CSU)` defines the `CSU` ELS used by the Clock Synchronization Server to send its current clock value to clients (`FC-FS-2`). Covers `4.2.36.1 Description`, `4.2.36.2 Protocol`, and `4.2.36.3 Request Sequence`. Protocol elements include `Clock Synchronization Update Request Sequence` and `No Reply Sequence` (response/branch handling). Request/frame details: `Information Category` in `Header word 0, bits 24-27` = `Solicited Data (0001b)`; `S_ID` = Clock Synchronization Server well-known address `FFFFF6h`; `D_ID` = receiving `Nx_Port(s)`; Payload contains `CSU (69h)` and `Clock Count` (8 bytes) (message/frame format). `Table 99 – CSU Payload`: defines payload word/bit layout. `Table 100 – Clock Count Field Meaning`: defines bytes `0`–`7`, from `MSB` to `LSB`. Content types: procedure/flow, message/frame format, response/branch handling.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0195",
+                  "title": "4.2.36.1 Description",
+                  "summary": "Clock Synchronization Update (CSU) ELS description: used by the Clock Synchronization Server to send its current clock value to clients (see FC-FS-2). Contains message/frame format and response/branch handling. Protocol notes: Clock Synchronization Update Request Sequence; No Reply Sequence; Request Sequence. Header/identifier details called out here: Information Category (Header word 0, bits 24-27) = Solicited Data (0001b); S_ID = Clock Synchronization Server well-known address (FFFFF6h); D_ID = Nx_Port(s). Payload includes `CSU (69h)`, `Reserved`, and `Clock Count` (8 bytes). Table 99 – CSU Payload: shows payload word/bit layout. Table 100 – Clock Count Field Meaning: defines byte 0 (MSB) through byte 7 (LSB) of `Clock Count`. Also notes Bit 7 in Word 2 = 1/106,25MHz.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 117,
+                  "end_index": 117,
+                  "subtree_start_index": 117,
+                  "subtree_end_index": 117
+                },
+                {
+                  "node_id": "0196",
+                  "title": "4.2.36.2 Protocol",
+                  "summary": "Section `4.2.36.2 Protocol` covers the `Clock Synchronization Update (CSU)` ELS protocol behavior for the Clock Synchronization Server: `Clock Synchronization Update Request Sequence` with `No Reply Sequence` noted, plus request details in `4.2.36.3 Request Sequence`. Content types: procedure/flow, message/frame format, response/branch handling. Key identifiers/fields/codes: `Information Category` = `Solicited Data (0001b)` in `Header word 0, bits 24-27`; `S_ID` = Clock Synchronization Server well-known address `FFFFF6h`; `D_ID` = destination `Nx_Port(s)`; Payload opcode `CSU (69h)`; `Clock Count` (8 bytes); `Bit 7 in Word 2`. `Table 99 – CSU Payload` defines the CSU payload word/bit layout. `Table 100 – Clock Count Field Meaning` defines byte-by-byte meaning of the `Clock Count` field from byte `0 (MSB)` to byte `7 (LSB)`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 117,
+                  "end_index": 117,
+                  "subtree_start_index": 117,
+                  "subtree_end_index": 117
+                }
+              ],
+              "start_index": 117,
+              "end_index": 117,
+              "subtree_start_index": 117,
+              "subtree_end_index": 118
+            }
+          ],
+          "start_index": 36,
+          "end_index": 36,
+          "subtree_start_index": 36,
+          "subtree_end_index": 145
+        }
+      ],
+      "start_index": 36,
+      "end_index": 36,
+      "subtree_start_index": 36,
+      "subtree_end_index": 150
+    }
+  ],
+  "next_steps": {
+    "options": [
+      "Request next part with part: 4",
+      "Jump to last part with part: 7",
+      "Request previous part with part: 2",
+      "Proceed to get_page_content() for specific sections"
+    ],
+    "summary": "Showing part 3 of 7."
+  },
+  "pagination": {
+    "part": "3",
+    "has_more": true,
+    "total_parts": "7"
+  },
+  "total_parts": "7"
+}

@@ -1,0 +1,5 @@
+| Page Code | Meaning |
+| --- | --- |
+| 00h - EFh | Reserved |
+| F0h | Vendor Specific |
+| F1h - FFh | Reserved |

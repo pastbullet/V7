@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0055",
+  "type": "table",
+  "caption": "Table 52 – TPLS Payload",
+  "pages": [
+    79
+  ],
+  "bbox": [
+    99.94,
+    423.99,
+    536.06,
+    540.72
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 79,
+  "logical_table": false
+}

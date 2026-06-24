@@ -1,0 +1,8 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Page Code", "page": 192, "bbox": [210.5, 416.64, 318.03, 433.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Meaning", "page": 192, "bbox": [318.03, 416.64, 425.5, 433.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00h - EFh", "page": 192, "bbox": [210.5, 433.32, 318.03, 450.39]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Reserved", "page": 192, "bbox": [318.03, 433.32, 425.5, 450.39]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "F0h", "page": 192, "bbox": [210.5, 450.39, 318.03, 467.37]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Vendor Specific", "page": 192, "bbox": [318.03, 450.39, 425.5, 467.37]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "F1h - FFh", "page": 192, "bbox": [210.5, 467.37, 318.03, 484.02]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Reserved", "page": 192, "bbox": [318.03, 467.37, 425.5, 484.02]}

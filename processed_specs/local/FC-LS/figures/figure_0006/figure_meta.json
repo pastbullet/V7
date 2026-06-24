@@ -1,0 +1,18 @@
+{
+  "asset_id": "figure_0006",
+  "type": "figure",
+  "caption": "Figure crop on page 198",
+  "pages": [
+    198
+  ],
+  "bbox": [
+    153.0,
+    594.0,
+    153.96,
+    594.96
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "vision_summary_file": "vision_summary.json",
+  "source_pdf_page": 198
+}

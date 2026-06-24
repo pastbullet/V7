@@ -1,0 +1,556 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 123,
+  "spans": [
+    {
+      "span_id": "p123_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0002",
+      "text": " 104",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0003",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        57.65,
+        142.05,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0004",
+      "text": "LS_ACC signifies acceptance of the SRL Request.  If the period scanning is enabled then",
+      "bbox": [
+        142.08,
+        57.65,
+        540.01,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p123_s0005",
+      "text": "the switch shall return the value of the periodic scanning period in the LS_ACC payloads Scan Period",
+      "bbox": [
+        96.0,
+        69.65,
+        539.98,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0006",
+      "text": "field, If the periodic scanning period is disabled then the switch shall set the LS_ACC payload Scan",
+      "bbox": [
+        96.0,
+        81.65,
+        539.97,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0007",
+      "text": "Period field to zero. ",
+      "bbox": [
+        96.0,
+        93.65,
+        184.93,
+        104.76
+      ],
+      "block_index": 3,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0008",
+      "text": "4.2.40",
+      "bbox": [
+        96.0,
+        202.96,
+        123.77,
+        214.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0009",
+      "text": "Set Bit-error Reporting Parameters (SBRP)",
+      "bbox": [
+        133.77,
+        202.96,
+        336.42,
+        214.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0010",
+      "text": "4.2.40.1  Description",
+      "bbox": [
+        96.0,
+        226.96,
+        192.63,
+        238.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0011",
+      "text": "Set SBRP ELS is used to communicate a set of bit error reporting parameters to a Port or to all Ports",
+      "bbox": [
+        96.0,
+        250.96,
+        539.83,
+        262.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0012",
+      "text": "in a particular Domain in a Fabric.  There are 3 parameters, Error Interval, Error Window, and Error",
+      "bbox": [
+        96.0,
+        262.96,
+        540.02,
+        274.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0013",
+      "text": "Threshold.  Error Interval is the time period over which bit error bursts are integrated to produce a sin-",
+      "bbox": [
+        96.0,
+        274.96,
+        539.95,
+        286.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0014",
+      "text": "gle reported error.  An Error Window is composed of one or more Error Intervals.  The Error Interval",
+      "bbox": [
+        96.0,
+        286.96,
+        540.0,
+        298.08
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0015",
+      "text": "Count is the number of Error Intervals occurring in an Error Window.  If the Error Interval Count is",
+      "bbox": [
+        96.0,
+        298.96,
+        540.0,
+        310.08
+      ],
+      "block_index": 6,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0016",
+      "text": "greater than or equal to the Error Thrshold, a Registered Link Incident Report (RLIR) is generated",
+      "bbox": [
+        96.0,
+        310.96,
+        539.95,
+        322.08
+      ],
+      "block_index": 6,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0017",
+      "text": "with an Incident Code specifying Bit-error-rate threshold exceeded (see FC-FS-2).  At the end of the",
+      "bbox": [
+        96.0,
+        322.96,
+        540.03,
+        334.08
+      ],
+      "block_index": 6,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0018",
+      "text": "Error Window, the count is set to zero and the process is repeated.  See figure 2 for illustration of the",
+      "bbox": [
+        96.0,
+        334.96,
+        539.89,
+        346.08
+      ],
+      "block_index": 6,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0019",
+      "text": "parameters.",
+      "bbox": [
+        96.0,
+        346.96,
+        149.27,
+        358.08
+      ],
+      "block_index": 6,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0020",
+      "text": " Figure 2 – Illustration of parameters",
+      "bbox": [
+        231.6,
+        538.96,
+        404.37,
+        550.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0021",
+      "text": "SBRP may be used to determine an acceptable set or the current set of bit error reporting parame-",
+      "bbox": [
+        96.0,
+        562.96,
+        539.94,
+        574.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0022",
+      "text": "ters in the destination Port or Domain, without changing the settings. ",
+      "bbox": [
+        96.0,
+        574.96,
+        401.0,
+        586.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0023",
+      "text": "The setting of parameters in a particular Port or Domain is done by a controlling entity that is outside",
+      "bbox": [
+        96.0,
+        598.96,
+        540.03,
+        610.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0024",
+      "text": "the scope of this standard.",
+      "bbox": [
+        96.0,
+        610.96,
+        213.13,
+        622.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0025",
+      "text": "4.2.40.2  Protocol",
+      "bbox": [
+        96.0,
+        635.02,
+        178.22,
+        646.14
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0026",
+      "text": "a) Set Bit-error Reporting Parameters (SBRP) Request Sequence",
+      "bbox": [
+        106.02,
+        659.02,
+        401.31,
+        670.14
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0027",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence",
+      "bbox": [
+        106.02,
+        683.02,
+        287.89,
+        694.14
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0028",
+      "text": " Table 109 – SRL LS_ACC Payload",
+      "bbox": [
+        236.34,
+        115.66,
+        399.59,
+        126.78
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0029",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        137.62,
+        133.06,
+        148.74
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0030",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        149.62,
+        136.34,
+        160.74
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0031",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        137.62,
+        233.97,
+        148.74
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0032",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        137.62,
+        328.41,
+        148.74
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0033",
+      "text": "15         ..       08",
+      "bbox": [
+        354.79,
+        137.62,
+        427.0,
+        148.74
+      ],
+      "block_index": 14,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0034",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        137.62,
+        522.83,
+        148.74
+      ],
+      "block_index": 14,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0035",
+      "text": "0",
+      "bbox": [
+        120.84,
+        166.66,
+        126.38,
+        177.78
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0036",
+      "text": "02h",
+      "bbox": [
+        149.88,
+        166.66,
+        166.52,
+        177.78
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0037",
+      "text": "Scan Period",
+      "bbox": [
+        247.08,
+        166.66,
+        301.52,
+        177.78
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0038",
+      "text": "Error Window",
+      "bbox": [
+        282.0,
+        383.63,
+        351.17,
+        396.91
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0039",
+      "text": "Error Interval",
+      "bbox": [
+        129.0,
+        428.63,
+        194.67,
+        441.91
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0040",
+      "text": "Any Error Interval with one or more errors is counted as a single error.",
+      "bbox": [
+        138.0,
+        473.63,
+        477.04,
+        486.91
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0041",
+      "text": "* = Bit Error",
+      "bbox": [
+        102.0,
+        491.63,
+        163.72,
+        504.91
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p123_s0042",
+      "text": "    *   *               *        ******             * * * *",
+      "bbox": [
+        132.6,
+        456.71,
+        486.33,
+        467.99
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0113"
+  ]
+}

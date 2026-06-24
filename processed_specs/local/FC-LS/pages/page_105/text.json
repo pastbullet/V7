@@ -1,0 +1,738 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 105,
+  "spans": [
+    {
+      "span_id": "p105_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0002",
+      "text": " 86",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0003",
+      "text": "a)",
+      "bbox": [
+        106.02,
+        274.97,
+        114.91,
+        286.08
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0004",
+      "text": " Alias Group Token (Alias_Token):",
+      "bbox": [
+        114.91,
+        274.97,
+        284.71,
+        286.08
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p105_s0005",
+      "text": " This is the token identifying the Alias Group.",
+      "bbox": [
+        284.64,
+        274.97,
+        487.14,
+        286.08
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p105_s0006",
+      "text": " It contains",
+      "bbox": [
+        490.5,
+        274.97,
+        540.0,
+        286.08
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 5
+    },
+    {
+      "span_id": "p105_s0007",
+      "text": "the Alias_Class and Alias_Qualifier of the Alias Group the Nx_Port is being requested to join.",
+      "bbox": [
+        122.4,
+        286.97,
+        539.94,
+        298.08
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0008",
+      "text": "The Nx_Port validates that it supports that particular Alias Class.  See FC-GS-5 for a descrip-",
+      "bbox": [
+        122.4,
+        298.97,
+        540.05,
+        310.08
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0009",
+      "text": "tion of the Alias_Token.",
+      "bbox": [
+        122.4,
+        310.97,
+        226.78,
+        322.08
+      ],
+      "block_index": 3,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0010",
+      "text": "b)",
+      "bbox": [
+        106.02,
+        334.96,
+        114.92,
+        346.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0011",
+      "text": " Alias Group Identifier (Alias_ID):",
+      "bbox": [
+        114.92,
+        334.96,
+        278.07,
+        346.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p105_s0012",
+      "text": "  The Alias Group Identifier field contains the Alias_ID that",
+      "bbox": [
+        277.98,
+        334.96,
+        540.12,
+        346.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p105_s0013",
+      "text": "the Nx_Port shall recognize, in addition to its native address identifier.",
+      "bbox": [
+        122.4,
+        346.96,
+        430.65,
+        358.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0014",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        370.96,
+        114.38,
+        382.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0015",
+      "text": "Alias Group Service Parameters (Alias_SP):",
+      "bbox": [
+        122.4,
+        370.96,
+        331.86,
+        382.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0016",
+      "text": " The Alias_SP defines the Service Parameters",
+      "bbox": [
+        331.86,
+        370.96,
+        540.12,
+        382.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p105_s0017",
+      "text": "to be used for all operations with this Alias Group (see FC-FS-2).",
+      "bbox": [
+        122.4,
+        382.96,
+        409.14,
+        394.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0018",
+      "text": "NOTE 6 – These Service Parameters may differ from those passed during Login.",
+      "bbox": [
+        105.0,
+        407.18,
+        426.71,
+        417.22
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0019",
+      "text": "For Multicast Groups, only the Common Service Parameters and Class 3 Service Parameters",
+      "bbox": [
+        122.4,
+        430.97,
+        540.04,
+        442.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0020",
+      "text": "are used.  For Hunt Groups, all Service Parameters may be used.",
+      "bbox": [
+        122.4,
+        442.97,
+        412.85,
+        454.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0021",
+      "text": "The Nx_Port shall transmit a LS_ACC to notify the Alias Server if the Nx_Port:",
+      "bbox": [
+        96.0,
+        466.97,
+        441.03,
+        478.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0022",
+      "text": "a) Supports the Alias_Class in the Alias_Token.",
+      "bbox": [
+        106.02,
+        490.97,
+        321.74,
+        502.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0023",
+      "text": "b) Supports the Alias Group Service Parameters specified in Alias_SP.",
+      "bbox": [
+        106.02,
+        514.96,
+        423.41,
+        526.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0024",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        538.96,
+        114.35,
+        550.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0025",
+      "text": "Has assigned the passed Alias_ID as an Alias_ID for this Nx_Port.",
+      "bbox": [
+        122.37,
+        538.96,
+        416.25,
+        550.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0026",
+      "text": "4.2.29.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        562.96,
+        214.86,
+        574.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0027",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        586.96,
+        138.19,
+        598.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0028",
+      "text": "LS_RJT signifies the rejection of the NACT Request.  An LS_RJT shall be returned if the",
+      "bbox": [
+        138.18,
+        586.96,
+        540.0,
+        598.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p105_s0029",
+      "text": "Alias_ID is unable to be activated as an Alias_ID.  A reason code of \"Unable to perform command re-",
+      "bbox": [
+        96.0,
+        598.96,
+        540.04,
+        610.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0030",
+      "text": "quest\" shall be generated, along with a reason code explanation given in table 147.",
+      "bbox": [
+        96.0,
+        610.96,
+        463.48,
+        622.08
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0031",
+      "text": " Table 85 – N_Port Activate Alias_ID Payload",
+      "bbox": [
+        212.16,
+        79.66,
+        423.87,
+        90.78
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0032",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        101.62,
+        133.06,
+        112.74
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0033",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        113.62,
+        136.35,
+        124.74
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0034",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        101.62,
+        233.97,
+        112.74
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0035",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        101.62,
+        328.41,
+        112.74
+      ],
+      "block_index": 15,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0036",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        101.62,
+        427.0,
+        112.74
+      ],
+      "block_index": 15,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0037",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        101.62,
+        522.83,
+        112.74
+      ],
+      "block_index": 15,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0038",
+      "text": "0",
+      "bbox": [
+        120.84,
+        130.66,
+        126.38,
+        141.78
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0039",
+      "text": "FACT (33h)",
+      "bbox": [
+        149.88,
+        130.66,
+        202.11,
+        141.78
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0040",
+      "text": "00h",
+      "bbox": [
+        247.09,
+        130.66,
+        263.73,
+        141.78
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0041",
+      "text": "00h",
+      "bbox": [
+        344.29,
+        130.66,
+        360.96,
+        141.78
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0042",
+      "text": "00h",
+      "bbox": [
+        441.46,
+        130.66,
+        458.14,
+        141.78
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0043",
+      "text": "1",
+      "bbox": [
+        120.84,
+        147.64,
+        126.38,
+        158.76
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0044",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        147.64,
+        171.52,
+        158.76
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0045",
+      "text": "Alias_Token",
+      "bbox": [
+        314.82,
+        149.62,
+        369.79,
+        160.74
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0046",
+      "text": "(12 bytes)",
+      "bbox": [
+        320.1,
+        161.62,
+        364.52,
+        172.74
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0047",
+      "text": "2",
+      "bbox": [
+        120.84,
+        164.62,
+        126.38,
+        175.74
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0048",
+      "text": "3",
+      "bbox": [
+        120.84,
+        181.66,
+        126.38,
+        192.78
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0049",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        181.66,
+        460.36,
+        192.78
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0050",
+      "text": "4",
+      "bbox": [
+        120.84,
+        198.64,
+        126.38,
+        209.76
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0051",
+      "text": "Alias_ID",
+      "bbox": [
+        149.88,
+        198.64,
+        187.05,
+        209.76
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0052",
+      "text": "5",
+      "bbox": [
+        120.84,
+        215.62,
+        126.38,
+        226.74
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0053",
+      "text": "Alias_SP",
+      "bbox": [
+        322.02,
+        217.66,
+        362.55,
+        228.78
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0054",
+      "text": "(80 bytes)",
+      "bbox": [
+        320.1,
+        229.66,
+        364.52,
+        240.78
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0055",
+      "text": "..",
+      "bbox": [
+        120.84,
+        232.66,
+        126.37,
+        243.78
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p105_s0056",
+      "text": "24",
+      "bbox": [
+        118.02,
+        249.64,
+        129.14,
+        260.76
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0087"
+  ]
+}

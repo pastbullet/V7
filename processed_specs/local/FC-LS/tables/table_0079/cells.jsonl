@@ -1,0 +1,12 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "value", "page": 99, "bbox": [100.05, 110.28, 180.33, 132.0]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Function", "page": 99, "bbox": [180.33, 110.28, 535.95, 132.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00h", "page": 99, "bbox": [100.05, 132.0, 180.33, 156.03]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Reserved", "page": 99, "bbox": [180.33, 132.0, 535.95, 156.03]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "01h", "page": 99, "bbox": [100.05, 156.03, 180.33, 238.05]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Set registration – conditionally receive:\nThe source port is registered as a valid recipient of subsequent RLIR ELSs for the\nformat specified. The port is added to the appropriate format specific established\nregistration list. This source port is chosen as the recipient of a link incident\nrecord only if no other recipients from this established registration list have been\nchosen.", "page": 99, "bbox": [180.33, 156.03, 535.95, 238.05]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "02h", "page": 99, "bbox": [100.05, 238.05, 180.33, 308.01]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Set registration – always receive:\nThe source port is registered as a valid recipient of subsequent RLIR ELSs for the\nformat specified. The port is added to the appropriate format specific established\nregistration list. This source port is always chosen as a recipient of a link incident\nrecord.", "page": 99, "bbox": [180.33, 238.05, 535.95, 308.01]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "03h - FEh", "page": 99, "bbox": [100.05, 308.01, 180.33, 332.01]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Reserved", "page": 99, "bbox": [180.33, 308.01, 535.95, 332.01]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "FFh", "page": 99, "bbox": [100.05, 332.01, 180.33, 377.7]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "Clear registration:\nThe source port is de-registered as a valid recipient of subsequent RLIR ELSs for\nthe format specified (i.e., remove from the established registration list).", "page": 99, "bbox": [180.33, 332.01, 535.95, 377.7]}

@@ -1,0 +1,5 @@
+| Bits | Field Name |
+| --- | --- |
+| 31 | Multi-frame ELS sequence supported |
+| 30-12 | Reserved. |
+| 11-00 | ELS Receive Data Field Size |

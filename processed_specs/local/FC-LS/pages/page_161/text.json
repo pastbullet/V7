@@ -1,0 +1,749 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 161,
+  "spans": [
+    {
+      "span_id": "p161_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0002",
+      "text": " 142",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0003",
+      "text": "6.3.4",
+      "bbox": [
+        96.0,
+        57.65,
+        118.22,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0004",
+      "text": "Frequency",
+      "bbox": [
+        128.22,
+        57.65,
+        178.76,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0005",
+      "text": "The frequency of N_Port Login is installation dependent based on the frequency of configuration",
+      "bbox": [
+        96.0,
+        82.97,
+        539.85,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0006",
+      "text": "changes that may alter the N_Port_ID within an installation.  Service Parameters of other Nx_Ports",
+      "bbox": [
+        96.0,
+        94.97,
+        539.87,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0007",
+      "text": "are retained until the next N_Port Login or until N_Port Logout (implicit or explicit) is performed.",
+      "bbox": [
+        96.0,
+        106.97,
+        515.98,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0008",
+      "text": "6.3.5",
+      "bbox": [
+        96.0,
+        130.97,
+        118.22,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0009",
+      "text": "N_Port Login completion - Originator",
+      "bbox": [
+        128.22,
+        130.97,
+        304.34,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0010",
+      "text": "The Originator of the PLOGI request considers Login to have ended when",
+      "bbox": [
+        96.0,
+        154.96,
+        422.65,
+        166.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0011",
+      "text": "a) in Class 1, the Originator has transmitted the ACK (EOF",
+      "bbox": [
+        106.02,
+        178.96,
+        370.16,
+        190.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0012",
+      "text": "t",
+      "bbox": [
+        370.14,
+        180.76,
+        372.36,
+        189.66
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p161_s0013",
+      "text": " or EOF",
+      "bbox": [
+        372.36,
+        178.97,
+        407.33,
+        190.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p161_s0014",
+      "text": "dt",
+      "bbox": [
+        407.34,
+        180.76,
+        414.0,
+        189.66
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p161_s0015",
+      "text": ") to the LS_ACC, or",
+      "bbox": [
+        414.0,
+        178.97,
+        501.24,
+        190.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 5
+    },
+    {
+      "span_id": "p161_s0016",
+      "text": "b) in Class 2, the Originator has transmitted the ACK (EOF",
+      "bbox": [
+        106.02,
+        202.97,
+        370.16,
+        214.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0017",
+      "text": "t",
+      "bbox": [
+        370.14,
+        204.76,
+        372.36,
+        213.66
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p161_s0018",
+      "text": ") to the LS_ACC, or",
+      "bbox": [
+        372.36,
+        202.97,
+        459.54,
+        214.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p161_s0019",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        226.97,
+        114.38,
+        238.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0020",
+      "text": "in Class 3, the Originator has received the LS_ACC.",
+      "bbox": [
+        122.4,
+        226.97,
+        352.94,
+        238.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0021",
+      "text": "When N_Port Login is ended with a Fabric present, the value of end-to-end Credit is initialized.",
+      "bbox": [
+        96.0,
+        250.97,
+        539.99,
+        262.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0022",
+      "text": "When N_Port Login is ended in a point-to-point topology, the values of buffer-to-buffer and end-to-",
+      "bbox": [
+        96.0,
+        262.97,
+        540.03,
+        274.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0023",
+      "text": "end Credit are initialized.",
+      "bbox": [
+        96.0,
+        274.97,
+        206.02,
+        286.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0024",
+      "text": "6.3.6",
+      "bbox": [
+        96.0,
+        298.96,
+        118.22,
+        310.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0025",
+      "text": "N_Port Login completion - Responder",
+      "bbox": [
+        128.22,
+        298.96,
+        308.2,
+        310.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0026",
+      "text": "The Responder of the PLOGI request considers Login to have ended when",
+      "bbox": [
+        96.0,
+        322.96,
+        427.64,
+        334.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0027",
+      "text": "a) in Class 1, the Responder has received the ACK (EOF",
+      "bbox": [
+        106.02,
+        346.96,
+        363.47,
+        358.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0028",
+      "text": "t",
+      "bbox": [
+        363.48,
+        348.76,
+        365.7,
+        357.66
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p161_s0029",
+      "text": " or EOF",
+      "bbox": [
+        365.7,
+        346.97,
+        400.67,
+        358.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p161_s0030",
+      "text": "dt",
+      "bbox": [
+        400.68,
+        348.76,
+        407.34,
+        357.66
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p161_s0031",
+      "text": ") to the LS_ACC, or",
+      "bbox": [
+        407.34,
+        346.97,
+        494.52,
+        358.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 5
+    },
+    {
+      "span_id": "p161_s0032",
+      "text": "b) in Class 2, the Responder has received the ACK (EOF",
+      "bbox": [
+        106.02,
+        370.97,
+        363.47,
+        382.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0033",
+      "text": "t",
+      "bbox": [
+        363.48,
+        372.76,
+        365.7,
+        381.66
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p161_s0034",
+      "text": ") to the LS_ACC, or",
+      "bbox": [
+        365.7,
+        370.97,
+        452.86,
+        382.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p161_s0035",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        394.97,
+        114.38,
+        406.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0036",
+      "text": "in Class 3, the Responder has transmitted the LS_ACC.",
+      "bbox": [
+        122.4,
+        394.97,
+        369.58,
+        406.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0037",
+      "text": "When N_Port Login is ended with a Fabric present, the value of end-to-end Credit is initialized.",
+      "bbox": [
+        96.0,
+        418.97,
+        540.0,
+        430.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0038",
+      "text": "When N_Port Login is ended in a point-to-point topology, the values of buffer-to-buffer and end-to-",
+      "bbox": [
+        96.0,
+        430.97,
+        540.03,
+        442.08
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0039",
+      "text": "end Credit are initialized.",
+      "bbox": [
+        96.0,
+        442.97,
+        206.02,
+        454.08
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0040",
+      "text": "6.4",
+      "bbox": [
+        96.0,
+        466.96,
+        109.88,
+        478.08
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0041",
+      "text": "Logout",
+      "bbox": [
+        119.88,
+        466.96,
+        153.74,
+        478.08
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0042",
+      "text": "6.4.1",
+      "bbox": [
+        96.0,
+        490.96,
+        118.22,
+        502.08
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0043",
+      "text": "Introduction",
+      "bbox": [
+        128.22,
+        490.96,
+        186.53,
+        502.08
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0044",
+      "text": "The destination Logout procedure provides a method for removing service between two N_Port_IDs",
+      "bbox": [
+        96.0,
+        514.96,
+        540.13,
+        526.08
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0045",
+      "text": "or between an N_Port_ID and a Fabric. Logout releases resources, identifiers, and relationships as-",
+      "bbox": [
+        96.0,
+        526.96,
+        540.04,
+        538.08
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0046",
+      "text": "sociated with maintaining service between an N_Port_ID and a destination N_Port_ID or Fabric. Ex-",
+      "bbox": [
+        96.0,
+        538.96,
+        540.01,
+        550.08
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0047",
+      "text": "plicit Nx_Port Logout may be requested by an Nx_Port to another Nx_Port (see 6.4.2). Explicit Fabric",
+      "bbox": [
+        96.0,
+        550.96,
+        540.04,
+        562.08
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0048",
+      "text": "Logout may be requested by an Nx_Port to a Fabric (e.g., to remove a virtual N_Port_ID previously",
+      "bbox": [
+        96.0,
+        562.96,
+        539.97,
+        574.08
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0049",
+      "text": "assigned by the Fabric) or by a Fabric to an Nx_Port (see 6.4.3). Implicit Logout may occur between",
+      "bbox": [
+        96.0,
+        574.96,
+        540.0,
+        586.08
+      ],
+      "block_index": 19,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0050",
+      "text": "an Nx_Port and the Fabric (see 6.4.4).",
+      "bbox": [
+        96.0,
+        586.96,
+        265.97,
+        598.08
+      ],
+      "block_index": 19,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0051",
+      "text": "6.4.2",
+      "bbox": [
+        96.0,
+        610.96,
+        118.22,
+        622.08
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0052",
+      "text": "Explicit N_Port Logout",
+      "bbox": [
+        128.22,
+        610.96,
+        235.95,
+        622.08
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0053",
+      "text": "Logout is accomplished by transmitting a Logout (LOGO) Link Service request Sequence (see FC-",
+      "bbox": [
+        96.0,
+        635.02,
+        540.06,
+        646.14
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0054",
+      "text": "FS-2) to a destination Nx_Port.  The Logout procedure is complete when the responding Nx_Port",
+      "bbox": [
+        96.0,
+        647.02,
+        540.03,
+        658.14
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0055",
+      "text": "transmits a LS_ACC Link Service reply Sequence.",
+      "bbox": [
+        96.0,
+        659.02,
+        318.69,
+        670.14
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0056",
+      "text": "To explicitly Logout, the initiating Nx_Port shall terminate other open Sequences that it initiated with",
+      "bbox": [
+        96.0,
+        683.02,
+        540.02,
+        694.14
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p161_s0057",
+      "text": "the destination Nx_Port prior to performing Logout, otherwise, the state of other open Sequences is",
+      "bbox": [
+        96.0,
+        695.02,
+        540.01,
+        706.14
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0177",
+  "type": "table",
+  "caption": "Table 165 – DiffServ QoS bit definition",
+  "pages": [
+    184
+  ],
+  "bbox": [
+    91.89,
+    483.84,
+    542.9,
+    616.84
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 184,
+  "logical_table": false
+}

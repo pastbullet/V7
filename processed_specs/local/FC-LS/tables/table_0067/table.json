@@ -1,0 +1,56 @@
+{
+  "rows": [
+    [
+      "Bit position",
+      "Function"
+    ],
+    [
+      "31",
+      "Hub"
+    ],
+    [
+      "30",
+      "Switch"
+    ],
+    [
+      "29",
+      "Gateway"
+    ],
+    [
+      "28",
+      "Storage device"
+    ],
+    [
+      "27",
+      "Host"
+    ],
+    [
+      "26",
+      "Storage subsystem"
+    ],
+    [
+      "25",
+      "Storage access device"
+    ],
+    [
+      "24",
+      "Wavelength division multiplexer"
+    ],
+    [
+      "23",
+      "NAS server"
+    ],
+    [
+      "22",
+      "Bridge"
+    ],
+    [
+      "21",
+      "Virtualization device"
+    ],
+    [
+      "20-8",
+      "Reserved"
+    ]
+  ]
+}

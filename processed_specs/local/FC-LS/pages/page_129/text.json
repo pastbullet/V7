@@ -1,0 +1,803 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 129,
+  "spans": [
+    {
+      "span_id": "p129_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0002",
+      "text": " 110",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0003",
+      "text": "The Originator Address Identifier field shall be set to the address identifier of the Originator of the ex-",
+      "bbox": [
+        96.0,
+        57.65,
+        540.01,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0004",
+      "text": "change about which information was requested.",
+      "bbox": [
+        96.0,
+        69.65,
+        307.59,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0005",
+      "text": "The Responder Address Identifier field shall be set the address identifier of the Responder of the ex-",
+      "bbox": [
+        96.0,
+        94.97,
+        540.15,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0006",
+      "text": "change about which information was requested.",
+      "bbox": [
+        96.0,
+        106.97,
+        307.59,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0007",
+      "text": "The value of the FC4VALUE field shall be specified by the FC-4 that sends the LS_ACC to a REC",
+      "bbox": [
+        96.0,
+        130.97,
+        539.99,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0008",
+      "text": "ELS.",
+      "bbox": [
+        96.0,
+        142.96,
+        117.66,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0009",
+      "text": "E_STAT shall be as defined in FC-FS-2",
+      "bbox": [
+        96.0,
+        166.96,
+        269.91,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0010",
+      "text": "for the E_STAT field in the Exchange Status Block for the ex-",
+      "bbox": [
+        272.4,
+        166.96,
+        540.17,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p129_s0011",
+      "text": "change about which information was requested.  The bits specifying whether the Exchange is com-",
+      "bbox": [
+        96.0,
+        178.96,
+        539.98,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0012",
+      "text": "plete (Bit 29) and whether the responder holds Sequence Initiative (Bit 30) shall be valid; the setting",
+      "bbox": [
+        96.0,
+        190.96,
+        540.01,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0013",
+      "text": "of other bits may not be valid.",
+      "bbox": [
+        96.0,
+        202.96,
+        226.51,
+        214.08
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0014",
+      "text": "4.2.43",
+      "bbox": [
+        96.0,
+        226.96,
+        123.74,
+        238.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0015",
+      "text": "Exchange Virtual Fabrics Parameters (EVFP)",
+      "bbox": [
+        133.8,
+        226.96,
+        346.05,
+        238.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0016",
+      "text": "4.2.43.1  EVFP Messages Structure",
+      "bbox": [
+        96.0,
+        250.96,
+        261.55,
+        262.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0017",
+      "text": "4.2.43.1.1  EVFP Request Sequence",
+      "bbox": [
+        96.0,
+        274.96,
+        264.27,
+        286.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0018",
+      "text": "Protocol: ",
+      "bbox": [
+        96.0,
+        298.96,
+        142.66,
+        310.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0019",
+      "text": "Exchange Virtual Fabrics Parameters (EVFP) Request Sequence",
+      "bbox": [
+        142.62,
+        298.96,
+        431.48,
+        310.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p129_s0020",
+      "text": "Format:",
+      "bbox": [
+        96.0,
+        322.96,
+        133.13,
+        334.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0021",
+      "text": " FT–1",
+      "bbox": [
+        133.2,
+        322.96,
+        159.24,
+        334.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p129_s0022",
+      "text": "Addressing:",
+      "bbox": [
+        96.0,
+        346.96,
+        154.29,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0023",
+      "text": " For an N_Port, the S_ID field shall be set to FFFFF0h, indicating the N_Port Controller",
+      "bbox": [
+        154.32,
+        346.96,
+        540.14,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p129_s0024",
+      "text": "of the originating N_Port. The D_ID field shall be set to FFFFFEh, indicating the F_Port Controller of",
+      "bbox": [
+        96.0,
+        358.96,
+        540.13,
+        370.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0025",
+      "text": "the destination F_Port. For an F_Port, the S_ID field shall be set to FFFFFEh, indicating the F_Port",
+      "bbox": [
+        96.0,
+        370.96,
+        540.11,
+        382.08
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0026",
+      "text": "Controller of the originating F_Port. The D_ID field shall be set to FFFFF0h, indicating the N_Port Con-",
+      "bbox": [
+        96.0,
+        382.96,
+        540.07,
+        394.08
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0027",
+      "text": "troller of the destination N_Port ",
+      "bbox": [
+        96.0,
+        394.96,
+        236.54,
+        406.08
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0028",
+      "text": "Payload:",
+      "bbox": [
+        96.0,
+        418.96,
+        137.66,
+        430.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0029",
+      "text": " Two types of EVFP messages are defined. All EVFP Request messages share the same",
+      "bbox": [
+        137.64,
+        418.96,
+        540.02,
+        430.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p129_s0030",
+      "text": "message structure, shown in table 116.",
+      "bbox": [
+        96.0,
+        430.96,
+        269.92,
+        442.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0031",
+      "text": "Protocol Version:",
+      "bbox": [
+        96.0,
+        659.02,
+        179.35,
+        670.14
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0032",
+      "text": " Shall be set to one.",
+      "bbox": [
+        179.28,
+        659.02,
+        267.64,
+        670.14
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p129_s0033",
+      "text": " Table 116 – EVFP Request Payload",
+      "bbox": [
+        233.58,
+        452.98,
+        402.41,
+        464.1
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0034",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        475.0,
+        133.06,
+        486.12
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0035",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        487.0,
+        136.34,
+        498.12
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0036",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        475.0,
+        233.97,
+        486.12
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0037",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        475.0,
+        328.41,
+        486.12
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0038",
+      "text": "15         ..       08",
+      "bbox": [
+        354.79,
+        475.0,
+        427.0,
+        486.12
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0039",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        475.0,
+        522.83,
+        486.12
+      ],
+      "block_index": 16,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0040",
+      "text": "0",
+      "bbox": [
+        120.84,
+        505.0,
+        126.38,
+        516.12
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0041",
+      "text": "7Fh",
+      "bbox": [
+        187.86,
+        505.96,
+        205.1,
+        517.08
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0042",
+      "text": "00h",
+      "bbox": [
+        285.36,
+        505.96,
+        302.0,
+        517.08
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0043",
+      "text": "00h",
+      "bbox": [
+        382.56,
+        505.96,
+        399.19,
+        517.08
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0044",
+      "text": "00h",
+      "bbox": [
+        479.75,
+        505.96,
+        496.39,
+        517.08
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0045",
+      "text": "1",
+      "bbox": [
+        120.84,
+        523.96,
+        126.38,
+        535.08
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0046",
+      "text": "Protocol Version",
+      "bbox": [
+        159.84,
+        524.98,
+        233.15,
+        536.1
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0047",
+      "text": "Message Code",
+      "bbox": [
+        260.13,
+        524.98,
+        327.21,
+        536.1
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0048",
+      "text": "Transaction Identifier",
+      "bbox": [
+        392.77,
+        524.98,
+        486.14,
+        536.1
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0049",
+      "text": "2",
+      "bbox": [
+        120.84,
+        541.96,
+        126.38,
+        553.08
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0050",
+      "text": "MSB",
+      "bbox": [
+        153.9,
+        541.96,
+        175.54,
+        553.08
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0051",
+      "text": "Core N_Port_Name / ",
+      "bbox": [
+        295.62,
+        544.0,
+        391.79,
+        555.11
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0052",
+      "text": "Core Switch_Name",
+      "bbox": [
+        299.28,
+        556.0,
+        385.3,
+        567.11
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0053",
+      "text": "3",
+      "bbox": [
+        120.84,
+        559.0,
+        126.38,
+        570.11
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0054",
+      "text": "LSB",
+      "bbox": [
+        445.5,
+        559.0,
+        464.38,
+        570.11
+      ],
+      "block_index": 19,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0055",
+      "text": "4",
+      "bbox": [
+        120.84,
+        577.0,
+        126.38,
+        588.11
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0056",
+      "text": "Reserved",
+      "bbox": [
+        223.74,
+        577.96,
+        266.45,
+        589.07
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0057",
+      "text": "Message Payload Length",
+      "bbox": [
+        383.07,
+        577.96,
+        495.82,
+        589.07
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0058",
+      "text": "5",
+      "bbox": [
+        120.84,
+        595.0,
+        126.38,
+        606.11
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0059",
+      "text": "Message Payload",
+      "bbox": [
+        302.58,
+        608.98,
+        382.01,
+        620.09
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0060",
+      "text": "..",
+      "bbox": [
+        120.84,
+        611.98,
+        126.37,
+        623.09
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p129_s0061",
+      "text": "N",
+      "bbox": [
+        120.0,
+        628.96,
+        127.19,
+        640.07
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0120"
+  ]
+}

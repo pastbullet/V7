@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0141",
+  "type": "table",
+  "caption": "Table 137 – FFI_PSS LS_ACC Payload",
+  "pages": [
+    141
+  ],
+  "bbox": [
+    99.47,
+    110.62,
+    536.53,
+    155.36
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 141
+}

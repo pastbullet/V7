@@ -1,0 +1,630 @@
+{
+  "doc_id": "FC-LS",
+  "unit_id": "fabric_login_response_branches",
+  "reading_md": "Read only `6.2.2.3 Responses to Explicit Fabric Login` in `FC-LS.pdf` and extracted the response branches for transmitted FLOGI. The section enumerates: normal Fabric `LS_ACC`; point-to-point `LS_ACC` from another Nx_Port; `F_BSY`; `P_BSY`; `F_RJT` with actions for reason codes `Class not supported` and `Invalid S_ID`; `P_RJT` with action for reason code `Class not supported` and generic handling for other reason codes; `LS_RJT` with D_ID consequences and retry after altering Service Parameters; `No Response` with FC-FS-2 error recovery and possible new FLOGI; and self-connection where equal `N_Port_Name` causes the FLOGI to be discarded. Included D_ID/S_ID consequences where explicitly stated.",
+  "claim_candidates": [
+    {
+      "claim_id": "flogi_resp_normal_ls_acc_branch",
+      "text": "A normal explicit Fabric Login response is an LS_ACC reply Sequence with OX_ID equal to the OX_ID of the FLOGI and the Common Service N_Port/F_Port bit set to one, indicating an Fx_Port.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0005",
+          "quote": "a) LS_ACC reply Sequence with OX_ID equal to the OX_ID of the FLOGI, and the Common Ser-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0006",
+          "quote": "vice N_Port/F_Port bit set to one (Fx_Port) - This is the normal response to a Fabric Login re-"
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_normal_ls_acc_did_assigned",
+      "text": "For the normal Fabric LS_ACC response, the D_ID of the LS_ACC shall be the N_Port_ID assigned by the Fabric.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0007",
+          "quote": "quest.  The D_ID of the LS_ACC shall be the N_Port_ID assigned by the Fabric."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_normal_ls_acc_did_from_zero_sid",
+      "text": "If the S_ID in the FLOGI was 000000h, then in the normal Fabric LS_ACC response the D_ID shall be XXXXXX.",
+      "kind": "condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0008",
+          "quote": "the FLOGI was 000000h, the D_ID shall be XXXXXX."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_normal_ls_acc_did_from_partial_sid",
+      "text": "If the S_ID in the FLOGI was 0000h || YY, then in the normal Fabric LS_ACC response the D_ID shall be XXXXYY.",
+      "kind": "condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0009",
+          "quote": "YY, the D_ID shall be XXXXYY."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_normal_ls_acc_did_from_full_sid",
+      "text": "If the S_ID in the FLOGI was XXXXXX, then in the normal Fabric LS_ACC response the D_ID shall be the same value of XXXXXX.",
+      "kind": "condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0009",
+          "quote": "If the S_ID in the FLOGI was XXXXXX, the D_ID shall be"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0010",
+          "quote": "same value of XXXXXX."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_normal_ls_acc_payload_contents",
+      "text": "The normal Fabric LS_ACC payload shall include the Service Parameters for the entire Fabric, a 64-bit F_Port_Name, and a 64-bit Fabric_Name.",
+      "kind": "field_presence",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0010",
+          "quote": "same value of XXXXXX.  The Payload shall include the Service Parameters for the entire Fab-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0011",
+          "quote": "ric, a 64-bit F_Port_Name and 64-bit Fabric_Name."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_normal_ls_acc_next_action",
+      "text": "After the normal Fabric LS_ACC response, the Nx_Port may continue operation with other Nx_Ports if the N_Port_ID, F_Port_Name, and Fabric_Name are the same as in a previous Fabric Login, or proceed to N_Port Login.",
+      "kind": "completion_condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0013",
+          "quote": "tables 150 and 155.  The Nx_Port may continue operation with other Nx_Ports if the"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0014",
+          "quote": "N_Port_ID, F_Port_Name, and Fabric_Name are the same as in a previous Fabric Login or"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0015",
+          "quote": "proceed to N_Port Login."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_p2p_ls_acc_branch",
+      "text": "Another possible FLOGI response is an LS_ACC reply Sequence with OX_ID equal to the OX_ID of the FLOGI and the Common Service Nx_Port/F_Port bit set to zero, indicating a point-to-point connection with another Nx_Port.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0016",
+          "quote": "b) LS_ACC reply Sequence with OX_ID equal to the OX_ID of the FLOGI, and the Common Ser-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0017",
+          "quote": "vice Nx_Port/F_Port bit set to zero (Nx_Port) This indicates a point-to-point connection with an-"
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_p2p_ls_acc_did",
+      "text": "For the point-to-point LS_ACC response from another Nx_Port, the D_ID of the LS_ACC shall be the S_ID of the FLOGI.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0018",
+          "quote": "other Nx_Port.  The D_ID of the LS_ACC shall be the S_ID of the FLOGI."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_p2p_ls_acc_payload_contents",
+      "text": "For the point-to-point LS_ACC response from another Nx_Port, the payload shall include the Service Parameters from the FLOGI with all classes marked invalid, a 64-bit N_Port_Name, and a 64-bit Node_Name of the connected Nx_Port.",
+      "kind": "field_presence",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0019",
+          "quote": "include the Service Parameters from the FLOGI with all classes marked invalid, a 64-bit"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0020",
+          "quote": "N_Port_Name and 64-bit Node_Name of the connected Nx_Port."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_p2p_ls_acc_name_less_action",
+      "text": "For the point-to-point LS_ACC response from another Nx_Port, if the received N_Port_Name is less than its N_Port_Name, the Nx_Port proceeds to N_Port Login.",
+      "kind": "condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0021",
+          "quote": "N_Port_Name is less than its N_Port_Name, the Nx_Port proceeds to N_Port Login."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_p2p_ls_acc_name_greater_action",
+      "text": "For the point-to-point LS_ACC response from another Nx_Port, if the received N_Port_Name is greater than its N_Port_Name, the Nx_Port waits for PLOGI from the attached N_Port.",
+      "kind": "condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0022",
+          "quote": "ceived N_Port_Name is greater than its N_Port_Name, the Nx_Port waits for PLOGI from the"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0023",
+          "quote": "attached N_Port."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_f_bsy_branch",
+      "text": "A possible FLOGI response is F_BSY with OX_ID equal to the OX_ID of the FLOGI.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0025",
+          "quote": "F_BSY with OX_ID equal to the OX_ID of the FLOGI."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_f_bsy_did",
+      "text": "For the F_BSY response to FLOGI, the D_ID shall be the S_ID of the FLOGI.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0025",
+          "quote": "The D_ID shall be the S_ID of the FLO-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0026",
+          "quote": "GI."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_f_bsy_action",
+      "text": "For the F_BSY response to FLOGI, the Fabric is busy and the Nx_Port may retry the FLOGI again later.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0026",
+          "quote": "GI.  The Fabric is busy.  The Nx_Port may retry the FLOGI again later."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_p_bsy_branch",
+      "text": "A possible FLOGI response is a P_BSY Sequence with OX_ID equal to the OX_ID of the FLOGI.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0027",
+          "quote": "d) P_BSY Sequence with OX_ID equal to the OX_ID of the FLOGI."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_p_bsy_did",
+      "text": "For the P_BSY response to FLOGI, the D_ID shall be the S_ID of the FLOGI.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0027",
+          "quote": "The D_ID shall be the S_ID"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0028",
+          "quote": "of the FLOGI."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_p_bsy_action",
+      "text": "For the P_BSY response to FLOGI, this indicates a point-to-point connection with another Nx_Port that is currently busy, and the Nx_Port may proceed to N_Port Login after a delay to allow the destination Nx_Port to become not busy.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0028",
+          "quote": "of the FLOGI.  This indicates a point-to-point connection with another Nx_Port that is currently"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0029",
+          "quote": "busy.  The Nx_Port may proceed to N_Port Login after a delay to allow the destination Nx_Port"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0030",
+          "quote": "to become not busy."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_f_rjt_branch",
+      "text": "A possible FLOGI response is an F_RJT Sequence with OX_ID equal to the OX_ID of the FLOGI.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0031",
+          "quote": "e) F_RJT Sequence with OX_ID equal to the OX_ID of the FLOGI."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_f_rjt_did",
+      "text": "For the F_RJT response to FLOGI, the D_ID shall be the S_ID of the FLOGI.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0031",
+          "quote": "The D_ID shall be the S_ID of"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0032",
+          "quote": "the FLOGI."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_f_rjt_class_not_supported_action",
+      "text": "For the F_RJT response to FLOGI, if the reason code is \"Class not supported\", the Nx_Port may originate a FLOGI in a different class.",
+      "kind": "condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0032",
+          "quote": "the FLOGI.  The Fabric has rejected the FLOGI request.  The reason code contained in the"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0033",
+          "quote": "Payload determines the Nx_Port’s action.  If the reason code is \"Class not supported\", the"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0034",
+          "quote": "Nx_Port may originate a FLOGI in a different class."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_f_rjt_invalid_sid_action_from_zero_or_partial",
+      "text": "For the F_RJT response to FLOGI, if the reason code is \"Invalid S_ID\" and the rejected FLOGI S_ID was 000000h or 0000h || YY, the Nx_Port may select a 24-bit value XXXXXX for its N_Port_ID by a method outside this standard and originate a FLOGI with this value in the S_ID.",
+      "kind": "condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0034",
+          "quote": "If the reason code is \"Invalid S_ID\", the"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0035",
+          "quote": "Nx_Port may originate a FLOGI with a different S_ID:"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0036",
+          "quote": "A) If the S_ID of the rejected FLOGI was 000000h or 0000h || YY, the Nx_Port may select a 24"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0037",
+          "quote": "bit value, XXXXXX, for its N_Port_ID by a method outside this standard and originate a"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0038",
+          "quote": "FLOGI with this value in the S_ID."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_f_rjt_invalid_sid_action_from_full",
+      "text": "For the F_RJT response to FLOGI, if the reason code is \"Invalid S_ID\" and the rejected FLOGI S_ID was XXXXXX, the Nx_Port may select '00 00 00', '00 00 yy', or a new value 'XX XX XX' for its N_Port_ID by a method outside this standard and originate a FLOGI with this value in the S_ID.",
+      "kind": "condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0039",
+          "quote": "B) If the S_ID of the rejected FLOGI was XXXXXX, the Nx_Port may select a value of '00 00"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0040",
+          "quote": "00' or '00 00 yy', or a new value 'XX XX XX' for its N_Port_ID by a method outside this stan-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0041",
+          "quote": "dard and originate a FLOGI with this value in the S_ID."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_p_rjt_branch",
+      "text": "A possible FLOGI response is a P_RJT Sequence with OX_ID equal to the OX_ID of the FLOGI.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0043",
+          "quote": "P_RJT Sequence, with OX_ID equal to the OX_ID of the FLOGI."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_p_rjt_did",
+      "text": "For the P_RJT response to FLOGI, the D_ID shall be the S_ID of the FLOGI.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0043",
+          "quote": "The D_ID shall be the S_ID"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0044",
+          "quote": "of the FLOGI."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_p_rjt_class_not_supported_action",
+      "text": "For the P_RJT response to FLOGI, if the reason code is \"Class not supported\", the Nx_Port may proceed to N_Port Login in a different class than used for the FLOGI.",
+      "kind": "condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0044",
+          "quote": "of the FLOGI.  This indicates a point-to-point connection with another Nx_Port.  The reason"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0045",
+          "quote": "code contained in the Payload determines the Nx_Port’s action.  If the reason code is \"Class"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0046",
+          "quote": "not supported\", the Nx_Port may proceed to N_Port Login in a different class than used for the"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0047",
+          "quote": "FLOGI."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_p_rjt_other_reason_action",
+      "text": "For the P_RJT response to FLOGI, for reason codes other than \"Class not supported\", the Nx_Port should respond accordingly.",
+      "kind": "condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0047",
+          "quote": "FLOGI.  For other reason codes, the Nx_Port should respond accordingly."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_ls_rjt_branch",
+      "text": "A possible FLOGI response is an LS_RJT Sequence with OX_ID equal to the OX_ID of the FLOGI.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p155_s0003",
+          "quote": "g) LS_RJT Sequence with OX_ID equal to the OX_ID of the FLOGI."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_ls_rjt_did_assigned",
+      "text": "For the LS_RJT response to FLOGI, the D_ID of the LS_RJT shall be the N_Port_ID assigned by the Fabric.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p155_s0003",
+          "quote": "The D_ID of the LS_RJT"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0004",
+          "quote": "shall be the N_Port_ID assigned by the Fabric."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_ls_rjt_did_from_zero_sid",
+      "text": "If the S_ID in the FLOGI was 000000h, then for the LS_RJT response the D_ID shall be XXXXXX.",
+      "kind": "condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p155_s0004",
+          "quote": "If the S_ID in the FLOGI was 000000h, the"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0005",
+          "quote": "D_ID shall be XXXXXX."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_ls_rjt_did_from_partial_sid",
+      "text": "If the S_ID in the FLOGI was 0000h || YY, then for the LS_RJT response the D_ID shall be XXXXYY.",
+      "kind": "condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p155_s0005",
+          "quote": "If the S_ID in the FLOGI was 0000h || YY, the D_ID shall be XXXXYY."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_ls_rjt_did_from_full_sid",
+      "text": "If the S_ID in the FLOGI was XXXXXX, then for the LS_RJT response the D_ID shall be XXXXXX.",
+      "kind": "condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p155_s0006",
+          "quote": "If the S_ID in the FLOGI was XXXXXX, the D_ID shall be XXXXXX."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_ls_rjt_action",
+      "text": "For the LS_RJT response to FLOGI, the reason code contained in the payload determines the Nx_Port's action, and the Nx_Port may alter the Service Parameters based on the reason code and originate a new FLOGI.",
+      "kind": "condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p155_s0006",
+          "quote": "The reason code con-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0007",
+          "quote": "tained in the Payload determines the Nx_Port’s action.  The Nx_Port may alter the Service Pa-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0008",
+          "quote": "rameters based on the reason code and originate a new FLOGI."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_no_response_branch",
+      "text": "No Response to FLOGI may indicate a delivery error such as an error on the physical transport.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p155_s0009",
+          "quote": "h) No Response may indicate a delivery error, e.g., error on the physical transport.  The Nx_Port"
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_no_response_recovery",
+      "text": "If there is no response to FLOGI, the Nx_Port shall perform error recovery per FC-FS-2 and may originate a new FLOGI after recovery.",
+      "kind": "other",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p155_s0010",
+          "quote": "shall perform error recovery per FC-FS-2.  The Nx_Port may originate a new FLOGI after re-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0011",
+          "quote": "covery."
+        }
+      ]
+    },
+    {
+      "claim_id": "flogi_resp_self_connection_discard",
+      "text": "If the received N_Port_Name is equal to its N_Port_Name, then the Nx_Port is connected to itself, this case is outside the scope of the standard, and the FLOGI is discarded.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p155_s0013",
+          "quote": "If the received N_Port_Name is equal to its N_Port_Name, then the Nx_Port is connected to it-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0014",
+          "quote": "self and this case is outside the scope of this standard.  The FLOGI is discarded."
+        }
+      ]
+    }
+  ]
+}

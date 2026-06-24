@@ -1,0 +1,853 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 205,
+  "spans": [
+    {
+      "span_id": "p205_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0002",
+      "text": " 186",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0003",
+      "text": "State P2: AUTH_ELS.",
+      "bbox": [
+        96.0,
+        57.65,
+        197.4,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0004",
+      "text": " In this state an Authentication transaction shall be performed (see FC-SP). If",
+      "bbox": [
+        197.4,
+        57.65,
+        540.11,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p205_s0005",
+      "text": "the FLOGI LS_ACC had the Virtual Fabrics bit set to one and the D_ID set to 000000h, then the",
+      "bbox": [
+        96.0,
+        69.65,
+        539.88,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0006",
+      "text": "N_Port shall use the N_Port Controller WKA as S_ID, otherwise the N_Port shall use the assigned",
+      "bbox": [
+        96.0,
+        81.65,
+        539.85,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0007",
+      "text": "Address Identifier as S_ID.",
+      "bbox": [
+        96.0,
+        93.65,
+        214.88,
+        104.76
+      ],
+      "block_index": 3,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0008",
+      "text": "State P3: N_Port.",
+      "bbox": [
+        96.0,
+        118.97,
+        184.69,
+        130.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0009",
+      "text": " The N_Port continues its operations. The N_Port may acquire additional",
+      "bbox": [
+        185.16,
+        118.97,
+        539.96,
+        130.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p205_s0010",
+      "text": "N_Port_IDs by following the N_Port_ID virtualization procedure.",
+      "bbox": [
+        96.0,
+        130.97,
+        377.6,
+        142.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0011",
+      "text": "Transition P1:P2.",
+      "bbox": [
+        96.0,
+        154.96,
+        179.77,
+        166.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0012",
+      "text": " Occurs when the FLOGI LS_ACC has the Security bit set to one. If the FLOGI",
+      "bbox": [
+        179.94,
+        154.96,
+        539.96,
+        166.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p205_s0013",
+      "text": "LS_ACC has also the Virtual Fabrics bit set to one and the D_ID set to 000000h, then the N_Port",
+      "bbox": [
+        96.0,
+        166.96,
+        540.08,
+        178.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0014",
+      "text": "shall use the N_Port Controller WKA as S_ID for the Authentication transaction performed in state",
+      "bbox": [
+        96.0,
+        178.96,
+        539.95,
+        190.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0015",
+      "text": "P2.",
+      "bbox": [
+        96.0,
+        190.96,
+        111.01,
+        202.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0016",
+      "text": "Transition P1:P3.",
+      "bbox": [
+        96.0,
+        214.96,
+        177.43,
+        226.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0017",
+      "text": " Occurs when the FLOGI LS_ACC has both the Security bit and the Virtual Fabrics",
+      "bbox": [
+        177.48,
+        214.96,
+        539.98,
+        226.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p205_s0018",
+      "text": "bit set to zero.",
+      "bbox": [
+        96.0,
+        226.96,
+        158.76,
+        238.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0019",
+      "text": "Transition P2:P3.",
+      "bbox": [
+        96.0,
+        250.96,
+        177.49,
+        262.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0020",
+      "text": " Occurs when the Authentication transaction performed in state P2 completes suc-",
+      "bbox": [
+        177.54,
+        250.96,
+        540.08,
+        262.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p205_s0021",
+      "text": "cessfully and the FLOGI LS_ACC had the Virtual Fabrics bit set to zero.",
+      "bbox": [
+        96.0,
+        262.96,
+        413.31,
+        274.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0022",
+      "text": "Transition P1:P4.",
+      "bbox": [
+        96.0,
+        286.96,
+        178.16,
+        298.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0023",
+      "text": " Occurs when the FLOGI LS_ACC has the Security bit set to zero and the Virtual",
+      "bbox": [
+        178.14,
+        286.96,
+        540.05,
+        298.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p205_s0024",
+      "text": "Fabrics bit set to one.",
+      "bbox": [
+        96.0,
+        298.96,
+        191.52,
+        310.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0025",
+      "text": "Transition P2:P4.",
+      "bbox": [
+        96.0,
+        322.96,
+        177.49,
+        334.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0026",
+      "text": " Occurs when the Authentication transaction performed in state P2 completes suc-",
+      "bbox": [
+        177.54,
+        322.96,
+        540.08,
+        334.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p205_s0027",
+      "text": "cessfully and the FLOGI LS_ACC had the Virtual Fabrics bit set to one.",
+      "bbox": [
+        96.0,
+        334.96,
+        410.52,
+        346.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0028",
+      "text": "State P4: Process EVFP.",
+      "bbox": [
+        96.0,
+        358.96,
+        212.11,
+        370.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0029",
+      "text": " The N_Port shall initiate the EVFP processing as described in 8.4.1.",
+      "bbox": [
+        212.1,
+        358.96,
+        515.42,
+        370.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p205_s0030",
+      "text": "Transition P4:P5",
+      "bbox": [
+        96.0,
+        385.66,
+        175.29,
+        396.78
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0031",
+      "text": "(k)",
+      "bbox": [
+        175.32,
+        383.44,
+        185.12,
+        392.34
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p205_s0032",
+      "text": ".",
+      "bbox": [
+        185.1,
+        385.67,
+        187.87,
+        396.78
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p205_s0033",
+      "text": " Occurs when the EVFP processing determined that VFT tagging is performed.",
+      "bbox": [
+        187.92,
+        385.67,
+        540.0,
+        396.78
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p205_s0034",
+      "text": "There is a different state for each Virtual Fabric negotiated to be used on the link. The state for Virtual",
+      "bbox": [
+        96.0,
+        397.67,
+        540.06,
+        408.78
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0035",
+      "text": "Fabric K is denoted P5",
+      "bbox": [
+        96.0,
+        412.31,
+        197.02,
+        423.42
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0036",
+      "text": "(k)",
+      "bbox": [
+        197.1,
+        410.14,
+        206.42,
+        419.04
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 2
+    },
+    {
+      "span_id": "p205_s0037",
+      "text": ".",
+      "bbox": [
+        206.4,
+        412.31,
+        209.17,
+        423.42
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 3
+    },
+    {
+      "span_id": "p205_s0038",
+      "text": "State P5",
+      "bbox": [
+        96.0,
+        439.01,
+        137.72,
+        450.12
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0039",
+      "text": "(k)",
+      "bbox": [
+        138.06,
+        436.78,
+        148.4,
+        445.68
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p205_s0040",
+      "text": ": FLOGI.",
+      "bbox": [
+        148.74,
+        439.01,
+        190.45,
+        450.12
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p205_s0041",
+      "text": " In this state the FC frames transmitted by the N_Port are tagged with the",
+      "bbox": [
+        190.8,
+        439.01,
+        540.08,
+        450.12
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p205_s0042",
+      "text": "VFT_Header carrying VF_ID K. An FLOGI request, tagged with VF_ID K, is transmitted. This FLOGI",
+      "bbox": [
+        96.0,
+        451.01,
+        540.01,
+        462.12
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0043",
+      "text": "request shall carry the N_Port_Name of the Logical N_Port associated with VF_ID K and the opera-",
+      "bbox": [
+        96.0,
+        463.01,
+        540.07,
+        474.12
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0044",
+      "text": "tional parameters (e.g., timeout values, Classes of service) of Virtual Fabric K. The FLOGI LS_ACC",
+      "bbox": [
+        96.0,
+        475.01,
+        540.04,
+        486.12
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0045",
+      "text": "assigns an N_Port_ID in Virtual Fabric K to the Logical N_Port associated with VF_ID K. All parame-",
+      "bbox": [
+        96.0,
+        487.01,
+        540.09,
+        498.12
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0046",
+      "text": "ters of the FLOGI request and the FLOGI LS_ACC transmitted in this state are used as specified in",
+      "bbox": [
+        96.0,
+        499.01,
+        539.92,
+        510.12
+      ],
+      "block_index": 12,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0047",
+      "text": "clause 6, except that the following parameters in the Common Service Parameters are ignored and",
+      "bbox": [
+        96.0,
+        511.01,
+        539.89,
+        522.12
+      ],
+      "block_index": 12,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0048",
+      "text": "the values transmitted in state P1 are used instead:",
+      "bbox": [
+        96.0,
+        523.0,
+        323.28,
+        534.12
+      ],
+      "block_index": 12,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0049",
+      "text": "a) Buffer-to-buffer Credit (see 6.6.2.3);",
+      "bbox": [
+        106.02,
+        550.96,
+        280.7,
+        562.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0050",
+      "text": "b) BB_Credit Management (see 6.6.2.4.9);",
+      "bbox": [
+        106.02,
+        574.96,
+        299.03,
+        586.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0051",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        598.96,
+        114.35,
+        610.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0052",
+      "text": "BB_SC_N (see 6.6.2.5); and",
+      "bbox": [
+        122.37,
+        598.96,
+        249.08,
+        610.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0053",
+      "text": "d) Buffer-to-buffer Receive Data_Field size (see 6.6.2.6).",
+      "bbox": [
+        106.02,
+        622.96,
+        361.86,
+        634.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0054",
+      "text": "Transition P5",
+      "bbox": [
+        96.0,
+        649.66,
+        160.68,
+        660.78
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0055",
+      "text": "(k)",
+      "bbox": [
+        160.74,
+        647.44,
+        170.72,
+        656.34
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p205_s0056",
+      "text": ":P6",
+      "bbox": [
+        170.76,
+        649.67,
+        186.5,
+        660.78
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p205_s0057",
+      "text": "(k)",
+      "bbox": [
+        186.6,
+        647.44,
+        196.58,
+        656.34
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p205_s0058",
+      "text": ".",
+      "bbox": [
+        196.62,
+        649.67,
+        199.39,
+        660.78
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 5
+    },
+    {
+      "span_id": "p205_s0059",
+      "text": " Occurs when the FLOGI processing in state P5 is completed, if the FLOGI",
+      "bbox": [
+        199.5,
+        649.67,
+        540.05,
+        660.78
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 6
+    },
+    {
+      "span_id": "p205_s0060",
+      "text": "LS_ACC has the Security bit set to one.",
+      "bbox": [
+        96.0,
+        661.67,
+        272.05,
+        672.78
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0061",
+      "text": "State P6",
+      "bbox": [
+        96.0,
+        688.31,
+        136.03,
+        699.42
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p205_s0062",
+      "text": "(k)",
+      "bbox": [
+        136.14,
+        686.14,
+        146.0,
+        695.04
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p205_s0063",
+      "text": ": AUTH_ELS.",
+      "bbox": [
+        146.04,
+        688.31,
+        208.43,
+        699.42
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p205_s0064",
+      "text": " In this state the FC frames transmitted by the N_Port are tagged with the",
+      "bbox": [
+        208.5,
+        688.31,
+        539.92,
+        699.42
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p205_s0065",
+      "text": "VFT_Header carrying VF_ID K. The Logical N_Port associated with VF_ID K performs an Authenti-",
+      "bbox": [
+        96.0,
+        700.31,
+        539.9,
+        711.42
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

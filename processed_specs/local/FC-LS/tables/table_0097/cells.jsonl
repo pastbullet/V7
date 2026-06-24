@@ -1,0 +1,36 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Item", "page": 112, "bbox": [162.11, 363.84, 400.11, 385.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Word", "page": 112, "bbox": [400.11, 363.84, 438.86, 385.32]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Bit", "page": 112, "bbox": [438.86, 363.84, 473.89, 385.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "TYPE Code or Common Service Parameters", "page": 112, "bbox": [162.11, 385.32, 400.11, 409.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "0", "page": 112, "bbox": [400.11, 385.32, 438.86, 409.35]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "31-24", "page": 112, "bbox": [438.86, 385.32, 473.89, 409.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "TYPE Code Extension", "page": 112, "bbox": [162.11, 409.35, 400.11, 433.35]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "0", "page": 112, "bbox": [400.11, 409.35, 438.86, 433.35]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "23-16", "page": 112, "bbox": [438.86, 409.35, 473.89, 433.35]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "Third Party Originator Process _Associator Validity -\nobsolete", "page": 112, "bbox": [162.11, 433.35, 400.11, 467.37]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "0", "page": 112, "bbox": [400.11, 433.35, 438.86, 467.37]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "15", "page": 112, "bbox": [438.86, 433.35, 473.89, 467.37]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "Responder Process_Associator Validity - obsolete", "page": 112, "bbox": [162.11, 467.37, 400.11, 491.37]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "0", "page": 112, "bbox": [400.11, 467.37, 438.86, 491.37]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "14", "page": 112, "bbox": [438.86, 467.37, 473.89, 491.37]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "Third Party Originator N_Port_ID Validity - obsolete", "page": 112, "bbox": [162.11, 491.37, 400.11, 515.37]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "0", "page": 112, "bbox": [400.11, 491.37, 438.86, 515.37]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "13", "page": 112, "bbox": [438.86, 491.37, 473.89, 515.37]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "Global Process Logout", "page": 112, "bbox": [162.11, 515.37, 400.11, 539.37]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "0", "page": 112, "bbox": [400.11, 515.37, 438.86, 539.37]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "12", "page": 112, "bbox": [438.86, 515.37, 473.89, 539.37]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "Reserved", "page": 112, "bbox": [162.11, 539.37, 400.11, 563.37]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "0", "page": 112, "bbox": [400.11, 539.37, 438.86, 563.37]}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "11-0", "page": 112, "bbox": [438.86, 539.37, 473.89, 563.37]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "Third Party Originator Process_Associator - obsolete", "page": 112, "bbox": [162.11, 563.37, 400.11, 587.37]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "1", "page": 112, "bbox": [400.11, 563.37, 438.86, 587.37]}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "31-0", "page": 112, "bbox": [438.86, 563.37, 473.89, 587.37]}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "Responder Process_Associator - obsolete", "page": 112, "bbox": [162.11, 587.37, 400.11, 611.37]}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "2", "page": 112, "bbox": [400.11, 587.37, 438.86, 611.37]}
+{"cell_id": "r10c3", "row": 10, "col": 3, "text": "31-0", "page": 112, "bbox": [438.86, 587.37, 473.89, 611.37]}
+{"cell_id": "r11c1", "row": 11, "col": 1, "text": "Reserved", "page": 112, "bbox": [162.11, 611.37, 400.11, 635.37]}
+{"cell_id": "r11c2", "row": 11, "col": 2, "text": "3", "page": 112, "bbox": [400.11, 611.37, 438.86, 635.37]}
+{"cell_id": "r11c3", "row": 11, "col": 3, "text": "31-24", "page": 112, "bbox": [438.86, 611.37, 473.89, 635.37]}
+{"cell_id": "r12c1", "row": 12, "col": 1, "text": "Third Party Originator N_Port_ID - obsolete", "page": 112, "bbox": [162.11, 635.37, 400.11, 658.84]}
+{"cell_id": "r12c2", "row": 12, "col": 2, "text": "3", "page": 112, "bbox": [400.11, 635.37, 438.86, 658.84]}
+{"cell_id": "r12c3", "row": 12, "col": 3, "text": "23-0", "page": 112, "bbox": [438.86, 635.37, 473.89, 658.84]}

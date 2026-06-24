@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0076",
+  "type": "table",
+  "caption": "Table 72 – Incident Code values",
+  "pages": [
+    96
+  ],
+  "bbox": [
+    102.68,
+    98.28,
+    533.32,
+    547.7
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 96,
+  "logical_table": false
+}

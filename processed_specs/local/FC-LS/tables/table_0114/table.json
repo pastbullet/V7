@@ -1,0 +1,54 @@
+{
+  "rows": [
+    [
+      "Bits\nWord\n0\n1\n2\n3",
+      "31 .. 28",
+      "27 .. 24",
+      "23 .. 16",
+      "15 .. 12",
+      "11 .. 08",
+      "07 .. 03",
+      "02 .. 00"
+    ],
+    [
+      null,
+      "SBRP (7Ch)",
+      null,
+      "00h",
+      "00h",
+      null,
+      "00h",
+      null
+    ],
+    [
+      null,
+      "Error Flags",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      "Error\nWindow\nexponent",
+      "Error Window value",
+      null,
+      "Error\nInterval\nexponent",
+      "Error Interval value",
+      null,
+      null
+    ],
+    [
+      null,
+      "Error Threshold",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

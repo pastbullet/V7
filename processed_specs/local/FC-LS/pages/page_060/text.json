@@ -1,0 +1,712 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 60,
+  "spans": [
+    {
+      "span_id": "p060_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0002",
+      "text": " 41",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0003",
+      "text": "4.2.15.3  Request Sequence",
+      "bbox": [
+        96.0,
+        57.65,
+        227.06,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0004",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        81.65,
+        157.1,
+        92.76
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0005",
+      "text": "The S_ID is the Fabric Controller (FFFFFEh) sending the FAN.  The D_ID is the",
+      "bbox": [
+        157.08,
+        81.65,
+        539.9,
+        92.76
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p060_s0006",
+      "text": "NL_Port receiving the FAN.",
+      "bbox": [
+        96.0,
+        93.65,
+        217.65,
+        104.76
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0007",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        117.64,
+        140.41,
+        128.76
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0008",
+      "text": "The format of the FAN Request Payload is shown in table 26.",
+      "bbox": [
+        140.4,
+        117.64,
+        411.53,
+        128.76
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p060_s0009",
+      "text": "4.2.15.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        310.96,
+        214.86,
+        322.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0010",
+      "text": "none",
+      "bbox": [
+        96.0,
+        334.96,
+        118.21,
+        346.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0011",
+      "text": "4.2.16",
+      "bbox": [
+        96.0,
+        358.96,
+        123.74,
+        370.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0012",
+      "text": "Loop Initialize (LINIT)",
+      "bbox": [
+        133.74,
+        358.96,
+        234.86,
+        370.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0013",
+      "text": "4.2.16.1  Description",
+      "bbox": [
+        96.0,
+        382.96,
+        192.63,
+        394.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0014",
+      "text": "The LINIT ELS requests the start of Loop Initialization on a designated loop.  The FL_Port connected",
+      "bbox": [
+        96.0,
+        406.96,
+        540.01,
+        418.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0015",
+      "text": "to the loop addressed by the Loop Fabric Address shall originate a LIP of the type specified in the",
+      "bbox": [
+        96.0,
+        418.96,
+        539.92,
+        430.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0016",
+      "text": "Payload and begin the Initialization Process as described in FC-AL-2. The LS_ACC Reply Sequence",
+      "bbox": [
+        96.0,
+        430.96,
+        539.95,
+        442.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0017",
+      "text": "shall not be initiated before the FL_Port has transitioned from the OPEN-INIT to MONITORING",
+      "bbox": [
+        96.0,
+        442.96,
+        540.06,
+        454.08
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0018",
+      "text": "State, and the Fabric Controller has completed sending any FAN ELS (see FC-AL-2).  If the LINIT",
+      "bbox": [
+        96.0,
+        454.96,
+        540.0,
+        466.08
+      ],
+      "block_index": 10,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0019",
+      "text": "ELS is received by a non-FL_Port, the port shall originate an LS_RJT with a reason code of \"Com-",
+      "bbox": [
+        96.0,
+        466.96,
+        540.02,
+        478.08
+      ],
+      "block_index": 10,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0020",
+      "text": "mand not supported\".",
+      "bbox": [
+        96.0,
+        478.96,
+        191.22,
+        490.08
+      ],
+      "block_index": 10,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0021",
+      "text": "4.2.16.2  Protocol",
+      "bbox": [
+        96.0,
+        502.96,
+        178.22,
+        514.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0022",
+      "text": "a) Loop Initialize Request Sequence",
+      "bbox": [
+        106.02,
+        526.96,
+        271.31,
+        538.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0023",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence",
+      "bbox": [
+        106.02,
+        550.96,
+        287.89,
+        562.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0024",
+      "text": "4.2.16.3  Request Sequence",
+      "bbox": [
+        96.0,
+        574.96,
+        227.07,
+        586.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0025",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        598.96,
+        157.1,
+        610.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0026",
+      "text": "The S_ID designates the Nx_Port requesting Loop Initialization of the loop.  The D_ID",
+      "bbox": [
+        157.08,
+        598.96,
+        540.08,
+        610.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p060_s0027",
+      "text": "field shall be the Loop Fabric Address (LFA) of the loop to be initialized.",
+      "bbox": [
+        96.0,
+        610.96,
+        412.08,
+        622.07
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0028",
+      "text": " Table 26 – FAN Payload",
+      "bbox": [
+        260.22,
+        139.66,
+        375.74,
+        150.77
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0029",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        161.62,
+        133.06,
+        172.73
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0030",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        173.62,
+        136.35,
+        184.73
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0031",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        161.62,
+        233.97,
+        172.73
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0032",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        161.62,
+        328.42,
+        172.73
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0033",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        161.62,
+        427.0,
+        172.73
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0034",
+      "text": "07        ..       00",
+      "bbox": [
+        453.39,
+        161.62,
+        522.83,
+        172.73
+      ],
+      "block_index": 17,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0035",
+      "text": "0",
+      "bbox": [
+        120.84,
+        190.66,
+        126.38,
+        201.77
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0036",
+      "text": "FAN (60h)",
+      "bbox": [
+        149.88,
+        190.66,
+        196.01,
+        201.77
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0037",
+      "text": "00h",
+      "bbox": [
+        247.11,
+        190.66,
+        263.75,
+        201.77
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0038",
+      "text": "00h",
+      "bbox": [
+        344.31,
+        190.66,
+        360.98,
+        201.77
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0039",
+      "text": "00h",
+      "bbox": [
+        441.48,
+        190.66,
+        458.16,
+        201.77
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0040",
+      "text": "1",
+      "bbox": [
+        120.84,
+        207.64,
+        126.38,
+        218.75
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0041",
+      "text": "Reserved",
+      "bbox": [
+        149.88,
+        207.64,
+        192.63,
+        218.75
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0042",
+      "text": "Loop Fabric Address",
+      "bbox": [
+        247.09,
+        207.64,
+        339.28,
+        218.75
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0043",
+      "text": "2",
+      "bbox": [
+        120.84,
+        224.62,
+        126.38,
+        235.73
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0044",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        224.62,
+        171.53,
+        235.73
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0045",
+      "text": "F_Port_Name",
+      "bbox": [
+        311.22,
+        226.66,
+        373.4,
+        237.77
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0046",
+      "text": "(8 bytes)",
+      "bbox": [
+        322.86,
+        238.66,
+        361.76,
+        249.77
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0047",
+      "text": "3",
+      "bbox": [
+        120.84,
+        241.66,
+        126.38,
+        252.77
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0048",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        241.66,
+        460.37,
+        252.77
+      ],
+      "block_index": 20,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0049",
+      "text": "4",
+      "bbox": [
+        120.84,
+        258.64,
+        126.38,
+        269.75
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0050",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        258.64,
+        171.53,
+        269.75
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0051",
+      "text": "Fabric_Name",
+      "bbox": [
+        312.3,
+        260.62,
+        372.24,
+        271.73
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0052",
+      "text": "(8 bytes)",
+      "bbox": [
+        322.86,
+        272.62,
+        361.76,
+        283.73
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0053",
+      "text": "5",
+      "bbox": [
+        120.84,
+        275.62,
+        126.38,
+        286.73
+      ],
+      "block_index": 21,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p060_s0054",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        275.62,
+        460.37,
+        286.73
+      ],
+      "block_index": 21,
+      "line_index": 6,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0027"
+  ]
+}

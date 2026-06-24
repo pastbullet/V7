@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Nx_Port A\nWord 0, Bit 11",
+      "Nx_Port B\nWord 1, Bit 31",
+      "Nx_Port A as Sequence Initiator"
+    ],
+    [
+      "0",
+      "0",
+      "ACK_0 not supported"
+    ],
+    [
+      "0",
+      "1",
+      "ACK_0 not supported"
+    ],
+    [
+      "1",
+      "0",
+      "ACK_0 not supported"
+    ],
+    [
+      "1",
+      "1",
+      "ACK_0 supported"
+    ]
+  ]
+}

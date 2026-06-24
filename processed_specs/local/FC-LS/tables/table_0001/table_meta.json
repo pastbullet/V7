@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0001",
+  "type": "table",
+  "caption": "Table 1 – ISO and American Conventions",
+  "pages": [
+    30
+  ],
+  "bbox": [
+    215.32,
+    303.43,
+    420.69,
+    389.26
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 30,
+  "logical_table": false
+}

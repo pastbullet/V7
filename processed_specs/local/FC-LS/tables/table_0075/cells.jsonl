@@ -1,0 +1,30 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits", "page": 95, "bbox": [96.88, 76.28, 158.85, 97.98]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Meaning", "page": 95, "bbox": [158.85, 76.28, 538.76, 97.98]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "", "page": 95, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "28", "page": 95, "bbox": [96.88, 97.98, 158.85, 156.03]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Expansion Port:\nWhen set to one, indicates that the switch port is an Inter-Switch-Link Expansion port\n(E_Port). When zero, bit 28 indicates that the switch port is not an Inter-Switch-Link\nExpansion port.", "page": 95, "bbox": [158.85, 97.98, 538.76, 156.03]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "", "page": 95, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "27-26", "page": 95, "bbox": [96.88, 156.03, 158.85, 372.18]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Severity Indication:\nBits 27-26 constitute a two-bit code that identifies the severity indication for the link\nincident. The codes and their meanings are as follows:", "page": 95, "bbox": [158.85, 156.03, 538.76, 201.86]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 95, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "", "page": 95, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Code", "page": 95, "bbox": [158.85, 201.86, 193.83, 224.01]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Meaning", "page": 95, "bbox": [193.83, 201.86, 538.76, 224.01]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "", "page": 95, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "0", "page": 95, "bbox": [158.85, 224.01, 193.83, 258.03]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "Informational report:\nIndicates link incident notification of an informational purpose.", "page": 95, "bbox": [193.83, 224.01, 538.76, 258.03]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "", "page": 95, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "1", "page": 95, "bbox": [158.85, 258.03, 193.83, 304.05]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "Link degraded but operational:\nIndicates if the link associated with the incident port is not in a Link-Failure or\nOffline State as a result of the event that generated the Link Incident Record.", "page": 95, "bbox": [193.83, 258.03, 538.76, 304.05]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "", "page": 95, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "2", "page": 95, "bbox": [158.85, 304.05, 193.83, 350.01]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "Link not operational:\nIndicates if the link associated with the incident port is in a Link-Failure or\nOffline State as a result of the event that generated the Link Incident Record.", "page": 95, "bbox": [193.83, 304.05, 538.76, 350.01]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "", "page": 95, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "3", "page": 95, "bbox": [158.85, 350.01, 193.83, 372.18]}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "Reserved.", "page": 95, "bbox": [193.83, 350.01, 538.76, 372.18]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "25", "page": 95, "bbox": [96.88, 372.18, 158.85, 442.05]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "Subassembly type:\nWhen set to one, specifies that the type of subassembly used for the port that is the\nsubject of this Link Incident Record is a laser. When set to zero, specifies that the type\nof subassembly used for the port that is the subject of this Link Incident Record is not\na laser.", "page": 95, "bbox": [158.85, 372.18, 538.76, 442.05]}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "", "page": 95, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "24", "page": 95, "bbox": [96.88, 442.05, 158.85, 511.7]}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "FRU identification:\nWhen set to one, specifies that the Specific-Link Incident Record Data is in a format\nthat provides field-replaceable-unit (FRU) identification. When set to zero, specifies\nthat the Specific-Link Incident Record Data is not in a format that provides field-\nreplaceable-unit (FRU) identification.", "page": 95, "bbox": [158.85, 442.05, 538.76, 511.7]}
+{"cell_id": "r10c3", "row": 10, "col": 3, "text": "", "page": 95, "bbox": [0.0, 0.0, 0.0, 0.0]}

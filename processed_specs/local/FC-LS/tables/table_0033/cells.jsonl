@@ -1,0 +1,10 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "State", "page": 62, "bbox": [165.64, 98.28, 427.83, 120.0]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Value", "page": 62, "bbox": [427.83, 98.28, 470.36, 120.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "Reserved", "page": 62, "bbox": [165.64, 120.0, 427.83, 144.03]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "0", "page": 62, "bbox": [427.83, 120.0, 470.36, 144.03]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "Success - The requested function was completed.", "page": 62, "bbox": [165.64, 144.03, 427.83, 168.03]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "1", "page": 62, "bbox": [427.83, 144.03, 470.36, 168.03]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "Failure - The requested function could not be completed.", "page": 62, "bbox": [165.64, 168.03, 427.83, 192.03]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "2", "page": 62, "bbox": [427.83, 168.03, 470.36, 192.03]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "Reserved", "page": 62, "bbox": [165.64, 192.03, 427.83, 215.7]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "3-255", "page": 62, "bbox": [427.83, 192.03, 470.36, 215.7]}

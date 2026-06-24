@@ -1,0 +1,830 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 58,
+  "spans": [
+    {
+      "span_id": "p058_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0002",
+      "text": " 39",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0003",
+      "text": "Exchange: ",
+      "bbox": [
+        96.0,
+        57.65,
+        149.26,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0004",
+      "text": "A separate Exchange is required other than the Exchange for which Sequence Initiative",
+      "bbox": [
+        149.34,
+        57.65,
+        539.97,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p058_s0005",
+      "text": "is being requested in order to properly track status.",
+      "bbox": [
+        96.0,
+        69.65,
+        320.92,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0006",
+      "text": "SEQ_ID and SEQ_CNT: ",
+      "bbox": [
+        96.0,
+        93.65,
+        208.12,
+        104.76
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0007",
+      "text": "The SEQ_ID and the SEQ_CNT shall be appropriate for an open Se-",
+      "bbox": [
+        208.2,
+        93.65,
+        540.35,
+        104.76
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p058_s0008",
+      "text": "quence.",
+      "bbox": [
+        96.0,
+        105.64,
+        131.53,
+        116.76
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0009",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        129.64,
+        140.41,
+        140.76
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0010",
+      "text": "The format of the Payload is shown in table 23.",
+      "bbox": [
+        140.4,
+        129.64,
+        348.69,
+        140.76
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p058_s0011",
+      "text": "4.2.13.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        346.96,
+        214.86,
+        358.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0012",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        370.96,
+        138.19,
+        382.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0013",
+      "text": "LS_RJT signifies rejection of the RSI command.",
+      "bbox": [
+        138.18,
+        370.96,
+        350.38,
+        382.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p058_s0014",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        394.96,
+        142.05,
+        406.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0015",
+      "text": "LS_ACC signifies that the destination Nx_Port has transferred the Sequence Initiative for",
+      "bbox": [
+        142.08,
+        394.96,
+        540.02,
+        406.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p058_s0016",
+      "text": "the target Exchange.  The format of the LS_ACC Payload is shown in table 24.",
+      "bbox": [
+        96.0,
+        406.96,
+        443.78,
+        418.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0017",
+      "text": "4.2.14",
+      "bbox": [
+        96.0,
+        514.96,
+        123.77,
+        526.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0018",
+      "text": "Test (TEST)",
+      "bbox": [
+        133.77,
+        514.96,
+        189.31,
+        526.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0019",
+      "text": "4.2.14.1  Description",
+      "bbox": [
+        96.0,
+        538.96,
+        192.63,
+        550.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0020",
+      "text": "The TEST ELS shall consist of a single Sequence being transmitted from the Sequence Initiator to",
+      "bbox": [
+        96.0,
+        562.96,
+        539.92,
+        574.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0021",
+      "text": "the Sequence Recipient.  The Test Request may be used in diagnostic or testing procedures to pro-",
+      "bbox": [
+        96.0,
+        574.96,
+        540.07,
+        586.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0022",
+      "text": "vide system loading.  There is no Reply Sequence.  The Payload may consist of any frame size up to",
+      "bbox": [
+        96.0,
+        586.96,
+        540.01,
+        598.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0023",
+      "text": "the maximum allowable for the class and other normal Sequence and frame limitations.",
+      "bbox": [
+        96.0,
+        598.96,
+        480.95,
+        610.08
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0024",
+      "text": "4.2.14.2  Protocol",
+      "bbox": [
+        96.0,
+        622.96,
+        178.22,
+        634.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0025",
+      "text": "a) Test Request Sequence",
+      "bbox": [
+        106.02,
+        647.02,
+        229.54,
+        658.14
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0026",
+      "text": "b) No Reply Sequence",
+      "bbox": [
+        106.02,
+        671.02,
+        211.25,
+        682.14
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0027",
+      "text": " Table 23 – RSI Payload",
+      "bbox": [
+        262.14,
+        176.98,
+        373.88,
+        188.1
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0028",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        199.0,
+        133.06,
+        210.12
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0029",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        211.0,
+        136.34,
+        222.12
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0030",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        199.0,
+        233.97,
+        210.12
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0031",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        199.0,
+        328.41,
+        210.12
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0032",
+      "text": "15         ..       08",
+      "bbox": [
+        354.79,
+        199.0,
+        427.0,
+        210.12
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0033",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        199.0,
+        522.83,
+        210.12
+      ],
+      "block_index": 16,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0034",
+      "text": "0",
+      "bbox": [
+        120.84,
+        227.98,
+        126.38,
+        239.1
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0035",
+      "text": "RSI (0Ah)",
+      "bbox": [
+        149.88,
+        227.98,
+        193.78,
+        239.1
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0036",
+      "text": "00h",
+      "bbox": [
+        247.1,
+        227.98,
+        263.73,
+        239.1
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0037",
+      "text": "00h",
+      "bbox": [
+        344.29,
+        227.98,
+        360.97,
+        239.1
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0038",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        227.98,
+        458.15,
+        239.1
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0039",
+      "text": "1",
+      "bbox": [
+        120.84,
+        244.96,
+        126.38,
+        256.08
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0040",
+      "text": "Reserved",
+      "bbox": [
+        149.88,
+        244.96,
+        192.62,
+        256.08
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0041",
+      "text": "Originator S_ID",
+      "bbox": [
+        247.08,
+        244.96,
+        315.85,
+        256.08
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0042",
+      "text": "2",
+      "bbox": [
+        120.84,
+        262.0,
+        126.38,
+        273.12
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0043",
+      "text": "OX_ID",
+      "bbox": [
+        149.88,
+        262.0,
+        179.87,
+        273.12
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0044",
+      "text": "RX_ID",
+      "bbox": [
+        344.28,
+        262.0,
+        373.73,
+        273.12
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0045",
+      "text": "3",
+      "bbox": [
+        120.84,
+        278.98,
+        126.38,
+        290.1
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0046",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        278.98,
+        171.52,
+        290.1
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0047",
+      "text": "Association_Header (optional)",
+      "bbox": [
+        275.34,
+        280.96,
+        409.28,
+        292.08
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0048",
+      "text": "(32 bytes)",
+      "bbox": [
+        320.1,
+        292.96,
+        364.52,
+        304.08
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0049",
+      "text": "..",
+      "bbox": [
+        120.84,
+        295.96,
+        126.37,
+        307.08
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0050",
+      "text": "10",
+      "bbox": [
+        118.02,
+        313.0,
+        129.14,
+        324.12
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0051",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        313.0,
+        460.36,
+        324.12
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0052",
+      "text": " Table 24 – RSI LS_ACC Payload",
+      "bbox": [
+        240.78,
+        428.98,
+        395.1,
+        440.1
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0053",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        451.0,
+        133.06,
+        462.12
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0054",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        463.0,
+        136.35,
+        474.11
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0055",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        451.0,
+        233.97,
+        462.12
+      ],
+      "block_index": 23,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0056",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        451.0,
+        328.42,
+        462.12
+      ],
+      "block_index": 23,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0057",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        451.0,
+        427.0,
+        462.12
+      ],
+      "block_index": 23,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0058",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        451.0,
+        522.83,
+        462.12
+      ],
+      "block_index": 23,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0059",
+      "text": "0",
+      "bbox": [
+        120.84,
+        479.98,
+        126.38,
+        491.09
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0060",
+      "text": "02h",
+      "bbox": [
+        149.88,
+        479.98,
+        166.52,
+        491.09
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0061",
+      "text": "00h",
+      "bbox": [
+        247.08,
+        479.98,
+        263.71,
+        491.09
+      ],
+      "block_index": 24,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0062",
+      "text": "00h",
+      "bbox": [
+        344.27,
+        479.98,
+        360.97,
+        491.09
+      ],
+      "block_index": 24,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p058_s0063",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        479.98,
+        458.16,
+        491.09
+      ],
+      "block_index": 24,
+      "line_index": 5,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0022",
+    "table_0027"
+  ]
+}

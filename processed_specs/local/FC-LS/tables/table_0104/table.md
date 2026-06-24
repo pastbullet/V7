@@ -1,0 +1,10 @@
+| Byte Number | Meaning |
+| --- | --- |
+| 0 | Counter value, byte 0 (MSB) |
+| 1 | Counter value, byte 1 |
+| 2 | Counter value, byte 2 |
+| 3 | Counter value, byte 3 |
+| 4 | Counter value, byte 4 |
+| 5 | Counter value, byte 5 |
+| 6 | Counter value, byte 6 |
+| 7 | Counter value, byte 7 (LSB) |

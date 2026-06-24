@@ -1,0 +1,25 @@
+{
+  "rows": [
+    [
+      "Bits\nWord\n0\n1\n2",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      null,
+      "CSU (69h)",
+      "Reserved",
+      null,
+      null
+    ],
+    [
+      null,
+      "Clock Count\n(8 bytes)",
+      null,
+      null,
+      null
+    ]
+  ]
+}

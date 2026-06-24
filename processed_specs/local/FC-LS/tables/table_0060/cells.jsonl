@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 83, "bbox": [99.18, 195.96, 147.9, 224.34]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 ... 24\nByte 0", "page": 83, "bbox": [147.9, 195.96, 245.13, 224.34]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 ... 16\nByte 1", "page": 83, "bbox": [245.13, 195.96, 342.33, 224.34]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 ... 08\nByte 2", "page": 83, "bbox": [342.33, 195.96, 439.53, 224.34]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 ... 00\nByte 3", "page": 83, "bbox": [439.53, 195.96, 536.82, 224.34]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 83, "bbox": [99.18, 224.34, 147.9, 241.57]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "RNID (78h)", "page": 83, "bbox": [147.9, 224.34, 245.13, 241.57]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "00h", "page": 83, "bbox": [245.13, 224.34, 342.33, 241.57]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "00h", "page": 83, "bbox": [342.33, 224.34, 439.53, 241.57]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "00h", "page": 83, "bbox": [439.53, 224.34, 536.82, 241.57]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 83, "bbox": [99.18, 241.57, 147.9, 270.02]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Node Identification\nData Format", "page": 83, "bbox": [147.9, 241.57, 245.13, 270.02]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "Reserved", "page": 83, "bbox": [245.13, 241.57, 536.82, 270.02]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "", "page": 83, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "", "page": 83, "bbox": [0.0, 0.0, 0.0, 0.0]}

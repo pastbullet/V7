@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0106",
+  "type": "table",
+  "caption": "Table 102 – ELS Buffer Parameters Field",
+  "pages": [
+    119
+  ],
+  "bbox": [
+    194.24,
+    82.28,
+    441.2,
+    175.68
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 119,
+  "logical_table": false
+}

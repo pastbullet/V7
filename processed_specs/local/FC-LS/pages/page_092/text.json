@@ -1,0 +1,829 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 92,
+  "spans": [
+    {
+      "span_id": "p092_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0002",
+      "text": " 73",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0003",
+      "text": "a)",
+      "bbox": [
+        106.02,
+        57.65,
+        114.91,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0004",
+      "text": " Link Incident Record Format:",
+      "bbox": [
+        114.91,
+        57.65,
+        260.75,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p092_s0005",
+      "text": " The format of the Link Incident Record-Format field is shown in",
+      "bbox": [
+        260.76,
+        57.65,
+        540.01,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p092_s0006",
+      "text": "table 68.",
+      "bbox": [
+        122.4,
+        69.65,
+        160.76,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0007",
+      "text": "If the length of the Specific Link Incident Record is zero, the Link Incident Record Format field",
+      "bbox": [
+        122.4,
+        202.96,
+        539.93,
+        214.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0008",
+      "text": "shall be set to zero.  If the length of the Specific Link Incident Record is not zero, the Link Inci-",
+      "bbox": [
+        122.4,
+        214.96,
+        540.03,
+        226.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0009",
+      "text": "dent Record Format field shall be set to the FC-4 TYPE (see FC-FS-2) associated with the for-",
+      "bbox": [
+        122.4,
+        226.96,
+        540.14,
+        238.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0010",
+      "text": "mat of the Specific Link Incident Record.  A value of zero in the Specific-coded value field",
+      "bbox": [
+        122.4,
+        238.96,
+        539.94,
+        250.08
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0011",
+      "text": "indicates that only the Common Link Incident Record and the Common Link Incident Descriptor",
+      "bbox": [
+        122.4,
+        250.96,
+        540.14,
+        262.08
+      ],
+      "block_index": 4,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0012",
+      "text": "are being reported and that the Specific Link Incident Record Length shall be zero.",
+      "bbox": [
+        122.4,
+        262.96,
+        486.89,
+        274.08
+      ],
+      "block_index": 4,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0013",
+      "text": "b)",
+      "bbox": [
+        106.02,
+        286.96,
+        114.92,
+        298.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0014",
+      "text": " Common Link Incident Record Length:",
+      "bbox": [
+        114.92,
+        286.96,
+        307.39,
+        298.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p092_s0015",
+      "text": " When only the incident port’s Name_Identifiers (i.e.,",
+      "bbox": [
+        307.32,
+        286.96,
+        540.12,
+        298.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p092_s0016",
+      "text": "the N_Port_Name and the Node_Name) are included in the RLIR ELS Payload, the Common",
+      "bbox": [
+        122.4,
+        298.96,
+        539.89,
+        310.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0017",
+      "text": "Link Incident Record length shall specify 16 bytes, indicating the size of the Common Link Inci-",
+      "bbox": [
+        122.4,
+        310.96,
+        539.98,
+        322.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0018",
+      "text": "dent Record field.  When the additional Common Link Incident Record fields are included in the",
+      "bbox": [
+        122.4,
+        322.96,
+        539.97,
+        334.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0019",
+      "text": "Payload, the Common Link Incident Record Length shall specify 64 bytes.  The link identified",
+      "bbox": [
+        122.4,
+        334.96,
+        539.92,
+        346.08
+      ],
+      "block_index": 5,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0020",
+      "text": "by the N_Port_Name and the Node_Name shall be one end of the link for which the report is",
+      "bbox": [
+        122.4,
+        346.96,
+        539.92,
+        358.08
+      ],
+      "block_index": 5,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0021",
+      "text": "being made.  The report may be passed through that link or by any other path to the node that",
+      "bbox": [
+        122.4,
+        358.96,
+        540.09,
+        370.08
+      ],
+      "block_index": 5,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0022",
+      "text": "has registered to receive RLIR ELSs.",
+      "bbox": [
+        122.4,
+        370.96,
+        286.8,
+        382.08
+      ],
+      "block_index": 5,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0023",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        394.96,
+        114.38,
+        406.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0024",
+      "text": "Common Link Incident Descriptor Length:",
+      "bbox": [
+        122.4,
+        394.96,
+        329.2,
+        406.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0025",
+      "text": " The Common Link Incident Descriptor length",
+      "bbox": [
+        329.16,
+        394.96,
+        540.02,
+        406.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p092_s0026",
+      "text": "shall be set to 4h, specifying the number of bytes in the Link Incident Descriptor field.",
+      "bbox": [
+        122.4,
+        406.96,
+        497.31,
+        418.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0027",
+      "text": "d)",
+      "bbox": [
+        106.02,
+        430.96,
+        114.92,
+        442.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0028",
+      "text": " Specific Link Incident Record Length:",
+      "bbox": [
+        114.92,
+        430.96,
+        307.17,
+        442.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p092_s0029",
+      "text": " The Specific Link Incident Record Length shall be",
+      "bbox": [
+        307.14,
+        430.96,
+        539.99,
+        442.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p092_s0030",
+      "text": "specified according to the Link Incident Record Format indicated for the respective ULP.  The",
+      "bbox": [
+        122.4,
+        442.96,
+        539.97,
+        454.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0031",
+      "text": "length shall specify the number of bytes in the Specific Link Incident Record field.  This value",
+      "bbox": [
+        122.4,
+        454.96,
+        539.86,
+        466.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0032",
+      "text": "shall be a multiple of 4.  The minimum value of this field is 0.  The maximum value of this field",
+      "bbox": [
+        122.4,
+        466.96,
+        540.03,
+        478.08
+      ],
+      "block_index": 7,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0033",
+      "text": "is 252.",
+      "bbox": [
+        122.4,
+        478.96,
+        151.8,
+        490.08
+      ],
+      "block_index": 7,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0034",
+      "text": "e)",
+      "bbox": [
+        106.02,
+        502.96,
+        114.92,
+        514.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0035",
+      "text": " Common Link Incident Record:",
+      "bbox": [
+        114.92,
+        502.96,
+        272.92,
+        514.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p092_s0036",
+      "text": " If the Common Link Incident Length field equals 16 (m=4),",
+      "bbox": [
+        272.88,
+        502.96,
+        540.1,
+        514.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p092_s0037",
+      "text": "then the Common Link Incident Record shall contain only the first four words in table 69 (Inci-",
+      "bbox": [
+        122.4,
+        514.96,
+        539.95,
+        526.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0038",
+      "text": "dent port N_Port_Name and Incident port Node Name). If the Common Link Incident Length",
+      "bbox": [
+        122.4,
+        526.96,
+        539.82,
+        538.08
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0039",
+      "text": "field equals 64 (m=16), then the Common Link Incident Record shall contain all the words",
+      "bbox": [
+        122.4,
+        538.96,
+        539.89,
+        550.08
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0040",
+      "text": "shown in table 69. Optional fields (fields in words 4 through 15) that have unknown values shall",
+      "bbox": [
+        122.4,
+        550.96,
+        540.06,
+        562.07
+      ],
+      "block_index": 8,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0041",
+      "text": "be set to zero. The Common Link Incident Record Data Fields shall be defined as follows:",
+      "bbox": [
+        122.4,
+        562.96,
+        518.51,
+        574.07
+      ],
+      "block_index": 8,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0042",
+      "text": "A)",
+      "bbox": [
+        122.4,
+        586.96,
+        132.38,
+        598.07
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0043",
+      "text": " Incident port N_Port Name:",
+      "bbox": [
+        132.38,
+        586.96,
+        266.67,
+        598.07
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p092_s0044",
+      "text": "  The Name_Identifier that is the incident port’s N_Port_Name.",
+      "bbox": [
+        266.64,
+        586.96,
+        539.97,
+        598.07
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p092_s0045",
+      "text": "B)",
+      "bbox": [
+        122.4,
+        610.96,
+        132.38,
+        622.07
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0046",
+      "text": " Incident port Node_Name:",
+      "bbox": [
+        132.38,
+        610.96,
+        262.37,
+        622.07
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p092_s0047",
+      "text": " The Name_Identifier that is the incident port’s Node_Name.",
+      "bbox": [
+        262.38,
+        610.96,
+        527.87,
+        622.07
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p092_s0048",
+      "text": "C)",
+      "bbox": [
+        122.4,
+        635.02,
+        132.92,
+        646.13
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0049",
+      "text": " Incident Port Type:",
+      "bbox": [
+        132.92,
+        635.02,
+        229.0,
+        646.13
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p092_s0050",
+      "text": " The value in the Incident Port Type field specifies the type of the inci-",
+      "bbox": [
+        228.96,
+        635.02,
+        540.04,
+        646.13
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p092_s0051",
+      "text": "dent port. Port Type values are defined in FC-GS-3.  A value of zero in the field indicates",
+      "bbox": [
+        138.0,
+        647.02,
+        539.97,
+        658.13
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0052",
+      "text": "the Incident Port Type is unknown or unspecified.",
+      "bbox": [
+        138.0,
+        659.02,
+        356.28,
+        670.13
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0053",
+      "text": "D)",
+      "bbox": [
+        122.4,
+        683.02,
+        132.92,
+        694.13
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0054",
+      "text": " Incident Port_ID:",
+      "bbox": [
+        132.92,
+        683.02,
+        217.89,
+        694.13
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p092_s0055",
+      "text": " The N_Port_ID of the incident port.  All ports shall supply a valid Domain",
+      "bbox": [
+        217.92,
+        683.02,
+        539.92,
+        694.13
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p092_s0056",
+      "text": "address (bits 23 - 16).  Ports that do not have complete N_Port_ID may use zeros for the",
+      "bbox": [
+        138.0,
+        695.02,
+        539.98,
+        706.13
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0057",
+      "text": " Table 68 – Link Incident Record Format",
+      "bbox": [
+        223.32,
+        91.66,
+        412.77,
+        102.77
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0058",
+      "text": "Description",
+      "bbox": [
+        218.52,
+        113.62,
+        273.47,
+        124.73
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0059",
+      "text": "Value ",
+      "bbox": [
+        387.5,
+        113.62,
+        416.93,
+        124.73
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0060",
+      "text": "Common Link Incident Record",
+      "bbox": [
+        165.18,
+        136.66,
+        299.63,
+        147.77
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0061",
+      "text": "00h",
+      "bbox": [
+        392.46,
+        137.62,
+        409.1,
+        148.73
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0062",
+      "text": "Specific-coded value",
+      "bbox": [
+        165.18,
+        160.66,
+        257.38,
+        171.77
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p092_s0063",
+      "text": "01h - FFh",
+      "bbox": [
+        379.14,
+        161.62,
+        422.42,
+        172.73
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0071"
+  ]
+}

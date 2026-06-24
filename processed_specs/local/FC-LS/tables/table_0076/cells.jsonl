@@ -1,0 +1,22 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Value", "page": 96, "bbox": [102.68, 98.28, 151.35, 120.0]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Meaning", "page": 96, "bbox": [151.35, 98.28, 533.32, 120.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00h", "page": 96, "bbox": [102.68, 120.0, 151.35, 144.03]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Reserved.", "page": 96, "bbox": [151.35, 120.0, 533.32, 144.03]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "01h", "page": 96, "bbox": [102.68, 144.03, 151.35, 202.05]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Implicit incident:\nA condition, caused by an event known to have occurred within the incident port, has\nbeen recognized by the incident port. The condition affects the attached link in such a\nway that it may cause a link incident to be recognized by the connected port.", "page": 96, "bbox": [151.35, 144.03, 533.32, 202.05]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "02h", "page": 96, "bbox": [102.68, 202.05, 151.35, 248.01]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Bit-error-rate threshold exceeded:\nThe incident port has detected that the Error Interval Count equals the Error Threshold\n(see FC-FS-2).", "page": 96, "bbox": [151.35, 202.05, 533.32, 248.01]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "03h", "page": 96, "bbox": [102.68, 248.01, 151.35, 294.03]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Link Failure - Loss-of-Signal or synchronization:\nThe incident port has recognized a Loss-of-Synchronization condition, and it persisted\nfor more than the R_T_TOV timeout period (see FC-FS-2).", "page": 96, "bbox": [151.35, 248.01, 533.32, 294.03]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "04h", "page": 96, "bbox": [102.68, 294.03, 151.35, 328.05]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "Link Failure - NOS recognized:\nThe NOS has been recognized by the incident port (see FC-FS-2)", "page": 96, "bbox": [151.35, 294.03, 533.32, 328.05]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "05h", "page": 96, "bbox": [102.68, 328.05, 151.35, 386.01]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "Link Failure - Primitive Sequence timeout:\nThe incident port has recognized either a Link-Reset-Protocol timeout (see FC-FS-2),\nor a timeout when timing for the appropriate response while in the LF1 State and after\nNOS is no longer recognized (see FC-FS-2).", "page": 96, "bbox": [151.35, 328.05, 533.32, 386.01]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "06h", "page": 96, "bbox": [102.68, 386.01, 151.35, 432.03]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "Link Failure - Invalid Primitive Sequence for port state:\nThe incident port recognized either a LR or LRR Primitive Sequence while in the OL3\nState (see FC-FS-2).", "page": 96, "bbox": [151.35, 386.01, 533.32, 432.03]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "07h", "page": 96, "bbox": [102.68, 432.03, 151.35, 478.05]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "Link Failure - Loop Initialization time out:\nThe incident port failed to complete loop initialization within the normal loop time out\nperiod (see FC-AL-2).", "page": 96, "bbox": [151.35, 432.03, 533.32, 478.05]}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "08h", "page": 96, "bbox": [102.68, 478.05, 151.35, 524.01]}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "Link Failure – receiving LIP(F8):\nThe incident port is receiving LIP(F8) indicating some other port on the loop is\nexperiencing a Loss-of-Signal condition.", "page": 96, "bbox": [151.35, 478.05, 533.32, 524.01]}
+{"cell_id": "r11c1", "row": 11, "col": 1, "text": "09h - FFh", "page": 96, "bbox": [102.68, 524.01, 151.35, 547.7]}
+{"cell_id": "r11c2", "row": 11, "col": 2, "text": "Reserved.", "page": 96, "bbox": [151.35, 524.01, 533.32, 547.7]}

@@ -1,0 +1,1 @@
+Section 6.2.5 defines when the FLOGI originator considers Fabric Login ended for Class 1, 2, and 3. Section 6.2.6 defines when the FLOGI responder considers Fabric Login ended for Class 1, 2, and 3. The same section text states that buffer-to-buffer Credit values are initialized when login has ended, and explicitly when Fabric Login has ended successfully for the responder case.

@@ -1,0 +1,583 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 147,
+  "spans": [
+    {
+      "span_id": "p147_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0002",
+      "text": " 128",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0003",
+      "text": " Figure 3 – LS_RJT format",
+      "bbox": [
+        256.08,
+        262.97,
+        379.9,
+        274.08
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0004",
+      "text": " Table 146 – LS_RJT Reason Codes",
+      "bbox": [
+        233.58,
+        308.99,
+        402.4,
+        320.1
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0005",
+      "text": "Encoded Value ",
+      "bbox": [
+        102.36,
+        331.01,
+        176.81,
+        342.12
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0006",
+      "text": "(Bits 23-16)",
+      "bbox": [
+        111.24,
+        343.01,
+        165.06,
+        354.12
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0007",
+      "text": "Description",
+      "bbox": [
+        229.18,
+        343.01,
+        284.19,
+        354.12
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0008",
+      "text": "Explanation",
+      "bbox": [
+        408.19,
+        343.01,
+        464.87,
+        354.12
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0009",
+      "text": "01h",
+      "bbox": [
+        129.84,
+        367.01,
+        146.48,
+        378.12
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0010",
+      "text": "Invalid ELS_Command code",
+      "bbox": [
+        181.02,
+        370.97,
+        307.66,
+        382.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0011",
+      "text": "The ELS_Command code in the Sequence ",
+      "bbox": [
+        336.36,
+        364.97,
+        529.19,
+        376.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0012",
+      "text": "being rejected is invalid.",
+      "bbox": [
+        336.36,
+        376.97,
+        442.94,
+        388.08
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0013",
+      "text": "03h",
+      "bbox": [
+        129.84,
+        400.96,
+        146.48,
+        412.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0014",
+      "text": "Logical error",
+      "bbox": [
+        181.02,
+        416.98,
+        236.58,
+        428.1
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0015",
+      "text": "The request identified by the ELS_Command ",
+      "bbox": [
+        336.36,
+        398.98,
+        537.84,
+        410.1
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0016",
+      "text": "code and Payload content is invalid or ",
+      "bbox": [
+        336.36,
+        410.98,
+        507.39,
+        422.1
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0017",
+      "text": "logically inconsistent for the conditions ",
+      "bbox": [
+        336.36,
+        422.98,
+        509.13,
+        434.1
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0018",
+      "text": "present.",
+      "bbox": [
+        336.36,
+        434.98,
+        372.43,
+        446.1
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0019",
+      "text": "05h",
+      "bbox": [
+        129.84,
+        458.98,
+        146.48,
+        470.1
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0020",
+      "text": "Logical busy",
+      "bbox": [
+        181.02,
+        463.0,
+        236.56,
+        474.12
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0021",
+      "text": "The Link Service is logically busy and unable ",
+      "bbox": [
+        336.36,
+        457.0,
+        537.68,
+        468.12
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0022",
+      "text": "to process the request at this time.",
+      "bbox": [
+        336.36,
+        469.0,
+        489.07,
+        480.12
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0023",
+      "text": "07h",
+      "bbox": [
+        129.84,
+        493.0,
+        146.48,
+        504.12
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0024",
+      "text": "Protocol error",
+      "bbox": [
+        181.02,
+        502.96,
+        241.57,
+        514.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0025",
+      "text": "This indicates that an error has been detected ",
+      "bbox": [
+        336.36,
+        490.96,
+        538.27,
+        502.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0026",
+      "text": "that violates the rules of the ELS Protocol that ",
+      "bbox": [
+        336.36,
+        502.96,
+        538.22,
+        514.08
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0027",
+      "text": "are not specified by other error codes.",
+      "bbox": [
+        336.36,
+        514.96,
+        504.65,
+        526.08
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0028",
+      "text": "09h",
+      "bbox": [
+        129.84,
+        538.96,
+        146.48,
+        550.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0029",
+      "text": "Unable to perform command ",
+      "bbox": [
+        181.03,
+        536.98,
+        310.45,
+        548.1
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0030",
+      "text": "request",
+      "bbox": [
+        181.03,
+        548.98,
+        214.39,
+        560.1
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0031",
+      "text": "The Recipient of a Link Service command is ",
+      "bbox": [
+        336.37,
+        536.98,
+        534.09,
+        548.1
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0032",
+      "text": "unable to perform the request at this time.",
+      "bbox": [
+        336.37,
+        548.98,
+        521.25,
+        560.1
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0033",
+      "text": "0Bh",
+      "bbox": [
+        129.31,
+        572.98,
+        147.02,
+        584.1
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0034",
+      "text": "Command not supported",
+      "bbox": [
+        181.03,
+        577.0,
+        291.01,
+        588.12
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0035",
+      "text": "The Recipient of a Link Service command ",
+      "bbox": [
+        336.37,
+        571.0,
+        524.13,
+        582.12
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0036",
+      "text": "does not support the command requested.",
+      "bbox": [
+        336.37,
+        583.0,
+        524.12,
+        594.12
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0037",
+      "text": "0Eh",
+      "bbox": [
+        129.31,
+        607.0,
+        147.02,
+        618.12
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0038",
+      "text": "Command already in progress",
+      "bbox": [
+        181.03,
+        605.98,
+        314.85,
+        617.1
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0039",
+      "text": "FFh",
+      "bbox": [
+        129.31,
+        631.0,
+        147.03,
+        642.12
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0040",
+      "text": "Vendor specific error (See bits 7-0) ",
+      "bbox": [
+        181.03,
+        628.96,
+        336.37,
+        646.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0041",
+      "text": "The Vendor specific error bits may be used by ",
+      "bbox": [
+        336.37,
+        628.96,
+        538.32,
+        640.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p147_s0042",
+      "text": "Vendors to specify additional reason codes.",
+      "bbox": [
+        336.37,
+        640.96,
+        529.67,
+        652.08
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0043",
+      "text": "Others",
+      "bbox": [
+        123.19,
+        665.02,
+        153.11,
+        676.14
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p147_s0044",
+      "text": "Reserved",
+      "bbox": [
+        181.03,
+        664.0,
+        223.76,
+        675.12
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0150",
+    "table_0151"
+  ]
+}

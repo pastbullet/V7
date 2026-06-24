@@ -1,0 +1,1544 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 37,
+  "spans": [
+    {
+      "span_id": "p037_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0002",
+      "text": " 18",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0003",
+      "text": " Table 3 – ELS_Command codes ",
+      "bbox": [
+        241.08,
+        79.67,
+        397.7,
+        90.78
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0004",
+      "text": "Value",
+      "bbox": [
+        111.66,
+        113.63,
+        138.32,
+        124.74
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0005",
+      "text": "(Bits 31-24)",
+      "bbox": [
+        98.1,
+        125.63,
+        151.89,
+        136.74
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0006",
+      "text": "Description",
+      "bbox": [
+        232.87,
+        125.63,
+        287.96,
+        136.74
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0007",
+      "text": "Abbr.",
+      "bbox": [
+        388.55,
+        125.63,
+        414.67,
+        136.74
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0008",
+      "text": "Reference",
+      "bbox": [
+        438.3,
+        125.63,
+        486.54,
+        136.74
+      ],
+      "block_index": 4,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0009",
+      "text": "N_Port ",
+      "bbox": [
+        497.82,
+        101.63,
+        533.36,
+        112.74
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0010",
+      "text": "Login ",
+      "bbox": [
+        500.64,
+        113.63,
+        530.6,
+        124.74
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0011",
+      "text": "Required",
+      "bbox": [
+        492.54,
+        125.63,
+        535.84,
+        136.74
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0012",
+      "text": "01h",
+      "bbox": [
+        116.7,
+        149.63,
+        133.33,
+        160.74
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0013",
+      "text": "Link Service Reject",
+      "bbox": [
+        156.18,
+        148.67,
+        241.6,
+        159.78
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0014",
+      "text": "LS_RJT",
+      "bbox": [
+        368.55,
+        148.67,
+        404.6,
+        159.78
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0015",
+      "text": "4.3.4",
+      "bbox": [
+        438.36,
+        148.67,
+        460.51,
+        159.78
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0016",
+      "text": "N/A",
+      "bbox": [
+        490.19,
+        148.67,
+        506.82,
+        159.78
+      ],
+      "block_index": 6,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0017",
+      "text": "02h",
+      "bbox": [
+        116.7,
+        173.62,
+        133.33,
+        184.74
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0018",
+      "text": "Link Service Accept",
+      "bbox": [
+        156.18,
+        172.66,
+        243.89,
+        183.78
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0019",
+      "text": "LS_ACC",
+      "bbox": [
+        368.63,
+        172.66,
+        407.48,
+        183.78
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0020",
+      "text": "4.3.2",
+      "bbox": [
+        438.45,
+        172.66,
+        460.63,
+        183.78
+      ],
+      "block_index": 7,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0021",
+      "text": "N/A",
+      "bbox": [
+        490.31,
+        172.66,
+        506.91,
+        183.78
+      ],
+      "block_index": 7,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0022",
+      "text": "03h",
+      "bbox": [
+        116.7,
+        197.62,
+        133.33,
+        208.74
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0023",
+      "text": "N_Port Login",
+      "bbox": [
+        156.18,
+        196.66,
+        214.5,
+        207.78
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0024",
+      "text": "PLOGI",
+      "bbox": [
+        368.62,
+        196.66,
+        399.16,
+        207.78
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0025",
+      "text": "4.2.7",
+      "bbox": [
+        438.45,
+        196.66,
+        460.63,
+        207.78
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0026",
+      "text": "No",
+      "bbox": [
+        490.31,
+        196.66,
+        503.05,
+        207.78
+      ],
+      "block_index": 8,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0027",
+      "text": "04h",
+      "bbox": [
+        116.7,
+        221.62,
+        133.33,
+        232.74
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0028",
+      "text": "F_Port Login",
+      "bbox": [
+        156.18,
+        220.66,
+        213.37,
+        231.78
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0029",
+      "text": "FLOGI",
+      "bbox": [
+        368.63,
+        220.66,
+        398.65,
+        231.78
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0030",
+      "text": "4.2.7",
+      "bbox": [
+        438.49,
+        220.66,
+        460.68,
+        231.78
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0031",
+      "text": "No",
+      "bbox": [
+        490.36,
+        220.66,
+        503.09,
+        231.78
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0032",
+      "text": "05h",
+      "bbox": [
+        116.7,
+        245.62,
+        133.33,
+        256.74
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0033",
+      "text": "Logout",
+      "bbox": [
+        156.18,
+        244.66,
+        186.7,
+        255.78
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0034",
+      "text": "LOGO",
+      "bbox": [
+        368.62,
+        244.66,
+        397.51,
+        255.78
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0035",
+      "text": "4.2.8",
+      "bbox": [
+        438.48,
+        244.66,
+        460.67,
+        255.78
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0036",
+      "text": "No",
+      "bbox": [
+        490.35,
+        244.66,
+        503.09,
+        255.78
+      ],
+      "block_index": 10,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0037",
+      "text": "06h",
+      "bbox": [
+        116.7,
+        269.62,
+        133.33,
+        280.74
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0038",
+      "text": "Abort Exchange - obsolete",
+      "bbox": [
+        156.18,
+        268.66,
+        273.84,
+        279.78
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0039",
+      "text": "ABTX",
+      "bbox": [
+        368.56,
+        268.66,
+        394.64,
+        279.78
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0040",
+      "text": "N/A",
+      "bbox": [
+        438.39,
+        268.66,
+        455.02,
+        279.78
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0041",
+      "text": "N/A",
+      "bbox": [
+        490.26,
+        268.66,
+        506.91,
+        279.78
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0042",
+      "text": "07h",
+      "bbox": [
+        116.7,
+        293.62,
+        133.33,
+        304.74
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0043",
+      "text": "Read Connection Status",
+      "bbox": [
+        156.18,
+        292.66,
+        264.4,
+        303.78
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0044",
+      "text": "RCS",
+      "bbox": [
+        368.56,
+        292.66,
+        389.64,
+        303.78
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0045",
+      "text": "4.2.9",
+      "bbox": [
+        438.37,
+        292.66,
+        460.59,
+        303.78
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0046",
+      "text": "Yes",
+      "bbox": [
+        490.27,
+        292.66,
+        507.44,
+        303.78
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0047",
+      "text": "08h",
+      "bbox": [
+        116.7,
+        317.62,
+        133.33,
+        328.74
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0048",
+      "text": "Read Exchange Status Block - obsolete",
+      "bbox": [
+        156.18,
+        316.66,
+        332.25,
+        327.78
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0049",
+      "text": "RES",
+      "bbox": [
+        368.59,
+        316.66,
+        389.11,
+        327.78
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0050",
+      "text": "N/A",
+      "bbox": [
+        438.39,
+        316.66,
+        455.02,
+        327.78
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0051",
+      "text": "N/A",
+      "bbox": [
+        490.26,
+        316.66,
+        506.9,
+        327.78
+      ],
+      "block_index": 13,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0052",
+      "text": "09h",
+      "bbox": [
+        116.7,
+        341.62,
+        133.33,
+        352.74
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0053",
+      "text": "Read Sequence Status Block - obsolete",
+      "bbox": [
+        156.18,
+        340.66,
+        332.79,
+        351.78
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0054",
+      "text": "RSS",
+      "bbox": [
+        368.59,
+        340.66,
+        389.12,
+        351.78
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0055",
+      "text": "N/A",
+      "bbox": [
+        438.4,
+        340.66,
+        455.04,
+        351.78
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0056",
+      "text": "N/A",
+      "bbox": [
+        490.27,
+        340.66,
+        506.93,
+        351.78
+      ],
+      "block_index": 14,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0057",
+      "text": "0Ah",
+      "bbox": [
+        116.16,
+        365.62,
+        133.94,
+        376.74
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0058",
+      "text": "Request Sequence Initiative",
+      "bbox": [
+        156.18,
+        364.66,
+        280.68,
+        375.78
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0059",
+      "text": "RSI",
+      "bbox": [
+        368.68,
+        364.66,
+        385.33,
+        375.78
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0060",
+      "text": "4.2.13",
+      "bbox": [
+        438.49,
+        364.66,
+        466.25,
+        375.78
+      ],
+      "block_index": 15,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0061",
+      "text": "Yes",
+      "bbox": [
+        490.35,
+        364.66,
+        507.51,
+        375.78
+      ],
+      "block_index": 15,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0062",
+      "text": "0Bh",
+      "bbox": [
+        116.16,
+        389.62,
+        133.94,
+        400.74
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0063",
+      "text": "Establish Streaming",
+      "bbox": [
+        156.18,
+        388.66,
+        245.01,
+        399.78
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0064",
+      "text": "ESTS",
+      "bbox": [
+        368.59,
+        388.66,
+        394.65,
+        399.78
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0065",
+      "text": "4.2.6",
+      "bbox": [
+        438.41,
+        388.66,
+        460.59,
+        399.78
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0066",
+      "text": "Yes",
+      "bbox": [
+        490.27,
+        388.66,
+        507.46,
+        399.78
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0067",
+      "text": "0Ch",
+      "bbox": [
+        115.86,
+        413.62,
+        134.17,
+        424.74
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0068",
+      "text": "Estimate Credit",
+      "bbox": [
+        156.18,
+        412.66,
+        224.45,
+        423.78
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0069",
+      "text": "ESTC",
+      "bbox": [
+        368.62,
+        412.66,
+        395.22,
+        423.78
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0070",
+      "text": "4.2.5",
+      "bbox": [
+        438.42,
+        412.66,
+        460.58,
+        423.78
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0071",
+      "text": "Yes",
+      "bbox": [
+        490.27,
+        412.66,
+        507.45,
+        423.78
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0072",
+      "text": "0Dh",
+      "bbox": [
+        115.86,
+        437.62,
+        134.17,
+        448.74
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0073",
+      "text": "Advise Credit",
+      "bbox": [
+        156.18,
+        436.66,
+        215.53,
+        447.78
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0074",
+      "text": "ADVC",
+      "bbox": [
+        368.58,
+        436.66,
+        396.28,
+        447.78
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0075",
+      "text": "4.2.3",
+      "bbox": [
+        438.35,
+        436.66,
+        460.55,
+        447.78
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0076",
+      "text": "Yes",
+      "bbox": [
+        490.23,
+        436.66,
+        507.42,
+        447.78
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0077",
+      "text": "0Eh",
+      "bbox": [
+        116.16,
+        461.62,
+        133.94,
+        472.74
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0078",
+      "text": "Read Timeout Value",
+      "bbox": [
+        156.18,
+        460.66,
+        247.25,
+        471.78
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0079",
+      "text": "RTV",
+      "bbox": [
+        368.61,
+        460.66,
+        388.57,
+        471.78
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0080",
+      "text": "4.2.11",
+      "bbox": [
+        438.45,
+        460.66,
+        466.2,
+        471.78
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0081",
+      "text": "Yes",
+      "bbox": [
+        490.3,
+        460.66,
+        507.47,
+        471.78
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0082",
+      "text": "0Fh",
+      "bbox": [
+        116.4,
+        485.68,
+        133.64,
+        496.79
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0083",
+      "text": "Read Link Error Status Block",
+      "bbox": [
+        156.18,
+        484.66,
+        284.46,
+        495.78
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0084",
+      "text": "RLS",
+      "bbox": [
+        368.64,
+        484.66,
+        388.04,
+        495.78
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0085",
+      "text": "4.2.10",
+      "bbox": [
+        438.46,
+        484.66,
+        466.19,
+        495.78
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0086",
+      "text": "Yes",
+      "bbox": [
+        490.29,
+        484.66,
+        507.45,
+        495.78
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0087",
+      "text": "10h",
+      "bbox": [
+        116.7,
+        509.68,
+        133.33,
+        520.79
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0088",
+      "text": "Echo",
+      "bbox": [
+        156.18,
+        508.66,
+        178.93,
+        519.77
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0089",
+      "text": "ECHO",
+      "bbox": [
+        368.63,
+        508.66,
+        397.46,
+        519.77
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0090",
+      "text": "4.2.4",
+      "bbox": [
+        438.43,
+        508.66,
+        460.65,
+        519.77
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0091",
+      "text": "No",
+      "bbox": [
+        490.33,
+        508.66,
+        503.06,
+        519.77
+      ],
+      "block_index": 21,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0092",
+      "text": "11h",
+      "bbox": [
+        116.7,
+        533.68,
+        133.33,
+        544.8
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0093",
+      "text": "Test",
+      "bbox": [
+        156.18,
+        532.66,
+        175.61,
+        543.78
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0094",
+      "text": "TEST",
+      "bbox": [
+        368.62,
+        532.66,
+        394.14,
+        543.78
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0095",
+      "text": "4.2.14",
+      "bbox": [
+        438.46,
+        532.66,
+        466.25,
+        543.78
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0096",
+      "text": "Yes",
+      "bbox": [
+        490.35,
+        532.66,
+        507.55,
+        543.78
+      ],
+      "block_index": 22,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0097",
+      "text": "12h",
+      "bbox": [
+        116.7,
+        557.68,
+        133.33,
+        568.79
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0098",
+      "text": "Reinstate Recovery Qualifier",
+      "bbox": [
+        156.18,
+        556.66,
+        283.39,
+        567.77
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0099",
+      "text": "RRQ",
+      "bbox": [
+        368.69,
+        556.66,
+        390.86,
+        567.77
+      ],
+      "block_index": 23,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0100",
+      "text": "4.2.12",
+      "bbox": [
+        438.49,
+        556.66,
+        466.23,
+        567.77
+      ],
+      "block_index": 23,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0101",
+      "text": "Yes",
+      "bbox": [
+        490.33,
+        556.66,
+        507.5,
+        567.77
+      ],
+      "block_index": 23,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0102",
+      "text": "13h",
+      "bbox": [
+        116.7,
+        581.68,
+        133.34,
+        592.79
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0103",
+      "text": "Read Exchange Concise",
+      "bbox": [
+        156.18,
+        580.66,
+        266.19,
+        591.77
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0104",
+      "text": "REC",
+      "bbox": [
+        368.65,
+        580.66,
+        389.72,
+        591.77
+      ],
+      "block_index": 24,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0105",
+      "text": "4.2.42",
+      "bbox": [
+        438.44,
+        580.66,
+        466.2,
+        591.77
+      ],
+      "block_index": 24,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0106",
+      "text": "Yes",
+      "bbox": [
+        490.3,
+        580.66,
+        507.47,
+        591.77
+      ],
+      "block_index": 24,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0107",
+      "text": "14h",
+      "bbox": [
+        116.7,
+        605.68,
+        133.34,
+        616.79
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0108",
+      "text": "Reserved for legacy implementations",
+      "bbox": [
+        156.18,
+        604.66,
+        320.53,
+        615.77
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0109",
+      "text": "a",
+      "bbox": [
+        320.58,
+        602.44,
+        325.02,
+        611.34
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p037_s0110",
+      "text": "20h",
+      "bbox": [
+        116.7,
+        629.69,
+        133.34,
+        640.8
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0111",
+      "text": "Process Login",
+      "bbox": [
+        156.18,
+        628.67,
+        219.48,
+        639.78
+      ],
+      "block_index": 26,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0112",
+      "text": "PRLI",
+      "bbox": [
+        368.63,
+        628.67,
+        390.83,
+        639.78
+      ],
+      "block_index": 26,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0113",
+      "text": "4.2.20",
+      "bbox": [
+        438.46,
+        628.67,
+        466.2,
+        639.78
+      ],
+      "block_index": 26,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0114",
+      "text": "Yes",
+      "bbox": [
+        490.3,
+        628.67,
+        507.47,
+        639.78
+      ],
+      "block_index": 26,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0115",
+      "text": "a",
+      "bbox": [
+        104.04,
+        652.28,
+        108.04,
+        660.32
+      ],
+      "block_index": 27,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0116",
+      "text": " Some early implementations of FCP-2 may have used the value 14h for SRR (Sequence Retransmission ",
+      "bbox": [
+        108.04,
+        650.65,
+        533.68,
+        664.3
+      ],
+      "block_index": 27,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p037_s0117",
+      "text": "Request). This code is permanently reserved in this standard to avoid conflicts with such implementations. ",
+      "bbox": [
+        114.84,
+        665.3,
+        538.48,
+        675.34
+      ],
+      "block_index": 27,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p037_s0118",
+      "text": "See FCP-3 for the standard implementation of SRR as an FC-4 Link Service.",
+      "bbox": [
+        114.84,
+        676.28,
+        420.32,
+        686.32
+      ],
+      "block_index": 27,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0003"
+  ]
+}

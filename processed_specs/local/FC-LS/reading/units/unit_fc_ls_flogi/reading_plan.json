@@ -1,0 +1,339 @@
+{
+  "doc_id": "FC-LS.pdf",
+  "unit": {
+    "unit_id": "unit_fc_ls_flogi",
+    "title": "FC-LS Fabric Login / FLOGI",
+    "kind": "procedure_group",
+    "target_ir": [
+      "MessageIR",
+      "ProcedureIR",
+      "SessionContextIR",
+      "EnumIR"
+    ],
+    "source_anchors": [
+      "6.2 Fabric Login",
+      "Table 149",
+      "Table 150",
+      "Table 151",
+      "Table 153",
+      "Table 156",
+      "Table 158",
+      "Table 177",
+      "8 Virtual Fabrics N_Port Support"
+    ],
+    "dependencies": [
+      "Extended Link Services frame envelope",
+      "Common Service Parameters",
+      "Class Service Parameters",
+      "Virtual Fabrics / EVFP",
+      "Authentication"
+    ],
+    "priority": "vertical_seed",
+    "scope_status": "in_scope",
+    "notes": "Seed reading plan derived from FLOGI live QA traces. The plan intentionally decomposes the broad FLOGI question into focused, IR-oriented tasks."
+  },
+  "task_count": 7,
+  "tasks": [
+    {
+      "task_id": "flogi_els_envelope",
+      "title": "FLOGI ELS envelope and command identity",
+      "task_type": "message_format",
+      "target_outputs": [
+        "els_command_code",
+        "frame_type",
+        "r_ctl_request_reply",
+        "exchange_scope",
+        "evidence"
+      ],
+      "reading_goal": "Read the generic ELS envelope facts needed to identify FLOGI frames and replies: ELS command location, FLOGI command code, TYPE, R_CTL request/reply values, and single-Exchange scope.",
+      "page_ranges": [
+        "36-37"
+      ],
+      "must_include_assets": [],
+      "expected_evidence_types": [
+        "text_span",
+        "table_cell"
+      ],
+      "completion_criteria": [
+        "FLOGI ELS_Command code is grounded.",
+        "ELS TYPE and request/reply R_CTL facts are grounded.",
+        "Single Exchange request/reply scope is grounded."
+      ],
+      "dependencies": [],
+      "budget": {
+        "max_pages": 2,
+        "max_tables": 1,
+        "max_tool_calls": 8
+      },
+      "status": "accepted",
+      "reason": "",
+      "task_dir": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_els_envelope",
+      "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_els_envelope/task_input.json"
+    },
+    {
+      "task_id": "flogi_procedure_branches",
+      "title": "FLOGI request, responses, retry branches, and completion",
+      "task_type": "procedure",
+      "target_outputs": [
+        "request_setup",
+        "response_branches",
+        "retry_conditions",
+        "completion_conditions",
+        "evidence"
+      ],
+      "reading_goal": "Read the Fabric Login procedure end to end: request setup, S_ID/D_ID/OX_ID rules, LS_ACC Fabric path, point-to-point LS_ACC path, F_BSY/P_BSY/F_RJT/P_RJT/LS_RJT/no-response/self-connection branches, SOF/Class constraints, and Originator/Responder completion conditions.",
+      "page_ranges": [
+        "153-156"
+      ],
+      "must_include_assets": [],
+      "expected_evidence_types": [
+        "text_span"
+      ],
+      "completion_criteria": [
+        "Every response branch on pages 154-155 is represented.",
+        "Retry behavior for Class not supported, Invalid S_ID, LS_RJT, and no response is represented.",
+        "All Class 1/2/3 Originator and Responder completion conditions are represented.",
+        "SOFc1/SOFi1 and Class 6 constraints are represented."
+      ],
+      "dependencies": [],
+      "budget": {
+        "max_pages": 4,
+        "max_tables": 0,
+        "max_tool_calls": 10
+      },
+      "status": "accepted",
+      "reason": "",
+      "task_dir": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_procedure_branches",
+      "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_procedure_branches/task_input.json"
+    },
+    {
+      "task_id": "flogi_payload_table149",
+      "title": "FLOGI/PLOGI/LS_ACC payload layout from Table 149",
+      "task_type": "message_format",
+      "target_outputs": [
+        "payload_words",
+        "conditional_fields",
+        "variable_length_fields",
+        "class6_reuse_rule",
+        "evidence"
+      ],
+      "reading_goal": "Read Table 149 and its lead-in text. Produce word-by-word payload layout claims for Word 0 through Words 64-n, including Payload Bit=0 length, Payload Bit=1 extension fields, Words 21-24 obsolete, Class 6 reuse of Class 1 service parameters, and all conditional/variable-length rules.",
+      "page_ranges": [
+        "165-166"
+      ],
+      "must_include_assets": [
+        {
+          "type": "table",
+          "asset_id": "table_0157"
+        }
+      ],
+      "expected_evidence_types": [
+        "text_span",
+        "table_cell"
+      ],
+      "completion_criteria": [
+        "No Table 149 word range is summarized away.",
+        "Every word range from Word 0 through Words 64-n has a claim or explicit unresolved item.",
+        "Payload Bit 0/1 behavior is grounded.",
+        "Class 6 reuse of Class 1 parameters is grounded."
+      ],
+      "dependencies": [],
+      "budget": {
+        "max_pages": 2,
+        "max_tables": 1,
+        "max_tool_calls": 8
+      },
+      "status": "accepted",
+      "reason": "",
+      "task_dir": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_payload_table149",
+      "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_payload_table149/task_input.json"
+    },
+    {
+      "task_id": "flogi_common_service_parameters",
+      "title": "FLOGI Common Service Parameters",
+      "task_type": "message_format",
+      "target_outputs": [
+        "common_service_parameter_fields",
+        "applicability",
+        "payload_bit",
+        "virtual_fabrics_bit",
+        "timeouts",
+        "evidence"
+      ],
+      "reading_goal": "Read Common Service Parameter applicability plus FLOGI request and LS_ACC Common Service Parameters. Cover Table 150, Table 151, and Table 153 with fields, applicability, Payload Bit, Virtual Fabrics bit, R_A_TOV, E_D_TOV, and FLOGI/FLOGI LS_ACC differences.",
+      "page_ranges": [
+        "167-170"
+      ],
+      "must_include_assets": [
+        {
+          "type": "table",
+          "asset_id": "table_0158"
+        },
+        {
+          "type": "table",
+          "asset_id": "table_0160"
+        },
+        {
+          "type": "table",
+          "asset_id": "table_0161"
+        },
+        {
+          "type": "table",
+          "asset_id": "table_0163"
+        }
+      ],
+      "expected_evidence_types": [
+        "text_span",
+        "table_cell"
+      ],
+      "completion_criteria": [
+        "FLOGI request Common Service Parameter fields are grounded.",
+        "FLOGI LS_ACC Common Service Parameter fields are grounded.",
+        "Table 150 continued rows are not missed.",
+        "Payload Bit and Virtual Fabrics bit applicability are grounded."
+      ],
+      "dependencies": [],
+      "budget": {
+        "max_pages": 4,
+        "max_tables": 4,
+        "max_tool_calls": 12
+      },
+      "status": "accepted",
+      "reason": "",
+      "task_dir": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_common_service_parameters",
+      "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_common_service_parameters/task_input.json"
+    },
+    {
+      "task_id": "flogi_class_service_parameters",
+      "title": "FLOGI Class Service Parameters",
+      "task_type": "message_format",
+      "target_outputs": [
+        "class_service_parameter_fields",
+        "request_vs_ls_acc",
+        "class_constraints",
+        "evidence"
+      ],
+      "reading_goal": "Read FLOGI request and FLOGI LS_ACC Class Service Parameters. Cover Table 156 and Table 158, including Service Options, Initiator/Recipient Control, sequence/credit fields, Open Sequences per Exchange, CR_TOV, and request vs LS_ACC differences.",
+      "page_ranges": [
+        "179"
+      ],
+      "must_include_assets": [
+        {
+          "type": "table",
+          "asset_id": "table_0168"
+        },
+        {
+          "type": "table",
+          "asset_id": "table_0170"
+        }
+      ],
+      "expected_evidence_types": [
+        "text_span",
+        "table_cell"
+      ],
+      "completion_criteria": [
+        "Table 156 fields are grounded.",
+        "Table 158 fields are grounded.",
+        "Request vs LS_ACC differences are explicit."
+      ],
+      "dependencies": [],
+      "budget": {
+        "max_pages": 1,
+        "max_tables": 2,
+        "max_tool_calls": 8
+      },
+      "status": "accepted",
+      "reason": "",
+      "task_dir": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_class_service_parameters",
+      "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_class_service_parameters/task_input.json"
+    },
+    {
+      "task_id": "flogi_relogin_logout_side_effects",
+      "title": "FLOGI relogin, implicit logout, and FLOGI/FDISC/LOGO side effects",
+      "task_type": "procedure",
+      "target_outputs": [
+        "relogin_same_identity",
+        "relogin_changed_identity",
+        "implicit_logout",
+        "r_a_tov_wait",
+        "ppn_side_effects",
+        "evidence"
+      ],
+      "reading_goal": "Read relogin and logout side effects tied to FLOGI. Cover same identity continue behavior, changed N_Port_ID/F_Port_Name/Fabric_Name implicit logout behavior, R_A_TOV wait, NOS/OLS consequences, and Table 148 effects of FLOGI/FDISC/LOGO on Permanent Port Name.",
+      "page_ranges": [
+        "155",
+        "162-164"
+      ],
+      "must_include_assets": [
+        {
+          "type": "table",
+          "asset_id": "table_0155"
+        }
+      ],
+      "expected_evidence_types": [
+        "text_span",
+        "table_cell"
+      ],
+      "completion_criteria": [
+        "Same identity relogin continue behavior is grounded.",
+        "Changed identity implicit logout plus R_A_TOV behavior is grounded.",
+        "Table 148 side effects are represented or explicitly scoped."
+      ],
+      "dependencies": [],
+      "budget": {
+        "max_pages": 4,
+        "max_tables": 1,
+        "max_tool_calls": 10
+      },
+      "status": "accepted",
+      "reason": "",
+      "task_dir": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_relogin_logout_side_effects",
+      "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_relogin_logout_side_effects/task_input.json"
+    },
+    {
+      "task_id": "flogi_virtual_fabrics_evfp",
+      "title": "FLOGI Virtual Fabrics / EVFP dependency",
+      "task_type": "cross_section_mechanism",
+      "target_outputs": [
+        "virtual_fabrics_bit_negotiation",
+        "table177_cases",
+        "evfp_trigger",
+        "authentication_interaction",
+        "followup_flogi",
+        "evidence"
+      ],
+      "reading_goal": "Read the Virtual Fabrics dependency that is enabled by FLOGI. Cover Table 177 bit cases, LS_ACC D_ID=000000h behavior, EVFP trigger, interaction with AUTH_ELS/security bit when present, and follow-up FLOGI for logical N_Ports/VFs.",
+      "page_ranges": [
+        "203-206"
+      ],
+      "must_include_assets": [
+        {
+          "type": "table",
+          "asset_id": "table_0192"
+        }
+      ],
+      "expected_evidence_types": [
+        "text_span",
+        "table_cell",
+        "figure_crop"
+      ],
+      "completion_criteria": [
+        "All Table 177 cases are grounded.",
+        "EVFP trigger from FLOGI LS_ACC is grounded.",
+        "Authentication/security interaction is grounded when mentioned.",
+        "Follow-up logical N_Port FLOGI behavior is grounded."
+      ],
+      "dependencies": [],
+      "budget": {
+        "max_pages": 4,
+        "max_tables": 1,
+        "max_figures": 1,
+        "max_tool_calls": 10
+      },
+      "status": "accepted",
+      "reason": "",
+      "task_dir": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_virtual_fabrics_evfp",
+      "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_virtual_fabrics_evfp/task_input.json"
+    }
+  ]
+}

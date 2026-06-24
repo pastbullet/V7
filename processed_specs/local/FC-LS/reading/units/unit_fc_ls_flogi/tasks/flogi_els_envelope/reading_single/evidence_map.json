@@ -1,0 +1,76 @@
+{
+  "fc_ls_flogi_els_envelope_cmd_location": [
+    {
+      "type": "text_span",
+      "span_id": "p036_s0009",
+      "quote": "or reply is composed of a single Sequence with the ELS_Command code being specified in the first"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p036_s0010",
+      "quote": "word of the Payload of the first frame of the Sequence."
+    }
+  ],
+  "fc_ls_flogi_els_envelope_flogi_code": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0003",
+      "cell_id": "r5c1",
+      "quote": "04h"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0003",
+      "cell_id": "r5c2",
+      "quote": "F_Port Login"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0003",
+      "cell_id": "r5c3",
+      "quote": "FLOGI"
+    }
+  ],
+  "fc_ls_flogi_els_envelope_type": [
+    {
+      "type": "text_span",
+      "span_id": "p036_s0018",
+      "quote": "The TYPE field for ELS frames shall be set to 01h."
+    }
+  ],
+  "fc_ls_flogi_els_envelope_rctl_request": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0002",
+      "cell_id": "r4c2",
+      "quote": "0010b"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0002",
+      "cell_id": "r4c3",
+      "quote": "Request"
+    }
+  ],
+  "fc_ls_flogi_els_envelope_rctl_reply": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0002",
+      "cell_id": "r5c2",
+      "quote": "0011b"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0002",
+      "cell_id": "r5c3",
+      "quote": "Reply"
+    }
+  ],
+  "fc_ls_flogi_els_envelope_single_exchange": [
+    {
+      "type": "text_span",
+      "span_id": "p036_s0016",
+      "quote": "An ELS request and the corresponding reply shall be performed within a single Exchange."
+    }
+  ]
+}

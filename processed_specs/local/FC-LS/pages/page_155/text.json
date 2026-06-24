@@ -1,0 +1,658 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 155,
+  "spans": [
+    {
+      "span_id": "p155_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0002",
+      "text": " 136",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0003",
+      "text": "g) LS_RJT Sequence with OX_ID equal to the OX_ID of the FLOGI.  The D_ID of the LS_RJT",
+      "bbox": [
+        106.02,
+        57.65,
+        540.0,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0004",
+      "text": "shall be the N_Port_ID assigned by the Fabric.  If the S_ID in the FLOGI was 000000h, the",
+      "bbox": [
+        122.4,
+        69.65,
+        539.92,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0005",
+      "text": "D_ID shall be XXXXXX.  If the S_ID in the FLOGI was 0000h || YY, the D_ID shall be XXXXYY.",
+      "bbox": [
+        122.4,
+        81.65,
+        540.03,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0006",
+      "text": "If the S_ID in the FLOGI was XXXXXX, the D_ID shall be XXXXXX.  The reason code con-",
+      "bbox": [
+        122.4,
+        93.65,
+        540.12,
+        104.76
+      ],
+      "block_index": 3,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0007",
+      "text": "tained in the Payload determines the Nx_Port’s action.  The Nx_Port may alter the Service Pa-",
+      "bbox": [
+        122.4,
+        105.64,
+        540.12,
+        116.76
+      ],
+      "block_index": 3,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0008",
+      "text": "rameters based on the reason code and originate a new FLOGI.",
+      "bbox": [
+        122.4,
+        117.64,
+        405.74,
+        128.76
+      ],
+      "block_index": 3,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0009",
+      "text": "h) No Response may indicate a delivery error, e.g., error on the physical transport.  The Nx_Port",
+      "bbox": [
+        106.02,
+        142.96,
+        540.04,
+        154.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0010",
+      "text": "shall perform error recovery per FC-FS-2.  The Nx_Port may originate a new FLOGI after re-",
+      "bbox": [
+        122.4,
+        154.96,
+        540.11,
+        166.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0011",
+      "text": "covery.",
+      "bbox": [
+        122.4,
+        166.96,
+        154.57,
+        178.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0012",
+      "text": "i)",
+      "bbox": [
+        106.02,
+        190.96,
+        111.55,
+        202.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0013",
+      "text": "If the received N_Port_Name is equal to its N_Port_Name, then the Nx_Port is connected to it-",
+      "bbox": [
+        122.4,
+        190.96,
+        539.95,
+        202.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0014",
+      "text": "self and this case is outside the scope of this standard.  The FLOGI is discarded.",
+      "bbox": [
+        122.4,
+        202.96,
+        479.09,
+        214.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0015",
+      "text": "6.2.2.4  Nx_Port response to FLOGI",
+      "bbox": [
+        96.0,
+        226.96,
+        263.15,
+        238.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0016",
+      "text": "If an Nx_Port receives a FLOGI, the Nx_Port shall respond to the received FLOGI with an LS_ACC",
+      "bbox": [
+        96.0,
+        250.96,
+        540.0,
+        262.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0017",
+      "text": "reply Sequence with the OX_ID equal to the OX_ID of the received FLOGI and the Common Service",
+      "bbox": [
+        96.0,
+        262.96,
+        540.02,
+        274.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0018",
+      "text": "Parameter Nx_Port/F_Port bit set to zero (i.e., an Nx_Port). This indicates a point-to-point connection",
+      "bbox": [
+        96.0,
+        274.96,
+        539.93,
+        286.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0019",
+      "text": "with another Nx_Port. The D_ID of the LS_ACC shall be the S_ID of the received FLOGI. The Pay-",
+      "bbox": [
+        96.0,
+        286.96,
+        540.05,
+        298.08
+      ],
+      "block_index": 7,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0020",
+      "text": "load shall include the Service Parameters from the received FLOGI with all classes marked invalid,",
+      "bbox": [
+        96.0,
+        298.96,
+        539.93,
+        310.08
+      ],
+      "block_index": 7,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0021",
+      "text": "and the 64-bit N_Port_Name and 64-bit Node_Name of the connected Nx_Port. If the received",
+      "bbox": [
+        96.0,
+        310.96,
+        539.96,
+        322.08
+      ],
+      "block_index": 7,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0022",
+      "text": "N_Port_Name is less than its N_Port_Name, the Nx_Port proceeds to N_Port Login. If the received",
+      "bbox": [
+        96.0,
+        322.96,
+        539.97,
+        334.08
+      ],
+      "block_index": 7,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0023",
+      "text": "N_Port_Name is greater than its N_Port_Name, the Nx_Port waits for PLOGI from the attached",
+      "bbox": [
+        96.0,
+        334.96,
+        539.99,
+        346.08
+      ],
+      "block_index": 7,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0024",
+      "text": "N_Port.",
+      "bbox": [
+        96.0,
+        346.96,
+        129.85,
+        358.08
+      ],
+      "block_index": 7,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0025",
+      "text": "6.2.2.5  Relogin with the Fabric  ",
+      "bbox": [
+        96.0,
+        370.96,
+        247.65,
+        382.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0026",
+      "text": "During a Login with the Fabric, if the Nx_Port was previously logged in with the Fabric and the",
+      "bbox": [
+        96.0,
+        394.96,
+        539.95,
+        406.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0027",
+      "text": "N_Port_ID,  F_Port_Name, and the Fabric_Name are the same as the previous login, the Nx_Port",
+      "bbox": [
+        96.0,
+        406.96,
+        539.97,
+        418.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0028",
+      "text": "may continue current communications with other Nx_Ports that it has established logins with; if the",
+      "bbox": [
+        96.0,
+        418.96,
+        539.89,
+        430.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0029",
+      "text": "Nx_Port detects that the N_Port_ID, F_Port_Name, and/or the Fabric_Name has changed since the",
+      "bbox": [
+        96.0,
+        430.96,
+        540.03,
+        442.08
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0030",
+      "text": "last Fabric Login, the Nx_Port shall implicitly logout with all Nx_Ports and wait an R_A_TOV timeout",
+      "bbox": [
+        96.0,
+        442.96,
+        539.99,
+        454.08
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0031",
+      "text": "period before initiating or accepting communication with other Nx_Ports.  The timeout period shall",
+      "bbox": [
+        96.0,
+        454.96,
+        539.94,
+        466.08
+      ],
+      "block_index": 9,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0032",
+      "text": "start when the Nx_Port detects the change.  After waiting the timeout period, new N_Port Logins are",
+      "bbox": [
+        96.0,
+        466.96,
+        539.99,
+        478.08
+      ],
+      "block_index": 9,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0033",
+      "text": "required before the Nx_Port may communicate with other Nx_Ports. ",
+      "bbox": [
+        96.0,
+        478.96,
+        398.65,
+        490.08
+      ],
+      "block_index": 9,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0034",
+      "text": "6.2.3",
+      "bbox": [
+        96.0,
+        502.96,
+        118.22,
+        514.07
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0035",
+      "text": "SOFs",
+      "bbox": [
+        128.22,
+        502.96,
+        154.28,
+        514.07
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0036",
+      "text": "Fabric Login shall only be performed in Class 1, 2, or 3. Since the Fabric may not support all three",
+      "bbox": [
+        96.0,
+        526.96,
+        539.96,
+        538.07
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0037",
+      "text": "classes, the FLOGI Sequence may require retry in a different Class with the appropriate SOF.",
+      "bbox": [
+        96.0,
+        538.96,
+        509.77,
+        550.07
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0038",
+      "text": "Fabric Login is valid for all supported classes as indicated by the validity bits in the FLOGI LS_ACC",
+      "bbox": [
+        96.0,
+        562.96,
+        540.04,
+        574.07
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0039",
+      "text": "Reply Sequence.",
+      "bbox": [
+        96.0,
+        574.96,
+        172.08,
+        586.07
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0040",
+      "text": "SOF",
+      "bbox": [
+        96.0,
+        598.96,
+        116.55,
+        610.07
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0041",
+      "text": "c1",
+      "bbox": [
+        116.52,
+        600.76,
+        124.98,
+        609.66
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p155_s0042",
+      "text": " may be used to attempt Fabric Login or Fabric Relogin.  SOF",
+      "bbox": [
+        124.98,
+        598.97,
+        397.68,
+        610.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p155_s0043",
+      "text": "i1",
+      "bbox": [
+        397.74,
+        600.76,
+        403.92,
+        609.66
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p155_s0044",
+      "text": " is not allowed.",
+      "bbox": [
+        403.98,
+        598.97,
+        470.0,
+        610.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 5
+    },
+    {
+      "span_id": "p155_s0045",
+      "text": "Class 6 shall not be used for Fabric Login since the D_ID field requires an Alias_ID multicast ad-",
+      "bbox": [
+        96.0,
+        622.97,
+        540.13,
+        634.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0046",
+      "text": "dress.",
+      "bbox": [
+        96.0,
+        635.03,
+        123.18,
+        646.14
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0047",
+      "text": "Selection of the SOF for the FLOGI Sequence is based on the Classes supported by the originating",
+      "bbox": [
+        96.0,
+        659.02,
+        539.92,
+        670.14
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0048",
+      "text": "Nx_Port.  The FLOGI Sequence is transmitted and the appropriate action is specified in 6.2.2.3.  If an",
+      "bbox": [
+        96.0,
+        671.02,
+        540.0,
+        682.14
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0049",
+      "text": "F_RJT with reason code \"Class of service not supported by entity at FFFFFEh\" is received, another",
+      "bbox": [
+        96.0,
+        683.02,
+        540.09,
+        694.14
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p155_s0050",
+      "text": "supported SOF shall be attempted until the Login procedure is complete or until all supported SOF",
+      "bbox": [
+        96.0,
+        695.02,
+        539.85,
+        706.14
+      ],
+      "block_index": 15,
+      "line_index": 4,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

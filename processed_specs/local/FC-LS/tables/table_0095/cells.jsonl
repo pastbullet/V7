@@ -1,0 +1,45 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "ELS command", "page": 111, "bbox": [129.86, 98.62, 215.48, 153.99]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Responding\nPort Status", "page": 111, "bbox": [215.48, 98.62, 292.66, 153.99]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Responding\nNx_Port", "page": 111, "bbox": [292.66, 98.62, 374.19, 131.84]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "Responding F_Port\nController", "page": 111, "bbox": [374.19, 98.62, 505.74, 131.84]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "", "page": 111, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "", "page": 111, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "", "page": 111, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Class 1, 2, or 3", "page": 111, "bbox": [292.66, 131.84, 374.19, 153.99]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "Class 1, or 2", "page": 111, "bbox": [374.19, 131.84, 456.99, 153.99]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "Class 3", "page": 111, "bbox": [456.99, 131.84, 505.74, 153.99]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "FDISC", "page": 111, "bbox": [129.86, 153.99, 215.48, 202.05]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Logged in", "page": 111, "bbox": [215.48, 153.99, 292.66, 178.05]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "LS_RJTc", "page": 111, "bbox": [292.66, 153.99, 374.19, 178.05]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "LS_ACC", "page": 111, "bbox": [374.19, 153.99, 456.99, 178.05]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "LS_ACC", "page": 111, "bbox": [456.99, 153.99, 505.74, 178.05]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "", "page": 111, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Not Logged in", "page": 111, "bbox": [215.48, 178.05, 292.66, 202.05]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "LS_RJTc", "page": 111, "bbox": [292.66, 178.05, 374.19, 202.05]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "F_RJTb", "page": 111, "bbox": [374.19, 178.05, 456.99, 202.05]}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "Discard", "page": 111, "bbox": [456.99, 178.05, 505.74, 202.05]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "PDISC", "page": 111, "bbox": [129.86, 202.05, 215.48, 250.05]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Logged in", "page": 111, "bbox": [215.48, 202.05, 292.66, 226.05]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "LS_ACC", "page": 111, "bbox": [292.66, 202.05, 374.19, 226.05]}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "LS_RJTc", "page": 111, "bbox": [374.19, 202.05, 456.99, 226.05]}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "Discard", "page": 111, "bbox": [456.99, 202.05, 505.74, 226.05]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "", "page": 111, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "Not Logged in", "page": 111, "bbox": [215.48, 226.05, 292.66, 250.05]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "LS_RJTa", "page": 111, "bbox": [292.66, 226.05, 374.19, 250.05]}
+{"cell_id": "r6c4", "row": 6, "col": 4, "text": "F_RJTb", "page": 111, "bbox": [374.19, 226.05, 456.99, 250.05]}
+{"cell_id": "r6c5", "row": 6, "col": 5, "text": "Discard", "page": 111, "bbox": [456.99, 226.05, 505.74, 250.05]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "ADISC", "page": 111, "bbox": [129.86, 250.05, 215.48, 297.26]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "Logged in", "page": 111, "bbox": [215.48, 250.05, 292.66, 274.05]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "LS_ACC", "page": 111, "bbox": [292.66, 250.05, 374.19, 274.05]}
+{"cell_id": "r7c4", "row": 7, "col": 4, "text": "LS_RJTc", "page": 111, "bbox": [374.19, 250.05, 456.99, 274.05]}
+{"cell_id": "r7c5", "row": 7, "col": 5, "text": "Discard", "page": 111, "bbox": [456.99, 250.05, 505.74, 274.05]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "", "page": 111, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "Not Logged in", "page": 111, "bbox": [215.48, 274.05, 292.66, 297.26]}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "LS_RJTa", "page": 111, "bbox": [292.66, 274.05, 374.19, 297.26]}
+{"cell_id": "r8c4", "row": 8, "col": 4, "text": "F_RJTb", "page": 111, "bbox": [374.19, 274.05, 456.99, 297.26]}
+{"cell_id": "r8c5", "row": 8, "col": 5, "text": "Discard", "page": 111, "bbox": [456.99, 274.05, 505.74, 297.26]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "a A LOGO ELS sequence or an LS_RJT ELS Sequence with the reason code set to \"Unable\nto perform command request\" and the reason code explanation set to \"N_Port Login\nrequired\" shall be returned.\nb An F_RJT with the Reject reason code set to \"Login required\" shall be returned.\nc A LOGO ELS Sequence or an LS_RJT ELS Sequence with the reason code set\nto\"Command not supported\" and the reason code explanation set to \"Request\nnotsupported\" shall be returned.", "page": 111, "bbox": [129.86, 297.26, 505.74, 394.2]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "", "page": 111, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "", "page": 111, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r9c4", "row": 9, "col": 4, "text": "", "page": 111, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r9c5", "row": 9, "col": 5, "text": "", "page": 111, "bbox": [0.0, 0.0, 0.0, 0.0]}

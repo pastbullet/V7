@@ -1,0 +1,1204 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 33,
+  "spans": [
+    {
+      "span_id": "p033_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0002",
+      "text": " 14",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0003",
+      "text": "ns",
+      "bbox": [
+        96.0,
+        57.65,
+        107.66,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0004",
+      "text": "nanosecond ",
+      "bbox": [
+        156.0,
+        57.65,
+        213.18,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0005",
+      "text": "OLS",
+      "bbox": [
+        96.0,
+        70.97,
+        116.51,
+        82.08
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0006",
+      "text": "Offline Primitive Sequence (see FC-FS-2)",
+      "bbox": [
+        156.0,
+        70.97,
+        340.48,
+        82.08
+      ],
+      "block_index": 3,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0007",
+      "text": "OX_ID",
+      "bbox": [
+        96.0,
+        82.96,
+        125.94,
+        94.08
+      ],
+      "block_index": 3,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0008",
+      "text": "Originator Exchange_ID",
+      "bbox": [
+        156.0,
+        82.96,
+        262.58,
+        94.08
+      ],
+      "block_index": 3,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0009",
+      "text": "P_BSY",
+      "bbox": [
+        96.0,
+        94.96,
+        128.74,
+        106.08
+      ],
+      "block_index": 3,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0010",
+      "text": "N_Port_Busy ",
+      "bbox": [
+        156.0,
+        94.96,
+        217.6,
+        106.08
+      ],
+      "block_index": 3,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0011",
+      "text": "PDISC",
+      "bbox": [
+        96.0,
+        106.96,
+        126.53,
+        118.08
+      ],
+      "block_index": 3,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0012",
+      "text": "Discover N_Port Service Parameters",
+      "bbox": [
+        156.0,
+        106.96,
+        319.36,
+        118.08
+      ],
+      "block_index": 3,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0013",
+      "text": "PLOGI",
+      "bbox": [
+        96.0,
+        118.96,
+        127.1,
+        130.08
+      ],
+      "block_index": 3,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0014",
+      "text": "N_Port Login",
+      "bbox": [
+        156.0,
+        118.96,
+        214.27,
+        130.08
+      ],
+      "block_index": 3,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0015",
+      "text": "P_RJT",
+      "bbox": [
+        96.0,
+        130.96,
+        127.04,
+        142.08
+      ],
+      "block_index": 3,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0016",
+      "text": "N_Port_Reject ",
+      "bbox": [
+        156.0,
+        130.96,
+        223.72,
+        142.08
+      ],
+      "block_index": 3,
+      "line_index": 14,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0017",
+      "text": "PRLI",
+      "bbox": [
+        96.0,
+        142.96,
+        118.76,
+        154.08
+      ],
+      "block_index": 3,
+      "line_index": 15,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0018",
+      "text": "Process Login",
+      "bbox": [
+        156.0,
+        142.96,
+        219.33,
+        154.08
+      ],
+      "block_index": 3,
+      "line_index": 16,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0019",
+      "text": "PRLO",
+      "bbox": [
+        96.0,
+        154.96,
+        123.74,
+        166.08
+      ],
+      "block_index": 3,
+      "line_index": 17,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0020",
+      "text": "Process Logout",
+      "bbox": [
+        156.0,
+        154.96,
+        225.45,
+        166.08
+      ],
+      "block_index": 3,
+      "line_index": 18,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0021",
+      "text": "R_A_TOV",
+      "bbox": [
+        96.0,
+        166.96,
+        142.06,
+        178.08
+      ],
+      "block_index": 3,
+      "line_index": 19,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0022",
+      "text": "Resource_Allocation_Timeout value (see FC-FS-2)",
+      "bbox": [
+        156.0,
+        166.96,
+        382.59,
+        178.08
+      ],
+      "block_index": 3,
+      "line_index": 20,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0023",
+      "text": "RCS",
+      "bbox": [
+        96.0,
+        178.96,
+        117.04,
+        190.08
+      ],
+      "block_index": 3,
+      "line_index": 21,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0024",
+      "text": "Read Connection Status ",
+      "bbox": [
+        156.0,
+        178.96,
+        267.06,
+        190.08
+      ],
+      "block_index": 3,
+      "line_index": 22,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0025",
+      "text": "R_CTL",
+      "bbox": [
+        96.0,
+        190.96,
+        128.18,
+        202.08
+      ],
+      "block_index": 3,
+      "line_index": 23,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0026",
+      "text": "Routing Control ",
+      "bbox": [
+        156.0,
+        190.96,
+        228.19,
+        202.08
+      ],
+      "block_index": 3,
+      "line_index": 24,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0027",
+      "text": "RJT",
+      "bbox": [
+        96.0,
+        202.96,
+        114.86,
+        214.08
+      ],
+      "block_index": 3,
+      "line_index": 25,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0028",
+      "text": "reject ",
+      "bbox": [
+        156.0,
+        202.96,
+        183.19,
+        214.08
+      ],
+      "block_index": 3,
+      "line_index": 26,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0029",
+      "text": "RMC",
+      "bbox": [
+        96.0,
+        214.96,
+        118.73,
+        226.08
+      ],
+      "block_index": 3,
+      "line_index": 27,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0030",
+      "text": "Remove Connection ",
+      "bbox": [
+        156.0,
+        214.96,
+        249.31,
+        226.08
+      ],
+      "block_index": 3,
+      "line_index": 28,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0031",
+      "text": "RNC",
+      "bbox": [
+        96.0,
+        226.96,
+        117.59,
+        238.08
+      ],
+      "block_index": 3,
+      "line_index": 29,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0032",
+      "text": "Report node Capability",
+      "bbox": [
+        156.0,
+        226.96,
+        257.63,
+        238.08
+      ],
+      "block_index": 3,
+      "line_index": 30,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0033",
+      "text": "RO",
+      "bbox": [
+        96.0,
+        238.96,
+        110.95,
+        250.08
+      ],
+      "block_index": 3,
+      "line_index": 31,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0034",
+      "text": "relative offset",
+      "bbox": [
+        156.0,
+        238.96,
+        215.37,
+        250.08
+      ],
+      "block_index": 3,
+      "line_index": 32,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0035",
+      "text": "R_RDY",
+      "bbox": [
+        96.0,
+        250.96,
+        129.81,
+        262.08
+      ],
+      "block_index": 3,
+      "line_index": 33,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0036",
+      "text": "Receiver_Ready ",
+      "bbox": [
+        156.0,
+        250.96,
+        232.65,
+        262.08
+      ],
+      "block_index": 3,
+      "line_index": 34,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0037",
+      "text": "R_T_TOV",
+      "bbox": [
+        96.0,
+        262.96,
+        140.93,
+        274.08
+      ],
+      "block_index": 3,
+      "line_index": 35,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0038",
+      "text": "Receiver_Transmitter_Timeout value ",
+      "bbox": [
+        156.0,
+        262.96,
+        322.66,
+        274.08
+      ],
+      "block_index": 3,
+      "line_index": 36,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0039",
+      "text": "RTV",
+      "bbox": [
+        96.0,
+        274.96,
+        115.96,
+        286.08
+      ],
+      "block_index": 3,
+      "line_index": 37,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0040",
+      "text": "Read Timeout Value ",
+      "bbox": [
+        156.0,
+        274.96,
+        249.76,
+        286.08
+      ],
+      "block_index": 3,
+      "line_index": 38,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0041",
+      "text": "RX_ID",
+      "bbox": [
+        96.0,
+        286.96,
+        125.39,
+        298.08
+      ],
+      "block_index": 3,
+      "line_index": 39,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0042",
+      "text": "Responder Exchange_ID ",
+      "bbox": [
+        156.0,
+        286.96,
+        270.46,
+        298.08
+      ],
+      "block_index": 3,
+      "line_index": 40,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0043",
+      "text": "s",
+      "bbox": [
+        96.0,
+        298.96,
+        101.54,
+        310.08
+      ],
+      "block_index": 3,
+      "line_index": 41,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0044",
+      "text": "second ",
+      "bbox": [
+        156.0,
+        298.96,
+        190.98,
+        310.08
+      ],
+      "block_index": 3,
+      "line_index": 42,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0045",
+      "text": "SBCCS",
+      "bbox": [
+        96.0,
+        310.96,
+        130.96,
+        322.08
+      ],
+      "block_index": 3,
+      "line_index": 43,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0046",
+      "text": "Single Byte Command Code Sets ",
+      "bbox": [
+        156.0,
+        310.96,
+        307.69,
+        322.08
+      ],
+      "block_index": 3,
+      "line_index": 44,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0047",
+      "text": "SCR",
+      "bbox": [
+        96.0,
+        322.96,
+        117.05,
+        334.08
+      ],
+      "block_index": 3,
+      "line_index": 45,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0048",
+      "text": "State Change Registration",
+      "bbox": [
+        156.0,
+        322.96,
+        273.25,
+        334.08
+      ],
+      "block_index": 3,
+      "line_index": 46,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0049",
+      "text": "SEQ_CNT",
+      "bbox": [
+        96.0,
+        334.96,
+        143.17,
+        346.08
+      ],
+      "block_index": 3,
+      "line_index": 47,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0050",
+      "text": "Sequence Count ",
+      "bbox": [
+        156.0,
+        334.96,
+        233.22,
+        346.08
+      ],
+      "block_index": 3,
+      "line_index": 48,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0051",
+      "text": "SEQ_ID",
+      "bbox": [
+        96.0,
+        346.96,
+        132.65,
+        358.08
+      ],
+      "block_index": 3,
+      "line_index": 49,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0052",
+      "text": "Sequence_ID ",
+      "bbox": [
+        156.0,
+        346.96,
+        219.3,
+        358.08
+      ],
+      "block_index": 3,
+      "line_index": 50,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0053",
+      "text": "S_ID",
+      "bbox": [
+        96.0,
+        358.96,
+        118.17,
+        370.08
+      ],
+      "block_index": 3,
+      "line_index": 51,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0054",
+      "text": "Source_Identifier ",
+      "bbox": [
+        156.0,
+        358.96,
+        234.29,
+        370.08
+      ],
+      "block_index": 3,
+      "line_index": 52,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0055",
+      "text": "SNMP",
+      "bbox": [
+        96.0,
+        370.96,
+        124.86,
+        382.08
+      ],
+      "block_index": 3,
+      "line_index": 53,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0056",
+      "text": "Simple Network Management Protocol",
+      "bbox": [
+        156.0,
+        370.96,
+        326.46,
+        382.08
+      ],
+      "block_index": 3,
+      "line_index": 54,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0057",
+      "text": "SOF",
+      "bbox": [
+        96.0,
+        382.96,
+        116.55,
+        394.08
+      ],
+      "block_index": 3,
+      "line_index": 55,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0058",
+      "text": "Start-of-Frame (see FC-FS-2)",
+      "bbox": [
+        156.0,
+        382.96,
+        287.59,
+        394.08
+      ],
+      "block_index": 3,
+      "line_index": 56,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0059",
+      "text": "SSB",
+      "bbox": [
+        96.0,
+        394.96,
+        116.51,
+        406.08
+      ],
+      "block_index": 3,
+      "line_index": 57,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0060",
+      "text": "Sequence Status Block ",
+      "bbox": [
+        156.0,
+        394.96,
+        262.06,
+        406.08
+      ],
+      "block_index": 3,
+      "line_index": 58,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0061",
+      "text": "TCP",
+      "bbox": [
+        96.0,
+        406.96,
+        115.96,
+        418.08
+      ],
+      "block_index": 3,
+      "line_index": 59,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0062",
+      "text": "Transmission Control Protocol",
+      "bbox": [
+        156.0,
+        406.96,
+        289.87,
+        418.08
+      ],
+      "block_index": 3,
+      "line_index": 60,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0063",
+      "text": "TPLS",
+      "bbox": [
+        96.0,
+        418.96,
+        121.49,
+        430.08
+      ],
+      "block_index": 3,
+      "line_index": 61,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0064",
+      "text": "Test Process Login Status",
+      "bbox": [
+        156.0,
+        418.96,
+        272.65,
+        430.08
+      ],
+      "block_index": 3,
+      "line_index": 62,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0065",
+      "text": "TYPE",
+      "bbox": [
+        96.0,
+        430.96,
+        122.08,
+        442.07
+      ],
+      "block_index": 3,
+      "line_index": 63,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0066",
+      "text": "Data structure type ",
+      "bbox": [
+        156.0,
+        430.96,
+        243.21,
+        442.07
+      ],
+      "block_index": 3,
+      "line_index": 64,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0067",
+      "text": "UDP",
+      "bbox": [
+        96.0,
+        442.96,
+        117.04,
+        454.07
+      ],
+      "block_index": 3,
+      "line_index": 65,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0068",
+      "text": "User Datagram Protocol",
+      "bbox": [
+        156.0,
+        442.96,
+        263.13,
+        454.07
+      ],
+      "block_index": 3,
+      "line_index": 66,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0069",
+      "text": "ULP",
+      "bbox": [
+        96.0,
+        454.96,
+        115.96,
+        466.07
+      ],
+      "block_index": 3,
+      "line_index": 67,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0070",
+      "text": "Upper Level Protocol ",
+      "bbox": [
+        156.0,
+        454.96,
+        252.05,
+        466.07
+      ],
+      "block_index": 3,
+      "line_index": 68,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0071",
+      "text": "WWN",
+      "bbox": [
+        96.0,
+        466.96,
+        122.03,
+        478.07
+      ],
+      "block_index": 3,
+      "line_index": 69,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0072",
+      "text": "Worldwide_Name",
+      "bbox": [
+        156.0,
+        466.96,
+        234.87,
+        478.07
+      ],
+      "block_index": 3,
+      "line_index": 70,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0073",
+      "text": "X_ID",
+      "bbox": [
+        96.0,
+        478.96,
+        118.17,
+        490.07
+      ],
+      "block_index": 3,
+      "line_index": 71,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0074",
+      "text": "Exchange_Identifier",
+      "bbox": [
+        156.0,
+        478.96,
+        244.38,
+        490.07
+      ],
+      "block_index": 3,
+      "line_index": 72,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0075",
+      "text": "3.6",
+      "bbox": [
+        96.0,
+        514.96,
+        109.88,
+        526.07
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0076",
+      "text": "Symbols",
+      "bbox": [
+        119.88,
+        514.96,
+        161.54,
+        526.07
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0077",
+      "text": "Unless indicated otherwise, the following symbols have the listed meaning. ",
+      "bbox": [
+        96.0,
+        538.96,
+        429.32,
+        550.07
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0078",
+      "text": "3.7",
+      "bbox": [
+        96.0,
+        635.02,
+        109.89,
+        646.13
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0079",
+      "text": "Keywords",
+      "bbox": [
+        119.89,
+        635.02,
+        167.58,
+        646.13
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0080",
+      "text": "3.7.1",
+      "bbox": [
+        96.0,
+        659.02,
+        118.22,
+        670.13
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0081",
+      "text": "expected: ",
+      "bbox": [
+        128.22,
+        659.02,
+        177.6,
+        670.13
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0082",
+      "text": "A keyword used to describe the behavior of the hardware or software in the design",
+      "bbox": [
+        177.54,
+        659.02,
+        540.11,
+        670.13
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p033_s0083",
+      "text": "models assumed by this standard. Other hardware and software design models may also be",
+      "bbox": [
+        96.0,
+        671.02,
+        539.91,
+        682.13
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0084",
+      "text": "implemented.",
+      "bbox": [
+        96.0,
+        683.02,
+        155.93,
+        694.13
+      ],
+      "block_index": 7,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0085",
+      "text": "||",
+      "bbox": [
+        102.0,
+        566.98,
+        107.17,
+        578.09
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0086",
+      "text": "concatenation ",
+      "bbox": [
+        150.96,
+        566.98,
+        215.94,
+        578.09
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0087",
+      "text": "m",
+      "bbox": [
+        102.0,
+        586.96,
+        110.3,
+        598.07
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0088",
+      "text": "micro (e.g., ",
+      "bbox": [
+        150.96,
+        586.96,
+        203.71,
+        598.07
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0089",
+      "text": "μ",
+      "bbox": [
+        203.7,
+        585.96,
+        209.44,
+        598.15
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p033_s0090",
+      "text": "m = micrometer) ",
+      "bbox": [
+        209.46,
+        586.96,
+        285.25,
+        598.07
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 3
+    },
+    {
+      "span_id": "p033_s0091",
+      "text": "L >>",
+      "bbox": [
+        102.0,
+        607.0,
+        122.0,
+        618.11
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p033_s0092",
+      "text": "Received from Link",
+      "bbox": [
+        150.98,
+        607.0,
+        236.42,
+        618.11
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

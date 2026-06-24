@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0150",
+  "type": "table",
+  "caption": "Table fragment on page 147",
+  "pages": [
+    147
+  ],
+  "bbox": [
+    142.41,
+    114.27,
+    524.1,
+    164.25
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 147,
+  "logical_table": false
+}

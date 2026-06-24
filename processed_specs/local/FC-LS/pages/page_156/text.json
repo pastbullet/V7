@@ -1,0 +1,697 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 156,
+  "spans": [
+    {
+      "span_id": "p156_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0002",
+      "text": " 137",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0003",
+      "text": "types have been attempted.  If all supported SOF types have been attempted and the Fabric has re-",
+      "bbox": [
+        96.0,
+        57.65,
+        540.09,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0004",
+      "text": "jected all or timed out, the Fabric and Nx_Port are incompatible and outside intervention is required.",
+      "bbox": [
+        96.0,
+        69.65,
+        536.57,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0005",
+      "text": "The Fabric shall remove all Class 1, and 6 connections to an N_Port when the N_Port performs a",
+      "bbox": [
+        96.0,
+        94.97,
+        539.89,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0006",
+      "text": "Fabric Login.",
+      "bbox": [
+        96.0,
+        106.97,
+        153.7,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0007",
+      "text": "6.2.4",
+      "bbox": [
+        96.0,
+        130.97,
+        118.22,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0008",
+      "text": "Frequency",
+      "bbox": [
+        128.22,
+        130.97,
+        178.76,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0009",
+      "text": "Login between an Nx_Port and the Fabric should be long-lived.  If Implicit Logout with the Fabric has",
+      "bbox": [
+        96.0,
+        154.96,
+        540.08,
+        166.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0010",
+      "text": "occurred, it is necessary to perform a new Login with the Fabric (see 6.4.4",
+      "bbox": [
+        96.0,
+        166.96,
+        423.71,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0011",
+      "text": ").",
+      "bbox": [
+        433.71,
+        166.96,
+        439.78,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0012",
+      "text": "6.2.5",
+      "bbox": [
+        96.0,
+        190.96,
+        118.24,
+        202.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0013",
+      "text": "Fabric Login completion - Originator",
+      "bbox": [
+        128.24,
+        190.96,
+        301.48,
+        202.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0014",
+      "text": "The Originator of the FLOGI request considers Fabric Login to have ended when",
+      "bbox": [
+        96.0,
+        214.96,
+        452.66,
+        226.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0015",
+      "text": "a) in Class 1, the Originator has transmitted the ACK (EOF",
+      "bbox": [
+        106.02,
+        238.96,
+        370.16,
+        250.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0016",
+      "text": "t",
+      "bbox": [
+        370.14,
+        240.76,
+        372.36,
+        249.66
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p156_s0017",
+      "text": " or EOF",
+      "bbox": [
+        372.36,
+        238.97,
+        407.33,
+        250.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p156_s0018",
+      "text": "dt",
+      "bbox": [
+        407.34,
+        240.76,
+        414.0,
+        249.66
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p156_s0019",
+      "text": ") to the LS_ACC, or",
+      "bbox": [
+        414.0,
+        238.97,
+        501.24,
+        250.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 5
+    },
+    {
+      "span_id": "p156_s0020",
+      "text": "b) in Class 2, the Originator has transmitted the ACK (EOF",
+      "bbox": [
+        106.02,
+        262.97,
+        370.16,
+        274.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0021",
+      "text": "t",
+      "bbox": [
+        370.14,
+        264.76,
+        372.36,
+        273.66
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p156_s0022",
+      "text": ") to the LS_ACC, or",
+      "bbox": [
+        372.36,
+        262.97,
+        459.54,
+        274.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p156_s0023",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        286.97,
+        114.38,
+        298.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0024",
+      "text": "in Class 3, the Originator has received the LS_ACC.",
+      "bbox": [
+        122.4,
+        286.97,
+        352.94,
+        298.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0025",
+      "text": "When Login is ended, the values of buffer-to-buffer Credit are initialized.",
+      "bbox": [
+        96.0,
+        310.97,
+        414.35,
+        322.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0026",
+      "text": "6.2.6",
+      "bbox": [
+        96.0,
+        334.96,
+        118.22,
+        346.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0027",
+      "text": "Fabric Login completion - Responder",
+      "bbox": [
+        128.22,
+        334.96,
+        305.41,
+        346.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0028",
+      "text": "The Responder of the FLOGI request considers Fabric Login to have ended when",
+      "bbox": [
+        96.0,
+        358.96,
+        457.66,
+        370.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0029",
+      "text": "a) in Class 1, the Responder has received the ACK (EOF",
+      "bbox": [
+        106.02,
+        382.96,
+        363.47,
+        394.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0030",
+      "text": "t",
+      "bbox": [
+        363.48,
+        384.76,
+        365.7,
+        393.66
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p156_s0031",
+      "text": " or EOF",
+      "bbox": [
+        365.7,
+        382.97,
+        400.67,
+        394.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p156_s0032",
+      "text": "dt",
+      "bbox": [
+        400.68,
+        384.76,
+        407.34,
+        393.66
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p156_s0033",
+      "text": ") to the LS_ACC, or",
+      "bbox": [
+        407.34,
+        382.97,
+        494.52,
+        394.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 5
+    },
+    {
+      "span_id": "p156_s0034",
+      "text": "b) in Class 2, the Responder has received the ACK (EOF",
+      "bbox": [
+        106.02,
+        406.97,
+        363.47,
+        418.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0035",
+      "text": "t",
+      "bbox": [
+        363.48,
+        408.76,
+        365.7,
+        417.66
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p156_s0036",
+      "text": ") to the LS_ACC, or",
+      "bbox": [
+        365.7,
+        406.97,
+        452.86,
+        418.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p156_s0037",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        430.97,
+        114.38,
+        442.08
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0038",
+      "text": "in Class 3, the Responder has transmitted the LS_ACC.",
+      "bbox": [
+        122.4,
+        430.97,
+        369.58,
+        442.08
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0039",
+      "text": "When Fabric Login has ended successfully, the values of buffer-to-buffer Credit are initialized.",
+      "bbox": [
+        96.0,
+        454.97,
+        510.38,
+        466.08
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0040",
+      "text": "6.3",
+      "bbox": [
+        96.0,
+        478.97,
+        109.88,
+        490.08
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0041",
+      "text": "N_Port Login",
+      "bbox": [
+        119.88,
+        478.97,
+        182.61,
+        490.08
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0042",
+      "text": "6.3.1",
+      "bbox": [
+        96.0,
+        502.96,
+        118.22,
+        514.08
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0043",
+      "text": "Introduction",
+      "bbox": [
+        128.22,
+        502.96,
+        186.53,
+        514.08
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0044",
+      "text": "N_Port Login follows the Fabric Login procedure.  If a Fabric is present, as determined by performing",
+      "bbox": [
+        96.0,
+        526.96,
+        539.98,
+        538.08
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0045",
+      "text": "the Fabric Login procedure, an Nx_Port proceeds with N_Port Login according to 6.3.2.2.  If a Fabric",
+      "bbox": [
+        96.0,
+        538.96,
+        540.01,
+        550.08
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0046",
+      "text": "is not present, as determined by performing the Fabric Login procedure, an Nx_Port proceeds with",
+      "bbox": [
+        96.0,
+        550.96,
+        539.84,
+        562.08
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0047",
+      "text": "N_Port Login according to 6.3.2.4.",
+      "bbox": [
+        96.0,
+        562.96,
+        247.61,
+        574.08
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0048",
+      "text": "N_Port Login accomplishes the following functions:",
+      "bbox": [
+        96.0,
+        586.96,
+        321.4,
+        598.08
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0049",
+      "text": "a) It provides each Nx_Port with the other Nx_Port's operating characteristics, N_Port_Name and",
+      "bbox": [
+        106.02,
+        610.96,
+        539.98,
+        622.08
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0050",
+      "text": "Node_Name.",
+      "bbox": [
+        122.4,
+        622.96,
+        181.26,
+        634.08
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0051",
+      "text": "b) If a Fabric is not present, it assigns the native N_Port_ID for both Nx_Ports.",
+      "bbox": [
+        106.02,
+        647.02,
+        455.81,
+        658.14
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0052",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        671.02,
+        114.38,
+        682.14
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p156_s0053",
+      "text": "If initializes the Nx_Port end-to-end Credit.",
+      "bbox": [
+        122.4,
+        671.02,
+        310.14,
+        682.14
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0040",
+  "type": "table",
+  "caption": "Table 37 – Address Format",
+  "pages": [
+    68
+  ],
+  "bbox": [
+    102.8,
+    98.28,
+    533.2,
+    291.7
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 68,
+  "logical_table": false
+}

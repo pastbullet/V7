@@ -1,0 +1,68 @@
+# Local secrets and machine-specific settings
+.env
+.env.*
+!.env.example
+!.env.template
+*.local
+*.local.*
+.claude/settings.local.json
+
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Coverage, test, and build outputs
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# OS and editor noise
+.DS_Store
+._*
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs and temporary runtime files
+logs/
+tmp/
+*.log
+*.pid
+
+# V7 runtime/generated caches
+data/sessions/
+data/out/summary_cache/
+data/out/doc_registry.runtime.json
+data/out/content/
+
+# Local databases created during experiments
+*.db
+*.sqlite
+*.sqlite3
+
+# Dependency directories from optional UI/tooling experiments
+node_modules/
+
+# Keep source specs and audit artifacts visible by default.
+# If raw specs become too large for normal Git, move them to Git LFS instead
+# of silently ignoring the provenance source:
+# data/raw/

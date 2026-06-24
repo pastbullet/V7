@@ -1,0 +1,12 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Encoded Value\nWord 0, Bits 11-8", "page": 82, "bbox": [94.53, 122.28, 185.19, 156.0]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Description", "page": 82, "bbox": [185.19, 122.28, 541.47, 156.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0000b", "page": 82, "bbox": [94.53, 156.0, 185.19, 180.03]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Reserved", "page": 82, "bbox": [185.19, 156.0, 541.47, 180.03]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "0001b", "page": 82, "bbox": [94.53, 180.03, 185.19, 204.03]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Request executed", "page": 82, "bbox": [185.19, 180.03, 541.47, 204.03]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "0010b - 0110b", "page": 82, "bbox": [94.53, 204.03, 185.19, 228.03]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Reserved", "page": 82, "bbox": [185.19, 204.03, 541.47, 228.03]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "0111b", "page": 82, "bbox": [94.53, 228.03, 185.19, 252.03]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Obsolete", "page": 82, "bbox": [185.19, 228.03, 541.47, 252.03]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "1000b - 1111b", "page": 82, "bbox": [94.53, 252.03, 185.19, 275.7]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "Reserved", "page": 82, "bbox": [185.19, 252.03, 541.47, 275.7]}

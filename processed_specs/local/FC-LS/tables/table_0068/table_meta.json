@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0068",
+  "type": "table",
+  "caption": "Table 65 – Node Management",
+  "pages": [
+    89
+  ],
+  "bbox": [
+    97.79,
+    98.48,
+    538.21,
+    374.58
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 89,
+  "logical_table": false
+}

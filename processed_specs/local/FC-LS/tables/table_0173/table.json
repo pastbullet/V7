@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Nx_Port\n0\n0\n1\n1",
+      "Fx_Port",
+      "Meaning"
+    ],
+    [
+      null,
+      "0",
+      "Neither supports"
+    ],
+    [
+      null,
+      "1",
+      "Fabric is capable of supporting, Sequential delivery is functional"
+    ],
+    [
+      null,
+      "0",
+      "Nx_Port support requested, Fabric does not support"
+    ],
+    [
+      null,
+      "1",
+      "Nx_Port requested, Fabric is capable of supporting, Sequential delivery is\nfunctional"
+    ]
+  ]
+}

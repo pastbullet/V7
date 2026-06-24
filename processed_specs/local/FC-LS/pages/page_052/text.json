@@ -1,0 +1,803 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 52,
+  "spans": [
+    {
+      "span_id": "p052_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0002",
+      "text": " 33",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0003",
+      "text": "Bits 23 through 0 specify the address identifier of the Nx_Port involved in a dedicated connection with",
+      "bbox": [
+        96.0,
+        57.65,
+        540.0,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0004",
+      "text": "the other Nx_Port specified by the RCS ELS Request Sequence frame (i.e., the Connection estab-",
+      "bbox": [
+        96.0,
+        69.65,
+        540.05,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0005",
+      "text": "lished bit is set to one).",
+      "bbox": [
+        96.0,
+        81.65,
+        198.17,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0006",
+      "text": "4.2.10",
+      "bbox": [
+        96.0,
+        538.97,
+        123.74,
+        550.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0007",
+      "text": "Read Link Error Status Block (RLS)",
+      "bbox": [
+        133.8,
+        538.97,
+        301.39,
+        550.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0008",
+      "text": "4.2.10.1  Description",
+      "bbox": [
+        96.0,
+        562.97,
+        192.63,
+        574.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0009",
+      "text": "The RLS ELS requests an FC_Port to return the identified Link Error Status Block (LESB) associated",
+      "bbox": [
+        96.0,
+        586.96,
+        540.07,
+        598.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0010",
+      "text": "with the Port_ID specified in the Payload.  This provides the Nx_Port transmitting the request with in-",
+      "bbox": [
+        96.0,
+        598.96,
+        539.97,
+        610.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0011",
+      "text": "formation regarding Link Errors detected within the designatedFC_Port.",
+      "bbox": [
+        96.0,
+        610.96,
+        411.39,
+        622.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0012",
+      "text": "4.2.10.2  Protocol",
+      "bbox": [
+        96.0,
+        635.02,
+        178.22,
+        646.14
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0013",
+      "text": "a) Read Link Error Status Request Sequence",
+      "bbox": [
+        106.02,
+        659.02,
+        311.15,
+        670.14
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0014",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence",
+      "bbox": [
+        106.02,
+        683.02,
+        287.89,
+        694.14
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0015",
+      "text": " Table 16 – Connection Status Codes",
+      "bbox": [
+        230.22,
+        103.66,
+        405.77,
+        114.78
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0016",
+      "text": "Name",
+      "bbox": [
+        142.98,
+        125.62,
+        170.17,
+        136.74
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0017",
+      "text": "Bit Number",
+      "bbox": [
+        220.61,
+        125.62,
+        274.45,
+        136.74
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0018",
+      "text": "Value",
+      "bbox": [
+        285.81,
+        125.62,
+        312.48,
+        136.74
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0019",
+      "text": "Definition",
+      "bbox": [
+        405.4,
+        125.62,
+        451.5,
+        136.74
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0020",
+      "text": "Connect-Request ",
+      "bbox": [
+        99.72,
+        182.62,
+        180.35,
+        193.74
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0021",
+      "text": "delivered",
+      "bbox": [
+        99.72,
+        194.62,
+        140.3,
+        205.74
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0022",
+      "text": "31",
+      "bbox": [
+        241.98,
+        189.64,
+        253.1,
+        200.76
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0023",
+      "text": "0",
+      "bbox": [
+        296.4,
+        160.66,
+        301.94,
+        171.78
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0024",
+      "text": "The specified Nx_Port is either not Connected, or ",
+      "bbox": [
+        320.7,
+        147.64,
+        537.84,
+        158.76
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0025",
+      "text": "is involved in an Established Connection based ",
+      "bbox": [
+        320.7,
+        159.64,
+        532.36,
+        170.76
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0026",
+      "text": "on the setting of the Connection established bit.",
+      "bbox": [
+        320.7,
+        171.64,
+        531.25,
+        182.76
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0027",
+      "text": "1",
+      "bbox": [
+        296.4,
+        212.62,
+        301.94,
+        223.74
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0028",
+      "text": "A connect-Request has been delivered to the ",
+      "bbox": [
+        320.7,
+        193.66,
+        523.46,
+        204.78
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0029",
+      "text": "specified Nx_Port, but the Nx_Port has not yet ",
+      "bbox": [
+        320.7,
+        205.66,
+        528.38,
+        216.78
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0030",
+      "text": "responded with a proper response frame and a ",
+      "bbox": [
+        320.7,
+        217.66,
+        531.23,
+        228.78
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0031",
+      "text": "dedicated connection does not yet exist.",
+      "bbox": [
+        320.7,
+        229.66,
+        498.51,
+        240.78
+      ],
+      "block_index": 15,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0032",
+      "text": "Connect-Request stacked",
+      "bbox": [
+        99.72,
+        280.66,
+        214.46,
+        291.78
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0033",
+      "text": "30",
+      "bbox": [
+        241.98,
+        281.62,
+        253.1,
+        292.74
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0034",
+      "text": "0",
+      "bbox": [
+        296.4,
+        258.64,
+        301.94,
+        269.76
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0035",
+      "text": "No connect-Request is stacked for the specified ",
+      "bbox": [
+        320.7,
+        251.62,
+        535.09,
+        262.74
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0036",
+      "text": "Nx_Port on behalf of the requesting Nx_Port.",
+      "bbox": [
+        320.7,
+        263.62,
+        519.57,
+        274.74
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0037",
+      "text": "1",
+      "bbox": [
+        296.4,
+        298.66,
+        301.94,
+        309.78
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0038",
+      "text": "One or more connect-Requests are stacked, but ",
+      "bbox": [
+        320.7,
+        285.64,
+        536.77,
+        296.76
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0039",
+      "text": "have not been delivered to the specified Nx_Port ",
+      "bbox": [
+        320.7,
+        297.64,
+        537.58,
+        308.76
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0040",
+      "text": "on behalf of the requesting Nx_Port",
+      "bbox": [
+        320.7,
+        309.64,
+        477.93,
+        320.76
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0041",
+      "text": "Connection established",
+      "bbox": [
+        99.72,
+        366.64,
+        203.61,
+        377.76
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0042",
+      "text": "29",
+      "bbox": [
+        241.98,
+        367.66,
+        253.1,
+        378.78
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0043",
+      "text": "0",
+      "bbox": [
+        296.4,
+        338.62,
+        301.94,
+        349.74
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0044",
+      "text": "The specified Nx_Port in the RCS Request is not ",
+      "bbox": [
+        320.7,
+        331.66,
+        537.43,
+        342.78
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0045",
+      "text": "in a dedicated connection",
+      "bbox": [
+        320.7,
+        343.66,
+        433.96,
+        354.78
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0046",
+      "text": "1",
+      "bbox": [
+        296.4,
+        384.64,
+        301.94,
+        395.76
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0047",
+      "text": "The specified Nx_Port is involved in a dedicated ",
+      "bbox": [
+        320.7,
+        365.62,
+        536.28,
+        376.74
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0048",
+      "text": "connection.  The address identifier in bits 23-0 ",
+      "bbox": [
+        320.7,
+        377.62,
+        527.85,
+        388.74
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0049",
+      "text": "identifies the other Nx_Port involved in the ",
+      "bbox": [
+        320.7,
+        389.62,
+        510.67,
+        400.74
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0050",
+      "text": "dedicated connection.",
+      "bbox": [
+        320.7,
+        401.62,
+        417.92,
+        412.74
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0051",
+      "text": "Intermix mode",
+      "bbox": [
+        99.72,
+        464.62,
+        163.05,
+        475.74
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0052",
+      "text": "28",
+      "bbox": [
+        241.98,
+        465.64,
+        253.1,
+        476.76
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0053",
+      "text": "0",
+      "bbox": [
+        296.4,
+        430.66,
+        301.94,
+        441.78
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0054",
+      "text": "The N_Port specified in the RCS frame is not ",
+      "bbox": [
+        320.7,
+        423.64,
+        522.87,
+        434.76
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0055",
+      "text": "functioning in Intermix mode.",
+      "bbox": [
+        320.7,
+        435.64,
+        448.42,
+        446.76
+      ],
+      "block_index": 24,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0056",
+      "text": "1",
+      "bbox": [
+        296.4,
+        482.68,
+        301.94,
+        493.8
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0057",
+      "text": "The N_Port specified in the request is functioning ",
+      "bbox": [
+        320.7,
+        457.67,
+        537.73,
+        468.78
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0058",
+      "text": "in Intermix mode.  An N_Port is functioning in ",
+      "bbox": [
+        320.7,
+        469.66,
+        523.43,
+        480.78
+      ],
+      "block_index": 26,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0059",
+      "text": "Intermix mode if both the N_Port and the F_Port ",
+      "bbox": [
+        320.7,
+        481.66,
+        536.25,
+        492.78
+      ],
+      "block_index": 26,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0060",
+      "text": "have both previously indicated that each supports ",
+      "bbox": [
+        320.7,
+        493.66,
+        538.0,
+        504.78
+      ],
+      "block_index": 26,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p052_s0061",
+      "text": "Intermix during Login.",
+      "bbox": [
+        320.7,
+        505.66,
+        416.75,
+        516.78
+      ],
+      "block_index": 26,
+      "line_index": 5,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0019"
+  ]
+}

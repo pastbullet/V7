@@ -1,0 +1,30 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Item", "page": 76, "bbox": [158.03, 98.48, 387.51, 120.0]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Word", "page": 76, "bbox": [387.51, 98.48, 426.39, 120.0]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Bit", "page": 76, "bbox": [426.39, 98.48, 477.97, 120.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "TYPE Code or Common Logout Parametersa", "page": 76, "bbox": [158.03, 120.0, 387.51, 144.03]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "0", "page": 76, "bbox": [387.51, 120.0, 426.39, 144.03]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "31-24", "page": 76, "bbox": [426.39, 120.0, 477.97, 144.03]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "TYPE Code Extension", "page": 76, "bbox": [158.03, 144.03, 387.51, 168.03]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "0", "page": 76, "bbox": [387.51, 144.03, 426.39, 168.03]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "23-16", "page": 76, "bbox": [426.39, 144.03, 477.97, 168.03]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "Originator Process_Associator Validity", "page": 76, "bbox": [158.03, 168.03, 387.51, 192.03]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "0", "page": 76, "bbox": [387.51, 168.03, 426.39, 192.03]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "15", "page": 76, "bbox": [426.39, 168.03, 477.97, 192.03]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "Responder Process_Associator Validity", "page": 76, "bbox": [158.03, 192.03, 387.51, 216.03]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "0", "page": 76, "bbox": [387.51, 192.03, 426.39, 216.03]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "14", "page": 76, "bbox": [426.39, 192.03, 477.97, 216.03]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "Reserved", "page": 76, "bbox": [158.03, 216.03, 387.51, 240.03]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "0", "page": 76, "bbox": [387.51, 216.03, 426.39, 240.03]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "13-0", "page": 76, "bbox": [426.39, 216.03, 477.97, 240.03]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "Originator Process_Associator", "page": 76, "bbox": [158.03, 240.03, 387.51, 264.03]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "1", "page": 76, "bbox": [387.51, 240.03, 426.39, 264.03]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "31-0", "page": 76, "bbox": [426.39, 240.03, 477.97, 264.03]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "Responder Process_Associator", "page": 76, "bbox": [158.03, 264.03, 387.51, 288.03]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "2", "page": 76, "bbox": [387.51, 264.03, 426.39, 288.03]}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "31-0", "page": 76, "bbox": [426.39, 264.03, 477.97, 288.03]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "Reserved", "page": 76, "bbox": [158.03, 288.03, 387.51, 311.5]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "3", "page": 76, "bbox": [387.51, 288.03, 426.39, 311.5]}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "31-0", "page": 76, "bbox": [426.39, 288.03, 477.97, 311.5]}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "a If byte 0 of the first word of a Logout Parameter page is set to the value 00h,\nthe Logout Parameter page is common to all FC-4 Types at that image pair.", "page": 76, "bbox": [158.03, 311.5, 477.97, 348.39]}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "", "page": 76, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r10c3", "row": 10, "col": 3, "text": "", "page": 76, "bbox": [0.0, 0.0, 0.0, 0.0]}

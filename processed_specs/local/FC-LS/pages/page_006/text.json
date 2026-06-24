@@ -1,0 +1,255 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 6,
+  "spans": [
+    {
+      "span_id": "p006_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0002",
+      "text": " vi",
+      "bbox": [
+        523.02,
+        723.59,
+        532.97,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0003",
+      "text": "Foreword",
+      "bbox": [
+        96.0,
+        57.12,
+        150.61,
+        70.51
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0004",
+      "text": "(This Foreword is not part of American National Standard INCITS xxx-200x.)",
+      "bbox": [
+        168.24,
+        59.83,
+        456.0,
+        69.88
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0005",
+      "text": "The Fibre Channel Link Services (FC-LS) standard describes in detail the Fibre Channel Link Servic-",
+      "bbox": [
+        96.0,
+        94.97,
+        539.97,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0006",
+      "text": "es introduced in FC-FS-2. In addition, this document describes any ancillary functions and services",
+      "bbox": [
+        96.0,
+        106.97,
+        539.98,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0007",
+      "text": "required to support the Fibre Channel Link Services.",
+      "bbox": [
+        96.0,
+        118.97,
+        327.06,
+        130.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0008",
+      "text": "This standard was developed by the INCITS Fibre Channel T11 Technical Committee (FC-TC) of Ac-",
+      "bbox": [
+        96.0,
+        142.97,
+        540.08,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0009",
+      "text": "credited Standards Committee INCITS during 2003-200x. The standards approval process started in",
+      "bbox": [
+        96.0,
+        154.97,
+        539.99,
+        166.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0010",
+      "text": "200x. This document includes annexes which are informative and are not considered part of the stan-",
+      "bbox": [
+        96.0,
+        166.97,
+        540.09,
+        178.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0011",
+      "text": "dard.",
+      "bbox": [
+        96.0,
+        178.96,
+        118.74,
+        190.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0012",
+      "text": "Requests for interpretation, suggestions for improvements or addenda, or defect reports are wel-",
+      "bbox": [
+        96.0,
+        202.96,
+        540.05,
+        214.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0013",
+      "text": "come. They should be sent to the INCITS Secretariat, Information Technology Industry Council, 1250",
+      "bbox": [
+        96.0,
+        214.96,
+        539.97,
+        226.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0014",
+      "text": "Eye Street, NW, Suite 200, Washington, DC 20005-3922.",
+      "bbox": [
+        96.0,
+        226.96,
+        349.87,
+        238.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0015",
+      "text": "This standard was processed and approved for submittal to ANSI by the International Committee for",
+      "bbox": [
+        96.0,
+        250.96,
+        539.97,
+        262.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0016",
+      "text": "Information Technology Standards (INCITS). Committee approval of the standard does not neces-",
+      "bbox": [
+        96.0,
+        262.96,
+        540.01,
+        274.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0017",
+      "text": "sarily imply that all committee members voted for approval.",
+      "bbox": [
+        96.0,
+        274.96,
+        356.51,
+        286.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0018",
+      "text": "At the time it approved this standard, INCITS had the following members:",
+      "bbox": [
+        96.0,
+        298.96,
+        419.41,
+        310.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p006_s0019",
+      "text": "(to be filled in by INCITS)",
+      "bbox": [
+        96.0,
+        322.96,
+        207.6,
+        334.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

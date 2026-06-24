@@ -1,0 +1,596 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 188,
+  "spans": [
+    {
+      "span_id": "p188_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0002",
+      "text": " 169",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0003",
+      "text": "6.6.5.6.4  Error policy supported",
+      "bbox": [
+        96.0,
+        57.65,
+        248.17,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0004",
+      "text": "The definition of the Error policy supported bits (word 1, bits 28-27) is shown in table 169.",
+      "bbox": [
+        96.0,
+        82.97,
+        490.34,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0005",
+      "text": "These bits are set to specify the types of support possible for missing frame conditions processed by",
+      "bbox": [
+        96.0,
+        250.97,
+        539.93,
+        262.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0006",
+      "text": "the destination Nx_Port.  The policy used for a given Exchange shall be specified as discard or pro-",
+      "bbox": [
+        96.0,
+        262.97,
+        539.98,
+        274.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0007",
+      "text": "cess by the Exchange Originator (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        274.97,
+        309.89,
+        286.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0008",
+      "text": "6.6.5.6.5  Categories per Sequence",
+      "bbox": [
+        96.0,
+        298.97,
+        260.4,
+        310.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0009",
+      "text": "The definition of the Categories per Sequence bits (word 1, bits 25-24) is shown in table 170.",
+      "bbox": [
+        96.0,
+        322.97,
+        505.97,
+        334.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0010",
+      "text": "The setting of these bits shall specify that the Recipient is capable of processing one, two, or more",
+      "bbox": [
+        96.0,
+        490.97,
+        539.88,
+        502.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0011",
+      "text": "than two Information Categories (R_CTL bits 27-24 in the Frame_Header) in a single Sequence.  Bits",
+      "bbox": [
+        96.0,
+        502.97,
+        540.0,
+        514.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0012",
+      "text": "25-24 are applicable to each Class of Service since support for an individual Class may offer different",
+      "bbox": [
+        96.0,
+        514.96,
+        540.08,
+        526.08
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0013",
+      "text": "capabilities in the same Nx_Port.",
+      "bbox": [
+        96.0,
+        526.96,
+        241.45,
+        538.08
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0014",
+      "text": "When an Nx_Port is acting as a Sequence Initiator, it shall restrict the number of Information Catego-",
+      "bbox": [
+        96.0,
+        550.96,
+        540.07,
+        562.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0015",
+      "text": "ries per Sequence based on the Sequence Recipient's capability as specified during N_Port Login.",
+      "bbox": [
+        96.0,
+        562.96,
+        540.0,
+        574.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0016",
+      "text": "An Nx_Port's capability for processing Information Categories in a single Sequence may prohibit that",
+      "bbox": [
+        96.0,
+        574.96,
+        540.02,
+        586.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0017",
+      "text": "Nx_Port from communicating in certain FC-4 protocols.",
+      "bbox": [
+        96.0,
+        586.96,
+        339.3,
+        598.08
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0018",
+      "text": "Each FC-4 should allow the ability to communicate using only one Information Category per Se-",
+      "bbox": [
+        96.0,
+        610.96,
+        540.13,
+        622.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0019",
+      "text": "quence but always provide the ability to communicate using multiple Information Categories per Se-",
+      "bbox": [
+        96.0,
+        622.96,
+        540.01,
+        634.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0020",
+      "text": "quence where possible, and when performance may be enhanced.",
+      "bbox": [
+        96.0,
+        634.96,
+        391.01,
+        646.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0021",
+      "text": "6.6.5.6.6  Clock synchronization ELS capable",
+      "bbox": [
+        96.0,
+        659.02,
+        309.26,
+        670.14
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0022",
+      "text": "0 = Recipient does not have clock synchronization ELS capability",
+      "bbox": [
+        96.0,
+        683.02,
+        383.96,
+        694.14
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0023",
+      "text": "1 = Recipient has clock synchronization ELS capability",
+      "bbox": [
+        96.0,
+        695.02,
+        337.29,
+        706.14
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0024",
+      "text": " Table 169 – Error Policy Bits Definition",
+      "bbox": [
+        224.7,
+        104.98,
+        411.25,
+        116.1
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0025",
+      "text": "Word 1, bits 28-27",
+      "bbox": [
+        131.22,
+        126.94,
+        216.76,
+        138.06
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0026",
+      "text": "Meaning",
+      "bbox": [
+        357.74,
+        126.94,
+        398.26,
+        138.06
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0027",
+      "text": "00b",
+      "bbox": [
+        115.98,
+        148.96,
+        132.61,
+        160.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0028",
+      "text": "Only discard policy supported",
+      "bbox": [
+        235.97,
+        148.96,
+        367.1,
+        160.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0029",
+      "text": "01b",
+      "bbox": [
+        115.98,
+        170.98,
+        132.6,
+        182.1
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0030",
+      "text": "Reserved",
+      "bbox": [
+        235.96,
+        170.98,
+        278.7,
+        182.1
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0031",
+      "text": "10b",
+      "bbox": [
+        115.98,
+        193.0,
+        132.6,
+        204.12
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0032",
+      "text": "Both discard and process policies supported",
+      "bbox": [
+        235.96,
+        193.0,
+        432.1,
+        204.12
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0033",
+      "text": "11b",
+      "bbox": [
+        115.98,
+        214.96,
+        132.6,
+        226.08
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0034",
+      "text": "Reserved",
+      "bbox": [
+        235.96,
+        214.96,
+        278.7,
+        226.08
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0035",
+      "text": " Table 170 – Categories per Sequence Bits Definition",
+      "bbox": [
+        193.02,
+        344.98,
+        442.95,
+        356.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0036",
+      "text": "Word 1, bits 25-24",
+      "bbox": [
+        131.22,
+        367.0,
+        216.76,
+        378.12
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0037",
+      "text": "Meaning",
+      "bbox": [
+        357.74,
+        367.0,
+        398.26,
+        378.12
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0038",
+      "text": "00b",
+      "bbox": [
+        115.98,
+        388.96,
+        132.6,
+        400.08
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0039",
+      "text": "1 Category/Sequence",
+      "bbox": [
+        235.96,
+        388.96,
+        332.65,
+        400.08
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0040",
+      "text": "01b",
+      "bbox": [
+        115.98,
+        410.98,
+        132.6,
+        422.09
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0041",
+      "text": "2 Categories/Sequence",
+      "bbox": [
+        235.96,
+        410.98,
+        340.41,
+        422.09
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0042",
+      "text": "10b",
+      "bbox": [
+        115.98,
+        433.0,
+        132.6,
+        444.11
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0043",
+      "text": "Reserved",
+      "bbox": [
+        235.96,
+        433.0,
+        278.69,
+        444.11
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0044",
+      "text": "11b",
+      "bbox": [
+        115.98,
+        454.96,
+        132.61,
+        466.07
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p188_s0045",
+      "text": "More than 2 Categories/Sequence",
+      "bbox": [
+        235.98,
+        454.96,
+        388.3,
+        466.07
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0181",
+    "table_0182"
+  ]
+}

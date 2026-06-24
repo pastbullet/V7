@@ -1,0 +1,1102 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 166,
+  "spans": [
+    {
+      "span_id": "p166_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0002",
+      "text": " 147",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0003",
+      "text": " Table 149 – FLOGI, PLOGI or LS_ACC Payload",
+      "bbox": [
+        206.34,
+        79.67,
+        429.56,
+        90.78
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0004",
+      "text": "Bits",
+      "bbox": [
+        112.2,
+        101.63,
+        131.06,
+        112.74
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0005",
+      "text": "Word",
+      "bbox": [
+        108.9,
+        113.63,
+        134.43,
+        124.74
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0006",
+      "text": "31        ..         24",
+      "bbox": [
+        157.8,
+        101.63,
+        232.79,
+        112.74
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0007",
+      "text": "23       ..       16",
+      "bbox": [
+        260.13,
+        101.63,
+        326.79,
+        112.74
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0008",
+      "text": "15         ..       08",
+      "bbox": [
+        355.51,
+        101.63,
+        427.74,
+        112.74
+      ],
+      "block_index": 4,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0009",
+      "text": "07        ..       00",
+      "bbox": [
+        455.02,
+        101.63,
+        524.44,
+        112.74
+      ],
+      "block_index": 4,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0010",
+      "text": "0",
+      "bbox": [
+        118.86,
+        130.67,
+        124.4,
+        141.78
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0011",
+      "text": "ELS_Command code",
+      "bbox": [
+        148.2,
+        130.67,
+        243.17,
+        141.78
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0012",
+      "text": "1",
+      "bbox": [
+        118.86,
+        147.65,
+        124.4,
+        158.76
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0013",
+      "text": "MSB",
+      "bbox": [
+        148.2,
+        147.65,
+        169.84,
+        158.76
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0014",
+      "text": "Common Service Parameters",
+      "bbox": [
+        277.02,
+        159.65,
+        408.12,
+        170.76
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0015",
+      "text": "(16 bytes)",
+      "bbox": [
+        320.34,
+        171.65,
+        364.76,
+        182.76
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0016",
+      "text": "..",
+      "bbox": [
+        118.86,
+        164.63,
+        124.45,
+        175.74
+      ],
+      "block_index": 6,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0017",
+      "text": "4",
+      "bbox": [
+        118.86,
+        181.67,
+        124.4,
+        192.78
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0018",
+      "text": "LSB",
+      "bbox": [
+        442.74,
+        181.67,
+        461.56,
+        192.78
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0019",
+      "text": "5",
+      "bbox": [
+        118.86,
+        198.65,
+        124.4,
+        209.76
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0020",
+      "text": "MSB",
+      "bbox": [
+        148.2,
+        198.65,
+        169.84,
+        209.76
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0021",
+      "text": "Port_Name",
+      "bbox": [
+        317.28,
+        208.13,
+        367.82,
+        219.24
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0022",
+      "text": "6",
+      "bbox": [
+        118.86,
+        215.63,
+        124.4,
+        226.74
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0023",
+      "text": "LSB",
+      "bbox": [
+        442.74,
+        215.63,
+        461.56,
+        226.74
+      ],
+      "block_index": 8,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0024",
+      "text": "7",
+      "bbox": [
+        118.86,
+        232.66,
+        124.4,
+        243.78
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0025",
+      "text": "MSB",
+      "bbox": [
+        148.2,
+        232.66,
+        169.84,
+        243.78
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0026",
+      "text": "Node_ or Fabric_Name",
+      "bbox": [
+        290.58,
+        242.14,
+        394.45,
+        253.26
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0027",
+      "text": "8",
+      "bbox": [
+        118.86,
+        249.64,
+        124.4,
+        260.76
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0028",
+      "text": "LSB",
+      "bbox": [
+        442.74,
+        249.64,
+        461.56,
+        260.76
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0029",
+      "text": "9",
+      "bbox": [
+        118.86,
+        266.62,
+        124.4,
+        277.74
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0030",
+      "text": "MSB",
+      "bbox": [
+        148.2,
+        266.62,
+        169.84,
+        277.74
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0031",
+      "text": "Class 1 and Class 6 Service Parameters",
+      "bbox": [
+        252.84,
+        278.62,
+        432.2,
+        289.74
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0032",
+      "text": "(16 bytes)",
+      "bbox": [
+        320.34,
+        290.62,
+        364.76,
+        301.74
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0033",
+      "text": "..",
+      "bbox": [
+        118.86,
+        283.66,
+        124.45,
+        294.78
+      ],
+      "block_index": 10,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0034",
+      "text": "12",
+      "bbox": [
+        116.1,
+        300.64,
+        127.22,
+        311.76
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0035",
+      "text": "LSB",
+      "bbox": [
+        442.74,
+        300.64,
+        461.56,
+        311.76
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0036",
+      "text": "13",
+      "bbox": [
+        116.1,
+        317.62,
+        127.22,
+        328.74
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0037",
+      "text": "MSB",
+      "bbox": [
+        148.2,
+        317.62,
+        169.84,
+        328.74
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0038",
+      "text": "Class 2 Service Parameters",
+      "bbox": [
+        280.62,
+        329.62,
+        404.49,
+        340.74
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0039",
+      "text": "(16 bytes)",
+      "bbox": [
+        320.34,
+        341.62,
+        364.76,
+        352.74
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0040",
+      "text": "..",
+      "bbox": [
+        118.86,
+        334.66,
+        124.45,
+        345.78
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0041",
+      "text": "16",
+      "bbox": [
+        116.1,
+        351.64,
+        127.22,
+        362.76
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0042",
+      "text": "LSB",
+      "bbox": [
+        442.74,
+        351.64,
+        461.56,
+        362.76
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0043",
+      "text": "17",
+      "bbox": [
+        116.1,
+        368.62,
+        127.22,
+        379.74
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0044",
+      "text": "MSB",
+      "bbox": [
+        148.2,
+        368.62,
+        169.84,
+        379.74
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0045",
+      "text": "Class 3 Service Parameters",
+      "bbox": [
+        280.62,
+        380.62,
+        404.49,
+        391.74
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0046",
+      "text": "(16 bytes)",
+      "bbox": [
+        320.34,
+        392.62,
+        364.76,
+        403.74
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0047",
+      "text": "..",
+      "bbox": [
+        118.86,
+        385.66,
+        124.45,
+        396.78
+      ],
+      "block_index": 14,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0048",
+      "text": "20",
+      "bbox": [
+        116.1,
+        402.64,
+        127.22,
+        413.76
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0049",
+      "text": "LSB",
+      "bbox": [
+        442.74,
+        402.64,
+        461.56,
+        413.76
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0050",
+      "text": "21",
+      "bbox": [
+        116.1,
+        419.62,
+        127.22,
+        430.74
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0051",
+      "text": "Obsolete",
+      "bbox": [
+        322.56,
+        437.62,
+        362.54,
+        448.74
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0052",
+      "text": "..",
+      "bbox": [
+        118.86,
+        436.66,
+        124.45,
+        447.78
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0053",
+      "text": "24",
+      "bbox": [
+        116.1,
+        453.64,
+        127.22,
+        464.76
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0054",
+      "text": "25",
+      "bbox": [
+        116.1,
+        470.62,
+        127.22,
+        481.74
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0055",
+      "text": "MSB",
+      "bbox": [
+        148.2,
+        470.62,
+        169.85,
+        481.74
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0056",
+      "text": "Vendor Version Level",
+      "bbox": [
+        294.78,
+        482.68,
+        390.28,
+        493.8
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0057",
+      "text": "(16 bytes)",
+      "bbox": [
+        320.34,
+        494.68,
+        364.76,
+        505.8
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0058",
+      "text": "..",
+      "bbox": [
+        118.86,
+        487.66,
+        124.45,
+        498.78
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0059",
+      "text": "28",
+      "bbox": [
+        116.1,
+        504.64,
+        127.22,
+        515.76
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0060",
+      "text": "LSB",
+      "bbox": [
+        442.74,
+        504.64,
+        461.57,
+        515.76
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0061",
+      "text": "29",
+      "bbox": [
+        116.1,
+        521.68,
+        127.22,
+        532.8
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0062",
+      "text": "MSB",
+      "bbox": [
+        148.2,
+        521.68,
+        169.85,
+        532.8
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0063",
+      "text": "Services Availability",
+      "bbox": [
+        296.16,
+        525.16,
+        384.41,
+        536.28
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0064",
+      "text": "a",
+      "bbox": [
+        384.48,
+        522.94,
+        388.92,
+        531.84
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 2
+    },
+    {
+      "span_id": "p166_s0065",
+      "text": "(8 bytes)",
+      "bbox": [
+        323.1,
+        537.17,
+        362.0,
+        548.28
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0066",
+      "text": "30",
+      "bbox": [
+        116.1,
+        538.67,
+        127.22,
+        549.78
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0067",
+      "text": "LSB",
+      "bbox": [
+        442.74,
+        538.67,
+        461.56,
+        549.78
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0068",
+      "text": "31",
+      "bbox": [
+        116.1,
+        555.65,
+        127.22,
+        566.76
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0069",
+      "text": "Login Extension Data Length",
+      "bbox": [
+        148.2,
+        555.65,
+        276.52,
+        566.76
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0070",
+      "text": "a",
+      "bbox": [
+        276.54,
+        553.48,
+        280.98,
+        562.38
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p166_s0071",
+      "text": "32",
+      "bbox": [
+        116.1,
+        572.69,
+        127.22,
+        583.8
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0072",
+      "text": "Reserved",
+      "bbox": [
+        321.18,
+        590.69,
+        363.93,
+        601.8
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0073",
+      "text": "..",
+      "bbox": [
+        118.86,
+        589.67,
+        124.45,
+        600.78
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0074",
+      "text": "61",
+      "bbox": [
+        116.1,
+        606.65,
+        127.22,
+        617.76
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0075",
+      "text": "62",
+      "bbox": [
+        116.1,
+        623.69,
+        127.22,
+        634.8
+      ],
+      "block_index": 27,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0076",
+      "text": "Clock Synchronization QoS",
+      "bbox": [
+        279.48,
+        627.17,
+        401.18,
+        638.28
+      ],
+      "block_index": 27,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0077",
+      "text": "a",
+      "bbox": [
+        401.16,
+        624.94,
+        405.6,
+        633.84
+      ],
+      "block_index": 27,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p166_s0078",
+      "text": "(8 bytes)",
+      "bbox": [
+        323.1,
+        639.17,
+        362.0,
+        650.28
+      ],
+      "block_index": 28,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0079",
+      "text": "63",
+      "bbox": [
+        116.1,
+        640.67,
+        127.22,
+        651.78
+      ],
+      "block_index": 28,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0080",
+      "text": "64 to n",
+      "bbox": [
+        105.54,
+        658.67,
+        137.72,
+        669.78
+      ],
+      "block_index": 29,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0081",
+      "text": "Login Extension Data (if any)",
+      "bbox": [
+        278.4,
+        659.69,
+        406.65,
+        670.8
+      ],
+      "block_index": 29,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0082",
+      "text": "a",
+      "bbox": [
+        105.3,
+        677.3,
+        109.3,
+        685.34
+      ],
+      "block_index": 30,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p166_s0083",
+      "text": " These fields are only present when the Payload Bit (see 6.6.2.4.19) is set to one.  When the Payload  bit is ",
+      "bbox": [
+        109.3,
+        675.67,
+        538.06,
+        689.32
+      ],
+      "block_index": 30,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p166_s0084",
+      "text": "set to zero, these fields are not present in the Payload (i.e., the Payload is 116 bytes long).",
+      "bbox": [
+        116.1,
+        690.26,
+        475.57,
+        700.3
+      ],
+      "block_index": 30,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0157"
+  ]
+}

@@ -1,0 +1,10 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Value", "page": 94, "bbox": [96.88, 339.64, 198.69, 361.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Meaning", "page": 94, "bbox": [198.69, 339.64, 539.12, 361.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00h", "page": 94, "bbox": [96.88, 361.32, 198.69, 385.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "The Time Stamp field is unknown or unspecified.", "page": 94, "bbox": [198.69, 361.32, 539.12, 385.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "01h", "page": 94, "bbox": [96.88, 385.35, 198.69, 431.37]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Time Server: The 64 bit time stamp is reported in units of seconds and\nfractions of a second. The time stamp uses the value obtained from the Time\nServer (see FC-GS-4).", "page": 94, "bbox": [198.69, 385.35, 539.12, 431.37]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "02h", "page": 94, "bbox": [96.88, 431.37, 198.69, 465.39]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Clock synchronization format: The 64-bit time stamp is reported as defined for\nthe Clock Synchronization Update (CSU) ELS.", "page": 94, "bbox": [198.69, 431.37, 539.12, 465.39]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "03h to FFh", "page": 94, "bbox": [96.88, 465.39, 198.69, 489.04]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "reserved", "page": 94, "bbox": [198.69, 465.39, 539.12, 489.04]}

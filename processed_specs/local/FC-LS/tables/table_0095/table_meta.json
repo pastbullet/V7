@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0095",
+  "type": "table",
+  "caption": "Table 91 – Response summary to FDISC/PDISC",
+  "pages": [
+    111
+  ],
+  "bbox": [
+    129.86,
+    98.62,
+    505.74,
+    394.2
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 111,
+  "logical_table": false
+}

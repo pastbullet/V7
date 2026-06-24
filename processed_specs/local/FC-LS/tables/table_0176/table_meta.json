@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0176",
+  "type": "table",
+  "caption": "Table 164 – Relationship between Preferred delivery and sequential deliver y",
+  "pages": [
+    183
+  ],
+  "bbox": [
+    94.66,
+    495.84,
+    541.34,
+    675.84
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 183,
+  "logical_table": false
+}

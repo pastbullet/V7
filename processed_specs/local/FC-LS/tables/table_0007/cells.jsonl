@@ -1,0 +1,12 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "N_Port Login\nRequired? (see\ntable 3)", "page": 41, "bbox": [96.02, 122.28, 187.3, 162.99]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Logged in with Source N_Port?", "page": 41, "bbox": [187.3, 122.28, 539.78, 138.82]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "", "page": 41, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "", "page": 41, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Yes", "page": 41, "bbox": [187.3, 138.82, 363.87, 162.99]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "No", "page": 41, "bbox": [363.87, 138.82, 539.78, 162.99]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "Yes", "page": 41, "bbox": [96.02, 162.99, 187.3, 288.03]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Respond as appropriate for the ELS\nand the current state of the Nx_Port", "page": 41, "bbox": [187.3, 162.99, 363.87, 288.03]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "If a reply sequence is defined for the\nELS, originate a LOGO ELS Exchange\nto the sender of the received ELS or\nreply with an LS_RJT ELS Sequence\nwith a reason code of \"Unable to\nperform command request\" and a\nreason code explanation of \"N_Port\nLogin required\".\nIf a reply sequence is not defined for the\nELS, it shall be discarded", "page": 41, "bbox": [363.87, 162.99, 539.78, 288.03]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "No", "page": 41, "bbox": [96.02, 288.03, 187.3, 316.48]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Respond as appropriate for the ELS\nand the current state of the Nx_Port.", "page": 41, "bbox": [187.3, 288.03, 363.87, 316.48]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Respond as appropriate for the ELS\nand the current state of the Nx_Port.", "page": 41, "bbox": [363.87, 288.03, 539.78, 316.48]}

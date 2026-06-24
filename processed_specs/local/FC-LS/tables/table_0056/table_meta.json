@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0056",
+  "type": "table",
+  "caption": "Table 53 – TPLS image pair ID page format",
+  "pages": [
+    80
+  ],
+  "bbox": [
+    157.98,
+    98.48,
+    478.02,
+    287.5
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 80,
+  "logical_table": false
+}

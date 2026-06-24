@@ -1,0 +1,30 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Item", "page": 71, "bbox": [150.22, 110.48, 379.65, 132.0]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Word", "page": 71, "bbox": [379.65, 110.48, 434.25, 132.0]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Bit", "page": 71, "bbox": [434.25, 110.48, 485.78, 132.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "TYPE Code or Common Service Parameters*", "page": 71, "bbox": [150.22, 132.0, 379.65, 156.03]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "0", "page": 71, "bbox": [379.65, 132.0, 434.25, 156.03]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "31-24", "page": 71, "bbox": [434.25, 132.0, 485.78, 156.03]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "TYPE Code Extension", "page": 71, "bbox": [150.22, 156.03, 379.65, 180.03]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "0", "page": 71, "bbox": [379.65, 156.03, 434.25, 180.03]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "23-16", "page": 71, "bbox": [434.25, 156.03, 485.78, 180.03]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "Originator Process_Associator Validity", "page": 71, "bbox": [150.22, 180.03, 379.65, 204.03]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "0", "page": 71, "bbox": [379.65, 180.03, 434.25, 204.03]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "15", "page": 71, "bbox": [434.25, 180.03, 485.78, 204.03]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "Responder Process_Associator Validity", "page": 71, "bbox": [150.22, 204.03, 379.65, 228.03]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "0", "page": 71, "bbox": [379.65, 204.03, 434.25, 228.03]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "14", "page": 71, "bbox": [434.25, 204.03, 485.78, 228.03]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "Establish Image Pair", "page": 71, "bbox": [150.22, 228.03, 379.65, 252.03]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "0", "page": 71, "bbox": [379.65, 228.03, 434.25, 252.03]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "13", "page": 71, "bbox": [434.25, 228.03, 485.78, 252.03]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "Reserved", "page": 71, "bbox": [150.22, 252.03, 379.65, 276.03]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "0", "page": 71, "bbox": [379.65, 252.03, 434.25, 276.03]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "12-0", "page": 71, "bbox": [434.25, 252.03, 485.78, 276.03]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "Originator Process_Associator", "page": 71, "bbox": [150.22, 276.03, 379.65, 300.03]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "1", "page": 71, "bbox": [379.65, 276.03, 434.25, 300.03]}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "31-0", "page": 71, "bbox": [434.25, 276.03, 485.78, 300.03]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "Responder Process_Associator", "page": 71, "bbox": [150.22, 300.03, 379.65, 324.03]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "2", "page": 71, "bbox": [379.65, 300.03, 434.25, 324.03]}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "31-0", "page": 71, "bbox": [434.25, 300.03, 485.78, 324.03]}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "Service Parameters (optional per FC-4)", "page": 71, "bbox": [150.22, 324.03, 379.65, 371.5]}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "3 - 63 as\nsepcified by\neach FC-4", "page": 71, "bbox": [379.65, 324.03, 434.25, 371.5]}
+{"cell_id": "r10c3", "row": 10, "col": 3, "text": "31-0", "page": 71, "bbox": [434.25, 324.03, 485.78, 371.5]}

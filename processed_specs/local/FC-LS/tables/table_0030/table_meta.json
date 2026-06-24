@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0030",
+  "type": "table",
+  "caption": "Table 27 – LINIT Payload",
+  "pages": [
+    61
+  ],
+  "bbox": [
+    99.6,
+    98.62,
+    536.4,
+    160.34
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 61
+}

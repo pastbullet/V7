@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0188",
+  "type": "table",
+  "caption": "Table 176 – Fx_Port Clock Synchronization QoS",
+  "pages": [
+    195
+  ],
+  "bbox": [
+    91.68,
+    447.99,
+    542.7,
+    522.33
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 195,
+  "logical_table": false
+}

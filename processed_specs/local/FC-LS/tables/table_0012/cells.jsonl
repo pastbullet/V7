@@ -1,0 +1,145 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 46, "bbox": [99.94, 568.0, 147.9, 596.34], "source_fragment_id": "table_0012", "source_cell_id": "r1c1"}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 46, "bbox": [147.9, 568.0, 245.12, 596.34], "source_fragment_id": "table_0012", "source_cell_id": "r1c2"}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 46, "bbox": [245.12, 568.0, 342.33, 596.34], "source_fragment_id": "table_0012", "source_cell_id": "r1c3"}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08", "page": 46, "bbox": [342.33, 568.0, 439.51, 596.34], "source_fragment_id": "table_0012", "source_cell_id": "r1c4"}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00", "page": 46, "bbox": [439.51, 568.0, 536.06, 596.34], "source_fragment_id": "table_0012", "source_cell_id": "r1c5"}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 46, "bbox": [99.94, 596.34, 147.9, 615.66], "source_fragment_id": "table_0012", "source_cell_id": "r2c1"}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "ESTC (0Ch)", "page": 46, "bbox": [147.9, 596.34, 245.12, 615.66], "source_fragment_id": "table_0012", "source_cell_id": "r2c2"}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "00h", "page": 46, "bbox": [245.12, 596.34, 342.33, 615.66], "source_fragment_id": "table_0012", "source_cell_id": "r2c3"}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "00h", "page": 46, "bbox": [342.33, 596.34, 439.51, 615.66], "source_fragment_id": "table_0012", "source_cell_id": "r2c4"}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "00h", "page": 46, "bbox": [439.51, 596.34, 536.06, 615.66], "source_fragment_id": "table_0012", "source_cell_id": "r2c5"}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 46, "bbox": [99.94, 615.66, 147.9, 634.55], "source_fragment_id": "table_0012", "source_cell_id": "r3c1"}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "MSB Any data\n(see FC-FS-2)\nLSB", "page": 46, "bbox": [147.9, 615.66, 536.06, 672.36], "source_fragment_id": "table_0012", "source_cell_id": "r3c2"}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 46, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0012", "source_cell_id": "r3c3"}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "", "page": 46, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0012", "source_cell_id": "r3c4"}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "", "page": 46, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0012", "source_cell_id": "r3c5"}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "..", "page": 46, "bbox": [99.94, 634.55, 147.9, 653.37], "source_fragment_id": "table_0012", "source_cell_id": "r4c1"}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "", "page": 46, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0012", "source_cell_id": "r4c2"}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "", "page": 46, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0012", "source_cell_id": "r4c3"}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "", "page": 46, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0012", "source_cell_id": "r4c4"}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "", "page": 46, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0012", "source_cell_id": "r4c5"}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "n", "page": 46, "bbox": [99.94, 653.37, 147.9, 672.36], "source_fragment_id": "table_0012", "source_cell_id": "r5c1"}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "", "page": 46, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0012", "source_cell_id": "r5c2"}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "", "page": 46, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0012", "source_cell_id": "r5c3"}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "", "page": 46, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0012", "source_cell_id": "r5c4"}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "", "page": 46, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0012", "source_cell_id": "r5c5"}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "0", "page": 47, "bbox": [99.3, 404.34, 147.9, 420.68], "source_fragment_id": "table_0013", "source_cell_id": "r2c1"}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "ESTS (0Bh)", "page": 47, "bbox": [147.9, 404.34, 245.13, 420.68], "source_fragment_id": "table_0013", "source_cell_id": "r2c2"}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "00h", "page": 47, "bbox": [245.13, 404.34, 342.33, 420.68], "source_fragment_id": "table_0013", "source_cell_id": "r2c3"}
+{"cell_id": "r6c4", "row": 6, "col": 4, "text": "00h", "page": 47, "bbox": [342.33, 404.34, 439.53, 420.68], "source_fragment_id": "table_0013", "source_cell_id": "r2c4"}
+{"cell_id": "r6c5", "row": 6, "col": 5, "text": "00h", "page": 47, "bbox": [439.53, 404.34, 536.7, 420.68], "source_fragment_id": "table_0013", "source_cell_id": "r2c5"}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "0", "page": 48, "bbox": [100.57, 126.99, 147.9, 144.3], "source_fragment_id": "table_0014", "source_cell_id": "r2c1"}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "02h", "page": 48, "bbox": [147.9, 126.99, 245.1, 144.3], "source_fragment_id": "table_0014", "source_cell_id": "r2c2"}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "00h", "page": 48, "bbox": [245.1, 126.99, 342.33, 144.3], "source_fragment_id": "table_0014", "source_cell_id": "r2c3"}
+{"cell_id": "r7c4", "row": 7, "col": 4, "text": "00h", "page": 48, "bbox": [342.33, 126.99, 439.5, 144.3], "source_fragment_id": "table_0014", "source_cell_id": "r2c4"}
+{"cell_id": "r7c5", "row": 7, "col": 5, "text": "00h", "page": 48, "bbox": [439.5, 126.99, 535.43, 144.3], "source_fragment_id": "table_0014", "source_cell_id": "r2c5"}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "1", "page": 48, "bbox": [100.57, 144.3, 147.9, 161.01], "source_fragment_id": "table_0014", "source_cell_id": "r3c1"}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "MSB Common Service Parameters\n(16 bytes)\nLSB", "page": 48, "bbox": [147.9, 144.3, 535.43, 195.03], "source_fragment_id": "table_0014", "source_cell_id": "r3c2"}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r3c3"}
+{"cell_id": "r8c4", "row": 8, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r3c4"}
+{"cell_id": "r8c5", "row": 8, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r3c5"}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "", "page": 48, "bbox": [100.57, 161.01, 147.9, 178.05], "source_fragment_id": "table_0014", "source_cell_id": "r4c1"}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r4c2"}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r4c3"}
+{"cell_id": "r9c4", "row": 9, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r4c4"}
+{"cell_id": "r9c5", "row": 9, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r4c5"}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "4", "page": 48, "bbox": [100.57, 178.05, 147.9, 195.03], "source_fragment_id": "table_0014", "source_cell_id": "r5c1"}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r5c2"}
+{"cell_id": "r10c3", "row": 10, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r5c3"}
+{"cell_id": "r10c4", "row": 10, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r5c4"}
+{"cell_id": "r10c5", "row": 10, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r5c5"}
+{"cell_id": "r11c1", "row": 11, "col": 1, "text": "5", "page": 48, "bbox": [100.57, 195.03, 147.9, 212.01], "source_fragment_id": "table_0014", "source_cell_id": "r6c1"}
+{"cell_id": "r11c2", "row": 11, "col": 2, "text": "MSB N_Port_Name\n(8 bytes) LSB", "page": 48, "bbox": [147.9, 195.03, 535.43, 229.05], "source_fragment_id": "table_0014", "source_cell_id": "r6c2"}
+{"cell_id": "r11c3", "row": 11, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r6c3"}
+{"cell_id": "r11c4", "row": 11, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r6c4"}
+{"cell_id": "r11c5", "row": 11, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r6c5"}
+{"cell_id": "r12c1", "row": 12, "col": 1, "text": "6", "page": 48, "bbox": [100.57, 212.01, 147.9, 229.05], "source_fragment_id": "table_0014", "source_cell_id": "r7c1"}
+{"cell_id": "r12c2", "row": 12, "col": 2, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r7c2"}
+{"cell_id": "r12c3", "row": 12, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r7c3"}
+{"cell_id": "r12c4", "row": 12, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r7c4"}
+{"cell_id": "r12c5", "row": 12, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r7c5"}
+{"cell_id": "r13c1", "row": 13, "col": 1, "text": "7", "page": 48, "bbox": [100.57, 229.05, 147.9, 246.03], "source_fragment_id": "table_0014", "source_cell_id": "r8c1"}
+{"cell_id": "r13c2", "row": 13, "col": 2, "text": "MSB node Name\n(8 bytes) LSB", "page": 48, "bbox": [147.9, 229.05, 535.43, 263.01], "source_fragment_id": "table_0014", "source_cell_id": "r8c2"}
+{"cell_id": "r13c3", "row": 13, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r8c3"}
+{"cell_id": "r13c4", "row": 13, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r8c4"}
+{"cell_id": "r13c5", "row": 13, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r8c5"}
+{"cell_id": "r14c1", "row": 14, "col": 1, "text": "8", "page": 48, "bbox": [100.57, 246.03, 147.9, 263.01], "source_fragment_id": "table_0014", "source_cell_id": "r9c1"}
+{"cell_id": "r14c2", "row": 14, "col": 2, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r9c2"}
+{"cell_id": "r14c3", "row": 14, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r9c3"}
+{"cell_id": "r14c4", "row": 14, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r9c4"}
+{"cell_id": "r14c5", "row": 14, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r9c5"}
+{"cell_id": "r15c1", "row": 15, "col": 1, "text": "9", "page": 48, "bbox": [100.57, 263.01, 147.9, 280.05], "source_fragment_id": "table_0014", "source_cell_id": "r10c1"}
+{"cell_id": "r15c2", "row": 15, "col": 2, "text": "MSB Class 1 Service Parameters\n(16 bytes)\nLSB", "page": 48, "bbox": [147.9, 263.01, 535.43, 314.01], "source_fragment_id": "table_0014", "source_cell_id": "r10c2"}
+{"cell_id": "r15c3", "row": 15, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r10c3"}
+{"cell_id": "r15c4", "row": 15, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r10c4"}
+{"cell_id": "r15c5", "row": 15, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r10c5"}
+{"cell_id": "r16c1", "row": 16, "col": 1, "text": "..", "page": 48, "bbox": [100.57, 280.05, 147.9, 297.03], "source_fragment_id": "table_0014", "source_cell_id": "r11c1"}
+{"cell_id": "r16c2", "row": 16, "col": 2, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r11c2"}
+{"cell_id": "r16c3", "row": 16, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r11c3"}
+{"cell_id": "r16c4", "row": 16, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r11c4"}
+{"cell_id": "r16c5", "row": 16, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r11c5"}
+{"cell_id": "r17c1", "row": 17, "col": 1, "text": "12", "page": 48, "bbox": [100.57, 297.03, 147.9, 314.01], "source_fragment_id": "table_0014", "source_cell_id": "r12c1"}
+{"cell_id": "r17c2", "row": 17, "col": 2, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r12c2"}
+{"cell_id": "r17c3", "row": 17, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r12c3"}
+{"cell_id": "r17c4", "row": 17, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r12c4"}
+{"cell_id": "r17c5", "row": 17, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r12c5"}
+{"cell_id": "r18c1", "row": 18, "col": 1, "text": "13", "page": 48, "bbox": [100.57, 314.01, 147.9, 331.05], "source_fragment_id": "table_0014", "source_cell_id": "r13c1"}
+{"cell_id": "r18c2", "row": 18, "col": 2, "text": "MSB Class 2 Service Parameters\n(16 bytes)\nLSB", "page": 48, "bbox": [147.9, 314.01, 535.43, 365.01], "source_fragment_id": "table_0014", "source_cell_id": "r13c2"}
+{"cell_id": "r18c3", "row": 18, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r13c3"}
+{"cell_id": "r18c4", "row": 18, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r13c4"}
+{"cell_id": "r18c5", "row": 18, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r13c5"}
+{"cell_id": "r19c1", "row": 19, "col": 1, "text": "..", "page": 48, "bbox": [100.57, 331.05, 147.9, 348.03], "source_fragment_id": "table_0014", "source_cell_id": "r14c1"}
+{"cell_id": "r19c2", "row": 19, "col": 2, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r14c2"}
+{"cell_id": "r19c3", "row": 19, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r14c3"}
+{"cell_id": "r19c4", "row": 19, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r14c4"}
+{"cell_id": "r19c5", "row": 19, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r14c5"}
+{"cell_id": "r20c1", "row": 20, "col": 1, "text": "16", "page": 48, "bbox": [100.57, 348.03, 147.9, 365.01], "source_fragment_id": "table_0014", "source_cell_id": "r15c1"}
+{"cell_id": "r20c2", "row": 20, "col": 2, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r15c2"}
+{"cell_id": "r20c3", "row": 20, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r15c3"}
+{"cell_id": "r20c4", "row": 20, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r15c4"}
+{"cell_id": "r20c5", "row": 20, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r15c5"}
+{"cell_id": "r21c1", "row": 21, "col": 1, "text": "17", "page": 48, "bbox": [100.57, 365.01, 147.9, 382.05], "source_fragment_id": "table_0014", "source_cell_id": "r16c1"}
+{"cell_id": "r21c2", "row": 21, "col": 2, "text": "MSB Class 3 Service Parameters\n(16 bytes)\nLSB", "page": 48, "bbox": [147.9, 365.01, 535.43, 416.01], "source_fragment_id": "table_0014", "source_cell_id": "r16c2"}
+{"cell_id": "r21c3", "row": 21, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r16c3"}
+{"cell_id": "r21c4", "row": 21, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r16c4"}
+{"cell_id": "r21c5", "row": 21, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r16c5"}
+{"cell_id": "r22c1", "row": 22, "col": 1, "text": "..", "page": 48, "bbox": [100.57, 382.05, 147.9, 399.03], "source_fragment_id": "table_0014", "source_cell_id": "r17c1"}
+{"cell_id": "r22c2", "row": 22, "col": 2, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r17c2"}
+{"cell_id": "r22c3", "row": 22, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r17c3"}
+{"cell_id": "r22c4", "row": 22, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r17c4"}
+{"cell_id": "r22c5", "row": 22, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r17c5"}
+{"cell_id": "r23c1", "row": 23, "col": 1, "text": "20", "page": 48, "bbox": [100.57, 399.03, 147.9, 416.01], "source_fragment_id": "table_0014", "source_cell_id": "r18c1"}
+{"cell_id": "r23c2", "row": 23, "col": 2, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r18c2"}
+{"cell_id": "r23c3", "row": 23, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r18c3"}
+{"cell_id": "r23c4", "row": 23, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r18c4"}
+{"cell_id": "r23c5", "row": 23, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r18c5"}
+{"cell_id": "r24c1", "row": 24, "col": 1, "text": "21", "page": 48, "bbox": [100.57, 416.01, 147.9, 433.05], "source_fragment_id": "table_0014", "source_cell_id": "r19c1"}
+{"cell_id": "r24c2", "row": 24, "col": 2, "text": "MSB Reserved\n(16 bytes)\nLSB", "page": 48, "bbox": [147.9, 416.01, 535.43, 467.01], "source_fragment_id": "table_0014", "source_cell_id": "r19c2"}
+{"cell_id": "r24c3", "row": 24, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r19c3"}
+{"cell_id": "r24c4", "row": 24, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r19c4"}
+{"cell_id": "r24c5", "row": 24, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r19c5"}
+{"cell_id": "r25c1", "row": 25, "col": 1, "text": "..", "page": 48, "bbox": [100.57, 433.05, 147.9, 450.03], "source_fragment_id": "table_0014", "source_cell_id": "r20c1"}
+{"cell_id": "r25c2", "row": 25, "col": 2, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r20c2"}
+{"cell_id": "r25c3", "row": 25, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r20c3"}
+{"cell_id": "r25c4", "row": 25, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r20c4"}
+{"cell_id": "r25c5", "row": 25, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r20c5"}
+{"cell_id": "r26c1", "row": 26, "col": 1, "text": "24", "page": 48, "bbox": [100.57, 450.03, 147.9, 467.01], "source_fragment_id": "table_0014", "source_cell_id": "r21c1"}
+{"cell_id": "r26c2", "row": 26, "col": 2, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r21c2"}
+{"cell_id": "r26c3", "row": 26, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r21c3"}
+{"cell_id": "r26c4", "row": 26, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r21c4"}
+{"cell_id": "r26c5", "row": 26, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r21c5"}
+{"cell_id": "r27c1", "row": 27, "col": 1, "text": "25", "page": 48, "bbox": [100.57, 467.01, 147.9, 484.05], "source_fragment_id": "table_0014", "source_cell_id": "r22c1"}
+{"cell_id": "r27c2", "row": 27, "col": 2, "text": "MSB Vendor Version Level\n(16 bytes)\nLSB", "page": 48, "bbox": [147.9, 467.01, 535.43, 517.81], "source_fragment_id": "table_0014", "source_cell_id": "r22c2"}
+{"cell_id": "r27c3", "row": 27, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r22c3"}
+{"cell_id": "r27c4", "row": 27, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r22c4"}
+{"cell_id": "r27c5", "row": 27, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r22c5"}
+{"cell_id": "r28c1", "row": 28, "col": 1, "text": "..", "page": 48, "bbox": [100.57, 484.05, 147.9, 501.03], "source_fragment_id": "table_0014", "source_cell_id": "r23c1"}
+{"cell_id": "r28c2", "row": 28, "col": 2, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r23c2"}
+{"cell_id": "r28c3", "row": 28, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r23c3"}
+{"cell_id": "r28c4", "row": 28, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r23c4"}
+{"cell_id": "r28c5", "row": 28, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r23c5"}
+{"cell_id": "r29c1", "row": 29, "col": 1, "text": "28", "page": 48, "bbox": [100.57, 501.03, 147.9, 517.81], "source_fragment_id": "table_0014", "source_cell_id": "r24c1"}
+{"cell_id": "r29c2", "row": 29, "col": 2, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r24c2"}
+{"cell_id": "r29c3", "row": 29, "col": 3, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r24c3"}
+{"cell_id": "r29c4", "row": 29, "col": 4, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r24c4"}
+{"cell_id": "r29c5", "row": 29, "col": 5, "text": "", "page": 48, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0014", "source_cell_id": "r24c5"}

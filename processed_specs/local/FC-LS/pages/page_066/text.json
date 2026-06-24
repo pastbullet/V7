@@ -1,0 +1,712 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 66,
+  "spans": [
+    {
+      "span_id": "p066_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0002",
+      "text": " 47",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0003",
+      "text": "4.2.18.4  RSCN initiative",
+      "bbox": [
+        96.0,
+        57.65,
+        209.26,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0004",
+      "text": "An affected Nx_Port shall issue one RSCN Request for all state changes that occur prior to the initia-",
+      "bbox": [
+        96.0,
+        82.97,
+        539.97,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0005",
+      "text": "tion of the RSCN Request; multiple RSCN Requests shall not be queued for initiation.  An RSCN Re-",
+      "bbox": [
+        96.0,
+        94.97,
+        540.01,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0006",
+      "text": "quest shall be considered initiated when the SOF of the first frame of the RSCN Request Sequence",
+      "bbox": [
+        96.0,
+        106.97,
+        539.9,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0007",
+      "text": "has been transmitted.",
+      "bbox": [
+        96.0,
+        118.97,
+        192.02,
+        130.08
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0008",
+      "text": "4.2.18.5  RSCN registration",
+      "bbox": [
+        96.0,
+        142.96,
+        223.7,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0009",
+      "text": "A node (Fabric Controller, service, Nx_Port) shall only issue RSCN requests to Nx_Ports that have",
+      "bbox": [
+        96.0,
+        166.96,
+        539.8,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0010",
+      "text": "registered with the node to be notified of state changes.  These registrations shall be performed using",
+      "bbox": [
+        96.0,
+        178.96,
+        539.97,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0011",
+      "text": "the State Change Registration (SCR) ELS.",
+      "bbox": [
+        96.0,
+        190.96,
+        284.89,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0012",
+      "text": "4.2.18.6  Protocol",
+      "bbox": [
+        96.0,
+        214.96,
+        178.22,
+        226.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0013",
+      "text": "a) RSCN Request Sequence",
+      "bbox": [
+        106.02,
+        238.96,
+        238.42,
+        250.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0014",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence",
+      "bbox": [
+        106.02,
+        262.96,
+        287.89,
+        274.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0015",
+      "text": "4.2.18.7  Request Sequence",
+      "bbox": [
+        96.0,
+        286.96,
+        227.07,
+        298.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0016",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        310.96,
+        157.1,
+        322.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0017",
+      "text": "If the Fabric is using RSCN to notify a registered Nx_Port of a state change (see",
+      "bbox": [
+        157.08,
+        310.96,
+        539.68,
+        322.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p066_s0018",
+      "text": "4.2.18.2), the S_ID is the Fabric Controller, (FFFFFDh) and the D_ID is the address of the registered",
+      "bbox": [
+        96.0,
+        322.96,
+        539.93,
+        334.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0019",
+      "text": "Nx_Port destination.  If an affected Nx_Port is using RSCN to notify the Fabric or a registered",
+      "bbox": [
+        96.0,
+        334.96,
+        539.88,
+        346.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0020",
+      "text": "Nx_Port of a state change (see 4.2.18.3), the S_ID designates either the Nx_Port indicating a state",
+      "bbox": [
+        96.0,
+        346.96,
+        539.91,
+        358.08
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0021",
+      "text": "change to the Fabric Controller or the registered Nx_Port  and the D_ID is either the Fabric Control-",
+      "bbox": [
+        96.0,
+        358.96,
+        540.03,
+        370.08
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0022",
+      "text": "ler, (FFFFFDh) or the address of the registered Nx_Port destination.",
+      "bbox": [
+        96.0,
+        370.96,
+        397.08,
+        382.08
+      ],
+      "block_index": 11,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0023",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        394.96,
+        140.41,
+        406.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0024",
+      "text": "The format of the RSCN Request Payload is shown in table 34.",
+      "bbox": [
+        140.4,
+        394.96,
+        419.75,
+        406.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p066_s0025",
+      "text": "The RSCN Payload fields are defined as follows:",
+      "bbox": [
+        96.0,
+        550.96,
+        311.63,
+        562.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0026",
+      "text": "a)",
+      "bbox": [
+        106.02,
+        574.96,
+        114.92,
+        586.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0027",
+      "text": " Page Length:",
+      "bbox": [
+        114.92,
+        574.96,
+        185.96,
+        586.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p066_s0028",
+      "text": " This field is the length in bytes of an affected Port_ID page.  This value is fixed",
+      "bbox": [
+        186.0,
+        574.96,
+        540.05,
+        586.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p066_s0029",
+      "text": "at 04h.",
+      "bbox": [
+        122.4,
+        586.96,
+        152.93,
+        598.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0030",
+      "text": "b)",
+      "bbox": [
+        106.02,
+        610.96,
+        114.91,
+        622.07
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0031",
+      "text": " Payload Length:",
+      "bbox": [
+        114.91,
+        610.96,
+        200.24,
+        622.07
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p066_s0032",
+      "text": " This field is the length in bytes of the entire Payload, inclusive of the word 0.",
+      "bbox": [
+        200.22,
+        610.96,
+        540.07,
+        622.07
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p066_s0033",
+      "text": "This value shall be a multiple of 4 bytes.  The minimum value of this field is 8 bytes.  The maxi-",
+      "bbox": [
+        122.4,
+        622.96,
+        539.98,
+        634.07
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0034",
+      "text": "mum value of this field is 1024 bytes.",
+      "bbox": [
+        122.4,
+        634.96,
+        286.25,
+        646.07
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0035",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        659.02,
+        114.38,
+        670.13
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0036",
+      "text": "Affected Port_ID Pages:",
+      "bbox": [
+        122.4,
+        659.02,
+        237.57,
+        670.13
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0037",
+      "text": "Each affected Port_ID page contains the ID of the Nx_Port, Fabric",
+      "bbox": [
+        241.26,
+        659.03,
+        540.0,
+        670.14
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 3
+    },
+    {
+      "span_id": "p066_s0038",
+      "text": "Controller, E_Port, domain, or area for which the event was detected.  The RSCN Payload",
+      "bbox": [
+        122.4,
+        671.03,
+        540.03,
+        682.14
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0039",
+      "text": " Table 34 – RSCN Payload",
+      "bbox": [
+        256.32,
+        416.99,
+        379.71,
+        428.1
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0040",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        439.01,
+        133.06,
+        450.12
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0041",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        451.01,
+        136.35,
+        462.12
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0042",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        439.01,
+        233.97,
+        450.12
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0043",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        439.01,
+        328.42,
+        450.12
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0044",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        439.01,
+        427.0,
+        450.12
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0045",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        439.01,
+        522.83,
+        450.12
+      ],
+      "block_index": 18,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0046",
+      "text": "0",
+      "bbox": [
+        120.84,
+        467.99,
+        126.38,
+        479.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0047",
+      "text": "RSCN (61h)",
+      "bbox": [
+        149.88,
+        467.99,
+        204.3,
+        479.1
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0048",
+      "text": "Page Length (04h)",
+      "bbox": [
+        247.06,
+        467.99,
+        329.83,
+        479.1
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0049",
+      "text": "Payload Length",
+      "bbox": [
+        344.22,
+        467.99,
+        413.67,
+        479.1
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0050",
+      "text": "1",
+      "bbox": [
+        120.84,
+        484.97,
+        126.38,
+        496.08
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0051",
+      "text": "affected Port_ID pages",
+      "bbox": [
+        291.18,
+        487.0,
+        393.4,
+        498.12
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0052",
+      "text": "(1 to 255 pages, 4 bytes each)",
+      "bbox": [
+        274.8,
+        499.0,
+        409.81,
+        510.12
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0053",
+      "text": "..",
+      "bbox": [
+        120.84,
+        502.0,
+        126.37,
+        513.12
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p066_s0054",
+      "text": "N",
+      "bbox": [
+        120.0,
+        518.98,
+        127.19,
+        530.1
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0037"
+  ]
+}

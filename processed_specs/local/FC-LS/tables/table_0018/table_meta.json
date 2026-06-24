@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0018",
+  "type": "table",
+  "caption": "Table 15 – RCS LS_ACC Payload",
+  "pages": [
+    51
+  ],
+  "bbox": [
+    99.6,
+    471.99,
+    536.4,
+    534.04
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 51,
+  "logical_table": false
+}

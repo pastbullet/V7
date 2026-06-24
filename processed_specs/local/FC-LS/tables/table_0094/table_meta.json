@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0094",
+  "type": "table",
+  "caption": "Table 90 – ADISC LS_ACC Payload",
+  "pages": [
+    110
+  ],
+  "bbox": [
+    100.2,
+    123.96,
+    535.8,
+    271.02
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 110
+}

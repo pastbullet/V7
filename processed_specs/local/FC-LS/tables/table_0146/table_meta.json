@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0146",
+  "type": "table",
+  "caption": "Table 142 – FFI_SMU Payload",
+  "pages": [
+    144
+  ],
+  "bbox": [
+    99.3,
+    471.99,
+    536.7,
+    516.68
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 144
+}

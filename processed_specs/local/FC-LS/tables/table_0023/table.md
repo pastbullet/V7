@@ -1,0 +1,6 @@
+| Bits<br>Word | 31 .. 24 | 23 .. 16 | 15 .. 08 | 07 .. 00 |
+| --- | --- | --- | --- | --- |
+| 0 | 02h | 00h | 00h | 00h |
+| 1 | Resource_Allocation_Timeout Value (R_A_TOV) (see FC-FS-2) |  |  |  |
+| 2 | Error_Detect_Timeout Value (E_D_TOV) (see FC-FS-2) |  |  |  |
+| 3 | Timeout Qualifier |  |  |  |

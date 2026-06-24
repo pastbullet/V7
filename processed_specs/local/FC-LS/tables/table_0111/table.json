@@ -1,0 +1,22 @@
+{
+  "rows": [
+    [
+      "Bits\nWord\n0\n1",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08"
+    ],
+    [
+      null,
+      "SRL (7Bh)",
+      null,
+      null
+    ],
+    [
+      null,
+      "Flag",
+      null,
+      null
+    ]
+  ]
+}

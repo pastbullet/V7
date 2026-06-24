@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0046",
+  "type": "table",
+  "caption": "Table 43 – PRLI service parameter page format",
+  "pages": [
+    71
+  ],
+  "bbox": [
+    150.22,
+    110.48,
+    485.78,
+    371.5
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 71,
+  "logical_table": false
+}

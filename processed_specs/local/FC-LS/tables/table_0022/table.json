@@ -1,0 +1,137 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "RTV (0Eh)",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "0",
+      "02h",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "Resource_Allocation_Timeout Value (R_A_TOV) (see FC-FS-2)",
+      null,
+      null,
+      null
+    ],
+    [
+      "2",
+      "Error_Detect_Timeout Value (E_D_TOV) (see FC-FS-2)",
+      null,
+      null,
+      null
+    ],
+    [
+      "3",
+      "Timeout Qualifier",
+      null,
+      null,
+      null
+    ],
+    [
+      "0",
+      "RRQ (12h)",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "Reserved",
+      "Exchange Originator S_ID",
+      null,
+      null
+    ],
+    [
+      "2",
+      "OX_ID",
+      null,
+      "RX_ID",
+      null
+    ],
+    [
+      "3",
+      "MSB Association_Header (optional)\n(32 bytes)\nLSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "10",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "0",
+      "02h",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "0",
+      "RSI (0Ah)",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "Reserved",
+      "Originator S_ID",
+      null,
+      null
+    ],
+    [
+      "2",
+      "OX_ID",
+      null,
+      "RX_ID",
+      null
+    ],
+    [
+      "3",
+      "MSB Association_Header (optional)\n(32 bytes)\nLSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "10",
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Nx_Port", "page": 182, "bbox": [94.77, 243.82, 158.13, 260.34]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Fx_Port", "page": 182, "bbox": [158.13, 243.82, 222.09, 260.34]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Meaning", "page": 182, "bbox": [222.09, 243.82, 541.23, 260.34]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 182, "bbox": [94.77, 260.34, 158.13, 277.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "0", "page": 182, "bbox": [158.13, 260.34, 222.09, 277.35]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Neither supports Priority and Preemption", "page": 182, "bbox": [222.09, 260.34, 541.23, 277.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "0", "page": 182, "bbox": [94.77, 277.35, 158.13, 294.33]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "1", "page": 182, "bbox": [158.13, 277.35, 222.09, 294.33]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "Fabric is capable of supporting Priority and Preemption", "page": 182, "bbox": [222.09, 277.35, 541.23, 294.33]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "1", "page": 182, "bbox": [94.77, 294.33, 158.13, 323.37]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "0", "page": 182, "bbox": [158.13, 294.33, 222.09, 323.37]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Nx_Port support requested, Fabric does not support Priority and\nPreemption", "page": 182, "bbox": [222.09, 294.33, 541.23, 323.37]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "1", "page": 182, "bbox": [94.77, 323.37, 158.13, 351.82]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "1", "page": 182, "bbox": [158.13, 323.37, 222.09, 351.82]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "Nx_Port requested, Fabric is capable of supporting Priority and\nPreemption, available for use", "page": 182, "bbox": [222.09, 323.37, 541.23, 351.82]}

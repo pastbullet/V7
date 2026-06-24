@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0118",
+  "type": "table",
+  "caption": "Table 114 – REC Payload",
+  "pages": [
+    128
+  ],
+  "bbox": [
+    100.0,
+    219.96,
+    536.0,
+    319.02
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 128,
+  "logical_table": false
+}

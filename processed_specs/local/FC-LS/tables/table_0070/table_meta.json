@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0070",
+  "type": "table",
+  "caption": "Table 67 – RLIR Payload",
+  "pages": [
+    91
+  ],
+  "bbox": [
+    100.3,
+    423.99,
+    535.7,
+    646.35
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 91,
+  "logical_table": false
+}

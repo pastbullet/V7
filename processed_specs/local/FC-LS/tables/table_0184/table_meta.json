@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0184",
+  "type": "table",
+  "caption": "Table 172 – Page Code Definitions",
+  "pages": [
+    192
+  ],
+  "bbox": [
+    210.5,
+    416.64,
+    425.5,
+    484.02
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 192,
+  "logical_table": false
+}

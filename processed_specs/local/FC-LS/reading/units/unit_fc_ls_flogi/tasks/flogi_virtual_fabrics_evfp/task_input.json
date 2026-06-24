@@ -1,0 +1,80 @@
+{
+  "doc_id": "FC-LS.pdf",
+  "unit": {
+    "unit_id": "unit_fc_ls_flogi",
+    "title": "FC-LS Fabric Login / FLOGI",
+    "kind": "procedure_group",
+    "target_ir": [
+      "MessageIR",
+      "ProcedureIR",
+      "SessionContextIR",
+      "EnumIR"
+    ],
+    "source_anchors": [
+      "6.2 Fabric Login",
+      "Table 149",
+      "Table 150",
+      "Table 151",
+      "Table 153",
+      "Table 156",
+      "Table 158",
+      "Table 177",
+      "8 Virtual Fabrics N_Port Support"
+    ],
+    "dependencies": [
+      "Extended Link Services frame envelope",
+      "Common Service Parameters",
+      "Class Service Parameters",
+      "Virtual Fabrics / EVFP",
+      "Authentication"
+    ],
+    "priority": "vertical_seed",
+    "scope_status": "in_scope",
+    "notes": "Seed reading plan derived from FLOGI live QA traces. The plan intentionally decomposes the broad FLOGI question into focused, IR-oriented tasks."
+  },
+  "task": {
+    "task_id": "flogi_virtual_fabrics_evfp",
+    "title": "FLOGI Virtual Fabrics / EVFP dependency",
+    "task_type": "cross_section_mechanism",
+    "target_outputs": [
+      "virtual_fabrics_bit_negotiation",
+      "table177_cases",
+      "evfp_trigger",
+      "authentication_interaction",
+      "followup_flogi",
+      "evidence"
+    ],
+    "reading_goal": "Read the Virtual Fabrics dependency that is enabled by FLOGI. Cover Table 177 bit cases, LS_ACC D_ID=000000h behavior, EVFP trigger, interaction with AUTH_ELS/security bit when present, and follow-up FLOGI for logical N_Ports/VFs.",
+    "page_ranges": [
+      "203-206"
+    ],
+    "must_include_assets": [
+      {
+        "type": "table",
+        "asset_id": "table_0192"
+      }
+    ],
+    "expected_evidence_types": [
+      "text_span",
+      "table_cell",
+      "figure_crop"
+    ],
+    "completion_criteria": [
+      "All Table 177 cases are grounded.",
+      "EVFP trigger from FLOGI LS_ACC is grounded.",
+      "Authentication/security interaction is grounded when mentioned.",
+      "Follow-up logical N_Port FLOGI behavior is grounded."
+    ],
+    "dependencies": [],
+    "budget": {
+      "max_pages": 4,
+      "max_tables": 1,
+      "max_figures": 1,
+      "max_tool_calls": 10
+    },
+    "status": "accepted",
+    "reason": "",
+    "task_dir": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_virtual_fabrics_evfp",
+    "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_virtual_fabrics_evfp/task_input.json"
+  }
+}

@@ -1,0 +1,634 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 82,
+  "spans": [
+    {
+      "span_id": "p082_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0002",
+      "text": " 63",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0003",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        57.65,
+        114.38,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0004",
+      "text": "Response code:",
+      "bbox": [
+        122.4,
+        57.65,
+        199.47,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0005",
+      "text": " The Response code field contains an encoded binary value indicating the re-",
+      "bbox": [
+        199.5,
+        57.65,
+        540.07,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p082_s0006",
+      "text": "sult of the PRLI Request and the status of the image pair.  The meanings of the encoded Re-",
+      "bbox": [
+        122.4,
+        69.65,
+        539.98,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0007",
+      "text": "sponse code values are shown in table 56.",
+      "bbox": [
+        122.4,
+        81.65,
+        311.28,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0008",
+      "text": "d)",
+      "bbox": [
+        106.02,
+        298.97,
+        114.91,
+        310.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0009",
+      "text": " Image pair state:",
+      "bbox": [
+        114.91,
+        298.97,
+        201.78,
+        310.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p082_s0010",
+      "text": "1 = image pair established",
+      "bbox": [
+        122.4,
+        322.97,
+        239.33,
+        334.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0011",
+      "text": "0 = image pair not established",
+      "bbox": [
+        122.4,
+        334.96,
+        255.97,
+        346.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0012",
+      "text": "4.2.23",
+      "bbox": [
+        96.0,
+        358.96,
+        123.76,
+        370.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0013",
+      "text": "Request Node Identification Data (RNID)",
+      "bbox": [
+        133.82,
+        358.96,
+        324.24,
+        370.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0014",
+      "text": "4.2.23.1  Introduction",
+      "bbox": [
+        96.0,
+        382.96,
+        195.92,
+        394.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0015",
+      "text": "The RNID ELS is an ELS for acquiring Node Identification Data.  The normal response shall be an",
+      "bbox": [
+        96.0,
+        406.96,
+        539.92,
+        418.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0016",
+      "text": "Accept (ACC) ELS Sequence with Node Identification Data in its payload.  If the recipient Nx_Port or",
+      "bbox": [
+        96.0,
+        418.96,
+        540.08,
+        430.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0017",
+      "text": "Fx_Port does not support the RNID ELS, it shall reply with an LS_RJT ELS Sequence with a reason",
+      "bbox": [
+        96.0,
+        430.96,
+        540.04,
+        442.08
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0018",
+      "text": "code of \"Command not supported\".  If the recipient Nx_Port or Fx_Port does not support the request-",
+      "bbox": [
+        96.0,
+        442.96,
+        540.02,
+        454.08
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0019",
+      "text": "ed Node Identification Data format, it shall either reply with an LS_RJT ELS Sequence with a reason",
+      "bbox": [
+        96.0,
+        454.96,
+        540.01,
+        466.08
+      ],
+      "block_index": 8,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0020",
+      "text": "code of \"Unable to perform command request\" and reason code explanation of \"Unable to supply re-",
+      "bbox": [
+        96.0,
+        466.96,
+        540.08,
+        478.08
+      ],
+      "block_index": 8,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0021",
+      "text": "quested data\" or reply with an Accept ELS Payload containing only the Common Identification Data.",
+      "bbox": [
+        96.0,
+        478.96,
+        536.89,
+        490.08
+      ],
+      "block_index": 8,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0022",
+      "text": "If an Nx_Port sends an RNID ELS and receives an LS_RJT Sequence with a reason code of \"Unable",
+      "bbox": [
+        96.0,
+        502.96,
+        540.0,
+        514.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0023",
+      "text": "to perform command request\" and reason code explanation of \"Unable to supply requested data\", the",
+      "bbox": [
+        96.0,
+        514.96,
+        539.99,
+        526.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0024",
+      "text": "ULP may cause the Nx_Port to retry the RNID ELS with a different Node Identification Data Format",
+      "bbox": [
+        96.0,
+        526.96,
+        540.01,
+        538.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0025",
+      "text": "request if an Nx_Port sends an RNID ELS and receives a reply with an Accept ELS containing only",
+      "bbox": [
+        96.0,
+        538.96,
+        540.01,
+        550.08
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0026",
+      "text": "Common Identification Data (see Table 61) in its payload, the ULP usage of the Common Identifica-",
+      "bbox": [
+        96.0,
+        550.96,
+        540.08,
+        562.08
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0027",
+      "text": "tion Data and any further discovery processing is beyond the scope of this standard.",
+      "bbox": [
+        96.0,
+        562.96,
+        467.76,
+        574.08
+      ],
+      "block_index": 9,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0028",
+      "text": "The RNID ELS may be sent to any Nx_Port or Fx_Port in the Fabric.  If the destination is known to be",
+      "bbox": [
+        96.0,
+        586.96,
+        540.04,
+        598.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0029",
+      "text": "an Fx_Port, then the RNID ELS shall be sent to the Fabric Controller (FFFFFDh).  If an RNID ELS is",
+      "bbox": [
+        96.0,
+        598.96,
+        540.03,
+        610.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0030",
+      "text": "sent to the Fabric Controller (FFFFFDh), the reply shall represent the Fabric Controller node that",
+      "bbox": [
+        96.0,
+        610.96,
+        539.93,
+        622.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0031",
+      "text": "contains the Fx_Port to which the requesting FC port is attached.  If the receiving FC port has been",
+      "bbox": [
+        96.0,
+        622.96,
+        539.96,
+        634.08
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0032",
+      "text": "determined to be an Nx_Port, then the RNID ELS shall be sent to that Nx_Port.",
+      "bbox": [
+        96.0,
+        634.96,
+        445.51,
+        646.08
+      ],
+      "block_index": 10,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0033",
+      "text": "4.2.23.2  Protocol",
+      "bbox": [
+        96.0,
+        659.02,
+        178.22,
+        670.14
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0034",
+      "text": "a) Request Node-Identification (RNID) request Sequence",
+      "bbox": [
+        106.02,
+        683.02,
+        363.49,
+        694.14
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0035",
+      "text": " Table 56 – TPLS accept response code",
+      "bbox": [
+        224.4,
+        103.66,
+        411.49,
+        114.78
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0036",
+      "text": "Encoded Value",
+      "bbox": [
+        103.68,
+        125.62,
+        175.32,
+        136.73
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0037",
+      "text": "Word 0, Bits 11-8",
+      "bbox": [
+        98.94,
+        137.62,
+        180.05,
+        148.73
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0038",
+      "text": "Description",
+      "bbox": [
+        336.21,
+        137.62,
+        391.14,
+        148.73
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0039",
+      "text": "0000b",
+      "bbox": [
+        125.58,
+        161.62,
+        153.37,
+        172.73
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0040",
+      "text": "Reserved",
+      "bbox": [
+        187.2,
+        160.66,
+        229.95,
+        171.77
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0041",
+      "text": "0001b",
+      "bbox": [
+        125.58,
+        185.62,
+        153.37,
+        196.73
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0042",
+      "text": "Request executed",
+      "bbox": [
+        187.2,
+        184.66,
+        267.72,
+        195.77
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0043",
+      "text": "0010b - 0110b",
+      "bbox": [
+        107.28,
+        209.62,
+        171.67,
+        220.73
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0044",
+      "text": "Reserved",
+      "bbox": [
+        187.2,
+        208.66,
+        229.95,
+        219.77
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0045",
+      "text": "0111b",
+      "bbox": [
+        125.58,
+        233.62,
+        153.37,
+        244.73
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0046",
+      "text": "Obsolete",
+      "bbox": [
+        187.2,
+        232.66,
+        227.18,
+        243.77
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0047",
+      "text": "1000b - 1111b",
+      "bbox": [
+        107.28,
+        257.62,
+        171.67,
+        268.73
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p082_s0048",
+      "text": "Reserved",
+      "bbox": [
+        187.2,
+        256.66,
+        229.95,
+        267.77
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0059"
+  ]
+}

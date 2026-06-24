@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0053",
+  "type": "table",
+  "caption": "Table 50 – PRLO LS_ACC logout parameter response page format",
+  "pages": [
+    77
+  ],
+  "bbox": [
+    158.12,
+    387.84,
+    477.88,
+    685.74
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 77,
+  "logical_table": false
+}

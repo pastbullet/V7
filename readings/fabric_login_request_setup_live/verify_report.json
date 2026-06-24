@@ -1,0 +1,321 @@
+{
+  "doc_id": "FC-LS",
+  "unit_id": "fabric_login_request_setup",
+  "accepted_count": 21,
+  "unresolved_count": 0,
+  "invalid_count": 0,
+  "accepted": [
+    {
+      "claim_id": "fabric_login_request_setup_c1",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0008",
+          "quote": "with other Nx_Ports shall not be attempted until the Fabric Login procedure is complete."
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c2",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0033",
+          "quote": "The Nx_Port shall transmit the FLOGI in a new Exchange."
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c3",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0033",
+          "quote": "The Payload of FLOGI contains the Ser-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p153_s0034",
+          "quote": "vice Parameters of the Nx_Port, a 64-bit N_Port_Name of the Nx_Port, and a 64-bit Node_Name."
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c4",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0034",
+          "quote": "vice Parameters of the Nx_Port, a 64-bit N_Port_Name of the Nx_Port, and a 64-bit Node_Name."
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c5",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0034",
+          "quote": "vice Parameters of the Nx_Port, a 64-bit N_Port_Name of the Nx_Port, and a 64-bit Node_Name."
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c6",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0035",
+          "quote": "The Service Parameters are as specified for F_Port Login in 6.6."
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c7",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0035",
+          "quote": "The Service Parameters are as specified for F_Port Login in 6.6.  The applicability of the Service Pa-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p153_s0036",
+          "quote": "rameters to Fabric Login are given in tables 150 and 155."
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c8",
+      "evidence_refs": [
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r1c8",
+          "quote": "FLOGI\nParameter\napplicability"
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c9",
+      "evidence_refs": [
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r1c11",
+          "quote": "FLOGI\nLS_ACC\nParameter\napplicability"
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c10",
+      "evidence_refs": [
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r5c1",
+          "quote": "Buffer-to-buffer Credit"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r5c8",
+          "quote": "y"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r5c9",
+          "quote": "y"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r5c10",
+          "quote": "y"
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c11",
+      "evidence_refs": [
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r5c1",
+          "quote": "Buffer-to-buffer Credit"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r5c11",
+          "quote": "y"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r5c12",
+          "quote": "y"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r5c13",
+          "quote": "y"
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c12",
+      "evidence_refs": [
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r1c8",
+          "quote": "FLOGI\nParameter\napplicability"
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c13",
+      "evidence_refs": [
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r1c11",
+          "quote": "FLOGI\nLS_ACC\nParameter\napplicability"
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c14",
+      "evidence_refs": [
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r4c1",
+          "quote": "Class Validity"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r4c8",
+          "quote": "y"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r4c9",
+          "quote": "y"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r4c10",
+          "quote": "y"
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c15",
+      "evidence_refs": [
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r4c1",
+          "quote": "Class Validity"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r4c11",
+          "quote": "y"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r4c12",
+          "quote": "y"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r4c13",
+          "quote": "y"
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c16",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0036",
+          "quote": "rameters to Fabric Login are given in tables 150 and 155.  The Nx_Port shall assign an OX_ID and"
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c17",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0037",
+          "quote": "set the D_ID to the well-known F_Port address (i.e., FFFFFEh)."
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c18",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0038",
+          "quote": "If the Nx_Port is unidentified, an Nx_Port shall set the S_ID in the FLOGI to 000000h or 0000h || YY."
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c19",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0039",
+          "quote": "If the Nx_Port sets the S_ID to 000000h, the Nx_Port is requesting the Fabric assign all 24 bits of the"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p153_s0040",
+          "quote": "N_Port_ID."
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c20",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0040",
+          "quote": "If the Nx_Port sets the S_ID to 0000h || YY, the Nx_Port is requesting the Fabric assign"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p153_s0041",
+          "quote": "the upper 16 bits, bits 23 to 8, and validate the lower 8 bits, bits 7 to 0, of the N_Port_ID."
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_request_setup_c21",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0041",
+          "quote": "the upper 16 bits, bits 23 to 8, and validate the lower 8 bits, bits 7 to 0, of the N_Port_ID."
+        }
+      ]
+    }
+  ],
+  "unresolved": [],
+  "invalid": []
+}

@@ -1,0 +1,772 @@
+{
+  "success": true,
+  "doc_name": "FC-LS.pdf",
+  "structure": [
+    {
+      "node_id": "0017",
+      "title": "4 Extended Link Services",
+      "summary": "Covers Extended Link Services (ELS) basics and request rules: an ELS request solicits a destination `Nx_Port` function; an ELS reply is required unless otherwise specified. Defines single-`Sequence` request/reply structure, `ELS_Command` code in the first word/first byte of `Payload`, one-`Exchange` request/reply pairing, `Last Sequence bit` termination on `LS_ACC`, and normal `Exchange`/`Sequence` management per `FC-FS-2`. Specifies frame fields: `TYPE` = `01h`, `R_CTL` values, `Payload`, `D_ID`, `S_ID`, `LFA`, valid addresses, well known addresses, and `FLOGI` before all ELSs in a Fabric. `Table 2 – Extended Link Services Routing Bits and Information Categories` defines `R_CTL` routing/info categories: `0001b` Solicited Data, `0010b` Request, `0011b` Reply, Others Reserved; note `CSU`. Content types: message/frame format, response/branch handling, completion/exception conditions, procedure/flow.",
+      "is_skeleton": true,
+      "children": [
+        {
+          "node_id": "0019",
+          "title": "4.2 Extended Link Service requests",
+          "summary": "Section `4.2 Extended Link Service requests` defines when and how a Sequence Initiator sends an ELS Sequence to solicit a destination `Nx_Port` link-level function/service. Covers request preconditions and addressing rules: ELS requests shall not be issued before completion of `N_Port Login` unless otherwise noted; `FLOGI` is required before all ELSs if a Fabric is present; `Table 3` applies to ELSs sent to or received by all valid addresses, including well known addresses. Specifies `LFA` usage: destination ID (`D_ID`) for `LINIT` and `LSTS` ELS Request Sequences, source ID (`S_ID`) in Reply Sequences; no other Sequences shall be directed to `LFA`. Content types: procedure/flow, response/branch handling, completion/exception conditions. Table `2 – Extended Link Services Routing Bits and Information Categories`: defines `R_CTL` routing/information values for ELS frames.",
+          "is_skeleton": true,
+          "children": [
+            {
+              "node_id": "0067",
+              "title": "4.2.12 Reinstate Recovery Qualifier (RRQ)",
+              "summary": "RRQ section defines `4.2.12 Reinstate Recovery Qualifier (RRQ)` / `4.2.12.1 Description`: the `RRQ ELS` notifies the destination `Nx_Port` that the `Recovery_Qualifier` is available for reuse. Covers identifiers/fields `S_ID`, `D_ID`, `OX_ID`, `RX_ID`, `SEQ_CNT`, `N_Port_ID`, `Originator Nx_Port`, `Responder Nx_Port`, and target `Exchange`; applies after `Abort Sequence`, `Abort Exchange`, and `ABTS-LS`. Acceptance rule: request only accepted if Originator or Responder `N_Port_ID` matches requester `Nx_Port`; otherwise return `LS_RJT` with reason code `Unable to perform command request` and reason code explanation `Invalid Originator S_ID`. Notes reuse/purge behavior for `ESB` and `Recovery_Qualifier`, and that a separate `Exchange` carries payload with `OX_ID`, `RX_ID`, and `S_ID`. Table present: `Table 19 – RTV Payload` shows `RTV (0Eh)` payload format. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+              "is_skeleton": true,
+              "children": [
+                {
+                  "node_id": "0068",
+                  "title": "4.2.12.1 Description",
+                  "summary": "Core topic: `4.2.12.1 Description` defines `RRQ` (`Reinstate Recovery Qualifier`) ELS use and acceptance rules for making a `Recovery_Qualifier` available for reuse after `Abort Sequence` or `Abort Exchange`/`ABTS-LS`. `Recovery_Qualifier` components named: `S_ID`, `D_ID`, `OX_ID`, `RX_ID`, `low SEQ_CNT`, `high SEQ_CNT`; applies to an `Exchange`, `Originator Nx_Port`, `Responder Nx_Port`, `N_Port_ID`, `ESB`. Acceptance condition: requester `N_Port_ID` must match Originator or Responder of target Exchange; otherwise return `LS_RJT` with reason code `Unable to perform command request` and reason code explanation `Invalid Originator S_ID`. Separate Exchange required; payload contains `OX_ID`, `RX_ID`, and `S_ID`. Also present: `Table 19 – RTV Payload` — defines `RTV` (`0Eh`) payload/`LS_ACC` fields `R_A_TOV`, `E_D_TOV`, `Timeout Qualifier`, `E_D_TOV Resolution`, `R_T_TOV Value`, `02h`. [procedure/flow] [message/frame format] [response/branch handling] [completion/exception conditions] [timer/negotiation]",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 55,
+                  "end_index": 55,
+                  "subtree_start_index": 55,
+                  "subtree_end_index": 55
+                },
+                {
+                  "node_id": "0069",
+                  "title": "4.2.12.2 Protocol",
+                  "summary": "Section `4.2.12.2 Protocol` defines the RRQ protocol flow for reinstating a Recovery_Qualifier: `a) Reinstate Recovery Qualifier Request Sequence` and `b) LS_ACC or LS_RJT Reply Sequence`. Core topic: `RRQ Request Sequence` / `LS_ACC` / `LS_RJT` handling after `ABTS-LS` / `BA_ACC for ABTS`, with `OX_ID` / `RX_ID` association checks and `R_A_TOV` timeout before `RRQ` transmission. Includes `Addressing` (`D_ID`, `S_ID`), `Exchange` (“A separate Exchange is required”), `SEQ_ID` / `SEQ_CNT` rules, and `Payload` format in `Table 21 – RRQ Payload`, showing fields/codes `RRQ (12h)`, `Reserved`, `Exchange Originator S_ID`, `OX_ID`, `RX_ID`, `Association_Header (optional)`, `MSB`, `LSB`, `00h`. Also present: `Table 19 – RTV Payload`, which shows the `RTV Payload` format. Content types: procedure/flow, message/frame format, response/branch handling, timer/negotiation, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 56,
+                  "end_index": 56,
+                  "subtree_start_index": 56,
+                  "subtree_end_index": 56
+                },
+                {
+                  "node_id": "0070",
+                  "title": "4.2.12.3 Request Sequence",
+                  "summary": "4.2.12.3 Request Sequence covers the RRQ Request Sequence for reinstating Recovery_Qualifier, including addressing, Exchange requirements, sequence fields, and payload layout. Exact anchors: `RRQ Request Sequence`, `D_ID`, `S_ID`, `Nx_Port`, `Exchange`, `SEQ_ID`, `SEQ_CNT`, `Payload`, `Table 21 – RRQ Payload`, `RRQ (12h)`, `Reserved`, `Exchange Originator S_ID`, `OX_ID`, `RX_ID`, `Association_Header (optional)`, `LS_ACC`, `LS_RJT`, `R_A_TOV`, `BA_ACC`, `ABTS`, `ABTS-LS`, `Recovery_Qualifier`. It also states completion/exception conditions around releasing `OX_ID`/`RX_ID` resources after `LS_ACC` and validating the `OX_ID`/`RX_ID` pair in the `RRQ Request`. Table: `Table 21 – RRQ Payload` defines the RRQ payload word/bit format; `Table 19 – RTV Payload` defines RTV payload format. Content types: message/frame format, response/branch handling, timer/negotiation, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 56,
+                  "end_index": 56,
+                  "subtree_start_index": 56,
+                  "subtree_end_index": 56
+                },
+                {
+                  "node_id": "0071",
+                  "title": "4.2.12.4 Reply Sequence",
+                  "summary": "4.2.12.4 Reply Sequence — RRQ reply handling for Reinstate Recovery Qualifier Request: `LS_RJT` signifies rejection of the `RRQ` command; tied to `LS_ACC or LS_RJT Reply Sequence` in 4.2.12.2 and the `RRQ Request Sequence` context. References completion/exception conditions and response/branch handling around `ABTS-LS`, `LS_ACC`, `BA_ACC`, `OX_ID`, `RX_ID`, `Recovery_Qualifier`, `R_A_TOV`, `D_ID`, `S_ID`, `SEQ_ID`, `SEQ_CNT`, `Association_Header`, and payload code `RRQ (12h)` with reserved `00h` fields. Includes protocol/procedure cues (`a) Reinstate Recovery Qualifier Request Sequence`, `b) LS_ACC or LS_RJT Reply Sequence`) and timer/negotiation content (`R_A_TOV` timeout after `BA_ACC`). Table `Table 19 – RTV Payload` shows/defines the `RTV` payload format (`RTV (0Eh)`, `00h` fields).",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 56,
+                  "end_index": 56,
+                  "subtree_start_index": 56,
+                  "subtree_end_index": 56
+                }
+              ],
+              "start_index": 55,
+              "end_index": 55,
+              "subtree_start_index": 55,
+              "subtree_end_index": 56
+            },
+            {
+              "node_id": "0072",
+              "title": "4.2.13 Request Sequence Initiative (RSI)",
+              "summary": "Section `4.2.13 Request Sequence Initiative (RSI)` defines the `RSI` ELS for requesting transfer of `Sequence Initiative` to the `Sequence Recipient` of an Exchange in progress. Covers `4.2.13.1 Description`, `4.2.13.2 Protocol`, and `4.2.13.3 Request Sequence`: separate Exchange requirement; request accepted only from `Originator Nx_Port` or `Responder Nx_Port`; Payload includes `OX_ID`, `RX_ID`, and `S_ID`; `D_ID` identifies destination `Nx_Port`, `S_ID` identifies requester. Procedure/flow and completion/exception conditions: if active Sequence exists, terminate via Data frame or `NOP Basic Link Service frame` with `End_Sequence` and `Sequence Initiative` bits set to `one` in `F_CTL`; if no active Sequence, send one-frame `NOP`; `LS_ACC` sent after Sequence Initiative transfer; reply may be `LS_ACC` or `LS_RJT`. Table `22 – RRQ LS_ACC Payload` shows `LS_ACC` Payload format, including `Word 0` = `02h 00h 00h 00h`.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0073",
+                  "title": "4.2.13.1 Description",
+                  "summary": "RSI ELS description for requesting transfer of Sequence Initiative on an Exchange in progress. Covers eligibility (only Originator Nx_Port or Responder Nx_Port), use of a separate Exchange, and required payload identifiers `OX_ID`, `RX_ID`, `S_ID`. Describes acceptance/completion behavior: `LS_ACC` Reply is sent only after Sequence Initiative is passed on the target Exchange; `LS_RJT` appears in 4.2.13.2 reply options. Procedure/flow and completion/exception conditions for active vs. inactive Sequence: send Data frame or `NOP` Basic Link Service frame with `End_Sequence` and `Sequence Initiative` bits set to one in `F_CTL`; if no Sequence active, initiate a one frame Sequence. Valid while Exchange is open; ports must verify associated `OX_ID`/`RX_ID` pair. Table 22 – RRQ LS_ACC Payload: shows `LS_ACC` payload format, Word 0 = `02h 00h 00h 00h`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 57,
+                  "end_index": 57,
+                  "subtree_start_index": 57,
+                  "subtree_end_index": 57
+                },
+                {
+                  "node_id": "0074",
+                  "title": "4.2.13.2 Protocol",
+                  "summary": "Core topic: `4.2.13.2 Protocol` defines the protocol flow for `Request Sequence Initiative (RSI)` within `4.2.13`, identifying the allowed exchange-level message sequences and their reply outcomes. Exact protocol steps: `a) Request Sequence Initiative Request Sequence` and `b) LS_ACC or LS_RJT Reply Sequence`. Related anchors from adjacent RSI definition context: `OX_ID`, `RX_ID`, `S_ID`, `D_ID`, `Sequence Initiative`, `Exchange`, `Sequence Recipient`, `Originator Nx_Port`, `Responder Nx_Port`, `NOP Basic Link Service frame`, `End_Sequence`, `F_CTL`, `LS_ACC`, `LS_RJT`. Table present: `Table 19 – RTV Payload` — shows `RTV Payload` layout/definition (`RTV (0Eh)`, `00h`). Content types: `procedure/flow`, `response/branch handling`, `completion/exception conditions`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 57,
+                  "end_index": 57,
+                  "subtree_start_index": 57,
+                  "subtree_end_index": 57
+                },
+                {
+                  "node_id": "0075",
+                  "title": "4.2.13.3 Request Sequence",
+                  "summary": "Section `4.2.13.3 Request Sequence` covers RSI Request Sequence addressing for `Request Sequence Initiative (RSI)` on an Exchange. Core rule: `D_ID` designates the destination `Nx_Port` of the Exchange for which `Sequence Initiative` is requested, and `S_ID` designates the source `Nx_Port` requesting `Sequence Initiative`. Context in `4.2.13` includes `OX_ID`, `RX_ID`, `LS_ACC`, `LS_RJT`, `NOP Basic Link Service frame`, `End_Sequence`, `Sequence Initiative`, and `F_CTL`; `LS_ACC` is sent after Sequence Initiative is passed. Named values/codes present nearby: `02h` in `Table 22 – RRQ LS_ACC Payload`, Word `0` bytes `02h 00h 00h 00h`. Table present: `Table 19 – RTV Payload` — defines `RTV Payload` layout. Content types: procedure/flow, response/branch handling, message/frame format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 57,
+                  "end_index": 57,
+                  "subtree_start_index": 57,
+                  "subtree_end_index": 57
+                },
+                {
+                  "node_id": "0076",
+                  "title": "4.2.13.4 Reply Sequence",
+                  "summary": "Core topic: `4.2.13.4 Reply Sequence` for `RSI` response handling on Sequence Initiative transfer. Covers response/branch handling and message/frame format for `LS_RJT` and `LS_ACC`. `LS_RJT` signifies rejection of the `RSI` command. `LS_ACC` signifies the destination `Nx_Port` has transferred the Sequence Initiative for the target Exchange; `Table 24 – RSI LS_ACC Payload` shows the `LS_ACC` payload format, with `Word 0 = 02h 00h 00h 00h`. Context anchors present on this page: `Exchange`, `SEQ_ID`, `SEQ_CNT`, `Payload`, `Originator S_ID`, `OX_ID`, `RX_ID`, `Association_Header`, `RSI (0Ah)`, `Reserved`. Also includes adjacent `TEST` note: `There is no Reply Sequence`. Tables: `Table 24 – RSI LS_ACC Payload` defines the `LS_ACC` payload format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 58,
+                  "end_index": 58,
+                  "subtree_start_index": 58,
+                  "subtree_end_index": 58
+                }
+              ],
+              "start_index": 57,
+              "end_index": 57,
+              "subtree_start_index": 57,
+              "subtree_end_index": 58
+            },
+            {
+              "node_id": "0077",
+              "title": "4.2.14 Test (TEST)",
+              "summary": "Section `4.2.14 Test (TEST)` indexes the `TEST ELS`: a single Sequence from `Sequence Initiator` to `Sequence Recipient` used for diagnostic/testing system loading. `4.2.14.1 Description` states there is `No Reply Sequence`; `Payload` may be any frame size up to the maximum allowable for the class, subject to normal Sequence and frame limitations. `4.2.14.2 Protocol` gives the procedure/flow: `a) Test Request Sequence`, `b) No Reply Sequence`. Contains: procedure/flow; completion/exception conditions; response/branch handling (explicit absence of reply). Nearby carried table: `Table 24 – RSI LS_ACC Payload` shows the `LS_ACC` Payload format for `RSI`, with `02h 00h 00h 00h`; this table is not part of `TEST` but appears on the same page span.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0078",
+                  "title": "4.2.14.1 Description",
+                  "summary": "Section 4.2.14.1 `Description` defines the `TEST` ELS/Test Request: a single `Sequence` sent from `Sequence Initiator` to `Sequence Recipient`, used for diagnostic/testing system loading. Core rules: `There is no Reply Sequence`; `Payload` may be any frame size up to the class maximum, subject to normal `Sequence` and frame limits. Anchors present in adjacent page content include `RSI`, `LS_RJT`, `LS_ACC`, `Sequence Initiative`, `SEQ_ID`, `SEQ_CNT`, `Originator S_ID`, `OX_ID`, `RX_ID`, `Association_Header`, codes `0Ah`, `02h`, and `00h`. Content types: procedure/flow (`Test Request Sequence`, `No Reply Sequence`), response/branch handling (`LS_RJT`, `LS_ACC`), message/frame format. Tables: `Table 19 – RTV Payload` shows `RTV` payload layout; `Table 24 – RSI LS_ACC Payload` defines the `LS_ACC` payload format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 58,
+                  "end_index": 58,
+                  "subtree_start_index": 58,
+                  "subtree_end_index": 58
+                },
+                {
+                  "node_id": "0079",
+                  "title": "4.2.14.2 Protocol",
+                  "summary": "Section `4.2.14.2 Protocol` defines the `TEST` ELS protocol behavior: `a) Test Request Sequence` and `b) No Reply Sequence`. Core topic is minimal protocol flow for `TEST`, with no response exchange. Contained content types: procedure/flow; completion/exception conditions. Nearby embedded protocol text on the same page also names `RSI`, `LS_RJT`, `LS_ACC`, `Sequence Initiative`, `Exchange`, `SEQ_ID`, `SEQ_CNT`, `Originator S_ID`, `OX_ID`, `RX_ID`, `Association_Header`, code `0Ah`, and `02h`, plus `Table 23 – RSI Payload` (defines RSI payload format) and `Table 24 – RSI LS_ACC Payload` (defines `LS_ACC` payload format). Listed table present in section materials: `Table 24 – RSI LS_ACC Payload`, shows `LS_ACC` payload word layout (`02h 00h 00h 00h`).",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 58,
+                  "end_index": 58,
+                  "subtree_start_index": 58,
+                  "subtree_end_index": 58
+                },
+                {
+                  "node_id": "0080",
+                  "title": "4.2.14.3 Request Sequence",
+                  "summary": "Covers `4.2.14.3 Request Sequence` for `TEST`: request addressing and payload definition. `D_ID` designates destination, `S_ID` designates source. Payload uses `Table 25 – TEST Payload`, with `Word 0` = `TEST (11h) 00h 00h 00h`, followed by `MSB TEST data` through `LSB`; payload may extend up to max Data Field size on any byte boundary. Size is limited by the smallest Data Field size supported by the destination `Nx_Port` and the Fabric for the class used. Also states `4.2.14.4 Reply Sequence` = none. Adjacent carryover table reference: `Table 24 – RSI LS_ACC Payload` defines RSI `LS_ACC` payload layout. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 59,
+                  "end_index": 59,
+                  "subtree_start_index": 59,
+                  "subtree_end_index": 59
+                },
+                {
+                  "node_id": "0081",
+                  "title": "4.2.14.4 Reply Sequence",
+                  "summary": "Section `4.2.14.4 Reply Sequence` covers the `TEST` ELS reply behavior: `none`—no Reply Sequence is defined after the `4.2.14.3 Request Sequence`. Nearby anchors tied to this context are `D_ID`, `S_ID`, `Payload`, `Table 25 – TEST Payload`, `TEST (11h)`, `Data Field`, `Nx_Port`, and `Fabric`, which define the request addressing and message/frame format preceding this no-response rule. Also adjacent continuity text introduces `4.2.15 Fabric Address Notification (FAN)` with `No Reply Sequence` and states attached `NL_Ports` shall not initiate a Reply Sequence. Table present: `Table 24 – RSI LS_ACC Payload`, which defines the `RSI LS_ACC` payload field layout. Content types: `response/branch handling`, `message/frame format`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 59,
+                  "end_index": 59,
+                  "subtree_start_index": 59,
+                  "subtree_end_index": 59
+                }
+              ],
+              "start_index": 58,
+              "end_index": 58,
+              "subtree_start_index": 58,
+              "subtree_end_index": 59
+            },
+            {
+              "node_id": "0082",
+              "title": "4.2.15 Fabric Address Notification (FAN)",
+              "summary": "4.2.15 Fabric Address Notification (FAN): defines the `FAN` ELS sent by a Fabric `F_Port (FFFFFEh)` to all previously logged in via `FLOGI` attached `NL_Ports` after an initialization event (typically Loop Initialization on an Arbitrated Loop, or other events causing ID change). Reports `F_Port_Name`, `Fabric_Name`, current `Loop Fabric Address`; sent using default login parameters in effect prior to a `FLOGI Request`. Attached ports may authenticate active `Exchanges` and parameters such as `BB_Credit`. Requires identical information to all attached `NL_Ports`; if information changes before completion, the `F_Port Controller` starts a new initialization event. `NL_Ports` shall not initiate a Reply Sequence. Content types: procedure/flow, response/branch handling, completion/exception conditions. `Table 24 – RSI LS_ACC Payload`: defines RSI `LS_ACC` payload format.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0083",
+                  "title": "4.2.15.1 Description",
+                  "summary": "Core topic: `4.2.15.1 Description` defines `Fabric Address Notification (FAN)` behavior: the `FAN ELS` is sent by Fabric `F_Port (FFFFFEh)` to all previously logged in (via `FLOGI`) attached `NL_Ports` after an initialization event, typically `Loop Initialization`, or other events that may change a port `ID`. Specifies that the `F_Port Controller` reports `F_Port_Name`, `Fabric_Name`, and current `Loop Fabric Address`, using default login parameters in effect before a `FLOGI Request`. Attached ports may authenticate active `Exchanges` and operating parameters such as `BB_Credit`. Requires identical information to all attached `NL_Ports`; if information changes before all are notified, a new initialization event begins. `NL_Ports` shall not initiate a `Reply Sequence`. Content types: response/branch handling, completion/exception conditions. Table `24 – RSI LS_ACC Payload`: defines `RSI LS_ACC Payload` format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 59,
+                  "end_index": 59,
+                  "subtree_start_index": 59,
+                  "subtree_end_index": 59
+                },
+                {
+                  "node_id": "0084",
+                  "title": "4.2.15.2 Protocol",
+                  "summary": "Core topic: `4.2.15.2 Protocol` for `Fabric Address Notification (FAN)` ELS behavior. Defines `Fabric Address Notification Request Sequence` and explicitly `No Reply Sequence` for FAN sent by `Fabric F_Port (FFFFFEh)` to previously `FLOGI`-logged `NL_Ports` after an initialization event. Related identifiers and fields named in surrounding FAN description: `F_Port_Name`, `Fabric_Name`, `Loop Fabric Address`, `F_Port Controller`, `NL_Ports`, default login parameters, `BB_Credit`. Contained content types: procedure/flow (`a) Fabric Address Notification Request Sequence`), response/branch handling (`b) No Reply Sequence`), completion/exception conditions (new initialization event if information changes before all attached ports are notified). Table present: `Table 24 – RSI LS_ACC Payload`, shows/defines `RSI LS_ACC Payload` format. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 59,
+                  "end_index": 59,
+                  "subtree_start_index": 59,
+                  "subtree_end_index": 59
+                },
+                {
+                  "node_id": "0085",
+                  "title": "4.2.15.3 Request Sequence",
+                  "summary": "Covers `4.2.15.3 Request Sequence` for `FAN` and the immediate `4.2.15.4 Reply Sequence` note (`none`), plus the opening of `4.2.16 Loop Initialize (LINIT)` through `4.2.16.3 Request Sequence`. Core content: `FAN Request Payload` addressing and payload layout, and `LINIT` purpose/protocol/request addressing. Named anchors: `S_ID`, `D_ID`, `Fabric Controller`, `FFFFFEh`, `NL_Port`, `FAN (60h)`, `Reserved`, `Loop Fabric Address`, `F_Port_Name`, `Fabric_Name`, `LINIT`, `ELS`, `FL_Port`, `LIP`, `FC-AL-2`, `LS_ACC`, `OPEN-INIT`, `MONITORING`, `LS_RJT`, `Command not supported`, `Nx_Port`, `LFA`. Table `Table 26 – FAN Payload`: defines FAN request payload fields/words. Content types: procedure/flow, message/frame format, response/branch handling, state machine, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 60,
+                  "end_index": 60,
+                  "subtree_start_index": 60,
+                  "subtree_end_index": 60
+                },
+                {
+                  "node_id": "0086",
+                  "title": "4.2.15.4 Reply Sequence",
+                  "summary": "Covers `4.2.15.4 Reply Sequence` for FAN: reply content is explicitly `none`. Best opened for questions about whether a FAN reply exists, and for nearby context linking to the preceding FAN request and following `Loop Initialize (LINIT)` behavior. Named anchors present in adjacent context on this page: `FAN`, `LS_ACC`, `LS_RJT`, `FC-AL-2`, `S_ID`, `D_ID`, `NL_Port`, `FL_Port`, `Fabric Controller`, `Loop Fabric Address`, `F_Port_Name`, `Fabric_Name`, `FFFFFEh`, `60h`, reason code `Command not supported`, states `OPEN-INIT` and `MONITORING`, `LIP`, `Nx_Port`, `LFA`. Table present: `Table 24 – RSI LS_ACC Payload` — defines `RSI LS_ACC Payload`. Content types: response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 60,
+                  "end_index": 60,
+                  "subtree_start_index": 60,
+                  "subtree_end_index": 60
+                }
+              ],
+              "start_index": 59,
+              "end_index": 59,
+              "subtree_start_index": 59,
+              "subtree_end_index": 60
+            },
+            {
+              "node_id": "0087",
+              "title": "4.2.16 Loop Initialize (LINIT)",
+              "summary": "4.2.16 `Loop Initialize (LINIT)`: ELS for requesting start of Loop Initialization on a designated loop. Core behavior: an `FL_Port` addressed by `Loop Fabric Address`/`LFA` originates a `LIP` of the type specified in the `Payload` and begins the Initialization Process per `FC-AL-2`. Addressing in Request Sequence: `S_ID` = requesting `Nx_Port`, `D_ID` = `LFA` of loop to initialize. Response/branch handling: `LS_ACC` or `LS_RJT`; if received by a non-`FL_Port`, port returns `LS_RJT` reason code `Command not supported`. Completion/exception conditions and state machine: `LS_ACC Reply Sequence` not initiated until `FL_Port` transitions from `OPEN-INIT` to `MONITORING` State and Fabric Controller completes sending any `FAN ELS`. Content types: procedure/flow, response/branch handling, state machine, completion/exception conditions. Table present: `Table 24 – RSI LS_ACC Payload` — defines `RSI LS_ACC` payload.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0088",
+                  "title": "4.2.16.1 Description",
+                  "summary": "Section `4.2.16.1 Description` covers `Loop Initialize (LINIT)`: the `LINIT ELS` requests start of Loop Initialization on a designated loop. The `FL_Port` connected to the loop addressed by the `Loop Fabric Address` shall originate a `LIP` of the type specified in the `Payload` and begin the Initialization Process per `FC-AL-2`. Response/branch handling and completion/exception conditions: `LS_ACC Reply Sequence` shall not be initiated before the `FL_Port` transitions from `OPEN-INIT` to `MONITORING` State and the `Fabric Controller` completes sending any `FAN ELS`; if received by a non-`FL_Port`, originate `LS_RJT` with reason code `Command not supported`. Content types: procedure/flow, response/branch handling, state machine, completion/exception conditions. Table present: `Table 24 – RSI LS_ACC Payload` — defines `RSI LS_ACC Payload`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 60,
+                  "end_index": 60,
+                  "subtree_start_index": 60,
+                  "subtree_end_index": 60
+                },
+                {
+                  "node_id": "0089",
+                  "title": "4.2.16.2 Protocol",
+                  "summary": "Section `4.2.16.2 Protocol` covers `Loop Initialize (LINIT)` protocol flow for starting loop initialization: `a) Loop Initialize Request Sequence` and `b) LS_ACC or LS_RJT Reply Sequence`. Core anchors: `LINIT`, `LS_ACC`, `LS_RJT`, `Nx_Port`, `D_ID`, `Loop Fabric Address (LFA)`, `FL_Port`, `OPEN-INIT`, `MONITORING State`, `FAN ELS`, `FC-AL-2`, reason code `\"Command not supported\"`. Related request addressing from `4.2.16.3 Request Sequence`: `S_ID` designates the `Nx_Port` requesting Loop Initialization; `D_ID` shall be the `Loop Fabric Address (LFA)` of the loop. Completion/exception conditions noted nearby: `LS_ACC Reply Sequence` waits until transition from `OPEN-INIT` to `MONITORING State`; non-`FL_Port` returns `LS_RJT`. Table present: `Table 24 – RSI LS_ACC Payload`, defines `RSI LS_ACC Payload`. Content types: procedure/flow, response/branch handling, state machine, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 60,
+                  "end_index": 60,
+                  "subtree_start_index": 60,
+                  "subtree_end_index": 60
+                },
+                {
+                  "node_id": "0090",
+                  "title": "4.2.16.3 Request Sequence",
+                  "summary": "Covers `4.2.16.3 Request Sequence` for `Loop Initialize (LINIT)`: addressing rules for the `LINIT ELS` request. Core content: `S_ID` designates the `Nx_Port` requesting Loop Initialization; `D_ID` shall be the `Loop Fabric Address (LFA)` of the loop to be initialized. Nearby protocol context names `LS_ACC`, `LS_RJT`, `FL_Port`, `Fabric Controller`, `FAN ELS`, `OPEN-INIT`, `MONITORING`, `LIP`, and reason code `Command not supported`, but this subsection itself states only request addressing. Content types: procedure/flow, message/frame format. Table present: `Table 24 – RSI LS_ACC Payload` — defines the `RSI LS_ACC Payload` layout. No figures. No reply details, payload words, timer names, or completion/exception conditions are specified in this subsection.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 60,
+                  "end_index": 60,
+                  "subtree_start_index": 60,
+                  "subtree_end_index": 60
+                },
+                {
+                  "node_id": "0091",
+                  "title": "4.2.16.4 Reply Sequence",
+                  "summary": "Section 4.2.16.4 `Reply Sequence` covers `LINIT` command reply handling for Loop Initialization: `LS_RJT` signifies rejection of the `LINIT` command; `LS_ACC` signifies acceptance of the `LINIT Request` and completion of Loop Initialization. Includes response/branch handling, message/frame format, and completion/exception conditions. `LS_ACC Payload` format is defined in `Table 29 – LINIT LS_ACC Payload`, showing `Word 0 = 02h 00h 00h 00h` and `Word 1 = Reserved Status`; key field name: `Status`. Context on the same page also includes `Table 28 – Initialization Function`, defining `Initialization Function` values: `Normal Initialization` = `0`, `Force Login` = `1`, `Reserved` = `2 - 255`; related identifiers/fields: `L_bit`, `Loop Initialization Soft Assigned (LISA) Sequence`, `LIP Byte 3`, `LIP Byte 4`, `70h`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 61,
+                  "end_index": 61,
+                  "subtree_start_index": 61,
+                  "subtree_end_index": 61
+                }
+              ],
+              "start_index": 60,
+              "end_index": 60,
+              "subtree_start_index": 60,
+              "subtree_end_index": 61
+            },
+            {
+              "node_id": "0092",
+              "title": "4.2.17 Loop Status (LSTS)",
+              "summary": "Section `4.2.17 Loop Status (LSTS)` defines the `LSTS` ELS used to request the `Fabric Controller` to report the state of a specified loop. Contains: `procedure/flow` (`Loop Status Request Sequence`; `LS_ACC or LS_RJT Reply Sequence`), `message/frame format`, and `response/branch handling`. Request Sequence: `S_ID` is the `Nx_Port` requesting status; `D_ID` shall be the `Loop Fabric Address (LFA)` of the loop. Payload format is in `Table 31 – LSTS Payload`, which shows the request frame fields: Word `0` = `LSTS (72h) 00h 00h 00h`, with bits `31 .. 24`, `23 .. 16`, `15 .. 08`, `07 .. 00`. Reply Sequence: `LS_RJT` signifies rejection of the `LSTS` command. Also present: `Table 30 – LINIT Status`, defining `Status` field states `Reserved 0`, `Success` `1`, `Failure` `2`, `Reserved 3-255`.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0093",
+                  "title": "4.2.17.1 Description",
+                  "summary": "Section `4.2.17.1 Description` covers the `LSTS` ELS purpose: requesting the `Fabric Controller` to report the state of the specified loop. Anchors present on this page include `Status` field, `Table 30 – LINIT Status`, state names `Reserved`, `Success - The requested function was completed.`, `Failure - The requested function could not be completed.`, values `0`, `1`, `2`, `3-255`, `4.2.17 Loop Status (LSTS)`, `LSTS Payload`, `Table 31 – LSTS Payload`, `LSTS (72h)`, `LS_ACC`, `LS_RJT`, `S_ID`, `D_ID`, `Loop Fabric Address (LFA)`, `Nx_Port`. `Table 30 – LINIT Status` defines `Status` state/value meanings. `Table 31 – LSTS Payload` shows the request payload word/byte layout with opcode `72h` and `00h` fields. Content types: message/frame format, response/branch handling, completion/exception conditions, procedure/flow.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 62,
+                  "end_index": 62,
+                  "subtree_start_index": 62,
+                  "subtree_end_index": 62
+                },
+                {
+                  "node_id": "0094",
+                  "title": "4.2.17.2 Protocol",
+                  "summary": "Covers `4.2.17.2 Protocol` for `Loop Status (LSTS)`: the defined exchange is `a) Loop Status Request Sequence` followed by `b) LS_ACC or LS_RJT Reply Sequence`. Core topic is the protocol flow for requesting loop status from the Fabric Controller and receiving acceptance or rejection. Named anchors present in nearby protocol context: `LSTS`, `LS_ACC`, `LS_RJT`, `S_ID`, `D_ID`, `Loop Fabric Address (LFA)`, `Nx_Port`, `LSTS Payload`, `LSTS (72h)`, `00h`. `Table 30 – LINIT Status` shows `Status` field values/states: `Reserved 0`, `Success - The requested function was completed. 1`, `Failure - The requested function could not be completed. 2`, `Reserved 3-255`. `Table 31 – LSTS Payload` defines the request payload format. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 62,
+                  "end_index": 62,
+                  "subtree_start_index": 62,
+                  "subtree_end_index": 62
+                },
+                {
+                  "node_id": "0095",
+                  "title": "4.2.17.3 Request Sequence",
+                  "summary": "Section 4.2.17.3 Request Sequence covers the `LSTS` ELS request for `Loop Status Request Sequence`: addressing and payload for requesting loop state from the Fabric Controller. `S_ID` is the `Nx_Port` requesting status; `D_ID` shall be the `Loop Fabric Address (LFA)` of the loop being queried. Payload uses `Table 31 – LSTS Payload`, which shows the request message/frame format: Word `0` = `LSTS (72h) 00h 00h 00h`. Context on the same page also includes `Table 30 – LINIT Status`, which defines `Status` field state values: `Reserved 0`, `Success - The requested function was completed. 1`, `Failure - The requested function could not be completed. 2`, `Reserved 3-255`. Contains: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 62,
+                  "end_index": 62,
+                  "subtree_start_index": 62,
+                  "subtree_end_index": 62
+                },
+                {
+                  "node_id": "0096",
+                  "title": "4.2.17.4 Reply Sequence",
+                  "summary": "Covers `4.2.17.4 Reply Sequence` for `LSTS` (Loop Status), specifically reply handling and returned payload content: `LS_RJT` rejects the `LSTS` command; `LS_ACC` returns loop status for the identified Loop. Content types: response/branch handling, message/frame format, completion/exception conditions. `LS_ACC Payload` format is given in `Table 32 – LSTS LS_ACC Payload`, showing `Word 0 = 02h 00h 00h 00h`, `FC-FLA Compliance Level - obsolete`, `Reserved`, `Failed Receiver`, `Loop State`, `Current Public Loop Devices bit map`, `Current Private Loop Devices bit map`, and `AL_PA Position Map`. Field rules included: `Failed Receiver field` uses `AL_PA`; valid only when `Loop State` indicates `Loop Failure`; set to `00h` if `FL_Port` detected failure, `F7h` if `Fabric Controller` cannot determine the port.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 62,
+                  "end_index": 63,
+                  "subtree_start_index": 62,
+                  "subtree_end_index": 63
+                }
+              ],
+              "start_index": 62,
+              "end_index": 62,
+              "subtree_start_index": 62,
+              "subtree_end_index": 63
+            },
+            {
+              "node_id": "0097",
+              "title": "4.2.18 Registered State Change Notification (RSCN)",
+              "summary": "Core topic: `4.2.18 Registered State Change Notification (RSCN)` / `4.2.18.1 Introduction` defines when an `RSCN ELS` shall be sent to registered `Nx_Ports` to report events that may affect `Nx_Port` state or `ULP` state, including `Login state` and `Link state`, to reduce polling traffic and indicate failed nodes, new devices coming online, or operational changes within an online node. Related page content also defines `Loop State field`, `Current Public Loop Devices`, `Current Private Loop Devices`, and `AL_PA Position Map`; exact `Loop State` names are `Reserved`, `Online`, `Loop Failure`, `Initialization Failure`, `Initializing`, with values `0`, `2`, `3`, `4`, `5 - 255`. `Table 33 – Loop State`: defines `Loop State field` values. Content types: `state machine` (state/value enumeration), `completion/exception conditions` (fields valid only when `Online`; no `AL_PA position map` if `Byte 0` is zero).",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0098",
+                  "title": "4.2.18.1 Introduction",
+                  "summary": "4.2.18.1 Introduction: introduces `Registered State Change Notification (RSCN)` and when a `RSCN ELS` shall be sent to registered `Nx_Ports`—on events affecting the state of one or more `Nx_Ports` or `ULP state` within an `Nx_Port`. Core purpose: timely notification of important state changes (notably `Login state` or `Link state`) to reduce polling traffic, indicate failed nodes, release resources, and announce new devices or operational changes in an online node. Related state context on this page includes `Loop State field`, `Current Public Loop Devices`, `Current Private Loop Devices`, and `AL_PA Position Map`, with states `Reserved`, `Online`, `Loop Failure`, `Initialization Failure`, `Initializing`. `Table 33 – Loop State`: defines Loop State values/status meanings. Content types: state machine, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 64,
+                  "end_index": 64,
+                  "subtree_start_index": 64,
+                  "subtree_end_index": 64
+                },
+                {
+                  "node_id": "0099",
+                  "title": "4.2.18.2 RSCNs issued by the Fabric Controller",
+                  "summary": "Core topic: `4.2.18.2 RSCNs issued by the Fabric Controller` — when the `Fabric Controller` (`FFFFFDh`) shall issue an `RSCN Request` to all registered `Nx_Ports` for an affected `Nx_Port`, and required precondition that Fabric-provided resources such as the `Name Service` are updated before issuance. Enumerates triggering events: implicit `Fabric Logout`, `Loss-of-Signal`, `NOS`, `OLS`, receipt of `FLOGI` with new/different information, loop initialization of affected `L_Port` with `L_bit` set in `LISA Sequence`, new `Fabric Login`, Fabric path/routing changes, other Fabric-detected state changes, and affected `Nx_Port`-issued `RSCN Request` to the `Fabric Controller`. Receiver follow-up operations: `PDISC ELS`, `ADISC ELS`, `Name Service` query, `ULP` query. Content types: procedure/flow; completion/exception conditions. Tables: none. Figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 65,
+                  "end_index": 65,
+                  "subtree_start_index": 65,
+                  "subtree_end_index": 65
+                },
+                {
+                  "node_id": "0100",
+                  "title": "4.2.18.3 RSCN issued by the affected Nx_Port",
+                  "summary": "Core topic: when the affected `Nx_Port` itself shall issue an `RSCN Request`, who receives it, and allowed event qualifiers. `4.2.18.3 RSCN issued by the affected Nx_Port` says an `Nx_Port` shall send an `RSCN Request` to the `Fabric Controller` or an `Nx_Port` registered for `RSCN Requests` or both when it detects an event. `Fabric Controllers` are implicitly registered after successful implicit or explicit `FLOGI`; non-`Fabric Controller` requesters are `registered Nx_Ports`. Unless providing a service associated with a `well known address`, an `Nx_Port` shall only issue `RSCNs` with event qualifier `2h` or `0h`. Events listed: failure within the affected `Nx_Port`; other important state change of the affected `Nx_Port` (e.g., defined by an `FC-4`). Content types: procedure/flow; completion/exception conditions. Tables: none. Figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 65,
+                  "end_index": 65,
+                  "subtree_start_index": 65,
+                  "subtree_end_index": 65
+                },
+                {
+                  "node_id": "0101",
+                  "title": "4.2.18.4 RSCN initiative",
+                  "summary": "Covers `4.2.18.4 RSCN initiative` and adjacent `4.2.18.5 RSCN registration`, `4.2.18.6 Protocol`, `4.2.18.7 Request Sequence`: when an affected `Nx_Port` may initiate one `RSCN Request` for accumulated state changes, prohibition on queuing multiple `RSCN Requests`, and initiation point at transmission of the `SOF` of the first frame of the `RSCN Request Sequence`. Registration rule: only notify `Nx_Ports` registered via `State Change Registration (SCR) ELS`. Protocol anchors: `RSCN Request Sequence`, `LS_ACC`, `LS_RJT Reply Sequence`. Addressing/identifiers: `S_ID`, `D_ID`, `Fabric Controller`, `FFFFFDh`. Message/frame format: `Table 34 – RSCN Payload`, shows `RSCN (61h)`, `Page Length (04h)`, `Payload Length`, `affected Port_ID pages`; field constraints include minimum `8 bytes`, maximum `1024 bytes`, multiple of `4 bytes`. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 66,
+                  "end_index": 66,
+                  "subtree_start_index": 66,
+                  "subtree_end_index": 66
+                },
+                {
+                  "node_id": "0102",
+                  "title": "4.2.18.5 RSCN registration",
+                  "summary": "Covers `4.2.18.5 RSCN registration`: which nodes may issue `RSCN Request`s and the prerequisite registration rule. Core rule: a `Fabric Controller`, service, or `Nx_Port` shall only issue `RSCN` requests to `Nx_Ports` that have registered with the node to be notified of state changes; registration uses the `State Change Registration (SCR) ELS`. Adjacent protocol context present: `RSCN Request Sequence`, `LS_ACC`, `LS_RJT Reply Sequence`; addressing identifiers `S_ID`, `D_ID`, `Fabric Controller`, `FFFFFDh`; payload identifiers `RSCN (61h)`, `Page Length (04h)`, `Payload Length`, `affected Port_ID pages`, `Affected Port_ID Pages`. Table: `Table 34 – RSCN Payload`, shows/defines the `RSCN Request Payload` layout and fields. Content types: procedure/flow, message/frame format, response/branch handling.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 66,
+                  "end_index": 66,
+                  "subtree_start_index": 66,
+                  "subtree_end_index": 66
+                },
+                {
+                  "node_id": "0103",
+                  "title": "4.2.18.6 Protocol",
+                  "summary": "Defines the RSCN `Protocol` exchange elements and points to the sequences used: `RSCN Request Sequence` followed by `LS_ACC or LS_RJT Reply Sequence`. Core topic is the protocol/message structure for `RSCN` notification handling, with surrounding constraints from `RSCN initiative` and `RSCN registration` only insofar as they frame issuance/registration context. Contains: `message/frame format`, `response/branch handling`, `procedure/flow`. `Table 34 – RSCN Payload` shows/defines the `RSCN Request Payload` layout: `RSCN (61h)`, `Page Length (04h)`, `Payload Length`, and `affected Port_ID pages`. Named identifiers/codes present in the adjacent protocol definition path include `S_ID`, `D_ID`, `Fabric Controller`, `Nx_Port`, `FFFFFDh`, `SCR`, and field constraints such as `Payload Length` minimum `8 bytes`, maximum `1024 bytes`, multiple of `4 bytes`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 66,
+                  "end_index": 66,
+                  "subtree_start_index": 66,
+                  "subtree_end_index": 66
+                },
+                {
+                  "node_id": "0104",
+                  "title": "4.2.18.7 Request Sequence",
+                  "summary": "Covers `4.2.18.7 Request Sequence` for `RSCN` Request addressing and payload layout. Specifies `S_ID`/`D_ID` values for Fabric Controller `FFFFFDh`, registered `Nx_Port`, and affected `Nx_Port` destinations when notifying state changes. Defines `RSCN Request Payload` fields: `RSCN (61h)`, `Page Length (04h)`, `Payload Length`, and `Affected Port_ID Pages`; constraints include payload multiple of 4 bytes, minimum `8 bytes`, maximum `1024 bytes`, `1 to 255 pages`. Also defines generic affected `Port_ID` page fields: `RSCN Event Qualifier`, `Address Format`, affected `Port_ID` byte 1 `(Domain)`, byte 2 `(Area)`, byte 3 `(Port)`, plus qualifier values including `CHANGED NAME SERVER OBJECT`, `CHANGED PORT ATTRIBUTE`, `CHANGED SERVICE OBJECT`, `CHANGED SWITCH CONFIGURATION`, `REMOVED OBJECT`. Tables: `Table 34 – RSCN Payload` (payload word/page format), `Table 35 – Generic affected Port_ID page` (page bit/byte layout), `Table 36 – RSCN Event Qualifier values` (qualifier code meanings). Content types: message/frame format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 66,
+                  "end_index": 67,
+                  "subtree_start_index": 66,
+                  "subtree_end_index": 67
+                },
+                {
+                  "node_id": "0105",
+                  "title": "4.2.18.8 Reply Sequence",
+                  "summary": "Section `4.2.18.8 Reply Sequence` covers `RSCN` reply handling: `LS_RJT` signifies rejection of the `RSCN` command, and `LS_ACC` signifies acceptance of the `RSCN Request`. Includes `Table 38 – RSCN LS_ACC Payload`, which shows the `LS_ACC Payload` message/frame format: `Word 0` with bits `31 .. 24`, `23 .. 16`, `15 .. 08`, `07 .. 00` set to `02h 00h 00h 00h`. Also on this page, `Table 37 – Address Format` defines the `Address Format` field values for `Port Address`, `Area Address Group`, `Domain Address Group`, and `Fabric Address Group`, with `Port_ID` byte validity rules. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 68,
+                  "end_index": 68,
+                  "subtree_start_index": 68,
+                  "subtree_end_index": 68
+                }
+              ],
+              "start_index": 64,
+              "end_index": 64,
+              "subtree_start_index": 64,
+              "subtree_end_index": 68
+            },
+            {
+              "node_id": "0106",
+              "title": "4.2.19 State Change Registration (SCR)",
+              "summary": "Section `4.2.19 State Change Registration (SCR)` covers the `SCR ELS` used to have the `Fabric Controller` or an `Nx_Port` add the sending `Nx_Port` to the list registered to receive the `RSCN ELS`. Anchors: `4.2.19.1 Description`, `4.2.19.2 Protocol`, `State Change Registration Request Sequence`, `LS_ACC or LS_RJT Reply Sequence`, `4.2.19.3 Request Sequence`, `S_ID`, `D_ID`, `FFFFFDh`. Addressing says `S_ID` is the requesting `Nx_Port`; `D_ID` is either the `Fabric Controller, FFFFFDh`, or the `Nx_Port` from which `RSCNs` are desired. `Table 37 – Address Format` defines `Address Format` values (`Port Address`, `Area Address Group`, `Domain Address Group`, `Fabric Address Group`). `Table 38 – RSCN LS_ACC Payload` shows the `LS_ACC Payload` with word `0 = 02h 00h 00h 00h`. [procedure/flow] [response/branch handling] [message/frame format]",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0107",
+                  "title": "4.2.19.1 Description",
+                  "summary": "SCR `4.2.19.1 Description`: defines `State Change Registration (SCR)` ELS purpose—requesting the `Fabric Controller` or `Nx_Port` to add the sending `Nx_Port` to the list registered to receive `RSCN` ELS. Nearby anchors explicitly tied to this description block: `4.2.19.2 Protocol` (`State Change Registration Request Sequence`; `LS_ACC or LS_RJT Reply Sequence`) and `4.2.19.3 Request Sequence` with `S_ID`, `D_ID`, `FFFFFDh`. Also includes adjacent `RSCN` reply material: `LS_RJT`, `LS_ACC`, `LS_ACC Payload`, `Table 38 – RSCN LS_ACC Payload` showing payload word `0` = `02h 00h 00h 00h`. `Table 37 – Address Format` defines `Address Format` values: `Port Address`, `Area Address Group`, `Domain Address Group`, `Fabric Address Group`. Content types: procedure/flow, message/frame format, response/branch handling.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 68,
+                  "end_index": 68,
+                  "subtree_start_index": 68,
+                  "subtree_end_index": 68
+                },
+                {
+                  "node_id": "0108",
+                  "title": "4.2.19.2 Protocol",
+                  "summary": "SCR `4.2.19.2 Protocol` defines the `State Change Registration (SCR)` protocol at a high level: `a) State Change Registration Request Sequence` and `b) LS_ACC or LS_RJT Reply Sequence`. Core topic is how an `SCR ELS` interaction is organized for registration to receive `RSCN ELS`, with adjacent reply semantics tied to `LS_ACC` and `LS_RJT`. Named anchors present: `SCR`, `RSCN`, `RSCN ELS`, `LS_ACC`, `LS_RJT`, `State Change Registration Request Sequence`, `LS_ACC or LS_RJT Reply Sequence`. Tables referenced on this page: `Table 37 – Address Format` shows `Address Format` values (`Port Address`, `Area Address Group`, `Domain Address Group`, `Fabric Address Group`); `Table 38 – RSCN LS_ACC Payload` shows the `LS_ACC Payload` word format including `02h 00h 00h 00h`. Content types: procedure/flow, response/branch handling, message/frame format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 68,
+                  "end_index": 68,
+                  "subtree_start_index": 68,
+                  "subtree_end_index": 68
+                },
+                {
+                  "node_id": "0109",
+                  "title": "4.2.19.3 Request Sequence",
+                  "summary": "Core topic: `4.2.19.3 Request Sequence` for `State Change Registration (SCR)` addressing. Specifies `Addressing` for the `SCR Request`: `S_ID` designates the `Nx_Port` requesting registration for `State Change Notification`; `D_ID` designates either the `Fabric Controller`, `FFFFFDh`, or the address of the `Nx_Port` from which `RSCNs` are desired. Related protocol anchors listed nearby: `State Change Registration Request Sequence`, `LS_ACC`, `LS_RJT`, `RSCN`, `Reply Sequence`. `Table 37 – Address Format` defines `Address Format` values for `Port Address`, `Area Address Group`, `Domain Address Group`, and `Fabric Address Group`. `Table 38 – RSCN LS_ACC Payload` shows the `LS_ACC Payload` format with `Word 0 = 02h 00h 00h 00h`. Content types: procedure/flow, message/frame format, response/branch handling.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 68,
+                  "end_index": 68,
+                  "subtree_start_index": 68,
+                  "subtree_end_index": 68
+                },
+                {
+                  "node_id": "0110",
+                  "title": "4.2.19.4 Reply Sequence",
+                  "summary": "Core topic: `4.2.19.4 Reply Sequence` for the `SCR` command, defining reply outcomes and accepted-reply payload for registration to receive `RSCN`. Content types: response/branch handling, message/frame format, completion/exception conditions. `LS_RJT` signifies rejection of the `SCR` command. `LS_ACC` signifies acceptance of the `SCR Request` and registration for `RSCN`. `Table 41 – SCR LS_ACC Payload` shows the `LS_ACC Payload` format: `Word 0 = 02h 00h 00h 00h`. Nearby referenced context on the same page: `Table 40 – Registration Function` defines `Registration Function` values (`Reserved 0`, `Fabric Detected registration 1`, `Nx_Port Detected registration 2`, `Full registration 3`, `Reserved 4 - 254`, `Clear registration 255`). No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 69,
+                  "end_index": 69,
+                  "subtree_start_index": 69,
+                  "subtree_end_index": 69
+                }
+              ],
+              "start_index": 68,
+              "end_index": 68,
+              "subtree_start_index": 68,
+              "subtree_end_index": 69
+            },
+            {
+              "node_id": "0111",
+              "title": "4.2.20 Process login (PRLI)",
+              "summary": "Core topic: `4.2.20 Process login (PRLI)` introduction—`PRLI ELS` is used to establish the operating environment between a group of related processes at the originating `Nx_Port` and a group of related processes at the responding `Nx_Port` (see `7.1`, page shows `50`). Nearby carried content also includes `SCR` reply handling: `LS_RJT` rejects the `SCR` command; `LS_ACC` accepts the `SCR Request` and registration for `RSCN`. Key anchors: `Registration Function`, `Reserved`, `Fabric Detected registration`, `Nx_Port Detected registration`, `Full registration`, `Clear registration`, codes `62h`, `02h`, values `0`, `1`, `2`, `3`, `255`. Tables: `Table 38 – RSCN LS_ACC Payload` shows payload format; `Table 40 – Registration Function` defines function values; `Table 41 – SCR LS_ACC Payload` shows `LS_ACC` payload. Content types: message/frame format, response/branch handling.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0112",
+                  "title": "4.2.20.1 Introduction",
+                  "summary": "Core topic: `4.2.20.1 Introduction` introduces `Process login (PRLI)` and states that the `PRLI ELS` is used to establish the operating environment between a group of related processes at the originating `Nx_Port` and a group of related processes at the responding `Nx_Port` (see `7.1`). Nearby carried-over SCR material on this page includes `SCR Request Payload`, `Registration Function`, `LS_RJT`, `LS_ACC`, `RSCN`, codes `62h`, `02h`, `255`, and field names `Reserved` and `Registration Function`. Tables: `Table 40 – Registration Function` defines `Function`/`Value` mappings including `Fabric Detected registration`, `Nx_Port Detected registration`, `Full registration`, and `Clear registration`; `Table 41 – SCR LS_ACC Payload` shows the `LS_ACC Payload` format (`02h 00h 00h 00h`). Content types: message/frame format, response/branch handling.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 69,
+                  "end_index": 69,
+                  "subtree_start_index": 69,
+                  "subtree_end_index": 69
+                },
+                {
+                  "node_id": "0113",
+                  "title": "4.2.20.2 Protocol",
+                  "summary": "Covers `4.2.20.2 Protocol` for `Process Login` (`PRLI`) behavior: `a) Process Login Request Sequence` and `b) LS_ACC or LS_RJT Reply Sequence` — a `procedure/flow` plus `response/branch handling`. Gives `message/frame format` details for the `PRLI Payload` in `Table 42 – PRLI Payload`: `Word 0` contains `PRLI (20h)`, `Page Length`, `Payload Length`; `Words 1..N` contain `Service Parameter page`. Names/addressing fields `S_ID` and `D_ID`. Constrains `Page Length` (minimum `12`, right-most two bits zero) and `Payload Length` (`16-bit`, right-most two bits zero, `>= 16` and `<= 65 532`). References `table 43`. Present table metadata: `Table 41 – SCR LS_ACC Payload` shows `SCR LS_ACC Payload` layout/fields.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 70,
+                  "end_index": 70,
+                  "subtree_start_index": 70,
+                  "subtree_end_index": 70
+                },
+                {
+                  "node_id": "0114",
+                  "title": "4.2.20.3 Request Sequence",
+                  "summary": "Section `4.2.20.3 Request Sequence` covers the `Process Login` (`PRLI (20h)`) request message/frame format and addressing for a `PRLI Payload`: `S_ID` = requesting `Nx_Port`, `D_ID` = destination `Nx_Port`. Defines `Payload` layout in `Table 42 – PRLI Payload` (shows word/byte structure: `PRLI (20h)`, `Page Length`, `Payload Length`, `Service Parameter page`) and `Table 43 – PRLI service parameter page format` (defines `TYPE Code or Common Service Parameters`, `TYPE Code Extension`, `Originator Process_Associator Validity`, `Responder Process_Associator Validity`, `Establish Image Pair`, `Originator Process_Associator`, `Responder Process_Associator`, FC-4-specific `Service Parameters`). Key constraints/codes: `Page Length` minimum `12`, right-most two bits zero; `Payload Length` `>= 16` and `<= 65 532`, right-most two bits zero; `00h` indicates common service parameters. [message/frame format] [procedure/flow]",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 70,
+                  "end_index": 71,
+                  "subtree_start_index": 70,
+                  "subtree_end_index": 71
+                },
+                {
+                  "node_id": "0115",
+                  "title": "4.2.20.4 Reply Sequence",
+                  "summary": "Section `4.2.20.4 Reply Sequence` covers PRLI reply handling for `LS_RJT` (rejection) and `LS_ACC` (successful completion) of the `PRLI Request`, including `PRLI LS_ACC Payload` and `Service Parameter Response page` structure. Content types: `message/frame format`, `response/branch handling`, `completion/exception conditions`. `Table 44 – PRLI LS_ACC Payload` shows payload layout: `02h`, `Page length`, `Payload length`, `Service parameter response page`; constraints include right-most two bits zero, `Payload length` `>= 16` and `<= 65 532`. `Table 45 – PRLI LS_ACC service parameter response page format` defines fields `TYPE Code or Common Service Parameters`, `TYPE Code Extension`, `Originator Process_Associator Validity`, `Responder Process_Associator Validity`, `Image Pair Established`, `Response Code`, `Originator Process_Associator`, `Responder Process_Associator`, `Service Parameter Response`. `Table 46 – PRLI accept response code` defines codes `0001b Request executed`, `0010b` retry/no resources, `0011b` retry/initialization incomplete, `0100b`, `0101b` no retry, `0110b Request executed conditionally`, `1000b Service Parameters are invalid`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 72,
+                  "end_index": 74,
+                  "subtree_start_index": 72,
+                  "subtree_end_index": 74
+                }
+              ],
+              "start_index": 69,
+              "end_index": 69,
+              "subtree_start_index": 69,
+              "subtree_end_index": 74
+            },
+            {
+              "node_id": "0116",
+              "title": "4.2.21 Process logout (PRLO)",
+              "summary": "Section 4.2.21 covers `Process logout (PRLO)`: the `PRLO` ELS requests invalidation of the operating environment between an initiating `Nx_Port` image and a recipient `Nx_Port` image, freeing resources from a previous `PRLI` function. Includes `procedure/flow` and `response/branch handling`: protocol lists `Process Logout Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`. Includes `message/frame format`: request sequence uses `S_ID` for the requesting `Nx_Port` and `D_ID` for the destination `Nx_Port`. `Table 47 – PRLO Payload` shows the `PRLO Payload` format: `PRLO (21h)`, `Obsolete (10h)` (obsolete, shall be set to `10h`), `Payload Length` (shall be `20`), and `Logout Parameter page` in Words `1:N`; payload word `0` plus single-image-pair logout parameters, optionally tied to a single `FC-4 TYPE` or common to all `FC-4 TYPE` codes.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0117",
+                  "title": "4.2.21.1 Description",
+                  "summary": "Describes `Process logout (PRLO)` / `PRLO ELS`: request invalidation of the operating environment between an image at the initiating `Nx_Port` and an image at the recipient `Nx_Port`, freeing resources committed by a previous `PRLI` function (see `7.2`). Content types: procedure/flow, message/frame format, response/branch handling. Protocol names the `Process Logout Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`. Request Sequence identifies addressing fields `S_ID` (requesting `Nx_Port`) and `D_ID` (destination `Nx_Port`). `Table 47 – PRLO Payload` shows the `PRLO Payload` format: `PRLO (21h)`, `Obsolete (10h)` for compatibility, `Payload Length`, and `Logout Parameter page`. Field rules stated: `Payload length` shall be `20`; `Logout Parameter page` in `Words 1:N` covers a single image pair and may be per single `FC-4 TYPE` or common to all `FC-4 TYPE` codes.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 75,
+                  "end_index": 75,
+                  "subtree_start_index": 75,
+                  "subtree_end_index": 75
+                },
+                {
+                  "node_id": "0118",
+                  "title": "4.2.21.2 Protocol",
+                  "summary": "PRLO protocol overview for `4.2.21.2 Protocol`: defines the exchange structure for `Process logout (PRLO)` as a `procedure/flow` with `response/branch handling`. Named sequences are `Process Logout Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`, indicating request followed by either accept or reject reply. This section sits under the PRLO ELS that invalidates the operating environment and frees resources from a previous `PRLI` function, but the protocol content here is limited to sequence names only. Related `message/frame format` reference: `Table 47 – PRLO Payload` — shows the `PRLO Payload` layout, including `PRLO (21h)`, `Obsolete (10h)`, `Payload Length`, and `Logout Parameter page`; field/codes mentioned in adjacent protocol context include `S_ID`, `D_ID`, payload length `20`, and hex values `21h`, `10h`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 75,
+                  "end_index": 75,
+                  "subtree_start_index": 75,
+                  "subtree_end_index": 75
+                },
+                {
+                  "node_id": "0119",
+                  "title": "4.2.21.3 Request Sequence",
+                  "summary": "Section `4.2.21.3 Request Sequence` indexes the `PRLO` ELS request sequence for `Process Logout`: addressing and request payload only. `Addressing`: `S_ID` designates the `Nx_Port` requesting `Process Logout`; `D_ID` designates the destination `Nx_Port`. `Payload`: format is in `Table 47 – PRLO Payload`, which defines the `PRLO Payload` word layout and field contents. Exact fields/codes: `PRLO (21h)`, `Obsolete (10h)` (obsolete but shall be set to `10h` for compatibility), `Payload Length`, `Logout Parameter page`, `Words 1:N`, `FC-4 TYPE`. Constraints: `Payload length` shall be `20`; `Logout Parameter page` is `(4 words)`, contains logout parameters for a single image pair, and may apply to a single `FC-4 TYPE` or all `FC-4 TYPE` codes. Content types: message/frame format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 75,
+                  "end_index": 75,
+                  "subtree_start_index": 75,
+                  "subtree_end_index": 75
+                },
+                {
+                  "node_id": "0120",
+                  "title": "4.2.21.4 Reply sequence",
+                  "summary": "Section 4.2.21.4 Reply sequence covers PRLO reply outcomes and payload/response-page formats for `LS_RJT` (rejects PRLO Request) and `LS_ACC` (successful completion of the PRLO Request). Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions. `LS_ACC Payload` uses Word 0 fields `02h`, obsolete `10h`, and `Payload Length`=`20`; Words 1:N carry a `Logout Parameter Response page`. Key fields/identifiers: `TYPE Code or Common Logout Parameters`, `TYPE Code Extension`, `Originator Process_Associator Validity`, `Responder Process_Associator Validity`, `Response Code`, `Originator Process_Associator`, `Responder Process_Associator`; `00h` means common to all FC-4 Types. Table 48 – PRLO logout parameter page format: defines PRLO Logout Parameter page fields. Table 49 – PRLO LS_ACC Payload: shows LS_ACC payload layout. Table 50 – PRLO LS_ACC logout parameter response page format: defines response-page fields. Table 51 – PRLO accept response code: maps encoded values (`0001b` Request executed, `0100b` recipient does not exist; PRLO Request shall not be retried).",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 76,
+                  "end_index": 78,
+                  "subtree_start_index": 76,
+                  "subtree_end_index": 78
+                }
+              ],
+              "start_index": 75,
+              "end_index": 75,
+              "subtree_start_index": 75,
+              "subtree_end_index": 78
+            },
+            {
+              "node_id": "0121",
+              "title": "4.2.22 Test Process Login State (TPLS)",
+              "summary": "Section 4.2.22 defines `Test Process Login State (TPLS)`: an ELS used to determine whether image pairs are established for the combination `S_ID || Originator Process_Associator || D_ID || Responder Process_Associator`, and to verify `Login state` for the source `Nx_Port` at the destination `Nx_Port`. Protocol content includes `Test Process Login State Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`; `LS_ACC Reply Sequence` confirms completion and reports whether an image pair is established, with Payload indicating image-pair state. Request Sequence specifies addressing via `S_ID` and `D_ID`, and Payload fields. `Table 52 – TPLS Payload` defines the request payload/message format: `TPLS (23h)`, `Obsolete (10h)`, `Payload Length`, `Image Pair ID page`; `Payload length shall be 20`; `Words 1:N`. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0122",
+                  "title": "4.2.22.1 Description",
+                  "summary": "Section `4.2.22.1 Description` covers `Test Process Login State (TPLS)` ELS purpose and request/reply behavior: determining whether image pairs are established for `S_ID || Originator Process_Associator || D_ID || Responder Process_Associator`; the receiving `Nx_Port` checks each specified image and verifies `Login state` for the source `Nx_Port` at the destination `Nx_Port`. `LS_ACC Reply Sequence` confirms successful completion and reports whether an image pair is established; `LS_RJT Reply Sequence` is named in protocol. Includes content types: response/branch handling, completion/exception conditions, message/frame format. `Table 52 – TPLS Payload` defines the `TPLS Payload` layout: `TPLS (23h)`, `Obsolete (10h)`, `Payload Length`, and `Image Pair ID page`; `S_ID` designates source `Nx_Port`, `D_ID` designates destination `Nx_Port`; payload length shall be `20`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 79,
+                  "end_index": 79,
+                  "subtree_start_index": 79,
+                  "subtree_end_index": 79
+                },
+                {
+                  "node_id": "0123",
+                  "title": "4.2.22.2 Protocol",
+                  "summary": "TPLS `4.2.22.2 Protocol` index: defines the protocol outline for `Test Process Login State (TPLS)` as a minimal exchange: `a) Test Process Login State Request Sequence` followed by `b) LS_ACC or LS_RJT Reply Sequence`. Core topic: message-level protocol steps for verifying login/image-pair state between Nx_Ports. Named anchors present: `TPLS`, `LS_ACC`, `LS_RJT`, `Test Process Login State Request Sequence`, `Reply Sequence`. Content types: procedure/flow; response/branch handling; completion/exception conditions. Related format material immediately referenced from the same protocol context: `Table 52 – TPLS Payload`, which defines/shows the `TPLS Payload` layout with fields `TPLS (23h)`, `Obsolete (10h)`, `Payload Length`, and `Image Pair ID page`. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 79,
+                  "end_index": 79,
+                  "subtree_start_index": 79,
+                  "subtree_end_index": 79
+                },
+                {
+                  "node_id": "0124",
+                  "title": "4.2.22.3 Request Sequence",
+                  "summary": "Core topic: `4.2.22.3 Request Sequence` for `Test Process Login State (TPLS)` request formatting and addressing within `4.2.22 Test Process Login State (TPLS)`. Content types: `message/frame format`, `procedure/flow`. Defines Request Sequence `Addressing` and `Payload` for `TPLS Request`: `S_ID` designates the source `Nx_Port` associated with the image pair; `D_ID` designates the destination `Nx_Port` associated with the image pair. `Table 52 – TPLS Payload` shows the `TPLS Payload` layout: `Word 0` contains `TPLS (23h)`, `Obsolete (10h)a`, `Payload Length`; `Words 1:N` contain `Image Pair ID page`. Exact constraints/codes: `Payload length` shall be `20`; obsolete field shall be set to `10h` for compatibility. Mentions `Image Pair ID page` format is described in `table 53`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 79,
+                  "end_index": 79,
+                  "subtree_start_index": 79,
+                  "subtree_end_index": 79
+                },
+                {
+                  "node_id": "0125",
+                  "title": "4.2.22.4 Reply sequence",
+                  "summary": "Core topic: `4.2.22.4 Reply sequence` for TPLS request completion/rejection. Contains **procedure/flow**, **message/frame format**, **response/branch handling**, **completion/exception conditions**. `LS_RJT` signifies rejection of the `TPLS Request`; `LS_ACC` signifies successful completion. `Table 54 – TPLS LS_ACC Payload` shows the `LS_ACC Payload` format: Word 0 fields `(02h)`, `Obsolete (10h)` (obsolete, shall be set to `10h`), `Payload Length`; Words `1..N` carry `TPLS Response page`; `Payload length` shall be `20`. `Table 53 – TPLS image pair ID page format` defines `Originator Process_Associator Validity`, `Responder Process_Associator Validity`, `Originator Process_Associator`, `Responder Process_Associator`. `Table 55 – TPLS response page format` defines `Response Code (see table 56)` and `Image Pair State` plus the same Process_Associator validity/identifier fields.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 80,
+                  "end_index": 81,
+                  "subtree_start_index": 80,
+                  "subtree_end_index": 81
+                }
+              ],
+              "start_index": 79,
+              "end_index": 79,
+              "subtree_start_index": 79,
+              "subtree_end_index": 81
+            },
+            {
+              "node_id": "0126",
+              "title": "4.2.23 Request Node Identification Data (RNID)",
+              "summary": "Covers `4.2.23 Request Node Identification Data (RNID)` introduction and start of protocol for the `RNID ELS`, used to acquire `Node Identification Data`. Normal reply is `Accept (ACC) ELS Sequence` with `Node Identification Data` payload. Unsupported `RNID ELS` returns `LS_RJT ELS Sequence` with reason code `Command not supported`. Unsupported requested format returns `LS_RJT ELS Sequence` with reason code `Unable to perform command request` and reason code explanation `Unable to supply requested data`, or `Accept ELS Payload` containing only `Common Identification Data` (see `Table 61`). Addresses/identifiers include `Nx_Port`, `Fx_Port`, `ULP`, `Fabric Controller (FFFFFDh)`. Destination handling distinguishes known `Fx_Port`, receiving `Nx_Port`, and reply representing the Fabric Controller node. Content types: procedure/flow, response/branch handling, completion/exception conditions. `Table 56 – TPLS accept response code`: defines `Response code` encoded values and `Image pair state`.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0127",
+                  "title": "4.2.23.1 Introduction",
+                  "summary": "RNID ELS introduction and reply behavior for acquiring Node Identification Data. Covers `Request Node Identification Data (RNID)`, normal `Accept (ACC) ELS Sequence` with `Node Identification Data`, and reject cases via `LS_RJT ELS Sequence` using reason code `Command not supported`, or `Unable to perform command request` with reason code explanation `Unable to supply requested data`. Notes alternate accept reply containing only `Common Identification Data` (see `Table 61`), ULP retry with different `Node Identification Data Format request`, and scope limits for further discovery processing. Addressing rules include `Nx_Port`, `Fx_Port`, `Fabric Controller (FFFFFDh)`, and when replies represent the Fabric Controller node or a target `Nx_Port`. Also includes carryover context from `Table 56 – TPLS accept response code`, defining `Response code` values and `Image pair state` (`image pair established`, `image pair not established`). Content types: response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 82,
+                  "end_index": 82,
+                  "subtree_start_index": 82,
+                  "subtree_end_index": 82
+                },
+                {
+                  "node_id": "0128",
+                  "title": "4.2.23.2 Protocol",
+                  "summary": "Core topic: `4.2.23.2 Protocol` for `Request Node Identification Data (RNID)`; begins `a) Request Node-Identification (RNID) request Sequence` (`63`). Context immediately preceding protocol defines RNID behavior: normal response is `Accept (ACC) ELS Sequence` with `Node Identification Data`; unsupported `RNID ELS` returns `LS_RJT ELS Sequence` with reason code `Command not supported`; unsupported format returns `LS_RJT ELS Sequence` with reason code `Unable to perform command request` and reason code explanation `Unable to supply requested data`, or `Accept ELS Payload` containing only `Common Identification Data`. Addressing/identifiers present: `Nx_Port`, `Fx_Port`, `Fabric Controller (FFFFFDh)`. [content types: procedure/flow, response/branch handling, completion/exception conditions] Table `56 – TPLS accept response code`: defines `Response code` encoded values in `Word 0, Bits 11-8` (`0001b Request executed`, others `Reserved`, `0111b Obsolete`) and `Image pair state` (`image pair established` / `image pair not established`).",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 82,
+                  "end_index": 82,
+                  "subtree_start_index": 82,
+                  "subtree_end_index": 82
+                },
+                {
+                  "node_id": "0129",
+                  "title": "4.2.23.3 Request Sequence",
+                  "summary": "RNID request sequence for Link Services, covering addressing and payload contents before `4.2.23.4 Reply Sequence`. Content types: procedure/flow, message/frame format, response/branch handling. `S_ID` designates requesting source port or Fabric Controller (`FFFFFDh`); `D_ID` designates receiving `Nx_Port` or `Fx_Port` or Fabric Controller (`FFFFFDh`). `RNID Payload` uses `RNID (78h)` with `00h 00h 00h`, plus `Node Identification Data Format`. `Table 57 – RNID Payload` defines the RNID payload word/byte layout. `Table 58 – Node Identification Data Format` defines values and meanings: `00h` Common Identification Data only, `01h – DEh` specific ULP `FC-4 TYPE`, `DFh` General Topology Discovery format, `E0h – FFh` vendor specific format. Reply branch names referenced: `LS_ACC`, `LS_RJT`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 83,
+                  "end_index": 83,
+                  "subtree_start_index": 83,
+                  "subtree_end_index": 83
+                },
+                {
+                  "node_id": "0130",
+                  "title": "4.2.23.4 Reply Sequence",
+                  "summary": "RNID `4.2.23.4 Reply Sequence`: reply handling for `LS_ACC` / `LS_RJT` after RNID request; core content is RNID accept/reject semantics and `RNID Accept Payload` layout. `LS_RJT` signifies rejection of the RNID request; `LS_ACC` signifies acceptance and presents `Node Identification Data Format`. `Table 59 – RNID Accept Payload` shows accept payload/message format: word 0 `02h 00h 00h 00h`, fields `Common Identification Data Length (0 or 16)`, `Specific Identification Data Length`, `Common Identification Data`, `Specific Identification Data (m)`. `Table 60 – Node Identification Data Format` defines reply-format values: `00h`, `01h – DEh`, `DFh`, `E0h – FFh`. Length rules: common length `16` or `zero`; specific length multiple of `4`, min `zero`, max `252`. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 83,
+                  "end_index": 84,
+                  "subtree_start_index": 83,
+                  "subtree_end_index": 84
+                },
+                {
+                  "node_id": "0131",
+                  "title": "4.2.23.5 General Topology Discovery format:",
+                  "summary": "Defines the RNID `LS_ACC` payload when `Node Identification Data Format` = `DFh` (`4.2.23.5 General Topology Discovery format`): required lengths (`Common Identification-Data length` = 16, `Specific Identification-Data length` = 52), inclusion of `Common Node Identification Data` and `Specific Identification Data`, and field semantics for `Vendor Unique`, `Associated Type`, `Physical Port Number`, `Number of Attached Nodes`, `Node Management`, `IP Version`, `UDP/TCP Port Number`, `IP Address`. Includes `N_Port_Name`, `Node_Name`, `Nx_Port`, `Fx_Port`, `FL_Port`, `DFh`, `00h`-`05h`, `FFh`. `Table 61 – Common Identification Data`: layout of `N_Port_Name`/`Node_Name`. `Table 62 – General Topology Specific Identification Data`: field layout for general topology discovery. `Table 63 – Associated Type`: node/function type codes. `Table 64 – Multi-function device bit definitions`: bit meanings for multifunction devices. `Table 65 – Node Management`: protocol code values. `Table 66 – IP Version`: IP version codes and meaning. Content types: message/frame format, response/branch handling.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 85,
+                  "end_index": 89,
+                  "subtree_start_index": 85,
+                  "subtree_end_index": 89
+                }
+              ],
+              "start_index": 82,
+              "end_index": 82,
+              "subtree_start_index": 82,
+              "subtree_end_index": 89
+            }
+          ],
+          "start_index": 36,
+          "end_index": 36,
+          "subtree_start_index": 36,
+          "subtree_end_index": 145
+        }
+      ],
+      "start_index": 36,
+      "end_index": 36,
+      "subtree_start_index": 36,
+      "subtree_end_index": 150
+    }
+  ],
+  "next_steps": {
+    "options": [
+      "Request next part with part: 3",
+      "Jump to last part with part: 7",
+      "Request previous part with part: 1",
+      "Proceed to get_page_content() for specific sections"
+    ],
+    "summary": "Showing part 2 of 7."
+  },
+  "pagination": {
+    "part": "2",
+    "has_more": true,
+    "total_parts": "7"
+  },
+  "total_parts": "7"
+}

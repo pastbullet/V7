@@ -1,0 +1,530 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 47,
+  "spans": [
+    {
+      "span_id": "p047_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0002",
+      "text": " 28",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0003",
+      "text": "4.2.5.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        57.65,
+        209.29,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0004",
+      "text": "None.",
+      "bbox": [
+        96.0,
+        82.97,
+        122.64,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0005",
+      "text": "4.2.6",
+      "bbox": [
+        96.0,
+        106.97,
+        118.19,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0006",
+      "text": "Establish Streaming (ESTS)",
+      "bbox": [
+        128.2,
+        106.97,
+        259.81,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0007",
+      "text": "4.2.6.1  Description",
+      "bbox": [
+        96.0,
+        130.97,
+        187.03,
+        142.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0008",
+      "text": "The ESTS ELS requests a temporary allocation of Credit known as Streaming Credit large enough to",
+      "bbox": [
+        96.0,
+        154.96,
+        539.94,
+        166.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0009",
+      "text": "perform continuous streaming of Data frames.  The SOF of the ESTS Request identifies the class for",
+      "bbox": [
+        96.0,
+        166.96,
+        540.07,
+        178.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0010",
+      "text": "which Credit is being estimated. See FC-FS-2 for the usage of this frame.",
+      "bbox": [
+        96.0,
+        178.96,
+        420.31,
+        190.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0011",
+      "text": "4.2.6.2  Protocol",
+      "bbox": [
+        96.0,
+        202.96,
+        172.6,
+        214.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0012",
+      "text": "a) Establish Streaming Request Sequence",
+      "bbox": [
+        106.02,
+        226.96,
+        299.1,
+        238.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0013",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence",
+      "bbox": [
+        106.02,
+        250.96,
+        287.89,
+        262.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0014",
+      "text": "4.2.6.3  Request Sequence",
+      "bbox": [
+        96.0,
+        274.96,
+        221.54,
+        286.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0015",
+      "text": "Addressing:",
+      "bbox": [
+        96.0,
+        298.96,
+        155.0,
+        310.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0016",
+      "text": " The S_ID field designates the source Nx_Port requesting Streaming.  The D_ID field",
+      "bbox": [
+        155.1,
+        298.96,
+        539.98,
+        310.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p047_s0017",
+      "text": "designates the destination Nx_Port addressed.",
+      "bbox": [
+        96.0,
+        310.96,
+        303.19,
+        322.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0018",
+      "text": "Payload:",
+      "bbox": [
+        96.0,
+        334.96,
+        137.66,
+        346.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0019",
+      "text": " The format of the Payload is shown in table 10.",
+      "bbox": [
+        137.64,
+        334.96,
+        348.67,
+        346.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p047_s0020",
+      "text": "4.2.6.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        442.96,
+        209.29,
+        454.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0021",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        466.96,
+        138.19,
+        478.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0022",
+      "text": "LS_RJT signifies rejection of the ESTS command",
+      "bbox": [
+        138.18,
+        466.96,
+        357.0,
+        478.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p047_s0023",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        490.96,
+        142.05,
+        502.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0024",
+      "text": "LS_ACC signifies successful completion of the ESTS function.  The format of the LS_ACC",
+      "bbox": [
+        142.08,
+        490.96,
+        540.08,
+        502.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p047_s0025",
+      "text": "Payload is shown in table 11.  The Payload shall contain Streaming Credit allocated in the Nx_Port",
+      "bbox": [
+        96.0,
+        502.96,
+        539.89,
+        514.08
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0026",
+      "text": "end-to-end Credit field of the appropriate Class Service Parameters (see 6.6.5).  The Class Validity",
+      "bbox": [
+        96.0,
+        514.96,
+        539.91,
+        526.08
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0027",
+      "text": "bit, when set to one, identifies the class that contains the Streaming Credit.  The recipient shall ignore",
+      "bbox": [
+        96.0,
+        526.96,
+        539.97,
+        538.08
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0028",
+      "text": "the other Service Parameter fields.",
+      "bbox": [
+        96.0,
+        538.96,
+        249.85,
+        550.08
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0029",
+      "text": " Table 10 – ESTS Payload",
+      "bbox": [
+        257.46,
+        356.98,
+        378.5,
+        368.1
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0030",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        379.0,
+        133.06,
+        390.12
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0031",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        391.0,
+        136.35,
+        402.12
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0032",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        379.0,
+        233.97,
+        390.12
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0033",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        379.0,
+        328.41,
+        390.12
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0034",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        379.0,
+        427.0,
+        390.12
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0035",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        379.0,
+        522.83,
+        390.12
+      ],
+      "block_index": 18,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0036",
+      "text": "0",
+      "bbox": [
+        120.84,
+        407.98,
+        126.38,
+        419.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0037",
+      "text": "ESTS (0Bh)",
+      "bbox": [
+        149.88,
+        407.98,
+        203.23,
+        419.1
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0038",
+      "text": "00h",
+      "bbox": [
+        247.13,
+        407.98,
+        263.81,
+        419.1
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0039",
+      "text": "00h",
+      "bbox": [
+        344.37,
+        407.98,
+        361.02,
+        419.1
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p047_s0040",
+      "text": "00h",
+      "bbox": [
+        441.52,
+        407.98,
+        458.17,
+        419.1
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0012"
+  ]
+}

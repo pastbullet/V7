@@ -1,0 +1,148 @@
+{
+  "doc_id": "FC-LS.pdf",
+  "unit_id": "fabric_login_completion",
+  "reading_md": "Section 6.2.5 defines when the FLOGI originator considers Fabric Login ended for Class 1, 2, and 3. Section 6.2.6 defines when the FLOGI responder considers Fabric Login ended for Class 1, 2, and 3. The same section text states that buffer-to-buffer Credit values are initialized when login has ended, and explicitly when Fabric Login has ended successfully for the responder case.",
+  "claim_candidates": [
+    {
+      "claim_id": "fabric_login_completion.originator.class1",
+      "text": "For a FLOGI originator in Class 1, Fabric Login is considered ended when the originator has transmitted the ACK (EOFt or EOFdt) to the LS_ACC.",
+      "kind": "completion_condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p156_s0015",
+          "quote": "a) in Class 1, the Originator has transmitted the ACK (EOF"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p156_s0017",
+          "quote": " or EOF"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p156_s0018",
+          "quote": "dt"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p156_s0019",
+          "quote": ") to the LS_ACC, or"
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_completion.originator.class2",
+      "text": "For a FLOGI originator in Class 2, Fabric Login is considered ended when the originator has transmitted the ACK (EOFt) to the LS_ACC.",
+      "kind": "completion_condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p156_s0020",
+          "quote": "b) in Class 2, the Originator has transmitted the ACK (EOF"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p156_s0021",
+          "quote": "t"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p156_s0022",
+          "quote": ") to the LS_ACC, or"
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_completion.originator.class3",
+      "text": "For a FLOGI originator in Class 3, Fabric Login is considered ended when the originator has received the LS_ACC.",
+      "kind": "completion_condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p156_s0024",
+          "quote": "in Class 3, the Originator has received the LS_ACC."
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_completion.responder.class1",
+      "text": "For a FLOGI responder in Class 1, Fabric Login is considered ended when the responder has received the ACK (EOFt or EOFdt) to the LS_ACC.",
+      "kind": "completion_condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p156_s0029",
+          "quote": "a) in Class 1, the Responder has received the ACK (EOF"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p156_s0031",
+          "quote": " or EOF"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p156_s0032",
+          "quote": "dt"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p156_s0033",
+          "quote": ") to the LS_ACC, or"
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_completion.responder.class2",
+      "text": "For a FLOGI responder in Class 2, Fabric Login is considered ended when the responder has received the ACK (EOFt) to the LS_ACC.",
+      "kind": "completion_condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p156_s0034",
+          "quote": "b) in Class 2, the Responder has received the ACK (EOF"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p156_s0035",
+          "quote": "t"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p156_s0036",
+          "quote": ") to the LS_ACC, or"
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_completion.responder.class3",
+      "text": "For a FLOGI responder in Class 3, Fabric Login is considered ended when the responder has transmitted the LS_ACC.",
+      "kind": "completion_condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p156_s0038",
+          "quote": "in Class 3, the Responder has transmitted the LS_ACC."
+        }
+      ]
+    },
+    {
+      "claim_id": "fabric_login_completion.b2b_credit_after_success",
+      "text": "When Fabric Login has ended successfully, the values of buffer-to-buffer Credit are initialized.",
+      "kind": "completion_condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p156_s0039",
+          "quote": "When Fabric Login has ended successfully, the values of buffer-to-buffer Credit are initialized."
+        }
+      ]
+    }
+  ]
+}

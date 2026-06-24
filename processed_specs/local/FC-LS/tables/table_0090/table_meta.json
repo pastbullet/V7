@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0090",
+  "type": "table",
+  "caption": "Table 86 – N_Port Activate Alias_ID LS_ACC Payload",
+  "pages": [
+    106
+  ],
+  "bbox": [
+    97.81,
+    122.62,
+    538.19,
+    167.36
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 106
+}

@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 179, "bbox": [92.89, 483.64, 141.46, 512.34]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 16", "page": 179, "bbox": [141.46, 483.64, 336.29, 512.34]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "15 .. 00", "page": 179, "bbox": [336.29, 483.64, 542.61, 512.34]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 179, "bbox": [92.89, 512.34, 141.46, 529.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Service Options", "page": 179, "bbox": [141.46, 512.34, 336.29, 529.35]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Reserved", "page": 179, "bbox": [336.29, 512.34, 542.61, 529.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 179, "bbox": [92.89, 529.35, 141.46, 546.39]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Recipient Control", "page": 179, "bbox": [141.46, 529.35, 336.29, 546.39]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "Reserved", "page": 179, "bbox": [336.29, 529.35, 542.61, 546.39]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "2", "page": 179, "bbox": [92.89, 546.39, 141.46, 563.52]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Reserved", "page": 179, "bbox": [141.46, 546.39, 336.29, 563.52]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Reserved", "page": 179, "bbox": [336.29, 546.39, 542.61, 563.52]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "3", "page": 179, "bbox": [92.89, 563.52, 141.46, 580.35]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "CR_TOV", "page": 179, "bbox": [141.46, 563.52, 542.61, 580.35]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "", "page": 179, "bbox": [0.0, 0.0, 0.0, 0.0]}

@@ -1,0 +1,567 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 162,
+  "spans": [
+    {
+      "span_id": "p162_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0002",
+      "text": " 143",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0003",
+      "text": "unpredictable.  If an Nx_Port receives a Logout request while another Sequence is open that was ini-",
+      "bbox": [
+        96.0,
+        57.65,
+        539.99,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0004",
+      "text": "tiated from the requesting Nx_Port, it may reject the Logout request using an LS_RJT (Link Service",
+      "bbox": [
+        96.0,
+        69.65,
+        539.92,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0005",
+      "text": "Reject).",
+      "bbox": [
+        96.0,
+        81.65,
+        130.36,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0006",
+      "text": "After an explicit Logout is performed with an Nx_Port, the default Login Service Parameters specified",
+      "bbox": [
+        96.0,
+        106.97,
+        539.98,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0007",
+      "text": "in table 150 and table 155 shall be functional if Login was explicit.  After an explicit Logout is per-",
+      "bbox": [
+        96.0,
+        118.97,
+        539.5,
+        130.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0008",
+      "text": "formed with an Nx_Port, the implicit Login Service Parameters shall be functional if Login was implic-",
+      "bbox": [
+        96.0,
+        130.97,
+        539.97,
+        142.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0009",
+      "text": "it.",
+      "bbox": [
+        96.0,
+        142.96,
+        103.75,
+        154.08
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0010",
+      "text": "6.4.3",
+      "bbox": [
+        96.0,
+        166.96,
+        118.22,
+        178.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0011",
+      "text": "Explicit Fabric Logout",
+      "bbox": [
+        128.22,
+        166.96,
+        233.18,
+        178.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0012",
+      "text": "Explicit Fabric Logout of an N_Port_ID shall be accomplished by transmitting a Logout (LOGO) Link",
+      "bbox": [
+        96.0,
+        190.96,
+        539.98,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0013",
+      "text": "Service request Sequence (see 4.2.8) from an Nx_Port to an Fx_Port (i.e., Well-known address",
+      "bbox": [
+        96.0,
+        202.96,
+        539.57,
+        214.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0014",
+      "text": "FFFFFEh) or from an Fx_Port to an Nx_Port. The explicit Fabric Logout procedure shall be complete",
+      "bbox": [
+        96.0,
+        214.96,
+        539.76,
+        226.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0015",
+      "text": "for the responding FC_Port when it transmits a LS_ACC Link Service reply Sequence. The explicit",
+      "bbox": [
+        96.0,
+        226.96,
+        540.0,
+        238.08
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0016",
+      "text": "Fabric Logout procedure shall be complete for the requesting FC_Port when it receives a LS_ACC",
+      "bbox": [
+        96.0,
+        238.96,
+        540.05,
+        250.08
+      ],
+      "block_index": 6,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0017",
+      "text": "Link Service reply Sequence.",
+      "bbox": [
+        96.0,
+        250.96,
+        225.46,
+        262.08
+      ],
+      "block_index": 6,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0018",
+      "text": "If an FC_Port that does not support explicit Fabric Logout receives a LOGO that requests explicit",
+      "bbox": [
+        96.0,
+        274.96,
+        539.97,
+        286.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0019",
+      "text": "Fabric Logout, it shall reject the explicit Fabric Logout request using an LS_RJT with reason code",
+      "bbox": [
+        96.0,
+        286.96,
+        539.83,
+        298.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0020",
+      "text": "\"Command not supported\" and reason code explanation \"No additional explanation\". If an FC_Port",
+      "bbox": [
+        96.0,
+        298.96,
+        540.08,
+        310.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0021",
+      "text": "that sends a LOGO that requests explicit Fabric Logout receives in reply an LS_RJT with reason",
+      "bbox": [
+        96.0,
+        310.96,
+        539.95,
+        322.08
+      ],
+      "block_index": 7,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0022",
+      "text": "code \"Command not supported\" and reason code explanation \"No additional explanation\" the",
+      "bbox": [
+        96.0,
+        322.96,
+        539.92,
+        334.08
+      ],
+      "block_index": 7,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0023",
+      "text": "FC_Port that sent the LOGO shall implicitly log out the other FC_Port.",
+      "bbox": [
+        96.0,
+        334.96,
+        404.27,
+        346.08
+      ],
+      "block_index": 7,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0024",
+      "text": "An Fx_Port that supports N_Port_ID virtualization shall support explicit Fabric Logout originated by",
+      "bbox": [
+        96.0,
+        358.96,
+        539.99,
+        370.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0025",
+      "text": "an Nx_Port.",
+      "bbox": [
+        96.0,
+        370.96,
+        148.75,
+        382.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0026",
+      "text": "An Nx_Port that has requested or accepted explicit Fabric Logout of an N_Port_ID shall implicitly log",
+      "bbox": [
+        96.0,
+        394.96,
+        540.01,
+        406.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0027",
+      "text": "out the N_Port_ID with all other N_Port_IDs with which the N_Port_ID was logged in, and shall not",
+      "bbox": [
+        96.0,
+        406.96,
+        539.93,
+        418.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0028",
+      "text": "originate frames from the N_Port_ID until after it has subsequently been reassigned the N_Port_ID",
+      "bbox": [
+        96.0,
+        418.96,
+        539.92,
+        430.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0029",
+      "text": "by the Fabric. An Fx_Port that has explicitly logged out an N_Port_ID shall neither originate nor route",
+      "bbox": [
+        96.0,
+        430.96,
+        539.97,
+        442.08
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0030",
+      "text": "frames to the N_Port_ID until after it has completed a subsequent reassignment of the N_Port_ID.",
+      "bbox": [
+        96.0,
+        442.96,
+        528.76,
+        454.08
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0031",
+      "text": "6.4.4",
+      "bbox": [
+        96.0,
+        466.96,
+        118.22,
+        478.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0032",
+      "text": "Implicit Logout",
+      "bbox": [
+        128.22,
+        466.96,
+        199.84,
+        478.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0033",
+      "text": "If an Nx_Port receives or transmits an NOS or OLS, it shall be implicitly logged out from the Fabric, if",
+      "bbox": [
+        96.0,
+        490.96,
+        539.96,
+        502.07
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0034",
+      "text": "present, or attached Nx_Port in a point-to-point topology. Communication with other Nx_Ports shall",
+      "bbox": [
+        96.0,
+        502.96,
+        539.84,
+        514.07
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0035",
+      "text": "not be accepted until the Fabric Login procedure is complete (implicit or explicit).",
+      "bbox": [
+        96.0,
+        514.96,
+        451.51,
+        526.07
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0036",
+      "text": "During Login with the Fabric, if the Nx_Port detects that the N_Port_ID, F_Port_Name and/or the",
+      "bbox": [
+        96.0,
+        538.96,
+        539.93,
+        550.07
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0037",
+      "text": "Fabric_Name has changed since the last Fabric Login, and the Clean Address bit is zero, the",
+      "bbox": [
+        96.0,
+        550.96,
+        539.97,
+        562.07
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0038",
+      "text": "Nx_Port shall implicitly logout with all Nx_Ports and wait an R_A_TOV timeout period before initiating",
+      "bbox": [
+        96.0,
+        562.96,
+        539.92,
+        574.07
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0039",
+      "text": "or accepting communication with other Nx_Ports.  The timeout period shall start when the Nx_Port",
+      "bbox": [
+        96.0,
+        574.96,
+        540.01,
+        586.07
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0040",
+      "text": "detects the change.  After waiting the timeout period, new N_Port Logins are required before the",
+      "bbox": [
+        96.0,
+        586.96,
+        539.78,
+        598.07
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0041",
+      "text": "Nx_Port may communicate with other Nx_Ports.",
+      "bbox": [
+        96.0,
+        598.96,
+        308.77,
+        610.07
+      ],
+      "block_index": 12,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0042",
+      "text": "During Login with the Fabric, if the Nx_Port detects that the N_Port_ID, F_Port_Name and/or the",
+      "bbox": [
+        96.0,
+        622.96,
+        539.94,
+        634.07
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p162_s0043",
+      "text": "Fabric_Name has changed since the last Fabric Login, and the Clean Address bit is set to one, the",
+      "bbox": [
+        96.0,
+        635.02,
+        539.81,
+        646.13
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

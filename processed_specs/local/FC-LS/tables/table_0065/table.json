@@ -1,0 +1,88 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 ... 24\nByte 0",
+      "23 ... 16\nByte 1",
+      "15 ... 08\nByte 2",
+      "07 ... 00\nByte 3"
+    ],
+    [
+      "0",
+      "MSB Vendor Unique\n(16 bytes)\nLSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "...",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "3",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "4",
+      "Associated Type",
+      null,
+      null,
+      null
+    ],
+    [
+      "5",
+      "Physical Port Number",
+      null,
+      null,
+      null
+    ],
+    [
+      "6",
+      "Number of Attached Nodes",
+      null,
+      null,
+      null
+    ],
+    [
+      "7",
+      "Node Management",
+      "IP Version",
+      "UDP/TCP Port Number",
+      null
+    ],
+    [
+      "8",
+      "MSB IP Address\n(16 bytes)\nLSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "...",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "11",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "12",
+      "Reserved",
+      null,
+      "Vendor Specific",
+      null
+    ]
+  ]
+}

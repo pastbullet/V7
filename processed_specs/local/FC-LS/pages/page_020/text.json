@@ -1,0 +1,567 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 20,
+  "spans": [
+    {
+      "span_id": "p020_s0001",
+      "text": "draft proposed INCITS Standard",
+      "bbox": [
+        95.82,
+        54.85,
+        224.76,
+        64.9
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0002",
+      "text": "INCITS xxx-200x",
+      "bbox": [
+        471.99,
+        54.85,
+        539.85,
+        64.9
+      ],
+      "block_index": 1,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0003",
+      "text": " 1",
+      "bbox": [
+        523.86,
+        723.17,
+        532.16,
+        734.28
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0004",
+      "text": "American National Standard",
+      "bbox": [
+        95.82,
+        84.67,
+        270.72,
+        100.27
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0005",
+      "text": "for Information Technology —",
+      "bbox": [
+        95.82,
+        100.69,
+        280.16,
+        116.29
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0006",
+      "text": "Fibre Channel —",
+      "bbox": [
+        95.82,
+        135.69,
+        231.84,
+        155.78
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0007",
+      "text": "Link Services (FC-LS)",
+      "bbox": [
+        95.82,
+        155.73,
+        271.86,
+        175.82
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0008",
+      "text": "1",
+      "bbox": [
+        95.82,
+        197.36,
+        101.92,
+        209.62
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0009",
+      "text": "Scope",
+      "bbox": [
+        113.88,
+        197.36,
+        146.81,
+        209.62
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0010",
+      "text": "FC-LS describes in detail the Fibre Channel Extended Link Services.",
+      "bbox": [
+        95.82,
+        230.99,
+        399.72,
+        242.1
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0011",
+      "text": "2",
+      "bbox": [
+        95.82,
+        266.72,
+        101.92,
+        278.98
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0012",
+      "text": "Normative References",
+      "bbox": [
+        113.88,
+        266.72,
+        229.86,
+        278.98
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0013",
+      "text": "2.1",
+      "bbox": [
+        95.82,
+        290.99,
+        109.72,
+        302.1
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0014",
+      "text": "Overview",
+      "bbox": [
+        119.78,
+        290.99,
+        164.18,
+        302.1
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0015",
+      "text": "The following standards contain provisions that, through reference in the text, constitute provisions of",
+      "bbox": [
+        95.82,
+        314.99,
+        539.95,
+        326.1
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0016",
+      "text": "this standard. At the time of publication, the editions indicated were valid. All standards are subject to",
+      "bbox": [
+        95.82,
+        326.99,
+        539.85,
+        338.1
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0017",
+      "text": "revision, and parties to agreements based on this standard are encouraged to investigate the possi-",
+      "bbox": [
+        95.82,
+        338.99,
+        539.93,
+        350.1
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0018",
+      "text": "bility of applying the most recent editions of the standards listed below. ",
+      "bbox": [
+        95.82,
+        350.99,
+        410.84,
+        362.1
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0019",
+      "text": "For electronic copies of some standards, visit ANSI’s Electronic Standards Store (ESS) at www.an-",
+      "bbox": [
+        95.82,
+        374.98,
+        539.95,
+        386.1
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0020",
+      "text": "si.org. For printed versions of all standards listed here, contact Global Engineering Documents, 15 In-",
+      "bbox": [
+        95.82,
+        386.98,
+        539.95,
+        398.1
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0021",
+      "text": "verness Way East, Englewood, CO; 80112-5704, (800) 854-7179.. ",
+      "bbox": [
+        95.82,
+        398.98,
+        393.01,
+        410.1
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0022",
+      "text": "Additional availability contact information is provided below as needed.",
+      "bbox": [
+        95.82,
+        422.98,
+        408.0,
+        434.1
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0023",
+      "text": "2.2",
+      "bbox": [
+        95.82,
+        446.98,
+        109.7,
+        458.1
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0024",
+      "text": "Approved references",
+      "bbox": [
+        119.76,
+        446.98,
+        219.66,
+        458.1
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0025",
+      "text": "ANSI INCITS 332-1999, ",
+      "bbox": [
+        115.86,
+        470.98,
+        225.2,
+        482.1
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0026",
+      "text": "Fibre Channel-Arbitrated Loop–2 (FC-AL-2)",
+      "bbox": [
+        225.3,
+        470.98,
+        418.06,
+        482.1
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p020_s0027",
+      "text": "ANSI INCITS 332-1999/AM1-2003, ",
+      "bbox": [
+        115.86,
+        494.98,
+        274.1,
+        506.1
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0028",
+      "text": "Fibre Channel-Arbitrated Loop–2 (FC-AL-2) Amendment 1",
+      "bbox": [
+        274.14,
+        494.98,
+        531.85,
+        506.1
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p020_s0029",
+      "text": "ANSI INCITS 373-2003, ",
+      "bbox": [
+        115.86,
+        518.98,
+        225.2,
+        530.1
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0030",
+      "text": "Fibre Channel - Framing and Signaling (FC-FS)",
+      "bbox": [
+        225.3,
+        518.98,
+        435.78,
+        530.1
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p020_s0031",
+      "text": "ANSI INCITS 387-2004, ",
+      "bbox": [
+        115.86,
+        542.98,
+        225.2,
+        554.1
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0032",
+      "text": "Fibre Channel - Generic Services - 4 (FC-GS-4)",
+      "bbox": [
+        225.3,
+        542.98,
+        436.92,
+        554.1
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p020_s0033",
+      "text": "ANSI INCITS 384-2004, ",
+      "bbox": [
+        115.86,
+        566.98,
+        225.2,
+        578.1
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0034",
+      "text": "Fibre Channel - Switch Fabric - 3 (FC-SW-3)",
+      "bbox": [
+        225.3,
+        566.98,
+        422.4,
+        578.1
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p020_s0035",
+      "text": "ANSI INCITS 374-2003, ",
+      "bbox": [
+        115.86,
+        590.98,
+        225.2,
+        602.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0036",
+      "text": "Fibre Channel - Single Byte Command Set - 3 (FC-SB-3)",
+      "bbox": [
+        225.3,
+        590.98,
+        476.84,
+        602.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p020_s0037",
+      "text": "2.3",
+      "bbox": [
+        95.82,
+        614.98,
+        109.74,
+        626.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0038",
+      "text": "References under development",
+      "bbox": [
+        119.8,
+        614.98,
+        268.6,
+        626.1
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0039",
+      "text": "At the time of publication, the following referenced standards were still under development. For infor-",
+      "bbox": [
+        95.82,
+        638.98,
+        539.82,
+        650.1
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0040",
+      "text": "mation on the current status of the documents, or regarding availability, contact the relevant stan-",
+      "bbox": [
+        95.82,
+        650.98,
+        539.91,
+        662.1
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0041",
+      "text": "dards body or other organization as indicated.",
+      "bbox": [
+        95.82,
+        662.98,
+        298.6,
+        674.1
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0042",
+      "text": "ANSI INCITS Project 1619-D, ",
+      "bbox": [
+        115.86,
+        686.98,
+        249.64,
+        698.1
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p020_s0043",
+      "text": "Fibre Channel - Framing and Signaling (FC-FS-2)",
+      "bbox": [
+        249.72,
+        686.98,
+        469.08,
+        698.1
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 2
+    }
+  ],
+  "asset_ids": []
+}

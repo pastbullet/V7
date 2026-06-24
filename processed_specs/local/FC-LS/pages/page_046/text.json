@@ -1,0 +1,856 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 46,
+  "spans": [
+    {
+      "span_id": "p046_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0002",
+      "text": " 27",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0003",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        57.65,
+        142.05,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0004",
+      "text": "LS_ACC signifies successful completion of the ECHO function.  The format of the",
+      "bbox": [
+        142.08,
+        57.65,
+        539.96,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p046_s0005",
+      "text": "LS_ACC Payload is shown in table 8.  The Payload shall contain the ECHO data contained in the",
+      "bbox": [
+        96.0,
+        69.65,
+        539.63,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0006",
+      "text": "Payload of the ECHO Request frame.",
+      "bbox": [
+        96.0,
+        81.65,
+        262.67,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0007",
+      "text": "4.2.5",
+      "bbox": [
+        96.0,
+        238.97,
+        118.25,
+        250.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0008",
+      "text": "Estimate Credit (ESTC)",
+      "bbox": [
+        128.25,
+        238.97,
+        237.59,
+        250.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0009",
+      "text": "4.2.5.1  Description",
+      "bbox": [
+        96.0,
+        262.97,
+        187.03,
+        274.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0010",
+      "text": "The ESTC ELS is used to estimate the minimum Credit required to achieve the maximum bandwidth",
+      "bbox": [
+        96.0,
+        286.96,
+        539.89,
+        298.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0011",
+      "text": "for a given distance between an Nx_Port pair.",
+      "bbox": [
+        96.0,
+        298.96,
+        298.28,
+        310.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0012",
+      "text": "The class of the SOF of the ESTC Request identifies the class for which Credit is being estimated.",
+      "bbox": [
+        96.0,
+        322.96,
+        540.11,
+        334.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0013",
+      "text": "The destination Nx_Port shall acknowledge Data frames as specified by its Login parameters.  See",
+      "bbox": [
+        96.0,
+        334.96,
+        539.93,
+        346.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0014",
+      "text": "FC-FS-2 for the usage of this frame.",
+      "bbox": [
+        96.0,
+        346.96,
+        256.01,
+        358.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0015",
+      "text": "4.2.5.2  Protocol",
+      "bbox": [
+        96.0,
+        370.96,
+        172.6,
+        382.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0016",
+      "text": "a) Estimate Credit Request Sequence",
+      "bbox": [
+        106.02,
+        394.96,
+        278.52,
+        406.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0017",
+      "text": "b) No Reply Sequence",
+      "bbox": [
+        106.02,
+        418.96,
+        211.26,
+        430.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0018",
+      "text": "4.2.5.3  Request Sequence",
+      "bbox": [
+        96.0,
+        442.96,
+        221.54,
+        454.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0019",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        466.96,
+        157.1,
+        478.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0020",
+      "text": "The S_ID field designates the source Nx_Port requesting the Credit estimate.  The",
+      "bbox": [
+        157.08,
+        466.96,
+        539.95,
+        478.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p046_s0021",
+      "text": "D_ID field designates the destination Nx_Port specified in the Establish Streaming frame.",
+      "bbox": [
+        96.0,
+        478.96,
+        489.88,
+        490.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0022",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        502.96,
+        140.41,
+        514.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0023",
+      "text": "The format of the Payload is shown in table 9.  The first word of the Payload of the first",
+      "bbox": [
+        140.4,
+        502.96,
+        539.71,
+        514.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p046_s0024",
+      "text": "frame of the Sequence shall contain the ELS_Command code. The content of the Payload after the",
+      "bbox": [
+        96.0,
+        514.96,
+        540.01,
+        526.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0025",
+      "text": "ELS_Command and for subsequent frames shall be valid data bytes.",
+      "bbox": [
+        96.0,
+        526.96,
+        400.44,
+        538.08
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0026",
+      "text": " Table 8 – ECHO LS_ACC Payload",
+      "bbox": [
+        237.48,
+        103.66,
+        398.59,
+        114.78
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0027",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        125.62,
+        133.06,
+        136.74
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0028",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        137.62,
+        136.35,
+        148.74
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0029",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        125.62,
+        233.97,
+        136.74
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0030",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        125.62,
+        328.41,
+        136.74
+      ],
+      "block_index": 15,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0031",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        125.62,
+        427.0,
+        136.74
+      ],
+      "block_index": 15,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0032",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        125.62,
+        522.83,
+        136.74
+      ],
+      "block_index": 15,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0033",
+      "text": "0",
+      "bbox": [
+        120.84,
+        154.66,
+        126.38,
+        165.78
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0034",
+      "text": "02h",
+      "bbox": [
+        149.88,
+        154.66,
+        166.52,
+        165.78
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0035",
+      "text": "00h",
+      "bbox": [
+        247.08,
+        154.66,
+        263.71,
+        165.78
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0036",
+      "text": "00h",
+      "bbox": [
+        344.27,
+        154.66,
+        360.97,
+        165.78
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0037",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        154.66,
+        458.16,
+        165.78
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0038",
+      "text": "1",
+      "bbox": [
+        120.84,
+        171.64,
+        126.38,
+        182.76
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0039",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        171.64,
+        171.52,
+        182.76
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0040",
+      "text": "ECHO data",
+      "bbox": [
+        316.74,
+        173.62,
+        367.83,
+        184.74
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0041",
+      "text": "(up to max frame length - 4, ",
+      "bbox": [
+        280.92,
+        185.62,
+        406.42,
+        196.74
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0042",
+      "text": "any byte boundary)",
+      "bbox": [
+        299.52,
+        197.62,
+        385.02,
+        208.74
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0043",
+      "text": "Excludes word 0 of ECHO Payload.",
+      "bbox": [
+        263.4,
+        209.62,
+        421.2,
+        220.74
+      ],
+      "block_index": 17,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0044",
+      "text": "..",
+      "bbox": [
+        120.84,
+        188.62,
+        126.37,
+        199.74
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0045",
+      "text": "n",
+      "bbox": [
+        120.54,
+        207.64,
+        126.63,
+        218.76
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0046",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        207.64,
+        460.36,
+        218.76
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0047",
+      "text": " Table 9 – ESTC Payload",
+      "bbox": [
+        259.98,
+        548.98,
+        376.1,
+        560.1
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0048",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        571.0,
+        133.06,
+        582.12
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0049",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        583.0,
+        136.35,
+        594.11
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0050",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        571.0,
+        233.97,
+        582.12
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0051",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        571.0,
+        328.41,
+        582.12
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0052",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        571.0,
+        427.0,
+        582.12
+      ],
+      "block_index": 21,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0053",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        571.0,
+        522.83,
+        582.12
+      ],
+      "block_index": 21,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0054",
+      "text": "0",
+      "bbox": [
+        120.84,
+        601.96,
+        126.38,
+        613.07
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0055",
+      "text": "ESTC (0Ch)",
+      "bbox": [
+        149.88,
+        601.0,
+        204.36,
+        612.11
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0056",
+      "text": "00h",
+      "bbox": [
+        247.13,
+        601.0,
+        263.76,
+        612.11
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0057",
+      "text": "00h",
+      "bbox": [
+        344.32,
+        601.0,
+        360.99,
+        612.11
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0058",
+      "text": "00h",
+      "bbox": [
+        441.49,
+        601.0,
+        458.16,
+        612.11
+      ],
+      "block_index": 22,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0059",
+      "text": "1",
+      "bbox": [
+        120.84,
+        620.98,
+        126.38,
+        632.09
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0060",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        619.96,
+        171.52,
+        631.07
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0061",
+      "text": "Any data",
+      "bbox": [
+        322.56,
+        620.98,
+        361.97,
+        632.09
+      ],
+      "block_index": 23,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0062",
+      "text": "(see FC-FS-2)",
+      "bbox": [
+        310.38,
+        632.98,
+        374.24,
+        644.09
+      ],
+      "block_index": 23,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0063",
+      "text": "..",
+      "bbox": [
+        120.84,
+        640.0,
+        126.37,
+        651.11
+      ],
+      "block_index": 23,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0064",
+      "text": "n",
+      "bbox": [
+        120.84,
+        659.02,
+        126.38,
+        670.13
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p046_s0065",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        658.0,
+        460.36,
+        669.11
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0008",
+    "table_0012"
+  ]
+}

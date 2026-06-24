@@ -1,0 +1,10 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Word 0, bits 29 - 28", "page": 181, "bbox": [102.64, 159.62, 246.03, 176.34]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Meaning", "page": 181, "bbox": [246.03, 159.62, 533.36, 176.34]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00b", "page": 181, "bbox": [102.64, 176.34, 246.03, 193.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Stacked Connect-request not supported", "page": 181, "bbox": [246.03, 176.34, 533.36, 193.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "01b", "page": 181, "bbox": [102.64, 193.35, 246.03, 210.33]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Lock-Down Mode", "page": 181, "bbox": [246.03, 193.35, 533.36, 210.33]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "10b", "page": 181, "bbox": [102.64, 210.33, 246.03, 227.37]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Transparent Mode", "page": 181, "bbox": [246.03, 210.33, 533.36, 227.37]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "11b", "page": 181, "bbox": [102.64, 227.37, 246.03, 244.02]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Reserved", "page": 181, "bbox": [246.03, 227.37, 533.36, 244.02]}

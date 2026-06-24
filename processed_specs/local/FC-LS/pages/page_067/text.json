@@ -1,0 +1,1038 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 67,
+  "spans": [
+    {
+      "span_id": "p067_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0002",
+      "text": " 48",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0003",
+      "text": "shall contain one or more of these pages.  The generic format of the affected Port_ID page is",
+      "bbox": [
+        122.4,
+        57.65,
+        540.0,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0004",
+      "text": "shown in table 35.",
+      "bbox": [
+        122.4,
+        69.65,
+        202.91,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0005",
+      "text": "A)",
+      "bbox": [
+        122.4,
+        226.97,
+        132.38,
+        238.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0006",
+      "text": " RSCN Event Qualifier:",
+      "bbox": [
+        132.38,
+        226.97,
+        242.94,
+        238.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p067_s0007",
+      "text": " The RSCN Event Qualifier values are shown in table 36.",
+      "bbox": [
+        242.94,
+        226.97,
+        494.56,
+        238.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p067_s0008",
+      "text": " Table 35 – Generic affected Port_ID page",
+      "bbox": [
+        219.66,
+        91.67,
+        416.37,
+        102.78
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0009",
+      "text": "Bit in Byte",
+      "bbox": [
+        120.48,
+        113.63,
+        169.87,
+        124.74
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0010",
+      "text": "Byte",
+      "bbox": [
+        134.34,
+        125.63,
+        156.01,
+        136.74
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0011",
+      "text": "7",
+      "bbox": [
+        202.5,
+        113.63,
+        208.04,
+        124.74
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0012",
+      "text": "6",
+      "bbox": [
+        245.7,
+        113.63,
+        251.24,
+        124.74
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0013",
+      "text": "5",
+      "bbox": [
+        288.9,
+        113.63,
+        294.43,
+        124.74
+      ],
+      "block_index": 6,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0014",
+      "text": "4",
+      "bbox": [
+        332.1,
+        113.63,
+        337.63,
+        124.74
+      ],
+      "block_index": 6,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0015",
+      "text": "3",
+      "bbox": [
+        375.29,
+        113.63,
+        380.83,
+        124.74
+      ],
+      "block_index": 6,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0016",
+      "text": "2",
+      "bbox": [
+        418.49,
+        113.63,
+        424.03,
+        124.74
+      ],
+      "block_index": 6,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0017",
+      "text": "1",
+      "bbox": [
+        461.69,
+        113.63,
+        467.23,
+        124.74
+      ],
+      "block_index": 6,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0018",
+      "text": "0",
+      "bbox": [
+        504.89,
+        113.63,
+        510.43,
+        124.74
+      ],
+      "block_index": 6,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0019",
+      "text": "0 (Bits 31 - 24)",
+      "bbox": [
+        111.3,
+        142.67,
+        179.06,
+        153.78
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0020",
+      "text": " reserved",
+      "bbox": [
+        179.06,
+        142.67,
+        224.56,
+        153.78
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p067_s0021",
+      "text": "RSCN Event Qualifier",
+      "bbox": [
+        272.12,
+        142.67,
+        368.76,
+        153.78
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0022",
+      "text": "Address Format",
+      "bbox": [
+        444.95,
+        142.67,
+        516.0,
+        153.78
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0023",
+      "text": "1 (Bits 23 - 16)",
+      "bbox": [
+        111.3,
+        159.65,
+        179.06,
+        170.76
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0024",
+      "text": " affected Port_ID byte 1 (Domain)",
+      "bbox": [
+        179.06,
+        159.65,
+        331.79,
+        170.76
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p067_s0025",
+      "text": "2 (Bits 15 - 08)",
+      "bbox": [
+        111.3,
+        176.63,
+        179.06,
+        187.74
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0026",
+      "text": " affected Port_ID byte 2 (Area)",
+      "bbox": [
+        179.06,
+        176.63,
+        318.47,
+        187.74
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p067_s0027",
+      "text": "3 (Bits 07 - 00)",
+      "bbox": [
+        111.3,
+        193.67,
+        179.06,
+        204.78
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0028",
+      "text": " affected Port_ID byte 3 (Port)",
+      "bbox": [
+        179.06,
+        193.67,
+        315.7,
+        204.78
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p067_s0029",
+      "text": " Table 36 – RSCN Event Qualifier values",
+      "bbox": [
+        223.26,
+        248.99,
+        412.67,
+        260.1
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0030",
+      "text": "RSCN event Qualifier",
+      "bbox": [
+        178.32,
+        292.97,
+        278.74,
+        304.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0031",
+      "text": "Value",
+      "bbox": [
+        432.66,
+        271.01,
+        459.32,
+        282.12
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0032",
+      "text": "Bit 5",
+      "bbox": [
+        368.1,
+        292.97,
+        389.75,
+        304.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0033",
+      "text": "Bit 4",
+      "bbox": [
+        412.83,
+        292.97,
+        434.44,
+        304.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0034",
+      "text": "Bit 3",
+      "bbox": [
+        457.52,
+        292.97,
+        479.19,
+        304.08
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0035",
+      "text": "Bit 2",
+      "bbox": [
+        502.21,
+        292.97,
+        523.89,
+        304.08
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0036",
+      "text": "Event is not specified",
+      "bbox": [
+        102.6,
+        316.01,
+        197.05,
+        327.12
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0037",
+      "text": "0",
+      "bbox": [
+        376.14,
+        316.97,
+        381.68,
+        328.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0038",
+      "text": "0",
+      "bbox": [
+        420.84,
+        316.97,
+        426.38,
+        328.08
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0039",
+      "text": "0",
+      "bbox": [
+        465.54,
+        316.97,
+        471.08,
+        328.08
+      ],
+      "block_index": 15,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0040",
+      "text": "0",
+      "bbox": [
+        510.3,
+        316.97,
+        515.83,
+        328.08
+      ],
+      "block_index": 15,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0041",
+      "text": "CHANGED NAME SERVER OBJECT - An object ",
+      "bbox": [
+        102.6,
+        338.99,
+        323.56,
+        350.1
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0042",
+      "text": "maintained by the Name Server has changed state for the ",
+      "bbox": [
+        102.6,
+        350.99,
+        356.19,
+        362.1
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0043",
+      "text": "port, area or domain indicated by the affected Port_ID.",
+      "bbox": [
+        102.6,
+        362.99,
+        343.14,
+        374.1
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0044",
+      "text": "0",
+      "bbox": [
+        376.14,
+        340.97,
+        381.68,
+        352.08
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0045",
+      "text": "0",
+      "bbox": [
+        420.84,
+        340.97,
+        426.38,
+        352.08
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0046",
+      "text": "0",
+      "bbox": [
+        465.54,
+        340.97,
+        471.08,
+        352.08
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0047",
+      "text": "1",
+      "bbox": [
+        510.3,
+        340.97,
+        515.83,
+        352.08
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0048",
+      "text": "CHANGED PORT ATTRIBUTE - An internal state of the ",
+      "bbox": [
+        102.6,
+        385.01,
+        353.11,
+        396.12
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0049",
+      "text": "port specified by the affected Port_ID has changed.  The ",
+      "bbox": [
+        102.6,
+        397.01,
+        355.4,
+        408.12
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0050",
+      "text": "change of state is identified in a protocol specific manner.",
+      "bbox": [
+        102.6,
+        409.01,
+        355.38,
+        420.12
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0051",
+      "text": "0",
+      "bbox": [
+        376.14,
+        386.99,
+        381.68,
+        398.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0052",
+      "text": "0",
+      "bbox": [
+        420.84,
+        386.99,
+        426.38,
+        398.1
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0053",
+      "text": "1",
+      "bbox": [
+        465.54,
+        386.99,
+        471.08,
+        398.1
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0054",
+      "text": "0",
+      "bbox": [
+        510.3,
+        386.99,
+        515.83,
+        398.1
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0055",
+      "text": "CHANGED SERVICE OBJECT - An object maintained by ",
+      "bbox": [
+        102.6,
+        430.97,
+        356.04,
+        442.08
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0056",
+      "text": "the service identified by the well-known address contained ",
+      "bbox": [
+        102.6,
+        442.97,
+        356.51,
+        454.08
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0057",
+      "text": "in affected Port_ID has changed state.  This Event ",
+      "bbox": [
+        102.6,
+        454.97,
+        328.16,
+        466.08
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0058",
+      "text": "Qualifier value shall not be used by services accessed ",
+      "bbox": [
+        102.6,
+        466.97,
+        345.27,
+        478.08
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0059",
+      "text": "through N_Port_ID that are not well-known addresses.",
+      "bbox": [
+        102.6,
+        478.97,
+        343.13,
+        490.08
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0060",
+      "text": "0",
+      "bbox": [
+        376.14,
+        433.01,
+        381.68,
+        444.12
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0061",
+      "text": "0",
+      "bbox": [
+        420.84,
+        433.01,
+        426.38,
+        444.12
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0062",
+      "text": "1",
+      "bbox": [
+        465.54,
+        433.01,
+        471.08,
+        444.12
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0063",
+      "text": "1",
+      "bbox": [
+        510.3,
+        433.01,
+        515.83,
+        444.12
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0064",
+      "text": "CHANGED SWITCH CONFIGURATION - Switch ",
+      "bbox": [
+        102.6,
+        500.99,
+        322.41,
+        512.1
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0065",
+      "text": "configuration has changed for the area or domain ",
+      "bbox": [
+        102.6,
+        512.98,
+        323.69,
+        524.1
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0066",
+      "text": "specified by the affected Port_ID.",
+      "bbox": [
+        102.6,
+        524.98,
+        249.88,
+        536.1
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0067",
+      "text": "0",
+      "bbox": [
+        376.14,
+        502.97,
+        381.68,
+        514.08
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0068",
+      "text": "1",
+      "bbox": [
+        420.84,
+        502.97,
+        426.38,
+        514.08
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0069",
+      "text": "0",
+      "bbox": [
+        465.54,
+        502.97,
+        471.08,
+        514.08
+      ],
+      "block_index": 23,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0070",
+      "text": "0",
+      "bbox": [
+        510.3,
+        502.97,
+        515.83,
+        514.08
+      ],
+      "block_index": 23,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0071",
+      "text": "REMOVED OBJECT - The port, area or domain indicated ",
+      "bbox": [
+        102.6,
+        547.01,
+        355.92,
+        558.12
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0072",
+      "text": "by the affected Port_ID is no longer accessible on the ",
+      "bbox": [
+        102.6,
+        559.01,
+        342.02,
+        570.12
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0073",
+      "text": "Fabric.",
+      "bbox": [
+        102.6,
+        571.0,
+        133.15,
+        582.12
+      ],
+      "block_index": 24,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0074",
+      "text": "0",
+      "bbox": [
+        376.14,
+        548.99,
+        381.68,
+        560.1
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0075",
+      "text": "1",
+      "bbox": [
+        420.84,
+        548.99,
+        426.38,
+        560.1
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0076",
+      "text": "0",
+      "bbox": [
+        465.54,
+        548.99,
+        471.08,
+        560.1
+      ],
+      "block_index": 25,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0077",
+      "text": "1",
+      "bbox": [
+        510.3,
+        548.99,
+        515.83,
+        560.1
+      ],
+      "block_index": 25,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0078",
+      "text": "Reserved",
+      "bbox": [
+        102.6,
+        592.97,
+        145.34,
+        604.08
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p067_s0079",
+      "text": "All Other Values",
+      "bbox": [
+        358.56,
+        592.97,
+        430.73,
+        604.08
+      ],
+      "block_index": 26,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0038",
+    "table_0039"
+  ]
+}

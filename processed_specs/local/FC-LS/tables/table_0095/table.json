@@ -1,0 +1,67 @@
+{
+  "rows": [
+    [
+      "ELS command",
+      "Responding\nPort Status",
+      "Responding\nNx_Port",
+      "Responding F_Port\nController",
+      null
+    ],
+    [
+      null,
+      null,
+      "Class 1, 2, or 3",
+      "Class 1, or 2",
+      "Class 3"
+    ],
+    [
+      "FDISC",
+      "Logged in",
+      "LS_RJTc",
+      "LS_ACC",
+      "LS_ACC"
+    ],
+    [
+      null,
+      "Not Logged in",
+      "LS_RJTc",
+      "F_RJTb",
+      "Discard"
+    ],
+    [
+      "PDISC",
+      "Logged in",
+      "LS_ACC",
+      "LS_RJTc",
+      "Discard"
+    ],
+    [
+      null,
+      "Not Logged in",
+      "LS_RJTa",
+      "F_RJTb",
+      "Discard"
+    ],
+    [
+      "ADISC",
+      "Logged in",
+      "LS_ACC",
+      "LS_RJTc",
+      "Discard"
+    ],
+    [
+      null,
+      "Not Logged in",
+      "LS_RJTa",
+      "F_RJTb",
+      "Discard"
+    ],
+    [
+      "a A LOGO ELS sequence or an LS_RJT ELS Sequence with the reason code set to \"Unable\nto perform command request\" and the reason code explanation set to \"N_Port Login\nrequired\" shall be returned.\nb An F_RJT with the Reject reason code set to \"Login required\" shall be returned.\nc A LOGO ELS Sequence or an LS_RJT ELS Sequence with the reason code set\nto\"Command not supported\" and the reason code explanation set to \"Request\nnotsupported\" shall be returned.",
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

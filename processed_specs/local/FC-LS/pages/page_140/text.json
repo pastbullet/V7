@@ -1,0 +1,686 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 140,
+  "spans": [
+    {
+      "span_id": "p140_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0002",
+      "text": " 121",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0003",
+      "text": "FFI Incarnation Number:",
+      "bbox": [
+        96.0,
+        57.65,
+        214.47,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0004",
+      "text": "  This field contains the current incarnation of the FFI Domain Topology",
+      "bbox": [
+        214.56,
+        57.65,
+        539.97,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p140_s0005",
+      "text": "Map.",
+      "bbox": [
+        96.0,
+        69.65,
+        118.21,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0006",
+      "text": "Number of FFI Link State Records:",
+      "bbox": [
+        96.0,
+        94.97,
+        263.71,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0007",
+      "text": " This field shall specify the number of FFI Link State Records",
+      "bbox": [
+        263.82,
+        94.97,
+        540.01,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p140_s0008",
+      "text": "that follow this field. The minimum value is 2.",
+      "bbox": [
+        96.0,
+        106.97,
+        294.23,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0009",
+      "text": "FFI Link State Records:",
+      "bbox": [
+        96.0,
+        130.97,
+        207.57,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0010",
+      "text": " This field contains all of the individual FFI Link State Records that describe",
+      "bbox": [
+        207.54,
+        130.97,
+        539.77,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p140_s0011",
+      "text": "the Domain Topology Map of the Avionics Fabric.  The format of the FFI Link State Record is de-",
+      "bbox": [
+        96.0,
+        142.96,
+        540.18,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0012",
+      "text": "scribed in FC-SW-4.",
+      "bbox": [
+        96.0,
+        154.96,
+        185.93,
+        166.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0013",
+      "text": "4.2.47",
+      "bbox": [
+        96.0,
+        178.96,
+        123.76,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0014",
+      "text": "FFI AE Principal Switch Selector (FFI_PSS)",
+      "bbox": [
+        133.82,
+        178.96,
+        337.63,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0015",
+      "text": "4.2.47.1  Description",
+      "bbox": [
+        96.0,
+        202.96,
+        192.69,
+        214.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0016",
+      "text": "The FFI_PSS ELS Request shall be sent to an AE Switch that is not currently the AE Principal Switch",
+      "bbox": [
+        96.0,
+        226.96,
+        539.96,
+        238.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0017",
+      "text": "in order to command the recipient to become the AE Principal Switch.",
+      "bbox": [
+        96.0,
+        238.96,
+        403.09,
+        250.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0018",
+      "text": "Support for this ELS is mandatory for a Domain Controller in an AE Principal Switch or an AE Switch",
+      "bbox": [
+        96.0,
+        262.96,
+        540.08,
+        274.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0019",
+      "text": "that is capable of becoming an AE Principal Switch. Support for this ELS is optional for Nx_Ports.",
+      "bbox": [
+        96.0,
+        274.96,
+        524.8,
+        286.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0020",
+      "text": "If the Domain Controller that receives an FFI_PSS request currently is the AE Principal Switch or is",
+      "bbox": [
+        96.0,
+        298.96,
+        540.03,
+        310.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0021",
+      "text": "not capable of becoming the AE Principal Switch, it shall respond with an LS_RJT reply with a reason",
+      "bbox": [
+        96.0,
+        310.96,
+        539.84,
+        322.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0022",
+      "text": "code of “Logical error”.",
+      "bbox": [
+        96.0,
+        322.96,
+        196.52,
+        334.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0023",
+      "text": "If a destination receives this ELS Request that is not a Domain Controller, it shall respond with an",
+      "bbox": [
+        96.0,
+        346.96,
+        539.81,
+        358.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0024",
+      "text": "LS_RJT reply with a reason code of “Command not supported”.",
+      "bbox": [
+        96.0,
+        358.96,
+        376.48,
+        370.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0025",
+      "text": "4.2.47.2  Protocol",
+      "bbox": [
+        96.0,
+        382.96,
+        178.28,
+        394.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0026",
+      "text": "a) FFI AE Principal Switch Selector Request Sequence; and",
+      "bbox": [
+        106.02,
+        406.96,
+        376.28,
+        418.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0027",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence.",
+      "bbox": [
+        106.02,
+        430.96,
+        290.7,
+        442.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0028",
+      "text": "4.2.47.3  Request Sequence",
+      "bbox": [
+        96.0,
+        454.96,
+        227.12,
+        466.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0029",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        478.96,
+        157.1,
+        490.07
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0030",
+      "text": "The S_ID field value identifies the Nx_Port requesting a change of AE Principal Switch.",
+      "bbox": [
+        156.96,
+        478.96,
+        539.82,
+        490.07
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p140_s0031",
+      "text": "The D_ID field value identifies the Domain Controller of an AE Switch that is not the current AE Prin-",
+      "bbox": [
+        96.0,
+        490.96,
+        539.98,
+        502.07
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0032",
+      "text": "cipal Switch but is capable of becoming an",
+      "bbox": [
+        96.0,
+        502.96,
+        284.32,
+        514.07
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0033",
+      "text": "AE Principal Switch in the form FFFCxxh, where xx is the",
+      "bbox": [
+        287.16,
+        502.96,
+        539.9,
+        514.07
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 3
+    },
+    {
+      "span_id": "p140_s0034",
+      "text": "one-byte value assigned to the Domain Controller.",
+      "bbox": [
+        96.0,
+        514.96,
+        318.19,
+        526.07
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0035",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        538.96,
+        140.41,
+        550.07
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0036",
+      "text": "The format of the FFI_PSS Request Payload is shown in table 136.",
+      "bbox": [
+        140.4,
+        538.96,
+        437.62,
+        550.07
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p140_s0037",
+      "text": "4.2.47.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        647.02,
+        214.96,
+        658.13
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0038",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        671.02,
+        139.27,
+        682.13
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0039",
+      "text": "LS_RJT signifies the rejection of the FFI_PSS Request. The LS_RJT reply contains an ap-",
+      "bbox": [
+        139.32,
+        671.02,
+        540.03,
+        682.13
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p140_s0040",
+      "text": "propriate reject reason code.",
+      "bbox": [
+        96.0,
+        683.02,
+        223.19,
+        694.13
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0041",
+      "text": " Table 136 – FFI_PSS Payload",
+      "bbox": [
+        247.44,
+        560.98,
+        388.51,
+        572.09
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0042",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        583.0,
+        133.06,
+        594.11
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0043",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        595.0,
+        136.35,
+        606.11
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0044",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        583.0,
+        233.97,
+        594.11
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0045",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        583.0,
+        328.41,
+        594.11
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0046",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        583.0,
+        427.0,
+        594.11
+      ],
+      "block_index": 21,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0047",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        583.0,
+        522.83,
+        594.11
+      ],
+      "block_index": 21,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0048",
+      "text": "0",
+      "bbox": [
+        120.84,
+        611.98,
+        126.38,
+        623.09
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0049",
+      "text": "FFI_PSS (A2h)",
+      "bbox": [
+        149.88,
+        611.98,
+        217.65,
+        623.09
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0050",
+      "text": "00h",
+      "bbox": [
+        247.1,
+        611.98,
+        263.77,
+        623.09
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0051",
+      "text": "00h",
+      "bbox": [
+        344.33,
+        611.98,
+        360.99,
+        623.09
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p140_s0052",
+      "text": "00h",
+      "bbox": [
+        441.49,
+        611.98,
+        458.15,
+        623.09
+      ],
+      "block_index": 22,
+      "line_index": 5,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0139"
+  ]
+}

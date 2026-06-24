@@ -1,0 +1,8 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Hex Value", "page": 116, "bbox": [120.5, 110.28, 228.03, 132.0]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Meaning", "page": 116, "bbox": [228.03, 110.28, 515.5, 132.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00h", "page": 116, "bbox": [120.5, 132.0, 228.03, 150.03]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Clock synchronization service enabled to this client", "page": 116, "bbox": [228.03, 132.0, 515.5, 150.03]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "01h - FEh", "page": 116, "bbox": [120.5, 150.03, 228.03, 168.03]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Reserved", "page": 116, "bbox": [228.03, 150.03, 515.5, 168.03]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "FFh", "page": 116, "bbox": [120.5, 168.03, 228.03, 185.7]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Clock synchronization service disabled to this client", "page": 116, "bbox": [228.03, 168.03, 515.5, 185.7]}

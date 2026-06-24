@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0172",
+  "type": "table",
+  "caption": "Table 160 – Stacked Connect-request support Login Bits",
+  "pages": [
+    181
+  ],
+  "bbox": [
+    102.64,
+    159.62,
+    533.36,
+    244.02
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 181,
+  "logical_table": false
+}

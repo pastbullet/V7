@@ -1,0 +1,10 @@
+| Encoded Value<br>Word 0, Bits 11-8 | Description |
+| --- | --- |
+| 0000b | Reserved |
+| 0001b | Request executed |
+| 0010b - 0011b | Reserved |
+| 0100b | The Exchange recipient corresponding to the Responder Process_Associator<br>specified in the PRLO Request and PRLO LS_ACC response does not exist.<br>The PRLO Request shall not be retried. |
+| 0101b - 0110b | Reserved |
+| 0111b | Obsolete |
+| 1000b | Obsolete |
+| 1001b - 1111b | Reserved |

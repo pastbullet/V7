@@ -1,0 +1,33 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Item", "page": 81, "bbox": [158.12, 183.82, 387.51, 205.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Word", "page": 81, "bbox": [387.51, 183.82, 426.39, 205.32]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Bits", "page": 81, "bbox": [426.39, 183.82, 477.88, 205.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "Reserved", "page": 81, "bbox": [158.12, 205.32, 387.51, 229.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "0", "page": 81, "bbox": [387.51, 205.32, 426.39, 229.35]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "31-16", "page": 81, "bbox": [426.39, 205.32, 477.88, 229.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "Originator Process_Associator Validity", "page": 81, "bbox": [158.12, 229.35, 387.51, 253.35]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "0", "page": 81, "bbox": [387.51, 229.35, 426.39, 253.35]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "15", "page": 81, "bbox": [426.39, 229.35, 477.88, 253.35]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "Responder Process_Associator Validity", "page": 81, "bbox": [158.12, 253.35, 387.51, 277.35]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "0", "page": 81, "bbox": [387.51, 253.35, 426.39, 277.35]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "14", "page": 81, "bbox": [426.39, 253.35, 477.88, 277.35]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "Reserved", "page": 81, "bbox": [158.12, 277.35, 387.51, 301.35]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "0", "page": 81, "bbox": [387.51, 277.35, 426.39, 301.35]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "13-12", "page": 81, "bbox": [426.39, 277.35, 477.88, 301.35]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "Response Code (see table 56)", "page": 81, "bbox": [158.12, 301.35, 387.51, 325.35]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "0", "page": 81, "bbox": [387.51, 301.35, 426.39, 325.35]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "11-8", "page": 81, "bbox": [426.39, 301.35, 477.88, 325.35]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "Reserved", "page": 81, "bbox": [158.12, 325.35, 387.51, 349.35]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "0", "page": 81, "bbox": [387.51, 325.35, 426.39, 349.35]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "7-0", "page": 81, "bbox": [426.39, 325.35, 477.88, 349.35]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "Originator Process_Associator", "page": 81, "bbox": [158.12, 349.35, 387.51, 373.35]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "1", "page": 81, "bbox": [387.51, 349.35, 426.39, 373.35]}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "31-0", "page": 81, "bbox": [426.39, 349.35, 477.88, 373.35]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "Responder Process_Associator", "page": 81, "bbox": [158.12, 373.35, 387.51, 397.35]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "2", "page": 81, "bbox": [387.51, 373.35, 426.39, 397.35]}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "31-0", "page": 81, "bbox": [426.39, 373.35, 477.88, 397.35]}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "Reserved", "page": 81, "bbox": [158.12, 397.35, 387.51, 421.35]}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "3", "page": 81, "bbox": [387.51, 397.35, 426.39, 421.35]}
+{"cell_id": "r10c3", "row": 10, "col": 3, "text": "31-1", "page": 81, "bbox": [426.39, 397.35, 477.88, 421.35]}
+{"cell_id": "r11c1", "row": 11, "col": 1, "text": "Image Pair State", "page": 81, "bbox": [158.12, 421.35, 387.51, 444.82]}
+{"cell_id": "r11c2", "row": 11, "col": 2, "text": "3", "page": 81, "bbox": [387.51, 421.35, 426.39, 444.82]}
+{"cell_id": "r11c3", "row": 11, "col": 3, "text": "0", "page": 81, "bbox": [426.39, 421.35, 477.88, 444.82]}

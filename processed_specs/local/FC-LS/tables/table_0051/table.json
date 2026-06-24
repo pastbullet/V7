@@ -1,0 +1,54 @@
+{
+  "rows": [
+    [
+      "Item",
+      "Word",
+      "Bit"
+    ],
+    [
+      "TYPE Code or Common Logout Parametersa",
+      "0",
+      "31-24"
+    ],
+    [
+      "TYPE Code Extension",
+      "0",
+      "23-16"
+    ],
+    [
+      "Originator Process_Associator Validity",
+      "0",
+      "15"
+    ],
+    [
+      "Responder Process_Associator Validity",
+      "0",
+      "14"
+    ],
+    [
+      "Reserved",
+      "0",
+      "13-0"
+    ],
+    [
+      "Originator Process_Associator",
+      "1",
+      "31-0"
+    ],
+    [
+      "Responder Process_Associator",
+      "2",
+      "31-0"
+    ],
+    [
+      "Reserved",
+      "3",
+      "31-0"
+    ],
+    [
+      "a If byte 0 of the first word of a Logout Parameter page is set to the value 00h,\nthe Logout Parameter page is common to all FC-4 Types at that image pair.",
+      null,
+      null
+    ]
+  ]
+}

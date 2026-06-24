@@ -1,0 +1,6 @@
+| Value | When sent to the Clock Sync Server | When sent to the Fabric Controller |
+| --- | --- | --- |
+| 00h | Enable Clock Synchronization service to<br>this client. The CS_Accuracy,<br>CS_Implemented_MSB,<br>CS_Implemented_LSB, and<br>CS_Update_Period fields are not<br>meaningful in the CSR Request. | Return Quality of Service parameters.<br>The CS_Accuracy,<br>CS_Implemented_MSB,<br>CS_Implemented_LSB, and<br>CS_Update_Period fields are not<br>meaningful in the CSR Request. |
+| 01h | Enable Clock Synchronization service to<br>this client. The CS_Accuracy,<br>CS_Implemented_MSB,<br>CS_Implemented_LSB, and<br>CS_Update_Period fields contain the<br>requested Quality of Service<br>parameters. | Return Quality of Service parameters.<br>The CS_Accuracy,<br>CS_Implemented_MSB,<br>CS_Implemented_LSB, and<br>CS_Update_Period fields contain the<br>requested Quality of Service<br>parameters. |
+| 02h – FEh | Reserved | Reserved |
+| FFh | Disable Clock Synchronization service to<br>this client | Reserved |

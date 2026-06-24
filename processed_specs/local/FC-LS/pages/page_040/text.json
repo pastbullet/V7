@@ -1,0 +1,933 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 40,
+  "spans": [
+    {
+      "span_id": "p040_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0002",
+      "text": " 21",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0003",
+      "text": "An ELS Protocol is composed of an ELS request Sequence and, for some requests, an ELS Reply",
+      "bbox": [
+        96.0,
+        429.65,
+        539.98,
+        440.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0004",
+      "text": "Sequence.  The last Data frame of an ELS request Sequence with a Reply Sequence shall transfer",
+      "bbox": [
+        96.0,
+        441.65,
+        539.93,
+        452.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0005",
+      "text": "the Sequence Initiative to the Recipient in order to allow the reply to be transmitted (see FC-FS-2). If",
+      "bbox": [
+        96.0,
+        453.65,
+        539.95,
+        464.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0006",
+      "text": "an ELS request Sequence that has a Reply Sequence is transmitted without the transfer of Se-",
+      "bbox": [
+        96.0,
+        465.65,
+        540.24,
+        476.76
+      ],
+      "block_index": 3,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0007",
+      "text": "quence Initiative, the Recipient shall abort the Exchange and not perform the request. ",
+      "bbox": [
+        96.0,
+        477.65,
+        476.48,
+        488.76
+      ],
+      "block_index": 3,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0008",
+      "text": "The following ELS requests and their replies shall be supported by an Nx_Port (all others are optional",
+      "bbox": [
+        96.0,
+        502.97,
+        540.05,
+        514.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0009",
+      "text": "for purposes of this standard, other standards or Technical Reports may require further ELS support):",
+      "bbox": [
+        96.0,
+        514.97,
+        540.0,
+        526.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0010",
+      "text": "a) FLOGI",
+      "bbox": [
+        106.02,
+        538.97,
+        152.36,
+        550.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0011",
+      "text": "b) PLOGI",
+      "bbox": [
+        106.02,
+        562.97,
+        152.96,
+        574.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0012",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        586.96,
+        114.37,
+        598.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0013",
+      "text": "LOGO",
+      "bbox": [
+        122.39,
+        586.96,
+        151.27,
+        598.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0014",
+      "text": "90h",
+      "bbox": [
+        116.7,
+        127.66,
+        133.33,
+        138.78
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0015",
+      "text": "Authentication ELS",
+      "bbox": [
+        156.18,
+        126.64,
+        241.19,
+        137.76
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0016",
+      "text": "AUTH_ELS",
+      "bbox": [
+        368.64,
+        126.64,
+        420.28,
+        137.76
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0017",
+      "text": "see FC-SP see FC-SP",
+      "bbox": [
+        438.48,
+        126.64,
+        539.14,
+        137.76
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0018",
+      "text": "97h",
+      "bbox": [
+        116.7,
+        151.66,
+        133.33,
+        162.78
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0019",
+      "text": "Request Fabric Change Notification",
+      "bbox": [
+        156.18,
+        150.64,
+        313.99,
+        161.76
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0020",
+      "text": "RFCN",
+      "bbox": [
+        368.69,
+        150.64,
+        396.43,
+        161.76
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0021",
+      "text": "see FC-SP see FC-SP",
+      "bbox": [
+        438.5,
+        150.64,
+        539.19,
+        161.76
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0022",
+      "text": "A0h",
+      "bbox": [
+        116.16,
+        175.66,
+        133.94,
+        186.78
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0023",
+      "text": "Define FFI Domain Topology Map",
+      "bbox": [
+        156.18,
+        174.64,
+        306.16,
+        185.76
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0024",
+      "text": "FFI_DTM",
+      "bbox": [
+        368.66,
+        174.64,
+        410.88,
+        185.76
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0025",
+      "text": "4.2.45",
+      "bbox": [
+        438.52,
+        174.64,
+        466.27,
+        185.76
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0026",
+      "text": "Yes",
+      "bbox": [
+        490.37,
+        174.64,
+        507.54,
+        185.76
+      ],
+      "block_index": 10,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0027",
+      "text": "A1h",
+      "bbox": [
+        116.16,
+        199.67,
+        133.94,
+        210.78
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0028",
+      "text": "Request FFI Domain Topology Map ",
+      "bbox": [
+        156.18,
+        198.65,
+        317.25,
+        209.76
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0029",
+      "text": "FFI_RTM ",
+      "bbox": [
+        368.6,
+        198.65,
+        413.56,
+        209.76
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0030",
+      "text": "4.2.46",
+      "bbox": [
+        438.45,
+        198.65,
+        466.19,
+        209.76
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0031",
+      "text": "Yes",
+      "bbox": [
+        490.3,
+        198.65,
+        507.46,
+        209.76
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0032",
+      "text": "A2h",
+      "bbox": [
+        116.16,
+        223.66,
+        133.94,
+        234.78
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0033",
+      "text": "FFI AE Principal Switch Selector",
+      "bbox": [
+        156.18,
+        222.65,
+        300.02,
+        233.76
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0034",
+      "text": "FFI_PSS ",
+      "bbox": [
+        368.65,
+        222.65,
+        411.92,
+        233.76
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0035",
+      "text": "4.2.47",
+      "bbox": [
+        438.43,
+        222.65,
+        466.18,
+        233.76
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0036",
+      "text": "Yes",
+      "bbox": [
+        490.28,
+        222.65,
+        507.47,
+        233.76
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0037",
+      "text": "A3h",
+      "bbox": [
+        116.16,
+        247.66,
+        133.94,
+        258.78
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0038",
+      "text": "FFI Map Update Registration ",
+      "bbox": [
+        156.18,
+        246.64,
+        287.31,
+        257.76
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0039",
+      "text": "FFI_MUR ",
+      "bbox": [
+        368.67,
+        246.64,
+        414.74,
+        257.76
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0040",
+      "text": "4.2.48",
+      "bbox": [
+        438.49,
+        246.64,
+        466.23,
+        257.76
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0041",
+      "text": "Yes",
+      "bbox": [
+        490.33,
+        246.64,
+        507.5,
+        257.76
+      ],
+      "block_index": 13,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0042",
+      "text": "A4h",
+      "bbox": [
+        116.16,
+        271.66,
+        133.94,
+        282.78
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0043",
+      "text": "FFI Registered Map Update Notification ",
+      "bbox": [
+        156.18,
+        270.64,
+        334.57,
+        281.76
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0044",
+      "text": "FFI_RMUN ",
+      "bbox": [
+        368.71,
+        270.64,
+        421.97,
+        281.76
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0045",
+      "text": "4.2.49",
+      "bbox": [
+        438.53,
+        270.64,
+        466.25,
+        281.76
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0046",
+      "text": "Yes",
+      "bbox": [
+        490.35,
+        270.64,
+        507.51,
+        281.76
+      ],
+      "block_index": 14,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0047",
+      "text": "A5h",
+      "bbox": [
+        116.16,
+        295.66,
+        133.94,
+        306.78
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0048",
+      "text": "FFI Suspend Map Updates ",
+      "bbox": [
+        156.18,
+        294.64,
+        278.37,
+        305.76
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0049",
+      "text": "FFI_SMU ",
+      "bbox": [
+        368.6,
+        294.64,
+        414.21,
+        305.76
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0050",
+      "text": "4.2.50",
+      "bbox": [
+        438.51,
+        294.64,
+        466.27,
+        305.76
+      ],
+      "block_index": 15,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0051",
+      "text": "Yes",
+      "bbox": [
+        490.37,
+        294.64,
+        507.55,
+        305.76
+      ],
+      "block_index": 15,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0052",
+      "text": "A6h",
+      "bbox": [
+        116.16,
+        319.66,
+        133.94,
+        330.78
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0053",
+      "text": "FFI Resume Map Updates ",
+      "bbox": [
+        156.18,
+        318.64,
+        276.12,
+        329.76
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0054",
+      "text": "FFI_RMU ",
+      "bbox": [
+        368.64,
+        318.64,
+        414.74,
+        329.76
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0055",
+      "text": "4.2.51",
+      "bbox": [
+        438.49,
+        318.64,
+        466.23,
+        329.76
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0056",
+      "text": "Yes",
+      "bbox": [
+        490.33,
+        318.64,
+        507.5,
+        329.76
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0057",
+      "text": "Others",
+      "bbox": [
+        110.04,
+        343.66,
+        139.97,
+        354.78
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0058",
+      "text": "Reserved",
+      "bbox": [
+        156.18,
+        342.64,
+        198.87,
+        353.76
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0059",
+      "text": " Table 3 – ELS_Command codes (Continued)",
+      "bbox": [
+        211.62,
+        57.64,
+        424.4,
+        68.76
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0060",
+      "text": "Value",
+      "bbox": [
+        111.66,
+        91.66,
+        138.32,
+        102.78
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0061",
+      "text": "(Bits 31-24)",
+      "bbox": [
+        98.1,
+        103.66,
+        151.89,
+        114.78
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0062",
+      "text": "Description",
+      "bbox": [
+        232.87,
+        103.66,
+        287.96,
+        114.78
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0063",
+      "text": "Abbr.",
+      "bbox": [
+        388.55,
+        103.66,
+        414.67,
+        114.78
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0064",
+      "text": "Reference",
+      "bbox": [
+        438.3,
+        103.66,
+        486.54,
+        114.78
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0065",
+      "text": "N_Port ",
+      "bbox": [
+        497.82,
+        79.66,
+        533.36,
+        90.78
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0066",
+      "text": "Login ",
+      "bbox": [
+        500.64,
+        91.66,
+        530.61,
+        102.78
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0067",
+      "text": "Required",
+      "bbox": [
+        492.54,
+        103.66,
+        535.85,
+        114.78
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0068",
+      "text": "a",
+      "bbox": [
+        104.04,
+        366.26,
+        108.04,
+        374.3
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0069",
+      "text": " Some early implementations of FCP-2 may have used the value 14h for SRR (Sequence Retransmission ",
+      "bbox": [
+        108.04,
+        364.64,
+        533.68,
+        378.28
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p040_s0070",
+      "text": "Request). This code is permanently reserved in this standard to avoid conflicts with such implementations. ",
+      "bbox": [
+        114.84,
+        379.28,
+        538.48,
+        389.32
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p040_s0071",
+      "text": "See FCP-3 for the standard implementation of SRR as an FC-4 Link Service.",
+      "bbox": [
+        114.84,
+        390.26,
+        420.32,
+        400.3
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0003"
+  ]
+}

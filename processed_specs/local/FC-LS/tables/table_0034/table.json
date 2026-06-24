@@ -1,0 +1,95 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "LSTS (72h)",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "0",
+      "02h",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "Reserved",
+      "Failed Receiver",
+      "FC-FLA Compliance\nLevel - obsolete",
+      "Loop State"
+    ],
+    [
+      "2",
+      "MSB Current Public Loop Devices bit map\n(16 bytes)\nLSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "5",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "6",
+      "MSB Current Private Loop Devices bit map\n(16 bytes)\nLSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "9",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "10",
+      "MSB AL_PA Position Map\n(128 bytes)\nLSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "41",
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

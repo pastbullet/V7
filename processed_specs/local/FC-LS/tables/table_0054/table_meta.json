@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0054",
+  "type": "table",
+  "caption": "Table 51 – PRLO accept response code",
+  "pages": [
+    78
+  ],
+  "bbox": [
+    100.25,
+    399.64,
+    535.75,
+    647.04
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 78,
+  "logical_table": false
+}

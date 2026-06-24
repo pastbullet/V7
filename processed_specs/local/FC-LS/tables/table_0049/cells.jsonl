@@ -1,0 +1,22 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Encoded Value\nWord 0, Bits 11-8", "page": 74, "bbox": [105.26, 267.62, 192.27, 301.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Description", "page": 74, "bbox": [192.27, 267.62, 530.74, 301.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0000b", "page": 74, "bbox": [105.26, 301.32, 192.27, 325.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Reserved", "page": 74, "bbox": [192.27, 301.32, 530.74, 325.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "0001b", "page": 74, "bbox": [105.26, 325.35, 192.27, 349.35]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Request executed", "page": 74, "bbox": [192.27, 325.35, 530.74, 349.35]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "0010b", "page": 74, "bbox": [105.26, 349.35, 192.27, 395.37]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "The Exchange recipient has no resources available for establishing image\npairs between the specified source and destination Nx_Ports. The PRLI\nRequest may be retried.", "page": 74, "bbox": [192.27, 349.35, 530.74, 395.37]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "0011b", "page": 74, "bbox": [105.26, 395.37, 192.27, 429.39]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Initialization is not complete for the Exchange recipient. The PRLI Request\nmay be retried.", "page": 74, "bbox": [192.27, 395.37, 530.74, 429.39]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "0100b", "page": 74, "bbox": [105.26, 429.39, 192.27, 475.35]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "The Exchange recipient corresponding to the Responder\nProcess_Associator specified in the PRLI Request and PRLI LS_ACC\nresponse does not exist. The PRLI Request shall not be retried.", "page": 74, "bbox": [192.27, 429.39, 530.74, 475.35]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "0101b", "page": 74, "bbox": [105.26, 475.35, 192.27, 509.37]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "The Exchange recipient has a predefined configuration that precludes\nestablishing this image pair. The PRLI Request shall not be retried.", "page": 74, "bbox": [192.27, 475.35, 530.74, 509.37]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "0110b", "page": 74, "bbox": [105.26, 509.37, 192.27, 543.39]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "Request executed conditionally. Some Service Parameters were not able to\nbe set to their requested state (see table 43)", "page": 74, "bbox": [192.27, 509.37, 530.74, 543.39]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "0111b", "page": 74, "bbox": [105.26, 543.39, 192.27, 567.39]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "Obsolete", "page": 74, "bbox": [192.27, 543.39, 530.74, 567.39]}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "1000b", "page": 74, "bbox": [105.26, 567.39, 192.27, 591.39]}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "Service Parameters are invalid", "page": 74, "bbox": [192.27, 567.39, 530.74, 591.39]}
+{"cell_id": "r11c1", "row": 11, "col": 1, "text": "1001b to 1111b", "page": 74, "bbox": [105.26, 591.39, 192.27, 615.06]}
+{"cell_id": "r11c2", "row": 11, "col": 2, "text": "Reserved", "page": 74, "bbox": [192.27, 591.39, 530.74, 615.06]}

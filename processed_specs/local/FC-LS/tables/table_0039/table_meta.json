@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0039",
+  "type": "table",
+  "caption": "Table 36 – RSCN Event Qualifier values",
+  "pages": [
+    67
+  ],
+  "bbox": [
+    101.47,
+    267.62,
+    534.47,
+    611.04
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 67,
+  "logical_table": false
+}

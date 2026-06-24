@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Value", "page": 114, "bbox": [94.33, 339.84, 164.01, 361.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "When sent to the Clock Sync Server", "page": 114, "bbox": [164.01, 339.84, 353.25, 361.32]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "When sent to the Fabric Controller", "page": 114, "bbox": [353.25, 339.84, 541.67, 361.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00h", "page": 114, "bbox": [94.33, 361.32, 164.01, 439.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Enable Clock Synchronization service to\nthis client. The CS_Accuracy,\nCS_Implemented_MSB,\nCS_Implemented_LSB, and\nCS_Update_Period fields are not\nmeaningful in the CSR Request.", "page": 114, "bbox": [164.01, 361.32, 353.25, 439.35]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Return Quality of Service parameters.\nThe CS_Accuracy,\nCS_Implemented_MSB,\nCS_Implemented_LSB, and\nCS_Update_Period fields are not\nmeaningful in the CSR Request.", "page": 114, "bbox": [353.25, 361.32, 541.67, 439.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "01h", "page": 114, "bbox": [94.33, 439.35, 164.01, 529.35]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Enable Clock Synchronization service to\nthis client. The CS_Accuracy,\nCS_Implemented_MSB,\nCS_Implemented_LSB, and\nCS_Update_Period fields contain the\nrequested Quality of Service\nparameters.", "page": 114, "bbox": [164.01, 439.35, 353.25, 529.35]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "Return Quality of Service parameters.\nThe CS_Accuracy,\nCS_Implemented_MSB,\nCS_Implemented_LSB, and\nCS_Update_Period fields contain the\nrequested Quality of Service\nparameters.", "page": 114, "bbox": [353.25, 439.35, 541.67, 529.35]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "02h – FEh", "page": 114, "bbox": [94.33, 529.35, 164.01, 547.35]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Reserved", "page": 114, "bbox": [164.01, 529.35, 353.25, 547.35]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Reserved", "page": 114, "bbox": [353.25, 529.35, 541.67, 547.35]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "FFh", "page": 114, "bbox": [94.33, 547.35, 164.01, 576.84]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Disable Clock Synchronization service to\nthis client", "page": 114, "bbox": [164.01, 547.35, 353.25, 576.84]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "Reserved", "page": 114, "bbox": [353.25, 547.35, 541.67, 576.84]}

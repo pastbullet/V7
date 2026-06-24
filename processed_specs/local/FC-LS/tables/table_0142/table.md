@@ -1,0 +1,4 @@
+| Bits<br>Word | 31 .. 24 | 23 .. 16 | 15 .. 08 | 07 .. 00 |
+| --- | --- | --- | --- | --- |
+| 0 | FFI_MUR (A3h) | 00h | 00h | 00h |
+| 1 | 00h | 00h | 00h | Registration Function |

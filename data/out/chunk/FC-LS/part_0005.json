@@ -1,0 +1,773 @@
+{
+  "success": true,
+  "doc_name": "FC-LS.pdf",
+  "structure": [
+    {
+      "node_id": "0017",
+      "title": "4 Extended Link Services",
+      "summary": "Covers Extended Link Services (ELS) basics and request rules: an ELS request solicits a destination `Nx_Port` function; an ELS reply is required unless otherwise specified. Defines single-`Sequence` request/reply structure, `ELS_Command` code in the first word/first byte of `Payload`, one-`Exchange` request/reply pairing, `Last Sequence bit` termination on `LS_ACC`, and normal `Exchange`/`Sequence` management per `FC-FS-2`. Specifies frame fields: `TYPE` = `01h`, `R_CTL` values, `Payload`, `D_ID`, `S_ID`, `LFA`, valid addresses, well known addresses, and `FLOGI` before all ELSs in a Fabric. `Table 2 – Extended Link Services Routing Bits and Information Categories` defines `R_CTL` routing/info categories: `0001b` Solicited Data, `0010b` Request, `0011b` Reply, Others Reserved; note `CSU`. Content types: message/frame format, response/branch handling, completion/exception conditions, procedure/flow.",
+      "is_skeleton": true,
+      "children": [
+        {
+          "node_id": "0019",
+          "title": "4.2 Extended Link Service requests",
+          "summary": "Section `4.2 Extended Link Service requests` defines when and how a Sequence Initiator sends an ELS Sequence to solicit a destination `Nx_Port` link-level function/service. Covers request preconditions and addressing rules: ELS requests shall not be issued before completion of `N_Port Login` unless otherwise noted; `FLOGI` is required before all ELSs if a Fabric is present; `Table 3` applies to ELSs sent to or received by all valid addresses, including well known addresses. Specifies `LFA` usage: destination ID (`D_ID`) for `LINIT` and `LSTS` ELS Request Sequences, source ID (`S_ID`) in Reply Sequences; no other Sequences shall be directed to `LFA`. Content types: procedure/flow, response/branch handling, completion/exception conditions. Table `2 – Extended Link Services Routing Bits and Information Categories`: defines `R_CTL` routing/information values for ELS frames.",
+          "is_skeleton": true,
+          "children": [
+            {
+              "node_id": "0260",
+              "title": "4.2.48 FFI Map Update Registration (FFI_MUR)",
+              "summary": "Section `4.2.48 FFI Map Update Registration (FFI_MUR)` covers the `FFI_MUR` ELS Request used to add or remove the sending `Nx_Port` (`S_ID`) to/from the list of `Nx_Ports` registered to receive `FFI_RMUN` ELS Requests; destination `D_ID` is the Domain Controller of the AE Principal Switch in form `FFFCxxh`. Includes `procedure/flow`: `FFI Map Update Registration Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`. Includes `response/branch handling` and `completion/exception conditions`: if receiver is not the AE Principal Switch Domain Controller, reply `LS_RJT` reason code `Logical error`; if destination is not a Domain Controller, reply `LS_RJT` reason code `Command not supported`. Includes `message/frame format`: `Table 138 – FFI_MUR Payload`, defining payload fields `FFI_MUR (A3h)` and `Registration Function`.",
+              "is_skeleton": true,
+              "children": [
+                {
+                  "node_id": "0262",
+                  "title": "4.2.48.2 Protocol",
+                  "summary": "FFI Map Update Registration protocol overview for `FFI_MUR`: defines the exchange as `a) FFI Map Update Registration Request Sequence; and b) LS_ACC or LS_RJT Reply Sequence.` Core behavior ties `S_ID` to the requesting `Nx_Port` and `D_ID` to the AE Principal Switch `Domain Controller` in form `FFFCxxh`; request payload uses `FFI_MUR (A3h)` and `Registration Function`. Includes `LS_RJT` branch handling with reason codes `Logical error` and `Command not supported`, and `LS_ACC` acceptance path. `Table 138 – FFI_MUR Payload` shows the `FFI_MUR` request message/frame format, including word 0 `A3h 00h 00h 00h` and word 1 `00h 00h 00h Registration Function`. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 141,
+                  "end_index": 141,
+                  "subtree_start_index": 141,
+                  "subtree_end_index": 141
+                },
+                {
+                  "node_id": "0263",
+                  "title": "4.2.48.3 Request Sequence",
+                  "summary": "Section `4.2.48.3 Request Sequence` covers the `FFI_MUR` ELS Request addressing and request payload for FFI Map Update Registration. Core details: `S_ID` designates the `Nx_Port` requesting registration for `FFI Map Update Notification`; `D_ID` designates the `Domain Controller of the AE Principal Switch` in the form `FFFCxxh`, where `xx` is the one-byte Domain Controller value. Payload definition is by `Table 138 – FFI_MUR Payload`, which shows the message/frame format: `Word 0` = `FFI_MUR (A3h) 00h 00h 00h`; `Word 1` = `00h 00h 00h Registration Function`. Content types present: procedure/flow (`Request Sequence`), message/frame format, with addressing identifiers and payload field names.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 141,
+                  "end_index": 141,
+                  "subtree_start_index": 141,
+                  "subtree_end_index": 141
+                },
+                {
+                  "node_id": "0264",
+                  "title": "4.2.48.4 Reply Sequence",
+                  "summary": "Core topic: `4.2.48.4 Reply Sequence` for `FFI_MUR` replies, covering acceptance vs rejection of the Request and the `LS_ACC` payload used for registration to receive `FFI_RMUN Requests`. Content types: response/branch handling, message/frame format, completion/exception conditions. `LS_RJT` signifies rejection of the `FFI_MUR Request` and carries an appropriate reject reason code. `LS_ACC` signifies acceptance of the `FFI_MUR Request` and registration to receive `FFI_RMUN Requests`. `Table 139 – Registration Function` defines `Registration Function` values: `Reserved 0`, `Full registration 3`, `Reserved 4 - 254`, `Clear registration 255`. `Table 140 – FFI_MUR LS_ACC Payload` shows the `LS_ACC Payload` format: `Word 0 = 02h 00h 00h 00h`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 142,
+                  "end_index": 142,
+                  "subtree_start_index": 142,
+                  "subtree_end_index": 142
+                }
+              ],
+              "start_index": 141,
+              "end_index": 141,
+              "subtree_start_index": 141,
+              "subtree_end_index": 142
+            },
+            {
+              "node_id": "0265",
+              "title": "4.2.49 FFI Registered Map Update Notification (FFI_RMUN)",
+              "summary": "Covers `4.2.49 FFI Registered Map Update Notification (FFI_RMUN)` description and delivery rules. Core topic: `FFI_RMUN Request` is a unidirectional notification sent to registered `Nx_Ports` (via `4.2.48` / `FFI_MUR`) when the `AE Principal Switch` sends a `Fast Fabric Initialization (FFI) Request Sequence` initiated by the `AE Principal Switch`. Mandatory/optional support rules are stated for `Domain Controller`, `AE Principal Switch`, `AE Switch`, and `Nx_Ports`; prohibition cases are stated for `Nx_Ports` sending `FFI_RMUN Requests` and for a `Domain Controller` that is not an `AE Principal Switch`. Includes related response context: `LS_RJT`, `LS_ACC`, `FFI_MUR Request`, `FFI_MUR LS_ACC Payload`, `02h 00h 00h 00h`. Tables: `Table 139 – Registration Function` defines `Registration Function` values (`Reserved 0`, full registration `3`, clear registration `255`); `Table 140 – FFI_MUR LS_ACC Payload` shows accepted-reply payload format. Content types: response/branch handling, completion/exception conditions.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0266",
+                  "title": "4.2.49.1 Description",
+                  "summary": "Core topic: `4.2.49.1 Description` defines `FFI_RMUN` (FFI Registered Map Update Notification): a unidirectional `FFI_RMUN Request` sent to registered `Nx_Ports` (see `4.2.48`) when the `AE Principal Switch` sends a `Fast Fabric Initialization (FFI) Request Sequence`; mandatory for a `Domain Controller` in an `AE Principal Switch` or AE-capable switch, optional for `Nx_Ports` unless they invoke `FFI_MUR ELS`, then receipt support is required. Prohibitions: no `FFI_RMUN Requests` between `Nx_Ports`; none by a `Domain Controller` that is not an `AE Principal Switch`. Purpose: timely Map Update indication. Also references response/branch handling for `FFI_MUR Request`: `LS_RJT`, `LS_ACC`, reject reason code. `Table 139 – Registration Function` shows `Registration Function` values (`Reserved` `0`, full registration `3`, clear registration `255`). `Table 140 – FFI_MUR LS_ACC Payload` shows payload format, including `02h 00h 00h 00h`. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 142,
+                  "end_index": 142,
+                  "subtree_start_index": 142,
+                  "subtree_end_index": 142
+                },
+                {
+                  "node_id": "0267",
+                  "title": "4.2.49.2 Registration to Receive FFI_RMUN Requests",
+                  "summary": "Covers `4.2.49.2 Registration to Receive FFI_RMUN Requests`; registration rule is only `See 4.2.48.` Core topic is receiving `FFI_RMUN` requests and the linked `FFI_RMUN Request Sequence` / `Request Sequence`. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions. Named anchors: `FFI_RMUN`, `FFI_RMUN Request Payload`, `Table 141 – FFI_RMUN Payload`, `S_ID`, `D_ID`, `Domain Controller`, `AE Principal Switch`, `FFFCxxh`, `Registered Nx_Port destination`, `FFI_RMUN (A4h)`, `Payload Length`, `FFI Incarnation Number`, `Number of FFI Link State Records`, `FFI Link State Records`, `FFI Domain Topology Map`, `Avionics Fabric`, `FC-SW-4`, `LS_RJT: none`, `LS_ACC: none`. `Table 140 – FFI_MUR LS_ACC Payload`: shows `FFI_MUR LS_ACC` payload format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 143,
+                  "end_index": 143,
+                  "subtree_start_index": 143,
+                  "subtree_end_index": 143
+                },
+                {
+                  "node_id": "0268",
+                  "title": "4.2.49.3 Protocol",
+                  "summary": "Section `4.2.49.3 Protocol` covers the `FFI_RMUN Request Sequence` and `Reply Sequence` for `FFI_RMUN`. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions. `Addressing`: `S_ID` = Domain Controller of the AE Principal Switch (`FFFCxxh`), `D_ID` = Registered `Nx_Port` destination. `Payload`: `Table 141 – FFI_RMUN Payload` defines the request payload layout: `FFI_RMUN (A4h)`, `Payload Length`, `FFI Incarnation Number`, `Reserved`, `Number of FFI Link State Records`, `FFI Link State Records`. Constraints named here: `Payload Length` multiple of 4 bytes, minimum `28 bytes`, maximum `65532`; `Number of FFI Link State Records` minimum `2`. `Reply Sequence`: `LS_RJT: none`, `LS_ACC: none`. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 143,
+                  "end_index": 143,
+                  "subtree_start_index": 143,
+                  "subtree_end_index": 143
+                },
+                {
+                  "node_id": "0269",
+                  "title": "4.2.49.4 Request Sequence",
+                  "summary": "FFI_RMUN Request Sequence for Domain Topology Map delivery: addressing, `FFI_RMUN (A4h)` request payload layout, and no-reply handling. `S_ID` is the Domain Controller of the AE Principal Switch (`FFFCxxh`); `D_ID` is the Registered `Nx_Port` destination. Payload uses `Table 141 – FFI_RMUN Payload`, defining `Payload Length`, `FFI Incarnation Number`, `Reserved`, `Number of FFI Link State Records`, and `FFI Link State Records`. Constraints: `Payload Length` includes word 0, is a multiple of 4 bytes, minimum `28 bytes`, maximum `65532`; `Number of FFI Link State Records` minimum `2`. `FFI Link State Records` format is described in `FC-SW-4`. `4.2.49.5 Reply Sequence`: `LS_RJT: none`, `LS_ACC: none`. Also present: `Table 140 – FFI_MUR LS_ACC Payload`, shows `FFI_MUR` `LS_ACC` payload format. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 143,
+                  "end_index": 143,
+                  "subtree_start_index": 143,
+                  "subtree_end_index": 143
+                },
+                {
+                  "node_id": "0270",
+                  "title": "4.2.49.5 Reply Sequence",
+                  "summary": "Section `4.2.49.5 Reply Sequence` covers `FFI_RMUN` reply behavior only: `LS_RJT: none`, `LS_ACC: none`. Core topic is absence of reply messages for the `FFI_RMUN` exchange after the `Request Sequence`. Named anchors present in surrounding section context: `FFI_RMUN Request Sequence`, `S_ID`, `D_ID`, `Domain Controller`, `AE Principal Switch`, `FFFCxxh`, `Registered Nx_Port destination`, `FFI_RMUN Payload`, `Table 141 – FFI_RMUN Payload`, `Payload Length`, `FFI Incarnation Number`, `Number of FFI Link State Records`, `FFI Link State Records`, `A4h`, `00h`, `65532`, `28 bytes`. Table present: `Table 140 – FFI_MUR LS_ACC Payload`, shows `FFI_MUR` `LS_ACC` payload layout/fields. Content types: response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 143,
+                  "end_index": 143,
+                  "subtree_start_index": 143,
+                  "subtree_end_index": 143
+                }
+              ],
+              "start_index": 142,
+              "end_index": 142,
+              "subtree_start_index": 142,
+              "subtree_end_index": 143
+            },
+            {
+              "node_id": "0271",
+              "title": "4.2.50 FFI Suspend Map Updates (FFI_SMU)",
+              "summary": "Defines `FFI Suspend Map Updates (FFI_SMU)` ELS for requesting the `Domain Controller` of the `AE Principal Switch` to suspend `Domain Topology Map updates` per `FC-SW-4`; if already suspended, treated as `NOP`, and successful execution also suspends `Registered Map Updates Notifications` (`4.2.49`). Mandatory support for `Domain Controller` in `AE Principal Switch` or capable `AE Switch`; optional for `Nx_Ports`. Procedure/flow: `FFI Suspend Map Updates Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`. Message/frame format: `S_ID`, `D_ID`, `FFFCxxh`, payload opcode `FFI_SMU (A5h)`. Response/branch handling and completion/exception conditions: `LS_RJT` with reason code `Logical error` if receiver is not current `AE Principal Switch`, `Command not supported` if not a `Domain Controller`; `LS_ACC` indicates suspension accepted. `Table 142 – FFI_SMU Payload`: request payload format. `Table 143 – FFI_SMU LS_ACC Payload`: accepted-reply payload (`02h 00h 00h 00h`).",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0272",
+                  "title": "4.2.50.1 Description",
+                  "summary": "Covers `FFI Suspend Map Updates (FFI_SMU)` / `4.2.50.1 Description`: `FFI_SMU ELS Request` asks the `Domain Controller` of the `AE Principal Switch` to suspend `Domain Topology Map` updates per `FC-SW-4`; if already suspended, treated as `NOP`; successful execution also suspends `Registered Map Updates Notifications` (`4.2.49`). Includes mandatory/optional support conditions for `AE Principal Switch`, capable `AE Switch`, and `Nx_Ports`. Response/branch handling: non-`AE Principal Switch` `Domain Controller` returns `LS_RJT` reason code `Logical error`; non-`Domain Controller` destination returns `LS_RJT` reason code `Command not supported`; valid request returns `LS_ACC`. Message/frame format: `S_ID`, `D_ID`, `FFFCxxh`, `FFI_SMU (A5h)`, `02h`. Procedure/flow: request and reply sequences. Table `142 – FFI_SMU Payload`: request payload format. Table `143 – FFI_SMU LS_ACC Payload`: `LS_ACC` payload format. Completion/exception conditions included.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 144,
+                  "end_index": 144,
+                  "subtree_start_index": 144,
+                  "subtree_end_index": 144
+                },
+                {
+                  "node_id": "0273",
+                  "title": "4.2.50.2 Protocol",
+                  "summary": "FFI_SMU Protocol for **FFI Suspend Map Updates**: defines the exchange as `a) FFI Suspend Map Updates Request Sequence; and b) LS_ACC or LS_RJT Reply Sequence.` Core decision point for whether this section covers the protocol sequence only, versus payload/addressing details in adjacent subsections. Includes named messages/codes `FFI_SMU`, `LS_ACC`, `LS_RJT`, `FFI_SMU (A5h)`, `02h`, and identifiers/fields `S_ID`, `D_ID`, `FFFCxxh`. Content types: procedure/flow, response/branch handling, completion/exception conditions. Table present from this section context: `Table 143 – FFI_SMU LS_ACC Payload`, shows the `LS_ACC` payload format/accepted reply encoding (`02h 00h 00h 00h`). Also listed in section tables: `Table 140 – FFI_MUR LS_ACC Payload`, shows `FFI_MUR` accepted-reply payload format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 144,
+                  "end_index": 144,
+                  "subtree_start_index": 144,
+                  "subtree_end_index": 144
+                },
+                {
+                  "node_id": "0274",
+                  "title": "4.2.50.3 Request Sequence",
+                  "summary": "Defines the **FFI Suspend Map Updates (FFI_SMU) Request Sequence** for `FFI_SMU`: addressing and request payload format. `S_ID` identifies the `Nx_Port` requesting suspension of Domain Topology Map updates; `D_ID` identifies the Domain Controller of the AE Principal Switch as `FFFCxxh`, where `xx` is the one-byte Domain Controller value. Payload points to **Table 142 – FFI_SMU Payload**, showing Word `0` = `FFI_SMU (A5h) 00h 00h 00h`. Includes [message/frame format] and [procedure/flow] for the request side. Nearby reply handling references `LS_ACC` and `LS_RJT` in `4.2.50.4`. Tables present: **Table 140 – FFI_MUR LS_ACC Payload**, shows `FFI_MUR` `LS_ACC` payload format; **Table 143 – FFI_SMU LS_ACC Payload**, shows `LS_ACC` payload Word `0` = `02h 00h 00h 00h`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 144,
+                  "end_index": 144,
+                  "subtree_start_index": 144,
+                  "subtree_end_index": 144
+                },
+                {
+                  "node_id": "0275",
+                  "title": "4.2.50.4 Reply Sequence",
+                  "summary": "Reply behavior for `4.2.50 FFI Suspend Map Updates (FFI_SMU)`: defines `4.2.50.4 Reply Sequence` for `FFI_SMU Request` outcomes. `LS_RJT` signifies rejection of the `FFI_SMU Request` and carries an appropriate reject reason code. `LS_ACC` signifies acceptance of a valid `FFI_SMU Request` and indicates the `Domain Controller of the AE Principal Switch` has suspended `Domain Topology Map updates`. `Table 143 – FFI_SMU LS_ACC Payload` shows the `LS_ACC` payload format: `Word 0` = `02h 00h 00h 00h` with bit columns `31 .. 24`, `23 .. 16`, `15 .. 08`, `07 .. 00`. Also present in section tables: `Table 140 – FFI_MUR LS_ACC Payload`, showing `FFI_MUR` `LS_ACC` payload format. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 144,
+                  "end_index": 144,
+                  "subtree_start_index": 144,
+                  "subtree_end_index": 144
+                }
+              ],
+              "start_index": 144,
+              "end_index": 144,
+              "subtree_start_index": 144,
+              "subtree_end_index": 144
+            },
+            {
+              "node_id": "0276",
+              "title": "4.2.51 FFI Resume Map Updates (FFI_RMU)",
+              "summary": "FFI Resume Map Updates (`FFI_RMU`) ELS Request: requests the Domain Controller of the AE Principal Switch to resume Domain Topology Map updates per FC-SW-4; if updates are not suspended, treated as NOP; successful execution also resumes Registered Map Updates Notifications. Mandatory support for a Domain Controller in an AE Principal Switch or AE Switch capable of becoming one; optional for `Nx_Ports`. Response/branch handling: if receiver is not the AE Principal Switch, reply `LS_RJT` with reason code `Logical error`; if destination is not a Domain Controller, reply `LS_RJT` with reason code `Command not supported`; valid request returns `LS_ACC`. Procedure/flow: Request Sequence; `LS_ACC` or `LS_RJT` Reply Sequence. Message/frame format: `S_ID`, `D_ID`, `FFFCxxh`, `FFI_RMU (A6h)`. `Table 145 – FFI_RMU LS_ACC Payload`: accepted-reply payload `02h 00h 00h 00h`. Completion/exception conditions included.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0277",
+                  "title": "4.2.51.1 Description",
+                  "summary": "Covers `4.2.51 FFI Resume Map Updates (FFI_RMU)` / `4.2.51.1 Description`: purpose and handling of the `FFI_RMU` ELS Request to resume Domain Topology Map updates per `FC-SW-4`, with NOP behavior if updates are not suspended, and resumption of Registered Map Updates Notifications (`4.2.49`). Includes support requirements for Domain Controller in AE Principal Switch / AE Switch and optional `Nx_Ports`. Response/branch handling: if receiver is not the AE Principal Switch, reply `LS_RJT` with reason code `Logical error`; if destination is not a Domain Controller, reply `LS_RJT` with `Command not supported`; success returns `LS_ACC`. Procedure/flow and message/frame format: `S_ID`, `D_ID`, `FFFCxxh`, request payload `FFI_RMU (A6h) 00h 00h 00h`, `LS_ACC` payload `02h 00h 00h 00h`. Tables: `Table 145 – FFI_RMU LS_ACC Payload` shows accepted-reply payload format. Contains: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 145,
+                  "end_index": 145,
+                  "subtree_start_index": 145,
+                  "subtree_end_index": 145
+                },
+                {
+                  "node_id": "0278",
+                  "title": "4.2.51.2 Protocol",
+                  "summary": "Section `4.2.51.2 Protocol` for `FFI Resume Map Updates (FFI_RMU)`: defines the protocol exchange as `a) FFI Resume Map Updates Request Sequence; and b) b) LS_ACC or LS_RJT Reply Sequence.` Core anchors: `FFI_RMU`, `LS_ACC`, `LS_RJT`, `FFI Resume Map Updates Request Sequence`, `LS_ACC or LS_RJT Reply Sequence`. Related identifiers and codes present in the section context for this protocol: `S_ID`, `D_ID`, `FFFCxxh`, `FFI_RMU (A6h)`, `02h`, `00h`, `Logical error`, `Command not supported`. Tables: `Table 145 – FFI_RMU LS_ACC Payload` shows the `LS_ACC` payload (`02h 00h 00h 00h`); `Table 143 – FFI_SMU LS_ACC Payload` is listed on these pages and shows `FFI_SMU` `LS_ACC` payload. Content types: procedure/flow, response/branch handling, message/frame format, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 145,
+                  "end_index": 145,
+                  "subtree_start_index": 145,
+                  "subtree_end_index": 145
+                },
+                {
+                  "node_id": "0279",
+                  "title": "4.2.51.3 Request Sequence",
+                  "summary": "Core topic: `4.2.51.3 Request Sequence` for `FFI Resume Map Updates (FFI_RMU)` ELS request, covering request addressing and request payload format. [message/frame format] [procedure/flow] `S_ID` identifies the `Nx_Port` requesting resumption of Domain Topology Map updates; `D_ID` identifies the Domain Controller of the AE Principal Switch as `FFFCxxh`, where `xx` is the one-byte value assigned to the Domain Controller. Payload points to `Table 144 – FFI_RMU Payload`, with `Word 0` = `FFI_RMU (A6h) 00h 00h 00h`. Related response handling appears nearby: `LS_ACC` or `LS_RJT` reply sequence; `LS_ACC` payload in `Table 145 – FFI_RMU LS_ACC Payload` shows acceptance format (`02h 00h 00h 00h`). Also present: `Table 143 – FFI_SMU LS_ACC Payload`, showing `FFI_SMU` `LS_ACC` payload format. [response/branch handling]",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 145,
+                  "end_index": 145,
+                  "subtree_start_index": 145,
+                  "subtree_end_index": 145
+                },
+                {
+                  "node_id": "0280",
+                  "title": "4.2.51.4 Reply Sequence",
+                  "summary": "Reply handling for `4.2.51.4 Reply Sequence` of `FFI Resume Map Updates (FFI_RMU)`: defines `LS_RJT` and `LS_ACC` outcomes for an `FFI_RMU Request`. `LS_RJT` signifies rejection and carries an appropriate reject reason code. `LS_ACC` signifies acceptance of a valid `FFI_RMU Request` and indicates the `Domain Controller of the AE Principal Switch` has resumed `Domain Topology Map updates`. Includes `Table 145 – FFI_RMU LS_ACC Payload`, showing the `LS_ACC Payload` format: `Word 0 = 02h 00h 00h 00h`. Also present in section tables list: `Table 143 – FFI_SMU LS_ACC Payload`, showing `FFI_SMU` `LS_ACC Payload` format. Content types: response/branch handling, message/frame format, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 145,
+                  "end_index": 145,
+                  "subtree_start_index": 145,
+                  "subtree_end_index": 145
+                }
+              ],
+              "start_index": 145,
+              "end_index": 145,
+              "subtree_start_index": 145,
+              "subtree_end_index": 145
+            }
+          ],
+          "start_index": 36,
+          "end_index": 36,
+          "subtree_start_index": 36,
+          "subtree_end_index": 145
+        },
+        {
+          "node_id": "0281",
+          "title": "4.3 Extended Link Service Reply Sequences",
+          "summary": "Extended Link Service reply sequences for ELS request completion and rejection handling. Covers `ELS Reply Sequence`, `LS_ACC`, and `Link Service Reject (LS_RJT)`. `ELS Reply Sequence` signifies the ELS request Sequence is completed; reply Payload may contain request-defined data after the `ELS_Command` code word. `LS_ACC` completes the request; Responder terminates the Exchange by setting `Last Sequence bit (Bit 20)` in `F_CTL` on the last Data frame; first Payload byte `02h`; addressing uses `D_ID` = source of accepted ELS Sequence and `S_ID` = destination of accepted request Sequence; Payload follows `ELS_Command code (02XXXXXXh)`. `LS_RJT` rejects a Link Service request with a four-byte reason code in the `Data Field`; first Payload word `ELS_Command code (01000000h)`; see `figure 3`, `tables 146 and 147`; first error condition encountered is reported. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+          "is_skeleton": false,
+          "children": [
+            {
+              "node_id": "0282",
+              "title": "4.3.1 Overview",
+              "summary": "Overview of ELS reply behavior in `4.3 Extended Link Service Reply Sequences`: an ELS Reply Sequence completes an ELS request Sequence and may carry Payload after the `ELS_Command` code word; payload meaning comes from the request ELS definition. Covers `LS_ACC` and `LS_RJT` reply semantics, including Exchange termination via `Last Sequence bit (Bit 20)` in `F_CTL`, addressing via `D_ID` and `S_ID`, and reply payload rules. Exact codes/anchors: `LS_ACC`, `LS_RJT`, `ELS_Command`, `02h`, `02XXXXXXh`, `01000000h`, `Data frame`, `Data Field`, `Payload`, `D_ID`, `S_ID`, `Last Sequence bit (Bit 20)`, `NOTE 8`, `figure 3`, `tables 146 and 147`. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 146,
+              "end_index": 146,
+              "subtree_start_index": 146,
+              "subtree_end_index": 146
+            },
+            {
+              "node_id": "0283",
+              "title": "4.3.2 LS_ACC",
+              "summary": "Defines `LS_ACC` in `4.3.2 LS_ACC`: the Link Service Accept reply Sequence used to notify the originator that an ELS request Sequence has been completed. Core details: Responder terminates the Exchange by setting the `Last Sequence bit` (`Bit 20`) in `F_CTL` on the last Data frame of the reply Sequence; first byte of the Payload is `02h`; Payload remainder is request-specific. Protocol note: `LS_ACC` is the reply Sequence for several ELSs as indicated elsewhere. Addressing fields: `D_ID` designates the source of the accepted ELS Sequence; `S_ID` designates the destination of the accepted request Sequence. Payload/code anchor: `ELS_Command code (02XXXXXXh)`. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 146,
+              "end_index": 146,
+              "subtree_start_index": 146,
+              "subtree_end_index": 146
+            },
+            {
+              "node_id": "0284",
+              "title": "4.3.3 Reply Sequence",
+              "summary": "Section `4.3.3 Reply Sequence` contains no substantive content: `none`. Core topic is the named subsection `Reply Sequence` within `4.3 Extended Link Service Reply Sequences`, but this specific section provides no procedure, rules, payload, addressing, or format details. No command/message names, field names, identifiers, codes, hex values, tables, or figures are defined in this section itself. Content-type markers: no `procedure/flow`, no `message/frame format`, no `response/branch handling`, no `state machine`, no `timer/negotiation`, no `completion/exception conditions`. Nearby context on the page belongs to adjacent sections (`LS_ACC`, `LS_RJT`, `F_CTL`, `D_ID`, `S_ID`, `ELS_Command`, `02h`, `02XXXXXXh`, `01000000h`, `table 146`, `table 147`, `figure 3`) rather than `4.3.3`.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 146,
+              "end_index": 146,
+              "subtree_start_index": 146,
+              "subtree_end_index": 146
+            },
+            {
+              "node_id": "0285",
+              "title": "4.3.4 Link Service Reject (LS_RJT)",
+              "summary": "Section `4.3.4 Link Service Reject (LS_RJT)` defines the ELS reply `LS_RJT` for rejecting a Link Service request Sequence and the required reject reason reporting. [message/frame format] [response/branch handling] [completion/exception conditions] Core payload rules: `D_ID` = source of rejected ELS request, `S_ID` = destination of rejected request Data frame Sequence; first word of Payload contains `ELS_Command` code `01000000h`; next four bytes carry the reject reason; the first error condition encountered shall be reported. Description notes `LS_RJT` is used instead of `P_RJT` for some request-specific logical errors. Named anchors: `LS_RJT`, `D_ID`, `S_ID`, `Data Field`, `Payload`, `ELS_Command`, `01000000h`, `P_RJT`, `figure 3`, `tables 146 and 147`, `NOTE 8`. `figure 3` / `tables 146 and 147`: referenced as defining/showing reject reason information.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0286",
+                  "title": "4.3.4.1 Description",
+                  "summary": "Covers `Link Service Reject (LS_RJT)` `4.3.4.1 Description`: rejection reply semantics for a Link Service request. `LS_RJT` notifies the transmitter that the request `Sequence` has been rejected; a four-byte reason code is carried in the `Data Field`. Distinguishes `LS_RJT` from `P_RJT` for request-specific logical or parameter errors, e.g., inconsistent `Service Parameters` in a `Login frame` should return `Link Service Reject` rather than `P_RJT`. Nearby named anchors referenced from this description/context: `ELS Reply Sequence`, `LS_ACC`, `ELS_Command`, `F_CTL`, `Last Sequence bit (Bit 20)`, `D_ID`, `S_ID`, `01000000h`, `02h`, `figure 3`, `tables 146 and 147`. [response/branch handling] [completion/exception conditions]",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 146,
+                  "end_index": 146,
+                  "subtree_start_index": 146,
+                  "subtree_end_index": 146
+                },
+                {
+                  "node_id": "0287",
+                  "title": "4.3.4.2 Payload",
+                  "summary": "Section `4.3.4.2 Payload` covers `Link Service Reject (LS_RJT)` payload/addressing details and reject reason reporting for an ELS request. `Addressing`: `D_ID` designates the source of the ELS request being rejected; `S_ID` designates the destination of the request Data frame Sequence being rejected. `Payload`: first word contains `ELS_Command` code `01000000h`; next four bytes carry the reject reason; the first error condition encountered shall be reported. References `figure 3` for `LS_RJT format` and `tables 146 and 147` for reason indications; includes `NOTE 8` about the `applicable ELSs` column in `table 147` not being complete. `Table 146 – LS_RJT Reason Codes` defines encoded values/reasons: `01h`, `03h`, `05h`, `07h`, `09h`, `0Bh`, `0Eh`, `FFh`, others reserved. Content types: `message/frame format`, `response/branch handling`, `completion/exception conditions`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 146,
+                  "end_index": 147,
+                  "subtree_start_index": 146,
+                  "subtree_end_index": 147
+                },
+                {
+                  "node_id": "0288",
+                  "title": "4.3.4.3 Reply Sequence",
+                  "summary": "Section `4.3.4.3 Reply Sequence` covers reply behavior as `none`, with `response/branch handling` via `Table 147 – LS_RJT Reason Code Explanations`, which defines `LS_RJT` reason-code meanings by `Encoded Value (Bits 15-8)`, `Description`, and `Applicable ELSs`. Includes exact codes/identifiers such as `00h`, `01h`, `03h`, `05h`, `07h`, `09h`, `0Bh`, `0Dh`, `0Eh`, `0Fh`, `11h`, `13h`, `15h`, `17h`, `19h`, `1Eh`, `1Fh`, `29h`, `2Ah`, `2Ch`, `2Dh`, `30h`-`38h`, `44h`, `46h`, `48h`, `50h`, `51h`, `Others Reserved`; ELS names include `FLOGI`, `PLOGI`, `LOGO`, `RCS`, `REC`, `RLS`, `RTV`, `RSI`, `PRLI`, `PRLO`, `TPLS`, `TPRLO`, `GAID`, `FACT`, `FDACT`, `NACT`, `NDACT`, `PDISC`, `FDISC`, `ADISC`, `RNC`, `CSR`, `RNFT`, `RRQ`, `LCLM`, `SRL`. No figures; no procedure/flow, message/frame format, state machine, or timer/negotiation content.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 148,
+                  "end_index": 150,
+                  "subtree_start_index": 148,
+                  "subtree_end_index": 150
+                }
+              ],
+              "start_index": 146,
+              "end_index": 146,
+              "subtree_start_index": 146,
+              "subtree_end_index": 150
+            }
+          ],
+          "start_index": 146,
+          "end_index": 146,
+          "subtree_start_index": 146,
+          "subtree_end_index": 150
+        }
+      ],
+      "start_index": 36,
+      "end_index": 36,
+      "subtree_start_index": 36,
+      "subtree_end_index": 150
+    },
+    {
+      "node_id": "0289",
+      "title": "5 FC-4 Link Service",
+      "summary": "FC-4 Link Service rules for FC-4-specific request/reply exchanges supporting an individual FC-4 Device_Data protocol. Request uses Information Category `Unsolicited Control`; reply uses `Solicited Control`. Content types: procedure/flow, response/branch handling, timer/negotiation, completion/exception conditions, message/frame format. Protocol runs in a single Exchange as a two Sequence Exchange: request Sequence by Originator (`Nx_Port`), Sequence Initiative transfer, reply Sequence from Responder (`Nx_Port` or `Fx_Port`); each request/reply is a single Sequence, each Sequence one or more frames. Applies after `N_Port Login`; uses Discard multiple Sequences Exchange Error Policy; timeout is `twice the value of R_A_TOV`; on error abort with `ABTS` and retry with a different Exchange; if `ACK` has Abort Sequence bits `(5-4)` = `01b`, retry once after `Basic Accept`. `R_CTL bits 31-28 (Word 0)` = `0011b`; `TYPE` matches FC-4 Device_Data `TYPE`. No tables. No figures.",
+      "is_skeleton": false,
+      "children": [],
+      "start_index": 151,
+      "end_index": 151,
+      "subtree_start_index": 151,
+      "subtree_end_index": 151
+    },
+    {
+      "node_id": "0290",
+      "title": "6 Login and Service Parameters",
+      "summary": "Covers Login and Service Parameters introduction: how an `Nx_Port` establishes its operating environment with a Fabric or peer `Nx_Ports`, including long-lived Login scope, concurrency limits, and lack of one-to-one relationship with Class 1 dedicated connections. Describes explicit vs implicit Login, with exact anchors `FLOGI`, `PLOGI`, `D_ID`, `S_ID`, `ELS`, `LS_ACC`, `Service Parameters`, `Payload`, `N_Port_ID`, and point-to-point topology. Explicit Login uses a new Exchange carrying initiator `Service Parameters`; `LS_ACC` returns responder parameters. Implicit Login provides equivalent functionality by unspecified methods; Implicit Fabric Login does not require support for `FLOGI` request/reply. Also lists how `Nx_Ports` obtain native `N_Port_ID` and collect Address Identifiers. Content types: procedure/flow, response/branch handling, timer/negotiation. Tables: none. Figures: none.",
+      "is_skeleton": false,
+      "children": [
+        {
+          "node_id": "0291",
+          "title": "6.1 Introduction",
+          "summary": "Core topic: overview of the Login procedure for establishing an `Nx_Port` operating environment with a `Fabric`, if present, and other destination `Nx_Ports`; distinguishes `Fabric Login` and `N_Port Login`, long-lived login scope, concurrency limits, and lack of one-to-one relationship with `Class 1 dedicated connections`. Covers `explicit` versus `implicit` Login and states both provide the same functionality. Exact anchors: `FLOGI`, `PLOGI`, `ELS`, `4.2.7`, `Exchange`, `Service Parameters`, `Payload`, `LS_ACC`, `Responder`, `FLOGI Link Service request and reply`, `N_Port_ID`, `PLOGI Sequence`, `Address Identifiers`, `name server function`, `D_IDs`, `S_IDs`. Also lists how an `Nx_Port` determines its native `N_Port_ID` and how `Nx_Ports` collect `Address Identifiers`. Content types: procedure/flow; response/branch handling; timer/negotiation. Tables: none. Figures: none.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 152,
+          "end_index": 152,
+          "subtree_start_index": 152,
+          "subtree_end_index": 152
+        },
+        {
+          "node_id": "0292",
+          "title": "6.2 Fabric Login",
+          "summary": "Fabric Login (`FLOGI`) requirements for all `Nx_Ports` before any communication with other `Nx_Ports`; covers Fabric presence detection, exchange of operating characteristics (`F_Port_Name`, `Fabric_Name`, `N_Port_Name`, `Node_Name`), optional/confirmed `N_Port_ID` assignment, buffer-to-buffer Credit initialization, and enabling Authentication (`FC-SP`) and Virtual Fabrics negotiation (`8.2`). Explicit procedure/flow: `Nx_Port` sends `Fabric Login (FLOGI) Link Service ELS` in a new Exchange per `4.2.7`, replacing previous Service Parameters and following Exchange/Sequence and flow-control rules in `FC-FS-2`. Message/frame format anchors: Payload contains Service Parameters, 64-bit `N_Port_Name`, 64-bit `Node_Name`; `OX_ID`; `D_ID`=`FFFFFEh`; `S_ID`=`000000h` or `0000h || YY`; bits `23 to 8`, bits `7 to 0`, `AL_PA`; references `6.6`, tables `150` and `155`. Content types: procedure/flow, message/frame format, timer/negotiation, completion/exception conditions.",
+          "is_skeleton": false,
+          "children": [
+            {
+              "node_id": "0293",
+              "title": "6.2.1 Introduction",
+              "summary": "Fabric Login (`FLOGI`) introduction for all `Nx_Ports`: Fabric communication shall not begin until Fabric Login completes. Core functions listed: detect Fabric presence/absence; exchange operating characteristics plus `F_Port_Name`, `Fabric_Name`, `N_Port_Name`, `Node_Name`; optionally assign/confirm `N_Port_ID`; initialize buffer-to-buffer Credit; enable Authentication (`FC-SP`) and Virtual Fabrics negotiation (`8.2`). Contains procedure/flow and timer/negotiation context. Leads into explicit Fabric Login: transmit `FLOGI` ELS (`4.2.7`) in a new Exchange, carrying Service Parameters, 64-bit `N_Port_Name`, 64-bit `Node_Name`; Service Parameters reference `6.6`, `table 150`, `table 155`. Required identifiers/fields/values: `OX_ID`, `D_ID = FFFFFEh`, `S_ID = 000000h` or `0000h || YY`, `N_Port_ID`, bits `23 to 8`, bits `7 to 0`, `AL_PA`, `FC-AL-2`. No tables. No figures.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 153,
+              "end_index": 153,
+              "subtree_start_index": 153,
+              "subtree_end_index": 153
+            },
+            {
+              "node_id": "0294",
+              "title": "6.2.2 Explicit Fabric Login",
+              "summary": "Core topic: explicit Fabric Login request requirements for an `Nx_Port` initiating `FLOGI` to a Fabric. Contains `procedure/flow` and `message/frame format`. `6.2.2.1 Introduction`: explicit Fabric Login requires transmission of a `Fabric Login (FLOGI)` Link Service `ELS` (see `4.2.7`); explicit Fabric Login replaces previous Service Parameters and follows Exchange/Sequence management, buffer-to-buffer flow control, and end-to-end flow control rules in `FC-FS-2`. `6.2.2.2 Explicit Fabric Login Request`: send `FLOGI` in a new Exchange; payload contains Service Parameters, `64-bit N_Port_Name`, and `64-bit Node_Name`; Service Parameters as for `F_Port Login` in `6.6`, with applicability in `tables 150 and 155`. Set `OX_ID`, `D_ID = FFFFFEh`, and `S_ID = 000000h` or `0000h || YY`; `000000h` requests all 24 bits of `N_Port_ID`, `0000h || YY` requests upper 16 bits and validates lower 8 bits (`AL_PA`).",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0295",
+                  "title": "6.2.2.1 Introduction",
+                  "summary": "Core topic: `6.2.2.1 Introduction` to `Explicit Fabric Login` in `6.2 Fabric Login`: an `Nx_Port` must perform Fabric Login before communicating, and explicit login requires transmitting a `Fabric Login (FLOGI)` Link Service `ELS` (`see 4.2.7`). Captures what Fabric Login establishes: Fabric presence/absence, operating characteristics, `F_Port_Name`, `Fabric_Name`, `N_Port_Name`, `Node_Name`, optional assign/confirm of `N_Port_ID`, buffer-to-buffer Credit initialization, enablement of Authentication (`see FC-SP`), and Virtual Fabrics negotiation (`see 8.2`). States that explicit Fabric Login replaces previous `Service Parameters` and must follow `Exchange and Sequence management rules`, `buffer-to-buffer flow control rules`, and `end-to-end flow control rules` in `FC-FS-2`. Content types: procedure/flow, timer/negotiation. Tables: none. Figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 153,
+                  "end_index": 153,
+                  "subtree_start_index": 153,
+                  "subtree_end_index": 153
+                },
+                {
+                  "node_id": "0296",
+                  "title": "6.2.2.2 Explicit Fabric Login Request",
+                  "summary": "Explicit Fabric Login Request for `FLOGI` ELS: procedure/flow and message/frame format for how an `Nx_Port` issues Fabric Login in a new Exchange. Payload contents: `Service Parameters`, 64-bit `N_Port_Name`, 64-bit `Node_Name`. `Service Parameters` are as specified for `F_Port Login` in `6.6`; applicability references `tables 150 and 155`. Required identifiers/fields: assign `OX_ID`; set `D_ID` to well-known `F_Port` address `FFFFFEh`; set `S_ID` according to identification state. If unidentified, `S_ID` shall be `000000h` or `0000h || YY`: `000000h` requests Fabric assignment of all 24 bits of `N_Port_ID`; `0000h || YY` requests assignment of bits 23 to 8 and validation of bits 7 to 0. `AL_PA` is the lower 8 bits. No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 153,
+                  "end_index": 153,
+                  "subtree_start_index": 153,
+                  "subtree_end_index": 153
+                },
+                {
+                  "node_id": "0297",
+                  "title": "6.2.2.3 Responses to Explicit Fabric Login",
+                  "summary": "Covers response/branch handling and completion/exception conditions for an Nx_Port transmitting `FLOGI` in explicit Fabric Login. Enumerates possible replies: `LS_ACC`, `F_BSY`, `P_BSY`, `F_RJT`, `P_RJT`, with `OX_ID` matching the `FLOGI`; distinguishes `N_Port/F_Port bit` set to one (`Fx_Port`) versus `Nx_Port/F_Port bit` set to zero (`Nx_Port`). Captures required `D_ID`/`S_ID` relationships and identifier cases `000000h`, `0000h || YY`, `XXXXXX`, `XXXXYY`, assigned `N_Port_ID`, `F_Port_Name`, `Fabric_Name`, `N_Port_Name`, `Node_Name`. Includes branch actions: continue operation, proceed to `N_Port Login`/`PLOGI`, wait, retry later, or choose different `S_ID`/class based on reason codes `Class not supported` and `Invalid S_ID`. References `6.6`, tables `150` and `155` for Service Parameters applicability. No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 154,
+                  "end_index": 154,
+                  "subtree_start_index": 154,
+                  "subtree_end_index": 154
+                },
+                {
+                  "node_id": "0298",
+                  "title": "6.2.2.4 Nx_Port response to FLOGI",
+                  "summary": "Covers Nx_Port behavior on receiving `FLOGI` in `6.2.2.4 Nx_Port response to FLOGI`: mandatory `LS_ACC` reply Sequence with `OX_ID` equal to received `FLOGI`, Common Service Parameter `Nx_Port/F_Port bit` set to zero, `D_ID` equal to received `S_ID`, Payload containing received Service Parameters with all classes marked invalid plus `64-bit N_Port_Name` and `64-bit Node_Name` of the connected `Nx_Port`. Branch handling by `N_Port_Name` comparison: if received `N_Port_Name` is less than its `N_Port_Name`, proceed to `N_Port Login`; if greater, wait for `PLOGI` from attached `N_Port`. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions. Tables: none. Figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 155,
+                  "end_index": 155,
+                  "subtree_start_index": 155,
+                  "subtree_end_index": 155
+                },
+                {
+                  "node_id": "0299",
+                  "title": "6.2.2.5 Relogin with the Fabric",
+                  "summary": "Core topic: `6.2.2.5 Relogin with the Fabric` rules for whether an `Nx_Port` may keep existing communications after a new Fabric Login, based on whether `N_Port_ID`, `F_Port_Name`, and `Fabric_Name` match the previous login. If all three are unchanged, the `Nx_Port` may continue communications with other `Nx_Ports` with established logins; if `N_Port_ID`, `F_Port_Name`, and/or `Fabric_Name` changed, it shall implicitly logout with all `Nx_Ports`, wait an `R_A_TOV` timeout period starting when the change is detected, then require new `N_Port Logins` before initiating or accepting communication. Content types: procedure/flow, response/branch handling, timer/negotiation, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 155,
+                  "end_index": 155,
+                  "subtree_start_index": 155,
+                  "subtree_end_index": 155
+                }
+              ],
+              "start_index": 153,
+              "end_index": 153,
+              "subtree_start_index": 153,
+              "subtree_end_index": 155
+            },
+            {
+              "node_id": "0300",
+              "title": "6.2.3 SOFs",
+              "summary": "Section `6.2.3 SOFs` covers SOF/class selection rules for `Fabric Login`/`Fabric Relogin` using `FLOGI`, including retry behavior when the Fabric does not support the initial class. `Fabric Login` shall only use `Class 1, 2, or 3`; `SOFc1` may be used to attempt `Fabric Login` or `Fabric Relogin`; `SOFi1` is not allowed; `Class 6` shall not be used because the `D_ID` field requires an `Alias_ID` multicast address. SOF selection is based on classes supported by the originating `Nx_Port`; the `FLOGI Sequence` follows `6.2.2.3`. If an `F_RJT` with reason code `\"Class of service not supported by entity at FFFFFEh\"` is received, another supported SOF shall be attempted until login completes or all supported SOF choices are exhausted. Content types: procedure/flow, response/branch handling, timer/negotiation, completion/exception conditions.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 155,
+              "end_index": 155,
+              "subtree_start_index": 155,
+              "subtree_end_index": 155
+            },
+            {
+              "node_id": "0301",
+              "title": "6.2.4 Frequency",
+              "summary": "Section `6.2.4 Frequency` covers Fabric Login frequency/lifetime guidance: Login between an `Nx_Port` and the `Fabric` should be long-lived; after `Implicit Logout`, a new Login with the `Fabric` is required (see `6.4.4`). Named anchors present: `6.2.4 Frequency`, `Nx_Port`, `Fabric`, `Implicit Logout`, `Login`, `6.4.4`. Content types: `procedure/flow` (re-Login requirement after logout), `completion/exception conditions` (logout triggers mandatory new Login). Nearby continuation on same page also names `FLOGI`, `LS_ACC`, `ACK`, `EOFt`, `EOFdt`, `Class 1`, `Class 2`, `Class 3`, `buffer-to-buffer Credit`, `Fabric Login completion - Originator`, `Fabric Login completion - Responder`, but these belong to adjacent completion sections, not the frequency rule itself. Tables: none. Figures: none.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 156,
+              "end_index": 156,
+              "subtree_start_index": 156,
+              "subtree_end_index": 156
+            },
+            {
+              "node_id": "0302",
+              "title": "6.2.5 Fabric Login completion - Originator",
+              "summary": "Core topic: `6.2.5 Fabric Login completion - Originator` defines when the Originator considers `Fabric Login` complete for a `FLOGI` request and what is initialized at completion. Content types: `procedure/flow`, `response/branch handling`, `completion/exception conditions`. Completion conditions branch by service class: in `Class 1`, completion occurs when the Originator has transmitted the `ACK (EOFt or EOFdt)` to the `LS_ACC`; in `Class 2`, when it has transmitted the `ACK (EOFt)` to the `LS_ACC`; in `Class 3`, when it has received the `LS_ACC`. After Login is ended, `buffer-to-buffer Credit` values are initialized. Nearby context on the same page also names `6.2.6 Fabric Login completion - Responder` and transition into `6.3 N_Port Login`. No tables. No figures.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 156,
+              "end_index": 156,
+              "subtree_start_index": 156,
+              "subtree_end_index": 156
+            },
+            {
+              "node_id": "0303",
+              "title": "6.2.6 Fabric Login completion - Responder",
+              "summary": "Section 6.2.6 defines Fabric Login completion for the Responder in the FLOGI request: completion/exception conditions and response/branch handling by class. Fabric Login is considered ended when, in Class 1, the Responder has received the ACK (`EOFt` or `EOFdt`) to the `LS_ACC`; in Class 2, the Responder has received the ACK (`EOFt`) to the `LS_ACC`; in Class 3, the Responder has transmitted the `LS_ACC`. On successful completion, buffer-to-buffer Credit values are initialized. Context anchors immediately tied to this completion rule: `Fabric Login`, `Responder`, `Originator`, `FLOGI request`, `LS_ACC`, `ACK`, `EOFt`, `EOFdt`, `Class 1`, `Class 2`, `Class 3`, `buffer-to-buffer Credit`. No tables. No figures.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 156,
+              "end_index": 156,
+              "subtree_start_index": 156,
+              "subtree_end_index": 156
+            }
+          ],
+          "start_index": 153,
+          "end_index": 153,
+          "subtree_start_index": 153,
+          "subtree_end_index": 156
+        },
+        {
+          "node_id": "0304",
+          "title": "6.3 N_Port Login",
+          "summary": "Section `6.3 N_Port Login` covers N_Port Login after `Fabric Login`, deciding behavior based on whether a `Fabric` is present and directing an `Nx_Port` to `6.3.2.2` or `6.3.2.4`. Core functions: exchange each `Nx_Port`’s operating characteristics, `N_Port_Name`, and `Node_Name`; if a Fabric is not present, assign the native `N_Port_ID` for both `Nx_Ports`; initialize `Nx_Port` end-to-end `Credit`. Exact anchors present in surrounding completion context: `FLOGI`, `LS_ACC`, `ACK`, `EOFt`, `EOFdt`, `Class 1`, `Class 2`, `Class 3`, buffer-to-buffer `Credit`. Content types: procedure/flow (sequence after `Fabric Login`), response/branch handling (Fabric present vs not present), completion/exception conditions (depends on Fabric determination). Tables: none. Figures: none.",
+          "is_skeleton": false,
+          "children": [
+            {
+              "node_id": "0305",
+              "title": "6.3.1 Introduction",
+              "summary": "Core topic: `6.3.1 Introduction` to `N_Port Login` after `Fabric Login`; selects behavior per `6.3.2.2` when a `Fabric` is present and `6.3.2.4` when not present. Functions: exchange operating characteristics, `N_Port_Name`, `Node_Name`; assign native `N_Port_ID` if no Fabric; initialize end-to-end Credit and, in point-to-point or same-loop `NL_Ports`, buffer-to-buffer Credit. Completion when each `Nx_Port` has received the other’s `Service Parameters`, via implicit or explicit login. Requires login to each destination, including reserved and well-known address identifiers. Anchors: `PLOGI`, `ADISC`, `PDISC`, `ACC`, `LOGO`, `P_RJT`, `R_A_TOV`, `Address_Identifier`, `Port_Name`, `N_Port Common Service Parameters`, `6.6.2`, `table 150`, `N_Port Class Service Parameters`, `6.6.5`, `table 155`, `6.4`. [procedure/flow] [response/branch handling] [timer/negotiation] [completion/exception conditions]",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 156,
+              "end_index": 157,
+              "subtree_start_index": 156,
+              "subtree_end_index": 157
+            },
+            {
+              "node_id": "0306",
+              "title": "6.3.2 Explicit N_Port Login",
+              "summary": "Core topic: explicit N_Port Login for Nx_Port-to-Nx_Port login with Fabric present, using a `PLOGI` Link request Sequence and normal `LS_ACC` reply Sequence. Content types: procedure/flow, response/branch handling, timer/negotiation, completion/exception conditions. Procedure: explicit login replaces previous Service Parameters; follows FC-FS-2 Exchange/Sequence management, buffer-to-buffer flow control, and end-to-end flow control. A well-behaved `Nx_Port` should `Logout` before new login; if `PLOGI` is sent/received anyway, open Sequences are abnormally terminated and new Sequences are treated as though Logout occurred. Message/frame details: `PLOGI` sent with `OX_ID`, `D_ID`, `S_ID`; payload includes Service Parameters, `N_Port_Name`, `Node_Name`; `LS_ACC` uses same `OX_ID` plus responder `RX_ID`. Responses: `LS_ACC` with Common Service `N_Port/F_Port bit = 0`; `F_BSY` means Fabric busy, retry later. References: `6.6`, tables `150` and `155` for applicable Service Parameters.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0307",
+                  "title": "6.3.2.1 Introduction",
+                  "summary": "Explicit N_Port Login introduction: explicit N_Port Login requires an Nx_Port to transmit a `PLOGI` Link request `Sequence`; this replaces previous Service Parameters and follows FC-FS-2 Exchange and Sequence management, buffer-to-buffer flow control, and end-to-end flow control rules. A well-behaved `Nx_Port` should `Logout` before new login; if a `PLOGI` is sent or received anyway, it shall abnormally terminate open `Sequences` and treat new `Sequences` as if `Logout` occurred. During login, other communication with the destination `Nx_Port` shall not be initiated or accepted. Successful completion occurs when `LS_ACC` reply is received; then either `Nx_Port(A)` or `Nx_Port(B)` may initiate communication. Names/fields mentioned: `PLOGI`, `LS_ACC`, `Nx_Port(A)`, `Nx_Port(B)`. Content types: procedure/flow, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 158,
+                  "end_index": 158,
+                  "subtree_start_index": 158,
+                  "subtree_end_index": 158
+                },
+                {
+                  "node_id": "0308",
+                  "title": "6.3.2.2 N_Port Login - Fabric present",
+                  "summary": "Covers `6.3.2.2 N_Port Login - Fabric present`: explicit destination `Nx_Port` login when a Fabric is present. [procedure/flow] `PLOGI` Link Service Sequence is sent in an Exchange with assigned `OX_ID`, `D_ID` of destination `Nx_Port`, and `S_ID` of originating `Nx_Port`. Payload contains `Service Parameters`, `N_Port_Name`, and `Node_Name`; `N_Port Service Parameters` are as specified in `6.6`, with applicability given in `tables 150 and 155`. [message/frame format] Normal reply is `LS_ACC` Link Service Reply Sequence in the Exchange identified by the `OX_ID` of the Login Sequence and `RX_ID` assigned by the Responder, with `D_ID` = originating `Nx_Port` and `S_ID` = responding `Nx_Port`; `LS_ACC` payload contains the responding `Nx_Port` `Service Parameters`. No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 158,
+                  "end_index": 158,
+                  "subtree_start_index": 158,
+                  "subtree_end_index": 158
+                },
+                {
+                  "node_id": "0309",
+                  "title": "6.3.2.3 Responses to N_Port Login - Fabric present",
+                  "summary": "Response/branch handling for explicit N_Port Login (`PLOGI`) when a Fabric is present: enumerates what an `Nx_Port` may receive after transmitting `PLOGI`. Covers normal success path `LS_ACC` reply Sequence with `OX_ID` equal to the `OX_ID` of the `PLOGI` and `Common Service N_Port/F_Port bit = 0 (Nx_Port)`: `D_ID` of `LS_ACC` = `S_ID` from `PLOGI`, `S_ID` of `LS_ACC` = `D_ID` from `PLOGI`, Payload includes destination `Service Parameters`, `64-bit N_Port_Name`, and `64-bit Node_Name`; `N_Port Service Parameters` as specified in `6.6`, applicability in `tables 150 and 155`; completion condition: `Nx_Port` may begin normal communication with the remote `N_Port`. Exception/branch: `F_BSY` with matching `OX_ID`; `D_ID` = `S_ID` of `PLOGI`; Fabric busy, retry later. No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 158,
+                  "end_index": 158,
+                  "subtree_start_index": 158,
+                  "subtree_end_index": 158
+                },
+                {
+                  "node_id": "0310",
+                  "title": "6.3.2.4 N_Port Login - No Fabric present",
+                  "summary": "Core topic: `6.3.2.4 N_Port Login - No Fabric present` — point-to-point explicit Login after discovering Fabric is not present during attempted `Fabric Login` (see `6.2.2.3`). Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions. Procedure: destination `N_Port` explicit Login requires transmitting a `PLOGI` `Link Service Sequence` in a new `Exchange`; only one `Nx_Port` needs to send `PLOGI`; if `N_Port_Names` were exchanged during `Fabric Login`, the `Nx_Port` with the highest `N_Port_Name` shall transmit `PLOGI`; if either side lacks the connected `N_Port_Name`, it may send `PLOGI`, and response processing resolves simultaneous `PLOGI`. Format/fields: `S_ID` shall be different than `D_ID`; Payload contains `Service Parameters`, `N_Port_Name`, `Node_Name`; `N_Port Service Parameters` as specified in `6.6`; applicability given in tables `150` and `155`. Tables: none. Figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 159,
+                  "end_index": 159,
+                  "subtree_start_index": 159,
+                  "subtree_end_index": 159
+                },
+                {
+                  "node_id": "0311",
+                  "title": "6.3.2.5 Responses to N_Port Login - No Fabric present",
+                  "summary": "Core topic: responses an `Nx_Port` may receive after transmitting `PLOGI` in point-to-point `N_Port Login` when no fabric is present. Covers response/branch handling, procedure/flow, timer/negotiation, completion/exception conditions. Named anchors: `LS_ACC`, `P_BSY`, `P_RJT`, `LS_RJT`, `PLOGI`, `OX_ID`, `D_ID`, `S_ID`, `Common Service N_Port/F_Port bit = 0 (Nx_Port)`, `64-bit N_Port_Name`, `64-bit Node_Name`, `N_Port_ID`, `Service Parameters`, `N_Port Service Parameters`, `6.6`, `tables 150 and 155`, `Class not supported`, `Command already in progress`, `FC-FS-2`, `SOFs`, `Fabric Login`, `6.2.3`, `Class 1`, `Class 2`, `Class 3`. Branches: normal `LS_ACC` allows communication; busy/reject handling via `P_BSY`/`P_RJT`/`LS_RJT`; collision resolution by comparing `N_Port_Name`; no-response recovery and self-connect (`received N_Port_Name` equal) exception.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 160,
+                  "end_index": 160,
+                  "subtree_start_index": 160,
+                  "subtree_end_index": 160
+                }
+              ],
+              "start_index": 158,
+              "end_index": 158,
+              "subtree_start_index": 158,
+              "subtree_end_index": 160
+            },
+            {
+              "node_id": "0312",
+              "title": "6.3.3 SOFs",
+              "summary": "Section `6.3.3 SOFs` covers `N_Port Login` class/SOF selection and retransmission rules for `PLOGI` when the destination `Nx_Port` does not support all login classes. `N_Port Login` is only supported in `Class 1`, `2`, and `3`; the `PLOGI Sequence` may require retransmission in a different `Class` with the appropriate `SOF`, in the same manner as `Fabric Login` (`6.2.3`). Login validity for all supported classes is determined by the validity bits in the `PLOGI LS_ACC Reply Sequence`. Named anchors: `SOFs`, `N_Port Login`, `PLOGI`, `PLOGI Sequence`, `Fabric Login`, `LS_ACC Reply Sequence`, `Nx_Port`, `Class 1`, `Class 2`, `Class 3`, `validity bits`, `6.2.3`. Content types: `procedure/flow`, `timer/negotiation`, `completion/exception conditions`. No tables. No figures.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 160,
+              "end_index": 160,
+              "subtree_start_index": 160,
+              "subtree_end_index": 160
+            },
+            {
+              "node_id": "0313",
+              "title": "6.3.4 Frequency",
+              "summary": "Covers `6.3.4 Frequency` of `N_Port Login`: installation-dependent frequency based on configuration changes that may alter `N_Port_ID`; other `Nx_Ports` `Service Parameters` persist until next `N_Port Login` or `N_Port Logout` (implicit or explicit). Also includes adjacent completion rules for `PLOGI`/`LS_ACC` exchange: originator/responder login end conditions by `Class 1`, `Class 2`, `Class 3`, using `ACK`, `EOFt`, `EOFdt`, `LS_ACC`; credit initialization for `Fabric present` vs `point-to-point topology` (`end-to-end Credit`, `buffer-to-buffer Credit`). Mentions transition into `6.4 Logout` with `LOGO`, explicit/implicit logout, `Fabric Logout`, and sequence termination notes. Content types: procedure/flow; response/branch handling; completion/exception conditions. Tables: none. Figures: none.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 161,
+              "end_index": 161,
+              "subtree_start_index": 161,
+              "subtree_end_index": 161
+            },
+            {
+              "node_id": "0314",
+              "title": "6.3.5 N_Port Login completion - Originator",
+              "summary": "Core topic: `6.3.5 N_Port Login completion - Originator` defines when the Originator considers `PLOGI` Login ended and what Credit initialization occurs at completion. Content types: procedure/flow; response/branch handling; completion/exception conditions; timer/negotiation. Completion conditions by class: Class 1 when Originator has transmitted `ACK (EOFt or EOFdt)` to `LS_ACC`; Class 2 when Originator has transmitted `ACK (EOFt)` to `LS_ACC`; Class 3 when Originator has received `LS_ACC`. Post-completion initialization: with a Fabric present, `end-to-end Credit` is initialized; in point-to-point topology, `buffer-to-buffer` and `end-to-end Credit` are initialized. Exact anchors: `PLOGI`, `ACK`, `EOFt`, `EOFdt`, `LS_ACC`, `Class 1`, `Class 2`, `Class 3`, `Fabric`, `point-to-point topology`, `end-to-end Credit`, `buffer-to-buffer`, `Originator`. Tables: none. Figures: none.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 161,
+              "end_index": 161,
+              "subtree_start_index": 161,
+              "subtree_end_index": 161
+            },
+            {
+              "node_id": "0315",
+              "title": "6.3.6 N_Port Login completion - Responder",
+              "summary": "Core topic: `6.3.6 N_Port Login completion - Responder` defines when the Responder considers `N_Port Login` ended for a `PLOGI` request and what Credit values are initialized at completion. Completion/exception conditions, response/branch handling: Class 1 ends when the Responder has received the ACK (`EOFt` or `EOFdt`) to the `LS_ACC`; Class 2 ends when the Responder has received the ACK (`EOFt`) to the `LS_ACC`; Class 3 ends when the Responder has transmitted the `LS_ACC`. With a Fabric present, `end-to-end Credit` is initialized. In a point-to-point topology, `buffer-to-buffer` and `end-to-end Credit` are initialized. Contained content types: procedure/flow; response/branch handling; completion/exception conditions. Tables: none. Figures: none.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 161,
+              "end_index": 161,
+              "subtree_start_index": 161,
+              "subtree_end_index": 161
+            }
+          ],
+          "start_index": 156,
+          "end_index": 156,
+          "subtree_start_index": 156,
+          "subtree_end_index": 161
+        },
+        {
+          "node_id": "0316",
+          "title": "6.4 Logout",
+          "summary": "Core topic: `6.4 Logout` defines destination Logout for removing service between two `N_Port_ID`s or between an `N_Port_ID` and a `Fabric`, releasing resources, identifiers, and relationships. Anchors: `Logout`, `LOGO`, `LS_ACC`, `Nx_Port`, `N_Port_ID`, `Fabric`, `Explicit N_Port Logout`, `Explicit Fabric Logout`, `Implicit Logout`, `FC-FS-2`, `Sequence`. `6.4.1 Introduction` scopes explicit Nx_Port-to-Nx_Port, Nx_Port-to-Fabric, Fabric-to-Nx_Port, and implicit Nx_Port/Fabric logout. `6.4.2 Explicit N_Port Logout` states Logout is done by transmitting a `Logout (LOGO) Link Service request Sequence` to a destination `Nx_Port`; procedure completes when the responder transmits an `LS_ACC Link Service reply Sequence`. Before explicit Logout, the initiator shall terminate other open `Sequences` it initiated with the destination `Nx_Port`. Content types: procedure/flow, response/branch handling, completion/exception conditions.",
+          "is_skeleton": false,
+          "children": [
+            {
+              "node_id": "0317",
+              "title": "6.4.1 Introduction",
+              "summary": "Core topic: `6.4.1 Introduction` to `6.4 Logout`—destination Logout procedure for removing service between two `N_Port_IDs` or between an `N_Port_ID` and a `Fabric`; Logout releases resources, identifiers, and relationships associated with maintaining service. Named anchors: `Explicit Nx_Port Logout`, `Explicit Fabric Logout`, `Implicit Logout`, `Nx_Port`, `N_Port_ID`, `Fabric`, `6.4.2`, `6.4.3`, `6.4.4`, `Logout (LOGO)`, `LS_ACC`, `FC-FS-2`, `destination Nx_Port`, `virtual N_Port_ID`. States that explicit Nx_Port Logout may be requested Nx_Port-to-Nx_Port; explicit Fabric Logout may be requested Nx_Port-to-Fabric or Fabric-to-Nx_Port; implicit Logout may occur between an Nx_Port and the Fabric. Content types: procedure/flow, completion/exception conditions.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 161,
+              "end_index": 161,
+              "subtree_start_index": 161,
+              "subtree_end_index": 161
+            },
+            {
+              "node_id": "0318",
+              "title": "6.4.2 Explicit N_Port Logout",
+              "summary": "Core topic: `6.4.2 Explicit N_Port Logout` defines explicit Logout between Nx_Ports. `Logout (LOGO) Link Service request Sequence` is transmitted to a destination `Nx_Port`; the Logout procedure is complete when the responding `Nx_Port` transmits a `LS_ACC Link Service reply Sequence`. Contains `procedure/flow` and `completion/exception conditions`. Key anchors: `LOGO`, `LS_ACC`, `Nx_Port`, `N_Port_ID`, `Sequence`, `FC-FS-2`. Preconditions/exception note: the initiating `Nx_Port` shall terminate other open `Sequences` that it initiated with the destination `Nx_Port` before performing Logout; otherwise, the state of other open `Sequences` is unspecified in the provided text. Tables: none. Figures: none.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 161,
+              "end_index": 161,
+              "subtree_start_index": 161,
+              "subtree_end_index": 161
+            },
+            {
+              "node_id": "0319",
+              "title": "6.4.3 Explicit Fabric Logout",
+              "summary": "Covers **6.4.3 Explicit Fabric Logout**: procedure/flow and response/branch handling for explicit Fabric Logout of an `N_Port_ID` using `Logout (LOGO)` Link Service request Sequence (`4.2.8`) between `Nx_Port` and `Fx_Port`, including `Well-known address FFFFFEh`. Completion/exception conditions: complete for responding `FC_Port` on transmit of `LS_ACC` Link Service reply Sequence; complete for requesting `FC_Port` on receipt of `LS_ACC`. Unsupported handling: reject with `LS_RJT` using reason code `\"Command not supported\"` and reason code explanation `\"No additional explanation\"`; sender receiving that `LS_RJT` shall implicitly log out the other `FC_Port`. Includes virtualization requirement for `Fx_Port` supporting `N_Port_ID virtualization`, and post-logout behavior: implicit logout with all other `N_Port_IDs`, no originating/routing frames until subsequent reassignment of the `N_Port_ID` by the Fabric.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 162,
+              "end_index": 162,
+              "subtree_start_index": 162,
+              "subtree_end_index": 162
+            },
+            {
+              "node_id": "0320",
+              "title": "6.4.4 Implicit Logout",
+              "summary": "Core topic: `6.4.4 Implicit Logout` rules for when an `Nx_Port` is implicitly logged out from the `Fabric`, if present, or attached `Nx_Port` in a point-to-point topology, and when communication may resume. Contains: procedure/flow, response/branch handling, timer/negotiation, completion/exception conditions. Triggers include receiving or transmitting `NOS` or `OLS`. Re-entry condition: communication with other `Nx_Ports` shall not be accepted until the `Fabric Login` procedure is complete (`implicit` or `explicit`). During Login, if `N_Port_ID`, `F_Port_Name` and/or `Fabric_Name` changed since last Fabric Login and `Clean Address bit` is zero, the `Nx_Port` shall implicitly logout with all `Nx_Ports`, wait an `R_A_TOV` timeout period starting when the change is detected, then require new `N_Port Logins` before communication. Tables: none. Figures: none.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 162,
+              "end_index": 162,
+              "subtree_start_index": 162,
+              "subtree_end_index": 162
+            },
+            {
+              "node_id": "0321",
+              "title": "6.4.5 The effects of FLOGI, FDISC, and LOGO",
+              "summary": "Core topic: effects of `FLOGI`, `FDISC`, and `LOGO` on pre-existing Fabric Logins and `Permanent Port Name (PPN)` associations at an `F_Port`/`Nx_Port`. `Table 148 – Effects of FLOGI, FDISC, & LOGO on Permanent Port Name (PPN)`: defines per-ELS outcomes by `Condition 1: FLOGI not completed, or all IDs logged out`, `Condition 2: FLOGI Completed, & at least one ID logged in`, `Condition 3: FDISC(s) completed, & at least one ID logged in`. Anchors: `D_ID FFFFFEh`, `S_ID=0d`, `S_ID not = 0d`, `BB_Credit`, `LS_ACC`, `LS_RJT`, `Port_Name`, `N_Port ID`, `PPN`, `Name Server`, `RSCNs`, `OLS`, `R_A_TOV`, `Fx_Port`, `Unable to perform command request`, `insufficient resources`, `Logical error, invalid port name`, `6.2.2.3 Response to Explicit Fabric Login`. Content types: response/branch handling, completion/exception conditions, timer/negotiation.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 163,
+              "end_index": 163,
+              "subtree_start_index": 163,
+              "subtree_end_index": 163
+            }
+          ],
+          "start_index": 161,
+          "end_index": 161,
+          "subtree_start_index": 161,
+          "subtree_end_index": 163
+        },
+        {
+          "node_id": "0322",
+          "title": "6.5 Extended Login Processing",
+          "summary": "Section `6.5 Extended Login Processing` covers support signaling and scope of an Extended Login request in `PLOGI` or `FLOGI`, indicated by the `Payload Bit` (see `6.6.2.4.19`) set to one in the request and associated `LS_ACC`; states that Extended Login provides additional information. Also includes `Table 148 – Effects of FLOGI, FDISC, & LOGO on Permanent Port Name (PPN)`, which defines response/branch handling and completion/exception conditions for `FLOGI`, `FDISC`, `LOGO` against F_Port state conditions `Condition 1`, `Condition 2`, `Condition 3`, including `D_ID FFFFFEh`, `LS_ACC`, `LS_RJT`, `F_RJT`, `RC=login required`, `RC=command not supported`, `RCE=Request not supported`, `S_ID=0`, `OLS/NOS`, `Primitive Sequence Protocols`, `PPN`, `Port_Name`, `N_Port ID`, `Unable to perform command request`, and `insufficient resources`. Content types: response/branch handling, completion/exception conditions.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 164,
+          "end_index": 164,
+          "subtree_start_index": 164,
+          "subtree_end_index": 164
+        },
+        {
+          "node_id": "0323",
+          "title": "6.6 Service Parameters",
+          "summary": "6.6 Service Parameters: defines the Service Parameters context for Login-related payloads, specifically the `ELS` and `LS_ACC` Payload formats and parameter applicability for `PLOGI`, `FLOGI`, `PLOGI LS_ACC`, and `FLOGI LS_ACC`. `Table 149` defines the Payload format for the `FLOGI` and `PLOGI ELSs` and the `LS_ACCs`. States that there are no separate `Class 6` login Service Parameters; `Class 1 service parameters` are used instead. Includes `NOTE 13` that the Link Service may further limit values supplied during Login as specified by individual Upper Level Protocols. Content types: `message/frame format`, `timer/negotiation` (service-parameter applicability/limits). Figures: none. Tables: `Table 149` — Payload format definition for `FLOGI`/`PLOGI` and `LS_ACC`.",
+          "is_skeleton": false,
+          "children": [
+            {
+              "node_id": "0324",
+              "title": "6.6.1 ELS and LS_ACC Payload",
+              "summary": "Defines the `ELS and LS_ACC Payload` for `FLOGI`, `PLOGI`, `PLOGI LS_ACC`, and `FLOGI LS_ACC`, via `Table 149 – FLOGI, PLOGI or LS_ACC Payload`, which defines the payload/message format and field layout. Covers payload composition for `ELS_Command code`, `Common Service Parameters`, `Port_Name`, `Node_ or Fabric_Name`, `Class 1 and Class 6 Service Parameters`, `Class 2 Service Parameters`, `Class 3 Service Parameters`, `Vendor Version Level`, `Services Availability`, `Login Extension Data Length`, `Clock Synchronization QoS`, and `Login Extension Data`. Notes `Payload Bit` gating: when set to one, extended fields are present; when set to zero, payload is `116 bytes long`. Includes procedure/flow and response/branch handling for large Login: send Login with `Payload Bit` zero, inspect `Query Buffer Conditions bit` in `LS_ACC`, optionally issue `RPBC ELS`, then compare `ELS Receive Data Field Size` and `Buffer-to-buffer Receive Data_Field Size` against `256 bytes`.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 165,
+              "end_index": 166,
+              "subtree_start_index": 165,
+              "subtree_end_index": 166
+            },
+            {
+              "node_id": "0325",
+              "title": "6.6.2 Common Service Parameters",
+              "summary": "Defines applicability of Common Service Parameters for N_Port and Fabric Login, keyed by class and login context. Covers `6.6.2.1 Applicability`, `Table 150 – Common Service Parameter applicability`, and the `Default Login Value` for payload words `1-4` prior to a successful Login. Named anchors/fields include `PLOGI`, `FLOGI`, `PLOGI LS_ACC`, `FLOGI LS_ACC`, `FC-PH Version - obsolete`, `Buffer-to-buffer Credit`, `Common Features`, `Continuously increasing relative offset`, `Clean Address`, `Multiple N_Port_ID Support`, `Random relative offset`, `Virtual Fabrics bit`, `Valid Vendor Version Level`, `Multiple N_Port_ID Assignment`, classes `1a`, `2`, `3`, bits `31-16`, `15-0`, `31`, `30`, `29`, and hex `2020h`. `Table 150 – Common Service Parameter applicability`: defines per-parameter applicability by class/login and default values. Content types: `timer/negotiation`, `message/frame format`.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 167,
+              "end_index": 167,
+              "subtree_start_index": 167,
+              "subtree_end_index": 175
+            }
+          ],
+          "start_index": 165,
+          "end_index": 165,
+          "subtree_start_index": 165,
+          "subtree_end_index": 196
+        }
+      ],
+      "start_index": 152,
+      "end_index": 152,
+      "subtree_start_index": 152,
+      "subtree_end_index": 196
+    }
+  ],
+  "next_steps": {
+    "options": [
+      "Request next part with part: 6",
+      "Jump to last part with part: 7",
+      "Request previous part with part: 4",
+      "Proceed to get_page_content() for specific sections"
+    ],
+    "summary": "Showing part 5 of 7."
+  },
+  "pagination": {
+    "part": "5",
+    "has_more": true,
+    "total_parts": "7"
+  },
+  "total_parts": "7"
+}

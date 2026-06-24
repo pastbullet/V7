@@ -1,0 +1,895 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 100,
+  "spans": [
+    {
+      "span_id": "p100_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0002",
+      "text": " 81",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0003",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        57.65,
+        142.05,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0004",
+      "text": "LS_ACC Signifies acceptance of the LIRR Request and the registration for RLIR ELSs.",
+      "bbox": [
+        142.08,
+        57.65,
+        540.04,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p100_s0005",
+      "text": "The format of the LS_ACC Payload is shown in table 77.",
+      "bbox": [
+        96.0,
+        69.65,
+        346.06,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0006",
+      "text": "4.2.26",
+      "bbox": [
+        96.0,
+        178.97,
+        123.77,
+        190.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0007",
+      "text": "Get Alias_ID (GAID)",
+      "bbox": [
+        133.77,
+        178.97,
+        227.06,
+        190.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0008",
+      "text": "4.2.26.1  Description",
+      "bbox": [
+        96.0,
+        202.96,
+        192.63,
+        214.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0009",
+      "text": "The GAID ELS shall be sent to the Fabric Controller by the Alias Server (see FC-FS-2) to request a",
+      "bbox": [
+        96.0,
+        226.96,
+        540.03,
+        238.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0010",
+      "text": "unique Alias_ID to be associated with the Alias Group indicated in the passed Alias_Token.",
+      "bbox": [
+        96.0,
+        238.96,
+        499.26,
+        250.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0011",
+      "text": "4.2.26.2  Protocol",
+      "bbox": [
+        96.0,
+        262.96,
+        178.22,
+        274.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0012",
+      "text": "a) GAID Request Sequence",
+      "bbox": [
+        106.02,
+        286.96,
+        234.61,
+        298.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0013",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence",
+      "bbox": [
+        106.02,
+        310.96,
+        287.89,
+        322.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0014",
+      "text": "4.2.26.3  Request Sequence",
+      "bbox": [
+        96.0,
+        334.96,
+        227.06,
+        346.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0015",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        358.96,
+        157.1,
+        370.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0016",
+      "text": "The S_ID designates the Alias Server (FFFFF8h).  The D_ID field designates the Fab-",
+      "bbox": [
+        157.08,
+        358.96,
+        540.08,
+        370.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p100_s0017",
+      "text": "ric Controller (FFFFFDh).",
+      "bbox": [
+        96.0,
+        370.96,
+        208.17,
+        382.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0018",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        394.96,
+        140.41,
+        406.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0019",
+      "text": "The format of the Payload is shown in table 78.",
+      "bbox": [
+        140.4,
+        394.96,
+        348.7,
+        406.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p100_s0020",
+      "text": "a)",
+      "bbox": [
+        106.02,
+        683.02,
+        114.91,
+        694.14
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0021",
+      "text": " Alias Group Token (Alias_Token): ",
+      "bbox": [
+        114.91,
+        683.02,
+        285.49,
+        694.14
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p100_s0022",
+      "text": "This is the token identifying the Alias Group.  See FC-GS-",
+      "bbox": [
+        285.36,
+        683.02,
+        540.04,
+        694.14
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p100_s0023",
+      "text": "5 for a description of the Alias_Token.",
+      "bbox": [
+        122.4,
+        695.02,
+        290.15,
+        706.14
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0024",
+      "text": " Table 77 – LIRR LS_ACC Payload",
+      "bbox": [
+        237.48,
+        91.66,
+        398.64,
+        102.78
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0025",
+      "text": "Bits",
+      "bbox": [
+        110.46,
+        113.62,
+        129.34,
+        124.74
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0026",
+      "text": "Word",
+      "bbox": [
+        107.1,
+        125.62,
+        132.63,
+        136.74
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0027",
+      "text": "31        ..         24",
+      "bbox": [
+        152.94,
+        113.62,
+        227.94,
+        124.74
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0028",
+      "text": "23        ..       16",
+      "bbox": [
+        256.61,
+        113.62,
+        326.02,
+        124.74
+      ],
+      "block_index": 15,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0029",
+      "text": "15         ..       08",
+      "bbox": [
+        353.42,
+        113.62,
+        425.61,
+        124.74
+      ],
+      "block_index": 15,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0030",
+      "text": "07        ..       00",
+      "bbox": [
+        451.93,
+        113.62,
+        521.34,
+        124.74
+      ],
+      "block_index": 15,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0031",
+      "text": "0",
+      "bbox": [
+        117.12,
+        142.66,
+        122.66,
+        153.78
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0032",
+      "text": "02h",
+      "bbox": [
+        146.16,
+        142.66,
+        162.86,
+        153.78
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0033",
+      "text": "00h",
+      "bbox": [
+        238.68,
+        142.66,
+        255.31,
+        153.78
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0034",
+      "text": "00h",
+      "bbox": [
+        347.99,
+        142.66,
+        364.63,
+        153.78
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0035",
+      "text": "00h",
+      "bbox": [
+        435.11,
+        142.66,
+        451.8,
+        153.78
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0036",
+      "text": " Table 78 – GAID Payload",
+      "bbox": [
+        258.0,
+        416.98,
+        377.98,
+        428.1
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0037",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        439.0,
+        133.06,
+        450.12
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0038",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        451.0,
+        136.35,
+        462.12
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0039",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        439.0,
+        233.97,
+        450.12
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0040",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        439.0,
+        328.41,
+        450.12
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0041",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        439.0,
+        427.0,
+        450.12
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0042",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        439.0,
+        522.83,
+        450.12
+      ],
+      "block_index": 18,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0043",
+      "text": "0",
+      "bbox": [
+        120.84,
+        467.98,
+        126.38,
+        479.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0044",
+      "text": "GAID (30h)",
+      "bbox": [
+        149.88,
+        467.98,
+        200.47,
+        479.1
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0045",
+      "text": "00h",
+      "bbox": [
+        247.14,
+        467.98,
+        263.77,
+        479.1
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0046",
+      "text": "00h",
+      "bbox": [
+        344.33,
+        467.98,
+        361.02,
+        479.1
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0047",
+      "text": "00h",
+      "bbox": [
+        441.52,
+        467.98,
+        458.2,
+        479.1
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0048",
+      "text": "1",
+      "bbox": [
+        120.84,
+        484.96,
+        126.38,
+        496.08
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0049",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        484.96,
+        171.52,
+        496.08
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0050",
+      "text": "Alias_Token",
+      "bbox": [
+        314.82,
+        487.0,
+        369.79,
+        498.12
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0051",
+      "text": "(12 bytes)",
+      "bbox": [
+        320.1,
+        499.0,
+        364.52,
+        510.12
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0052",
+      "text": "2",
+      "bbox": [
+        120.84,
+        502.0,
+        126.38,
+        513.12
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0053",
+      "text": "3",
+      "bbox": [
+        120.84,
+        518.98,
+        126.38,
+        530.1
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0054",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        518.98,
+        460.36,
+        530.1
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0055",
+      "text": "4",
+      "bbox": [
+        120.84,
+        535.96,
+        126.38,
+        547.08
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0056",
+      "text": "Alias_SP",
+      "bbox": [
+        322.02,
+        538.0,
+        362.55,
+        549.12
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0057",
+      "text": "(80 bytes)",
+      "bbox": [
+        320.1,
+        550.0,
+        364.52,
+        561.12
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0058",
+      "text": "..",
+      "bbox": [
+        120.84,
+        553.0,
+        126.37,
+        564.12
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0059",
+      "text": "23",
+      "bbox": [
+        118.02,
+        569.98,
+        129.14,
+        581.1
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0060",
+      "text": "24",
+      "bbox": [
+        118.02,
+        592.96,
+        129.14,
+        604.07
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0061",
+      "text": "NP_List_Length",
+      "bbox": [
+        149.88,
+        586.96,
+        221.01,
+        598.08
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0062",
+      "text": "(Number of NP_List entries = n)",
+      "bbox": [
+        149.88,
+        598.96,
+        290.77,
+        610.07
+      ],
+      "block_index": 24,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0063",
+      "text": "25",
+      "bbox": [
+        118.02,
+        616.0,
+        129.14,
+        627.11
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0064",
+      "text": "NP_List (1)",
+      "bbox": [
+        149.88,
+        616.0,
+        199.86,
+        627.11
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0065",
+      "text": "..",
+      "bbox": [
+        120.84,
+        634.0,
+        126.37,
+        645.11
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0066",
+      "text": "..",
+      "bbox": [
+        339.54,
+        634.96,
+        345.07,
+        646.07
+      ],
+      "block_index": 26,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0067",
+      "text": "24 + n",
+      "bbox": [
+        109.26,
+        652.0,
+        137.9,
+        663.11
+      ],
+      "block_index": 27,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p100_s0068",
+      "text": "NP_List (n)",
+      "bbox": [
+        149.88,
+        652.0,
+        199.86,
+        663.11
+      ],
+      "block_index": 27,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0081",
+    "table_0082"
+  ]
+}

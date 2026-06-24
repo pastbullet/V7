@@ -1,0 +1,8 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits", "page": 119, "bbox": [194.24, 82.28, 259.29, 103.98]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Field Name", "page": 119, "bbox": [259.29, 82.28, 441.2, 103.98]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "31", "page": 119, "bbox": [194.24, 103.98, 259.29, 128.01]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Multi-frame ELS sequence supported", "page": 119, "bbox": [259.29, 103.98, 441.2, 128.01]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "30-12", "page": 119, "bbox": [194.24, 128.01, 259.29, 152.01]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Reserved.", "page": 119, "bbox": [259.29, 128.01, 441.2, 152.01]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "11-00", "page": 119, "bbox": [194.24, 152.01, 259.29, 175.68]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "ELS Receive Data Field Size", "page": 119, "bbox": [259.29, 152.01, 441.2, 175.68]}

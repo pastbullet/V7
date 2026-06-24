@@ -1,0 +1,33 @@
+{
+  "items": [
+    {
+      "unit_id": "login-service-parameter-tables",
+      "title": "Login service-parameter applicability tables",
+      "kind": "other",
+      "reason": "The retrieved login procedures repeatedly reference tables 150 and 155 as defining applicability of service parameters to Fabric Login and N_Port Login, but those tables were not retrieved in this evidence pass, so their exact unit role cannot be confirmed here.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0035",
+          "quote": "The Service Parameters are as specified for F_Port Login in 6.6.  The applicability of the Service Pa-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p153_s0036",
+          "quote": "rameters to Fabric Login are given in tables 150 and 155."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0026",
+          "quote": "quence.  The N_Port Service Parameters are as specified  in 6.6.  The applicability of the Service Pa-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0027",
+          "quote": "rameters to N_Port Login are given in tables 150 and 155."
+        }
+      ],
+      "related_assets": []
+    }
+  ]
+}

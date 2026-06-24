@@ -1,0 +1,528 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 3,
+  "spans": [
+    {
+      "span_id": "p003_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.87,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0002",
+      "text": " iii",
+      "bbox": [
+        523.32,
+        723.59,
+        532.81,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0003",
+      "text": "Release Notes for version 0.3:",
+      "bbox": [
+        96.0,
+        70.97,
+        230.42,
+        82.08
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0004",
+      "text": "–",
+      "bbox": [
+        106.02,
+        94.97,
+        111.56,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0005",
+      "text": "Incorporated T11/04-069v1.",
+      "bbox": [
+        120.0,
+        94.97,
+        243.32,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0006",
+      "text": "–",
+      "bbox": [
+        106.02,
+        106.49,
+        111.56,
+        117.6
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0007",
+      "text": "Incorporated T11/04-075v0.",
+      "bbox": [
+        120.0,
+        106.49,
+        243.32,
+        117.6
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0008",
+      "text": "–",
+      "bbox": [
+        106.02,
+        117.95,
+        111.56,
+        129.06
+      ],
+      "block_index": 4,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0009",
+      "text": "Incorporated T11/04-219v0.",
+      "bbox": [
+        120.0,
+        117.95,
+        243.32,
+        129.06
+      ],
+      "block_index": 4,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0010",
+      "text": "–",
+      "bbox": [
+        106.02,
+        129.47,
+        111.56,
+        140.58
+      ],
+      "block_index": 4,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0011",
+      "text": "Incorporated T11/04-211v1.",
+      "bbox": [
+        120.0,
+        129.47,
+        243.32,
+        140.58
+      ],
+      "block_index": 4,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0012",
+      "text": "–",
+      "bbox": [
+        106.02,
+        140.98,
+        111.56,
+        152.1
+      ],
+      "block_index": 4,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0013",
+      "text": "Incorporated T11/04-229v1.",
+      "bbox": [
+        120.0,
+        140.98,
+        243.32,
+        152.1
+      ],
+      "block_index": 4,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0014",
+      "text": "–",
+      "bbox": [
+        106.02,
+        152.5,
+        111.56,
+        163.62
+      ],
+      "block_index": 4,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0015",
+      "text": "Incorporated T11/04-248v0.",
+      "bbox": [
+        120.0,
+        152.5,
+        243.32,
+        163.62
+      ],
+      "block_index": 4,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0016",
+      "text": "–",
+      "bbox": [
+        106.02,
+        163.96,
+        111.56,
+        175.08
+      ],
+      "block_index": 4,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0017",
+      "text": "Incorporated T11/04-210v2.",
+      "bbox": [
+        120.0,
+        163.96,
+        243.32,
+        175.08
+      ],
+      "block_index": 4,
+      "line_index": 14,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0018",
+      "text": "–",
+      "bbox": [
+        106.02,
+        175.48,
+        111.56,
+        186.6
+      ],
+      "block_index": 4,
+      "line_index": 15,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0019",
+      "text": "Incorporated T11/04-317v1.",
+      "bbox": [
+        120.0,
+        175.48,
+        243.32,
+        186.6
+      ],
+      "block_index": 4,
+      "line_index": 16,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0020",
+      "text": "–",
+      "bbox": [
+        106.02,
+        187.0,
+        111.56,
+        198.12
+      ],
+      "block_index": 4,
+      "line_index": 17,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0021",
+      "text": "Incorporated T11/04-369v0.",
+      "bbox": [
+        120.0,
+        187.0,
+        243.32,
+        198.12
+      ],
+      "block_index": 4,
+      "line_index": 18,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0022",
+      "text": "–",
+      "bbox": [
+        106.02,
+        198.46,
+        111.56,
+        209.58
+      ],
+      "block_index": 4,
+      "line_index": 19,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0023",
+      "text": "Incorporated T11/04-370v0.",
+      "bbox": [
+        120.0,
+        198.46,
+        243.32,
+        209.58
+      ],
+      "block_index": 4,
+      "line_index": 20,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0024",
+      "text": "–",
+      "bbox": [
+        106.02,
+        209.98,
+        111.56,
+        221.1
+      ],
+      "block_index": 4,
+      "line_index": 21,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0025",
+      "text": "Incorporated T11/04-337v0.",
+      "bbox": [
+        120.0,
+        209.98,
+        243.32,
+        221.1
+      ],
+      "block_index": 4,
+      "line_index": 22,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0026",
+      "text": "–",
+      "bbox": [
+        106.02,
+        221.5,
+        111.56,
+        232.62
+      ],
+      "block_index": 4,
+      "line_index": 23,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0027",
+      "text": "Incorporated T11/04-337v1.",
+      "bbox": [
+        120.0,
+        221.5,
+        243.32,
+        232.62
+      ],
+      "block_index": 4,
+      "line_index": 24,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0028",
+      "text": "–",
+      "bbox": [
+        106.02,
+        232.96,
+        111.56,
+        244.08
+      ],
+      "block_index": 4,
+      "line_index": 25,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0029",
+      "text": "Incorporated T11/04-320v0.",
+      "bbox": [
+        120.0,
+        232.96,
+        243.32,
+        244.08
+      ],
+      "block_index": 4,
+      "line_index": 26,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0030",
+      "text": "–",
+      "bbox": [
+        106.02,
+        244.48,
+        111.56,
+        255.6
+      ],
+      "block_index": 4,
+      "line_index": 27,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0031",
+      "text": "Incorporated T11/04-508v1.",
+      "bbox": [
+        120.0,
+        244.48,
+        243.32,
+        255.6
+      ],
+      "block_index": 4,
+      "line_index": 28,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0032",
+      "text": "–",
+      "bbox": [
+        106.02,
+        256.0,
+        111.56,
+        267.12
+      ],
+      "block_index": 4,
+      "line_index": 29,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0033",
+      "text": "Incorporated T11/04-482v1.",
+      "bbox": [
+        120.0,
+        256.0,
+        243.32,
+        267.12
+      ],
+      "block_index": 4,
+      "line_index": 30,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0034",
+      "text": "–",
+      "bbox": [
+        106.02,
+        267.46,
+        111.56,
+        278.58
+      ],
+      "block_index": 4,
+      "line_index": 31,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0035",
+      "text": "Incorporated T11/04-525v1.",
+      "bbox": [
+        120.0,
+        267.46,
+        243.32,
+        278.58
+      ],
+      "block_index": 4,
+      "line_index": 32,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0036",
+      "text": "–",
+      "bbox": [
+        106.02,
+        278.98,
+        111.56,
+        290.1
+      ],
+      "block_index": 4,
+      "line_index": 33,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0037",
+      "text": "Removed Basic Link Services clause by request of FC-LS and FC-FS-2 working groups.",
+      "bbox": [
+        120.0,
+        278.98,
+        509.89,
+        290.1
+      ],
+      "block_index": 4,
+      "line_index": 34,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0038",
+      "text": "Release Notes for version 0.2:",
+      "bbox": [
+        96.0,
+        310.96,
+        230.42,
+        322.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0039",
+      "text": "–",
+      "bbox": [
+        106.02,
+        334.96,
+        111.56,
+        346.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p003_s0040",
+      "text": "Initial Release",
+      "bbox": [
+        120.0,
+        334.96,
+        182.68,
+        346.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0128",
+  "type": "table",
+  "caption": "Table 124 – Tagging Administrative Status Descriptor",
+  "pages": [
+    133
+  ],
+  "bbox": [
+    99.6,
+    555.99,
+    536.4,
+    634.35
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 133,
+  "logical_table": false
+}

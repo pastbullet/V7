@@ -1,0 +1,567 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 209,
+  "spans": [
+    {
+      "span_id": "p209_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0002",
+      "text": " 190",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0003",
+      "text": "The EVFP protocol is used also when some N_Port or F_Port configuration information (see 8.3) are",
+      "bbox": [
+        96.0,
+        57.65,
+        539.93,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0004",
+      "text": "changed by a management action. The EVFP messages may be carried in FC frames tagged with",
+      "bbox": [
+        96.0,
+        69.65,
+        539.96,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0005",
+      "text": "the Port VF_ID if the EVFP protocol begins while the link is not performing VFT tagging (see 8.4.1).",
+      "bbox": [
+        96.0,
+        81.65,
+        539.93,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0006",
+      "text": "The EVFP messages are carried in FC frames tagged with the Control VF_ID if the EVFP protocol",
+      "bbox": [
+        96.0,
+        93.65,
+        540.05,
+        104.76
+      ],
+      "block_index": 3,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0007",
+      "text": "begins while the link is performing VFT tagging (see 8.4.2 and 8.4.3).",
+      "bbox": [
+        96.0,
+        105.64,
+        400.97,
+        116.76
+      ],
+      "block_index": 3,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0008",
+      "text": "8.4.2",
+      "bbox": [
+        96.0,
+        130.97,
+        118.22,
+        142.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0009",
+      "text": "Changing the VFT Tagging Mode",
+      "bbox": [
+        128.22,
+        130.97,
+        284.28,
+        142.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0010",
+      "text": "When a management action changes the Administrative Tagging Mode of a VF capable N_Port or",
+      "bbox": [
+        96.0,
+        154.96,
+        540.05,
+        166.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0011",
+      "text": "F_Port that determined during initialization the peer supports the EVFP protocol, the FC_Port shall",
+      "bbox": [
+        96.0,
+        166.96,
+        540.03,
+        178.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0012",
+      "text": "determine if the link has to change its VFT Tagging mode (i.e., if it has to transition from tagging to",
+      "bbox": [
+        96.0,
+        178.96,
+        539.97,
+        190.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0013",
+      "text": "untagging mode or from untagging to tagging mode) by acting as EVFP Initiator as follows. If the",
+      "bbox": [
+        96.0,
+        190.96,
+        539.98,
+        202.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0014",
+      "text": "N_Port or F_Port is currently performing tagging, all EVFP protocol messages shall be tagged with",
+      "bbox": [
+        96.0,
+        202.96,
+        539.92,
+        214.08
+      ],
+      "block_index": 5,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0015",
+      "text": "the Control VF_ID. If the N_Port or F_Port is currently not performing tagging, all EVFP protocol mes-",
+      "bbox": [
+        96.0,
+        214.96,
+        540.05,
+        226.08
+      ],
+      "block_index": 5,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0016",
+      "text": "sages shall be untagged.",
+      "bbox": [
+        96.0,
+        226.96,
+        207.11,
+        238.08
+      ],
+      "block_index": 5,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0017",
+      "text": "1) The EVFP Initiator shall start the EVFP transaction by sending the EVFP_SYNC message to",
+      "bbox": [
+        106.02,
+        250.96,
+        539.92,
+        262.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0018",
+      "text": "the EVFP Responder. The EVFP_SYNC message shall carry the updated Tagging Administra-",
+      "bbox": [
+        122.4,
+        262.96,
+        540.03,
+        274.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0019",
+      "text": "tive Status (see 4.2.43.2.2), Port VF_ID, and the Locally-Enabled VF_ID List; and",
+      "bbox": [
+        122.4,
+        274.96,
+        481.28,
+        286.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0020",
+      "text": "2) The EVFP Responder shall reply with an LS_ACC carrying its Tagging Administrative Status,",
+      "bbox": [
+        106.02,
+        298.96,
+        540.06,
+        310.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0021",
+      "text": "Port VF_ID and Locally-Enabled VF_ID List. The EVFP Responder shall determine if VFT Tag-",
+      "bbox": [
+        122.4,
+        310.96,
+        540.05,
+        322.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0022",
+      "text": "ging has to be changed on the link, according to table 126. The EVFP Responder:",
+      "bbox": [
+        122.4,
+        322.96,
+        484.67,
+        334.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0023",
+      "text": "A) if VFT Tagging has not to be changed, on completion of the Exchange terminates the EVFP",
+      "bbox": [
+        122.4,
+        346.96,
+        540.05,
+        358.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0024",
+      "text": "protocol; or",
+      "bbox": [
+        138.0,
+        358.96,
+        188.07,
+        370.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0025",
+      "text": "B) if VFT Tagging has to be changed, on completion of the Exchange shall perform a link ini-",
+      "bbox": [
+        122.4,
+        382.96,
+        540.15,
+        394.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0026",
+      "text": "tialization.",
+      "bbox": [
+        138.0,
+        394.96,
+        182.37,
+        406.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0027",
+      "text": "On receiving the EVFP_SYNC LS_ACC, the EVFP Initiator shall determine if VFT Tagging has",
+      "bbox": [
+        122.4,
+        418.96,
+        539.99,
+        430.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0028",
+      "text": "to be changed on the link, according to table 126. The EVFP Initiator:",
+      "bbox": [
+        122.4,
+        430.96,
+        427.96,
+        442.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0029",
+      "text": "A) if VFT Tagging has not to be changed, on completion of the Exchange terminates the EVFP",
+      "bbox": [
+        122.4,
+        454.96,
+        540.05,
+        466.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0030",
+      "text": "protocol; or",
+      "bbox": [
+        138.0,
+        466.96,
+        188.07,
+        478.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0031",
+      "text": "B) if VFT Tagging has to be changed, shall participate in the link initialization initiated by the",
+      "bbox": [
+        122.4,
+        490.96,
+        539.96,
+        502.07
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0032",
+      "text": "EVFP Responder.",
+      "bbox": [
+        138.0,
+        502.96,
+        218.55,
+        514.07
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0033",
+      "text": "8.4.3",
+      "bbox": [
+        96.0,
+        526.96,
+        118.22,
+        538.07
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0034",
+      "text": "Adding or Removing Virtual Fabrics",
+      "bbox": [
+        128.22,
+        526.96,
+        298.77,
+        538.07
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0035",
+      "text": "When a management action changes the Locally-Enabled VF_ID List over a tagging N_Port or",
+      "bbox": [
+        96.0,
+        550.96,
+        540.03,
+        562.07
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0036",
+      "text": "F_Port, the FC_Port shall initiate the EVFP protocol by acting as EVFP Initiator as follows. All EVFP",
+      "bbox": [
+        96.0,
+        562.96,
+        539.94,
+        574.07
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0037",
+      "text": "protocol messages shall be tagged with the Control VF_ID.",
+      "bbox": [
+        96.0,
+        574.96,
+        356.5,
+        586.07
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0038",
+      "text": "1) The EVFP Initiator shall start the EVFP transaction by sending the EVFP_SYNC message to",
+      "bbox": [
+        106.02,
+        598.96,
+        539.91,
+        610.07
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0039",
+      "text": "the EVFP Responder. The EVFP_SYNC message shall carry the Tagging Administrative Sta-",
+      "bbox": [
+        122.4,
+        610.96,
+        539.99,
+        622.07
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0040",
+      "text": "tus, Port VF_ID, and the updated Locally-Enabled VF_ID List (see 4.2.43.2.4);",
+      "bbox": [
+        122.4,
+        622.96,
+        467.4,
+        634.07
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0041",
+      "text": "2) The EVFP Responder shall reply with an LS_ACC carrying its Tagging Administrative Status,",
+      "bbox": [
+        106.02,
+        647.02,
+        540.06,
+        658.13
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0042",
+      "text": "Port VF_ID and Locally-Enabled VF_ID List. The EVFP Responder, depending on the resulting",
+      "bbox": [
+        122.4,
+        659.02,
+        539.99,
+        670.13
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p209_s0043",
+      "text": "operational VF_ID List (see 4.2.43.2.4):",
+      "bbox": [
+        122.4,
+        671.02,
+        296.78,
+        682.13
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

@@ -1,0 +1,32 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "RPBC (58h)",
+      "Reserved",
+      null,
+      null
+    ],
+    [
+      "1",
+      "ELS Buffer Parameters",
+      null,
+      null,
+      null
+    ],
+    [
+      "2",
+      "Reserved",
+      "Originator S_ID - obsolete",
+      null,
+      null
+    ]
+  ]
+}

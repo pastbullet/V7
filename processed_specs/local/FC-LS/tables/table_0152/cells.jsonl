@@ -1,0 +1,132 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Encoded\nValue\n(Bits 15-8)", "page": 148, "bbox": [96.99, 123.82, 168.21, 169.32], "source_fragment_id": "table_0152", "source_cell_id": "r1c1"}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Description", "page": 148, "bbox": [168.21, 123.82, 338.79, 169.32], "source_fragment_id": "table_0152", "source_cell_id": "r1c2"}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Applicable ELSs", "page": 148, "bbox": [338.79, 123.82, 539.01, 169.32], "source_fragment_id": "table_0152", "source_cell_id": "r1c3"}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00h", "page": 148, "bbox": [96.99, 169.32, 168.21, 239.37], "source_fragment_id": "table_0152", "source_cell_id": "r2c1"}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "No additional explanation", "page": 148, "bbox": [168.21, 169.32, 338.79, 239.37], "source_fragment_id": "table_0152", "source_cell_id": "r2c2"}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "ADVC, ESTS, FLOGI, PLOGI, LOGO, RCS,\nREC, RLS, RTV, RSI, PRLI, PRLO, TPLS,\nTPRLO, GAID, FACT, FDACT, NACT,\nNDACT, PDISC, FDISC, ADISC, RNC, CSR,\nRNFT", "page": 148, "bbox": [338.79, 169.32, 539.01, 239.37], "source_fragment_id": "table_0152", "source_cell_id": "r2c3"}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "01h", "page": 148, "bbox": [96.99, 239.37, 168.21, 263.37], "source_fragment_id": "table_0152", "source_cell_id": "r3c1"}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Service Parm error - Options", "page": 148, "bbox": [168.21, 239.37, 338.79, 263.37], "source_fragment_id": "table_0152", "source_cell_id": "r3c2"}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "FLOGI, PLOGI", "page": 148, "bbox": [338.79, 239.37, 539.01, 263.37], "source_fragment_id": "table_0152", "source_cell_id": "r3c3"}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "03h", "page": 148, "bbox": [96.99, 263.37, 168.21, 287.37], "source_fragment_id": "table_0152", "source_cell_id": "r4c1"}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Service Parm error - Initiator Ctl", "page": 148, "bbox": [168.21, 263.37, 338.79, 287.37], "source_fragment_id": "table_0152", "source_cell_id": "r4c2"}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "FLOGI, PLOGI", "page": 148, "bbox": [338.79, 263.37, 539.01, 287.37], "source_fragment_id": "table_0152", "source_cell_id": "r4c3"}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "05h", "page": 148, "bbox": [96.99, 287.37, 168.21, 311.37], "source_fragment_id": "table_0152", "source_cell_id": "r5c1"}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Service Parm error - Recipient Ctl", "page": 148, "bbox": [168.21, 287.37, 338.79, 311.37], "source_fragment_id": "table_0152", "source_cell_id": "r5c2"}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "FLOGI, PLOGI", "page": 148, "bbox": [338.79, 287.37, 539.01, 311.37], "source_fragment_id": "table_0152", "source_cell_id": "r5c3"}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "07h", "page": 148, "bbox": [96.99, 311.37, 168.21, 345.39], "source_fragment_id": "table_0152", "source_cell_id": "r6c1"}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "Service Parm error - Rec Data Field\nSize", "page": 148, "bbox": [168.21, 311.37, 338.79, 345.39], "source_fragment_id": "table_0152", "source_cell_id": "r6c2"}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "FLOGI, PLOGI", "page": 148, "bbox": [338.79, 311.37, 539.01, 345.39], "source_fragment_id": "table_0152", "source_cell_id": "r6c3"}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "09h", "page": 148, "bbox": [96.99, 345.39, 168.21, 369.39], "source_fragment_id": "table_0152", "source_cell_id": "r7c1"}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "Service Parm error - Concurrent Seq", "page": 148, "bbox": [168.21, 345.39, 338.79, 369.39], "source_fragment_id": "table_0152", "source_cell_id": "r7c2"}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "FLOGI, PLOGI", "page": 148, "bbox": [338.79, 345.39, 539.01, 369.39], "source_fragment_id": "table_0152", "source_cell_id": "r7c3"}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "0Bh", "page": 148, "bbox": [96.99, 369.39, 168.21, 393.39], "source_fragment_id": "table_0152", "source_cell_id": "r8c1"}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "Service Parm error - Credit", "page": 148, "bbox": [168.21, 369.39, 338.79, 393.39], "source_fragment_id": "table_0152", "source_cell_id": "r8c2"}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "ADVC, FLOGI, PLOGI", "page": 148, "bbox": [338.79, 369.39, 539.01, 393.39], "source_fragment_id": "table_0152", "source_cell_id": "r8c3"}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "0Dh", "page": 148, "bbox": [96.99, 393.39, 168.21, 417.39], "source_fragment_id": "table_0152", "source_cell_id": "r9c1"}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "Invalid N_Port/F_Port_Name", "page": 148, "bbox": [168.21, 393.39, 338.79, 417.39], "source_fragment_id": "table_0152", "source_cell_id": "r9c2"}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "FLOGI, PLOGI", "page": 148, "bbox": [338.79, 393.39, 539.01, 417.39], "source_fragment_id": "table_0152", "source_cell_id": "r9c3"}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "0Eh", "page": 148, "bbox": [96.99, 417.39, 168.21, 441.39], "source_fragment_id": "table_0152", "source_cell_id": "r10c1"}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "Invalid node/Fabric Name", "page": 148, "bbox": [168.21, 417.39, 338.79, 441.39], "source_fragment_id": "table_0152", "source_cell_id": "r10c2"}
+{"cell_id": "r10c3", "row": 10, "col": 3, "text": "FLOGI, PLOGI", "page": 148, "bbox": [338.79, 417.39, 539.01, 441.39], "source_fragment_id": "table_0152", "source_cell_id": "r10c3"}
+{"cell_id": "r11c1", "row": 11, "col": 1, "text": "0Fh", "page": 148, "bbox": [96.99, 441.39, 168.21, 465.39], "source_fragment_id": "table_0152", "source_cell_id": "r11c1"}
+{"cell_id": "r11c2", "row": 11, "col": 2, "text": "Invalid Common Service Parameters", "page": 148, "bbox": [168.21, 441.39, 338.79, 465.39], "source_fragment_id": "table_0152", "source_cell_id": "r11c2"}
+{"cell_id": "r11c3", "row": 11, "col": 3, "text": "FLOGI, PLOGI", "page": 148, "bbox": [338.79, 441.39, 539.01, 465.39], "source_fragment_id": "table_0152", "source_cell_id": "r11c3"}
+{"cell_id": "r12c1", "row": 12, "col": 1, "text": "11h", "page": 148, "bbox": [96.99, 465.39, 168.21, 489.39], "source_fragment_id": "table_0152", "source_cell_id": "r12c1"}
+{"cell_id": "r12c2", "row": 12, "col": 2, "text": "Invalid Association_Header", "page": 148, "bbox": [168.21, 465.39, 338.79, 489.39], "source_fragment_id": "table_0152", "source_cell_id": "r12c2"}
+{"cell_id": "r12c3", "row": 12, "col": 3, "text": "RRQ, RSI", "page": 148, "bbox": [338.79, 465.39, 539.01, 489.39], "source_fragment_id": "table_0152", "source_cell_id": "r12c3"}
+{"cell_id": "r13c1", "row": 13, "col": 1, "text": "13h", "page": 148, "bbox": [96.99, 489.39, 168.21, 513.39], "source_fragment_id": "table_0152", "source_cell_id": "r13c1"}
+{"cell_id": "r13c2", "row": 13, "col": 2, "text": "Association_Header required", "page": 148, "bbox": [168.21, 489.39, 338.79, 513.39], "source_fragment_id": "table_0152", "source_cell_id": "r13c2"}
+{"cell_id": "r13c3", "row": 13, "col": 3, "text": "RRQ, RSI", "page": 148, "bbox": [338.79, 489.39, 539.01, 513.39], "source_fragment_id": "table_0152", "source_cell_id": "r13c3"}
+{"cell_id": "r14c1", "row": 14, "col": 1, "text": "15h", "page": 148, "bbox": [96.99, 513.39, 168.21, 537.39], "source_fragment_id": "table_0152", "source_cell_id": "r14c1"}
+{"cell_id": "r14c2", "row": 14, "col": 2, "text": "Invalid Originator S_ID", "page": 148, "bbox": [168.21, 513.39, 338.79, 537.39], "source_fragment_id": "table_0152", "source_cell_id": "r14c2"}
+{"cell_id": "r14c3", "row": 14, "col": 3, "text": "REC, RRQ, RSI", "page": 148, "bbox": [338.79, 513.39, 539.01, 537.39], "source_fragment_id": "table_0152", "source_cell_id": "r14c3"}
+{"cell_id": "r15c1", "row": 15, "col": 1, "text": "17h", "page": 148, "bbox": [96.99, 537.39, 168.21, 561.39], "source_fragment_id": "table_0152", "source_cell_id": "r15c1"}
+{"cell_id": "r15c2", "row": 15, "col": 2, "text": "Invalid OX_ID-RX_ID combination", "page": 148, "bbox": [168.21, 537.39, 338.79, 561.39], "source_fragment_id": "table_0152", "source_cell_id": "r15c2"}
+{"cell_id": "r15c3", "row": 15, "col": 3, "text": "REC, RRQ, RSI", "page": 148, "bbox": [338.79, 537.39, 539.01, 561.39], "source_fragment_id": "table_0152", "source_cell_id": "r15c3"}
+{"cell_id": "r16c1", "row": 16, "col": 1, "text": "19h", "page": 148, "bbox": [96.99, 561.39, 168.21, 595.35], "source_fragment_id": "table_0152", "source_cell_id": "r16c1"}
+{"cell_id": "r16c2", "row": 16, "col": 2, "text": "Command (request) already in\nprogress", "page": 148, "bbox": [168.21, 561.39, 338.79, 595.35], "source_fragment_id": "table_0152", "source_cell_id": "r16c2"}
+{"cell_id": "r16c3", "row": 16, "col": 3, "text": "PLOGI, RSI", "page": 148, "bbox": [338.79, 561.39, 539.01, 595.35], "source_fragment_id": "table_0152", "source_cell_id": "r16c3"}
+{"cell_id": "r17c1", "row": 17, "col": 1, "text": "1Eh", "page": 148, "bbox": [96.99, 595.35, 168.21, 619.35], "source_fragment_id": "table_0152", "source_cell_id": "r17c1"}
+{"cell_id": "r17c2", "row": 17, "col": 2, "text": "N_Port Login required", "page": 148, "bbox": [168.21, 595.35, 338.79, 619.35], "source_fragment_id": "table_0152", "source_cell_id": "r17c2"}
+{"cell_id": "r17c3", "row": 17, "col": 3, "text": "see table 3", "page": 148, "bbox": [338.79, 595.35, 539.01, 619.35], "source_fragment_id": "table_0152", "source_cell_id": "r17c3"}
+{"cell_id": "r18c1", "row": 18, "col": 1, "text": "1Fh", "page": 148, "bbox": [96.99, 619.35, 168.21, 643.52], "source_fragment_id": "table_0152", "source_cell_id": "r18c1"}
+{"cell_id": "r18c2", "row": 18, "col": 2, "text": "Invalid N_Port_ID", "page": 148, "bbox": [168.21, 619.35, 338.79, 643.52], "source_fragment_id": "table_0152", "source_cell_id": "r18c2"}
+{"cell_id": "r18c3", "row": 18, "col": 3, "text": "RCS, RLS", "page": 148, "bbox": [338.79, 619.35, 539.01, 643.52], "source_fragment_id": "table_0152", "source_cell_id": "r18c3"}
+{"cell_id": "r19c1", "row": 19, "col": 1, "text": "21h", "page": 148, "bbox": [96.99, 643.52, 168.21, 667.35], "source_fragment_id": "table_0152", "source_cell_id": "r19c1"}
+{"cell_id": "r19c2", "row": 19, "col": 2, "text": "Obsolete", "page": 148, "bbox": [168.21, 643.52, 539.01, 667.35], "source_fragment_id": "table_0152", "source_cell_id": "r19c2"}
+{"cell_id": "r19c3", "row": 19, "col": 3, "text": "", "page": 148, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0152", "source_cell_id": "r19c3"}
+{"cell_id": "r20c1", "row": 20, "col": 1, "text": "23h", "page": 148, "bbox": [96.99, 667.35, 168.21, 691.04], "source_fragment_id": "table_0152", "source_cell_id": "r20c1"}
+{"cell_id": "r20c2", "row": 20, "col": 2, "text": "Obsolete", "page": 148, "bbox": [168.21, 667.35, 539.01, 691.04], "source_fragment_id": "table_0152", "source_cell_id": "r20c2"}
+{"cell_id": "r20c3", "row": 20, "col": 3, "text": "", "page": 148, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0152", "source_cell_id": "r20c3"}
+{"cell_id": "r21c1", "row": 21, "col": 1, "text": "25h", "page": 149, "bbox": [96.91, 121.68, 168.21, 146.01], "source_fragment_id": "table_0153", "source_cell_id": "r2c1"}
+{"cell_id": "r21c2", "row": 21, "col": 2, "text": "Obsolete", "page": 149, "bbox": [168.21, 121.68, 539.09, 146.01], "source_fragment_id": "table_0153", "source_cell_id": "r2c2"}
+{"cell_id": "r21c3", "row": 21, "col": 3, "text": "", "page": 149, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0153", "source_cell_id": "r2c3"}
+{"cell_id": "r22c1", "row": 22, "col": 1, "text": "27h", "page": 149, "bbox": [96.91, 146.01, 168.21, 169.84], "source_fragment_id": "table_0153", "source_cell_id": "r3c1"}
+{"cell_id": "r22c2", "row": 22, "col": 2, "text": "Obsolete", "page": 149, "bbox": [168.21, 146.01, 539.09, 169.84], "source_fragment_id": "table_0153", "source_cell_id": "r3c2"}
+{"cell_id": "r22c3", "row": 22, "col": 3, "text": "", "page": 149, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0153", "source_cell_id": "r3c3"}
+{"cell_id": "r23c1", "row": 23, "col": 1, "text": "29h", "page": 149, "bbox": [96.91, 169.84, 168.21, 194.01], "source_fragment_id": "table_0153", "source_cell_id": "r4c1"}
+{"cell_id": "r23c2", "row": 23, "col": 2, "text": "Insufficient resources to support Login", "page": 149, "bbox": [168.21, 169.84, 338.79, 194.01], "source_fragment_id": "table_0153", "source_cell_id": "r4c2"}
+{"cell_id": "r23c3", "row": 23, "col": 3, "text": "FLOGI, PLOGI, FDISC", "page": 149, "bbox": [338.79, 169.84, 539.09, 194.01], "source_fragment_id": "table_0153", "source_cell_id": "r4c3"}
+{"cell_id": "r24c1", "row": 24, "col": 1, "text": "2Ah", "page": 149, "bbox": [96.91, 194.01, 168.21, 218.01], "source_fragment_id": "table_0153", "source_cell_id": "r5c1"}
+{"cell_id": "r24c2", "row": 24, "col": 2, "text": "Unable to supply requested data", "page": 149, "bbox": [168.21, 194.01, 338.79, 218.01], "source_fragment_id": "table_0153", "source_cell_id": "r5c2"}
+{"cell_id": "r24c3", "row": 24, "col": 3, "text": "ADVC, ESTS, RCS, RLS, RTV", "page": 149, "bbox": [338.79, 194.01, 539.09, 218.01], "source_fragment_id": "table_0153", "source_cell_id": "r5c3"}
+{"cell_id": "r25c1", "row": 25, "col": 1, "text": "2Ch", "page": 149, "bbox": [96.91, 218.01, 168.21, 264.03], "source_fragment_id": "table_0153", "source_cell_id": "r6c1"}
+{"cell_id": "r25c2", "row": 25, "col": 2, "text": "Request not supported", "page": 149, "bbox": [168.21, 218.01, 338.79, 264.03], "source_fragment_id": "table_0153", "source_cell_id": "r6c2"}
+{"cell_id": "r25c3", "row": 25, "col": 3, "text": "ADVC, ESTS, PRLI, PRLO, TPLS, TPRLO,\nGAID, FACT, FDACT, NACT, NDACT,\nPDISC, FDISC, ADISC, RNC, RNFT", "page": 149, "bbox": [338.79, 218.01, 539.09, 264.03], "source_fragment_id": "table_0153", "source_cell_id": "r6c3"}
+{"cell_id": "r26c1", "row": 26, "col": 1, "text": "2Dh", "page": 149, "bbox": [96.91, 264.03, 168.21, 288.03], "source_fragment_id": "table_0153", "source_cell_id": "r7c1"}
+{"cell_id": "r26c2", "row": 26, "col": 2, "text": "Invalid Payload length", "page": 149, "bbox": [168.21, 264.03, 338.79, 288.03], "source_fragment_id": "table_0153", "source_cell_id": "r7c2"}
+{"cell_id": "r26c3", "row": 26, "col": 3, "text": "FLOGI, PLOGI", "page": 149, "bbox": [338.79, 264.03, 539.09, 288.03], "source_fragment_id": "table_0153", "source_cell_id": "r7c3"}
+{"cell_id": "r27c1", "row": 27, "col": 1, "text": "30h", "page": 149, "bbox": [96.91, 288.03, 168.21, 322.05], "source_fragment_id": "table_0153", "source_cell_id": "r8c1"}
+{"cell_id": "r27c2", "row": 27, "col": 2, "text": "No Alias_IDs available for this\nAlias_ID Type", "page": 149, "bbox": [168.21, 288.03, 338.79, 322.05], "source_fragment_id": "table_0153", "source_cell_id": "r8c2"}
+{"cell_id": "r27c3", "row": 27, "col": 3, "text": "Get Alias_ID", "page": 149, "bbox": [338.79, 288.03, 539.09, 322.05], "source_fragment_id": "table_0153", "source_cell_id": "r8c3"}
+{"cell_id": "r28c1", "row": 28, "col": 1, "text": "31h", "page": 149, "bbox": [96.91, 322.05, 168.21, 356.01], "source_fragment_id": "table_0153", "source_cell_id": "r9c1"}
+{"cell_id": "r28c2", "row": 28, "col": 2, "text": "Alias_ID not activated\n(no resources available)", "page": 149, "bbox": [168.21, 322.05, 338.79, 356.01], "source_fragment_id": "table_0153", "source_cell_id": "r9c2"}
+{"cell_id": "r28c3", "row": 28, "col": 3, "text": "Fabric Activate Alias ID,\nN_Port Activate Alias ID", "page": 149, "bbox": [338.79, 322.05, 539.09, 356.01], "source_fragment_id": "table_0153", "source_cell_id": "r9c3"}
+{"cell_id": "r29c1", "row": 29, "col": 1, "text": "32h", "page": 149, "bbox": [96.91, 356.01, 168.21, 390.03], "source_fragment_id": "table_0153", "source_cell_id": "r10c1"}
+{"cell_id": "r29c2", "row": 29, "col": 2, "text": "Alias_ID not activated\n(invalid Alias_ID)", "page": 149, "bbox": [168.21, 356.01, 338.79, 390.03], "source_fragment_id": "table_0153", "source_cell_id": "r10c2"}
+{"cell_id": "r29c3", "row": 29, "col": 3, "text": "Fabric Activate Alias ID,\nN_Port Activate Alias ID", "page": 149, "bbox": [338.79, 356.01, 539.09, 390.03], "source_fragment_id": "table_0153", "source_cell_id": "r10c3"}
+{"cell_id": "r30c1", "row": 30, "col": 1, "text": "33h", "page": 149, "bbox": [96.91, 390.03, 168.21, 424.05], "source_fragment_id": "table_0153", "source_cell_id": "r11c1"}
+{"cell_id": "r30c2", "row": 30, "col": 2, "text": "Alias_ID not deactivated\n(doesn’t exist)", "page": 149, "bbox": [168.21, 390.03, 338.79, 424.05], "source_fragment_id": "table_0153", "source_cell_id": "r11c2"}
+{"cell_id": "r30c3", "row": 30, "col": 3, "text": "Fabric Deactivate Alias ID,\nN_Port Deactivate Alias ID", "page": 149, "bbox": [338.79, 390.03, 539.09, 424.05], "source_fragment_id": "table_0153", "source_cell_id": "r11c3"}
+{"cell_id": "r31c1", "row": 31, "col": 1, "text": "34h", "page": 149, "bbox": [96.91, 424.05, 168.21, 458.01], "source_fragment_id": "table_0153", "source_cell_id": "r12c1"}
+{"cell_id": "r31c2", "row": 31, "col": 2, "text": "Alias_ID not deactivated\n(resource problem)", "page": 149, "bbox": [168.21, 424.05, 338.79, 458.01], "source_fragment_id": "table_0153", "source_cell_id": "r12c2"}
+{"cell_id": "r31c3", "row": 31, "col": 3, "text": "Fabric Deactivate Alias ID,\nN_Port Deactivate Alias ID", "page": 149, "bbox": [338.79, 424.05, 539.09, 458.01], "source_fragment_id": "table_0153", "source_cell_id": "r12c3"}
+{"cell_id": "r32c1", "row": 32, "col": 1, "text": "35h", "page": 149, "bbox": [96.91, 458.01, 168.21, 482.01], "source_fragment_id": "table_0153", "source_cell_id": "r13c1"}
+{"cell_id": "r32c2", "row": 32, "col": 2, "text": "Service Parameter conflict", "page": 149, "bbox": [168.21, 458.01, 338.79, 482.01], "source_fragment_id": "table_0153", "source_cell_id": "r13c2"}
+{"cell_id": "r32c3", "row": 32, "col": 3, "text": "N_Port Activate Alias ID", "page": 149, "bbox": [338.79, 458.01, 539.09, 482.01], "source_fragment_id": "table_0153", "source_cell_id": "r13c3"}
+{"cell_id": "r33c1", "row": 33, "col": 1, "text": "36h", "page": 149, "bbox": [96.91, 482.01, 168.21, 506.01], "source_fragment_id": "table_0153", "source_cell_id": "r14c1"}
+{"cell_id": "r33c2", "row": 33, "col": 2, "text": "Invalid Alias_Token", "page": 149, "bbox": [168.21, 482.01, 338.79, 506.01], "source_fragment_id": "table_0153", "source_cell_id": "r14c2"}
+{"cell_id": "r33c3", "row": 33, "col": 3, "text": "Get Alias_ID", "page": 149, "bbox": [338.79, 482.01, 539.09, 506.01], "source_fragment_id": "table_0153", "source_cell_id": "r14c3"}
+{"cell_id": "r34c1", "row": 34, "col": 1, "text": "37h", "page": 149, "bbox": [96.91, 506.01, 168.21, 529.5], "source_fragment_id": "table_0153", "source_cell_id": "r15c1"}
+{"cell_id": "r34c2", "row": 34, "col": 2, "text": "Unsupported Alias_Token", "page": 149, "bbox": [168.21, 506.01, 338.79, 529.5], "source_fragment_id": "table_0153", "source_cell_id": "r15c2"}
+{"cell_id": "r34c3", "row": 34, "col": 3, "text": "N_Port Activate Alias ID", "page": 149, "bbox": [338.79, 506.01, 539.09, 529.5], "source_fragment_id": "table_0153", "source_cell_id": "r15c3"}
+{"cell_id": "r35c1", "row": 35, "col": 1, "text": "38h", "page": 150, "bbox": [96.8, 121.98, 168.21, 146.16], "source_fragment_id": "table_0154", "source_cell_id": "r2c1"}
+{"cell_id": "r35c2", "row": 35, "col": 2, "text": "Alias Group cannot be formed", "page": 150, "bbox": [168.21, 121.98, 338.79, 146.16], "source_fragment_id": "table_0154", "source_cell_id": "r2c2"}
+{"cell_id": "r35c3", "row": 35, "col": 3, "text": "Get Alias ID", "page": 150, "bbox": [338.79, 121.98, 539.2, 146.16], "source_fragment_id": "table_0154", "source_cell_id": "r2c3"}
+{"cell_id": "r36c1", "row": 36, "col": 1, "text": "40h", "page": 150, "bbox": [96.8, 146.16, 168.21, 170.01], "source_fragment_id": "table_0154", "source_cell_id": "r3c1"}
+{"cell_id": "r36c2", "row": 36, "col": 2, "text": "Obsolete", "page": 150, "bbox": [168.21, 146.16, 539.2, 170.01], "source_fragment_id": "table_0154", "source_cell_id": "r3c2"}
+{"cell_id": "r36c3", "row": 36, "col": 3, "text": "", "page": 150, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0154", "source_cell_id": "r3c3"}
+{"cell_id": "r37c1", "row": 37, "col": 1, "text": "41h", "page": 150, "bbox": [96.8, 170.01, 168.21, 194.01], "source_fragment_id": "table_0154", "source_cell_id": "r4c1"}
+{"cell_id": "r37c2", "row": 37, "col": 2, "text": "Obsolete", "page": 150, "bbox": [168.21, 170.01, 539.2, 194.01], "source_fragment_id": "table_0154", "source_cell_id": "r4c2"}
+{"cell_id": "r37c3", "row": 37, "col": 3, "text": "", "page": 150, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0154", "source_cell_id": "r4c3"}
+{"cell_id": "r38c1", "row": 38, "col": 1, "text": "42h", "page": 150, "bbox": [96.8, 194.01, 168.21, 217.84], "source_fragment_id": "table_0154", "source_cell_id": "r5c1"}
+{"cell_id": "r38c2", "row": 38, "col": 2, "text": "Obsolete", "page": 150, "bbox": [168.21, 194.01, 539.2, 217.84], "source_fragment_id": "table_0154", "source_cell_id": "r5c2"}
+{"cell_id": "r38c3", "row": 38, "col": 3, "text": "", "page": 150, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0154", "source_cell_id": "r5c3"}
+{"cell_id": "r39c1", "row": 39, "col": 1, "text": "44h", "page": 150, "bbox": [96.8, 217.84, 168.21, 242.01], "source_fragment_id": "table_0154", "source_cell_id": "r6c1"}
+{"cell_id": "r39c2", "row": 39, "col": 2, "text": "Invalid Port/Node_Name", "page": 150, "bbox": [168.21, 217.84, 338.79, 242.01], "source_fragment_id": "table_0154", "source_cell_id": "r6c2"}
+{"cell_id": "r39c3", "row": 39, "col": 3, "text": "LCLM", "page": 150, "bbox": [338.79, 217.84, 539.2, 242.01], "source_fragment_id": "table_0154", "source_cell_id": "r6c3"}
+{"cell_id": "r40c1", "row": 40, "col": 1, "text": "46h", "page": 150, "bbox": [96.8, 242.01, 168.21, 266.01], "source_fragment_id": "table_0154", "source_cell_id": "r7c1"}
+{"cell_id": "r40c2", "row": 40, "col": 2, "text": "Login Extension not supported", "page": 150, "bbox": [168.21, 242.01, 338.79, 266.01], "source_fragment_id": "table_0154", "source_cell_id": "r7c2"}
+{"cell_id": "r40c3", "row": 40, "col": 3, "text": "PLOGI, FLOGI", "page": 150, "bbox": [338.79, 242.01, 539.2, 266.01], "source_fragment_id": "table_0154", "source_cell_id": "r7c3"}
+{"cell_id": "r41c1", "row": 41, "col": 1, "text": "48h", "page": 150, "bbox": [96.8, 266.01, 168.21, 290.01], "source_fragment_id": "table_0154", "source_cell_id": "r8c1"}
+{"cell_id": "r41c2", "row": 41, "col": 2, "text": "Authentication required (see FC-SP)", "page": 150, "bbox": [168.21, 266.01, 338.79, 290.01], "source_fragment_id": "table_0154", "source_cell_id": "r8c2"}
+{"cell_id": "r41c3", "row": 41, "col": 3, "text": "PLOGI, FLOGI", "page": 150, "bbox": [338.79, 266.01, 539.2, 290.01], "source_fragment_id": "table_0154", "source_cell_id": "r8c3"}
+{"cell_id": "r42c1", "row": 42, "col": 1, "text": "50h", "page": 150, "bbox": [96.8, 290.01, 168.21, 314.01], "source_fragment_id": "table_0154", "source_cell_id": "r9c1"}
+{"cell_id": "r42c2", "row": 42, "col": 2, "text": "Periodic Scan Value not allowed", "page": 150, "bbox": [168.21, 290.01, 338.79, 314.01], "source_fragment_id": "table_0154", "source_cell_id": "r9c2"}
+{"cell_id": "r42c3", "row": 42, "col": 3, "text": "SRL", "page": 150, "bbox": [338.79, 290.01, 539.2, 314.01], "source_fragment_id": "table_0154", "source_cell_id": "r9c3"}
+{"cell_id": "r43c1", "row": 43, "col": 1, "text": "51h", "page": 150, "bbox": [96.8, 314.01, 168.21, 338.01], "source_fragment_id": "table_0154", "source_cell_id": "r10c1"}
+{"cell_id": "r43c2", "row": 43, "col": 2, "text": "Periodic Scanning not supported", "page": 150, "bbox": [168.21, 314.01, 338.79, 338.01], "source_fragment_id": "table_0154", "source_cell_id": "r10c2"}
+{"cell_id": "r43c3", "row": 43, "col": 3, "text": "SRL", "page": 150, "bbox": [338.79, 314.01, 539.2, 338.01], "source_fragment_id": "table_0154", "source_cell_id": "r10c3"}
+{"cell_id": "r44c1", "row": 44, "col": 1, "text": "Others", "page": 150, "bbox": [96.8, 338.01, 168.21, 361.48], "source_fragment_id": "table_0154", "source_cell_id": "r11c1"}
+{"cell_id": "r44c2", "row": 44, "col": 2, "text": "Reserved", "page": 150, "bbox": [168.21, 338.01, 338.79, 361.48], "source_fragment_id": "table_0154", "source_cell_id": "r11c2"}
+{"cell_id": "r44c3", "row": 44, "col": 3, "text": "", "page": 150, "bbox": [338.79, 338.01, 539.2, 361.48], "source_fragment_id": "table_0154", "source_cell_id": "r11c3"}

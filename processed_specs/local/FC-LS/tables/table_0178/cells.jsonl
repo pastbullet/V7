@@ -1,0 +1,10 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Word 0, bits 13-12", "page": 185, "bbox": [114.64, 219.62, 234.03, 241.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Meaning", "page": 185, "bbox": [234.03, 219.62, 521.36, 241.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00b", "page": 185, "bbox": [114.64, 241.32, 234.03, 263.37]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Initial Process_Associator not supported", "page": 185, "bbox": [234.03, 241.32, 521.36, 263.37]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "01b", "page": 185, "bbox": [114.64, 263.37, 234.03, 285.33]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Initial Process_Associator supported", "page": 185, "bbox": [234.03, 263.37, 521.36, 285.33]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "10b", "page": 185, "bbox": [114.64, 285.33, 234.03, 307.35]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Reserved", "page": 185, "bbox": [234.03, 285.33, 521.36, 307.35]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "11b", "page": 185, "bbox": [114.64, 307.35, 234.03, 329.04]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Initial Process_Associator required (and supported)", "page": 185, "bbox": [234.03, 307.35, 521.36, 329.04]}

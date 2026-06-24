@@ -1,0 +1,856 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 130,
+  "spans": [
+    {
+      "span_id": "p130_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0002",
+      "text": " 111",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0003",
+      "text": "EVFP Message Code:",
+      "bbox": [
+        96.0,
+        57.65,
+        198.56,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0004",
+      "text": " Specifies the EVFP message that is to be transmitted from the source to the",
+      "bbox": [
+        198.54,
+        57.65,
+        539.99,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p130_s0005",
+      "text": "destination. The defined EVFP message codes are shown in table 117.",
+      "bbox": [
+        96.0,
+        69.65,
+        410.37,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0006",
+      "text": "Transaction Identifier:",
+      "bbox": [
+        96.0,
+        214.97,
+        201.18,
+        226.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0007",
+      "text": " Uniquely identifies an EVFP transaction between two entities. The Transac-",
+      "bbox": [
+        201.18,
+        214.97,
+        540.07,
+        226.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p130_s0008",
+      "text": "tion Identifier shall be set by the EVFP Initiator, and each subsequent EVFP message shall contain",
+      "bbox": [
+        96.0,
+        226.97,
+        539.9,
+        238.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0009",
+      "text": "the same value, until the EVFP transaction is completed.",
+      "bbox": [
+        96.0,
+        238.97,
+        346.48,
+        250.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0010",
+      "text": "NOTE 7 – The usage of the Transaction Identifier is very similar to the usage of an OX_ID when an Exchange",
+      "bbox": [
+        105.0,
+        263.17,
+        539.93,
+        273.22
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0011",
+      "text": "Originator is enforcing uniqueness via the OX_ID mechanism (see FC-FS-2), but it is not related in any way to",
+      "bbox": [
+        105.0,
+        274.15,
+        539.97,
+        284.2
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0012",
+      "text": "the OX_ID present in the Fibre Channel frames carrying the EVFP messages.",
+      "bbox": [
+        105.0,
+        285.2,
+        414.2,
+        295.24
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0013",
+      "text": "Core N_Port_Name / Core Switch_Name:",
+      "bbox": [
+        96.0,
+        310.97,
+        289.07,
+        322.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0014",
+      "text": " If the originating FC_Port is an N_Port, this field shall be",
+      "bbox": [
+        289.2,
+        310.97,
+        539.88,
+        322.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p130_s0015",
+      "text": "set to its Core N_Port_Name. If the originating FC_Port is an F_Port, this field shall be set to the Core",
+      "bbox": [
+        96.0,
+        322.97,
+        539.96,
+        334.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0016",
+      "text": "Switch_Name of the Switch it belongs to.",
+      "bbox": [
+        96.0,
+        334.97,
+        277.02,
+        346.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0017",
+      "text": "Payload Length:",
+      "bbox": [
+        96.0,
+        358.97,
+        173.42,
+        370.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0018",
+      "text": " Shall be set to the total length in bytes of the EVFP Payload (i.e., 20 + the Message",
+      "bbox": [
+        173.46,
+        358.97,
+        539.97,
+        370.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p130_s0019",
+      "text": "Payload length).",
+      "bbox": [
+        96.0,
+        370.97,
+        168.2,
+        382.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0020",
+      "text": "4.2.43.1.2  EVFP Reply Sequence",
+      "bbox": [
+        96.0,
+        394.96,
+        252.09,
+        406.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0021",
+      "text": "Accept (LS_ACC)",
+      "bbox": [
+        105.96,
+        418.96,
+        184.76,
+        430.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0022",
+      "text": "Signifies acceptance of the EVFP request.",
+      "bbox": [
+        115.98,
+        430.96,
+        303.17,
+        442.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0023",
+      "text": "Accept Payload:",
+      "bbox": [
+        96.0,
+        454.96,
+        173.3,
+        466.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0024",
+      "text": " All EVFP Accept messages share the same message structure, shown in table 118.",
+      "bbox": [
+        173.28,
+        454.96,
+        540.06,
+        466.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p130_s0025",
+      "text": " Table 117 – EVFP Message Codes",
+      "bbox": [
+        236.04,
+        91.66,
+        399.97,
+        102.78
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0026",
+      "text": "Value",
+      "bbox": [
+        183.0,
+        113.62,
+        209.67,
+        124.74
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0027",
+      "text": "Description",
+      "bbox": [
+        291.37,
+        113.62,
+        346.34,
+        124.74
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0028",
+      "text": "Reference",
+      "bbox": [
+        416.4,
+        113.62,
+        464.68,
+        124.74
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0029",
+      "text": "01h",
+      "bbox": [
+        187.98,
+        135.64,
+        204.62,
+        146.76
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0030",
+      "text": "EVFP_SYNC",
+      "bbox": [
+        239.82,
+        134.62,
+        299.21,
+        145.74
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0031",
+      "text": "4.2.43.2",
+      "bbox": [
+        422.46,
+        135.64,
+        458.52,
+        146.76
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0032",
+      "text": "02h",
+      "bbox": [
+        187.98,
+        157.66,
+        204.62,
+        168.78
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0033",
+      "text": "EVFP_COMMIT",
+      "bbox": [
+        239.82,
+        156.64,
+        311.94,
+        167.76
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0034",
+      "text": "4.2.43.3",
+      "bbox": [
+        422.46,
+        157.66,
+        458.52,
+        168.78
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0035",
+      "text": "all others",
+      "bbox": [
+        176.04,
+        179.62,
+        216.6,
+        190.74
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0036",
+      "text": "Reserved",
+      "bbox": [
+        239.82,
+        178.66,
+        282.57,
+        189.78
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0037",
+      "text": " Table 118 – EVFP Accept Payload",
+      "bbox": [
+        236.64,
+        476.98,
+        399.35,
+        488.1
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0038",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        499.0,
+        133.06,
+        510.12
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0039",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        511.0,
+        136.35,
+        522.12
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0040",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        499.0,
+        233.97,
+        510.12
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0041",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        499.0,
+        328.41,
+        510.12
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0042",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        499.0,
+        427.0,
+        510.12
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0043",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        499.0,
+        522.83,
+        510.12
+      ],
+      "block_index": 17,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0044",
+      "text": "0",
+      "bbox": [
+        120.84,
+        529.0,
+        126.38,
+        540.12
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0045",
+      "text": "02h",
+      "bbox": [
+        188.16,
+        529.96,
+        204.8,
+        541.08
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0046",
+      "text": "00h",
+      "bbox": [
+        285.36,
+        529.96,
+        301.99,
+        541.08
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0047",
+      "text": "00h",
+      "bbox": [
+        382.55,
+        529.96,
+        399.19,
+        541.08
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0048",
+      "text": "00h",
+      "bbox": [
+        479.75,
+        529.96,
+        496.38,
+        541.08
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0049",
+      "text": "1",
+      "bbox": [
+        120.84,
+        547.96,
+        126.38,
+        559.08
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0050",
+      "text": "Protocol Version",
+      "bbox": [
+        159.84,
+        548.98,
+        233.15,
+        560.1
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0051",
+      "text": "Message Code",
+      "bbox": [
+        260.13,
+        548.98,
+        327.21,
+        560.1
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0052",
+      "text": "Transaction Identifier",
+      "bbox": [
+        392.77,
+        548.98,
+        486.14,
+        560.1
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0053",
+      "text": "2",
+      "bbox": [
+        120.84,
+        565.96,
+        126.38,
+        577.08
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0054",
+      "text": "MSB",
+      "bbox": [
+        153.9,
+        565.96,
+        175.54,
+        577.08
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0055",
+      "text": "Core N_Port_Name /",
+      "bbox": [
+        295.62,
+        568.0,
+        388.96,
+        579.12
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0056",
+      "text": "Core Switch_Name",
+      "bbox": [
+        299.28,
+        580.0,
+        385.3,
+        591.12
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0057",
+      "text": "3",
+      "bbox": [
+        120.84,
+        583.0,
+        126.38,
+        594.12
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0058",
+      "text": "LSB",
+      "bbox": [
+        445.5,
+        583.0,
+        464.38,
+        594.12
+      ],
+      "block_index": 20,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0059",
+      "text": "4",
+      "bbox": [
+        120.84,
+        601.0,
+        126.38,
+        612.12
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0060",
+      "text": "Reserved",
+      "bbox": [
+        223.74,
+        601.96,
+        266.45,
+        613.08
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0061",
+      "text": "Message Payload Length",
+      "bbox": [
+        383.07,
+        601.96,
+        495.82,
+        613.08
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0062",
+      "text": "5",
+      "bbox": [
+        120.84,
+        619.0,
+        126.38,
+        630.12
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0063",
+      "text": "Message Payload",
+      "bbox": [
+        302.58,
+        632.98,
+        382.01,
+        644.1
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0064",
+      "text": "..",
+      "bbox": [
+        120.84,
+        635.98,
+        126.37,
+        647.1
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p130_s0065",
+      "text": "N",
+      "bbox": [
+        120.0,
+        653.02,
+        127.19,
+        664.13
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0121",
+    "table_0122"
+  ]
+}

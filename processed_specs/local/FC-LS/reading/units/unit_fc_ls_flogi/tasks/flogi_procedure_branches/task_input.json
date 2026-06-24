@@ -1,0 +1,71 @@
+{
+  "doc_id": "FC-LS.pdf",
+  "unit": {
+    "unit_id": "unit_fc_ls_flogi",
+    "title": "FC-LS Fabric Login / FLOGI",
+    "kind": "procedure_group",
+    "target_ir": [
+      "MessageIR",
+      "ProcedureIR",
+      "SessionContextIR",
+      "EnumIR"
+    ],
+    "source_anchors": [
+      "6.2 Fabric Login",
+      "Table 149",
+      "Table 150",
+      "Table 151",
+      "Table 153",
+      "Table 156",
+      "Table 158",
+      "Table 177",
+      "8 Virtual Fabrics N_Port Support"
+    ],
+    "dependencies": [
+      "Extended Link Services frame envelope",
+      "Common Service Parameters",
+      "Class Service Parameters",
+      "Virtual Fabrics / EVFP",
+      "Authentication"
+    ],
+    "priority": "vertical_seed",
+    "scope_status": "in_scope",
+    "notes": "Seed reading plan derived from FLOGI live QA traces. The plan intentionally decomposes the broad FLOGI question into focused, IR-oriented tasks."
+  },
+  "task": {
+    "task_id": "flogi_procedure_branches",
+    "title": "FLOGI request, responses, retry branches, and completion",
+    "task_type": "procedure",
+    "target_outputs": [
+      "request_setup",
+      "response_branches",
+      "retry_conditions",
+      "completion_conditions",
+      "evidence"
+    ],
+    "reading_goal": "Read the Fabric Login procedure end to end: request setup, S_ID/D_ID/OX_ID rules, LS_ACC Fabric path, point-to-point LS_ACC path, F_BSY/P_BSY/F_RJT/P_RJT/LS_RJT/no-response/self-connection branches, SOF/Class constraints, and Originator/Responder completion conditions.",
+    "page_ranges": [
+      "153-156"
+    ],
+    "must_include_assets": [],
+    "expected_evidence_types": [
+      "text_span"
+    ],
+    "completion_criteria": [
+      "Every response branch on pages 154-155 is represented.",
+      "Retry behavior for Class not supported, Invalid S_ID, LS_RJT, and no response is represented.",
+      "All Class 1/2/3 Originator and Responder completion conditions are represented.",
+      "SOFc1/SOFi1 and Class 6 constraints are represented."
+    ],
+    "dependencies": [],
+    "budget": {
+      "max_pages": 4,
+      "max_tables": 0,
+      "max_tool_calls": 10
+    },
+    "status": "accepted",
+    "reason": "",
+    "task_dir": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_procedure_branches",
+    "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_procedure_branches/task_input.json"
+  }
+}

@@ -1,0 +1,595 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 98,
+  "spans": [
+    {
+      "span_id": "p098_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0002",
+      "text": " 79",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0003",
+      "text": "list maintained by each port for each specified format is vendor specific.  If the established registra-",
+      "bbox": [
+        96.0,
+        57.65,
+        540.0,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0004",
+      "text": "tion list is full when an add registration function occurs, the port does not accept this registration, and",
+      "bbox": [
+        96.0,
+        69.65,
+        539.87,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0005",
+      "text": "rejects this request indicating \"unable to perform command request\".",
+      "bbox": [
+        96.0,
+        81.65,
+        398.65,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0006",
+      "text": "A Logout occurring between a node and a valid-registered-recipient node shall cause de-registration",
+      "bbox": [
+        96.0,
+        106.97,
+        540.03,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0007",
+      "text": "of the valid-recipient port in the established registration list maintained by the port.",
+      "bbox": [
+        96.0,
+        118.97,
+        457.56,
+        130.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0008",
+      "text": "4.2.25.3  Responsibilities of Valid-Registered Recipients",
+      "bbox": [
+        96.0,
+        142.96,
+        361.48,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0009",
+      "text": "A valid-registered recipient shall be capable of receiving and processing Link Incident Records that",
+      "bbox": [
+        96.0,
+        166.96,
+        539.91,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0010",
+      "text": "are generated according to the Link Incident reporting procedure (see 4.2.24.2).  The usage and co-",
+      "bbox": [
+        96.0,
+        178.96,
+        540.05,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0011",
+      "text": "ordination of Link Incident Records by ULPs is beyond the scope of this standard.",
+      "bbox": [
+        96.0,
+        190.96,
+        456.04,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0012",
+      "text": "If a valid registered recipient receives a Link Incident Record for a format that does not match its reg-",
+      "bbox": [
+        96.0,
+        214.96,
+        540.06,
+        226.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0013",
+      "text": "istration format, the recipient port shall reject the RLIR ELS with a reason code of \"Unable to perform",
+      "bbox": [
+        96.0,
+        226.96,
+        539.91,
+        238.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0014",
+      "text": "command request\".",
+      "bbox": [
+        96.0,
+        238.96,
+        182.31,
+        250.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0015",
+      "text": "4.2.25.4  Protocol",
+      "bbox": [
+        96.0,
+        262.96,
+        178.22,
+        274.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0016",
+      "text": "a) LIRR Request Sequence",
+      "bbox": [
+        106.02,
+        286.96,
+        232.94,
+        298.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0017",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence",
+      "bbox": [
+        106.02,
+        310.96,
+        287.89,
+        322.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0018",
+      "text": "4.2.25.5  Request Sequence",
+      "bbox": [
+        96.0,
+        334.96,
+        227.06,
+        346.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0019",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        358.96,
+        157.1,
+        370.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0020",
+      "text": "The S_ID designates the source port requesting registration for Link Incident Records.",
+      "bbox": [
+        157.08,
+        358.96,
+        539.98,
+        370.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p098_s0021",
+      "text": "The D_ID field designates the port receiving the registration request.",
+      "bbox": [
+        96.0,
+        370.96,
+        398.13,
+        382.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0022",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        394.96,
+        140.41,
+        406.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0023",
+      "text": "The format of the LIRR Payload is shown in table 74.",
+      "bbox": [
+        140.4,
+        394.96,
+        374.29,
+        406.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p098_s0024",
+      "text": "THe LIRR Payload field shall be defined as follows:",
+      "bbox": [
+        96.0,
+        526.96,
+        322.57,
+        538.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0025",
+      "text": "a)",
+      "bbox": [
+        106.02,
+        550.96,
+        114.91,
+        562.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0026",
+      "text": " Registration Function:",
+      "bbox": [
+        114.91,
+        550.96,
+        229.89,
+        562.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p098_s0027",
+      "text": " The Registration function shall specify the mode of registration (i.e.,",
+      "bbox": [
+        229.92,
+        550.96,
+        540.03,
+        562.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p098_s0028",
+      "text": "whether the recipient node adds or removes the sending Nx_Port to or from its list of registered",
+      "bbox": [
+        122.4,
+        562.96,
+        539.88,
+        574.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0029",
+      "text": " Table 74 – LIRR Payload",
+      "bbox": [
+        258.84,
+        416.98,
+        377.14,
+        428.1
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0030",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        439.0,
+        133.06,
+        450.12
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0031",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        451.0,
+        136.35,
+        462.12
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0032",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        439.0,
+        233.97,
+        450.12
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0033",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        439.0,
+        328.41,
+        450.12
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0034",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        439.0,
+        427.0,
+        450.12
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0035",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        439.0,
+        522.83,
+        450.12
+      ],
+      "block_index": 17,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0036",
+      "text": "0",
+      "bbox": [
+        120.84,
+        467.98,
+        126.38,
+        479.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0037",
+      "text": "LIRR (7Ah)",
+      "bbox": [
+        149.88,
+        467.98,
+        199.89,
+        479.1
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0038",
+      "text": "00h",
+      "bbox": [
+        247.1,
+        467.98,
+        263.73,
+        479.1
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0039",
+      "text": "00h",
+      "bbox": [
+        344.29,
+        467.98,
+        360.97,
+        479.1
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0040",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        467.98,
+        458.15,
+        479.1
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0041",
+      "text": "1",
+      "bbox": [
+        120.84,
+        490.96,
+        126.38,
+        502.07
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0042",
+      "text": "Registration Function ",
+      "bbox": [
+        149.88,
+        484.96,
+        247.08,
+        502.07
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0043",
+      "text": "Link Incident Record-",
+      "bbox": [
+        247.08,
+        484.96,
+        341.32,
+        496.07
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p098_s0044",
+      "text": "Registration Format",
+      "bbox": [
+        247.08,
+        496.96,
+        334.88,
+        508.07
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p098_s0045",
+      "text": "Reserved",
+      "bbox": [
+        344.28,
+        490.96,
+        387.01,
+        502.07
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0077"
+  ]
+}

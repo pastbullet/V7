@@ -1,0 +1,660 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 79,
+  "spans": [
+    {
+      "span_id": "p079_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0002",
+      "text": " 60",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0003",
+      "text": "4.2.22",
+      "bbox": [
+        96.0,
+        57.65,
+        123.78,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0004",
+      "text": "Test Process Login State (TPLS)",
+      "bbox": [
+        133.84,
+        57.65,
+        288.12,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0005",
+      "text": "4.2.22.1  Description",
+      "bbox": [
+        96.0,
+        82.97,
+        192.63,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0006",
+      "text": "The TPLS ELS is used to determine whether image pairs are established for the image pairs speci-",
+      "bbox": [
+        96.0,
+        106.97,
+        540.05,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0007",
+      "text": "fied by the combination of the S_ID || Originator Process_Associator || D_ID || Responder",
+      "bbox": [
+        96.0,
+        118.97,
+        539.84,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0008",
+      "text": "Process_Associator.  Upon receiving a TPLS Request, the receiving Nx_Port checks whether it has",
+      "bbox": [
+        96.0,
+        130.97,
+        540.01,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0009",
+      "text": "an image pair established for each specified image.",
+      "bbox": [
+        96.0,
+        142.96,
+        323.82,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0010",
+      "text": "TPLS verifies the Login state for the source Nx_Port at the destination Nx_Port.",
+      "bbox": [
+        96.0,
+        166.96,
+        447.01,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0011",
+      "text": "The LS_ACC Reply Sequence confirms the successful completion of the TPLS function and indi-",
+      "bbox": [
+        96.0,
+        190.96,
+        540.11,
+        202.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0012",
+      "text": "cates whether or not an image pair is established for the source specified by the S_ID and image",
+      "bbox": [
+        96.0,
+        202.96,
+        540.02,
+        214.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0013",
+      "text": "pair(s) contained in the Payload.  The Payload of the LS_ACC Reply indicates the state of the image",
+      "bbox": [
+        96.0,
+        214.96,
+        540.0,
+        226.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0014",
+      "text": "pair.",
+      "bbox": [
+        96.0,
+        226.96,
+        115.44,
+        238.08
+      ],
+      "block_index": 7,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0015",
+      "text": "4.2.22.2  Protocol",
+      "bbox": [
+        96.0,
+        250.96,
+        178.22,
+        262.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0016",
+      "text": "a) Test Process Login State Request Sequence",
+      "bbox": [
+        106.02,
+        274.96,
+        321.82,
+        286.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0017",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence",
+      "bbox": [
+        106.02,
+        298.96,
+        287.89,
+        310.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0018",
+      "text": "4.2.22.3  Request Sequence",
+      "bbox": [
+        96.0,
+        322.96,
+        227.06,
+        334.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0019",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        346.96,
+        157.1,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0020",
+      "text": "The S_ID field designates the source Nx_Port associated with the image pair.  The",
+      "bbox": [
+        157.08,
+        346.96,
+        540.06,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p079_s0021",
+      "text": "D_ID field designates the destination Nx_Port associated with the image pair.",
+      "bbox": [
+        96.0,
+        358.96,
+        437.76,
+        370.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0022",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        382.96,
+        140.41,
+        394.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0023",
+      "text": "The format of the Payload is shown in table 52.",
+      "bbox": [
+        140.4,
+        382.96,
+        348.7,
+        394.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p079_s0024",
+      "text": "a)",
+      "bbox": [
+        106.02,
+        562.96,
+        114.91,
+        574.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0025",
+      "text": " Payload length:",
+      "bbox": [
+        114.91,
+        562.96,
+        196.83,
+        574.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p079_s0026",
+      "text": " The Payload length sall be 20.",
+      "bbox": [
+        196.8,
+        562.96,
+        334.04,
+        574.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p079_s0027",
+      "text": "b)",
+      "bbox": [
+        106.02,
+        586.96,
+        114.91,
+        598.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0028",
+      "text": " Image pair ID page:",
+      "bbox": [
+        114.91,
+        586.96,
+        216.28,
+        598.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p079_s0029",
+      "text": " Words 1:N of the TPLS Payload contain the Image Pair ID pages.  The",
+      "bbox": [
+        216.36,
+        586.96,
+        539.96,
+        598.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p079_s0030",
+      "text": "Image Pair ID page contains parameters required to identify a single image pair. The format of",
+      "bbox": [
+        122.4,
+        598.96,
+        540.05,
+        610.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0031",
+      "text": "Image Pair ID pages is described in table 53.",
+      "bbox": [
+        122.4,
+        610.96,
+        321.27,
+        622.08
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0032",
+      "text": " Table 52 – TPLS Payload",
+      "bbox": [
+        257.7,
+        404.98,
+        378.34,
+        416.1
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0033",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        427.0,
+        133.06,
+        438.12
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0034",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        439.0,
+        136.35,
+        450.12
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0035",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        427.0,
+        233.97,
+        438.12
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0036",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        427.0,
+        328.41,
+        438.12
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0037",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        427.0,
+        427.0,
+        438.12
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0038",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        427.0,
+        522.83,
+        438.12
+      ],
+      "block_index": 17,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0039",
+      "text": "0",
+      "bbox": [
+        120.84,
+        455.98,
+        126.38,
+        467.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0040",
+      "text": "TPLS (23h)",
+      "bbox": [
+        149.88,
+        455.98,
+        200.96,
+        467.1
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0041",
+      "text": "Obsolete (10h)",
+      "bbox": [
+        247.08,
+        455.98,
+        313.21,
+        467.1
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0042",
+      "text": "a",
+      "bbox": [
+        313.2,
+        453.76,
+        317.64,
+        462.66
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 2
+    },
+    {
+      "span_id": "p079_s0043",
+      "text": "Payload Length",
+      "bbox": [
+        344.28,
+        455.99,
+        413.71,
+        467.1
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0044",
+      "text": "1",
+      "bbox": [
+        120.84,
+        472.97,
+        126.38,
+        484.08
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0045",
+      "text": "Image Pair ID page",
+      "bbox": [
+        299.22,
+        475.01,
+        385.33,
+        486.12
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0046",
+      "text": "(4 words)",
+      "bbox": [
+        321.48,
+        487.01,
+        363.14,
+        498.12
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0047",
+      "text": "..",
+      "bbox": [
+        120.84,
+        490.01,
+        126.37,
+        501.12
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0048",
+      "text": "N",
+      "bbox": [
+        120.0,
+        506.99,
+        127.19,
+        518.1
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0049",
+      "text": "a",
+      "bbox": [
+        107.52,
+        524.6,
+        111.52,
+        532.64
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p079_s0050",
+      "text": " This field is obsolete, but shall be set to 10h for compatibility.",
+      "bbox": [
+        111.52,
+        522.97,
+        359.21,
+        536.62
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 2
+    }
+  ],
+  "asset_ids": [
+    "table_0055"
+  ]
+}

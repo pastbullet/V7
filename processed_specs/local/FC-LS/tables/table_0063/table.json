@@ -1,0 +1,24 @@
+{
+  "rows": [
+    [
+      "Value",
+      "Description"
+    ],
+    [
+      "00h",
+      "The RNID Accept Payload only contains the Common Identification Data\n(see Table 61)."
+    ],
+    [
+      "01h – DEh",
+      "The RNID Accept Payload may contain the Common Identification Data and\nshall contain the Specific Identification Data for the ULP that is assigned an\nFC-4 frame type (see FC-FS-2) equal to the value of the Node Identification\nData Format from the RNID Payload (see Table 58)."
+    ],
+    [
+      "DFh",
+      "The RNID Accept Payload shall contain the Common Identification Data\nand General Topology Discovery format Specific Identification Data."
+    ],
+    [
+      "E0h – FFh",
+      "The RNID Accept Payload may contain the Common Identification Data and\nshall contain vendor specific Specific Identification Data."
+    ]
+  ]
+}

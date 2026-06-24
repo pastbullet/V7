@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0074",
+  "type": "table",
+  "caption": "Table 71 – Incident Qualifier",
+  "pages": [
+    94
+  ],
+  "bbox": [
+    96.88,
+    591.66,
+    539.12,
+    703.04
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 94,
+  "logical_table": false
+}

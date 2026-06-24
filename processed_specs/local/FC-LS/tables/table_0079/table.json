@@ -1,0 +1,28 @@
+{
+  "rows": [
+    [
+      "value",
+      "Function"
+    ],
+    [
+      "00h",
+      "Reserved"
+    ],
+    [
+      "01h",
+      "Set registration – conditionally receive:\nThe source port is registered as a valid recipient of subsequent RLIR ELSs for the\nformat specified. The port is added to the appropriate format specific established\nregistration list. This source port is chosen as the recipient of a link incident\nrecord only if no other recipients from this established registration list have been\nchosen."
+    ],
+    [
+      "02h",
+      "Set registration – always receive:\nThe source port is registered as a valid recipient of subsequent RLIR ELSs for the\nformat specified. The port is added to the appropriate format specific established\nregistration list. This source port is always chosen as a recipient of a link incident\nrecord."
+    ],
+    [
+      "03h - FEh",
+      "Reserved"
+    ],
+    [
+      "FFh",
+      "Clear registration:\nThe source port is de-registered as a valid recipient of subsequent RLIR ELSs for\nthe format specified (i.e., remove from the established registration list)."
+    ]
+  ]
+}

@@ -1,0 +1,998 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 48,
+  "spans": [
+    {
+      "span_id": "p048_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0002",
+      "text": " 29",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0003",
+      "text": "4.2.7",
+      "bbox": [
+        96.0,
+        538.97,
+        118.22,
+        550.08
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0004",
+      "text": "Login (FLOGI/PLOGI)",
+      "bbox": [
+        128.22,
+        538.97,
+        229.31,
+        550.08
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0005",
+      "text": "4.2.7.1  Description",
+      "bbox": [
+        96.0,
+        562.97,
+        187.03,
+        574.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0006",
+      "text": "The FLOGI/PLOGI ELS shall transfer Service Parameters from the initiating Nx_Port to the FC_Port",
+      "bbox": [
+        96.0,
+        586.97,
+        540.05,
+        598.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0007",
+      "text": "associated with the D_ID.  The FLOGI frame provides the means by which an Nx_Port may request",
+      "bbox": [
+        96.0,
+        598.97,
+        540.03,
+        610.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0008",
+      "text": "Login with the Fabric (see 6.2).  The PLOGI frame provides the means by which an Nx_Port may re-",
+      "bbox": [
+        96.0,
+        610.97,
+        540.14,
+        622.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0009",
+      "text": "quest Login with another Nx_Port prior to other Data frame transfers (see 6.3).",
+      "bbox": [
+        96.0,
+        622.97,
+        442.09,
+        634.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0010",
+      "text": "In order to Login with the Fabric and determine the Fabric operating characteristics, an Nx_Port shall",
+      "bbox": [
+        96.0,
+        647.03,
+        540.01,
+        658.14
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0011",
+      "text": "specify the D_ID as the well-known F_Port_ID (i.e., FFFFFEh).",
+      "bbox": [
+        96.0,
+        659.03,
+        373.68,
+        670.14
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0012",
+      "text": " Table 11 – ESTS LS_ACC Payload",
+      "bbox": [
+        236.04,
+        79.67,
+        399.96,
+        90.78
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0013",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        101.62,
+        133.06,
+        112.74
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0014",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        113.62,
+        136.35,
+        124.74
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0015",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        101.62,
+        233.97,
+        112.74
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0016",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        101.62,
+        328.41,
+        112.74
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0017",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        101.62,
+        427.0,
+        112.74
+      ],
+      "block_index": 8,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0018",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        101.62,
+        522.83,
+        112.74
+      ],
+      "block_index": 8,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0019",
+      "text": "0",
+      "bbox": [
+        120.84,
+        130.67,
+        126.38,
+        141.78
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0020",
+      "text": "02h",
+      "bbox": [
+        149.88,
+        130.67,
+        166.52,
+        141.78
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0021",
+      "text": "00h",
+      "bbox": [
+        247.08,
+        130.67,
+        263.71,
+        141.78
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0022",
+      "text": "00h",
+      "bbox": [
+        344.27,
+        130.67,
+        360.97,
+        141.78
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0023",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        130.67,
+        458.16,
+        141.78
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0024",
+      "text": "1",
+      "bbox": [
+        120.84,
+        147.64,
+        126.38,
+        158.76
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0025",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        147.64,
+        171.52,
+        158.76
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0026",
+      "text": "Common Service Parameters",
+      "bbox": [
+        276.78,
+        149.62,
+        407.84,
+        160.74
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0027",
+      "text": "(16 bytes)",
+      "bbox": [
+        320.1,
+        161.62,
+        364.52,
+        172.74
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0028",
+      "text": "4",
+      "bbox": [
+        120.84,
+        181.67,
+        126.38,
+        192.78
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0029",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        181.67,
+        460.36,
+        192.78
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0030",
+      "text": "5",
+      "bbox": [
+        120.84,
+        198.65,
+        126.38,
+        209.76
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0031",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        198.65,
+        171.52,
+        209.76
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0032",
+      "text": "N_Port_Name",
+      "bbox": [
+        310.62,
+        200.63,
+        373.93,
+        211.74
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0033",
+      "text": "(8 bytes)",
+      "bbox": [
+        322.86,
+        212.62,
+        361.76,
+        223.74
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0034",
+      "text": "6",
+      "bbox": [
+        120.84,
+        215.62,
+        126.38,
+        226.74
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0035",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        215.62,
+        460.36,
+        226.74
+      ],
+      "block_index": 12,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0036",
+      "text": "7",
+      "bbox": [
+        120.84,
+        232.66,
+        126.38,
+        243.78
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0037",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        232.66,
+        171.53,
+        243.78
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0038",
+      "text": "node Name",
+      "bbox": [
+        316.44,
+        234.64,
+        368.12,
+        245.76
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0039",
+      "text": "(8 bytes)",
+      "bbox": [
+        322.86,
+        246.64,
+        361.76,
+        257.76
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0040",
+      "text": "8",
+      "bbox": [
+        120.84,
+        249.64,
+        126.38,
+        260.76
+      ],
+      "block_index": 13,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0041",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        249.64,
+        460.37,
+        260.76
+      ],
+      "block_index": 13,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0042",
+      "text": "9",
+      "bbox": [
+        120.84,
+        266.62,
+        126.38,
+        277.74
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0043",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        266.62,
+        171.53,
+        277.74
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0044",
+      "text": "Class 1 Service Parameters",
+      "bbox": [
+        280.38,
+        268.66,
+        404.25,
+        279.78
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0045",
+      "text": "(16 bytes)",
+      "bbox": [
+        320.1,
+        280.66,
+        364.52,
+        291.78
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0046",
+      "text": "..",
+      "bbox": [
+        120.84,
+        283.66,
+        126.37,
+        294.78
+      ],
+      "block_index": 14,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0047",
+      "text": "12",
+      "bbox": [
+        118.02,
+        300.64,
+        129.14,
+        311.76
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0048",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        300.64,
+        460.37,
+        311.76
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0049",
+      "text": "13",
+      "bbox": [
+        118.02,
+        317.62,
+        129.14,
+        328.74
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0050",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        317.62,
+        171.53,
+        328.74
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0051",
+      "text": "Class 2 Service Parameters",
+      "bbox": [
+        280.38,
+        319.66,
+        404.25,
+        330.78
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0052",
+      "text": "(16 bytes)",
+      "bbox": [
+        320.1,
+        331.66,
+        364.52,
+        342.78
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0053",
+      "text": "..",
+      "bbox": [
+        120.85,
+        334.66,
+        126.38,
+        345.78
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0054",
+      "text": "16",
+      "bbox": [
+        118.03,
+        351.64,
+        129.14,
+        362.76
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0055",
+      "text": "LSB",
+      "bbox": [
+        441.49,
+        351.64,
+        460.37,
+        362.76
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0056",
+      "text": "17",
+      "bbox": [
+        118.03,
+        368.62,
+        129.14,
+        379.74
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0057",
+      "text": "MSB",
+      "bbox": [
+        149.89,
+        368.62,
+        171.53,
+        379.74
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0058",
+      "text": "Class 3 Service Parameters",
+      "bbox": [
+        280.39,
+        370.66,
+        404.26,
+        381.78
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0059",
+      "text": "(16 bytes)",
+      "bbox": [
+        320.11,
+        382.66,
+        364.52,
+        393.78
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0060",
+      "text": "..",
+      "bbox": [
+        120.85,
+        385.66,
+        126.38,
+        396.78
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0061",
+      "text": "20",
+      "bbox": [
+        118.03,
+        402.64,
+        129.14,
+        413.76
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0062",
+      "text": "LSB",
+      "bbox": [
+        441.49,
+        402.64,
+        460.37,
+        413.76
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0063",
+      "text": "21",
+      "bbox": [
+        118.03,
+        419.62,
+        129.14,
+        430.74
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0064",
+      "text": "MSB",
+      "bbox": [
+        149.89,
+        419.62,
+        171.53,
+        430.74
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0065",
+      "text": "Reserved",
+      "bbox": [
+        320.95,
+        421.66,
+        363.7,
+        432.78
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0066",
+      "text": "(16 bytes)",
+      "bbox": [
+        320.11,
+        433.66,
+        364.52,
+        444.78
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0067",
+      "text": "..",
+      "bbox": [
+        120.85,
+        436.66,
+        126.38,
+        447.78
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0068",
+      "text": "24",
+      "bbox": [
+        118.03,
+        453.64,
+        129.14,
+        464.76
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0069",
+      "text": "LSB",
+      "bbox": [
+        441.49,
+        453.64,
+        460.37,
+        464.76
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0070",
+      "text": "25",
+      "bbox": [
+        118.03,
+        470.62,
+        129.14,
+        481.74
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0071",
+      "text": "MSB",
+      "bbox": [
+        149.89,
+        470.62,
+        171.53,
+        481.74
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0072",
+      "text": "Vendor Version Level",
+      "bbox": [
+        294.55,
+        472.66,
+        390.05,
+        483.78
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0073",
+      "text": "(16 bytes)",
+      "bbox": [
+        320.11,
+        484.66,
+        364.52,
+        495.78
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0074",
+      "text": "..",
+      "bbox": [
+        120.85,
+        487.66,
+        126.38,
+        498.78
+      ],
+      "block_index": 22,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0075",
+      "text": "28",
+      "bbox": [
+        118.03,
+        504.64,
+        129.14,
+        515.76
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p048_s0076",
+      "text": "LSB",
+      "bbox": [
+        441.49,
+        504.64,
+        460.37,
+        515.76
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0012"
+  ]
+}

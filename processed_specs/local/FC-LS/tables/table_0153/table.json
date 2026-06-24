@@ -1,0 +1,79 @@
+{
+  "rows": [
+    [
+      "Encoded\nValue\n(Bits 15-8)",
+      "Description",
+      "Applicable ELSs"
+    ],
+    [
+      "25h",
+      "Obsolete",
+      null
+    ],
+    [
+      "27h",
+      "Obsolete",
+      null
+    ],
+    [
+      "29h",
+      "Insufficient resources to support Login",
+      "FLOGI, PLOGI, FDISC"
+    ],
+    [
+      "2Ah",
+      "Unable to supply requested data",
+      "ADVC, ESTS, RCS, RLS, RTV"
+    ],
+    [
+      "2Ch",
+      "Request not supported",
+      "ADVC, ESTS, PRLI, PRLO, TPLS, TPRLO,\nGAID, FACT, FDACT, NACT, NDACT,\nPDISC, FDISC, ADISC, RNC, RNFT"
+    ],
+    [
+      "2Dh",
+      "Invalid Payload length",
+      "FLOGI, PLOGI"
+    ],
+    [
+      "30h",
+      "No Alias_IDs available for this\nAlias_ID Type",
+      "Get Alias_ID"
+    ],
+    [
+      "31h",
+      "Alias_ID not activated\n(no resources available)",
+      "Fabric Activate Alias ID,\nN_Port Activate Alias ID"
+    ],
+    [
+      "32h",
+      "Alias_ID not activated\n(invalid Alias_ID)",
+      "Fabric Activate Alias ID,\nN_Port Activate Alias ID"
+    ],
+    [
+      "33h",
+      "Alias_ID not deactivated\n(doesn’t exist)",
+      "Fabric Deactivate Alias ID,\nN_Port Deactivate Alias ID"
+    ],
+    [
+      "34h",
+      "Alias_ID not deactivated\n(resource problem)",
+      "Fabric Deactivate Alias ID,\nN_Port Deactivate Alias ID"
+    ],
+    [
+      "35h",
+      "Service Parameter conflict",
+      "N_Port Activate Alias ID"
+    ],
+    [
+      "36h",
+      "Invalid Alias_Token",
+      "Get Alias_ID"
+    ],
+    [
+      "37h",
+      "Unsupported Alias_Token",
+      "N_Port Activate Alias ID"
+    ]
+  ]
+}

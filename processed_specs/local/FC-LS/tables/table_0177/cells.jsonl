@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Nx_Port", "page": 184, "bbox": [91.89, 483.84, 141.81, 505.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Fx_Port", "page": 184, "bbox": [141.81, 483.84, 191.19, 505.32]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Description", "page": 184, "bbox": [191.19, 483.84, 542.9, 505.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 184, "bbox": [91.89, 505.32, 141.81, 527.37]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "0", "page": 184, "bbox": [141.81, 505.32, 191.19, 527.37]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Neither supports Differentiated Services QoS", "page": 184, "bbox": [191.19, 505.32, 542.9, 527.37]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "0", "page": 184, "bbox": [91.89, 527.37, 141.81, 549.39]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "1", "page": 184, "bbox": [141.81, 527.37, 191.19, 549.39]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "Fx_Port is capable of supporting Differentiated Services QoS", "page": 184, "bbox": [191.19, 527.37, 542.9, 549.39]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "1", "page": 184, "bbox": [91.89, 549.39, 141.81, 583.35]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "0", "page": 184, "bbox": [141.81, 549.39, 191.19, 583.35]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Nx_Port support requested, Fx_Port does not support Differentiated Services\nQoS", "page": 184, "bbox": [191.19, 549.39, 542.9, 583.35]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "1", "page": 184, "bbox": [91.89, 583.35, 141.81, 616.84]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "1", "page": 184, "bbox": [141.81, 583.35, 191.19, 616.84]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "Nx_Port requested, Fx_Port is capable of supporting Differentiated Services\nQoS, Differentiated Services QoS is available for use", "page": 184, "bbox": [191.19, 583.35, 542.9, 616.84]}

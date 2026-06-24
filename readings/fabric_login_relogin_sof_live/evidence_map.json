@@ -1,0 +1,170 @@
+{
+  "fabric_login_relogin_sof_c01": [
+    {
+      "type": "text_span",
+      "span_id": "p155_s0029",
+      "quote": "Nx_Port detects that the N_Port_ID, F_Port_Name, and/or the Fabric_Name has changed since the"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p155_s0030",
+      "quote": "last Fabric Login, the Nx_Port shall implicitly logout with all Nx_Ports and wait an R_A_TOV timeout"
+    }
+  ],
+  "fabric_login_relogin_sof_c02": [
+    {
+      "type": "text_span",
+      "span_id": "p155_s0030",
+      "quote": "last Fabric Login, the Nx_Port shall implicitly logout with all Nx_Ports and wait an R_A_TOV timeout"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p155_s0031",
+      "quote": "period before initiating or accepting communication with other Nx_Ports.  The timeout period shall"
+    }
+  ],
+  "fabric_login_relogin_sof_c03": [
+    {
+      "type": "text_span",
+      "span_id": "p155_s0031",
+      "quote": "period before initiating or accepting communication with other Nx_Ports.  The timeout period shall"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p155_s0032",
+      "quote": "start when the Nx_Port detects the change.  After waiting the timeout period, new N_Port Logins are"
+    }
+  ],
+  "fabric_login_relogin_sof_c04": [
+    {
+      "type": "text_span",
+      "span_id": "p155_s0032",
+      "quote": "start when the Nx_Port detects the change.  After waiting the timeout period, new N_Port Logins are"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p155_s0033",
+      "quote": "required before the Nx_Port may communicate with other Nx_Ports. "
+    }
+  ],
+  "fabric_login_relogin_sof_c05": [
+    {
+      "type": "text_span",
+      "span_id": "p155_s0036",
+      "quote": "Fabric Login shall only be performed in Class 1, 2, or 3. Since the Fabric may not support all three"
+    }
+  ],
+  "fabric_login_relogin_sof_c06": [
+    {
+      "type": "text_span",
+      "span_id": "p155_s0036",
+      "quote": "Fabric Login shall only be performed in Class 1, 2, or 3. Since the Fabric may not support all three"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p155_s0037",
+      "quote": "classes, the FLOGI Sequence may require retry in a different Class with the appropriate SOF."
+    }
+  ],
+  "fabric_login_relogin_sof_c07": [
+    {
+      "type": "text_span",
+      "span_id": "p155_s0038",
+      "quote": "Fabric Login is valid for all supported classes as indicated by the validity bits in the FLOGI LS_ACC"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p155_s0039",
+      "quote": "Reply Sequence."
+    }
+  ],
+  "fabric_login_relogin_sof_c08": [
+    {
+      "type": "text_span",
+      "span_id": "p155_s0040",
+      "quote": "SOF"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p155_s0041",
+      "quote": "c1"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p155_s0042",
+      "quote": " may be used to attempt Fabric Login or Fabric Relogin.  SOF"
+    }
+  ],
+  "fabric_login_relogin_sof_c09": [
+    {
+      "type": "text_span",
+      "span_id": "p155_s0042",
+      "quote": " may be used to attempt Fabric Login or Fabric Relogin.  SOF"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p155_s0043",
+      "quote": "i1"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p155_s0044",
+      "quote": " is not allowed."
+    }
+  ],
+  "fabric_login_relogin_sof_c10": [
+    {
+      "type": "text_span",
+      "span_id": "p155_s0045",
+      "quote": "Class 6 shall not be used for Fabric Login since the D_ID field requires an Alias_ID multicast ad-"
+    }
+  ],
+  "fabric_login_relogin_sof_c11": [
+    {
+      "type": "text_span",
+      "span_id": "p155_s0047",
+      "quote": "Selection of the SOF for the FLOGI Sequence is based on the Classes supported by the originating"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p155_s0048",
+      "quote": "Nx_Port.  The FLOGI Sequence is transmitted and the appropriate action is specified in 6.2.2.3.  If an"
+    }
+  ],
+  "fabric_login_relogin_sof_c12": [
+    {
+      "type": "text_span",
+      "span_id": "p155_s0049",
+      "quote": "F_RJT with reason code \"Class of service not supported by entity at FFFFFEh\" is received, another"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p155_s0050",
+      "quote": "supported SOF shall be attempted until the Login procedure is complete or until all supported SOF"
+    }
+  ],
+  "fabric_login_relogin_sof_c13": [
+    {
+      "type": "text_span",
+      "span_id": "p155_s0050",
+      "quote": "supported SOF shall be attempted until the Login procedure is complete or until all supported SOF"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p156_s0003",
+      "quote": "types have been attempted.  If all supported SOF types have been attempted and the Fabric has re-"
+    }
+  ],
+  "fabric_login_relogin_sof_c14": [
+    {
+      "type": "text_span",
+      "span_id": "p156_s0003",
+      "quote": "types have been attempted.  If all supported SOF types have been attempted and the Fabric has re-"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p156_s0004",
+      "quote": "jected all or timed out, the Fabric and Nx_Port are incompatible and outside intervention is required."
+    }
+  ]
+}

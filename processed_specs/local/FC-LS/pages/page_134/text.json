@@ -1,0 +1,844 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 134,
+  "spans": [
+    {
+      "span_id": "p134_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0002",
+      "text": " 115",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0003",
+      "text": "The defined Administrative Tagging Modes are shown in table 125.",
+      "bbox": [
+        96.0,
+        57.65,
+        391.98,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0004",
+      "text": "In absence of any explicit configuration, the default Administrative Tagging Mode of a VF capable",
+      "bbox": [
+        96.0,
+        214.97,
+        539.96,
+        226.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0005",
+      "text": "N_Port or F_Port should be AUTO.",
+      "bbox": [
+        96.0,
+        226.97,
+        250.99,
+        238.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0006",
+      "text": "Table 126 shows how VFT tagging is negotiated between peer FC_Ports.",
+      "bbox": [
+        96.0,
+        250.97,
+        420.45,
+        262.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0007",
+      "text": "4.2.43.2.3  Port VF_ID Descriptor",
+      "bbox": [
+        96.0,
+        418.97,
+        249.88,
+        430.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0008",
+      "text": "The format of the Port VF_ID descriptor is shown in table 127.",
+      "bbox": [
+        96.0,
+        442.97,
+        369.84,
+        454.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0009",
+      "text": "Port Flags:",
+      "bbox": [
+        96.0,
+        574.96,
+        148.11,
+        586.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0010",
+      "text": " Reserved. Shall be set to zero.",
+      "bbox": [
+        148.2,
+        574.96,
+        287.58,
+        586.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p134_s0011",
+      "text": "Port VF_ID:",
+      "bbox": [
+        96.0,
+        598.96,
+        150.46,
+        610.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0012",
+      "text": " The 12 least significant bit of this field shall be set to the Port VF_ID. The four most sig-",
+      "bbox": [
+        150.48,
+        598.96,
+        540.11,
+        610.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p134_s0013",
+      "text": "nificant bit shall be set to zero. In absence of any explicit configuration, the value 001h should be",
+      "bbox": [
+        96.0,
+        610.96,
+        539.91,
+        622.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0014",
+      "text": "used as Port VF_ID.",
+      "bbox": [
+        96.0,
+        622.96,
+        185.95,
+        634.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0015",
+      "text": " Table 125 – Administrative Tagging Modes",
+      "bbox": [
+        215.52,
+        79.66,
+        420.44,
+        90.78
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0016",
+      "text": "Value",
+      "bbox": [
+        133.44,
+        101.62,
+        160.08,
+        112.74
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0017",
+      "text": "Notation",
+      "bbox": [
+        193.54,
+        101.62,
+        234.08,
+        112.74
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0018",
+      "text": "Description",
+      "bbox": [
+        357.6,
+        101.62,
+        412.53,
+        112.74
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0019",
+      "text": "0000 0001h",
+      "bbox": [
+        120.36,
+        123.64,
+        173.1,
+        134.76
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0020",
+      "text": "OFF",
+      "bbox": [
+        203.8,
+        123.64,
+        223.82,
+        134.76
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0021",
+      "text": "The FC_Port shall not perform VFT Tagging",
+      "bbox": [
+        251.4,
+        122.62,
+        446.39,
+        133.74
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0022",
+      "text": "0000 0002h",
+      "bbox": [
+        120.36,
+        150.64,
+        173.11,
+        161.76
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0023",
+      "text": "ON",
+      "bbox": [
+        206.33,
+        150.64,
+        221.32,
+        161.76
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0024",
+      "text": "The FC_Port may perform VFT Tagging if the peer does not ",
+      "bbox": [
+        251.4,
+        143.62,
+        519.12,
+        154.74
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0025",
+      "text": "prohibit it",
+      "bbox": [
+        251.4,
+        155.62,
+        291.99,
+        166.74
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0026",
+      "text": "0000 0003h",
+      "bbox": [
+        120.36,
+        177.64,
+        173.09,
+        188.76
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0027",
+      "text": "AUTO",
+      "bbox": [
+        199.95,
+        177.64,
+        227.77,
+        188.76
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0028",
+      "text": "The FC_Port may perform VFT Tagging if the peer request it",
+      "bbox": [
+        251.4,
+        176.62,
+        519.1,
+        187.74
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0029",
+      "text": " Table 126 – Tagging Mode Negotiation",
+      "bbox": [
+        225.54,
+        272.98,
+        410.44,
+        284.1
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0030",
+      "text": "Peer Tagging Mode",
+      "bbox": [
+        317.88,
+        295.0,
+        410.04,
+        306.12
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0031",
+      "text": "OFF",
+      "bbox": [
+        284.82,
+        314.98,
+        304.77,
+        326.1
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0032",
+      "text": "ON",
+      "bbox": [
+        356.53,
+        314.98,
+        371.46,
+        326.1
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0033",
+      "text": "AUTO",
+      "bbox": [
+        419.05,
+        314.98,
+        447.31,
+        326.1
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0034",
+      "text": "Local",
+      "bbox": [
+        180.66,
+        346.96,
+        206.77,
+        358.08
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0035",
+      "text": "Tagging",
+      "bbox": [
+        174.3,
+        358.96,
+        213.16,
+        370.08
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0036",
+      "text": "Mode",
+      "bbox": [
+        180.66,
+        370.96,
+        206.78,
+        382.08
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0037",
+      "text": "OFF",
+      "bbox": [
+        229.74,
+        337.0,
+        249.69,
+        348.12
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0038",
+      "text": "Non Tagging",
+      "bbox": [
+        266.22,
+        337.0,
+        323.43,
+        348.12
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0039",
+      "text": "Non Tagging",
+      "bbox": [
+        335.41,
+        337.0,
+        392.6,
+        348.12
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0040",
+      "text": "Non Tagging",
+      "bbox": [
+        404.58,
+        337.0,
+        461.77,
+        348.12
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0041",
+      "text": "ON",
+      "bbox": [
+        232.26,
+        358.96,
+        247.19,
+        370.08
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0042",
+      "text": "Non Tagging",
+      "bbox": [
+        266.22,
+        358.96,
+        323.43,
+        370.08
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0043",
+      "text": "Tagging",
+      "bbox": [
+        345.97,
+        358.96,
+        382.04,
+        370.08
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0044",
+      "text": "Tagging",
+      "bbox": [
+        415.14,
+        358.96,
+        451.22,
+        370.08
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0045",
+      "text": "AUTO",
+      "bbox": [
+        225.6,
+        380.98,
+        253.93,
+        392.1
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0046",
+      "text": "Non Tagging",
+      "bbox": [
+        266.22,
+        380.98,
+        323.42,
+        392.1
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0047",
+      "text": "Tagging",
+      "bbox": [
+        345.97,
+        380.98,
+        382.03,
+        392.1
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0048",
+      "text": "Non Tagging",
+      "bbox": [
+        404.57,
+        380.98,
+        461.78,
+        392.1
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0049",
+      "text": " Table 127 – Port VF_ID Descriptor",
+      "bbox": [
+        236.34,
+        464.98,
+        399.6,
+        476.1
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0050",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        487.0,
+        133.06,
+        498.12
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0051",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        499.0,
+        136.34,
+        510.12
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0052",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        487.0,
+        233.97,
+        498.12
+      ],
+      "block_index": 23,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0053",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        487.0,
+        328.41,
+        498.12
+      ],
+      "block_index": 23,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0054",
+      "text": "15         ..       08",
+      "bbox": [
+        354.79,
+        487.0,
+        427.0,
+        498.12
+      ],
+      "block_index": 23,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0055",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        487.0,
+        522.83,
+        498.12
+      ],
+      "block_index": 23,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0056",
+      "text": "0",
+      "bbox": [
+        120.84,
+        523.0,
+        126.38,
+        534.12
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0057",
+      "text": "Descriptor Control = ",
+      "bbox": [
+        151.92,
+        517.96,
+        243.8,
+        529.08
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0058",
+      "text": "01h",
+      "bbox": [
+        188.16,
+        529.96,
+        204.79,
+        541.08
+      ],
+      "block_index": 24,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0059",
+      "text": "Descriptor Type = ",
+      "bbox": [
+        254.1,
+        517.96,
+        336.09,
+        529.08
+      ],
+      "block_index": 24,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0060",
+      "text": "02h",
+      "bbox": [
+        285.36,
+        529.96,
+        301.99,
+        541.08
+      ],
+      "block_index": 24,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0061",
+      "text": "Descriptor Length = 0004h",
+      "bbox": [
+        380.46,
+        523.96,
+        498.48,
+        535.08
+      ],
+      "block_index": 24,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0062",
+      "text": "1",
+      "bbox": [
+        120.84,
+        547.96,
+        126.38,
+        559.08
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0063",
+      "text": "Port Flags",
+      "bbox": [
+        222.3,
+        548.98,
+        267.87,
+        560.1
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p134_s0064",
+      "text": "Port VF_ID",
+      "bbox": [
+        414.81,
+        548.98,
+        464.22,
+        560.1
+      ],
+      "block_index": 25,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0129",
+    "table_0130",
+    "table_0131"
+  ]
+}

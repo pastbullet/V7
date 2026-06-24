@@ -1,0 +1,25 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "", "page": 134, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "", "page": 134, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Peer Tagging Mode", "page": 134, "bbox": [260.22, 291.5, 468.15, 311.09]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "", "page": 134, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "", "page": 134, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "", "page": 134, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "", "page": 134, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "OFF", "page": 134, "bbox": [260.22, 311.09, 329.43, 331.32]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "ON", "page": 134, "bbox": [329.43, 311.09, 398.61, 331.32]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "AUTO", "page": 134, "bbox": [398.61, 311.09, 468.15, 331.32]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "Local\nTagging\nMode", "page": 134, "bbox": [168.08, 331.32, 218.99, 397.42]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "OFF", "page": 134, "bbox": [218.99, 331.32, 260.22, 353.37]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "Non Tagging", "page": 134, "bbox": [260.22, 331.32, 329.43, 353.37]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "Non Tagging", "page": 134, "bbox": [329.43, 331.32, 398.61, 353.37]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "Non Tagging", "page": 134, "bbox": [398.61, 331.32, 468.15, 353.37]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "", "page": 134, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "ON", "page": 134, "bbox": [218.99, 353.37, 260.22, 375.39]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Non Tagging", "page": 134, "bbox": [260.22, 353.37, 329.43, 375.39]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "Tagging", "page": 134, "bbox": [329.43, 353.37, 398.61, 375.39]}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "Tagging", "page": 134, "bbox": [398.61, 353.37, 468.15, 375.39]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "", "page": 134, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "AUTO", "page": 134, "bbox": [218.99, 375.39, 260.22, 397.42]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "Non Tagging", "page": 134, "bbox": [260.22, 375.39, 329.43, 397.42]}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "Tagging", "page": 134, "bbox": [329.43, 375.39, 398.61, 397.42]}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "Non Tagging", "page": 134, "bbox": [398.61, 375.39, 468.15, 397.42]}

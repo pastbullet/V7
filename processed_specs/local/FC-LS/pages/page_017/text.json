@@ -1,0 +1,1373 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 17,
+  "spans": [
+    {
+      "span_id": "p017_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0002",
+      "text": " xvii",
+      "bbox": [
+        519.42,
+        723.59,
+        536.63,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0003",
+      "text": " Table 53 –",
+      "bbox": [
+        96.0,
+        57.65,
+        145.99,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0004",
+      "text": "TPLS image pair ID page format. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61",
+      "bbox": [
+        155.99,
+        57.65,
+        540.12,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0005",
+      "text": " Table 54 –",
+      "bbox": [
+        96.0,
+        70.97,
+        145.85,
+        82.08
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0006",
+      "text": "TPLS LS_ACC Payload  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61",
+      "bbox": [
+        155.85,
+        70.97,
+        540.0,
+        82.08
+      ],
+      "block_index": 3,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0007",
+      "text": " Table 55 –",
+      "bbox": [
+        96.0,
+        82.96,
+        145.94,
+        94.08
+      ],
+      "block_index": 3,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0008",
+      "text": "TPLS response page format . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62",
+      "bbox": [
+        155.94,
+        82.96,
+        540.12,
+        94.08
+      ],
+      "block_index": 3,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0009",
+      "text": " Table 56 –",
+      "bbox": [
+        96.0,
+        94.96,
+        145.99,
+        106.08
+      ],
+      "block_index": 3,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0010",
+      "text": "TPLS accept response code . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63",
+      "bbox": [
+        156.0,
+        94.96,
+        540.12,
+        106.08
+      ],
+      "block_index": 3,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0011",
+      "text": " Table 57 –",
+      "bbox": [
+        96.0,
+        106.96,
+        145.86,
+        118.08
+      ],
+      "block_index": 3,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0012",
+      "text": "RNID Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64",
+      "bbox": [
+        155.86,
+        106.96,
+        539.97,
+        118.08
+      ],
+      "block_index": 3,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0013",
+      "text": " Table 58 –",
+      "bbox": [
+        96.0,
+        118.96,
+        145.88,
+        130.08
+      ],
+      "block_index": 3,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0014",
+      "text": "Node Identification Data Format . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64",
+      "bbox": [
+        155.88,
+        118.96,
+        539.93,
+        130.08
+      ],
+      "block_index": 3,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0015",
+      "text": " Table 59 –",
+      "bbox": [
+        96.0,
+        130.96,
+        145.86,
+        142.08
+      ],
+      "block_index": 3,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0016",
+      "text": "RNID Accept Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65",
+      "bbox": [
+        155.86,
+        130.96,
+        539.96,
+        142.08
+      ],
+      "block_index": 3,
+      "line_index": 14,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0017",
+      "text": " Table 60 –",
+      "bbox": [
+        96.0,
+        142.96,
+        145.88,
+        154.08
+      ],
+      "block_index": 3,
+      "line_index": 15,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0018",
+      "text": "Node Identification Data Format . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65",
+      "bbox": [
+        155.88,
+        142.96,
+        539.93,
+        154.08
+      ],
+      "block_index": 3,
+      "line_index": 16,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0019",
+      "text": " Table 61 –",
+      "bbox": [
+        96.0,
+        154.96,
+        145.98,
+        166.08
+      ],
+      "block_index": 3,
+      "line_index": 17,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0020",
+      "text": "Common Identification Data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66",
+      "bbox": [
+        156.0,
+        155.83,
+        540.03,
+        165.88
+      ],
+      "block_index": 3,
+      "line_index": 18,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0021",
+      "text": " Table 62 –",
+      "bbox": [
+        96.0,
+        166.97,
+        145.93,
+        178.08
+      ],
+      "block_index": 3,
+      "line_index": 19,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0022",
+      "text": "General Topology Specific Identification Data  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67",
+      "bbox": [
+        155.93,
+        166.97,
+        540.06,
+        178.08
+      ],
+      "block_index": 3,
+      "line_index": 20,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0023",
+      "text": " Table 63 –",
+      "bbox": [
+        96.0,
+        178.97,
+        145.86,
+        190.08
+      ],
+      "block_index": 3,
+      "line_index": 21,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0024",
+      "text": "Associated Type . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68",
+      "bbox": [
+        155.86,
+        178.97,
+        539.97,
+        190.08
+      ],
+      "block_index": 3,
+      "line_index": 22,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0025",
+      "text": " Table 64 –",
+      "bbox": [
+        96.0,
+        190.97,
+        145.92,
+        202.08
+      ],
+      "block_index": 3,
+      "line_index": 23,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0026",
+      "text": "Multi-function device bit definitions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69",
+      "bbox": [
+        155.92,
+        190.97,
+        539.96,
+        202.08
+      ],
+      "block_index": 3,
+      "line_index": 24,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0027",
+      "text": " Table 65 –",
+      "bbox": [
+        96.0,
+        202.97,
+        145.87,
+        214.08
+      ],
+      "block_index": 3,
+      "line_index": 25,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0028",
+      "text": "Node Management . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70",
+      "bbox": [
+        155.87,
+        202.97,
+        539.96,
+        214.08
+      ],
+      "block_index": 3,
+      "line_index": 26,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0029",
+      "text": " Table 66 –",
+      "bbox": [
+        96.0,
+        214.97,
+        145.85,
+        226.08
+      ],
+      "block_index": 3,
+      "line_index": 27,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0030",
+      "text": "IP Version . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70",
+      "bbox": [
+        155.86,
+        214.97,
+        539.98,
+        226.08
+      ],
+      "block_index": 3,
+      "line_index": 28,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0031",
+      "text": " Table 67 –",
+      "bbox": [
+        96.0,
+        226.97,
+        145.98,
+        238.08
+      ],
+      "block_index": 3,
+      "line_index": 29,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0032",
+      "text": "RLIR Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72",
+      "bbox": [
+        156.0,
+        227.83,
+        540.04,
+        237.88
+      ],
+      "block_index": 3,
+      "line_index": 30,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0033",
+      "text": " Table 68 –",
+      "bbox": [
+        96.0,
+        238.97,
+        145.92,
+        250.08
+      ],
+      "block_index": 3,
+      "line_index": 31,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0034",
+      "text": "Link Incident Record Format . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73",
+      "bbox": [
+        155.92,
+        238.97,
+        539.96,
+        250.08
+      ],
+      "block_index": 3,
+      "line_index": 32,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0035",
+      "text": " Table 69 –",
+      "bbox": [
+        96.0,
+        250.97,
+        145.88,
+        262.08
+      ],
+      "block_index": 3,
+      "line_index": 33,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0036",
+      "text": "Common Link Incident Record Data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 74",
+      "bbox": [
+        155.88,
+        250.97,
+        539.93,
+        262.08
+      ],
+      "block_index": 3,
+      "line_index": 34,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0037",
+      "text": " Table 70 –",
+      "bbox": [
+        96.0,
+        262.97,
+        145.88,
+        274.08
+      ],
+      "block_index": 3,
+      "line_index": 35,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0038",
+      "text": "Time Stamp Format values . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75",
+      "bbox": [
+        155.88,
+        262.97,
+        540.01,
+        274.08
+      ],
+      "block_index": 3,
+      "line_index": 36,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0039",
+      "text": " Table 71 –",
+      "bbox": [
+        96.0,
+        274.97,
+        145.85,
+        286.08
+      ],
+      "block_index": 3,
+      "line_index": 37,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0040",
+      "text": "Incident Qualifier . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75",
+      "bbox": [
+        155.86,
+        274.97,
+        539.97,
+        286.08
+      ],
+      "block_index": 3,
+      "line_index": 38,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0041",
+      "text": " Table 72 –",
+      "bbox": [
+        96.0,
+        286.97,
+        145.87,
+        298.08
+      ],
+      "block_index": 3,
+      "line_index": 39,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0042",
+      "text": "Incident Code values. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77",
+      "bbox": [
+        155.87,
+        286.97,
+        539.96,
+        298.08
+      ],
+      "block_index": 3,
+      "line_index": 40,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0043",
+      "text": " Table 73 –",
+      "bbox": [
+        96.0,
+        298.97,
+        145.86,
+        310.08
+      ],
+      "block_index": 3,
+      "line_index": 41,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0044",
+      "text": "RLIR LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 78",
+      "bbox": [
+        155.86,
+        298.97,
+        539.96,
+        310.08
+      ],
+      "block_index": 3,
+      "line_index": 42,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0045",
+      "text": " Table 74 –",
+      "bbox": [
+        96.0,
+        310.97,
+        145.98,
+        322.08
+      ],
+      "block_index": 3,
+      "line_index": 43,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0046",
+      "text": "LIRR Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79",
+      "bbox": [
+        156.0,
+        311.84,
+        540.04,
+        321.88
+      ],
+      "block_index": 3,
+      "line_index": 44,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0047",
+      "text": " Table 75 –",
+      "bbox": [
+        96.0,
+        322.97,
+        145.87,
+        334.08
+      ],
+      "block_index": 3,
+      "line_index": 45,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0048",
+      "text": "Registration Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 80",
+      "bbox": [
+        155.87,
+        322.97,
+        539.96,
+        334.08
+      ],
+      "block_index": 3,
+      "line_index": 46,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0049",
+      "text": " Table 76 –",
+      "bbox": [
+        96.0,
+        334.97,
+        145.88,
+        346.08
+      ],
+      "block_index": 3,
+      "line_index": 47,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0050",
+      "text": "Link Incident Record-Registration Format. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 80",
+      "bbox": [
+        155.88,
+        334.97,
+        539.87,
+        346.08
+      ],
+      "block_index": 3,
+      "line_index": 48,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0051",
+      "text": " Table 77 –",
+      "bbox": [
+        96.0,
+        346.97,
+        145.98,
+        358.08
+      ],
+      "block_index": 3,
+      "line_index": 49,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0052",
+      "text": "LIRR",
+      "bbox": [
+        156.0,
+        347.84,
+        176.47,
+        357.88
+      ],
+      "block_index": 3,
+      "line_index": 50,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0053",
+      "text": " LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 81",
+      "bbox": [
+        176.46,
+        346.97,
+        540.05,
+        358.08
+      ],
+      "block_index": 3,
+      "line_index": 50,
+      "span_index": 2
+    },
+    {
+      "span_id": "p017_s0054",
+      "text": " Table 78 –",
+      "bbox": [
+        96.0,
+        358.97,
+        145.85,
+        370.08
+      ],
+      "block_index": 3,
+      "line_index": 51,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0055",
+      "text": "GAID Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 81",
+      "bbox": [
+        155.86,
+        358.97,
+        539.97,
+        370.08
+      ],
+      "block_index": 3,
+      "line_index": 52,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0056",
+      "text": " Table 79 –",
+      "bbox": [
+        96.0,
+        370.97,
+        145.97,
+        382.08
+      ],
+      "block_index": 3,
+      "line_index": 53,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0057",
+      "text": "NP_List Entry Format . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 82",
+      "bbox": [
+        155.97,
+        370.97,
+        539.96,
+        382.08
+      ],
+      "block_index": 3,
+      "line_index": 54,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0058",
+      "text": " Table 80 –",
+      "bbox": [
+        96.0,
+        382.97,
+        145.86,
+        394.08
+      ],
+      "block_index": 3,
+      "line_index": 55,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0059",
+      "text": "Get Alias_ID LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 82",
+      "bbox": [
+        155.86,
+        382.97,
+        539.93,
+        394.08
+      ],
+      "block_index": 3,
+      "line_index": 56,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0060",
+      "text": " Table 81 –",
+      "bbox": [
+        96.0,
+        394.97,
+        145.91,
+        406.08
+      ],
+      "block_index": 3,
+      "line_index": 57,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0061",
+      "text": "Fabric Activate Alias_ID Payload  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83",
+      "bbox": [
+        155.91,
+        394.97,
+        540.06,
+        406.08
+      ],
+      "block_index": 3,
+      "line_index": 58,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0062",
+      "text": " Table 82 –",
+      "bbox": [
+        96.0,
+        406.97,
+        145.97,
+        418.08
+      ],
+      "block_index": 3,
+      "line_index": 59,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0063",
+      "text": "Fabric Activate Alias_ID LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 84",
+      "bbox": [
+        155.97,
+        406.97,
+        540.05,
+        418.08
+      ],
+      "block_index": 3,
+      "line_index": 60,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0064",
+      "text": " Table 83 –",
+      "bbox": [
+        96.0,
+        418.97,
+        146.0,
+        430.08
+      ],
+      "block_index": 3,
+      "line_index": 61,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0065",
+      "text": "Fabric Deactivate Alias_ID Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 84",
+      "bbox": [
+        156.0,
+        418.97,
+        540.0,
+        430.08
+      ],
+      "block_index": 3,
+      "line_index": 62,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0066",
+      "text": " Table 84 –",
+      "bbox": [
+        96.0,
+        430.96,
+        146.0,
+        442.08
+      ],
+      "block_index": 3,
+      "line_index": 63,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0067",
+      "text": "Fabric Deactivate Alias_ID LS_ACC Payload. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 85",
+      "bbox": [
+        156.0,
+        430.96,
+        539.92,
+        442.08
+      ],
+      "block_index": 3,
+      "line_index": 64,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0068",
+      "text": " Table 85 –",
+      "bbox": [
+        96.0,
+        442.96,
+        145.94,
+        454.08
+      ],
+      "block_index": 3,
+      "line_index": 65,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0069",
+      "text": "N_Port Activate Alias_ID Payload. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 86",
+      "bbox": [
+        155.94,
+        442.96,
+        540.08,
+        454.08
+      ],
+      "block_index": 3,
+      "line_index": 66,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0070",
+      "text": " Table 86 –",
+      "bbox": [
+        96.0,
+        454.96,
+        145.95,
+        466.08
+      ],
+      "block_index": 3,
+      "line_index": 67,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0071",
+      "text": "N_Port Activate Alias_ID LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 87",
+      "bbox": [
+        155.95,
+        454.96,
+        540.0,
+        466.08
+      ],
+      "block_index": 3,
+      "line_index": 68,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0072",
+      "text": " Table 87 –",
+      "bbox": [
+        96.0,
+        466.96,
+        145.92,
+        478.08
+      ],
+      "block_index": 3,
+      "line_index": 69,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0073",
+      "text": "N_Port Deactivate Alias_ID Payload. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 87",
+      "bbox": [
+        155.92,
+        466.96,
+        540.01,
+        478.08
+      ],
+      "block_index": 3,
+      "line_index": 70,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0074",
+      "text": " Table 88 –",
+      "bbox": [
+        96.0,
+        478.96,
+        145.91,
+        490.08
+      ],
+      "block_index": 3,
+      "line_index": 71,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0075",
+      "text": "N_Port Deactivate Alias_ID LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88",
+      "bbox": [
+        155.91,
+        478.96,
+        540.05,
+        490.08
+      ],
+      "block_index": 3,
+      "line_index": 72,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0076",
+      "text": " Table 89 –",
+      "bbox": [
+        96.0,
+        490.96,
+        145.87,
+        502.08
+      ],
+      "block_index": 3,
+      "line_index": 73,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0077",
+      "text": "ADISC Request payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 90",
+      "bbox": [
+        155.87,
+        490.96,
+        539.96,
+        502.08
+      ],
+      "block_index": 3,
+      "line_index": 74,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0078",
+      "text": " Table 90 –",
+      "bbox": [
+        96.0,
+        502.96,
+        145.86,
+        514.08
+      ],
+      "block_index": 3,
+      "line_index": 75,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0079",
+      "text": "ADISC LS_ACC Payload  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 91",
+      "bbox": [
+        155.86,
+        502.96,
+        539.99,
+        514.08
+      ],
+      "block_index": 3,
+      "line_index": 76,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0080",
+      "text": " Table 91 –",
+      "bbox": [
+        96.0,
+        514.96,
+        145.88,
+        526.08
+      ],
+      "block_index": 3,
+      "line_index": 77,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0081",
+      "text": "Response summary to FDISC/PDISC. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 92",
+      "bbox": [
+        155.88,
+        514.96,
+        539.88,
+        526.08
+      ],
+      "block_index": 3,
+      "line_index": 78,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0082",
+      "text": " Table 92 –",
+      "bbox": [
+        96.0,
+        526.96,
+        145.85,
+        538.08
+      ],
+      "block_index": 3,
+      "line_index": 79,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0083",
+      "text": "TPRLO Payload  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 93",
+      "bbox": [
+        155.85,
+        526.96,
+        539.96,
+        538.08
+      ],
+      "block_index": 3,
+      "line_index": 80,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0084",
+      "text": " Table 93 –",
+      "bbox": [
+        96.0,
+        538.96,
+        145.88,
+        550.08
+      ],
+      "block_index": 3,
+      "line_index": 81,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0085",
+      "text": "TPRLO logout parameter page . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 93",
+      "bbox": [
+        155.88,
+        538.96,
+        539.97,
+        550.08
+      ],
+      "block_index": 3,
+      "line_index": 82,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0086",
+      "text": " Table 94 –",
+      "bbox": [
+        96.0,
+        550.96,
+        145.86,
+        562.08
+      ],
+      "block_index": 3,
+      "line_index": 83,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0087",
+      "text": "TPRLO LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 94",
+      "bbox": [
+        155.86,
+        550.96,
+        539.96,
+        562.08
+      ],
+      "block_index": 3,
+      "line_index": 84,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0088",
+      "text": " Table 95 –",
+      "bbox": [
+        96.0,
+        562.96,
+        145.85,
+        574.08
+      ],
+      "block_index": 3,
+      "line_index": 85,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0089",
+      "text": "CSR Payload. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 95",
+      "bbox": [
+        155.86,
+        562.96,
+        539.97,
+        574.08
+      ],
+      "block_index": 3,
+      "line_index": 86,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0090",
+      "text": " Table 96 –",
+      "bbox": [
+        96.0,
+        574.96,
+        145.92,
+        586.08
+      ],
+      "block_index": 3,
+      "line_index": 87,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0091",
+      "text": "CSR Clock Sync Mode Meaning. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 95",
+      "bbox": [
+        155.93,
+        574.96,
+        540.06,
+        586.08
+      ],
+      "block_index": 3,
+      "line_index": 88,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0092",
+      "text": " Table 97 –",
+      "bbox": [
+        96.0,
+        586.96,
+        145.85,
+        598.08
+      ],
+      "block_index": 3,
+      "line_index": 89,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0093",
+      "text": "CSR LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 96",
+      "bbox": [
+        155.85,
+        586.96,
+        539.96,
+        598.08
+      ],
+      "block_index": 3,
+      "line_index": 90,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0094",
+      "text": " Table 98 –",
+      "bbox": [
+        96.0,
+        598.96,
+        145.92,
+        610.08
+      ],
+      "block_index": 3,
+      "line_index": 91,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0095",
+      "text": "CSU Clock Sync Mode Meaning. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97",
+      "bbox": [
+        155.93,
+        598.96,
+        540.06,
+        610.08
+      ],
+      "block_index": 3,
+      "line_index": 92,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0096",
+      "text": " Table 99 –",
+      "bbox": [
+        96.0,
+        610.96,
+        145.85,
+        622.08
+      ],
+      "block_index": 3,
+      "line_index": 93,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0097",
+      "text": "CSU Payload. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 98",
+      "bbox": [
+        155.86,
+        610.96,
+        539.97,
+        622.08
+      ],
+      "block_index": 3,
+      "line_index": 94,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0098",
+      "text": " Table 100 – Clock Count Field Meaning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 98",
+      "bbox": [
+        96.0,
+        622.96,
+        539.96,
+        634.08
+      ],
+      "block_index": 3,
+      "line_index": 95,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0099",
+      "text": " Table 101 – RPBC Payload  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 99",
+      "bbox": [
+        96.0,
+        635.02,
+        539.97,
+        646.14
+      ],
+      "block_index": 3,
+      "line_index": 96,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0100",
+      "text": " Table 102 – ELS Buffer Parameters Field. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 100",
+      "bbox": [
+        96.0,
+        647.02,
+        539.96,
+        658.14
+      ],
+      "block_index": 3,
+      "line_index": 97,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0101",
+      "text": " Table 103 – RPBC LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 100",
+      "bbox": [
+        96.0,
+        659.02,
+        539.96,
+        670.14
+      ],
+      "block_index": 3,
+      "line_index": 98,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0102",
+      "text": " Table 104 – RNFT Payload. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 101",
+      "bbox": [
+        96.0,
+        671.02,
+        539.97,
+        682.14
+      ],
+      "block_index": 3,
+      "line_index": 99,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0103",
+      "text": " Table 105 – RNFT LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 101",
+      "bbox": [
+        96.0,
+        683.02,
+        539.96,
+        694.14
+      ],
+      "block_index": 3,
+      "line_index": 100,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0104",
+      "text": " Table 106 –",
+      "bbox": [
+        96.0,
+        695.02,
+        151.49,
+        706.14
+      ],
+      "block_index": 3,
+      "line_index": 101,
+      "span_index": 1
+    },
+    {
+      "span_id": "p017_s0105",
+      "text": " RNFT FC-4 Entry  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 102",
+      "bbox": [
+        151.49,
+        695.89,
+        540.05,
+        705.94
+      ],
+      "block_index": 3,
+      "line_index": 101,
+      "span_index": 2
+    }
+  ],
+  "asset_ids": []
+}

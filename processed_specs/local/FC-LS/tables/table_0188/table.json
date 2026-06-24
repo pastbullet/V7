@@ -1,0 +1,25 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "62",
+      "Reserved",
+      "CS_Transfer_Accurac\ny",
+      "CS_Implemented_MS\nB",
+      "CS_Implemented_LS\nB"
+    ],
+    [
+      "63",
+      "Reserved",
+      null,
+      null,
+      null
+    ]
+  ]
+}

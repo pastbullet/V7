@@ -1,0 +1,1128 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 163,
+  "spans": [
+    {
+      "span_id": "p163_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0002",
+      "text": " 144",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0003",
+      "text": "Nx_Port shall implicitly logout with all Nx_Ports before initiating or accepting communication with oth-",
+      "bbox": [
+        96.0,
+        57.65,
+        540.03,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0004",
+      "text": "er Nx_Ports.",
+      "bbox": [
+        96.0,
+        69.65,
+        151.5,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0005",
+      "text": "NOTE 11 – If an Nx_Port receives OLS from the Fabric, the Fabric may be indicating configuration changes",
+      "bbox": [
+        105.0,
+        93.86,
+        540.05,
+        103.9
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0006",
+      "text": "internal to the Fabric using the Online to Offline Protocol.",
+      "bbox": [
+        105.0,
+        104.83,
+        330.82,
+        114.88
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0007",
+      "text": "NOTE 12 – If an Nx_Port is concerned that a partial Fabric Login may be in process using its link immediately",
+      "bbox": [
+        105.0,
+        127.81,
+        540.09,
+        137.86
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0008",
+      "text": "preceding its attempted Fabric Login, it may wait an R_A_TOV in order to ensure that the response it receives",
+      "bbox": [
+        105.0,
+        138.85,
+        539.83,
+        148.9
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0009",
+      "text": "from the Fx_Port during Fabric Login is associated with its Login request.",
+      "bbox": [
+        105.0,
+        149.83,
+        395.17,
+        159.88
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0010",
+      "text": "6.4.5",
+      "bbox": [
+        96.0,
+        178.97,
+        118.22,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0011",
+      "text": "The effects of FLOGI, FDISC, and LOGO",
+      "bbox": [
+        128.22,
+        178.97,
+        317.57,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0012",
+      "text": "The effects of FLOGI, FDISC, and LOGO on pre-existing Fabric Logins is summarized in table 148.",
+      "bbox": [
+        96.0,
+        202.97,
+        534.21,
+        214.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0013",
+      "text": " Table 148 – Effects of FLOGI, FDISC, & LOGO on Permanent Port Name (PPN)",
+      "bbox": [
+        132.48,
+        224.99,
+        503.47,
+        236.1
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0014",
+      "text": "ELS ",
+      "bbox": [
+        116.22,
+        283.01,
+        138.43,
+        294.12
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0015",
+      "text": "Received ",
+      "bbox": [
+        103.98,
+        295.01,
+        150.62,
+        306.12
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0016",
+      "text": "(with D_ID ",
+      "bbox": [
+        101.46,
+        307.01,
+        153.15,
+        318.12
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0017",
+      "text": "FFFFFEh)",
+      "bbox": [
+        102.6,
+        319.0,
+        149.25,
+        330.12
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0018",
+      "text": "Condition of F_Port",
+      "bbox": [
+        303.54,
+        247.01,
+        396.89,
+        258.12
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0019",
+      "text": "Condition 1:",
+      "bbox": [
+        183.72,
+        295.01,
+        242.04,
+        306.12
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0020",
+      "text": "FLOGI not completed, ",
+      "bbox": [
+        160.68,
+        307.01,
+        267.08,
+        318.12
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0021",
+      "text": "or all IDs logged out",
+      "bbox": [
+        164.82,
+        319.0,
+        260.91,
+        330.12
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0022",
+      "text": "Condition 2:",
+      "bbox": [
+        334.68,
+        295.01,
+        393.06,
+        306.12
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0023",
+      "text": "FLOGI Completed, & at least one ID ",
+      "bbox": [
+        279.72,
+        307.01,
+        450.72,
+        318.12
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0024",
+      "text": "logged in",
+      "bbox": [
+        341.64,
+        319.0,
+        386.1,
+        330.12
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0025",
+      "text": "Condition 3:",
+      "bbox": [
+        471.96,
+        271.0,
+        530.34,
+        282.12
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0026",
+      "text": "FDISC(s) ",
+      "bbox": [
+        480.06,
+        283.0,
+        525.07,
+        294.12
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0027",
+      "text": "completed, & at ",
+      "bbox": [
+        463.92,
+        295.0,
+        541.12,
+        306.12
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0028",
+      "text": "least one ID ",
+      "bbox": [
+        473.1,
+        307.0,
+        531.97,
+        318.12
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0029",
+      "text": "logged in",
+      "bbox": [
+        478.92,
+        319.0,
+        523.38,
+        330.12
+      ],
+      "block_index": 13,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0030",
+      "text": "FLOGI",
+      "bbox": [
+        110.64,
+        370.96,
+        141.21,
+        382.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0031",
+      "text": "S_ID=0",
+      "bbox": [
+        106.68,
+        382.96,
+        140.23,
+        394.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0032",
+      "text": "d",
+      "bbox": [
+        140.28,
+        380.8,
+        145.16,
+        389.7
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p163_s0033",
+      "text": "- LS_ACC, assign first ",
+      "bbox": [
+        160.08,
+        352.97,
+        261.11,
+        364.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0034",
+      "text": "N_Port ID.",
+      "bbox": [
+        160.08,
+        364.97,
+        206.75,
+        376.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0035",
+      "text": "- Set PPN of new ",
+      "bbox": [
+        160.08,
+        376.97,
+        239.57,
+        388.08
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0036",
+      "text": "N_Port ID to Port_Name ",
+      "bbox": [
+        160.08,
+        388.97,
+        267.82,
+        400.08
+      ],
+      "block_index": 15,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0037",
+      "text": "in FLOGI request.",
+      "bbox": [
+        160.08,
+        400.97,
+        239.53,
+        412.08
+      ],
+      "block_index": 15,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0038",
+      "text": "-set BB_Credit to zero",
+      "bbox": [
+        269.7,
+        340.97,
+        368.01,
+        352.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0039",
+      "text": "-implicit logout of all logged-in N_Port IDs",
+      "bbox": [
+        269.7,
+        352.97,
+        452.93,
+        364.08
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0040",
+      "text": "- disassociate the logged-out N_Port IDs ",
+      "bbox": [
+        269.7,
+        364.97,
+        451.89,
+        376.08
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0041",
+      "text": "with PPN",
+      "bbox": [
+        269.7,
+        376.96,
+        310.76,
+        388.08
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0042",
+      "text": "-re-assign one N_Port ID",
+      "bbox": [
+        269.7,
+        388.96,
+        380.19,
+        400.08
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0043",
+      "text": "- Set PPN of new N_Port ID to Port_Name ",
+      "bbox": [
+        269.7,
+        400.96,
+        459.07,
+        412.08
+      ],
+      "block_index": 16,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0044",
+      "text": "in FLOGI request.",
+      "bbox": [
+        269.7,
+        412.96,
+        349.04,
+        424.08
+      ],
+      "block_index": 16,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0045",
+      "text": "- See Condition 2 ",
+      "bbox": [
+        462.0,
+        364.96,
+        541.45,
+        376.08
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0046",
+      "text": "(previous ",
+      "bbox": [
+        462.0,
+        376.96,
+        505.85,
+        388.08
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0047",
+      "text": "column).",
+      "bbox": [
+        462.0,
+        388.96,
+        500.36,
+        400.08
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0048",
+      "text": "FLOGI",
+      "bbox": [
+        110.64,
+        476.98,
+        141.21,
+        488.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0049",
+      "text": "S_ID not = 0",
+      "bbox": [
+        94.74,
+        488.98,
+        152.18,
+        500.1
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0050",
+      "text": "d",
+      "bbox": [
+        152.16,
+        486.76,
+        157.04,
+        495.66
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p163_s0051",
+      "text": "-confirm or reject S_ID ",
+      "bbox": [
+        160.08,
+        434.99,
+        262.79,
+        446.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0052",
+      "text": "(see 6.2.2.3), ",
+      "bbox": [
+        160.08,
+        446.99,
+        221.69,
+        458.1
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0053",
+      "text": "\"Response to Explicit ",
+      "bbox": [
+        160.08,
+        458.99,
+        256.94,
+        470.1
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0054",
+      "text": "Fabric Login.\"",
+      "bbox": [
+        160.08,
+        470.99,
+        221.37,
+        482.1
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0055",
+      "text": "- If confirmed, set PPN ",
+      "bbox": [
+        160.08,
+        482.99,
+        263.37,
+        494.1
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0056",
+      "text": "of FLOGI S_ID (i.e. new ",
+      "bbox": [
+        160.08,
+        494.99,
+        267.23,
+        506.1
+      ],
+      "block_index": 19,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0057",
+      "text": "N_Port ID ) to ",
+      "bbox": [
+        160.08,
+        506.99,
+        223.96,
+        518.1
+      ],
+      "block_index": 19,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0058",
+      "text": "Port_Name in FLOGI ",
+      "bbox": [
+        160.08,
+        518.98,
+        256.61,
+        530.1
+      ],
+      "block_index": 19,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0059",
+      "text": "request",
+      "bbox": [
+        160.08,
+        530.98,
+        193.39,
+        542.1
+      ],
+      "block_index": 19,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0060",
+      "text": "-set BB_Credit to zero",
+      "bbox": [
+        269.7,
+        440.99,
+        368.01,
+        452.1
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0061",
+      "text": "-Implicit logout of all logged-in N_Port IDs",
+      "bbox": [
+        269.7,
+        452.98,
+        453.48,
+        464.1
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0062",
+      "text": "- disassociate logged-out N_Port IDs with ",
+      "bbox": [
+        269.7,
+        464.98,
+        455.8,
+        476.1
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0063",
+      "text": "PPN",
+      "bbox": [
+        269.7,
+        476.98,
+        290.21,
+        488.1
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0064",
+      "text": "-confirm or reject S_ID (see 6.2.2.3), ",
+      "bbox": [
+        269.7,
+        488.98,
+        434.08,
+        500.1
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0065",
+      "text": "\"Response to Explicit Fabric Login.\"",
+      "bbox": [
+        269.7,
+        500.98,
+        427.8,
+        512.1
+      ],
+      "block_index": 20,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0066",
+      "text": "- If N_Port_ID logged-in, set PPN of N_Port ",
+      "bbox": [
+        269.7,
+        512.98,
+        459.66,
+        524.1
+      ],
+      "block_index": 20,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0067",
+      "text": "ID to Port_Name in FLOGI request",
+      "bbox": [
+        269.7,
+        524.98,
+        423.52,
+        536.1
+      ],
+      "block_index": 20,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0068",
+      "text": "- See Condition 2 ",
+      "bbox": [
+        462.0,
+        470.98,
+        541.45,
+        482.1
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0069",
+      "text": "(previous ",
+      "bbox": [
+        462.0,
+        482.98,
+        505.85,
+        494.1
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0070",
+      "text": "column).",
+      "bbox": [
+        462.0,
+        494.98,
+        500.36,
+        506.1
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0071",
+      "text": "a",
+      "bbox": [
+        101.94,
+        553.64,
+        105.94,
+        561.68
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0072",
+      "text": " If another N_Port ID is currently logged in with the same Port Name as contained in the FDISC request ",
+      "bbox": [
+        105.94,
+        552.01,
+        523.26,
+        565.66
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p163_s0073",
+      "text": "payload, or if the Port Name is the same as the Permanent Port Name associated with another N_Port, then ",
+      "bbox": [
+        112.74,
+        566.59,
+        541.34,
+        576.64
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0074",
+      "text": "the response should be LS_RJT (Logical error, invalid port name).",
+      "bbox": [
+        112.74,
+        577.57,
+        375.0,
+        587.62
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0075",
+      "text": "b",
+      "bbox": [
+        101.94,
+        589.04,
+        105.94,
+        597.08
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0076",
+      "text": " When an FDISC with S_ID=0 is received when no more N_Port_IDs are available, the F_Port shall respond ",
+      "bbox": [
+        105.94,
+        587.41,
+        541.27,
+        601.06
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 2
+    },
+    {
+      "span_id": "p163_s0077",
+      "text": "with an LS_RJT with an LS_RJT Reason Code of Unable to perform command request and an LS_RJT ",
+      "bbox": [
+        112.74,
+        601.99,
+        525.82,
+        612.04
+      ],
+      "block_index": 22,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0078",
+      "text": "Reason Code Explanation of insufficient resources.",
+      "bbox": [
+        112.74,
+        612.97,
+        316.4,
+        623.02
+      ],
+      "block_index": 22,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0079",
+      "text": "c",
+      "bbox": [
+        101.94,
+        624.44,
+        105.54,
+        632.48
+      ],
+      "block_index": 22,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0080",
+      "text": " Any assigned N_Port ID may be individually logged out and disassociated with the Permanent Port Name, ",
+      "bbox": [
+        105.54,
+        622.81,
+        536.34,
+        636.46
+      ],
+      "block_index": 22,
+      "line_index": 7,
+      "span_index": 2
+    },
+    {
+      "span_id": "p163_s0081",
+      "text": "including the FLOGI-assigned N_Port ID; Name Server attributes for the N_Port ID are cleared. Other ",
+      "bbox": [
+        112.74,
+        637.39,
+        518.24,
+        647.44
+      ],
+      "block_index": 22,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0082",
+      "text": "logged-in N_Port IDs continue to be associated with their current Permanent Port Names. See FC-GS-5 for ",
+      "bbox": [
+        112.74,
+        648.38,
+        540.84,
+        658.42
+      ],
+      "block_index": 22,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0083",
+      "text": "a definition of Permanent Port name.",
+      "bbox": [
+        112.74,
+        659.42,
+        259.16,
+        669.46
+      ],
+      "block_index": 22,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0084",
+      "text": "d",
+      "bbox": [
+        101.94,
+        670.82,
+        105.94,
+        678.86
+      ],
+      "block_index": 22,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p163_s0085",
+      "text": " Whenever a new N_Port ID is assigned by either FLOGI or FDISC, or logged out, the nameserver database ",
+      "bbox": [
+        105.94,
+        669.19,
+        541.23,
+        682.84
+      ],
+      "block_index": 22,
+      "line_index": 11,
+      "span_index": 2
+    },
+    {
+      "span_id": "p163_s0086",
+      "text": "is updated and the applicable RSCNs are sent.",
+      "bbox": [
+        112.74,
+        683.77,
+        299.53,
+        693.82
+      ],
+      "block_index": 22,
+      "line_index": 12,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0155"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "Descriptor Control",
+      "Descriptor Type",
+      "Descriptor Length",
+      null
+    ],
+    [
+      "1",
+      "T10 Vendor ID",
+      null,
+      null,
+      null
+    ],
+    [
+      "2",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "3",
+      "Vendor Specific",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "N",
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

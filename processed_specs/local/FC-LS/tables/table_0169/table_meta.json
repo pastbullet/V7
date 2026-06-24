@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0169",
+  "type": "table",
+  "caption": "Table 157 – Class Service Parameters - PLOGI and PLOGI LS_ACC",
+  "pages": [
+    179
+  ],
+  "bbox": [
+    92.89,
+    303.82,
+    542.61,
+    423.82
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 179,
+  "logical_table": false
+}

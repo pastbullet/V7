@@ -1,0 +1,36 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Item", "page": 73, "bbox": [146.69, 98.48, 394.77, 120.0]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Word", "page": 73, "bbox": [394.77, 98.48, 444.33, 120.0]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Bit", "page": 73, "bbox": [444.33, 98.48, 489.31, 120.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "TYPE Code or Common Service Parameters*", "page": 73, "bbox": [146.69, 120.0, 394.77, 144.03]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "0", "page": 73, "bbox": [394.77, 120.0, 444.33, 144.03]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "31-24", "page": 73, "bbox": [444.33, 120.0, 489.31, 144.03]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "TYPE Code Extension", "page": 73, "bbox": [146.69, 144.03, 394.77, 168.03]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "0", "page": 73, "bbox": [394.77, 144.03, 444.33, 168.03]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "23-16", "page": 73, "bbox": [444.33, 144.03, 489.31, 168.03]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "Originator Process_Associator Validity", "page": 73, "bbox": [146.69, 168.03, 394.77, 192.03]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "0", "page": 73, "bbox": [394.77, 168.03, 444.33, 192.03]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "15", "page": 73, "bbox": [444.33, 168.03, 489.31, 192.03]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "Responder Process_Associator Validity", "page": 73, "bbox": [146.69, 192.03, 394.77, 216.03]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "0", "page": 73, "bbox": [394.77, 192.03, 444.33, 216.03]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "14", "page": 73, "bbox": [444.33, 192.03, 489.31, 216.03]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "Image Pair Established", "page": 73, "bbox": [146.69, 216.03, 394.77, 240.03]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "0", "page": 73, "bbox": [394.77, 216.03, 444.33, 240.03]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "13", "page": 73, "bbox": [444.33, 216.03, 489.31, 240.03]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "Reserved", "page": 73, "bbox": [146.69, 240.03, 394.77, 264.03]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "0", "page": 73, "bbox": [394.77, 240.03, 444.33, 264.03]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "12", "page": 73, "bbox": [444.33, 240.03, 489.31, 264.03]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "Response Code (see table 46)", "page": 73, "bbox": [146.69, 264.03, 394.77, 288.03]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "0", "page": 73, "bbox": [394.77, 264.03, 444.33, 288.03]}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "11-8", "page": 73, "bbox": [444.33, 264.03, 489.31, 288.03]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "Reserved", "page": 73, "bbox": [146.69, 288.03, 394.77, 312.03]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "0", "page": 73, "bbox": [394.77, 288.03, 444.33, 312.03]}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "7-0", "page": 73, "bbox": [444.33, 288.03, 489.31, 312.03]}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "Originator Process_Associator", "page": 73, "bbox": [146.69, 312.03, 394.77, 336.03]}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "1", "page": 73, "bbox": [394.77, 312.03, 444.33, 336.03]}
+{"cell_id": "r10c3", "row": 10, "col": 3, "text": "31-0", "page": 73, "bbox": [444.33, 312.03, 489.31, 336.03]}
+{"cell_id": "r11c1", "row": 11, "col": 1, "text": "Responder Process_Associator", "page": 73, "bbox": [146.69, 336.03, 394.77, 360.03]}
+{"cell_id": "r11c2", "row": 11, "col": 2, "text": "2", "page": 73, "bbox": [394.77, 336.03, 444.33, 360.03]}
+{"cell_id": "r11c3", "row": 11, "col": 3, "text": "31-0", "page": 73, "bbox": [444.33, 336.03, 489.31, 360.03]}
+{"cell_id": "r12c1", "row": 12, "col": 1, "text": "Service Parameter Response (optional per FC-4)", "page": 73, "bbox": [146.69, 360.03, 394.77, 419.5]}
+{"cell_id": "r12c2", "row": 12, "col": 2, "text": "3 - 63 as\nspecified\nby each\nFC-4", "page": 73, "bbox": [394.77, 360.03, 444.33, 419.5]}
+{"cell_id": "r12c3", "row": 12, "col": 3, "text": "31-0", "page": 73, "bbox": [444.33, 360.03, 489.31, 419.5]}

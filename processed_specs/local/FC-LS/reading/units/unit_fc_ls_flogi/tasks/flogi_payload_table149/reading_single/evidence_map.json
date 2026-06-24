@@ -1,0 +1,379 @@
+{
+  "fc_ls_t149_scope": [
+    {
+      "type": "text_span",
+      "span_id": "p165_s0019",
+      "quote": "Table 149 defines the Payload format for the FLOGI and PLOGI ELSs and the LS_ACCs.  The defini-"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p165_s0020",
+      "quote": "tions of the parameters are applicable to PLOGI, FLOGI, PLOGI LS_ACC and FLOGI LS_ACC un-"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p165_s0021",
+      "quote": "less stated otherwise."
+    }
+  ],
+  "fc_ls_t149_word0": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r2c1",
+      "quote": "0"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r2c2",
+      "quote": "ELS_Command code"
+    }
+  ],
+  "fc_ls_t149_words1_4": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r3c1",
+      "quote": "1"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r3c2",
+      "quote": "MSB\nCommon Service Parameters\n(16 bytes)\nLSB"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r5c1",
+      "quote": "4"
+    }
+  ],
+  "fc_ls_t149_words5_6": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r6c1",
+      "quote": "5"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r6c2",
+      "quote": "MSB\nPort_Name\nLSB"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r7c1",
+      "quote": "6"
+    }
+  ],
+  "fc_ls_t149_words7_8": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r8c1",
+      "quote": "7"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r8c2",
+      "quote": "MSB\nNode_ or Fabric_Name\nLSB"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r9c1",
+      "quote": "8"
+    }
+  ],
+  "fc_ls_t149_words9_12": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r10c1",
+      "quote": "9"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r10c2",
+      "quote": "MSB\nClass 1 and Class 6 Service Parameters\n(16 bytes)\nLSB"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r12c1",
+      "quote": "12"
+    }
+  ],
+  "fc_ls_t149_class6_reuse": [
+    {
+      "type": "text_span",
+      "span_id": "p165_s0022",
+      "quote": "There are no separate Class 6 login Service Parameters as Class 1 service parameters are used in-"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p165_s0023",
+      "quote": "stead."
+    }
+  ],
+  "fc_ls_t149_words13_16": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r13c1",
+      "quote": "13"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r13c2",
+      "quote": "MSB\nClass 2 Service Parameters\n(16 bytes)\nLSB"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r15c1",
+      "quote": "16"
+    }
+  ],
+  "fc_ls_t149_words17_20": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r16c1",
+      "quote": "17"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r16c2",
+      "quote": "MSB\nClass 3 Service Parameters\n(16 bytes)\nLSB"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r18c1",
+      "quote": "20"
+    }
+  ],
+  "fc_ls_t149_words21_24": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r19c1",
+      "quote": "21"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r19c2",
+      "quote": "Obsolete"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r21c1",
+      "quote": "24"
+    }
+  ],
+  "fc_ls_t149_words25_28": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r22c1",
+      "quote": "25"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r22c2",
+      "quote": "MSB\nVendor Version Level\n(16 bytes)\nLSB"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r24c1",
+      "quote": "28"
+    }
+  ],
+  "fc_ls_t149_words29_30": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r25c1",
+      "quote": "29"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r25c2",
+      "quote": "MSB Services Availabilitya\n(8 bytes) LSB"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r26c1",
+      "quote": "30"
+    }
+  ],
+  "fc_ls_t149_word31": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r27c1",
+      "quote": "31"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r27c2",
+      "quote": "Login Extension Data Lengtha"
+    }
+  ],
+  "fc_ls_t149_words32_61": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r28c1",
+      "quote": "32"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r28c2",
+      "quote": "Reserved"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r30c1",
+      "quote": "61"
+    }
+  ],
+  "fc_ls_t149_words62_63": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r31c1",
+      "quote": "62"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r31c2",
+      "quote": "Clock Synchronization QoSa\n(8 bytes)"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r32c1",
+      "quote": "63"
+    }
+  ],
+  "fc_ls_t149_words64_n": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r33c1",
+      "quote": "64 to n"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r33c2",
+      "quote": "Login Extension Data (if any)"
+    }
+  ],
+  "fc_ls_t149_payload_bit_one_condition": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r25c2",
+      "quote": "MSB Services Availabilitya\n(8 bytes) LSB"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r27c2",
+      "quote": "Login Extension Data Lengtha"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r31c2",
+      "quote": "Clock Synchronization QoSa\n(8 bytes)"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r33c2",
+      "quote": "Login Extension Data (if any)"
+    },
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r34c1",
+      "quote": "a These fields are only present when the Payload Bit (see 6.6.2.4.19) is set to one. When the Payload bit is\nset to zero, these fields are not present in the Payload (i.e., the Payload is 116 bytes long)."
+    }
+  ],
+  "fc_ls_t149_payload_bit_zero_length": [
+    {
+      "type": "table_cell",
+      "asset_id": "table_0157",
+      "cell_id": "r34c1",
+      "quote": "a These fields are only present when the Payload Bit (see 6.6.2.4.19) is set to one. When the Payload bit is\nset to zero, these fields are not present in the Payload (i.e., the Payload is 116 bytes long)."
+    }
+  ],
+  "fc_ls_t149_login_256_unknown_buffers_step1": [
+    {
+      "type": "text_span",
+      "span_id": "p165_s0007",
+      "quote": "If a Login of 256 bytes or more is required when the buffer conditions of the destination port are un-"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p165_s0008",
+      "quote": "known, a timeout may be avoided with the following procedure:"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p165_s0009",
+      "quote": "1) issue a Login request with the Payload Bit (see 6.6.2.4.19) set to zero;"
+    }
+  ],
+  "fc_ls_t149_login_256_unknown_buffers_step2": [
+    {
+      "type": "text_span",
+      "span_id": "p165_s0010",
+      "quote": "2) if the Query Buffer Conditions bit (see 6.6.2.4.14) is set to one in the LS_ACC, issue an RPBC"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p165_s0011",
+      "quote": "ELS (see 4.2.37); and"
+    }
+  ],
+  "fc_ls_t149_login_256_unknown_buffers_step3": [
+    {
+      "type": "text_span",
+      "span_id": "p165_s0012",
+      "quote": "3) if both the ELS Receive Data Field Size field in the RPBC LS_ACC Payload and the Buffer-to-"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p165_s0013",
+      "quote": "buffer Receive Data_Field Size field in the Login LS_ACC Payload are at least 256 bytes, issue"
+    },
+    {
+      "type": "text_span",
+      "span_id": "p165_s0014",
+      "quote": "a Login request with the Payload Bit set to one."
+    }
+  ]
+}

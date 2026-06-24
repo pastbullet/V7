@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Nx_Port", "page": 180, "bbox": [95.14, 519.84, 142.41, 536.34]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Fx_Port", "page": 180, "bbox": [142.41, 519.84, 190.29, 536.34]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Meaning", "page": 180, "bbox": [190.29, 519.84, 540.86, 536.34]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 180, "bbox": [95.14, 536.34, 142.41, 553.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "0", "page": 180, "bbox": [142.41, 536.34, 190.29, 553.35]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Neither supports", "page": 180, "bbox": [190.29, 536.34, 540.86, 553.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "0", "page": 180, "bbox": [95.14, 553.35, 142.41, 570.39]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "1", "page": 180, "bbox": [142.41, 553.35, 190.29, 570.39]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "Fabric is capable of supporting, Intermix not functional", "page": 180, "bbox": [190.29, 553.35, 540.86, 570.39]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "1", "page": 180, "bbox": [95.14, 570.39, 142.41, 587.37]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "0", "page": 180, "bbox": [142.41, 570.39, 190.29, 587.37]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Nx_Port support requested, Fabric does not support", "page": 180, "bbox": [190.29, 570.39, 540.86, 587.37]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "1", "page": 180, "bbox": [95.14, 587.37, 142.41, 603.84]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "1", "page": 180, "bbox": [142.41, 587.37, 190.29, 603.84]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "Nx_Port requested, Fabric is capable of supporting, Intermix is functional", "page": 180, "bbox": [190.29, 587.37, 540.86, 603.84]}

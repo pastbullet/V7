@@ -1,0 +1,54 @@
+{
+  "rows": [
+    [
+      "Bits",
+      "Meaning",
+      null
+    ],
+    [
+      "28",
+      "Expansion Port:\nWhen set to one, indicates that the switch port is an Inter-Switch-Link Expansion port\n(E_Port). When zero, bit 28 indicates that the switch port is not an Inter-Switch-Link\nExpansion port.",
+      null
+    ],
+    [
+      "27-26",
+      "Severity Indication:\nBits 27-26 constitute a two-bit code that identifies the severity indication for the link\nincident. The codes and their meanings are as follows:",
+      null
+    ],
+    [
+      null,
+      "Code",
+      "Meaning"
+    ],
+    [
+      null,
+      "0",
+      "Informational report:\nIndicates link incident notification of an informational purpose."
+    ],
+    [
+      null,
+      "1",
+      "Link degraded but operational:\nIndicates if the link associated with the incident port is not in a Link-Failure or\nOffline State as a result of the event that generated the Link Incident Record."
+    ],
+    [
+      null,
+      "2",
+      "Link not operational:\nIndicates if the link associated with the incident port is in a Link-Failure or\nOffline State as a result of the event that generated the Link Incident Record."
+    ],
+    [
+      null,
+      "3",
+      "Reserved."
+    ],
+    [
+      "25",
+      "Subassembly type:\nWhen set to one, specifies that the type of subassembly used for the port that is the\nsubject of this Link Incident Record is a laser. When set to zero, specifies that the type\nof subassembly used for the port that is the subject of this Link Incident Record is not\na laser.",
+      null
+    ],
+    [
+      "24",
+      "FRU identification:\nWhen set to one, specifies that the Specific-Link Incident Record Data is in a format\nthat provides field-replaceable-unit (FRU) identification. When set to zero, specifies\nthat the Specific-Link Incident Record Data is not in a format that provides field-\nreplaceable-unit (FRU) identification.",
+      null
+    ]
+  ]
+}

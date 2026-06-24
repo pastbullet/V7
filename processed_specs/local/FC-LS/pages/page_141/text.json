@@ -1,0 +1,739 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 141,
+  "spans": [
+    {
+      "span_id": "p141_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0002",
+      "text": " 122",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0003",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        57.65,
+        142.22,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0004",
+      "text": "LS_ACC signifies acceptance of the FFI_ PSS Request. The format of the LS_ACC Pay-",
+      "bbox": [
+        142.5,
+        57.65,
+        540.05,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p141_s0005",
+      "text": "load for FFI_ PSS is shown in table 137.",
+      "bbox": [
+        96.0,
+        69.65,
+        274.32,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0006",
+      "text": "4.2.48",
+      "bbox": [
+        96.0,
+        178.97,
+        123.74,
+        190.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0007",
+      "text": "FFI Map Update Registration (FFI_MUR)",
+      "bbox": [
+        133.8,
+        178.97,
+        322.07,
+        190.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0008",
+      "text": "4.2.48.1  Description",
+      "bbox": [
+        96.0,
+        202.96,
+        192.69,
+        214.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0009",
+      "text": "The FFI_MUR ELS Request shall request the Domain Controller of the AE Principal Switch to add or",
+      "bbox": [
+        96.0,
+        226.96,
+        540.01,
+        238.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0010",
+      "text": "remove the Nx_Port that is sending the FFI_MUR Request (S_ID value) to/from the list of Nx_Ports",
+      "bbox": [
+        96.0,
+        238.96,
+        539.94,
+        250.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0011",
+      "text": "registered to receive the FFI_RMUN ELS Requests (see 4.2.49).",
+      "bbox": [
+        96.0,
+        250.96,
+        382.1,
+        262.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0012",
+      "text": "Support for this ELS is mandatory for a Domain Controller in an AE Principal Switch or an AE Switch",
+      "bbox": [
+        96.0,
+        274.96,
+        540.08,
+        286.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0013",
+      "text": "that is capable of becoming an AE Principal switch. Support for this ELS is optional for Nx_Ports.",
+      "bbox": [
+        96.0,
+        286.96,
+        523.13,
+        298.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0014",
+      "text": "If the Domain Controller that receives an FFI_MUR request currently is not the AE Principal Switch, it",
+      "bbox": [
+        96.0,
+        310.96,
+        540.04,
+        322.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0015",
+      "text": "shall respond with an LS_RJT reply with a reason code of “Logical error”.",
+      "bbox": [
+        96.0,
+        322.96,
+        418.64,
+        334.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0016",
+      "text": "If a destination receives this ELS Request that is not a Domain Controller, it shall respond with an",
+      "bbox": [
+        96.0,
+        346.96,
+        539.81,
+        358.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0017",
+      "text": "LS_RJT reply with a reason code of “Command not supported”.",
+      "bbox": [
+        96.0,
+        358.96,
+        376.48,
+        370.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0018",
+      "text": "4.2.48.2  Protocol",
+      "bbox": [
+        96.0,
+        382.96,
+        178.28,
+        394.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0019",
+      "text": "a) FFI Map Update Registration Request Sequence; and",
+      "bbox": [
+        106.02,
+        406.96,
+        360.74,
+        418.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0020",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence.",
+      "bbox": [
+        106.02,
+        430.96,
+        290.7,
+        442.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0021",
+      "text": "4.2.48.3  Request Sequence",
+      "bbox": [
+        96.0,
+        454.96,
+        227.12,
+        466.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0022",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        478.96,
+        157.1,
+        490.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0023",
+      "text": "The S_ID designates the Nx_Port requesting registration for FFI Map Update Notifica-",
+      "bbox": [
+        157.38,
+        478.96,
+        540.14,
+        490.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p141_s0024",
+      "text": "tion. The D_ID designates the Domain Controller of the AE Principal Switch in the form FFFCxxh,",
+      "bbox": [
+        96.0,
+        490.96,
+        539.9,
+        502.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0025",
+      "text": "where xx is the one-byte value assigned to the Domain Controller.",
+      "bbox": [
+        96.0,
+        502.96,
+        387.66,
+        514.08
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0026",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        526.96,
+        140.41,
+        538.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0027",
+      "text": "The format of the FFI_MUR Request Payload is shown in table 138. ",
+      "bbox": [
+        140.4,
+        526.96,
+        443.25,
+        538.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p141_s0028",
+      "text": " Table 137 – FFI_PSS LS_ACC Payload",
+      "bbox": [
+        226.08,
+        91.66,
+        409.81,
+        102.78
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0029",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        113.62,
+        133.06,
+        124.74
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0030",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        125.62,
+        136.35,
+        136.73
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0031",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        113.62,
+        233.97,
+        124.74
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0032",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        113.62,
+        328.42,
+        124.74
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0033",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        113.62,
+        427.0,
+        124.74
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0034",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        113.62,
+        522.83,
+        124.74
+      ],
+      "block_index": 17,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0035",
+      "text": "0",
+      "bbox": [
+        120.84,
+        142.66,
+        126.38,
+        153.78
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0036",
+      "text": "02h",
+      "bbox": [
+        149.88,
+        142.66,
+        166.52,
+        153.78
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0037",
+      "text": "00h",
+      "bbox": [
+        247.08,
+        142.66,
+        263.71,
+        153.78
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0038",
+      "text": "00h",
+      "bbox": [
+        344.27,
+        142.66,
+        360.97,
+        153.78
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0039",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        142.66,
+        458.16,
+        153.78
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0040",
+      "text": " Table 138 – FFI_MUR Payload",
+      "bbox": [
+        246.06,
+        548.98,
+        389.92,
+        560.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0041",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        571.0,
+        133.06,
+        582.12
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0042",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        583.0,
+        136.35,
+        594.11
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0043",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        571.0,
+        233.97,
+        582.12
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0044",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        571.0,
+        328.42,
+        582.12
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0045",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        571.0,
+        427.0,
+        582.12
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0046",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        571.0,
+        522.83,
+        582.12
+      ],
+      "block_index": 20,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0047",
+      "text": "0",
+      "bbox": [
+        120.84,
+        599.98,
+        126.38,
+        611.09
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0048",
+      "text": "FFI_MUR (A3h)",
+      "bbox": [
+        149.88,
+        599.98,
+        220.41,
+        611.09
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0049",
+      "text": "00h",
+      "bbox": [
+        247.1,
+        599.98,
+        263.73,
+        611.09
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0050",
+      "text": "00h",
+      "bbox": [
+        344.29,
+        599.98,
+        360.97,
+        611.09
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0051",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        599.98,
+        458.15,
+        611.09
+      ],
+      "block_index": 21,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0052",
+      "text": "1",
+      "bbox": [
+        120.84,
+        616.96,
+        126.38,
+        628.07
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0053",
+      "text": "00h",
+      "bbox": [
+        149.88,
+        616.96,
+        166.5,
+        628.07
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0054",
+      "text": "00h",
+      "bbox": [
+        247.07,
+        616.96,
+        263.7,
+        628.07
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0055",
+      "text": "00h",
+      "bbox": [
+        344.26,
+        616.96,
+        360.93,
+        628.07
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p141_s0056",
+      "text": "Registration Function",
+      "bbox": [
+        441.43,
+        616.96,
+        535.76,
+        628.07
+      ],
+      "block_index": 22,
+      "line_index": 5,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0139",
+    "table_0142"
+  ]
+}

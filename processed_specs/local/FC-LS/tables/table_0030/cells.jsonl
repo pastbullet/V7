@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 61, "bbox": [99.6, 98.62, 147.9, 126.99]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 61, "bbox": [147.9, 98.62, 245.13, 126.99]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 61, "bbox": [245.13, 98.62, 342.33, 126.99]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08", "page": 61, "bbox": [342.33, 98.62, 439.53, 126.99]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00", "page": 61, "bbox": [439.53, 98.62, 536.4, 126.99]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 61, "bbox": [99.6, 126.99, 147.9, 144.03]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "LINIT (70h)", "page": 61, "bbox": [147.9, 126.99, 245.13, 144.03]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "00h", "page": 61, "bbox": [245.13, 126.99, 342.33, 144.03]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "00h", "page": 61, "bbox": [342.33, 126.99, 439.53, 144.03]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "00h", "page": 61, "bbox": [439.53, 126.99, 536.4, 144.03]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 61, "bbox": [99.6, 144.03, 147.9, 160.34]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Reserved", "page": 61, "bbox": [147.9, 144.03, 245.13, 160.34]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "Initialization Function", "page": 61, "bbox": [245.13, 144.03, 342.33, 160.34]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "LIP byte 3", "page": 61, "bbox": [342.33, 144.03, 439.53, 160.34]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "LIP byte 4", "page": 61, "bbox": [439.53, 144.03, 536.4, 160.34]}

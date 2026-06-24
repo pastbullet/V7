@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0058",
+  "type": "table",
+  "caption": "Table 55 – TPLS response page format",
+  "pages": [
+    81
+  ],
+  "bbox": [
+    158.12,
+    183.82,
+    477.88,
+    444.82
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 81,
+  "logical_table": false
+}

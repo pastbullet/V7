@@ -1,0 +1,608 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 107,
+  "spans": [
+    {
+      "span_id": "p107_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0002",
+      "text": " 88",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0003",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        57.65,
+        142.05,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0004",
+      "text": "The format of the Payload for the LS_ACC indicating that this request has been success-",
+      "bbox": [
+        142.08,
+        57.65,
+        539.99,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p107_s0005",
+      "text": "fully completed is shown in table 88.  If the Nx_Port is unable to perform all of the above functions, it",
+      "bbox": [
+        96.0,
+        69.65,
+        540.02,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0006",
+      "text": "shall send an LS_RJT as a reply.",
+      "bbox": [
+        96.0,
+        81.65,
+        242.62,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0007",
+      "text": "4.2.31",
+      "bbox": [
+        96.0,
+        190.97,
+        123.74,
+        202.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0008",
+      "text": "Discover N_Port/Service Parameters (PDISC)",
+      "bbox": [
+        133.8,
+        190.97,
+        347.09,
+        202.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0009",
+      "text": "4.2.31.1  Description",
+      "bbox": [
+        96.0,
+        214.96,
+        192.63,
+        226.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0010",
+      "text": "The PDISC ELS shall transfer Service Parameters from the initiating Nx_Port to the Nx_Port associ-",
+      "bbox": [
+        96.0,
+        238.96,
+        540.06,
+        250.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0011",
+      "text": "ated with the D_ID without affecting the operating environment between the two ports.  This provides",
+      "bbox": [
+        96.0,
+        250.96,
+        539.95,
+        262.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0012",
+      "text": "the means for exchange of Service Parameters without terminating open Sequences or open Ex-",
+      "bbox": [
+        96.0,
+        262.96,
+        540.11,
+        274.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0013",
+      "text": "changes.",
+      "bbox": [
+        96.0,
+        274.96,
+        136.49,
+        286.08
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0014",
+      "text": "4.2.31.2  Protocol",
+      "bbox": [
+        96.0,
+        298.96,
+        178.22,
+        310.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0015",
+      "text": "a) PDISC Sequence",
+      "bbox": [
+        106.02,
+        322.96,
+        200.73,
+        334.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0016",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence",
+      "bbox": [
+        106.02,
+        346.96,
+        287.89,
+        358.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0017",
+      "text": "4.2.31.3  Request Sequence",
+      "bbox": [
+        96.0,
+        370.96,
+        227.06,
+        382.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0018",
+      "text": "The Payload in PDISC and the LS_ACC are, except for the ELS_Command, identical to the Pay-",
+      "bbox": [
+        96.0,
+        394.96,
+        540.16,
+        406.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0019",
+      "text": "loads in PLOGI (see 4.2.7) and the corresponding LS_ACC (see 4.3.2).  The interchange of PDISC",
+      "bbox": [
+        96.0,
+        406.96,
+        539.88,
+        418.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0020",
+      "text": "information shall not modify the operating environment or Service Parameters between the two ports.",
+      "bbox": [
+        96.0,
+        418.96,
+        540.13,
+        430.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0021",
+      "text": "Service Parameters contained in PDISC shall be ignored and no error condition shall be reported.",
+      "bbox": [
+        96.0,
+        430.96,
+        527.06,
+        442.08
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0022",
+      "text": "4.2.31.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        454.96,
+        214.86,
+        466.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0023",
+      "text": "A response shall not be sent to a PDISC if a LR or loop initialization occurs before the LS_ACC is",
+      "bbox": [
+        96.0,
+        478.96,
+        539.94,
+        490.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0024",
+      "text": "sent.  An LS_ACC for a PDISC shall be ignored if a LR or loop initialization occurred between the",
+      "bbox": [
+        96.0,
+        490.96,
+        539.85,
+        502.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0025",
+      "text": "PDISC and the LS_ACC.",
+      "bbox": [
+        96.0,
+        502.96,
+        207.07,
+        514.08
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0026",
+      "text": "4.2.32",
+      "bbox": [
+        96.0,
+        526.96,
+        123.8,
+        538.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0027",
+      "text": "Discover F_Port Service Parameters (FDISC)",
+      "bbox": [
+        133.8,
+        526.96,
+        345.33,
+        538.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0028",
+      "text": "4.2.32.1  Description",
+      "bbox": [
+        96.0,
+        550.96,
+        192.63,
+        562.07
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0029",
+      "text": "The FDISC ELS shall transfer Service Parameters from the initiating Nx_Port to the Fx_Port at well-",
+      "bbox": [
+        96.0,
+        574.96,
+        540.0,
+        586.07
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0030",
+      "text": "known F_Port_ID (i.e., FFFFFEh).  This provides the means for the exchange of Service Parameters",
+      "bbox": [
+        96.0,
+        586.96,
+        539.96,
+        598.07
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0031",
+      "text": "and the assignment of an additional N_Port_IDs without changing service parameters.",
+      "bbox": [
+        96.0,
+        598.96,
+        476.56,
+        610.07
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0032",
+      "text": "4.2.32.2  Protocol",
+      "bbox": [
+        96.0,
+        622.96,
+        178.22,
+        634.07
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0033",
+      "text": "a) FDISC Sequence",
+      "bbox": [
+        106.02,
+        647.02,
+        200.1,
+        658.13
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0034",
+      "text": "b) LS_ACC, LS_RJT Reply Sequence",
+      "bbox": [
+        106.02,
+        671.02,
+        278.97,
+        682.13
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0035",
+      "text": " Table 88 – N_Port Deactivate Alias_ID LS_ACC Payload",
+      "bbox": [
+        185.22,
+        103.66,
+        450.7,
+        114.77
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0036",
+      "text": "Bits",
+      "bbox": [
+        110.46,
+        125.62,
+        129.34,
+        136.73
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0037",
+      "text": "Word",
+      "bbox": [
+        107.1,
+        137.62,
+        132.62,
+        148.73
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0038",
+      "text": "31        ..         24",
+      "bbox": [
+        152.94,
+        125.62,
+        227.94,
+        136.73
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0039",
+      "text": "23        ..       16",
+      "bbox": [
+        256.6,
+        125.62,
+        326.02,
+        136.73
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0040",
+      "text": "15         ..       08",
+      "bbox": [
+        353.42,
+        125.62,
+        425.61,
+        136.73
+      ],
+      "block_index": 21,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0041",
+      "text": "07        ..       00",
+      "bbox": [
+        451.93,
+        125.62,
+        521.34,
+        136.73
+      ],
+      "block_index": 21,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0042",
+      "text": "0",
+      "bbox": [
+        117.12,
+        154.66,
+        122.66,
+        165.77
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0043",
+      "text": "02h",
+      "bbox": [
+        146.16,
+        154.66,
+        162.85,
+        165.77
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0044",
+      "text": "00h",
+      "bbox": [
+        238.67,
+        154.66,
+        255.31,
+        165.77
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0045",
+      "text": "00h",
+      "bbox": [
+        347.99,
+        154.66,
+        364.63,
+        165.77
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p107_s0046",
+      "text": "00h",
+      "bbox": [
+        435.11,
+        154.66,
+        451.8,
+        165.77
+      ],
+      "block_index": 22,
+      "line_index": 5,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0091"
+  ]
+}

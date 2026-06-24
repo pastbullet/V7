@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0181",
+  "type": "table",
+  "caption": "Table 169 – Error Policy Bits Definition",
+  "pages": [
+    188
+  ],
+  "bbox": [
+    114.64,
+    123.62,
+    521.36,
+    233.04
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 188,
+  "logical_table": false
+}

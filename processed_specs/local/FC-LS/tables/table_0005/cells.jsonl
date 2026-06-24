@@ -1,0 +1,105 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Value\n(Bits 31-24)", "page": 39, "bbox": [97.11, 76.73, 154.23, 121.98]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Description", "page": 39, "bbox": [154.23, 76.73, 366.69, 121.98]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Abbr.", "page": 39, "bbox": [366.69, 76.73, 436.47, 121.98]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "Reference", "page": 39, "bbox": [436.47, 76.73, 488.31, 121.98]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "N_Port\nLogin\nRequired", "page": 39, "bbox": [488.31, 76.73, 538.89, 121.98]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "60h", "page": 39, "bbox": [97.11, 121.98, 154.23, 146.01]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Fabric Address Notification", "page": 39, "bbox": [154.23, 121.98, 366.69, 146.01]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "FAN", "page": 39, "bbox": [366.69, 121.98, 436.47, 146.01]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "4.2.15", "page": 39, "bbox": [436.47, 121.98, 488.31, 146.01]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "No", "page": 39, "bbox": [488.31, 121.98, 538.89, 146.01]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "61h", "page": 39, "bbox": [97.11, 146.01, 154.23, 170.01]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Registered State Change Notification", "page": 39, "bbox": [154.23, 146.01, 366.69, 170.01]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "RSCN", "page": 39, "bbox": [366.69, 146.01, 436.47, 170.01]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "4.2.18", "page": 39, "bbox": [436.47, 146.01, 488.31, 170.01]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "No", "page": 39, "bbox": [488.31, 146.01, 538.89, 170.01]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "62h", "page": 39, "bbox": [97.11, 170.01, 154.23, 194.01]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "State Change Registration", "page": 39, "bbox": [154.23, 170.01, 366.69, 194.01]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "SCR", "page": 39, "bbox": [366.69, 170.01, 436.47, 194.01]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "4.2.19", "page": 39, "bbox": [436.47, 170.01, 488.31, 194.01]}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "No", "page": 39, "bbox": [488.31, 170.01, 538.89, 194.01]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "63h", "page": 39, "bbox": [97.11, 194.01, 154.23, 218.01]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Report node FC-4 Types", "page": 39, "bbox": [154.23, 194.01, 366.69, 218.01]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "RNFT", "page": 39, "bbox": [366.69, 194.01, 436.47, 218.01]}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "4.2.38", "page": 39, "bbox": [436.47, 194.01, 488.31, 218.01]}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "Yes", "page": 39, "bbox": [488.31, 194.01, 538.89, 218.01]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "68h", "page": 39, "bbox": [97.11, 218.01, 154.23, 242.01]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "Clock Synchronization Request", "page": 39, "bbox": [154.23, 218.01, 366.69, 242.01]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "CSR", "page": 39, "bbox": [366.69, 218.01, 436.47, 242.01]}
+{"cell_id": "r6c4", "row": 6, "col": 4, "text": "4.2.35", "page": 39, "bbox": [436.47, 218.01, 488.31, 242.01]}
+{"cell_id": "r6c5", "row": 6, "col": 5, "text": "No", "page": 39, "bbox": [488.31, 218.01, 538.89, 242.01]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "69h", "page": 39, "bbox": [97.11, 242.01, 154.23, 266.01]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "Clock Synchronization Update", "page": 39, "bbox": [154.23, 242.01, 366.69, 266.01]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "CSU", "page": 39, "bbox": [366.69, 242.01, 436.47, 266.01]}
+{"cell_id": "r7c4", "row": 7, "col": 4, "text": "4.2.36", "page": 39, "bbox": [436.47, 242.01, 488.31, 266.01]}
+{"cell_id": "r7c5", "row": 7, "col": 5, "text": "No", "page": 39, "bbox": [488.31, 242.01, 538.89, 266.01]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "70h", "page": 39, "bbox": [97.11, 266.01, 154.23, 290.01]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "Loop Initialize", "page": 39, "bbox": [154.23, 266.01, 366.69, 290.01]}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "LINIT", "page": 39, "bbox": [366.69, 266.01, 436.47, 290.01]}
+{"cell_id": "r8c4", "row": 8, "col": 4, "text": "4.2.16", "page": 39, "bbox": [436.47, 266.01, 488.31, 290.01]}
+{"cell_id": "r8c5", "row": 8, "col": 5, "text": "No", "page": 39, "bbox": [488.31, 266.01, 538.89, 290.01]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "71h", "page": 39, "bbox": [97.11, 290.01, 154.23, 314.01]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "Loop Port Control - obsolete", "page": 39, "bbox": [154.23, 290.01, 366.69, 314.01]}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "LPC", "page": 39, "bbox": [366.69, 290.01, 436.47, 314.01]}
+{"cell_id": "r9c4", "row": 9, "col": 4, "text": "N/A", "page": 39, "bbox": [436.47, 290.01, 488.31, 314.01]}
+{"cell_id": "r9c5", "row": 9, "col": 5, "text": "No", "page": 39, "bbox": [488.31, 290.01, 538.89, 314.01]}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "72h", "page": 39, "bbox": [97.11, 314.01, 154.23, 338.01]}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "Loop Status", "page": 39, "bbox": [154.23, 314.01, 366.69, 338.01]}
+{"cell_id": "r10c3", "row": 10, "col": 3, "text": "LSTS", "page": 39, "bbox": [366.69, 314.01, 436.47, 338.01]}
+{"cell_id": "r10c4", "row": 10, "col": 4, "text": "4.2.17", "page": 39, "bbox": [436.47, 314.01, 488.31, 338.01]}
+{"cell_id": "r10c5", "row": 10, "col": 5, "text": "No", "page": 39, "bbox": [488.31, 314.01, 538.89, 338.01]}
+{"cell_id": "r11c1", "row": 11, "col": 1, "text": "77h", "page": 39, "bbox": [97.11, 338.01, 154.23, 362.01]}
+{"cell_id": "r11c2", "row": 11, "col": 2, "text": "Vendor Specific", "page": 39, "bbox": [154.23, 338.01, 366.69, 362.01]}
+{"cell_id": "r11c3", "row": 11, "col": 3, "text": "", "page": 39, "bbox": [366.69, 338.01, 436.47, 362.01]}
+{"cell_id": "r11c4", "row": 11, "col": 4, "text": "", "page": 39, "bbox": [436.47, 338.01, 488.31, 362.01]}
+{"cell_id": "r11c5", "row": 11, "col": 5, "text": "N/A", "page": 39, "bbox": [488.31, 338.01, 538.89, 362.01]}
+{"cell_id": "r12c1", "row": 12, "col": 1, "text": "78h", "page": 39, "bbox": [97.11, 362.01, 154.23, 386.01]}
+{"cell_id": "r12c2", "row": 12, "col": 2, "text": "Request node Identification Data", "page": 39, "bbox": [154.23, 362.01, 366.69, 386.01]}
+{"cell_id": "r12c3", "row": 12, "col": 3, "text": "RNID", "page": 39, "bbox": [366.69, 362.01, 436.47, 386.01]}
+{"cell_id": "r12c4", "row": 12, "col": 4, "text": "4.2.23", "page": 39, "bbox": [436.47, 362.01, 488.31, 386.01]}
+{"cell_id": "r12c5", "row": 12, "col": 5, "text": "No", "page": 39, "bbox": [488.31, 362.01, 538.89, 386.01]}
+{"cell_id": "r13c1", "row": 13, "col": 1, "text": "79h", "page": 39, "bbox": [97.11, 386.01, 154.23, 410.01]}
+{"cell_id": "r13c2", "row": 13, "col": 2, "text": "Registered Link Incident Report", "page": 39, "bbox": [154.23, 386.01, 366.69, 410.01]}
+{"cell_id": "r13c3", "row": 13, "col": 3, "text": "RLIR", "page": 39, "bbox": [366.69, 386.01, 436.47, 410.01]}
+{"cell_id": "r13c4", "row": 13, "col": 4, "text": "4.2.24", "page": 39, "bbox": [436.47, 386.01, 488.31, 410.01]}
+{"cell_id": "r13c5", "row": 13, "col": 5, "text": "Yes", "page": 39, "bbox": [488.31, 386.01, 538.89, 410.01]}
+{"cell_id": "r14c1", "row": 14, "col": 1, "text": "7Ah", "page": 39, "bbox": [97.11, 410.01, 154.23, 434.01]}
+{"cell_id": "r14c2", "row": 14, "col": 2, "text": "Link Incident Record Registration", "page": 39, "bbox": [154.23, 410.01, 366.69, 434.01]}
+{"cell_id": "r14c3", "row": 14, "col": 3, "text": "LIRR", "page": 39, "bbox": [366.69, 410.01, 436.47, 434.01]}
+{"cell_id": "r14c4", "row": 14, "col": 4, "text": "4.2.25", "page": 39, "bbox": [436.47, 410.01, 488.31, 434.01]}
+{"cell_id": "r14c5", "row": 14, "col": 5, "text": "Yes", "page": 39, "bbox": [488.31, 410.01, 538.89, 434.01]}
+{"cell_id": "r15c1", "row": 15, "col": 1, "text": "7Bh", "page": 39, "bbox": [97.11, 434.01, 154.23, 458.01]}
+{"cell_id": "r15c2", "row": 15, "col": 2, "text": "Scan Remote Loop", "page": 39, "bbox": [154.23, 434.01, 366.69, 458.01]}
+{"cell_id": "r15c3", "row": 15, "col": 3, "text": "SRL", "page": 39, "bbox": [366.69, 434.01, 436.47, 458.01]}
+{"cell_id": "r15c4", "row": 15, "col": 4, "text": "4.2.39", "page": 39, "bbox": [436.47, 434.01, 488.31, 458.01]}
+{"cell_id": "r15c5", "row": 15, "col": 5, "text": "Yes", "page": 39, "bbox": [488.31, 434.01, 538.89, 458.01]}
+{"cell_id": "r16c1", "row": 16, "col": 1, "text": "7Ch", "page": 39, "bbox": [97.11, 458.01, 154.23, 482.01]}
+{"cell_id": "r16c2", "row": 16, "col": 2, "text": "Set Bit-error Reporting Parameters", "page": 39, "bbox": [154.23, 458.01, 366.69, 482.01]}
+{"cell_id": "r16c3", "row": 16, "col": 3, "text": "SBRP", "page": 39, "bbox": [366.69, 458.01, 436.47, 482.01]}
+{"cell_id": "r16c4", "row": 16, "col": 4, "text": "4.2.40", "page": 39, "bbox": [436.47, 458.01, 488.31, 482.01]}
+{"cell_id": "r16c5", "row": 16, "col": 5, "text": "Yes", "page": 39, "bbox": [488.31, 458.01, 538.89, 482.01]}
+{"cell_id": "r17c1", "row": 17, "col": 1, "text": "7Dh", "page": 39, "bbox": [97.11, 482.01, 154.23, 506.01]}
+{"cell_id": "r17c2", "row": 17, "col": 2, "text": "Report Port Speed Capabilities", "page": 39, "bbox": [154.23, 482.01, 366.69, 506.01]}
+{"cell_id": "r17c3", "row": 17, "col": 3, "text": "RPSC", "page": 39, "bbox": [366.69, 482.01, 436.47, 506.01]}
+{"cell_id": "r17c4", "row": 17, "col": 4, "text": "4.2.41", "page": 39, "bbox": [436.47, 482.01, 488.31, 506.01]}
+{"cell_id": "r17c5", "row": 17, "col": 5, "text": "Yes", "page": 39, "bbox": [488.31, 482.01, 538.89, 506.01]}
+{"cell_id": "r18c1", "row": 18, "col": 1, "text": "7Eh", "page": 39, "bbox": [97.11, 506.01, 154.23, 530.01]}
+{"cell_id": "r18c2", "row": 18, "col": 2, "text": "Query Security Attributes", "page": 39, "bbox": [154.23, 506.01, 366.69, 530.01]}
+{"cell_id": "r18c3", "row": 18, "col": 3, "text": "QSA", "page": 39, "bbox": [366.69, 506.01, 436.47, 530.01]}
+{"cell_id": "r18c4", "row": 18, "col": 4, "text": "see FC-SP", "page": 39, "bbox": [436.47, 506.01, 488.31, 530.01]}
+{"cell_id": "r18c5", "row": 18, "col": 5, "text": "see FC-SP", "page": 39, "bbox": [488.31, 506.01, 538.89, 530.01]}
+{"cell_id": "r19c1", "row": 19, "col": 1, "text": "7Fh", "page": 39, "bbox": [97.11, 530.01, 154.23, 554.01]}
+{"cell_id": "r19c2", "row": 19, "col": 2, "text": "Exchange Virtual Fabrics Parameters", "page": 39, "bbox": [154.23, 530.01, 366.69, 554.01]}
+{"cell_id": "r19c3", "row": 19, "col": 3, "text": "EVFP", "page": 39, "bbox": [366.69, 530.01, 436.47, 554.01]}
+{"cell_id": "r19c4", "row": 19, "col": 4, "text": "4.2.43", "page": 39, "bbox": [436.47, 530.01, 488.31, 554.01]}
+{"cell_id": "r19c5", "row": 19, "col": 5, "text": "N/A", "page": 39, "bbox": [488.31, 530.01, 538.89, 554.01]}
+{"cell_id": "r20c1", "row": 20, "col": 1, "text": "80h", "page": 39, "bbox": [97.11, 554.01, 154.23, 577.25]}
+{"cell_id": "r20c2", "row": 20, "col": 2, "text": "Link Keep Alive", "page": 39, "bbox": [154.23, 554.01, 366.69, 577.25]}
+{"cell_id": "r20c3", "row": 20, "col": 3, "text": "LKA", "page": 39, "bbox": [366.69, 554.01, 436.47, 577.25]}
+{"cell_id": "r20c4", "row": 20, "col": 4, "text": "4.2.44", "page": 39, "bbox": [436.47, 554.01, 488.31, 577.25]}
+{"cell_id": "r20c5", "row": 20, "col": 5, "text": "No", "page": 39, "bbox": [488.31, 554.01, 538.89, 577.25]}
+{"cell_id": "r21c1", "row": 21, "col": 1, "text": "a Some early implementations of FCP-2 may have used the value 14h for SRR (Sequence Retransmission\nRequest). This code is permanently reserved in this standard to avoid conflicts with such implementations.\nSee FCP-3 for the standard implementation of SRR as an FC-4 Link Service.", "page": 39, "bbox": [97.11, 577.25, 538.89, 625.41]}
+{"cell_id": "r21c2", "row": 21, "col": 2, "text": "", "page": 39, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r21c3", "row": 21, "col": 3, "text": "", "page": 39, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r21c4", "row": 21, "col": 4, "text": "", "page": 39, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r21c5", "row": 21, "col": 5, "text": "", "page": 39, "bbox": [0.0, 0.0, 0.0, 0.0]}

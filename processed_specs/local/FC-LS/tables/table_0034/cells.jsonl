@@ -1,0 +1,65 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 62, "bbox": [99.3, 483.99, 147.9, 512.34], "source_fragment_id": "table_0034", "source_cell_id": "r1c1"}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 62, "bbox": [147.9, 483.99, 245.13, 512.34], "source_fragment_id": "table_0034", "source_cell_id": "r1c2"}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 62, "bbox": [245.13, 483.99, 342.33, 512.34], "source_fragment_id": "table_0034", "source_cell_id": "r1c3"}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08", "page": 62, "bbox": [342.33, 483.99, 439.53, 512.34], "source_fragment_id": "table_0034", "source_cell_id": "r1c4"}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00", "page": 62, "bbox": [439.53, 483.99, 536.7, 512.34], "source_fragment_id": "table_0034", "source_cell_id": "r1c5"}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 62, "bbox": [99.3, 512.34, 147.9, 528.68], "source_fragment_id": "table_0034", "source_cell_id": "r2c1"}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "LSTS (72h)", "page": 62, "bbox": [147.9, 512.34, 245.13, 528.68], "source_fragment_id": "table_0034", "source_cell_id": "r2c2"}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "00h", "page": 62, "bbox": [245.13, 512.34, 342.33, 528.68], "source_fragment_id": "table_0034", "source_cell_id": "r2c3"}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "00h", "page": 62, "bbox": [342.33, 512.34, 439.53, 528.68], "source_fragment_id": "table_0034", "source_cell_id": "r2c4"}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "00h", "page": 62, "bbox": [439.53, 512.34, 536.7, 528.68], "source_fragment_id": "table_0034", "source_cell_id": "r2c5"}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "0", "page": 63, "bbox": [100.37, 138.99, 147.9, 156.03], "source_fragment_id": "table_0035", "source_cell_id": "r2c1"}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "02h", "page": 63, "bbox": [147.9, 138.99, 245.11, 156.03], "source_fragment_id": "table_0035", "source_cell_id": "r2c2"}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "00h", "page": 63, "bbox": [245.11, 138.99, 342.33, 156.03], "source_fragment_id": "table_0035", "source_cell_id": "r2c3"}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "00h", "page": 63, "bbox": [342.33, 138.99, 439.51, 156.03], "source_fragment_id": "table_0035", "source_cell_id": "r2c4"}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "00h", "page": 63, "bbox": [439.51, 138.99, 535.63, 156.03], "source_fragment_id": "table_0035", "source_cell_id": "r2c5"}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "1", "page": 63, "bbox": [100.37, 156.03, 147.9, 185.32], "source_fragment_id": "table_0035", "source_cell_id": "r3c1"}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Reserved", "page": 63, "bbox": [147.9, 156.03, 245.11, 185.32], "source_fragment_id": "table_0035", "source_cell_id": "r3c2"}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Failed Receiver", "page": 63, "bbox": [245.11, 156.03, 342.33, 185.32], "source_fragment_id": "table_0035", "source_cell_id": "r3c3"}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "FC-FLA Compliance\nLevel - obsolete", "page": 63, "bbox": [342.33, 156.03, 439.51, 185.32], "source_fragment_id": "table_0035", "source_cell_id": "r3c4"}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "Loop State", "page": 63, "bbox": [439.51, 156.03, 535.63, 185.32], "source_fragment_id": "table_0035", "source_cell_id": "r3c5"}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "2", "page": 63, "bbox": [100.37, 185.32, 147.9, 202.05], "source_fragment_id": "table_0035", "source_cell_id": "r4c1"}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "MSB Current Public Loop Devices bit map\n(16 bytes)\nLSB", "page": 63, "bbox": [147.9, 185.32, 535.63, 236.01], "source_fragment_id": "table_0035", "source_cell_id": "r4c2"}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r4c3"}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r4c4"}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r4c5"}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "..", "page": 63, "bbox": [100.37, 202.05, 147.9, 219.03], "source_fragment_id": "table_0035", "source_cell_id": "r5c1"}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r5c2"}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r5c3"}
+{"cell_id": "r6c4", "row": 6, "col": 4, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r5c4"}
+{"cell_id": "r6c5", "row": 6, "col": 5, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r5c5"}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "5", "page": 63, "bbox": [100.37, 219.03, 147.9, 236.01], "source_fragment_id": "table_0035", "source_cell_id": "r6c1"}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r6c2"}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r6c3"}
+{"cell_id": "r7c4", "row": 7, "col": 4, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r6c4"}
+{"cell_id": "r7c5", "row": 7, "col": 5, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r6c5"}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "6", "page": 63, "bbox": [100.37, 236.01, 147.9, 253.05], "source_fragment_id": "table_0035", "source_cell_id": "r7c1"}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "MSB Current Private Loop Devices bit map\n(16 bytes)\nLSB", "page": 63, "bbox": [147.9, 236.01, 535.63, 287.01], "source_fragment_id": "table_0035", "source_cell_id": "r7c2"}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r7c3"}
+{"cell_id": "r8c4", "row": 8, "col": 4, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r7c4"}
+{"cell_id": "r8c5", "row": 8, "col": 5, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r7c5"}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "..", "page": 63, "bbox": [100.37, 253.05, 147.9, 270.03], "source_fragment_id": "table_0035", "source_cell_id": "r8c1"}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r8c2"}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r8c3"}
+{"cell_id": "r9c4", "row": 9, "col": 4, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r8c4"}
+{"cell_id": "r9c5", "row": 9, "col": 5, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r8c5"}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "9", "page": 63, "bbox": [100.37, 270.03, 147.9, 287.01], "source_fragment_id": "table_0035", "source_cell_id": "r9c1"}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r9c2"}
+{"cell_id": "r10c3", "row": 10, "col": 3, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r9c3"}
+{"cell_id": "r10c4", "row": 10, "col": 4, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r9c4"}
+{"cell_id": "r10c5", "row": 10, "col": 5, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r9c5"}
+{"cell_id": "r11c1", "row": 11, "col": 1, "text": "10", "page": 63, "bbox": [100.37, 287.01, 147.9, 304.05], "source_fragment_id": "table_0035", "source_cell_id": "r10c1"}
+{"cell_id": "r11c2", "row": 11, "col": 2, "text": "MSB AL_PA Position Map\n(128 bytes)\nLSB", "page": 63, "bbox": [147.9, 287.01, 535.63, 337.98], "source_fragment_id": "table_0035", "source_cell_id": "r10c2"}
+{"cell_id": "r11c3", "row": 11, "col": 3, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r10c3"}
+{"cell_id": "r11c4", "row": 11, "col": 4, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r10c4"}
+{"cell_id": "r11c5", "row": 11, "col": 5, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r10c5"}
+{"cell_id": "r12c1", "row": 12, "col": 1, "text": "..", "page": 63, "bbox": [100.37, 304.05, 147.9, 321.03], "source_fragment_id": "table_0035", "source_cell_id": "r11c1"}
+{"cell_id": "r12c2", "row": 12, "col": 2, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r11c2"}
+{"cell_id": "r12c3", "row": 12, "col": 3, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r11c3"}
+{"cell_id": "r12c4", "row": 12, "col": 4, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r11c4"}
+{"cell_id": "r12c5", "row": 12, "col": 5, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r11c5"}
+{"cell_id": "r13c1", "row": 13, "col": 1, "text": "41", "page": 63, "bbox": [100.37, 321.03, 147.9, 337.98], "source_fragment_id": "table_0035", "source_cell_id": "r12c1"}
+{"cell_id": "r13c2", "row": 13, "col": 2, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r12c2"}
+{"cell_id": "r13c3", "row": 13, "col": 3, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r12c3"}
+{"cell_id": "r13c4", "row": 13, "col": 4, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r12c4"}
+{"cell_id": "r13c5", "row": 13, "col": 5, "text": "", "page": 63, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0035", "source_cell_id": "r12c5"}

@@ -1,0 +1,67 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "02h",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "Protocol Version",
+      "Message Code",
+      "Transaction Identifier",
+      null
+    ],
+    [
+      "2",
+      "MSB Core N_Port_Name /\nCore Switch_Name LSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "3",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "4",
+      "Reserved",
+      null,
+      "Message Payload Length",
+      null
+    ],
+    [
+      "5",
+      "Message Payload",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "N",
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

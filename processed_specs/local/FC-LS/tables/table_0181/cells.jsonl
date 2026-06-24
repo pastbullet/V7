@@ -1,0 +1,10 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Word 1, bits 28-27", "page": 188, "bbox": [114.64, 123.62, 234.03, 145.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Meaning", "page": 188, "bbox": [234.03, 123.62, 521.36, 145.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00b", "page": 188, "bbox": [114.64, 145.32, 234.03, 167.37]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Only discard policy supported", "page": 188, "bbox": [234.03, 145.32, 521.36, 167.37]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "01b", "page": 188, "bbox": [114.64, 167.37, 234.03, 189.33]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Reserved", "page": 188, "bbox": [234.03, 167.37, 521.36, 189.33]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "10b", "page": 188, "bbox": [114.64, 189.33, 234.03, 211.35]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Both discard and process policies supported", "page": 188, "bbox": [234.03, 189.33, 521.36, 211.35]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "11b", "page": 188, "bbox": [114.64, 211.35, 234.03, 233.04]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Reserved", "page": 188, "bbox": [234.03, 211.35, 521.36, 233.04]}

@@ -1,0 +1,6 @@
+| State | Value |
+| --- | --- |
+| Reserved | 0 |
+| Success - The requested function was completed. | 1 |
+| Failure - The requested function could not be completed. | 2 |
+| Reserved | 3-255 |

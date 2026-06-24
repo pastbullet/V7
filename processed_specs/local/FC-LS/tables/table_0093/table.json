@@ -1,0 +1,109 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "ADISC (52h)",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "Reserved",
+      "Hard Address of Originator",
+      null,
+      null
+    ],
+    [
+      "2",
+      "MSB N_Port_Name of Originator\n(8 bytes) LSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "3",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "4",
+      "MSB Node_Name of Originator\n(8 bytes) LSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "5",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "6",
+      "Reserved",
+      "N_Port_ID of Originator",
+      null,
+      null
+    ],
+    [
+      "0",
+      "02h",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "Reserved",
+      "Hard Address of Responder",
+      null,
+      null
+    ],
+    [
+      "2",
+      "MSB N_Port_Name of Responder\n(8 bytes) LSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "3",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "4",
+      "MSB Node_Name of Responder\n(8 bytes) LSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "5",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "6",
+      "Reserved",
+      "N_Port_ID of Responder",
+      null,
+      null
+    ]
+  ]
+}

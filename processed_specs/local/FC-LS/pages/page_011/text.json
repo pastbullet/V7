@@ -1,0 +1,541 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 11,
+  "spans": [
+    {
+      "span_id": "p011_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0002",
+      "text": " xi",
+      "bbox": [
+        523.02,
+        723.59,
+        532.97,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0003",
+      "text": "Introduction",
+      "bbox": [
+        96.0,
+        57.12,
+        165.97,
+        70.51
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0004",
+      "text": "FC-LS is one of the Fibre Channel family of standards. This family includes INCITS 373:2003, FC-",
+      "bbox": [
+        96.0,
+        94.97,
+        540.05,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0005",
+      "text": "FS, which specifies the Framing and Signalling Interface. ANSI/INCITS 418:2006, FC-SW-4, is relat-",
+      "bbox": [
+        96.0,
+        106.97,
+        540.1,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0006",
+      "text": "ed to Fabric requirements. INCITS 332:1999, FC-AL-2, specifies the arbitrated loop topology.",
+      "bbox": [
+        96.0,
+        118.97,
+        507.05,
+        130.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0007",
+      "text": "FC-LS defines requests and replies that comprise the set of Fibre Channel Extended Link Services",
+      "bbox": [
+        96.0,
+        142.97,
+        540.01,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0008",
+      "text": "(ELSs).",
+      "bbox": [
+        96.0,
+        154.97,
+        129.31,
+        166.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0009",
+      "text": "Acknowledgements",
+      "bbox": [
+        96.0,
+        178.44,
+        208.64,
+        191.83
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0010",
+      "text": "The technical editor would like to thank the following individuals for their special contributions to this",
+      "bbox": [
+        96.0,
+        214.97,
+        540.04,
+        226.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0011",
+      "text": "standard (alphabetically):",
+      "bbox": [
+        96.0,
+        226.97,
+        207.67,
+        238.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0012",
+      "text": "–",
+      "bbox": [
+        106.02,
+        250.97,
+        111.56,
+        262.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0013",
+      "text": "Scott Carlson",
+      "bbox": [
+        120.0,
+        250.97,
+        179.94,
+        262.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0014",
+      "text": "–",
+      "bbox": [
+        106.02,
+        274.97,
+        111.56,
+        286.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0015",
+      "text": "Jim Coomes",
+      "bbox": [
+        120.0,
+        274.97,
+        175.48,
+        286.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0016",
+      "text": "–",
+      "bbox": [
+        106.02,
+        298.96,
+        111.56,
+        310.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0017",
+      "text": "Claudio DeSanti",
+      "bbox": [
+        120.0,
+        298.96,
+        192.13,
+        310.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0018",
+      "text": "–",
+      "bbox": [
+        106.02,
+        322.96,
+        111.56,
+        334.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0019",
+      "text": "Bob Dugan",
+      "bbox": [
+        120.0,
+        322.96,
+        169.97,
+        334.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0020",
+      "text": "–",
+      "bbox": [
+        106.02,
+        346.96,
+        111.56,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0021",
+      "text": "Giles Frazier",
+      "bbox": [
+        120.0,
+        346.96,
+        176.57,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0022",
+      "text": "–",
+      "bbox": [
+        106.02,
+        370.96,
+        111.56,
+        382.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0023",
+      "text": "Scott Kipp",
+      "bbox": [
+        120.0,
+        370.96,
+        165.47,
+        382.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0024",
+      "text": "–",
+      "bbox": [
+        106.02,
+        394.96,
+        111.56,
+        406.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0025",
+      "text": "Bill Martin",
+      "bbox": [
+        120.0,
+        394.96,
+        163.8,
+        406.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0026",
+      "text": "–",
+      "bbox": [
+        106.02,
+        418.96,
+        111.56,
+        430.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0027",
+      "text": "Bob Nixon",
+      "bbox": [
+        120.0,
+        418.96,
+        166.06,
+        430.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0028",
+      "text": "–",
+      "bbox": [
+        106.02,
+        442.96,
+        111.56,
+        454.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0029",
+      "text": "Harry Paul",
+      "bbox": [
+        120.0,
+        442.96,
+        167.2,
+        454.08
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0030",
+      "text": "–",
+      "bbox": [
+        106.02,
+        466.96,
+        111.56,
+        478.08
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0031",
+      "text": "George Penokie",
+      "bbox": [
+        120.0,
+        466.96,
+        192.2,
+        478.08
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0032",
+      "text": "–",
+      "bbox": [
+        106.02,
+        490.96,
+        111.56,
+        502.08
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0033",
+      "text": "David Peterson",
+      "bbox": [
+        120.0,
+        490.96,
+        188.27,
+        502.08
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0034",
+      "text": "–",
+      "bbox": [
+        106.02,
+        514.96,
+        111.56,
+        526.08
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0035",
+      "text": "John Scheible",
+      "bbox": [
+        120.0,
+        514.96,
+        182.76,
+        526.08
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0036",
+      "text": "–",
+      "bbox": [
+        106.02,
+        538.96,
+        111.56,
+        550.08
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0037",
+      "text": "Moran Roth",
+      "bbox": [
+        120.0,
+        538.96,
+        172.16,
+        550.08
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0038",
+      "text": "–",
+      "bbox": [
+        106.02,
+        562.96,
+        111.56,
+        574.08
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0039",
+      "text": "Neil Wanamaker",
+      "bbox": [
+        120.0,
+        562.96,
+        193.8,
+        574.08
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0040",
+      "text": "–",
+      "bbox": [
+        106.02,
+        586.96,
+        111.56,
+        598.08
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p011_s0041",
+      "text": "Ralph Weber",
+      "bbox": [
+        120.0,
+        586.96,
+        178.26,
+        598.08
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

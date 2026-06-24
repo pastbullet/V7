@@ -1,0 +1,712 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 41,
+  "spans": [
+    {
+      "span_id": "p041_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0002",
+      "text": " 22",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0003",
+      "text": "An Nx_Port receiving an ELS request shall respond to it in accord with table 4, depending on its",
+      "bbox": [
+        96.0,
+        57.65,
+        539.58,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0004",
+      "text": "N_Port Login state with the Nx_Port sending the ELS request and the PLOGI requirement for the",
+      "bbox": [
+        96.0,
+        69.65,
+        539.93,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0005",
+      "text": "ELS specified in table 3.",
+      "bbox": [
+        96.0,
+        81.65,
+        203.25,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0006",
+      "text": "An Nx_Port is not required to generate and send the PLOGI ELS request. However, if an Nx_Port re-",
+      "bbox": [
+        96.0,
+        334.96,
+        540.09,
+        346.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0007",
+      "text": "ceives a PLOGI ELS request, the Nx_Port shall respond with a LS_ACC Link Service Reply, or with",
+      "bbox": [
+        96.0,
+        346.96,
+        540.05,
+        358.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0008",
+      "text": "LS_RJT. LS_RJT shall not be issued with a reason code of \"Command not supported\" in response to",
+      "bbox": [
+        96.0,
+        358.96,
+        539.97,
+        370.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0009",
+      "text": "a PLOGI.",
+      "bbox": [
+        96.0,
+        370.96,
+        137.65,
+        382.08
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0010",
+      "text": "NOTE 1 – If an Nx_Port that does not generate PLOGI, is in a point-to-point topology, and has an",
+      "bbox": [
+        105.0,
+        395.18,
+        539.99,
+        405.22
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0011",
+      "text": "N_Port_Name greater than the other Nx_Port's, the other Nx_Port may timeout, waiting to receive PLOGI.",
+      "bbox": [
+        105.0,
+        406.22,
+        525.8,
+        416.26
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0012",
+      "text": "There is one ELS request Sequence in which a collision is possible with the other Nx_Port involved in",
+      "bbox": [
+        96.0,
+        430.97,
+        539.96,
+        442.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0013",
+      "text": "the same target Exchange. This request is Request Sequence Initiative (RSI) (e.g., Nx_Port (A) may",
+      "bbox": [
+        96.0,
+        442.97,
+        539.99,
+        454.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0014",
+      "text": "transmit an RSI request to Nx_Port (B) at the same time that Nx_Port (B) transmits an RSI request to",
+      "bbox": [
+        96.0,
+        454.97,
+        540.03,
+        466.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0015",
+      "text": "Nx_Port (A) for the same target Exchange).",
+      "bbox": [
+        96.0,
+        466.97,
+        288.29,
+        478.08
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0016",
+      "text": "If such an instance occurs, the Originator Nx_Port of the target Exchange shall reject the RSI request",
+      "bbox": [
+        96.0,
+        490.97,
+        540.08,
+        502.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0017",
+      "text": "sequence with an LS_RJT with a reason code of \"command already in progress\". The Responder",
+      "bbox": [
+        96.0,
+        502.97,
+        539.9,
+        514.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0018",
+      "text": "Nx_Port of the target Exchange shall honor and process the RSI request Sequence normally.",
+      "bbox": [
+        96.0,
+        514.96,
+        507.72,
+        526.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0019",
+      "text": "4.2.2",
+      "bbox": [
+        96.0,
+        538.96,
+        118.22,
+        550.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0020",
+      "text": "Sequence and Exchange management",
+      "bbox": [
+        128.22,
+        538.96,
+        310.37,
+        550.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0021",
+      "text": "Extended Link Service communication shall observe all relevant rules of FC-FS-2.",
+      "bbox": [
+        96.0,
+        562.96,
+        457.54,
+        574.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0022",
+      "text": "All ELS requests, excluding ESTS, ESTC, and ADVC, and the corresponding replies shall be per-",
+      "bbox": [
+        96.0,
+        586.96,
+        540.03,
+        598.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0023",
+      "text": "formed within a single Exchange, intended exclusively for the purpose of ELS processing (see FC-",
+      "bbox": [
+        96.0,
+        598.96,
+        540.07,
+        610.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0024",
+      "text": "FS-2 for the procedure using ESTS, ESTC, and ADVC). The Advise Credit request may also be per-",
+      "bbox": [
+        96.0,
+        610.96,
+        540.16,
+        622.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0025",
+      "text": "formed in a separate Exchange. Most ELS protocols are performed as a two Sequence Exchange.",
+      "bbox": [
+        96.0,
+        622.96,
+        540.0,
+        634.08
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0026",
+      "text": "Each of these two Sequence Exchanges consist of a request Sequence by the Originator, transfer of",
+      "bbox": [
+        96.0,
+        634.96,
+        540.06,
+        646.08
+      ],
+      "block_index": 10,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0027",
+      "text": "Sequence Initiative, and a reply Sequence from the Responder that terminates the Exchange by set-",
+      "bbox": [
+        96.0,
+        647.02,
+        540.09,
+        658.14
+      ],
+      "block_index": 10,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0028",
+      "text": "ting the Last_Sequence bit (bit 20) in F_CTL.",
+      "bbox": [
+        96.0,
+        659.02,
+        294.82,
+        670.14
+      ],
+      "block_index": 10,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0029",
+      "text": "More than one frame may be used to form a request or reply Sequence.",
+      "bbox": [
+        96.0,
+        683.02,
+        413.75,
+        694.14
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0030",
+      "text": " Table 4 – Responses to Received ELSs",
+      "bbox": [
+        223.86,
+        103.66,
+        412.17,
+        114.78
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0031",
+      "text": "N_Port Login ",
+      "bbox": [
+        110.22,
+        125.62,
+        175.73,
+        136.74
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0032",
+      "text": "Required? (see ",
+      "bbox": [
+        105.48,
+        137.62,
+        180.51,
+        148.74
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0033",
+      "text": "table 3)",
+      "bbox": [
+        124.08,
+        149.62,
+        159.1,
+        160.74
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0034",
+      "text": "Logged in with Source N_Port?",
+      "bbox": [
+        289.44,
+        125.62,
+        438.24,
+        136.74
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0035",
+      "text": "Yes",
+      "bbox": [
+        266.76,
+        149.62,
+        284.54,
+        160.74
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0036",
+      "text": "No",
+      "bbox": [
+        445.38,
+        149.62,
+        458.72,
+        160.74
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0037",
+      "text": "Yes",
+      "bbox": [
+        132.96,
+        168.64,
+        150.18,
+        179.76
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0038",
+      "text": "Respond as appropriate for the ELS ",
+      "bbox": [
+        189.48,
+        214.66,
+        351.66,
+        225.78
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0039",
+      "text": "and the current state of the Nx_Port",
+      "bbox": [
+        189.48,
+        226.66,
+        347.77,
+        237.78
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0040",
+      "text": "If a reply sequence is defined for the ",
+      "bbox": [
+        365.88,
+        166.66,
+        529.75,
+        177.78
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0041",
+      "text": "ELS, originate a LOGO ELS Exchange ",
+      "bbox": [
+        365.88,
+        178.66,
+        539.4,
+        189.78
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0042",
+      "text": "to the sender of the received ELS or ",
+      "bbox": [
+        365.88,
+        190.66,
+        528.61,
+        201.78
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0043",
+      "text": "reply with an LS_RJT ELS Sequence ",
+      "bbox": [
+        365.88,
+        202.66,
+        533.02,
+        213.78
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0044",
+      "text": "with a reason code of \"Unable to ",
+      "bbox": [
+        365.88,
+        214.66,
+        512.8,
+        225.78
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0045",
+      "text": "perform command request\" and a ",
+      "bbox": [
+        365.88,
+        226.66,
+        517.13,
+        237.78
+      ],
+      "block_index": 18,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0046",
+      "text": "reason code explanation of \"N_Port ",
+      "bbox": [
+        365.88,
+        238.66,
+        526.09,
+        249.77
+      ],
+      "block_index": 18,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0047",
+      "text": "Login required\".",
+      "bbox": [
+        365.88,
+        250.66,
+        436.05,
+        261.77
+      ],
+      "block_index": 18,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0048",
+      "text": "If a reply sequence is not defined for the ",
+      "bbox": [
+        365.88,
+        262.66,
+        540.1,
+        273.77
+      ],
+      "block_index": 18,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0049",
+      "text": "ELS, it shall be discarded",
+      "bbox": [
+        365.88,
+        274.66,
+        478.65,
+        285.77
+      ],
+      "block_index": 18,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0050",
+      "text": "No",
+      "bbox": [
+        135.18,
+        293.62,
+        147.98,
+        304.73
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0051",
+      "text": "Respond as appropriate for the ELS ",
+      "bbox": [
+        189.48,
+        291.64,
+        351.66,
+        302.75
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0052",
+      "text": "and the current state of the Nx_Port.",
+      "bbox": [
+        189.48,
+        303.64,
+        350.62,
+        314.75
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0053",
+      "text": "Respond as appropriate for the ELS ",
+      "bbox": [
+        365.88,
+        291.64,
+        528.05,
+        302.75
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p041_s0054",
+      "text": "and the current state of the Nx_Port.",
+      "bbox": [
+        365.88,
+        303.64,
+        527.01,
+        314.75
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0007"
+  ]
+}

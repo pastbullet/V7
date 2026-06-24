@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0050",
+  "type": "table",
+  "caption": "Table 47 – PRLO Payload",
+  "pages": [
+    75
+  ],
+  "bbox": [
+    99.94,
+    327.99,
+    536.06,
+    444.12
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 75,
+  "logical_table": false
+}

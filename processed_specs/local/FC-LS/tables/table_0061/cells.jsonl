@@ -1,0 +1,10 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Value", "page": 83, "bbox": [99.18, 334.62, 204.63, 356.34]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Description", "page": 83, "bbox": [204.63, 334.62, 536.82, 356.34]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00h", "page": 83, "bbox": [99.18, 356.34, 204.63, 390.39]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Shall be set when the requesting Nx_Port is requesting Common\nIdentification Data only (see table 61).", "page": 83, "bbox": [204.63, 356.34, 536.82, 390.39]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "01h – DEh", "page": 83, "bbox": [99.18, 390.39, 204.63, 424.35]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "For Specific Indentification Data corresponding to a specific ULP (e.g., FC-\nSB-3), shall be set to the FC-4 TYPE (see FC-FS-2) of that ULP.", "page": 83, "bbox": [204.63, 390.39, 536.82, 424.35]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "DFh", "page": 83, "bbox": [99.18, 424.35, 204.63, 458.37]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Shall be used if the General Topology Discovery format (see 4.2.23.5) is to\nbe returned in the RNID Accept Payload.", "page": 83, "bbox": [204.63, 424.35, 536.82, 458.37]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "E0h – FFh", "page": 83, "bbox": [99.18, 458.37, 204.63, 492.04]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Shall be used to indicate that Specific Node Identification Data in a vendor\nspecific format is to be returned.", "page": 83, "bbox": [204.63, 458.37, 536.82, 492.04]}

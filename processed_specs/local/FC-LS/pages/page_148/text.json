@@ -1,0 +1,907 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 148,
+  "spans": [
+    {
+      "span_id": "p148_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0002",
+      "text": " 129",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0003",
+      "text": "4.3.4.3  Reply Sequence",
+      "bbox": [
+        96.0,
+        57.65,
+        209.29,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0004",
+      "text": "none",
+      "bbox": [
+        96.0,
+        82.97,
+        118.21,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0005",
+      "text": " Table 147 – LS_RJT Reason Code Explanations",
+      "bbox": [
+        203.88,
+        104.99,
+        432.17,
+        116.1
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0006",
+      "text": "Encoded ",
+      "bbox": [
+        110.88,
+        126.95,
+        155.83,
+        138.06
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0007",
+      "text": "Value",
+      "bbox": [
+        118.62,
+        138.95,
+        145.28,
+        150.06
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0008",
+      "text": "(Bits 15-8)",
+      "bbox": [
+        107.82,
+        151.0,
+        156.13,
+        162.12
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0009",
+      "text": "Description",
+      "bbox": [
+        225.95,
+        151.0,
+        280.91,
+        162.12
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0010",
+      "text": "Applicable ELSs",
+      "bbox": [
+        400.29,
+        151.0,
+        478.65,
+        162.12
+      ],
+      "block_index": 6,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0011",
+      "text": "00h",
+      "bbox": [
+        123.66,
+        175.0,
+        140.3,
+        186.12
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0012",
+      "text": "No additional explanation",
+      "bbox": [
+        170.16,
+        196.96,
+        282.35,
+        208.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0013",
+      "text": "ADVC, ESTS, FLOGI, PLOGI, LOGO, RCS, ",
+      "bbox": [
+        340.74,
+        172.96,
+        538.45,
+        184.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0014",
+      "text": "REC, RLS, RTV, RSI, PRLI, PRLO, TPLS, ",
+      "bbox": [
+        340.74,
+        184.96,
+        531.19,
+        196.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0015",
+      "text": "TPRLO, GAID, FACT, FDACT, NACT, ",
+      "bbox": [
+        340.74,
+        196.96,
+        512.82,
+        208.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0016",
+      "text": "NDACT, PDISC, FDISC, ADISC, RNC, CSR, ",
+      "bbox": [
+        340.74,
+        208.96,
+        539.74,
+        220.08
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0017",
+      "text": "RNFT",
+      "bbox": [
+        340.74,
+        220.96,
+        367.4,
+        232.08
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0018",
+      "text": "01h",
+      "bbox": [
+        123.66,
+        244.96,
+        140.3,
+        256.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0019",
+      "text": "Service Parm error - Options",
+      "bbox": [
+        170.16,
+        244.0,
+        297.4,
+        255.12
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0020",
+      "text": "FLOGI, PLOGI",
+      "bbox": [
+        340.78,
+        244.0,
+        406.9,
+        255.12
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0021",
+      "text": "03h",
+      "bbox": [
+        123.66,
+        268.96,
+        140.3,
+        280.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0022",
+      "text": "Service Parm error - Initiator Ctl",
+      "bbox": [
+        170.16,
+        268.0,
+        310.76,
+        279.12
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0023",
+      "text": "FLOGI, PLOGI",
+      "bbox": [
+        340.83,
+        268.0,
+        406.88,
+        279.12
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0024",
+      "text": "05h",
+      "bbox": [
+        123.66,
+        292.96,
+        140.3,
+        304.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0025",
+      "text": "Service Parm error - Recipient Ctl",
+      "bbox": [
+        170.16,
+        292.0,
+        319.6,
+        303.12
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0026",
+      "text": "FLOGI, PLOGI",
+      "bbox": [
+        340.78,
+        292.0,
+        406.9,
+        303.12
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0027",
+      "text": "07h",
+      "bbox": [
+        123.66,
+        316.96,
+        140.3,
+        328.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0028",
+      "text": "Service Parm error - Rec Data Field ",
+      "bbox": [
+        170.16,
+        314.98,
+        331.81,
+        326.1
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0029",
+      "text": "Size",
+      "bbox": [
+        170.16,
+        326.98,
+        189.64,
+        338.1
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0030",
+      "text": "FLOGI, PLOGI",
+      "bbox": [
+        340.74,
+        320.98,
+        406.82,
+        332.1
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0031",
+      "text": "09h",
+      "bbox": [
+        123.66,
+        350.98,
+        140.3,
+        362.1
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0032",
+      "text": "Service Parm error - Concurrent Seq FLOGI, PLOGI",
+      "bbox": [
+        170.16,
+        349.96,
+        406.87,
+        361.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0033",
+      "text": "0Bh",
+      "bbox": [
+        123.06,
+        374.98,
+        140.84,
+        386.1
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0034",
+      "text": "Service Parm error - Credit",
+      "bbox": [
+        170.16,
+        373.96,
+        289.49,
+        385.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0035",
+      "text": "ADVC, FLOGI, PLOGI",
+      "bbox": [
+        340.66,
+        373.96,
+        440.09,
+        385.08
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0036",
+      "text": "0Dh",
+      "bbox": [
+        122.82,
+        398.98,
+        141.14,
+        410.1
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0037",
+      "text": "Invalid N_Port/F_Port_Name",
+      "bbox": [
+        170.16,
+        397.96,
+        297.85,
+        409.08
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0038",
+      "text": "FLOGI, PLOGI",
+      "bbox": [
+        340.67,
+        397.96,
+        406.78,
+        409.08
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0039",
+      "text": "0Eh",
+      "bbox": [
+        123.06,
+        422.98,
+        140.84,
+        434.1
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0040",
+      "text": "Invalid node/Fabric Name",
+      "bbox": [
+        170.16,
+        421.96,
+        283.96,
+        433.08
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0041",
+      "text": "FLOGI, PLOGI",
+      "bbox": [
+        340.64,
+        421.96,
+        406.76,
+        433.08
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0042",
+      "text": "0Fh",
+      "bbox": [
+        123.36,
+        446.98,
+        140.54,
+        458.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0043",
+      "text": "Invalid Common Service Parameters FLOGI, PLOGI",
+      "bbox": [
+        170.16,
+        445.96,
+        406.8,
+        457.08
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0044",
+      "text": "11h",
+      "bbox": [
+        123.66,
+        470.98,
+        140.3,
+        482.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0045",
+      "text": "Invalid Association_Header",
+      "bbox": [
+        170.16,
+        469.96,
+        291.26,
+        481.08
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0046",
+      "text": "RRQ, RSI",
+      "bbox": [
+        340.75,
+        469.96,
+        385.14,
+        481.08
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0047",
+      "text": "13h",
+      "bbox": [
+        123.66,
+        494.98,
+        140.3,
+        506.1
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0048",
+      "text": "Association_Header required",
+      "bbox": [
+        170.16,
+        493.96,
+        299.04,
+        505.08
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0049",
+      "text": "RRQ, RSI",
+      "bbox": [
+        340.72,
+        493.96,
+        385.18,
+        505.08
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0050",
+      "text": "15h",
+      "bbox": [
+        123.66,
+        518.98,
+        140.3,
+        530.1
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0051",
+      "text": "Invalid Originator S_ID",
+      "bbox": [
+        170.16,
+        517.96,
+        270.72,
+        529.08
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0052",
+      "text": "REC, RRQ, RSI",
+      "bbox": [
+        340.74,
+        517.96,
+        411.9,
+        529.08
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0053",
+      "text": "17h",
+      "bbox": [
+        123.66,
+        542.98,
+        140.3,
+        554.09
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0054",
+      "text": "Invalid OX_ID-RX_ID combination",
+      "bbox": [
+        170.16,
+        541.96,
+        321.21,
+        553.08
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0055",
+      "text": "REC, RRQ, RSI",
+      "bbox": [
+        340.69,
+        541.96,
+        411.83,
+        553.08
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0056",
+      "text": "19h",
+      "bbox": [
+        123.66,
+        566.98,
+        140.3,
+        578.09
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0057",
+      "text": "Command (request) already in ",
+      "bbox": [
+        170.16,
+        565.0,
+        307.92,
+        576.11
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0058",
+      "text": "progress",
+      "bbox": [
+        170.16,
+        577.0,
+        209.05,
+        588.11
+      ],
+      "block_index": 23,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0059",
+      "text": "PLOGI, RSI",
+      "bbox": [
+        340.74,
+        571.0,
+        393.57,
+        582.11
+      ],
+      "block_index": 23,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0060",
+      "text": "1Eh",
+      "bbox": [
+        123.06,
+        601.0,
+        140.84,
+        612.11
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0061",
+      "text": "N_Port Login required",
+      "bbox": [
+        170.16,
+        599.98,
+        267.91,
+        611.09
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0062",
+      "text": "see table 3",
+      "bbox": [
+        340.74,
+        599.98,
+        389.68,
+        611.09
+      ],
+      "block_index": 24,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0063",
+      "text": "1Fh",
+      "bbox": [
+        123.36,
+        625.0,
+        140.54,
+        636.11
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0064",
+      "text": "Invalid N_Port_ID",
+      "bbox": [
+        170.16,
+        623.98,
+        248.37,
+        635.09
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0065",
+      "text": "RCS, RLS",
+      "bbox": [
+        340.66,
+        623.98,
+        386.76,
+        635.09
+      ],
+      "block_index": 25,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0066",
+      "text": "21h",
+      "bbox": [
+        123.66,
+        649.0,
+        140.3,
+        660.11
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0067",
+      "text": "Obsolete",
+      "bbox": [
+        170.16,
+        647.98,
+        210.14,
+        659.09
+      ],
+      "block_index": 26,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0068",
+      "text": "23h",
+      "bbox": [
+        123.66,
+        673.0,
+        140.3,
+        684.11
+      ],
+      "block_index": 27,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p148_s0069",
+      "text": "Obsolete",
+      "bbox": [
+        170.16,
+        671.98,
+        210.14,
+        683.09
+      ],
+      "block_index": 27,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0152"
+  ]
+}

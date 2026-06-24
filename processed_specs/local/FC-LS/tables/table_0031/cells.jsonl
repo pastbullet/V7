@@ -1,0 +1,8 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Function", "page": 61, "bbox": [116.9, 231.62, 476.43, 253.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Value", "page": 61, "bbox": [476.43, 231.62, 519.1, 253.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "Normal Initialization - The Fabric determines the best method by which to\ncomplete the initialization.", "page": 61, "bbox": [116.9, 253.32, 476.43, 287.37]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "0", "page": 61, "bbox": [476.43, 253.32, 519.1, 287.37]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "Force Login - The L_bit shall be set in the Loop Initialization Soft Assigned (LISA)\nSequence to force all affected L_Ports to perform FLOGI.", "page": 61, "bbox": [116.9, 287.37, 476.43, 321.39]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "1", "page": 61, "bbox": [476.43, 287.37, 519.1, 321.39]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "Reserved", "page": 61, "bbox": [116.9, 321.39, 476.43, 345.04]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "2 - 255", "page": 61, "bbox": [476.43, 321.39, 519.1, 345.04]}

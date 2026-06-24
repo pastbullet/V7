@@ -1,0 +1,933 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 93,
+  "spans": [
+    {
+      "span_id": "p093_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0002",
+      "text": " 74",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0003",
+      "text": "lower two bytes.  A value of all zero in the Port_ID field indicates the Port_ID is unknown or",
+      "bbox": [
+        138.0,
+        393.65,
+        540.1,
+        404.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0004",
+      "text": "unspecified.",
+      "bbox": [
+        138.0,
+        405.65,
+        191.26,
+        416.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0005",
+      "text": "E)",
+      "bbox": [
+        122.4,
+        430.97,
+        132.38,
+        442.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0006",
+      "text": " Connected Port N_Port_Name:",
+      "bbox": [
+        132.38,
+        430.97,
+        293.0,
+        442.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p093_s0007",
+      "text": " The Name_Identifier that is the connected port’s",
+      "bbox": [
+        293.04,
+        430.97,
+        540.04,
+        442.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p093_s0008",
+      "text": "N_Port_Name.",
+      "bbox": [
+        138.0,
+        442.97,
+        204.05,
+        454.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0009",
+      "text": "aa) If the incident port is an L_Port in a private loop, the connected port shall be the port as-",
+      "bbox": [
+        138.0,
+        466.97,
+        540.01,
+        478.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0010",
+      "text": "sociated with the link incident, if known.",
+      "bbox": [
+        156.0,
+        478.97,
+        330.53,
+        490.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0011",
+      "text": "bb) If the incident port is an L_Port in a public loop, the connected port shall be the FL_Port.",
+      "bbox": [
+        138.0,
+        502.97,
+        540.1,
+        514.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0012",
+      "text": "cc) If the incident port is an Nx_Port connected to a Fabric, the connected port shall be the",
+      "bbox": [
+        138.0,
+        526.96,
+        540.05,
+        538.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0013",
+      "text": "F_Port.",
+      "bbox": [
+        156.0,
+        538.96,
+        188.77,
+        550.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0014",
+      "text": "dd) If the incident port is an FL_Port, the connected port shall be the port associated with",
+      "bbox": [
+        138.0,
+        562.96,
+        540.02,
+        574.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0015",
+      "text": "the link incident, if known.",
+      "bbox": [
+        156.0,
+        574.96,
+        269.86,
+        586.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0016",
+      "text": "ee) If the connected port’s N_Port_Name is unknown or unspecified, the Connected Port",
+      "bbox": [
+        138.0,
+        598.96,
+        540.08,
+        610.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0017",
+      "text": "N_Port_Name may be zero",
+      "bbox": [
+        156.0,
+        610.96,
+        277.01,
+        622.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0018",
+      "text": "F)",
+      "bbox": [
+        122.4,
+        635.02,
+        131.84,
+        646.14
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0019",
+      "text": " Connected Port Node_Name:",
+      "bbox": [
+        131.84,
+        635.02,
+        276.28,
+        646.14
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p093_s0020",
+      "text": " The Name_Identifier that is the Node_Name of the port de-",
+      "bbox": [
+        276.36,
+        635.02,
+        540.04,
+        646.14
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p093_s0021",
+      "text": "scribed by the Connected Port N_Port_Name.  If the connected port is an Fx_Port, the",
+      "bbox": [
+        138.0,
+        647.02,
+        539.97,
+        658.14
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0022",
+      "text": "Node_Name may be the Fabric_Name, the Node_Name of the local Fabric element, or un-",
+      "bbox": [
+        138.0,
+        659.02,
+        540.08,
+        670.14
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0023",
+      "text": "specified.  If the Node_Name is unknown or unspecified, the corresponding field shall be",
+      "bbox": [
+        138.0,
+        671.02,
+        539.93,
+        682.14
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0024",
+      "text": "zero.",
+      "bbox": [
+        138.0,
+        683.02,
+        160.21,
+        694.14
+      ],
+      "block_index": 10,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0025",
+      "text": " Table 69 – Common Link Incident Record Data",
+      "bbox": [
+        206.34,
+        57.64,
+        429.65,
+        68.76
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0026",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        79.66,
+        133.06,
+        90.78
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0027",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        91.66,
+        136.35,
+        102.78
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0028",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        79.66,
+        233.97,
+        90.78
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0029",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        79.66,
+        328.42,
+        90.78
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0030",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        79.66,
+        427.0,
+        90.78
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0031",
+      "text": "07        ..       00",
+      "bbox": [
+        453.39,
+        79.66,
+        522.83,
+        90.78
+      ],
+      "block_index": 12,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0032",
+      "text": "0",
+      "bbox": [
+        120.84,
+        108.64,
+        126.38,
+        119.76
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0033",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        108.64,
+        171.53,
+        119.76
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0034",
+      "text": "Incident port N_Port_Name",
+      "bbox": [
+        281.76,
+        110.62,
+        402.87,
+        121.74
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0035",
+      "text": "1",
+      "bbox": [
+        120.84,
+        125.62,
+        126.38,
+        136.74
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0036",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        125.62,
+        460.37,
+        136.74
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0037",
+      "text": "2",
+      "bbox": [
+        120.84,
+        142.66,
+        126.38,
+        153.78
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0038",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        142.66,
+        171.53,
+        153.78
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0039",
+      "text": "Incident port Node_Name",
+      "bbox": [
+        285.36,
+        144.64,
+        399.22,
+        155.76
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0040",
+      "text": "3",
+      "bbox": [
+        120.84,
+        159.64,
+        126.38,
+        170.76
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0041",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        159.64,
+        460.37,
+        170.76
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0042",
+      "text": "4",
+      "bbox": [
+        120.84,
+        176.62,
+        126.38,
+        187.74
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0043",
+      "text": "Incident Port Type",
+      "bbox": [
+        149.88,
+        176.62,
+        230.98,
+        187.74
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0044",
+      "text": "Incident Port_ID",
+      "bbox": [
+        247.1,
+        176.62,
+        318.75,
+        187.74
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0045",
+      "text": "5",
+      "bbox": [
+        120.84,
+        193.66,
+        126.38,
+        204.78
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0046",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        193.66,
+        171.53,
+        204.78
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0047",
+      "text": "Connected port N_Port_Name",
+      "bbox": [
+        275.1,
+        195.64,
+        409.51,
+        206.76
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0048",
+      "text": "6",
+      "bbox": [
+        120.84,
+        210.64,
+        126.38,
+        221.76
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0049",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        210.64,
+        460.37,
+        221.76
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0050",
+      "text": "7",
+      "bbox": [
+        120.84,
+        227.62,
+        126.38,
+        238.74
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0051",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        227.62,
+        171.53,
+        238.74
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0052",
+      "text": "Connected port Node_Name",
+      "bbox": [
+        278.7,
+        229.66,
+        405.84,
+        240.78
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0053",
+      "text": "8",
+      "bbox": [
+        120.84,
+        244.66,
+        126.38,
+        255.78
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0054",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        244.66,
+        460.37,
+        255.78
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0055",
+      "text": "9",
+      "bbox": [
+        120.84,
+        261.64,
+        126.38,
+        272.76
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0056",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        261.64,
+        171.53,
+        272.76
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0057",
+      "text": "Fabric_Name ",
+      "bbox": [
+        312.3,
+        263.62,
+        375.05,
+        274.74
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0058",
+      "text": "10",
+      "bbox": [
+        118.02,
+        278.62,
+        129.14,
+        289.74
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0059",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        278.62,
+        460.37,
+        289.74
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0060",
+      "text": "11",
+      "bbox": [
+        118.02,
+        295.66,
+        129.14,
+        306.77
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0061",
+      "text": "Incident Physical Port number ",
+      "bbox": [
+        149.88,
+        295.66,
+        285.38,
+        306.77
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0062",
+      "text": "12",
+      "bbox": [
+        118.02,
+        312.64,
+        129.14,
+        323.75
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0063",
+      "text": "Transaction ID",
+      "bbox": [
+        149.88,
+        312.64,
+        214.89,
+        323.75
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0064",
+      "text": "13",
+      "bbox": [
+        118.02,
+        329.62,
+        129.14,
+        340.73
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0065",
+      "text": "reserved",
+      "bbox": [
+        149.88,
+        329.62,
+        188.74,
+        340.73
+      ],
+      "block_index": 26,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0066",
+      "text": "Time Stamp Format ",
+      "bbox": [
+        441.44,
+        329.62,
+        532.57,
+        340.73
+      ],
+      "block_index": 26,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0067",
+      "text": "14",
+      "bbox": [
+        118.02,
+        346.66,
+        129.14,
+        357.77
+      ],
+      "block_index": 27,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0068",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        346.66,
+        171.53,
+        357.77
+      ],
+      "block_index": 27,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0069",
+      "text": "Time Stamp",
+      "bbox": [
+        315.36,
+        348.64,
+        369.18,
+        359.75
+      ],
+      "block_index": 27,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0070",
+      "text": "15",
+      "bbox": [
+        118.02,
+        363.64,
+        129.14,
+        374.75
+      ],
+      "block_index": 28,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p093_s0071",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        363.64,
+        460.37,
+        374.75
+      ],
+      "block_index": 28,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0072"
+  ]
+}

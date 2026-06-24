@@ -1,0 +1,8 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Word 62,\nBits 31-24", "page": 193, "bbox": [104.66, 507.64, 212.19, 536.34]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Meaning", "page": 193, "bbox": [212.19, 507.64, 531.34, 536.34]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00h", "page": 193, "bbox": [104.66, 536.34, 212.19, 577.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "The CS_Accuracy, CS_Implemented_MSB, CS_Implemented_LSB,\nand CS_Update_Period fields are not meaningful in the FLOGI/PLOGI\nRequest.", "page": 193, "bbox": [212.19, 536.34, 531.34, 577.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "01h", "page": 193, "bbox": [104.66, 577.35, 212.19, 618.39]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "The CS_Accuracy, CS_Implemented_MSB, CS_Implemented_LSB,\nand CS_Update_Period fields contain the requested Quality of Service\nParameters.", "page": 193, "bbox": [212.19, 577.35, 531.34, 618.39]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "02h – FFh", "page": 193, "bbox": [104.66, 618.39, 212.19, 635.04]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Reserved", "page": 193, "bbox": [212.19, 618.39, 531.34, 635.04]}

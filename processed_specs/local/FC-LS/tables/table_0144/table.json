@@ -1,0 +1,67 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "02h",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "0",
+      "FFI_RMUN (A4h)",
+      "00h",
+      "Payload Length",
+      null
+    ],
+    [
+      "1",
+      "FFI Incarnation Number",
+      null,
+      null,
+      null
+    ],
+    [
+      "2",
+      "Reserved",
+      "Reserved",
+      "Number of FFI Link State Records",
+      null
+    ],
+    [
+      "3",
+      "FFI Link State Records",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "n",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "0",
+      "FFI_SMU (A5h)",
+      "00h",
+      "00h",
+      "00h"
+    ]
+  ]
+}

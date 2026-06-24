@@ -1,0 +1,25 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 72, "bbox": [99.94, 291.96, 147.9, 320.04]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 72, "bbox": [147.9, 291.96, 245.12, 320.04]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 72, "bbox": [245.12, 291.96, 342.33, 320.04]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08", "page": 72, "bbox": [342.33, 291.96, 439.51, 320.04]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00", "page": 72, "bbox": [439.51, 291.96, 536.06, 320.04]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 72, "bbox": [99.94, 320.04, 147.9, 337.36]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "02h", "page": 72, "bbox": [147.9, 320.04, 245.12, 337.36]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Page Length", "page": 72, "bbox": [245.12, 320.04, 342.33, 337.36]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "Payload Length", "page": 72, "bbox": [342.33, 320.04, 536.06, 337.36]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "", "page": 72, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 72, "bbox": [99.94, 337.36, 147.9, 354.39]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Service Parameter Response page", "page": 72, "bbox": [147.9, 337.36, 536.06, 388.32]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 72, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "", "page": 72, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "", "page": 72, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "..", "page": 72, "bbox": [99.94, 354.39, 147.9, 371.36]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "", "page": 72, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "", "page": 72, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "", "page": 72, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "", "page": 72, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "N", "page": 72, "bbox": [99.94, 371.36, 147.9, 388.32]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "", "page": 72, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "", "page": 72, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "", "page": 72, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "", "page": 72, "bbox": [0.0, 0.0, 0.0, 0.0]}

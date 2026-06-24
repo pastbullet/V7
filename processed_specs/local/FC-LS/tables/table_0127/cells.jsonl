@@ -1,0 +1,18 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Value", "page": 133, "bbox": [140.05, 315.33, 226.65, 335.34]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Description", "page": 133, "bbox": [226.65, 315.33, 421.65, 335.34]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Reference", "page": 133, "bbox": [421.65, 315.33, 495.97, 335.34]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "01h", "page": 133, "bbox": [140.05, 335.34, 226.65, 357.39]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Tagging Administrative Status Descriptor", "page": 133, "bbox": [226.65, 335.34, 421.65, 357.39]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "4.2.43.2.2", "page": 133, "bbox": [421.65, 335.34, 495.97, 357.39]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "02h", "page": 133, "bbox": [140.05, 357.39, 226.65, 379.35]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Port VF_ID Descriptor", "page": 133, "bbox": [226.65, 357.39, 421.65, 379.35]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "4.2.43.2.3", "page": 133, "bbox": [421.65, 357.39, 495.97, 379.35]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "03h", "page": 133, "bbox": [140.05, 379.35, 226.65, 401.37]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Locally-Enabled VF_ID List Descriptor", "page": 133, "bbox": [226.65, 379.35, 421.65, 401.37]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "4.2.43.2.4", "page": 133, "bbox": [421.65, 379.35, 495.97, 401.37]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "F0h .. FEh", "page": 133, "bbox": [140.05, 401.37, 226.65, 423.54]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Vendor Specific Descriptor", "page": 133, "bbox": [226.65, 401.37, 421.65, 423.54]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "4.2.43.2.5", "page": 133, "bbox": [421.65, 401.37, 495.97, 423.54]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "all others", "page": 133, "bbox": [140.05, 423.54, 226.65, 445.25]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "Reserved", "page": 133, "bbox": [226.65, 423.54, 495.97, 445.25]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "", "page": 133, "bbox": [0.0, 0.0, 0.0, 0.0]}

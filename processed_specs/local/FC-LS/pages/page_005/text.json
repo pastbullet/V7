@@ -1,0 +1,632 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 5,
+  "spans": [
+    {
+      "span_id": "p005_s0001",
+      "text": "Approval of an American National Standard requires review by ANSI that the",
+      "bbox": [
+        156.3,
+        59.75,
+        516.4,
+        70.86
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0002",
+      "text": "requirements for due process, consensus, and other criteria for approval have",
+      "bbox": [
+        156.3,
+        72.29,
+        516.43,
+        83.4
+      ],
+      "block_index": 1,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0003",
+      "text": "been met by the standards developer.",
+      "bbox": [
+        156.3,
+        84.77,
+        324.04,
+        95.88
+      ],
+      "block_index": 1,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0004",
+      "text": "Consensus is established when, in the judgement of the ANSI Board of Standards",
+      "bbox": [
+        156.3,
+        105.29,
+        516.36,
+        116.4
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0005",
+      "text": "Review, substantial agreement has been reached by directly and materially",
+      "bbox": [
+        156.3,
+        117.77,
+        516.33,
+        128.88
+      ],
+      "block_index": 2,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0006",
+      "text": "affected interests. Substantial agreement means much more than a simple",
+      "bbox": [
+        156.3,
+        130.24,
+        516.44,
+        141.36
+      ],
+      "block_index": 2,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0007",
+      "text": "majority, but not necessarily unanimity. Consensus requires that all views and",
+      "bbox": [
+        156.3,
+        142.78,
+        516.3,
+        153.9
+      ],
+      "block_index": 2,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0008",
+      "text": "objections be considered, and that a concerted effort be made towards their",
+      "bbox": [
+        156.3,
+        155.26,
+        516.31,
+        166.38
+      ],
+      "block_index": 2,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0009",
+      "text": "resolution.",
+      "bbox": [
+        156.3,
+        167.74,
+        202.38,
+        178.86
+      ],
+      "block_index": 2,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0010",
+      "text": "The use of American National Standards is completely voluntary; their existence",
+      "bbox": [
+        156.3,
+        188.26,
+        516.26,
+        199.38
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0011",
+      "text": "does not in any respect preclude anyone, whether he has approved the standards",
+      "bbox": [
+        156.3,
+        200.74,
+        516.35,
+        211.86
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0012",
+      "text": "or not, from manufacturing, marketing, purchasing, or using products, processes,",
+      "bbox": [
+        156.3,
+        213.28,
+        516.32,
+        224.4
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0013",
+      "text": "or procedures not conforming to the standards. The American National Standards",
+      "bbox": [
+        156.3,
+        225.76,
+        516.19,
+        236.88
+      ],
+      "block_index": 3,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0014",
+      "text": "Institute does not develop standards and will in no circumstances give an",
+      "bbox": [
+        156.3,
+        238.24,
+        516.3,
+        249.36
+      ],
+      "block_index": 3,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0015",
+      "text": "interpretation of any American National Standard. Moreover, no person shall have",
+      "bbox": [
+        156.3,
+        250.78,
+        516.37,
+        261.9
+      ],
+      "block_index": 3,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0016",
+      "text": "the right or authority to issue an interpretation of an American National Standard in",
+      "bbox": [
+        156.3,
+        263.26,
+        516.39,
+        274.38
+      ],
+      "block_index": 3,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0017",
+      "text": "the name of the American National Standards Institute. Requests for",
+      "bbox": [
+        156.3,
+        275.74,
+        516.33,
+        286.86
+      ],
+      "block_index": 3,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0018",
+      "text": "interpretations should be addressed to the secretariat or sponsor whose name",
+      "bbox": [
+        156.3,
+        288.28,
+        516.46,
+        299.4
+      ],
+      "block_index": 3,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0019",
+      "text": "appears on the title page of this standard.",
+      "bbox": [
+        156.3,
+        300.76,
+        340.32,
+        311.88
+      ],
+      "block_index": 3,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0020",
+      "text": "CAUTION NOTICE:",
+      "bbox": [
+        156.3,
+        321.28,
+        250.02,
+        332.4
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0021",
+      "text": " This American National Standard may be revised or",
+      "bbox": [
+        250.02,
+        321.28,
+        516.41,
+        332.4
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p005_s0022",
+      "text": "withdrawn at any time. The procedures of the American National Standards",
+      "bbox": [
+        156.3,
+        333.76,
+        516.38,
+        344.88
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0023",
+      "text": "Institute require that action be taken periodically to reaffirm, revise, or withdraw this",
+      "bbox": [
+        156.3,
+        346.24,
+        516.26,
+        357.36
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0024",
+      "text": "standard. Purchasers of American National Standards may receive current",
+      "bbox": [
+        156.3,
+        358.78,
+        516.31,
+        369.9
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0025",
+      "text": "information on all standards by calling or writing the American National Standards",
+      "bbox": [
+        156.3,
+        371.26,
+        516.32,
+        382.38
+      ],
+      "block_index": 4,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0026",
+      "text": "Institute.",
+      "bbox": [
+        156.3,
+        383.74,
+        194.04,
+        394.86
+      ],
+      "block_index": 4,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0027",
+      "text": "American ",
+      "bbox": [
+        72.3,
+        57.81,
+        153.25,
+        77.9
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0028",
+      "text": "National ",
+      "bbox": [
+        72.3,
+        77.85,
+        143.28,
+        97.94
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0029",
+      "text": "Standard",
+      "bbox": [
+        72.3,
+        97.83,
+        144.17,
+        117.92
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0030",
+      "text": "Published by",
+      "bbox": [
+        72.0,
+        546.85,
+        123.38,
+        556.9
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0031",
+      "text": "American National Standards Institute",
+      "bbox": [
+        72.0,
+        570.17,
+        253.03,
+        581.28
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0032",
+      "text": "11 West 42nd Street, New York, NY 10036",
+      "bbox": [
+        72.0,
+        582.17,
+        268.04,
+        593.28
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0033",
+      "text": "Copyright © 200x by Information Technology Industry Council (ITI)",
+      "bbox": [
+        72.0,
+        606.17,
+        364.3,
+        617.28
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0034",
+      "text": "All rights reserved.",
+      "bbox": [
+        72.0,
+        618.17,
+        154.72,
+        629.28
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0035",
+      "text": "No part of this publication may be reproduced in any",
+      "bbox": [
+        72.0,
+        642.85,
+        279.78,
+        652.9
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0036",
+      "text": "form, in an electronic retrieval system or otherwise,",
+      "bbox": [
+        72.0,
+        652.39,
+        274.91,
+        662.44
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0037",
+      "text": "without prior written permission of ITI, 1250 Eye Street NW,",
+      "bbox": [
+        72.0,
+        661.87,
+        308.16,
+        671.92
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0038",
+      "text": "Washington, DC 20005.",
+      "bbox": [
+        72.0,
+        671.35,
+        167.38,
+        681.4
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0039",
+      "text": "Printed in the United States of America",
+      "bbox": [
+        72.0,
+        699.85,
+        226.9,
+        709.9
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0040",
+      "text": "CAUTION:",
+      "bbox": [
+        78.0,
+        417.65,
+        126.84,
+        428.76
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0041",
+      "text": " The developers of this standard have requested that holders of patents that may be",
+      "bbox": [
+        126.84,
+        417.65,
+        506.92,
+        428.76
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p005_s0042",
+      "text": "required for the implementation of the standard disclose such patents to the publisher. However,",
+      "bbox": [
+        78.0,
+        430.13,
+        507.08,
+        441.24
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0043",
+      "text": "neither the developers nor the publisher have undertaken a patent search in order to identify which,",
+      "bbox": [
+        78.0,
+        442.67,
+        507.13,
+        453.78
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0044",
+      "text": "if any, patents may apply to this standard. As of the date of publication of this standard and",
+      "bbox": [
+        78.0,
+        455.15,
+        506.96,
+        466.26
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0045",
+      "text": "following calls for the identification of patents that may be required for the implementation of the",
+      "bbox": [
+        78.0,
+        467.63,
+        507.03,
+        478.74
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0046",
+      "text": "standard, no such claims have been made. No further patent search is conducted by the developer",
+      "bbox": [
+        78.0,
+        480.17,
+        507.03,
+        491.28
+      ],
+      "block_index": 11,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0047",
+      "text": "or publisher in respect to any standard it processes. No representation is made or implied that",
+      "bbox": [
+        78.0,
+        492.65,
+        507.06,
+        503.76
+      ],
+      "block_index": 11,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p005_s0048",
+      "text": "licenses are not required to avoid infringement in the use of this standard.",
+      "bbox": [
+        78.0,
+        505.18,
+        402.93,
+        516.3
+      ],
+      "block_index": 11,
+      "line_index": 8,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

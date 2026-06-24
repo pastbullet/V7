@@ -1,0 +1,6 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Value", "page": 99, "bbox": [192.0, 447.64, 278.73, 469.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Description", "page": 99, "bbox": [278.73, 447.64, 444.0, 469.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00h", "page": 99, "bbox": [192.0, 469.32, 278.73, 493.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Common Format", "page": 99, "bbox": [278.73, 469.32, 444.0, 493.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "01h - FFh", "page": 99, "bbox": [192.0, 493.35, 278.73, 517.02]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Specific-coded value", "page": 99, "bbox": [278.73, 493.35, 444.0, 517.02]}

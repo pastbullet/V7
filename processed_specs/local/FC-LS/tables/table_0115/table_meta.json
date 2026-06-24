@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0115",
+  "type": "table",
+  "caption": "Table 111 – SBRP LS_ACC Payload",
+  "pages": [
+    125
+  ],
+  "bbox": [
+    91.26,
+    388.25,
+    542.72,
+    532.32
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 125,
+  "logical_table": false
+}

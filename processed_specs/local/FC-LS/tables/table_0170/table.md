@@ -1,0 +1,6 @@
+| Bits<br>Word | 31 .. 16 | 15 .. 00 |
+| --- | --- | --- |
+| 0 | Service Options | Reserved |
+| 1 | Recipient Control | Reserved |
+| 2 | Reserved | Reserved |
+| 3 | CR_TOV |  |

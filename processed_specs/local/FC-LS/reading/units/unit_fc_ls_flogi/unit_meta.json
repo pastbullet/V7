@@ -1,0 +1,33 @@
+{
+  "doc_id": "FC-LS.pdf",
+  "unit_id": "unit_fc_ls_flogi",
+  "title": "FC-LS Fabric Login / FLOGI",
+  "kind": "procedure_group",
+  "target_ir": [
+    "MessageIR",
+    "ProcedureIR",
+    "SessionContextIR",
+    "EnumIR"
+  ],
+  "source_anchors": [
+    "6.2 Fabric Login",
+    "Table 149",
+    "Table 150",
+    "Table 151",
+    "Table 153",
+    "Table 156",
+    "Table 158",
+    "Table 177",
+    "8 Virtual Fabrics N_Port Support"
+  ],
+  "dependencies": [
+    "Extended Link Services frame envelope",
+    "Common Service Parameters",
+    "Class Service Parameters",
+    "Virtual Fabrics / EVFP",
+    "Authentication"
+  ],
+  "priority": "vertical_seed",
+  "scope_status": "in_scope",
+  "notes": "Seed reading plan derived from FLOGI live QA traces. The plan intentionally decomposes the broad FLOGI question into focused, IR-oriented tasks."
+}

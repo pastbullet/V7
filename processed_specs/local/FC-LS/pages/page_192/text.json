@@ -1,0 +1,831 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 192,
+  "spans": [
+    {
+      "span_id": "p192_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0002",
+      "text": " 173",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0003",
+      "text": "6.6.8.2  Login Extension Data Length",
+      "bbox": [
+        96.0,
+        57.65,
+        270.37,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0004",
+      "text": "If the Login Extension Data Length field (word 31) is non-zero, a Login Extension follows the normal",
+      "bbox": [
+        96.0,
+        82.97,
+        539.98,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0005",
+      "text": "payload.  The Login Extension Data Length field indicates the length of the Login Extension field in",
+      "bbox": [
+        96.0,
+        94.97,
+        539.85,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0006",
+      "text": "words.  The Payload Bit (see 6.6.2.4.19) shall be set to one if this field is non-zero.",
+      "bbox": [
+        96.0,
+        106.97,
+        460.5,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0007",
+      "text": "6.6.8.3  Login Extension format",
+      "bbox": [
+        96.0,
+        130.97,
+        243.75,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0008",
+      "text": "The Login Extension field is a sequence of zero or more Login Extension Pages.  The length in words",
+      "bbox": [
+        96.0,
+        154.96,
+        540.01,
+        166.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0009",
+      "text": "of the sequence of Login Extension Pages shall be equal to the value of the Login Extension Length",
+      "bbox": [
+        96.0,
+        166.96,
+        539.96,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0010",
+      "text": "field.  The format of a Login Extension Page is given in Table 171.  Word 0 of the first Login Exten-",
+      "bbox": [
+        96.0,
+        178.96,
+        539.92,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0011",
+      "text": "sion Page, if present, is word 64 of the FLOGI/PLOGI/ACC payload.",
+      "bbox": [
+        96.0,
+        190.96,
+        396.52,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0012",
+      "text": "Page Length Field: ",
+      "bbox": [
+        96.0,
+        340.0,
+        188.19,
+        351.12
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0013",
+      "text": "The length in words of the following page, including the word containing the",
+      "bbox": [
+        188.16,
+        340.0,
+        539.92,
+        351.12
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p192_s0014",
+      "text": "page length and page code fields.",
+      "bbox": [
+        96.0,
+        352.0,
+        246.06,
+        363.12
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0015",
+      "text": "Page Code Field: ",
+      "bbox": [
+        96.0,
+        376.0,
+        179.82,
+        387.12
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0016",
+      "text": "The Page Code field specifies the type of page as shown in table 172.",
+      "bbox": [
+        179.88,
+        376.0,
+        489.33,
+        387.12
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p192_s0017",
+      "text": "Vendor Specific Page: ",
+      "bbox": [
+        96.0,
+        496.0,
+        203.56,
+        507.12
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0018",
+      "text": "The format of the Vendor Specific Page is shown in table 173",
+      "bbox": [
+        203.58,
+        496.0,
+        474.63,
+        507.12
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p192_s0019",
+      "text": ".",
+      "bbox": [
+        474.72,
+        494.33,
+        477.72,
+        507.61
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p192_s0020",
+      "text": " Table 171 – Login Extension Page format",
+      "bbox": [
+        219.12,
+        212.99,
+        416.87,
+        224.1
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0021",
+      "text": "Bits",
+      "bbox": [
+        108.9,
+        235.01,
+        127.78,
+        246.12
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0022",
+      "text": "Word",
+      "bbox": [
+        105.54,
+        247.01,
+        131.07,
+        258.12
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0023",
+      "text": "31        ..         24",
+      "bbox": [
+        155.7,
+        235.01,
+        230.68,
+        246.12
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0024",
+      "text": "23        ..       16",
+      "bbox": [
+        258.26,
+        235.01,
+        327.72,
+        246.12
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0025",
+      "text": "15      ..   08",
+      "bbox": [
+        366.46,
+        235.01,
+        419.22,
+        246.12
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0026",
+      "text": "07        ..       00",
+      "bbox": [
+        457.96,
+        235.01,
+        527.41,
+        246.12
+      ],
+      "block_index": 11,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0027",
+      "text": "0",
+      "bbox": [
+        115.56,
+        263.99,
+        121.1,
+        275.1
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0028",
+      "text": "Page Length (n)",
+      "bbox": [
+        145.26,
+        263.99,
+        216.88,
+        275.1
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0029",
+      "text": "Reserved",
+      "bbox": [
+        344.9,
+        263.99,
+        387.65,
+        275.1
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0030",
+      "text": "Page Code",
+      "bbox": [
+        444.75,
+        263.99,
+        494.76,
+        275.1
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0031",
+      "text": "1",
+      "bbox": [
+        115.56,
+        280.97,
+        121.1,
+        292.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0032",
+      "text": "Page Code Specific Data",
+      "bbox": [
+        287.1,
+        298.96,
+        398.8,
+        310.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0033",
+      "text": "...",
+      "bbox": [
+        114.18,
+        298.0,
+        122.47,
+        309.12
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0034",
+      "text": "n - 1",
+      "bbox": [
+        108.06,
+        314.98,
+        128.6,
+        326.1
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0035",
+      "text": " Table 172 – Page Code Definitions",
+      "bbox": [
+        235.26,
+        397.96,
+        400.77,
+        409.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0036",
+      "text": "Page Code",
+      "bbox": [
+        238.2,
+        419.98,
+        289.86,
+        431.1
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0037",
+      "text": "Meaning",
+      "bbox": [
+        351.7,
+        419.98,
+        392.25,
+        431.1
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0038",
+      "text": "00h - EFh",
+      "bbox": [
+        211.98,
+        436.96,
+        255.83,
+        448.08
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0039",
+      "text": "Reserved",
+      "bbox": [
+        319.95,
+        436.96,
+        362.69,
+        448.08
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0040",
+      "text": "F0h",
+      "bbox": [
+        211.98,
+        454.0,
+        229.2,
+        465.12
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0041",
+      "text": "Vendor Specific",
+      "bbox": [
+        319.96,
+        454.0,
+        390.0,
+        465.12
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0042",
+      "text": "F1h - FFh",
+      "bbox": [
+        211.98,
+        470.98,
+        255.86,
+        482.1
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0043",
+      "text": "Reserved",
+      "bbox": [
+        319.98,
+        470.98,
+        362.75,
+        482.1
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0044",
+      "text": " Table 173 – Vendor Specific Page format",
+      "bbox": [
+        220.26,
+        517.96,
+        415.71,
+        529.08
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0045",
+      "text": "Bits",
+      "bbox": [
+        109.56,
+        539.98,
+        128.44,
+        551.1
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0046",
+      "text": "Word",
+      "bbox": [
+        106.2,
+        551.98,
+        131.73,
+        563.1
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0047",
+      "text": "31        ..         24",
+      "bbox": [
+        156.12,
+        539.98,
+        231.12,
+        551.1
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0048",
+      "text": "23        ..       16",
+      "bbox": [
+        258.4,
+        539.98,
+        327.8,
+        551.1
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0049",
+      "text": "15         ..             08",
+      "bbox": [
+        348.12,
+        539.98,
+        436.99,
+        551.1
+      ],
+      "block_index": 22,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0050",
+      "text": "07         ..      00",
+      "bbox": [
+        457.31,
+        539.98,
+        526.72,
+        551.1
+      ],
+      "block_index": 22,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0051",
+      "text": "0",
+      "bbox": [
+        116.22,
+        568.96,
+        121.76,
+        580.08
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0052",
+      "text": "Page Length (n)",
+      "bbox": [
+        145.86,
+        568.96,
+        217.52,
+        580.08
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0053",
+      "text": "Reserved",
+      "bbox": [
+        344.88,
+        568.96,
+        387.65,
+        580.08
+      ],
+      "block_index": 23,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0054",
+      "text": "Page Code (F0h)",
+      "bbox": [
+        444.39,
+        568.96,
+        521.05,
+        580.08
+      ],
+      "block_index": 23,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0055",
+      "text": "1",
+      "bbox": [
+        116.22,
+        586.0,
+        121.76,
+        597.12
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0056",
+      "text": "(MSB)",
+      "bbox": [
+        145.86,
+        586.0,
+        174.19,
+        597.12
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0057",
+      "text": "Vendor Identification Data",
+      "bbox": [
+        285.36,
+        595.48,
+        400.3,
+        606.6
+      ],
+      "block_index": 24,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0058",
+      "text": "2",
+      "bbox": [
+        116.22,
+        602.98,
+        121.76,
+        614.1
+      ],
+      "block_index": 24,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0059",
+      "text": "(LSB)",
+      "bbox": [
+        444.36,
+        602.98,
+        469.93,
+        614.1
+      ],
+      "block_index": 24,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0060",
+      "text": "3",
+      "bbox": [
+        116.22,
+        619.96,
+        121.76,
+        631.08
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0061",
+      "text": "Vendor Specific Data",
+      "bbox": [
+        295.92,
+        637.96,
+        389.77,
+        649.08
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0062",
+      "text": "...",
+      "bbox": [
+        114.84,
+        637.0,
+        123.13,
+        648.12
+      ],
+      "block_index": 26,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p192_s0063",
+      "text": "n - 1",
+      "bbox": [
+        108.72,
+        653.98,
+        129.26,
+        665.1
+      ],
+      "block_index": 27,
+      "line_index": 1,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0183",
+    "table_0184",
+    "table_0185"
+  ]
+}

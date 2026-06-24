@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0011",
+  "type": "table",
+  "caption": "Table 8 – ECHO LS_ACC Payload",
+  "pages": [
+    46
+  ],
+  "bbox": [
+    99.94,
+    122.62,
+    536.06,
+    222.99
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 46
+}

@@ -1,0 +1,775 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 1,
+  "spans": [
+    {
+      "span_id": "p001_s0001",
+      "text": "Copies of this document may be purchased from:",
+      "bbox": [
+        72.0,
+        33.65,
+        307.3,
+        44.76
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0002",
+      "text": "            INCITS xxx-200x",
+      "bbox": [
+        428.72,
+        33.65,
+        539.81,
+        44.76
+      ],
+      "block_index": 1,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0003",
+      "text": "Global Engineering, 15 Inverness Way East,",
+      "bbox": [
+        72.0,
+        44.63,
+        279.7,
+        55.74
+      ],
+      "block_index": 1,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0004",
+      "text": "T11/Project 1620-D/Rev 1.61",
+      "bbox": [
+        407.19,
+        44.63,
+        540.04,
+        55.74
+      ],
+      "block_index": 1,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0005",
+      "text": "Englewood, CO 80112-5704",
+      "bbox": [
+        72.0,
+        55.67,
+        201.98,
+        66.78
+      ],
+      "block_index": 1,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0006",
+      "text": "Phone: (800) 854-7179 or (303) 792-2181 Fax: (303) 792-2192",
+      "bbox": [
+        72.0,
+        66.65,
+        355.29,
+        77.76
+      ],
+      "block_index": 1,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0007",
+      "text": "FIBRE CHANNEL",
+      "bbox": [
+        208.08,
+        111.24,
+        403.98,
+        138.02
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0008",
+      "text": "LINK SERVICES",
+      "bbox": [
+        252.36,
+        155.65,
+        359.7,
+        171.25
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0009",
+      "text": "(FC-LS)",
+      "bbox": [
+        284.34,
+        179.16,
+        327.64,
+        192.55
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0010",
+      "text": "REV 1.61",
+      "bbox": [
+        276.06,
+        220.69,
+        335.87,
+        236.29
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0011",
+      "text": "INCITS working draft proposed",
+      "bbox": [
+        223.68,
+        258.12,
+        388.4,
+        271.51
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0012",
+      "text": "American National Standard",
+      "bbox": [
+        231.0,
+        271.14,
+        381.03,
+        284.53
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0013",
+      "text": "for Information Technology",
+      "bbox": [
+        234.66,
+        284.16,
+        377.27,
+        297.55
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0014",
+      "text": "November 3, 2006",
+      "bbox": [
+        256.68,
+        310.14,
+        355.31,
+        323.53
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0015",
+      "text": "Secretariat: Information Technology Industry Council",
+      "bbox": [
+        72.0,
+        336.65,
+        304.72,
+        347.76
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0016",
+      "text": "NOTE:",
+      "bbox": [
+        72.0,
+        360.65,
+        103.07,
+        371.76
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0017",
+      "text": "This is a working draft American National Standard of Accredited Standards Committee INCITS. As",
+      "bbox": [
+        72.0,
+        374.63,
+        540.02,
+        385.74
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0018",
+      "text": "such this is not a completed standard. The T11 Technical Committee or anyone else may modify",
+      "bbox": [
+        72.0,
+        387.17,
+        539.98,
+        398.28
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0019",
+      "text": "this document as a result of comments received anytime, or during a future public review and its",
+      "bbox": [
+        72.0,
+        399.65,
+        539.9,
+        410.76
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0020",
+      "text": "eventual approval as a Standard. Use of the information contained herein is at your own risk. ",
+      "bbox": [
+        72.0,
+        412.13,
+        515.69,
+        423.24
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0021",
+      "text": "Permission is granted to members of INCITS, its technical committees, and their associated task",
+      "bbox": [
+        72.0,
+        432.64,
+        539.94,
+        443.76
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0022",
+      "text": "groups to reproduce this document for the purposes of INCITS standardization activities without",
+      "bbox": [
+        72.0,
+        445.12,
+        540.07,
+        456.24
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0023",
+      "text": "further permission, provided this notice is included. All other rights are reserved. Any duplication",
+      "bbox": [
+        72.0,
+        457.66,
+        540.01,
+        468.78
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0024",
+      "text": "of this document for commercial or for-profit use is strictly prohibited.",
+      "bbox": [
+        72.0,
+        470.14,
+        405.76,
+        481.26
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0025",
+      "text": "POINTS OF CONTACT:",
+      "bbox": [
+        72.0,
+        490.97,
+        180.75,
+        502.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0026",
+      "text": "Bob Snively (T11 Chair)",
+      "bbox": [
+        73.5,
+        511.19,
+        179.57,
+        522.3
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0027",
+      "text": "Claudio Desanti (T11 Vice Chair)",
+      "bbox": [
+        223.54,
+        511.19,
+        369.65,
+        522.3
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0028",
+      "text": "Craig W. Carlson (T11.3 Chair)",
+      "bbox": [
+        393.04,
+        511.19,
+        530.72,
+        522.3
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0029",
+      "text": "Brocade Communications",
+      "bbox": [
+        73.5,
+        522.65,
+        187.87,
+        533.76
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0030",
+      "text": "Cisco Systems, Inc.",
+      "bbox": [
+        223.45,
+        522.65,
+        311.26,
+        533.76
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0031",
+      "text": "QLogic Corporation",
+      "bbox": [
+        392.97,
+        522.65,
+        479.59,
+        533.76
+      ],
+      "block_index": 12,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0032",
+      "text": "1745 Technology Drive",
+      "bbox": [
+        73.5,
+        534.17,
+        176.27,
+        545.28
+      ],
+      "block_index": 12,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0033",
+      "text": "170 W. Tasman Dr.",
+      "bbox": [
+        223.53,
+        534.17,
+        310.15,
+        545.28
+      ],
+      "block_index": 12,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0034",
+      "text": "6321 Bury Drive",
+      "bbox": [
+        393.0,
+        534.17,
+        464.61,
+        545.28
+      ],
+      "block_index": 12,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0035",
+      "text": "San Jose, CA 95131",
+      "bbox": [
+        73.5,
+        545.69,
+        165.12,
+        556.8
+      ],
+      "block_index": 12,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0036",
+      "text": "San Jose, CA 95134",
+      "bbox": [
+        223.49,
+        545.69,
+        315.16,
+        556.8
+      ],
+      "block_index": 12,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0037",
+      "text": "Eden Prairie, MN 55346",
+      "bbox": [
+        392.96,
+        545.69,
+        499.58,
+        556.8
+      ],
+      "block_index": 12,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0038",
+      "text": "Voice: 408-333-8135 ",
+      "bbox": [
+        73.5,
+        557.15,
+        169.06,
+        568.26
+      ],
+      "block_index": 12,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0039",
+      "text": "Voice: 408-853-9172",
+      "bbox": [
+        223.53,
+        557.15,
+        316.33,
+        568.26
+      ],
+      "block_index": 12,
+      "line_index": 14,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0040",
+      "text": "Voice: 952-932-4064",
+      "bbox": [
+        393.05,
+        557.15,
+        485.82,
+        568.26
+      ],
+      "block_index": 12,
+      "line_index": 15,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0041",
+      "text": "rsnively@brocade.com",
+      "bbox": [
+        73.5,
+        568.67,
+        175.35,
+        579.78
+      ],
+      "block_index": 12,
+      "line_index": 16,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0042",
+      "text": "Fax: 408-853-9172",
+      "bbox": [
+        223.58,
+        568.67,
+        308.02,
+        579.78
+      ],
+      "block_index": 12,
+      "line_index": 17,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0043",
+      "text": "Fax: 952-932-4037",
+      "bbox": [
+        393.08,
+        568.67,
+        477.49,
+        579.78
+      ],
+      "block_index": 12,
+      "line_index": 18,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0044",
+      "text": "cds@cisco.com",
+      "bbox": [
+        223.5,
+        580.18,
+        293.65,
+        591.3
+      ],
+      "block_index": 12,
+      "line_index": 19,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0045",
+      "text": "craig.carlson@qlogic.com",
+      "bbox": [
+        393.05,
+        580.18,
+        507.43,
+        591.3
+      ],
+      "block_index": 12,
+      "line_index": 20,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0046",
+      "text": "James Coomes (FC-LS Chair)",
+      "bbox": [
+        73.5,
+        603.16,
+        207.85,
+        614.28
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0047",
+      "text": "Craig W. Carlson (FC-LS Editor)",
+      "bbox": [
+        223.49,
+        603.16,
+        366.75,
+        614.28
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0048",
+      "text": "Seagate Technology",
+      "bbox": [
+        73.5,
+        614.68,
+        165.12,
+        625.8
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0049",
+      "text": "QLogic Corporation",
+      "bbox": [
+        223.5,
+        614.68,
+        310.13,
+        625.8
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0050",
+      "text": "1280 Disc Drive",
+      "bbox": [
+        73.5,
+        626.14,
+        144.08,
+        637.26
+      ],
+      "block_index": 13,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0051",
+      "text": "6321 Bury Drive",
+      "bbox": [
+        223.57,
+        626.14,
+        295.15,
+        637.26
+      ],
+      "block_index": 13,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0052",
+      "text": "Shakopee, MN 55379",
+      "bbox": [
+        73.5,
+        637.66,
+        170.09,
+        648.78
+      ],
+      "block_index": 13,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0053",
+      "text": "Eden Prairie, MN 55346",
+      "bbox": [
+        223.47,
+        637.66,
+        330.13,
+        648.78
+      ],
+      "block_index": 13,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0054",
+      "text": "Voice: 952-402-2665",
+      "bbox": [
+        73.5,
+        649.18,
+        166.31,
+        660.3
+      ],
+      "block_index": 13,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0055",
+      "text": "Voice: 952-932-4064",
+      "bbox": [
+        223.53,
+        649.18,
+        316.32,
+        660.3
+      ],
+      "block_index": 13,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0056",
+      "text": "Fax: 952-402-3471",
+      "bbox": [
+        73.5,
+        660.64,
+        157.91,
+        671.76
+      ],
+      "block_index": 13,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0057",
+      "text": "Fax: 952-932-4037",
+      "bbox": [
+        223.47,
+        660.64,
+        307.94,
+        671.76
+      ],
+      "block_index": 13,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0058",
+      "text": "jim.coomes@seagate.com",
+      "bbox": [
+        73.5,
+        672.16,
+        191.37,
+        683.28
+      ],
+      "block_index": 13,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p001_s0059",
+      "text": "craig.carlson@qlogic.com",
+      "bbox": [
+        223.51,
+        672.16,
+        338.06,
+        683.28
+      ],
+      "block_index": 13,
+      "line_index": 14,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

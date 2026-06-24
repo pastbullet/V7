@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0168",
+  "type": "table",
+  "caption": "Table 156 – Class Service Parameters - FLOGI",
+  "pages": [
+    179
+  ],
+  "bbox": [
+    92.89,
+    124.07,
+    542.61,
+    243.82
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 179,
+  "logical_table": false
+}

@@ -1,0 +1,582 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 184,
+  "spans": [
+    {
+      "span_id": "p184_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0002",
+      "text": " 165",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0003",
+      "text": "6.6.5.4.7  DiffServ QoS",
+      "bbox": [
+        96.0,
+        57.65,
+        202.05,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0004",
+      "text": "6.6.5.4.7.1  N_Port Login",
+      "bbox": [
+        96.0,
+        82.97,
+        211.53,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0005",
+      "text": "0 = DiffServ QoS not supported",
+      "bbox": [
+        96.0,
+        106.97,
+        235.18,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0006",
+      "text": "1 = DiffServ QoS supported",
+      "bbox": [
+        96.0,
+        118.97,
+        218.47,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0007",
+      "text": "When an Nx_Port performs Login with another Nx_Port, it shall indicate support for Differentiated",
+      "bbox": [
+        96.0,
+        142.96,
+        540.0,
+        154.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0008",
+      "text": "Services QoS by setting the DiffServ QoS bit (word 0, bit 21) to one.  The other Nx_Port indicates",
+      "bbox": [
+        96.0,
+        154.96,
+        539.97,
+        166.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0009",
+      "text": "support for Differentiated Services QoS by setting this bit to one in the LS_ACC.  Support of Differen-",
+      "bbox": [
+        96.0,
+        166.96,
+        540.02,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0010",
+      "text": "tiated Services QoS as an Exchange Originator means that the CS_CTL/Priority Enable bit (F_CTL",
+      "bbox": [
+        96.0,
+        178.96,
+        539.91,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0011",
+      "text": "bit 17) is set to zero to indicate that the DSCP field of the CS_CTL field in the frame header (word 1,",
+      "bbox": [
+        96.0,
+        190.96,
+        540.08,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0012",
+      "text": "bits 29-24) specifies the Differentiated Services QoS policy.  Support of Differentiated Services QoS",
+      "bbox": [
+        96.0,
+        202.96,
+        540.04,
+        214.08
+      ],
+      "block_index": 6,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0013",
+      "text": "as an Exchange Responder means that the CS_CTL/Priority Enable bit (F_CTL bit 17) is set to zero,",
+      "bbox": [
+        96.0,
+        214.96,
+        540.0,
+        226.08
+      ],
+      "block_index": 6,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0014",
+      "text": "indicates that the DSCP field of the CS_CTL field in the frame header (word 1, bits 29-24) specifies",
+      "bbox": [
+        96.0,
+        226.96,
+        539.96,
+        238.08
+      ],
+      "block_index": 6,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0015",
+      "text": "the Differentiated Services QoS policy (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        238.96,
+        333.74,
+        250.08
+      ],
+      "block_index": 6,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0016",
+      "text": "The DiffServ QoS bit only has meaning for Classes 2 and 3.",
+      "bbox": [
+        96.0,
+        262.96,
+        360.39,
+        274.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0017",
+      "text": "6.6.5.4.8  F_Port Login",
+      "bbox": [
+        96.0,
+        286.96,
+        202.05,
+        298.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0018",
+      "text": "0 = DiffServ QoS not Supported",
+      "bbox": [
+        96.0,
+        310.96,
+        236.81,
+        322.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0019",
+      "text": "1 = DiffServ QoS Supported",
+      "bbox": [
+        96.0,
+        322.96,
+        220.19,
+        334.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0020",
+      "text": "When doing Fabric Login, an Nx_Port shall request support for Differentiated Services QoS by set-",
+      "bbox": [
+        96.0,
+        346.96,
+        539.93,
+        358.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0021",
+      "text": "ting the DiffServ QoS bit (word 0, bit 21) to one.  If the LS_ACC reply from the Fx_Port has this bit set",
+      "bbox": [
+        96.0,
+        358.96,
+        540.01,
+        370.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0022",
+      "text": "to one, both the Nx_Port and Fx_Port have agreed that Differentiated Services QoS is available for",
+      "bbox": [
+        96.0,
+        370.96,
+        539.98,
+        382.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0023",
+      "text": "use.",
+      "bbox": [
+        96.0,
+        382.96,
+        114.85,
+        394.08
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0024",
+      "text": "The set of values specified in table 165 give the meaning of the combination of Word 0, bit 21 be-",
+      "bbox": [
+        96.0,
+        406.96,
+        539.84,
+        418.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0025",
+      "text": "tween the requesting Nx_Port and the responding Fx_Port (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        418.96,
+        423.12,
+        430.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0026",
+      "text": "The DiffServ QoS bit only has meaning for Classes 2 and 3. ",
+      "bbox": [
+        96.0,
+        442.96,
+        363.15,
+        454.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0027",
+      "text": " Table 165 – DiffServ QoS bit definition",
+      "bbox": [
+        226.08,
+        464.98,
+        409.89,
+        476.1
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0028",
+      "text": "Nx_Port",
+      "bbox": [
+        97.98,
+        487.0,
+        136.29,
+        498.11
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0029",
+      "text": "Fx_Port",
+      "bbox": [
+        147.86,
+        487.0,
+        185.03,
+        498.11
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0030",
+      "text": "Description",
+      "bbox": [
+        339.81,
+        487.0,
+        394.87,
+        498.11
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0031",
+      "text": "0",
+      "bbox": [
+        94.44,
+        508.96,
+        99.98,
+        520.07
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0032",
+      "text": "0",
+      "bbox": [
+        143.82,
+        508.96,
+        149.36,
+        520.07
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0033",
+      "text": "Neither supports Differentiated Services QoS",
+      "bbox": [
+        193.14,
+        508.96,
+        392.52,
+        520.07
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0034",
+      "text": "0",
+      "bbox": [
+        94.44,
+        530.98,
+        99.98,
+        542.09
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0035",
+      "text": "1",
+      "bbox": [
+        143.82,
+        530.98,
+        149.36,
+        542.09
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0036",
+      "text": "Fx_Port is capable of supporting Differentiated Services QoS",
+      "bbox": [
+        193.14,
+        530.98,
+        462.47,
+        542.09
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0037",
+      "text": "1",
+      "bbox": [
+        94.44,
+        559.0,
+        99.98,
+        570.11
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0038",
+      "text": "0",
+      "bbox": [
+        143.82,
+        559.0,
+        149.36,
+        570.11
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0039",
+      "text": "Nx_Port support requested, Fx_Port does not support Differentiated Services ",
+      "bbox": [
+        193.14,
+        553.0,
+        536.54,
+        564.11
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0040",
+      "text": "QoS",
+      "bbox": [
+        193.14,
+        565.0,
+        213.1,
+        576.11
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0041",
+      "text": "1",
+      "bbox": [
+        94.44,
+        592.96,
+        99.98,
+        604.07
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0042",
+      "text": "1",
+      "bbox": [
+        143.82,
+        592.96,
+        149.36,
+        604.07
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0043",
+      "text": "Nx_Port requested, Fx_Port is capable of supporting Differentiated Services ",
+      "bbox": [
+        193.14,
+        586.96,
+        531.45,
+        598.07
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p184_s0044",
+      "text": "QoS, Differentiated Services QoS is available for use",
+      "bbox": [
+        193.14,
+        598.96,
+        427.45,
+        610.07
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0177"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0136",
+  "type": "table",
+  "caption": "Table 132 – FFI_DTM Payload",
+  "pages": [
+    138
+  ],
+  "bbox": [
+    99.88,
+    98.62,
+    536.29,
+    228.99
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 138,
+  "logical_table": false
+}

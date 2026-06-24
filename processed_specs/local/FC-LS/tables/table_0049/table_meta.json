@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0049",
+  "type": "table",
+  "caption": "Table 46 – PRLI accept response code",
+  "pages": [
+    74
+  ],
+  "bbox": [
+    105.26,
+    267.62,
+    530.74,
+    615.06
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 74,
+  "logical_table": false
+}

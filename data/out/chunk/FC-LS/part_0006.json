@@ -1,0 +1,801 @@
+{
+  "success": true,
+  "doc_name": "FC-LS.pdf",
+  "structure": [
+    {
+      "node_id": "0290",
+      "title": "6 Login and Service Parameters",
+      "summary": "Covers Login and Service Parameters introduction: how an `Nx_Port` establishes its operating environment with a Fabric or peer `Nx_Ports`, including long-lived Login scope, concurrency limits, and lack of one-to-one relationship with Class 1 dedicated connections. Describes explicit vs implicit Login, with exact anchors `FLOGI`, `PLOGI`, `D_ID`, `S_ID`, `ELS`, `LS_ACC`, `Service Parameters`, `Payload`, `N_Port_ID`, and point-to-point topology. Explicit Login uses a new Exchange carrying initiator `Service Parameters`; `LS_ACC` returns responder parameters. Implicit Login provides equivalent functionality by unspecified methods; Implicit Fabric Login does not require support for `FLOGI` request/reply. Also lists how `Nx_Ports` obtain native `N_Port_ID` and collect Address Identifiers. Content types: procedure/flow, response/branch handling, timer/negotiation. Tables: none. Figures: none.",
+      "is_skeleton": true,
+      "children": [
+        {
+          "node_id": "0323",
+          "title": "6.6 Service Parameters",
+          "summary": "6.6 Service Parameters: defines the Service Parameters context for Login-related payloads, specifically the `ELS` and `LS_ACC` Payload formats and parameter applicability for `PLOGI`, `FLOGI`, `PLOGI LS_ACC`, and `FLOGI LS_ACC`. `Table 149` defines the Payload format for the `FLOGI` and `PLOGI ELSs` and the `LS_ACCs`. States that there are no separate `Class 6` login Service Parameters; `Class 1 service parameters` are used instead. Includes `NOTE 13` that the Link Service may further limit values supplied during Login as specified by individual Upper Level Protocols. Content types: `message/frame format`, `timer/negotiation` (service-parameter applicability/limits). Figures: none. Tables: `Table 149` — Payload format definition for `FLOGI`/`PLOGI` and `LS_ACC`.",
+          "is_skeleton": true,
+          "children": [
+            {
+              "node_id": "0325",
+              "title": "6.6.2 Common Service Parameters",
+              "summary": "Defines applicability of Common Service Parameters for N_Port and Fabric Login, keyed by class and login context. Covers `6.6.2.1 Applicability`, `Table 150 – Common Service Parameter applicability`, and the `Default Login Value` for payload words `1-4` prior to a successful Login. Named anchors/fields include `PLOGI`, `FLOGI`, `PLOGI LS_ACC`, `FLOGI LS_ACC`, `FC-PH Version - obsolete`, `Buffer-to-buffer Credit`, `Common Features`, `Continuously increasing relative offset`, `Clean Address`, `Multiple N_Port_ID Support`, `Random relative offset`, `Virtual Fabrics bit`, `Valid Vendor Version Level`, `Multiple N_Port_ID Assignment`, classes `1a`, `2`, `3`, bits `31-16`, `15-0`, `31`, `30`, `29`, and hex `2020h`. `Table 150 – Common Service Parameter applicability`: defines per-parameter applicability by class/login and default values. Content types: `timer/negotiation`, `message/frame format`.",
+              "is_skeleton": true,
+              "children": [
+                {
+                  "node_id": "0326",
+                  "title": "6.6.2.1 Applicability",
+                  "summary": "Defines applicability of Common Service Parameters for Login exchanges, keyed by class and message context: `PLOGI`, `FLOGI`, `PLOGI LS_ACC`, `FLOGI LS_ACC`, plus `Default Login Value` for payload `words 1-4`. `Table 150 – Common Service Parameter applicability` defines per-class (`Class 1a`, `2`, `3`) yes/no meaning and defaults for fields including `FC-PH Version - obsolete` (`2020h`), `Buffer-to-buffer Credit`, `Common Features`, `Continuously increasing relative offset`, `Clean Address`, `Multiple N_Port_ID Support`, `Random relative offset`, `Virtual Fabrics bit`, `Valid Vendor Version Level`, `Multiple N_Port_ID Assignment`, `N_Port/F_Port`, `BB_Credit Management`, `E_D_TOV Resolution`, `Query Data Buffer conditions`, `R_T_TOV Value`, `SEQ_CNT`, `Payload Bit`. Content types: `timer/negotiation`, `message/frame format`, `completion/exception conditions` (applicable/not applicable).",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 167,
+                  "end_index": 168,
+                  "subtree_start_index": 167,
+                  "subtree_end_index": 168
+                },
+                {
+                  "node_id": "0327",
+                  "title": "6.6.2.2 Payload",
+                  "summary": "Section `6.6.2.2 Payload` covers the `Common Service Parameters Payload for FLOGI`, giving the `FLOGI` message/frame format and applicability context from continued `PLOGI`, `FLOGI`, and `LS_ACC` Common Service Parameters. `Table 150 – Common Service Parameter applicability(Continued)` shows applicability/defaults for `BB_SC_N`, `Buffer-to-Buffer Receive Data Field Size`, `Nx_Port Total Concurrent Sequences`, `Relative offset by Info Category`, `R_A_TOV`, and `E_D_TOV Value` across `PLOGI`, `FLOGI`, and `LS_ACC`, including notes on `Class 1`, `Class 2`, `Class 3`, `Class 6`, `N_Port`, `F_Port`, and `L_Port` (timer/negotiation). `Table 151 – Common Service Parameters - FLOGI` defines the payload word/bit layout: `Word 0` `FC-PH Version - obsolete` and `Buffer-to-buffer Credit`; `Word 1` `Common Features (see table 150)`, `BB_SC_N`, `Receive Data Field size`; `Word 2` and `Word 3` reserved (message/frame format).",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 169,
+                  "end_index": 169,
+                  "subtree_start_index": 169,
+                  "subtree_end_index": 169
+                },
+                {
+                  "node_id": "0328",
+                  "title": "6.6.2.3 Buffer-to-buffer Credit",
+                  "summary": "Section `6.6.2.3 Buffer-to-buffer Credit` defines the `Buffer-to-buffer Credit` field in Common Service Parameters payloads: `word 0, bits 15-0`, number of buffers available for `Class 1` and `Class 6 connect-request`, `Class 2`, or `Class 3` frames subject to buffer-to-buffer flow control; valid values `1 to 32767`, `0` reserved. Scope note: for `N_Port Login`, meaningful only for an `Nx_Port` in point-to-point topology and between two `NL_Ports` on the same loop. References surrounding message/frame formats for `PLOGI`, `PLOGI LS_ACC`, and `FLOGI LS_ACC`. Table `151 – Common Service Parameters - FLOGI`: shows Common Service Parameters layout including `Buffer-to-buffer Credit`. Table `153 – Common Service Parameters - FLOGI LS_ACC`: shows Common Service Parameters payload for `FLOGI LS_ACC`, including `Buffer-to-buffer Credit (Fx_Port)`. Content types: `message/frame format`, `timer/negotiation`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 170,
+                  "end_index": 170,
+                  "subtree_start_index": 170,
+                  "subtree_end_index": 170
+                },
+                {
+                  "node_id": "0329",
+                  "title": "6.6.2.4 Common Features",
+                  "summary": "Section `6.6.2.4 Common Features` defines the `Common Features` field in Common Service Parameters, specifically `6.6.2.4.1 Continuously increasing relative offset`. Core rule: `word 1, bit 31` indicates `0 = not supported`, `1 = supported` for continuously increasing relative offset; if set, the `Nx_Port` shall support relative offset when `F_CTL bit 3` is present, on a frame-by-frame `SEQ_CNT` basis, for applicable Information Categories (`word 2, bits 15-0`). Applies to both `Sequence Initiator` and `Sequence Recipient` for all supported Classes of Service. References surrounding payload layouts for `PLOGI`, `PLOGI LS_ACC`, and `FLOGI LS_ACC`. Tables: `Table 153 – Common Service Parameters - FLOGI LS_ACC` shows payload field layout for `FLOGI LS_ACC`; `Table 151 – Common Service Parameters - FLOGI` shows Common Service Parameters field layout for `FLOGI`. Content types: message/frame format, timer/negotiation.",
+                  "is_skeleton": false,
+                  "children": [
+                    {
+                      "node_id": "0330",
+                      "title": "6.6.2.4.1 Continuously increasing relative offset",
+                      "summary": "Defines `6.6.2.4.1 Continuously increasing relative offset`: semantics of the Common Features bit `word 1, bit 31` for support of continuously increasing relative offset in Common Service Parameters. Values: `0 = not supported`, `1 = supported`. Applies when `F_CTL bit 3` is present, on a frame-by-frame `SEQ_CNT` basis within a `Sequence`, and only for Information Categories supporting relative offset (`word 2, bits 15-0`). States capability requirements for the `Nx_Port` supplying the parameter and applicability to both `Sequence Initiator` and `Sequence Recipient` for all supported Classes of Service. References surrounding message/frame format context for `PLOGI`, `PLOGI LS_ACC`, and `FLOGI LS_ACC`. Table `153 – Common Service Parameters - FLOGI LS_ACC`: shows Common Service Parameters Payload field layout. Content types: message/frame format, timer/negotiation.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 170,
+                      "end_index": 170,
+                      "subtree_start_index": 170,
+                      "subtree_end_index": 170
+                    },
+                    {
+                      "node_id": "0331",
+                      "title": "6.6.2.4.2 Clean Address",
+                      "summary": "Defines `Clean Address` semantics for `FLOGI LS_ACC`: `word 1, bit 31`; `0 = No information`, `1 = Clean Address`. Core rule: tells an `Nx_Port` whether the Fabric-assigned address was previously used by another device within `R_A_TOV`. `0` means the address may or may not have been used within `R_A_TOV`; `1` means it has not been used by another device within `R_A_TOV`, or was assigned to the current device for a previous `FLOGI` and not changed within `R_A_TOV`. Scope/meaning constraint: only meaningful in the `FLOGI LS_ACC`; not meaningful in the `FLOGI request`. Content types: `message/frame format`, `timer/negotiation`, `completion/exception conditions`, `response/branch handling`. No tables. No figures.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 171,
+                      "end_index": 171,
+                      "subtree_start_index": 171,
+                      "subtree_end_index": 171
+                    },
+                    {
+                      "node_id": "0332",
+                      "title": "6.6.2.4.3 Multiple N_Port_ID Support",
+                      "summary": "Core topic: `6.6.2.4.3 Multiple N_Port_ID Support` defines the `Multiple N_Port_ID Support bit` (`word 1, bit 31`) values `0 = not supported`, `1 = supported`, and when an `N_Port` sets it to indicate capability to request multiple `N_Port_ID`s using the `FDISC ELS`. It states the bit in a `FLOGI request` means the supplying `N_Port` is or is not capable of requesting additional `N_Port_ID`s, and that this bit is only meaningful in the `FLOGI request`, not meaningful in the `FLOGI LS_ACC`. Exact anchors: `N_Port`, `N_Port_ID`, `Multiple N_Port_ID Support bit`, `word 1, bit 31`, `FDISC ELS`, `FLOGI request`, `FLOGI LS_ACC`. Content types: message/frame format; response/branch handling.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 171,
+                      "end_index": 171,
+                      "subtree_start_index": 171,
+                      "subtree_end_index": 171
+                    },
+                    {
+                      "node_id": "0333",
+                      "title": "6.6.2.4.4 Random relative offset",
+                      "summary": "Covers `6.6.2.4.4 Random relative offset`: semantics of the `random relative offset bit` (`word 1, bit 30`) and when an `Nx_Port` must support random relative offset values if present via `F_CTL bit 3`. States `0 = not supported`, `1 = supported`; random values may increase, decrease, or fluctuate within a `Sequence`. Applicability is limited to Information Categories where relative offset is supported (`word 3, bits 15-0`), with reference to `FC-FS-2` for use. Also states the bit applies to both `Sequence Initiator` and `Sequence Recipient` for all supported `Classes of Service`. Content types: `message/frame format`, `timer/negotiation` (capability indication). Tables: none. Figures: none.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 171,
+                      "end_index": 171,
+                      "subtree_start_index": 171,
+                      "subtree_end_index": 171
+                    },
+                    {
+                      "node_id": "0334",
+                      "title": "6.6.2.4.5 Virtual Fabrics bit",
+                      "summary": "Defines the `Virtual Fabrics bit` in `word 1, bit 30`: `0 = not supported`, `1 = supported`; this bit indicates support for `Virtual fabrics` and references `clause 8`. Core topic is the semantics of the `Virtual Fabrics bit` parameter value in the login/service parameter context. Nearby exact anchors named in this section text include `Random relative offset`, `F_CTL bit 3`, `word 3, bits 15-0`, `FC-FS-2`, `Valid Vendor Version Level`, `PLOGI`, `PLOGI LS_ACC`, `FLOGI`, `Vendor Version Level`, `words 25 through 28`, and `table 149`, but this subsection itself only states the `Virtual Fabrics bit` meaning. Content types: message/frame format (bit/field definition), timer/negotiation (capability support indication). No tables. No figures.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 171,
+                      "end_index": 171,
+                      "subtree_start_index": 171,
+                      "subtree_end_index": 171
+                    },
+                    {
+                      "node_id": "0335",
+                      "title": "6.6.2.4.6 Valid Vendor Version Level",
+                      "summary": "Defines the `Valid Vendor Version Level` indicator in `6.6.2.4.6`: bit semantics for `word 1, bit 29` and when the `Vendor Version Level` field is meaningful. Applies in `PLOGI`, `PLOGI LS_ACC`, and `FLOGI`; `0 = not valid`, `1 = Valid`. If set to one, `Vendor Version Level` (`words 25 through 28 in table 149`) contains valid information; if zero, the field is not meaningful. Core identifiers/anchors: `Valid Vendor Version Level bit`, `Vendor Version Level`, `word 1, bit 29`, `words 25 through 28`, `table 149`, `PLOGI`, `PLOGI LS_ACC`, `FLOGI`. Content type: message/frame format, response/branch handling. No procedure/flow, state machine, timer/negotiation, or completion/exception conditions. No tables. No figures.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 171,
+                      "end_index": 171,
+                      "subtree_start_index": 171,
+                      "subtree_end_index": 171
+                    },
+                    {
+                      "node_id": "0336",
+                      "title": "6.6.2.4.10 E_D_TOV Resolution",
+                      "summary": "Section `6.6.2.4.10 E_D_TOV Resolution` defines the `E_D_TOV resolution bit` (`word 1, bit 26`) and how it sets `E_D_TOV` timer granularity: `0 = 1 millisecond`, `1 = 1 nanosecond`. Core topic is negotiation/interpretation of `E_D_TOV` timer resolution, with explicit units and behavior when the bit is zero or one; references `FC-FS-2` for the definition of `E_D_TOV`. Nearby anchors on the same page include `BB_Credit Management` (`word 1, bit 27`), `Multicast` (`word 1, bit 25`), `FLOGI`, `FLOGI LS_ACC`, `PLOGI`, `PLOGI LS_ACC`, `Multiple N_Port_ID Assignment`, and `N_Port/F_Port`, which may matter for adjacent flag lookups. Content types: `timer/negotiation`.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 172,
+                      "end_index": 172,
+                      "subtree_start_index": 172,
+                      "subtree_end_index": 172
+                    },
+                    {
+                      "node_id": "0337",
+                      "title": "6.6.2.4.11 Multicast",
+                      "summary": "Defines `Multicast` capability signaling in login parameters: the `Multicast bit` (`word 1, bit 25`) indicates whether multicast is supported by the Fabric. Values are `0 = Multicast not supported by the Fabric` and `1 = Multicast supported by the Fabric`. Scope/usage constraint: only meaningful in the `FLOGI LS_ACC`; multicast requirements are referenced to `FC-FS-2`. Nearby identifiers named in this page context include `FLOGI request`, `FLOGI LS_ACC`, `Multiple N_Port_ID Assignment bit`, `N_Port/F_Port bit`, `BB_Credit Management bit`, and `E_D_TOV resolution bit`, but this section itself specifically defines `Multicast bit (word 1, bit 25)`. Content types: `message/frame format`, `response/branch handling`. Tables: none. Figures: none.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 172,
+                      "end_index": 172,
+                      "subtree_start_index": 172,
+                      "subtree_end_index": 172
+                    },
+                    {
+                      "node_id": "0338",
+                      "title": "6.6.2.4.12 Broadcast",
+                      "summary": "Defines `Broadcast` capability signaling in FLOGI service-parameter word 1, bit 24 context: `6.6.2.4.12 Broadcast` states `0 = Broadcast not supported by the Fabric`, `1 = Broadcast supported by the Fabric`. Core topic is the `Broadcast` bit as a Fabric support indicator, adjacent to related FLOGI/FLOGI `LS_ACC` capability bits in the same service-parameter block. Exact anchors present in provided text: `FLOGI`, `LS_ACC`, `Broadcast`, `Multicast`, `E_D_TOV`, `BB_Credit Management`, `N_Port/F_Port`, `Multiple N_Port_ID Assignment`, `FDISC ELS`, `N_Port_ID`, `Nx_Port`, `Fx_Port`, `F_Port`, `N_Port`, `word 1, bit 25`, `word 1, bit 26`, `word 1, bit 27`, `word 1, bit 28`, `word 1, bit 29`, `word 1, bit 31`. Content types: `message/frame format`, `timer/negotiation`. No tables. No figures.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 172,
+                      "end_index": 172,
+                      "subtree_start_index": 172,
+                      "subtree_end_index": 172
+                    },
+                    {
+                      "node_id": "0339",
+                      "title": "6.6.2.4.7 Multiple N_Port_ID Assignment",
+                      "summary": "Defines `Multiple N_Port_ID Assignment` capability signaling for `FLOGI LS_ACC`: `0 = not supported`, `1 = supported`. Core rule: when `Multiple N_Port_ID Support bit` (`word 1, bit 31`) in the `FLOGI request` is one, `Multiple N_Port_ID Assignment bit` (`word 1, bit 29`) shall be one if the `F_Port` can assign multiple `N_Port IDs` to the attached `N_Port` using the `FDISC ELS`; otherwise zero. Also zero when `Multiple N_Port_ID Support bit` in the `FLOGI request` is zero. Bit is only meaningful in `FLOGI LS_ACC`, not meaningful in the `FLOGI request`. Includes `NOTE 14` noting modification from previous revisions. Content types: `response/branch handling`, `message/frame format`, `timer/negotiation` (via surrounding anchors `E_D_TOV`). Tables: none. Figures: none.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 172,
+                      "end_index": 172,
+                      "subtree_start_index": 172,
+                      "subtree_end_index": 172
+                    },
+                    {
+                      "node_id": "0340",
+                      "title": "6.6.2.4.8 N_Port/F_Port",
+                      "summary": "Core topic: `N_Port/F_Port` bit semantics in login exchanges, specifically `word 1, bit 28` values and who sets them for `PLOGI`, `PLOGI LS_ACC`, `FLOGI`, and `FLOGI LS_ACC`. `0 = Nx_Port`, `1 = Fx_Port`. An `Nx_Port` shall set the `N_Port/F_Port` bit to zero for `PLOGI`, `PLOGI LS_ACC`, and `FLOGI`. In Fabric topology, the `Fx_Port` sets the bit to one in `FLOGI LS_ACC`; in point-to-point topology, the `N_Port` sets it to zero in `FLOGI LS_ACC`. Nearby anchors referenced in surrounding text: `Multiple N_Port_ID Assignment`, `Multiple N_Port_ID Support bit`, `FDISC ELS`. Content types: procedure/flow, response/branch handling, message/frame format. No tables. No figures.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 172,
+                      "end_index": 172,
+                      "subtree_start_index": 172,
+                      "subtree_end_index": 172
+                    },
+                    {
+                      "node_id": "0341",
+                      "title": "6.6.2.4.9 BB_Credit Management",
+                      "summary": "Covers `BB_Credit Management` semantics for `word 1, bit 27` in login service parameters: `0 = BB_Credit management specified in FC-FS-2 shall be used`, `1 = Alternate BB_Credit management specified in FC-AL-2 shall be used`. Core rule: the `BB_Credit Management bit` specifies the type of BB_Credit Management to be used. Exact anchors present in surrounding normative context on this page: `FLOGI`, `FLOGI LS_ACC`, `PLOGI`, `PLOGI LS_ACC`, `Multiple N_Port_ID Assignment`, `N_Port/F_Port`, `BB_Credit Management`, `E_D_TOV Resolution`, `E_D_TOV`, `Multicast`, `Broadcast`, `Nx_Port`, `Fx_Port`, `N_Port_ID`, `FDISC`. Content types: `message/frame format` (bit/word field meaning), `timer/negotiation` (adjacent `E_D_TOV Resolution`), no procedure/flow, no state machine, no completion/exception conditions. No tables. No figures.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 172,
+                      "end_index": 172,
+                      "subtree_start_index": 172,
+                      "subtree_end_index": 172
+                    },
+                    {
+                      "node_id": "0342",
+                      "title": "6.6.2.4.13 Hunt Group",
+                      "summary": "Defines the `Hunt Group` capability bit in common service parameters: `Hunt Group bit` (`word 1, bit 23`) indicates whether the Fabric supports Hunt Group routing in `FLOGI LS_ACC`; `0 = Hunt Groups not supported`, `1 = Hunt Groups supported`; if `0`, the Fabric shall not support Hunt Group routing, if `1`, it shall support it (see `FC-FS-2`). Context on the same page also names adjacent fields `Broadcast bit` (`word 1, bit 24`), `Query Buffer Conditions bit` (`word 1, bit 22`), `Report Port Buffer Conditions (RPBC) ELS`, `Clock Synchronization Primitive Capable bit` (`word 1, bit 20`), and `R_T_TOV value`. `Table 154 – Clock Synchronization Applicability`: defines meanings when the clock sync bit is set to one for server, other `FC_Ports`, and Fabric. Content types: `response/branch handling`, `completion/exception conditions`.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 173,
+                      "end_index": 173,
+                      "subtree_start_index": 173,
+                      "subtree_end_index": 173
+                    },
+                    {
+                      "node_id": "0343",
+                      "title": "6.6.2.4.14 Query Buffer Conditions",
+                      "summary": "Defines `Query Buffer Conditions` bit semantics in `word 1, bit 22`: `0 = No buffer conditions to report`, `1 = Buffer conditions to report`. Covers when an `FC_Port` may assert the bit and ties it to `Report Port Buffer Conditions (RPBC) ELS` for gathering reported conditions. Assertion is allowed only if the `FC_Port` supports `RPBC ELS` and either `ELS Receive Data Field Size` differs from `Buffer-to-buffer Receive Data_Field Size` in the common service parameters, or `multi-frame ELSs` are not supported. Nearby named context on the same page includes `Broadcast` (`word 1, bit 24`), `Hunt Group` (`word 1, bit 23`), `Clock Synchronization Primitive Capable` (`word 1, bit 20`), and `R_T_TOV`. Table `154 – Clock Synchronization Applicability`: defines meaning of clock synchronization capability by port/fabric type. Content types: completion/exception conditions, response/branch handling.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 173,
+                      "end_index": 173,
+                      "subtree_start_index": 173,
+                      "subtree_end_index": 173
+                    },
+                    {
+                      "node_id": "0344",
+                      "title": "6.6.2.4.15 Clock Synchronization Primitive Capable",
+                      "summary": "Core topic: `6.6.2.4.15 Clock Synchronization Primitive Capable` defines the `Clock Synchronization Primitive Capable` bit at `word 1, bit 20`, with values `0 = not Clock Synchronization Primitive Capable` and `1 = Clock Synchronization Primitive Capable`, and ties support to the Primitive method of Clock Synchronization (`FC-FS-2`). Applicability differs by login/context: `Clock Synchronization Server (N_Port Login only)` can generate clock synchronization Primitive Signals; `Other FC_Ports (N_Port Login only)` can receive and act on them; `Fabric (FLOGI LS_ACC only)` can receive and act on them. Includes `Table 154 – Clock Synchronization Applicability`, which defines meaning when the bit is set to one by port/fabric type. Content types: timer/negotiation, response/branch handling.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 173,
+                      "end_index": 173,
+                      "subtree_start_index": 173,
+                      "subtree_end_index": 173
+                    },
+                    {
+                      "node_id": "0345",
+                      "title": "6.6.2.4.16 R_T_TOV value",
+                      "summary": "Core topic: `6.6.2.4.16 R_T_TOV value` enumerates the `R_T_TOV` setting values: `0 = Default value of 100 milliseconds`, `1 = Short value of 100 microseconds` [timer/negotiation]. Nearby anchors on the same page include `Broadcast bit` (`word 1, bit 24`, meaningful only in `FLOGI LS_ACC`), `Hunt Group` (`word 1, bit 23`), `Query Buffer Conditions` (`word 1, bit 22`, may trigger `Report Port Buffer Conditions (RPBC) ELS`), and `Clock Synchronization Primitive Capable` (`word 1, bit 20`). `Table 154 – Clock Synchronization Applicability` defines meaning of the bit being set to one for `Clock Synchronization Server (N_Port Login only)`, `Other FC_Ports (N_Port Login only)`, and `Fabric (FLOGI LS_ACC only)` [response/branch handling, timer/negotiation].",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 173,
+                      "end_index": 173,
+                      "subtree_start_index": 173,
+                      "subtree_end_index": 173
+                    },
+                    {
+                      "node_id": "0346",
+                      "title": "6.6.2.4.17 Dynamic Half Duplex Supported",
+                      "summary": "Core topic: `6.6.2.4.17 Dynamic Half Duplex Supported` defines `Dynamic Half Duplex Supported` (`word 1, bit 18`) in Service Parameters: `0 = DHD not supported`, `1 = DHD supported`; if set, the `FC_Port` supports reception of the `DHD primitive`. Note states `DHD` applies to `FC-AL` topologies; see `FC-AL-2`.\n\nAlso present on this page: `R_T_TOV` (`word 1, bit 19`) short-value support (`100 milliseconds` vs `100 microseconds`); `6.6.2.4.18 SEQ_CNT` (`word 1, bit 17`) with `Continuously Increasing SEQ_CNT`; `6.6.2.4.19 Payload Bit` (`word 1 bit 16`) for `FLOGI`, `PLOGI`, `LS_ACC`, `Login Extension Length field`; `6.6.2.5 BB_SC_N`; `6.6.2.6 Buffer-to-buffer Receive Data_Field Size`. Content types: `message/frame format`, `response/branch handling`, `timer/negotiation`.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 174,
+                      "end_index": 174,
+                      "subtree_start_index": 174,
+                      "subtree_end_index": 174
+                    },
+                    {
+                      "node_id": "0347",
+                      "title": "6.6.2.4.18 SEQ_CNT",
+                      "summary": "Core topic: `6.6.2.4.18 SEQ_CNT` defines `SEQ_CNT` (`word 1, bit 17`) behavior in `PLOGI`/`FLOGI` Service Parameters: `0 = Normal rules apply to SEQ_CNT`, `1 = Continuously Increasing SEQ_CNT shall be used.` If set, the `Nx_Port` guarantees all frames in an `Exchange` use monotonically increasing `SEQ_CNT`; each `Exchange` starts at `SEQ_CNT` = `0` in the first frame, and every transmitted frame increments by one, including across transfers of `Sequence Initiative`; frames received from the other `Nx_Port` do not affect transmitted `SEQ_CNT`. References `FC-FS-2`. Nearby anchors on the same page: `R_T_TOV`, `Dynamic Half Duplex Supported`, `Payload Bit`, `BB_SC_N`, `LS_ACC`. Content types: timer/negotiation, message/frame format, response/branch handling.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 174,
+                      "end_index": 174,
+                      "subtree_start_index": 174,
+                      "subtree_end_index": 174
+                    },
+                    {
+                      "node_id": "0348",
+                      "title": "6.6.2.4.19 Payload Bit",
+                      "summary": "Section `6.6.2.4.19 Payload Bit` defines the `Payload Bit` (`word 1 bit 16`) in `FLOGI`/`PLOGI` Service Parameters and how it determines login payload length. Values: `0 = Payload length is 116 bytes`; `1 = Payload length in bytes is 256 plus four times the value of the Login Extension Length field`. It also specifies response handling: if `Payload Bit` is `0` in `PLOGI` or `FLOGI`, then `LS_ACC` sent in response shall have `Payload Bit` set to `0`. Nearby anchors appearing in the excerpt: `Login Extension Length field`, `LS_ACC`, `BB_SC_N`, `word 1, bits 15-12`. Content types: message/frame format, response/branch handling, completion/exception conditions. Tables: none. Figures: none.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 174,
+                      "end_index": 174,
+                      "subtree_start_index": 174,
+                      "subtree_end_index": 174
+                    }
+                  ],
+                  "start_index": 170,
+                  "end_index": 170,
+                  "subtree_start_index": 170,
+                  "subtree_end_index": 174
+                },
+                {
+                  "node_id": "0349",
+                  "title": "6.6.2.5 BB_SC_N",
+                  "summary": "Core topic: `BB_SC_N` field semantics in Login Service Parameters. `BB_SC_N` (word 1, bits 15-12) is the Buffer-to-buffer State Change Number in a `PLOGI` or `FLOGI` frame; it specifies that the sender is requesting `2BB_SC_N` frames between consecutive `BB_SCs` primitives, and `2BB_SC_N` `R_RDY` primitives between consecutive `BB_SCr` primitives. Names/anchors: `BB_SC_N`, `Buffer-to-buffer State Change Number`, `PLOGI`, `FLOGI`, `BB_SCs`, `BB_SCr`, `R_RDY`, `BB_Credit recovery process`, `FC-FS-2`, `word 1`, `bits 15-12`. Content types: message/frame format; timer/negotiation. Tables/figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 174,
+                  "end_index": 174,
+                  "subtree_start_index": 174,
+                  "subtree_end_index": 174
+                },
+                {
+                  "node_id": "0350",
+                  "title": "6.6.2.6 Buffer-to-buffer Receive Data_Field size",
+                  "summary": "Section `6.6.2.6 Buffer-to-buffer Receive Data_Field size` defines the `buffer-to-buffer Receive Data_Field Size field` (`word 1, bits 11-0`): it specifies the largest frame `Data_Field Size` that may be received by the `Nx_Port` supplying the `Service Parameters` as a `Sequence Recipient`. Use this section for questions about receive-side frame payload size limits advertised in login/service parameters, especially interpretation of the `Buffer-to-buffer Receive Data_Field Size` value and recipient capability. Exact anchors present: `Buffer-to-buffer Receive Data_Field Size field`, `Data_Field Size`, `Nx_Port`, `Service Parameters`, `Sequence Recipient`, `word 1, bits 11-0`. Content types: `message/frame format`, `timer/negotiation`. Tables/figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 174,
+                  "end_index": 174,
+                  "subtree_start_index": 174,
+                  "subtree_end_index": 174
+                },
+                {
+                  "node_id": "0351",
+                  "title": "6.6.2.10 E_D_TOV",
+                  "summary": "Defines `E_D_TOV` encoding and negotiation semantics in `6.6.2.10 E_D_TOV`. Core rule: `E_D_TOV Resolution bit` (`word 1, bit 26`) selects units for the `E_D_TOV value`: `0` = `1 millisecond` increments, `1` = `1 nanosecond` increments; example `0000000Ah` means either `10 milliseconds` or `10 nanoseconds` depending on the bit. For `PLOGI`, the `E_D_TOV value` in `LS_ACC` to the `PLOGI` shall be greater than or equal to the value in the `PLOGI`; the `E_D_TOV value` in the `LS_ACC` is then used by each `Nx_Port`. Includes pointer to `FC-FS-2` for `E_D_TOV` definition. Content types: timer/negotiation, response/branch handling, completion/exception conditions. No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 175,
+                  "end_index": 175,
+                  "subtree_start_index": 175,
+                  "subtree_end_index": 175
+                },
+                {
+                  "node_id": "0352",
+                  "title": "6.6.2.7 Total Concurrent Sequences",
+                  "summary": "Defines `Total Concurrent Sequences` (word 2, bits 23 - 16): total Concurrent Sequences across all classes an `Nx_Port` can support as a Recipient, constrained to be less than or equal to the sum of class-by-class Concurrent Sequences; includes example `Class 2` + `Class 3` capacities (e.g., 10 + 10 but total 15). Nearby anchors appearing in this section block: `Relative offset by category` (word 2, bits 15 - 0), `Information Category 1110b`, `0010b`, `R_A_TOV`, `0000000Ah`, `E_D_TOV`, `E_D_TOV Resolution bit` (word 1, bit 26), `PLOGI`, `LS_ACC`, `Port_Name`, `Name_Identifier`, bits `63-60`, `FC-FS-2`. Content types: `timer/negotiation` (via `R_A_TOV`, `E_D_TOV`, `PLOGI`/`LS_ACC` constraints). No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 175,
+                  "end_index": 175,
+                  "subtree_start_index": 175,
+                  "subtree_end_index": 175
+                },
+                {
+                  "node_id": "0353",
+                  "title": "6.6.2.8 Relative offset by category",
+                  "summary": "Core topic: `6.6.2.8 Relative offset by category` defines the `relative offset by category field` (`word 2, bits 15 - 0`) as a bit-position map indicating whether relative offset is supported for each `Information Category`; example anchors: `bit 14 = 1`, `bit 2 = 1`, `1110b`, `0010b`, `Sequence Recipient`, `Sequence Initiator`, `FC-FS-2`. Context on same page includes `Total Concurrent Sequences field` (`word 2, bits 23 - 16`), `R_A_TOV`, `E_D_TOV`, `E_D_TOV Resolution bit` (`word 1, bit 26`), `PLOGI`, `LS_ACC`, `Port_Name`, `Name_Identifier`, `Bits 63-60`, and frame classes `Class 2 Data frame`, `Class 3 Data frame`, `SOFc1`. Tables: none. Figures: none. Content types: `message/frame format`, `timer/negotiation`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 175,
+                  "end_index": 175,
+                  "subtree_start_index": 175,
+                  "subtree_end_index": 175
+                },
+                {
+                  "node_id": "0354",
+                  "title": "6.6.2.9 R_A_TOV",
+                  "summary": "Defines `R_A_TOV` encoding in the spec’s timing fields: `R_A_TOV` shall be specified as a count of `1 ms` increments; hex value `0000000Ah` means `10 milliseconds`. Core anchor is the timer name `R_A_TOV`. Nearby cross-referenced anchors in adjacent text: `E_D_TOV`, `E_D_TOV Resolution bit` `(word 1, bit 26)`, `PLOGI`, `LS_ACC`, `Port_Name`, `Name_Identifier`, but this section itself only states the `R_A_TOV` unit/count rule. Content type: `timer/negotiation` (timer value representation). No procedure/flow, no message/frame format, no response/branch handling, no state machine, no completion/exception conditions. Tables: none. Figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 175,
+                  "end_index": 175,
+                  "subtree_start_index": 175,
+                  "subtree_end_index": 175
+                }
+              ],
+              "start_index": 167,
+              "end_index": 167,
+              "subtree_start_index": 167,
+              "subtree_end_index": 175
+            },
+            {
+              "node_id": "0355",
+              "title": "6.6.3 Port_Name",
+              "summary": "Section `6.6.3 Port_Name` defines the `Port_Name` field: an eight-byte field in `words 5-6` that identifies an `FC_Port`. Core rule: each `FC_Port` shall provide a `Name_Identifier` unique within the Fibre Channel interaction space of the `FC_Port`. `Bits 63-60` specify the format of the `Name_Identifier`; those formats are defined in `FC-FS-2`. Exact anchors present in this section context: `Port_Name`, `FC_Port`, `Name_Identifier`, `words 5-6`, `Bits 63-60`, `FC-FS-2`. Nearby negotiation/timer context on the same page includes `R_A_TOV`, `E_D_TOV`, `E_D_TOV Resolution bit`, `PLOGI`, `LS_ACC`, but `6.6.3` itself is a field definition only. Content types: message/frame format, identifier definition. No tables. No figures.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 175,
+              "end_index": 175,
+              "subtree_start_index": 175,
+              "subtree_end_index": 175
+            },
+            {
+              "node_id": "0356",
+              "title": "6.6.4 Node_ or Fabric_Name",
+              "summary": "Defines `Node_Name` and `Fabric_Name` in `6.6.4 Node_ or Fabric_Name`: applicability to `PLOGI`, `PLOGI LS_ACC`, `FLOGI`, and `FLOGI LS_ACC`; `Node_Name`/`Fabric_Name` are an eight-byte field (`words 7-8`) for identification/diagnostics, independent of network addressing, unique within the Fibre Channel interaction space, with `Bits 63-60` specifying name format as defined in `FC-FS-2`. Also introduces `6.6.5.1 Applicability` for `Class Service Parameters`, locating Class 1/6 (`words 9-12`), Class 2 (`words 13-16`), and Class 3 (`words 17-20`) and noting `Default Login Value` use before successful Login. `Table 155 – Class Service Parameters Applicability` defines applicability/defaults for parameters by class and message context (`PLOGI`, `FLOGI`, `LS_ACC`), including `Class Validity`, `Service Options`, `Intermix Mode`, `Stacked Connect-Requests`, and `Sequential delivery`. Content types: message/frame format, timer/negotiation.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 176,
+              "end_index": 176,
+              "subtree_start_index": 176,
+              "subtree_end_index": 176
+            },
+            {
+              "node_id": "0357",
+              "title": "6.6.5 Class Service Parameters",
+              "summary": "Section `6.6.5 Class Service Parameters` covers applicability and layout of `Class Service Parameters` for `N_Port` and `Fabric Login`, including `PLOGI`, `FLOGI`, `PLOGI LS_ACC`, and `FLOGI LS_ACC`. `6.6.5.1 Applicability` states `Class 1` and `Class 6 Service Parameters` occupy words `9-12`, `Class 2 Service Parameters` words `13-16`, and `Class 3 Service Parameters` words `17-20`; word numbering is relative to the specific class service parameters field, and `Default Login Value` applies prior to a successful `Login`. `Table 155 – Class Service Parameters Applicability` defines parameter applicability by class/message and lists fields including `Class Validity`, `Service Options`, `Intermix Mode`, `Stacked Connect-Requests`, `Sequential delivery`, `Simplex dedicated connection - obsolete`, `Camp-On - obsolete`, and `Buffered Class 1 - obsolete`. Content types: `message/frame format`, `timer/negotiation`.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0358",
+                  "title": "6.6.5.1 Applicability",
+                  "summary": "Core topic: `6.6.5.1 Applicability` defines applicability of `Class Service Parameters` for `N_Port` and `Fabric Login` across `PLOGI`, `FLOGI`, `PLOGI LS_ACC`, and `FLOGI LS_ACC`, by class and default pre-login values. It maps class fields: `Class 1`/`Class 6` in words `9-12`, `Class 2` in words `13-16`, `Class 3` in words `17-20`; word numbering is relative to the specific class service parameters field. Key identifiers/fields include `Class Validity`, `Service Options`, `Intermix Mode`, `Sequential delivery`, `Priority/Preemption`, `Preference`, `DiffServ QoS`, `Initial Responder Process_Associator`, `ACK_0 capable`, `Clock Synchronization ELS capable`, `X_ID interlock`, `Categories per Sequence`, `Receive Data Field Size`, `Concurrent Sequences`, `Nx_Port end-to-end Credit`, `Open Sequences per Exchange`, `CR_TOV`. `Table 155 – Class Service Parameters Applicability`: defines per-class/per-message applicability (`y`/`n`) and `Default Login Value`. Content types: `timer/negotiation`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 176,
+                  "end_index": 178,
+                  "subtree_start_index": 176,
+                  "subtree_end_index": 178
+                },
+                {
+                  "node_id": "0359",
+                  "title": "6.6.5.2 Payload",
+                  "summary": "Section `6.6.5.2 Payload` defines `Payload` Class Service Parameters layouts for `FLOGI`, `PLOGI`, `PLOGI LS_ACC`, and `FLOGI LS_ACC` payloads; core fields include `Service Options`, `Initiator Control`, `Recipient Control`, `Reserved`, `Total Concurrent Sequences`, `Nx_Port End-to-end Credit`, `Open Sequences per Exchange`, `Receive Data Field Size`, and `CR_TOV`. `Table 156 – Class Service Parameters - FLOGI` shows the `FLOGI` word/bit allocation. `Table 157 – Class Service Parameters - PLOGI and PLOGI LS_ACC` shows the `PLOGI`/`PLOGI LS_ACC` word/bit allocation including `Receive Data Field Size`. `Table 158 – Class Service Parameters - FLOGI LS_ACC` shows the `FLOGI LS_ACC` word/bit allocation including `CR_TOV`. Content types: `message/frame format`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 179,
+                  "end_index": 179,
+                  "subtree_start_index": 179,
+                  "subtree_end_index": 179
+                },
+                {
+                  "node_id": "0360",
+                  "title": "6.6.5.3 Class validity",
+                  "summary": "Section 6.6.5.3 defines Class validity for Class Service Parameters: `Class validity bit` at `word 0, bit 31`; `0 = Invalid - Class not supported`, `1 = Valid - Class supported`. Core rule: if the `Class validity bit` is zero, “this set of sixteen bytes shall be ignored”; if one, “this Class shall be supported.” Related payload/message-frame context is provided by `Table 156 – Class Service Parameters - FLOGI` (shows Payload Class Service Parameters using `FLOGI`), `Table 157 – Class Service Parameters - PLOGI and PLOGI LS_ACC` (shows Payload Service Parameters using `PLOGI` and `PLOGI LS_ACC`), and `Table 158 – Class Service Parameters - FLOGI LS_ACC` (shows Payload Parameters using `FLOGI LS_ACC`). Content types: message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 179,
+                  "end_index": 179,
+                  "subtree_start_index": 179,
+                  "subtree_end_index": 179
+                },
+                {
+                  "node_id": "0361",
+                  "title": "6.6.5.4 Service options",
+                  "summary": "Section 6.6.5.4 Service options covers optional class-of-service features in service parameters, specifically `Intermix Mode` in `word 0, bit 30`, with Class 1/6 applicability and no meaning for Class 2 or Class 3. Anchors: `Intermix Mode`, `Class 1`, `Class 6`, `Class 2`, `Class 3`, `N_Port`, `Nx_Port`, `F_Port`, `Fx_Port`, `Fabric`, `Login`, `LS_ACC`, `F_BSY`, `SOFc1`, `FC-FS-2`. Defines values `0 = Intermix not requested`, `1 = Intermix requested`; describes exclusive connections vs intermixed dedicated connection behavior; includes Fabric Login and N_Port Login result handling, including when Intermix is functional and when Class 1 dedicated connections shall be removed before Class 2/Class 3 transmission. Table 159 – Intermix Mode Support: defines Nx_Port/Fx_Port bit combinations and resulting Intermix support meaning. Content types: response/branch handling, timer/negotiation, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [
+                    {
+                      "node_id": "0362",
+                      "title": "6.6.5.4.1 Introduction",
+                      "summary": "Defines service options introduction for class-of-service parameters, centered on `Intermix Mode` semantics and support negotiation for Class 1/6, Class 2, and Class 3. States that service options specify optional features supported by the port supplying the service parameters; `Intermix Mode bit (word 0, bit 30)` is meaningful only for Class 1 and 6. Covers exclusive connections, `F_BSY` response behavior to Class 2 frames and connect-request Data frames (`SOFc1`), and Fabric/N_Port Login outcomes using `LS_ACC`. `Table 159 – Intermix Mode Support` shows `Nx_Port`/`Fx_Port` bit combinations and whether Intermix is functional. Includes response/branch handling, timer/negotiation, completion/exception conditions: if both N_Ports indicate support, Intermix is functional; otherwise Class 1 dedicated connections shall be removed before Class 2 or Class 3 transmission.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 180,
+                      "end_index": 180,
+                      "subtree_start_index": 180,
+                      "subtree_end_index": 180
+                    },
+                    {
+                      "node_id": "0363",
+                      "title": "6.6.5.4.2 Intermix Mode",
+                      "summary": "Intermix Mode service option for Class 1/Class 6 login negotiation and when intermixed traffic is functional. Field/bit: `Intermix Mode bit` (`word 0, bit 30`), values `0 = Intermix not requested`, `1 = Intermix requested`; meaningful only for `Class 1` and `Class 6`, not `Class 2`/`Class 3`. Covers exclusive connections, `F_BSY` response to `Class 2` frames and `SOFc1` connect-request Data frames from third `N_Port`s, and behavior for Fabric Login / N_Port Login. Named messages/identifiers: `LS_ACC`, `F_BSY`, `SOFc1`, `N_Port`, `Nx_Port`, `F_Port`, `Fx_Port`. Table `Table 159 – Intermix Mode Support`: defines `Nx_Port`/`Fx_Port` bit combinations and whether “Intermix is functional.” Content types: response/branch handling, timer/negotiation, completion/exception conditions.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 180,
+                      "end_index": 180,
+                      "subtree_start_index": 180,
+                      "subtree_end_index": 180
+                    },
+                    {
+                      "node_id": "0364",
+                      "title": "6.6.5.4.3 Stacked Connect-requests",
+                      "summary": "Core topic: `6.6.5.4.3 Stacked Connect-requests` in `Fabric Login` and adjacent `Sequential delivery` login parameter semantics for `FLOGI`/`LS_ACC`. Defines `Stack Connect-request bits` (`word 0, bits 29 - 28`) as only meaningful for `Class 1` in `FLOGI LS_ACC`; values `00b` = not supported, `01b` = `Lock-Down Mode`, `10b` = `Transparent Mode`, `11b` = `Reserved`. Notes optional support in `Fabric`, `Nx_Port`, and changed `Nx_Port`/`Fx_Port` behavior when functional. Also covers `Sequential delivery bit` (`word 0, bit 27`) for `class 2 and 3 N_Port Class Service Parameters`, including `Nx_Port` request / `Fx_Port` capability combinations and in-order delivery rules absent `Fabric events`. `Table 160 – Stacked Connect-request support Login Bits`: defines bit-combination meanings. `Table 161 – Sequential delivery support`: defines `Nx_Port`/`Fx_Port` support outcomes. Content types: timer/negotiation, response/branch handling.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 181,
+                      "end_index": 181,
+                      "subtree_start_index": 181,
+                      "subtree_end_index": 181
+                    },
+                    {
+                      "node_id": "0365",
+                      "title": "6.6.5.4.4 Sequential delivery",
+                      "summary": "Section `6.6.5.4.4 Sequential delivery` covers the `Sequential delivery bit` (`word 0, bit 27`) in `Fabric Login` for `class 2 and 3 N_Port Class Service Parameters`: `0 = Out of order delivery allowed`, `1 = Sequential delivery requested`. It states applicability/not meaningful cases (`Class 1`, `Class 6`, `N_Port Login`), `Nx_Port` request semantics, `Fx_Port` behavior in `LS_ACC`, and Fabric behavior/limits under `Fabric events` such as `Fabric reconfiguration` or `zoning changes`; includes `Data`, `Link_Control`, `F_BSY`, `Class 2`, `Class 3`. `Table 160 – Stacked Connect-request support Login Bits` defines `word 0, bits 29 - 28` meanings (`00b`, `01b`, `10b`, `11b`). `Table 161 – Sequential delivery support` defines `Nx_Port`/`Fx_Port` combinations and whether sequential delivery is functional. Content types: timer/negotiation, response/branch handling, completion/exception conditions.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 181,
+                      "end_index": 181,
+                      "subtree_start_index": 181,
+                      "subtree_end_index": 181
+                    },
+                    {
+                      "node_id": "0366",
+                      "title": "6.6.5.4.5 Priority/Preemption",
+                      "summary": "Defines `Priority/Preemption` negotiation semantics for Fabric Login support, centered on the `Priority/Preemption bit` (`word 0, bit 23`) in `Class 1, 2, 3, and 6`, with `LS_ACC` outcome meanings for `Nx_Port`/`Fabric` agreement. Includes request/response behavior: an `Nx_Port` performing Login with a Fabric requests support by setting the bit to `1`; if `LS_ACC` also sets it to `1`, Priority and Preemption are available for use. Enumerates support codes `0` and `1` and the four `Nx_Port`/`Fx_Port` combinations. `Table 162 – Fabric Login Priority and Preemption Support`: defines the meaning of `Nx_Port` and `Fx_Port` bit combinations (`0/0`, `0/1`, `1/0`, `1/1`). Content types: procedure/flow, response/branch handling, timer/negotiation.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 182,
+                      "end_index": 182,
+                      "subtree_start_index": 182,
+                      "subtree_end_index": 182
+                    },
+                    {
+                      "node_id": "0367",
+                      "title": "6.6.5.4.6 Preference",
+                      "summary": "Covers `6.6.5.4.6 Preference`: login negotiation of the `Preference bit` (`word 0, bit 22`) for tolerance of non-zero `CS_CTL` during Nx_Port-to-Nx_Port Login, plus `6.6.5.4.6.2 Fx_Port` values for preferred delivery. `6.6.5.4.6.1 Nx_Port`: `0 = non-zero CS_CTL may be tolerated`, `1 = non-zero CS_CTL shall be tolerated`; requester sets bit to one, peer indicates tolerance by setting it to one in the `LS_ACC`; tolerant `Nx_Port` shall not reject/deprecate a frame solely because `CS_CTL` is non-zero. In `Class 2 and 3`, tolerate `PREF field` in `CS_CTL` of `Frame_Header`; as Sequence Initiator it may specify Preference to the Fabric, as Sequence Recipient the `PREF field` shall be ignored (`FC-FS-2`). No meaning in `Class 1` and `Class 6`. `Fx_Port`: `0 = Normal delivery`, `1 = Preferred delivery functional`. Table `Table 162 – Fabric Login Priority and Preemption Support` defines `Priority/Preemption` support combinations. Content types: procedure/flow, response/branch handling, timer/negotiation.",
+                      "is_skeleton": false,
+                      "children": [
+                        {
+                          "node_id": "0368",
+                          "title": "6.6.5.4.6.1 Nx_Port",
+                          "summary": "Covers `6.6.5.4.6.1 Nx_Port` Preference-bit semantics for Nx_Port-to-Nx_Port Login: `Preference bit` (`word 0, bit 22`) values `0 = non-zero CS_CTL may be tolerated`, `1 = non-zero CS_CTL shall be tolerated`. In Login, an `Nx_Port` sets the bit to one to indicate tolerance for non-zero `CS_CTL`; the peer returns tolerance by setting it in `LS_ACC`. An `Nx_Port` tolerating non-zero `CS_CTL` shall not reject/deprecate a frame solely because `CS_CTL` is non-zero. For `Class 2` and `Class 3`, if set to one, the Nx_Port shall tolerate the `PREF field` in the `CS_CTL` field of the `Frame_Header`; as Sequence Recipient it shall ignore `PREF field` (see `FC-FS-2`). No meaning in `Class 1` and `Class 6`. Content types: negotiation, response/branch handling, completion/exception conditions. `Table 162 – Fabric Login Priority and Preemption Support`: defines `Nx_Port`/`Fx_Port` Priority/Preemption combinations.",
+                          "is_skeleton": false,
+                          "children": [],
+                          "start_index": 182,
+                          "end_index": 182,
+                          "subtree_start_index": 182,
+                          "subtree_end_index": 182
+                        },
+                        {
+                          "node_id": "0369",
+                          "title": "6.6.5.4.6.2 Fx_Port",
+                          "summary": "Section `6.6.5.4.6.2 Fx_Port` covers Fabric Login `Preference bit` (`word 0, bit 22`) behavior for `Fx_Port`: `0 = Normal delivery`, `1 = Preferred delivery functional`. It states how an `Nx_Port` setting bit 22 requests delivery per the `PREF field` in the `CS_CTL field` of the `Frame_Header`, and how an `Fx_Port` reply indicates Fabric handling of `Class 2` and `Class 3` frames; `Class 1` and `Class 6` are not meaningful. Includes `NOTE 17` that preferred delivery may still work even if `Fx_Port` returns zero. `Table 163 – Class 2 and 3 Preference Bit Function`: defines `Nx_Port`/`Fx_Port` bit-22 combinations and meaning. `Table 164 – Relationship between Preferred delivery and sequential delivery`: defines ordering behavior for preferred vs sequential delivery. Content types: `timer/negotiation`, `response/branch handling`, `completion/exception conditions`.",
+                          "is_skeleton": false,
+                          "children": [],
+                          "start_index": 182,
+                          "end_index": 183,
+                          "subtree_start_index": 182,
+                          "subtree_end_index": 183
+                        }
+                      ],
+                      "start_index": 182,
+                      "end_index": 182,
+                      "subtree_start_index": 182,
+                      "subtree_end_index": 183
+                    },
+                    {
+                      "node_id": "0370",
+                      "title": "6.6.5.4.7 DiffServ QoS",
+                      "summary": "Covers DiffServ QoS capability signaling and negotiation in `6.6.5.4.7 DiffServ QoS`, specifically `6.6.5.4.7.1 N_Port Login` and `6.6.5.4.8 F_Port Login`. Key anchors: `N_Port Login`, `F_Port Login`, `LS_ACC`, `DiffServ QoS bit` (`word 0, bit 21`), `CS_CTL/Priority Enable bit` (`F_CTL bit 17`), `DSCP field of the CS_CTL field` (`word 1, bits 29-24`), `Classes 2 and 3`, `Nx_Port`, `Fx_Port`, `Exchange Originator`, `Exchange Responder`, `FC-FS-2`. Defines `0 = DiffServ QoS not supported` / `1 = DiffServ QoS supported` and login reply meaning, including when DiffServ QoS is available for use. `Table 165 – DiffServ QoS bit definition`: defines Nx_Port/Fx_Port bit combinations and resulting support/availability outcomes. Content types: procedure/flow, response/branch handling, timer/negotiation.",
+                      "is_skeleton": false,
+                      "children": [
+                        {
+                          "node_id": "0371",
+                          "title": "6.6.5.4.7.1 N_Port Login",
+                          "summary": "Covers `6.6.5.4.7.1 N_Port Login` DiffServ QoS negotiation during Login between `Nx_Port` peers. `procedure/flow`, `response/branch handling`, `timer/negotiation`. An `Nx_Port` indicates support by setting the `DiffServ QoS bit` (`word 0, bit 21`) to `1`; the other `Nx_Port` confirms support by setting the same bit to `1` in `LS_ACC`. As `Exchange Originator` and `Exchange Responder`, support means `CS_CTL/Priority Enable bit` (`F_CTL bit 17`) is `0`, so the `DSCP field` of `CS_CTL` (`word 1, bits 29-24`) specifies Differentiated Services QoS policy. `0 = DiffServ QoS not supported`, `1 = DiffServ QoS supported`. Applies only to `Classes 2 and 3`. `Table 165 – DiffServ QoS bit definition`: defines `Nx_Port`/`Fx_Port` bit combinations and availability outcomes.",
+                          "is_skeleton": false,
+                          "children": [],
+                          "start_index": 184,
+                          "end_index": 184,
+                          "subtree_start_index": 184,
+                          "subtree_end_index": 184
+                        }
+                      ],
+                      "start_index": 184,
+                      "end_index": 184,
+                      "subtree_start_index": 184,
+                      "subtree_end_index": 184
+                    },
+                    {
+                      "node_id": "0372",
+                      "title": "6.6.5.4.8 F_Port Login",
+                      "summary": "Section `6.6.5.4.8 F_Port Login` covers `Fabric Login` negotiation of `DiffServ QoS` support between `Nx_Port` and `Fx_Port` using the `DiffServ QoS bit` (`word 0, bit 21`) and `LS_ACC` reply semantics. Core rule: an `Nx_Port` requests support by setting `word 0, bit 21` to `1`; if the responding `Fx_Port` also sets the bit to `1` in `LS_ACC`, `Differentiated Services QoS` is available for use. Includes value meanings `0 = DiffServ QoS not Supported`, `1 = DiffServ QoS Supported`; applies only to `Classes 2 and 3`; references `FC-FS-2`. `Table 165 – DiffServ QoS bit definition`: defines all `Nx_Port`/`Fx_Port` bit combinations (`0/0`, `0/1`, `1/0`, `1/1`) and resulting support/availability outcomes. Content types: timer/negotiation, response/branch handling, completion/exception conditions.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 184,
+                      "end_index": 184,
+                      "subtree_start_index": 184,
+                      "subtree_end_index": 184
+                    }
+                  ],
+                  "start_index": 180,
+                  "end_index": 180,
+                  "subtree_start_index": 180,
+                  "subtree_end_index": 184
+                },
+                {
+                  "node_id": "0373",
+                  "title": "6.6.5.5 Initiator control",
+                  "summary": "Defines `Initiator Control Flags` for the Sequence Initiator in an `Nx_Port`, covering requested/capable protocols, policies, and functions in Service Parameters. `6.6.5.5.2 Initial Process_Associator` defines `word 0, bits 13-12`: `00b` not supported, `01b` supported, `10b` reserved, `11b` required (and supported); ties to `Association_Header`, `Process_Associator`, `Responder Process_Associator`, `X_ID interlock`, `Class 1`, `Class 2`, `PLOGI`, `PLOGI LS_ACC`, `LS_RJT`, and conflict handling when Initiator Control bits mismatch and Nx_Ports cannot communicate. `6.6.5.5.3 ACK_0 capability` defines `word 0, bit 11`: `0 = ACK_0 incapable`, `1 = ACK_0 capable`, for acknowledged class Sequences under `Discard` or `Process Exchange Error Policies`. Table `166 – Initial Process_Associator Bits Definition`: defines `word 0, bits 13-12` meanings. Content types: response/branch handling, timer/negotiation, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [
+                    {
+                      "node_id": "0374",
+                      "title": "6.6.5.5.1 Introduction",
+                      "summary": "Introduces `6.6.5.5 Initiator control`: Initiator Control Flags specify which protocols, policies, or functions the Sequence Initiator in an `Nx_Port` requests of the recipient or supports as a Sequence initiator. Covers `Initial Process_Associator` (`word 0, bits 13-12`) and `ACK_0 capability` (`word 0, bit 11`). `Table 166 – Initial Process_Associator Bits Definition` defines `00b` not supported, `01b` supported, `10b` reserved, `11b` required (and supported). Notes `Association_Header`, `Process_Associator`, `Responder Process_Associator`, `X_ID interlock`, `Class 1`, `Class 2`, `PLOGI`, `PLOGI LS_ACC`, `LS_RJT`, and conflict handling when `Responder`/`Originator` support or require `Initial Process_Associator`; in conflict cases `Nx_Ports` are unable to communicate. Also states `ACK_0 incapable`/`ACK_0 capable` for acknowledged class of service Sequences. Content types: response/branch handling, completion/exception conditions.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 185,
+                      "end_index": 185,
+                      "subtree_start_index": 185,
+                      "subtree_end_index": 185
+                    },
+                    {
+                      "node_id": "0375",
+                      "title": "6.6.5.5.2 Initial Process_Associator",
+                      "summary": "Defines `Initial Process_Associator` within `6.6.5.5 Initiator control`: `word 0, bits 13-12` meanings for `PLOGI`/`PLOGI LS_ACC`, support vs required semantics, `Association_Header` use at certain Sequence boundaries, required initial `Process_Associator` value, and dependency that if `Initial Process_Associator` is required or supported then `X_ID interlock` is also required in `Class 1` and `2`. Covers conflict handling via `LS_RJT` when Originator/Responder `Nx_Port` capabilities mismatch, including “Initiator Control bits are in conflict” and inability to communicate. `Table 166 – Initial Process_Associator Bits Definition`: defines encodings `00b` not supported, `01b` supported, `10b` reserved, `11b` required (and supported). Content types: response/branch handling, timer/negotiation, completion/exception conditions.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 185,
+                      "end_index": 185,
+                      "subtree_start_index": 185,
+                      "subtree_end_index": 185
+                    },
+                    {
+                      "node_id": "0376",
+                      "title": "6.6.5.5.3 ACK_0 capability",
+                      "summary": "Section `6.6.5.5.3 ACK_0 capability` defines the `ACK_0 capability bit` (`word 0, bit 11`) in `Initiator control` Class Service Parameters: `0 = ACK_0 incapable`, `1 = ACK_0 capable`. Core topic: whether the `Nx_Port` supplying the parameters can support `ACK_0` as a `Sequence Initiator` for acknowledgement of an entire `Sequence` under `Discard` or `Process Exchange Error Policies`. It states that, as a `Sequence Initiator`, an `Nx_Port` receives and processes `ACK frames` in response to `Data frame` transmission, and that `ACK_0` applies to acknowledged class of service `Sequences` (see `FC-FC-2`). Table present: `Table 166 – Initial Process_Associator Bits Definition`, defining `Word 0, bits 13-12` meanings for `Initial Process_Associator`. Content types: timer/negotiation.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 185,
+                      "end_index": 185,
+                      "subtree_start_index": 185,
+                      "subtree_end_index": 185
+                    },
+                    {
+                      "node_id": "0377",
+                      "title": "6.6.5.5.4 ACK generation assistance",
+                      "summary": "Section `6.6.5.5.4 ACK generation assistance` defines the `ACK generation assistance bit (word 0, bit 9)` for Initiator Control: `0 = No ACK generation assistance is provided to Sequence Recipient`, `1 = ACK generation assistance is provided to Sequence Recipient`; usage is specified in `FC-FS-2`. Nearby context on the same page also includes `Table 167 – ACK_0 Support Conditions (Initiator Control)`, which defines when `ACK_0` is supported based on `Nx_Port A Word 0, Bit 11`, `Nx_Port B Word 1, Bit 31`, and `Nx_Port A as Sequence Initiator`; `ACK_0` takes precedence over `ACK_1`. References present: `6.6.5.5.5 Clock synchronization ELS capable`, `word 0, bit 4`, `Clock Synchronization Server` `FFFFF6h`, `CSU ELS`. Content types: negotiation/feature bit definitions, completion/exception conditions.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 186,
+                      "end_index": 186,
+                      "subtree_start_index": 186,
+                      "subtree_end_index": 186
+                    },
+                    {
+                      "node_id": "0378",
+                      "title": "6.6.5.5.5 Clock synchronization ELS capable",
+                      "summary": "Section `6.6.5.5.5 Clock synchronization ELS capable` defines the `Clock synchronization ELS capable bit (word 0, bit 4)` in Initiator Control: `0 = Initiator does not have clock synchronization ELS capability`, `1 = Initiator has clock synchronization ELS capability`. It is only meaningful from the `Clock Synchronization Server` well-known address `FFFFF6h`; `0` means the `Nx_Port` does not support the ELS method of Clock Synchronization, `1` means the `Nx_Port` can generate `CSU ELS frames`; see `FC-FS-2`. Nearby carryover context includes `ACK_0`, `ACK_1`, `ACK generation assistance bit (word 0, bit 9)`, and `Table 167 – ACK_0 Support Conditions (Initiator Control)` showing when `ACK_0` is supported for `Nx_Port A`/`Nx_Port B`. Content types: response/branch handling.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 186,
+                      "end_index": 186,
+                      "subtree_start_index": 186,
+                      "subtree_end_index": 186
+                    }
+                  ],
+                  "start_index": 185,
+                  "end_index": 185,
+                  "subtree_start_index": 185,
+                  "subtree_end_index": 186
+                },
+                {
+                  "node_id": "0379",
+                  "title": "6.6.5.6 Recipient control",
+                  "summary": "Section `6.6.5.6 Recipient control` introduces `6.6.5.6.1 Introduction`: the `Recipient Control Flags` specify which protocols, policies, or functions are supported by the `Recipient Initiator` function in an `Nx_Port` supplying `Service Parameters` when acting as a recipient of `Data frames`. Context carried into this page includes `ACK_0` support rules and asymmetry between `Sequence Initiator` and `Sequence Recipient`, with `ACK_0` taking precedence over `ACK_1`; capability bits referenced are `word 0, bit 11`, `word 1, bit 31`, `word 0, bit 9`, and `word 0, bit 4`, plus `FFFFF6h` and `FC-FS-2`. `Table 167 – ACK_0 Support Conditions (Initiator Control)` defines when `ACK_0` is supported based on `Nx_Port A`/`Nx_Port B` bit settings. Content types: timer/negotiation, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [
+                    {
+                      "node_id": "0380",
+                      "title": "6.6.5.6.1 Introduction",
+                      "summary": "Section `6.6.5.6.1 Introduction` introduces `Recipient Control Flags`: they specify which protocols, policies, or functions are supported by the `Recipient Initiator function` in the `Nx_Port` supplying `Service Parameters` when acting as a recipient of `Data frames`. Context on `ACK_0` support is included: `Table 167 – ACK_0 Support Conditions (Initiator Control)` defines when `ACK_0` is supported for `Nx_Port A` (`Word 0, Bit 11`) and `Nx_Port B` (`Word 1, Bit 31`) with `Nx_Port A as Sequence Initiator`; only `1/1` yields `ACK_0 supported`, otherwise `ACK_0 not supported`, and `ACK_0` takes precedence over `ACK_1`. Also names `ACK generation assistance` (`word 0, bit 9`), `Clock synchronization ELS capable` (`word 0, bit 4`), `Clock Synchronization Server` `FFFFF6h`, and `CSU ELS frames`. Content types: timer/negotiation, completion/exception conditions.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 186,
+                      "end_index": 186,
+                      "subtree_start_index": 186,
+                      "subtree_end_index": 186
+                    },
+                    {
+                      "node_id": "0381",
+                      "title": "6.6.5.6.2 ACK_0 capability",
+                      "summary": "Defines `ACK_0 capability` in Class Service Parameters: `word 1, bit 31`, with values `0 = ACK_0 incapable`, `1 = ACK_0 capable`. Core rule: ACK_0 support for acknowledged class-of-service Sequences as Sequence Recipient requires infinite buffering and ability to transmit `ACK_0` frames in response to Data frames; support applies only when Sequence Initiator capability `Word 0, Bit 11` and Sequence Recipient capability `Word 1, Bit 31` are both `1`. Notes asymmetrical capability per `Nx_Port`; if both bits are `1`, port supports ACK_0 as either Sequence Initiator or Sequence Recipient. `Table 168 – ACK_0 Support Conditions (Recipient Control)` defines the 2-bit support matrix (`ACK_0 supported` / `ACK_0 not supported`). Content types: timer/negotiation, response/branch handling, completion/exception conditions.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 187,
+                      "end_index": 187,
+                      "subtree_start_index": 187,
+                      "subtree_end_index": 187
+                    },
+                    {
+                      "node_id": "0382",
+                      "title": "6.6.5.6.3 X_ID interlock",
+                      "summary": "Defines `X_ID interlock` (`word 1, bit 29`) for Class 1 and Class 2 Class Service Parameters: `0 = X_ID interlock not required`, `1 = X_ID interlock required`. Covers the X_ID assignment interlock procedure/flow: in the first Data frame of a Sequence, the Sequence Initiator sets `Recipient X_ID` to `FFFFh`; the Recipient returns its X_ID in the `ACK` frame for that first Data frame; the Sequence Initiator shall not transmit additional frames until the corresponding `ACK` is received; after `ACK` reception it continues using both assigned X_ID values. References `FC-FS-2`. Also includes `Table 168 – ACK_0 Support Conditions (Recipient Control)`, which defines when `ACK_0` is supported from `Word 0, Bit 11` and `Word 1, Bit 31`. Content types: procedure/flow, response/branch handling.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 187,
+                      "end_index": 187,
+                      "subtree_start_index": 187,
+                      "subtree_end_index": 187
+                    },
+                    {
+                      "node_id": "0383",
+                      "title": "6.6.5.6.4 Error policy supported",
+                      "summary": "Defines `Error policy supported` capability bits and adjacent recipient capability fields in word 1: bits `28-27` for missing frame condition handling, bits `25-24` for `Categories per Sequence`, plus `Clock synchronization ELS capable`. `Table 169 – Error Policy Bits Definition` shows `00b` = `Only discard policy supported`, `10b` = `Both discard and process policies supported`, `01b`/`11b` reserved; policy for an Exchange is specified by the `Exchange Originator` per `FC-FS-2`. `Table 170 – Categories per Sequence Bits Definition` shows `00b` = `1 Category/Sequence`, `01b` = `2 Categories/Sequence`, `11b` = `More than 2 Categories/Sequence`, `10b` reserved. Covers `Nx_Port`, `Recipient`, `Sequence Initiator`, `Sequence Recipient`, `N_Port Login`, `Information Categories`, `R_CTL bits 27-24`, `Frame_Header`, `Class of Service`, `FC-4`. Content types: `message/frame format`, `timer/negotiation`, `completion/exception conditions`.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 188,
+                      "end_index": 188,
+                      "subtree_start_index": 188,
+                      "subtree_end_index": 188
+                    },
+                    {
+                      "node_id": "0384",
+                      "title": "6.6.5.6.5 Categories per Sequence",
+                      "summary": "Defines `Categories per Sequence` capability bits for N_Port Login: `word 1, bits 25-24`, indicating recipient support for `1 Category/Sequence`, `2 Categories/Sequence`, or `More than 2 Categories/Sequence` via `Information Categories` (`R_CTL bits 27-24 in the Frame_Header`) within a single `Sequence`. Applies per `Class of Service`; a `Sequence Initiator` must restrict categories based on the `Sequence Recipient's` capability learned during `N_Port Login`. Notes interoperability impact on `FC-4` protocols and preference for single-category compatibility with multi-category support where possible. `Table 170 – Categories per Sequence Bits Definition`: defines encodings `00b`, `01b`, `10b Reserved`, `11b`. Nearby context includes `Table 169 – Error Policy Bits Definition`: defines `word 1, bits 28-27` error-policy support. Content types: timer/negotiation, completion/exception conditions.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 188,
+                      "end_index": 188,
+                      "subtree_start_index": 188,
+                      "subtree_end_index": 188
+                    },
+                    {
+                      "node_id": "0385",
+                      "title": "6.6.5.6.6 Clock synchronization ELS capable",
+                      "summary": "Defines capability bits around `6.6.5.6.6 Clock synchronization ELS capable` and nearby word 1 capability fields used during N_Port Login. Covers `Error policy supported` (`word 1, bits 28-27`) with meanings `00b` Only discard policy supported, `10b` Both discard and process policies supported, and `01b`/`11b` Reserved; `Categories per Sequence` (`word 1, bits 25-24`) with `00b` 1 Category/Sequence, `01b` 2 Categories/Sequence, `10b` Reserved, `11b` More than 2 Categories/Sequence; and `Clock synchronization ELS capable` values `0` = no capability, `1` = capability. `Table 169 – Error Policy Bits Definition`: defines Error policy supported bit meanings. `Table 170 – Categories per Sequence Bits Definition`: defines Categories per Sequence bit meanings. Content types: message/frame format, timer/negotiation, response/branch handling.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 188,
+                      "end_index": 188,
+                      "subtree_start_index": 188,
+                      "subtree_end_index": 188
+                    }
+                  ],
+                  "start_index": 186,
+                  "end_index": 186,
+                  "subtree_start_index": 186,
+                  "subtree_end_index": 188
+                },
+                {
+                  "node_id": "0386",
+                  "title": "6.6.5.7 Receive Data_Field Size",
+                  "summary": "6.6.5.7 `Receive Data_Field Size`: defines `Receive Data_Field Size` (word 1, bits 11-0) in Service Parameters, specifying the largest `Data_Field Size` for a frame that may be received by the `Nx_Port` as a `Sequence Recipient` (see `FC-FS-2`). Valid values are 256 to 2 112, must be multiples of four bytes, and an `Nx_Port` shall support at least 256 bytes. For `Class 1` and `Class 6`, this is the post-connection receive limit; connect-request size is in `Buffer-to-Buffer Receive Data_Field size` in `Common Service Parameters` (see `6.6.2.6`). For `Class 2` and `Class 3`, it shall be equal to or less than that common-parameter value. Content types: timer/negotiation, completion/exception conditions. Tables/Figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 189,
+                  "end_index": 189,
+                  "subtree_start_index": 189,
+                  "subtree_end_index": 189
+                },
+                {
+                  "node_id": "0387",
+                  "title": "6.6.5.8 Concurrent Sequences",
+                  "summary": "Defines `Concurrent Sequences` in Service Parameters: `word 2, bits 23-16` specify the number of `Sequence Status Blocks` available in the `Nx_Port` as `Sequence Recipient` for tracking a `Sequence`. Allowable values: `01h - FFh`; `00` reserved; maximum `255` per `Nx_Port` as Recipient across all classes. Cross-reference limit from `Common Service Parameter field` (see `6.6.2.7`). `NOTE 18`: maximum open Sequences between two `Nx_Ports` equals the sum of `Concurrent Sequences` reported in `PLOGI` and `LS_ACC` of the `PLOGI`. Class behavior: in `Class 1` and `6`, `SEQ_ID` ranges `0` to `L` inclusive, where `L` is the `Concurrent Sequence` field; in `Class 2` and `3`, `SEQ_ID` ranges `0` to `255`; in `Class 2`, `P_BSY` may be returned if resources unavailable. Content types: response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 189,
+                  "end_index": 189,
+                  "subtree_start_index": 189,
+                  "subtree_end_index": 189
+                },
+                {
+                  "node_id": "0388",
+                  "title": "6.6.5.9 end-to-end Credit",
+                  "summary": "Defines `Nx_Port End-to-end Credit` in `6.6.5.9 end-to-end Credit`: `word 2, bits 14-0` gives the maximum number of `Data` frames an `Nx_Port` may transmit without receiving accompanying `ACK` or `Link_Response` frames. Covers minimum value `one`, relation to available buffers for holding `Data_Field` and processing it, and applicability limits: not applicable to `Class 3` because `ACK` frames are not used. Integrity constraint: `Nx_Port End-to-end Credit` is a `15-bit` field while `SEQ_CNT` is a `16-bit` field, ensuring credit never exceeds one-half of maximum `SEQ_CNT`; `Bit 15` shall be `zero`. Content types: completion/exception conditions (minimum, not-applicable case, bit constraint). No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 189,
+                  "end_index": 189,
+                  "subtree_start_index": 189,
+                  "subtree_end_index": 189
+                },
+                {
+                  "node_id": "0389",
+                  "title": "6.6.5.10 Open Sequences per Exchange",
+                  "summary": "Defines `Open Sequences per Exchange` semantics for `word 3, bits 23 - 16`: maximum Sequences open at the Recipient at one time between a pair of `Nx_Ports` for one `Exchange`; value `X+2` specifies maintained `Sequence Status` instances in the `Exchange Status Block (ESB)`; value `X` limits link facility resources for error detection and recovery; `X` is specified in `bits 23-16` (see `FC-FS-2`). Includes `NOTE 19` on retaining at least one “good” Sequence and race/timing margin. Valid only for `PLOGI` and `PLOGI LS_ACC`. Content types: timer/negotiation, completion/exception conditions. Adjacent carry-over anchors mentioned: `Nx_Port End-to-end Credit` valid values `1` to `32767`, `0` reserved; next section starts `CR_TOV` (`word 3`, `1 ms` increments, `0000000Ah`, `Class 1`, `Class 6`, `FLOGI LS_ACC`). No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 190,
+                  "end_index": 190,
+                  "subtree_start_index": 190,
+                  "subtree_end_index": 190
+                },
+                {
+                  "node_id": "0390",
+                  "title": "6.6.5.11 CR_TOV",
+                  "summary": "Covers `CR_TOV` encoding/meaning in `6.6.5.11 CR_TOV`: `CR_TOV` value (`word 3`) is a count of `1 ms` increments; example `0000000Ah` = `10 ms`. Scope/applicability: `CR_TOV` usage references `FC-FS-2`; applicable to `Class 1` and `6`, not applicable to other Classes; only meaningful in `FLOGI LS_ACC`. Nearby context on the same page also names `Nx_Port End-to-end Credit`, `Open Sequences per Exchange`, `Sequence Status`, `Exchange Status Block`, `PLOGI`, and `PLOGI LS_ACC`, but this section itself is specifically about `CR_TOV`. Content types: `timer/negotiation`. No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 190,
+                  "end_index": 190,
+                  "subtree_start_index": 190,
+                  "subtree_end_index": 190
+                }
+              ],
+              "start_index": 176,
+              "end_index": 176,
+              "subtree_start_index": 176,
+              "subtree_end_index": 190
+            },
+            {
+              "node_id": "0391",
+              "title": "6.6.6 Vendor Version Level",
+              "summary": "Core topic: `6.6.6 Vendor Version Level` defines the `Vendor Version Level field` (`words 25-28`) as vendor-specific information and states when it is valid. Validity is controlled by the `Valid Version Level bit` in the `Common Service Parameters field` (`word 1, bit 29`): if set to one, the `Vendor Version Level field` contains valid information; if set to zero, the field is not meaningful. Nearby anchors on the page: `CR_TOV`, `FLOGI LS_ACC`, `Services Availability`, `Multicast Server`, `Clock Synchronization Server`, `FFFFF5h`, `FFFFF6h`. Content types: response/branch handling (bit set to one/zero determines interpretation). Tables: none. Figures: none.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 190,
+              "end_index": 190,
+              "subtree_start_index": 190,
+              "subtree_end_index": 190
+            },
+            {
+              "node_id": "0392",
+              "title": "6.6.7 Services Availability",
+              "summary": "Defines `Services Availability` in `FLOGI LS_ACC`: fabric routing availability to well-known addresses, meaningful only for `FLOGI LS_ACC`. `6.6.7.1 Introduction` says only `word 30, bits 10 - 3` are meaningful; `word 29` and `word 30 bits 31 - 11 and 2 - 0` are reserved. `6.6.7.2 Multicast Server`: `word 30, bit 10`; `1` means routing supported to well-known `Multicast Server` address identifier `FFFFF5h`, `0` means not supported. `6.6.7.3 Clock Synchronization Server`: `word 30, bit 9`; `1` means routing supported to `Clock Synchronization Server` address identifier `FFFFF6h`, `0` means not supported. Content types: message/frame format, response/branch handling. Tables: none. Figures: none.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 190,
+              "end_index": 190,
+              "subtree_start_index": 190,
+              "subtree_end_index": 191
+            }
+          ],
+          "start_index": 165,
+          "end_index": 165,
+          "subtree_start_index": 165,
+          "subtree_end_index": 196
+        }
+      ],
+      "start_index": 152,
+      "end_index": 152,
+      "subtree_start_index": 152,
+      "subtree_end_index": 196
+    }
+  ],
+  "next_steps": {
+    "options": [
+      "Request next part with part: 7",
+      "Jump to last part with part: 7",
+      "Request previous part with part: 5",
+      "Proceed to get_page_content() for specific sections"
+    ],
+    "summary": "Showing part 6 of 7."
+  },
+  "pagination": {
+    "part": "6",
+    "has_more": true,
+    "total_parts": "7"
+  },
+  "total_parts": "7"
+}

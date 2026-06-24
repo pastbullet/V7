@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0126",
+  "type": "table",
+  "caption": "Table 122 – Descriptor Control Codes",
+  "pages": [
+    133
+  ],
+  "bbox": [
+    105.53,
+    110.09,
+    530.49,
+    240.17
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 133,
+  "logical_table": false
+}

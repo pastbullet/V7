@@ -1,0 +1,957 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 24,
+  "spans": [
+    {
+      "span_id": "p024_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0002",
+      "text": " 5",
+      "bbox": [
+        523.86,
+        723.59,
+        532.16,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0003",
+      "text": "3.2.33",
+      "bbox": [
+        96.0,
+        57.65,
+        124.35,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0004",
+      "text": "Credit: ",
+      "bbox": [
+        134.47,
+        57.65,
+        170.17,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0005",
+      "text": "The maximum number of buffers available at a recipient to receive frames from a",
+      "bbox": [
+        170.58,
+        57.65,
+        539.87,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0006",
+      "text": "transmitting FC_Port (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        69.65,
+        257.05,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0007",
+      "text": "3.2.34",
+      "bbox": [
+        96.0,
+        94.97,
+        123.73,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0008",
+      "text": "data block: ",
+      "bbox": [
+        133.8,
+        94.97,
+        189.13,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0009",
+      "text": "An ordered string of application data contained in a single Information Category.",
+      "bbox": [
+        188.88,
+        94.97,
+        540.04,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0010",
+      "text": "3.2.35",
+      "bbox": [
+        96.0,
+        118.97,
+        123.74,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0011",
+      "text": "data frame: ",
+      "bbox": [
+        133.8,
+        118.97,
+        190.42,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0012",
+      "text": "An FC-4 Device_Data frame, an FC-4 Video_Data frame, or a Link_Data frame",
+      "bbox": [
+        190.44,
+        118.97,
+        540.0,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0013",
+      "text": "(see FC-FS-2).",
+      "bbox": [
+        96.0,
+        130.97,
+        162.61,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0014",
+      "text": "3.2.36",
+      "bbox": [
+        96.0,
+        154.96,
+        123.87,
+        166.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0015",
+      "text": "dedicated connection: ",
+      "bbox": [
+        133.93,
+        154.96,
+        243.5,
+        166.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0016",
+      "text": "A communicating circuit guaranteed and retained by the Fabric for",
+      "bbox": [
+        243.84,
+        154.96,
+        539.98,
+        166.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0017",
+      "text": "two given Nx_Ports for a Class 1 or Class 6 connection.",
+      "bbox": [
+        96.0,
+        166.96,
+        342.67,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0018",
+      "text": "3.2.37",
+      "bbox": [
+        96.0,
+        190.96,
+        125.91,
+        202.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0019",
+      "text": "Destination_Identifier (D_ID): ",
+      "bbox": [
+        136.39,
+        190.96,
+        290.21,
+        202.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0020",
+      "text": "The address identifier used to indicate the targeted",
+      "bbox": [
+        290.88,
+        190.96,
+        539.98,
+        202.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0021",
+      "text": "destination Nx_Port of the transmitted frame (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        202.96,
+        360.94,
+        214.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0022",
+      "text": "3.2.38",
+      "bbox": [
+        96.0,
+        226.96,
+        123.74,
+        238.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0023",
+      "text": "destination Nx_Port: ",
+      "bbox": [
+        133.8,
+        226.96,
+        234.36,
+        238.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0024",
+      "text": "The Nx_Port designated by the Destination_Identifier of a frame..",
+      "bbox": [
+        234.3,
+        226.96,
+        522.08,
+        238.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0025",
+      "text": "3.2.39",
+      "bbox": [
+        96.0,
+        250.96,
+        124.63,
+        262.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0026",
+      "text": "discard policy: ",
+      "bbox": [
+        134.81,
+        250.96,
+        211.06,
+        262.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0027",
+      "text": "An error handling policy where a Sequence Recipient is able to discard",
+      "bbox": [
+        211.5,
+        250.96,
+        539.87,
+        262.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0028",
+      "text": "Data frames received following detection of a missing frame in a Sequence (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        262.96,
+        496.49,
+        274.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0029",
+      "text": "3.2.40",
+      "bbox": [
+        96.0,
+        286.96,
+        124.17,
+        298.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0030",
+      "text": "Domain Controller: ",
+      "bbox": [
+        134.29,
+        286.96,
+        229.29,
+        298.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0031",
+      "text": "The entity that controls activity within a given domain.  Each Domain",
+      "bbox": [
+        229.68,
+        286.96,
+        539.94,
+        298.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0032",
+      "text": "Controller is allocated an address (see FC-SW-3.).",
+      "bbox": [
+        96.0,
+        298.96,
+        319.77,
+        310.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0033",
+      "text": "3.2.41",
+      "bbox": [
+        96.0,
+        322.96,
+        123.97,
+        334.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0034",
+      "text": "Domain_ID: ",
+      "bbox": [
+        133.97,
+        322.96,
+        192.71,
+        334.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0035",
+      "text": "The highest or most significant hierarchical level in the three-level addressing",
+      "bbox": [
+        193.02,
+        322.96,
+        539.92,
+        334.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0036",
+      "text": "hierarchy (i.e., the most significant byte of the address identifier) (see FC-FS-2 and FC-SW-3).",
+      "bbox": [
+        96.0,
+        334.96,
+        512.56,
+        346.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0037",
+      "text": "3.2.42",
+      "bbox": [
+        96.0,
+        358.96,
+        123.85,
+        370.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0038",
+      "text": "Domain Topology Map: ",
+      "bbox": [
+        133.85,
+        358.96,
+        247.79,
+        370.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0039",
+      "text": "An entity within the Avionics Fabric that unambiguously describes",
+      "bbox": [
+        248.04,
+        358.96,
+        540.02,
+        370.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0040",
+      "text": "the Domain_IDs and all of the Inter-Switch Links of the Avionics Fabric. The Domain_IDs and all of",
+      "bbox": [
+        96.0,
+        370.96,
+        539.94,
+        382.08
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0041",
+      "text": "the Inter-Switch Links shall remain unchanged for the duration of a mission ",
+      "bbox": [
+        96.0,
+        382.96,
+        429.36,
+        394.08
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0042",
+      "text": "(see FC-SW-4)",
+      "bbox": [
+        429.3,
+        382.96,
+        496.46,
+        394.08
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0043",
+      "text": ".",
+      "bbox": [
+        496.5,
+        382.96,
+        499.27,
+        394.08
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 3
+    },
+    {
+      "span_id": "p024_s0044",
+      "text": "3.2.43",
+      "bbox": [
+        96.0,
+        406.96,
+        124.46,
+        418.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0045",
+      "text": "end-to-end Credit (EE_Credit):",
+      "bbox": [
+        134.64,
+        406.96,
+        282.74,
+        418.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0046",
+      "text": " The limiting value for EE_Credit_CNT in the end-to-end",
+      "bbox": [
+        282.9,
+        406.96,
+        540.03,
+        418.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0047",
+      "text": "flow control model (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        418.96,
+        245.97,
+        430.08
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0048",
+      "text": "3.2.44",
+      "bbox": [
+        96.0,
+        442.96,
+        123.74,
+        454.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0049",
+      "text": "end-to-end Credit_Count (EE_Credit_CNT): ",
+      "bbox": [
+        133.8,
+        442.96,
+        341.01,
+        454.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0050",
+      "text": "A counter used in the end-to-end flow control",
+      "bbox": [
+        340.98,
+        442.96,
+        540.06,
+        454.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0051",
+      "text": "model (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        454.96,
+        192.62,
+        466.08
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0052",
+      "text": "3.2.45",
+      "bbox": [
+        96.0,
+        478.96,
+        124.52,
+        490.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0053",
+      "text": "E_Port: ",
+      "bbox": [
+        134.7,
+        478.96,
+        174.16,
+        490.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0054",
+      "text": "A Fabric expansion port that connects to another E_Port or B_Port to create an",
+      "bbox": [
+        174.6,
+        478.96,
+        539.95,
+        490.08
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0055",
+      "text": "Inter-Switch Link (see FC-SW-3).",
+      "bbox": [
+        96.0,
+        490.96,
+        242.68,
+        502.07
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0056",
+      "text": "3.2.46",
+      "bbox": [
+        96.0,
+        514.96,
+        125.62,
+        526.07
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0057",
+      "text": "Exchange: ",
+      "bbox": [
+        135.98,
+        514.96,
+        192.56,
+        526.07
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0058",
+      "text": "The unit of protocol activity that transfers information between a specific",
+      "bbox": [
+        193.2,
+        514.96,
+        540.0,
+        526.07
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0059",
+      "text": "Originator Nx_Port and specific Responder Nx_Port using one or more related non-concurrent",
+      "bbox": [
+        96.0,
+        526.96,
+        539.9,
+        538.07
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0060",
+      "text": "Sequences that may flow in the same or opposite directions.  The Exchange is identified by an",
+      "bbox": [
+        96.0,
+        538.96,
+        539.96,
+        550.07
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0061",
+      "text": "OX_ID and a RX_ID (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        550.96,
+        255.38,
+        562.07
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0062",
+      "text": "3.2.47",
+      "bbox": [
+        96.0,
+        574.96,
+        123.77,
+        586.07
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0063",
+      "text": "Exchange_Identifier (X_ID): ",
+      "bbox": [
+        133.83,
+        574.96,
+        266.58,
+        586.07
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0064",
+      "text": "A collective reference to OX_ID and RX_ID (see FC-FS-2).",
+      "bbox": [
+        266.52,
+        574.96,
+        526.97,
+        586.07
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0065",
+      "text": "3.2.48",
+      "bbox": [
+        96.0,
+        598.96,
+        124.19,
+        610.07
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0066",
+      "text": "Exchange Status Block: ",
+      "bbox": [
+        134.25,
+        598.96,
+        252.9,
+        610.07
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0067",
+      "text": "A logical construct that contains the status of an Exchange.  An",
+      "bbox": [
+        253.2,
+        598.96,
+        539.98,
+        610.07
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0068",
+      "text": "Originator Nx_Port has an Originator Exchange Status Block and the Responder Nx_Port has a",
+      "bbox": [
+        96.0,
+        610.96,
+        539.97,
+        622.07
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0069",
+      "text": "Responder Exchange Status Block for each active Exchange (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        622.96,
+        434.85,
+        634.07
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0070",
+      "text": "3.2.49",
+      "bbox": [
+        96.0,
+        647.02,
+        123.74,
+        658.13
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0071",
+      "text": "exclusive connection: ",
+      "bbox": [
+        133.8,
+        647.02,
+        240.82,
+        658.13
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p024_s0072",
+      "text": "A Class 1 or Class 6 dedicated connection without Intermix (see FC-",
+      "bbox": [
+        240.48,
+        647.02,
+        540.07,
+        658.13
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p024_s0073",
+      "text": "FS-2).",
+      "bbox": [
+        96.0,
+        659.02,
+        123.73,
+        670.13
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

@@ -1,0 +1,45 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bit in Byte\nByte", "page": 67, "bbox": [107.32, 110.93, 183.69, 138.14]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "7", "page": 67, "bbox": [183.69, 110.93, 226.95, 138.14]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "6", "page": 67, "bbox": [226.95, 110.93, 270.15, 138.14]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "5", "page": 67, "bbox": [270.15, 110.93, 313.35, 138.14]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "4", "page": 67, "bbox": [313.35, 110.93, 356.47, 138.14]}
+{"cell_id": "r1c6", "row": 1, "col": 6, "text": "3", "page": 67, "bbox": [356.47, 110.93, 400.53, 138.14]}
+{"cell_id": "r1c7", "row": 1, "col": 7, "text": "2", "page": 67, "bbox": [400.53, 110.93, 444.48, 138.14]}
+{"cell_id": "r1c8", "row": 1, "col": 8, "text": "1", "page": 67, "bbox": [444.48, 110.93, 486.15, 138.14]}
+{"cell_id": "r1c9", "row": 1, "col": 9, "text": "0", "page": 67, "bbox": [486.15, 110.93, 528.68, 138.14]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0 (Bits 31 - 24)", "page": 67, "bbox": [107.32, 138.14, 183.69, 156.25]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "reserved", "page": 67, "bbox": [183.69, 138.14, 270.15, 156.25]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "RSCN Event Qualifier", "page": 67, "bbox": [270.15, 138.14, 444.48, 156.25]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c6", "row": 2, "col": 6, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c7", "row": 2, "col": 7, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c8", "row": 2, "col": 8, "text": "Address Format", "page": 67, "bbox": [444.48, 138.14, 528.68, 156.25]}
+{"cell_id": "r2c9", "row": 2, "col": 9, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1 (Bits 23 - 16)", "page": 67, "bbox": [107.32, 156.25, 183.69, 173.01]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "affected Port_ID byte 1 (Domain)", "page": 67, "bbox": [183.69, 156.25, 528.68, 173.01]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c6", "row": 3, "col": 6, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c7", "row": 3, "col": 7, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c8", "row": 3, "col": 8, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c9", "row": 3, "col": 9, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "2 (Bits 15 - 08)", "page": 67, "bbox": [107.32, 173.01, 183.69, 190.05]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "affected Port_ID byte 2 (Area)", "page": 67, "bbox": [183.69, 173.01, 528.68, 190.05]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c6", "row": 4, "col": 6, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c7", "row": 4, "col": 7, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c8", "row": 4, "col": 8, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c9", "row": 4, "col": 9, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "3 (Bits 07 - 00)", "page": 67, "bbox": [107.32, 190.05, 183.69, 206.8]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "affected Port_ID byte 3 (Port)", "page": 67, "bbox": [183.69, 190.05, 528.68, 206.8]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c6", "row": 5, "col": 6, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c7", "row": 5, "col": 7, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c8", "row": 5, "col": 8, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c9", "row": 5, "col": 9, "text": "", "page": 67, "bbox": [0.0, 0.0, 0.0, 0.0]}

@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0160",
+  "type": "table",
+  "caption": "Table 150 – Common Service Parameter applicability(Continued)",
+  "pages": [
+    169
+  ],
+  "bbox": [
+    94.61,
+    76.87,
+    539.52,
+    503.4
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 169,
+  "logical_table": false
+}

@@ -1,0 +1,46 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "02h",
+      "Reserved",
+      "Number of entries",
+      null
+    ],
+    [
+      "1",
+      "Port Speed Capabilities (Port 1)",
+      null,
+      "Port Operating Speed (Port 1)",
+      null
+    ],
+    [
+      "2",
+      "Port Speed Capabilities (Port 2)",
+      null,
+      "Port Operating Speed (Port 2)",
+      null
+    ],
+    [
+      "..",
+      "...",
+      null,
+      null,
+      null
+    ],
+    [
+      "n",
+      "Port Speed Capabilities (Port n)",
+      null,
+      "Port Operating Speed (Port n)",
+      null
+    ]
+  ]
+}

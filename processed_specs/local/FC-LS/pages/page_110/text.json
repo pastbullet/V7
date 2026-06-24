@@ -1,0 +1,738 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 110,
+  "spans": [
+    {
+      "span_id": "p110_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0002",
+      "text": " 91",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0003",
+      "text": "4.2.33.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        57.65,
+        214.86,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0004",
+      "text": "The LS_ACC Payload format is shown in table 90. ",
+      "bbox": [
+        96.0,
+        82.97,
+        321.0,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0005",
+      "text": "a)",
+      "bbox": [
+        106.02,
+        286.97,
+        114.91,
+        298.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0006",
+      "text": " Hard Address:",
+      "bbox": [
+        114.91,
+        286.97,
+        191.29,
+        298.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p110_s0007",
+      "text": " A 24-bit L_Port_ID that consists of:",
+      "bbox": [
+        191.28,
+        286.97,
+        348.53,
+        298.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p110_s0008",
+      "text": "A) the 8-bit Domain address in the most significant byte;",
+      "bbox": [
+        122.4,
+        310.97,
+        372.95,
+        322.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0009",
+      "text": "B) the 8-bit Area address in the next most significant byte; and",
+      "bbox": [
+        122.4,
+        334.96,
+        400.68,
+        346.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0010",
+      "text": "C) the 8-bit AL_PA that an L_Port attempts to acquire in the LIHA sequence during loop initial-",
+      "bbox": [
+        122.4,
+        358.96,
+        539.95,
+        370.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0011",
+      "text": "izition in the least significant byte (see FC-AL-2).",
+      "bbox": [
+        138.0,
+        370.96,
+        352.3,
+        382.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0012",
+      "text": "If an L_Port does not have a hard address, or if a port does not have FC-AL-2 capability, it shall re-",
+      "bbox": [
+        96.0,
+        394.96,
+        540.02,
+        406.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0013",
+      "text": "port zeroes in this field.",
+      "bbox": [
+        96.0,
+        406.96,
+        198.64,
+        418.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0014",
+      "text": "b)",
+      "bbox": [
+        106.02,
+        430.96,
+        114.91,
+        442.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0015",
+      "text": " N_Port_Name of Responder:",
+      "bbox": [
+        114.91,
+        430.96,
+        258.41,
+        442.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p110_s0016",
+      "text": " The 8-byte N_Port_Name of the Responder.",
+      "bbox": [
+        258.48,
+        430.96,
+        457.32,
+        442.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p110_s0017",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        454.96,
+        114.38,
+        466.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0018",
+      "text": "Node_Name of Responder:",
+      "bbox": [
+        122.4,
+        454.96,
+        250.63,
+        466.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0019",
+      "text": " The 8-byte Node_Name of the Responder.",
+      "bbox": [
+        250.68,
+        454.96,
+        442.31,
+        466.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p110_s0020",
+      "text": "d)",
+      "bbox": [
+        106.02,
+        478.96,
+        114.92,
+        490.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0021",
+      "text": " N_Port_ID of Responder:",
+      "bbox": [
+        114.92,
+        478.96,
+        241.18,
+        490.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p110_s0022",
+      "text": " The 24-bit S_ID used in the header of the ADISC LS_ACC frame.",
+      "bbox": [
+        241.26,
+        478.96,
+        533.46,
+        490.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p110_s0023",
+      "text": "A response shall not be sent to an ADISC if an LR or loop initialization occurs before the LS_ACC is",
+      "bbox": [
+        96.0,
+        502.96,
+        540.02,
+        514.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0024",
+      "text": "sent. An LS_ACC for a ADISC shall be ignored if an LR or loop initialization occurred between the",
+      "bbox": [
+        96.0,
+        514.96,
+        539.97,
+        526.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0025",
+      "text": "ADISC and the LS_ACC.",
+      "bbox": [
+        96.0,
+        526.96,
+        207.08,
+        538.08
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0026",
+      "text": "Table 91 summarizes the responses to FDISC, PDISC and ADISC.",
+      "bbox": [
+        96.0,
+        550.96,
+        392.6,
+        562.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0027",
+      "text": " Table 90 – ADISC LS_ACC Payload",
+      "bbox": [
+        233.58,
+        104.98,
+        402.32,
+        116.1
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0028",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        126.94,
+        133.06,
+        138.06
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0029",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        138.94,
+        136.35,
+        150.06
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0030",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        126.94,
+        233.97,
+        138.06
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0031",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        126.94,
+        328.42,
+        138.06
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0032",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        126.94,
+        427.0,
+        138.06
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0033",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        126.94,
+        522.83,
+        138.06
+      ],
+      "block_index": 16,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0034",
+      "text": "0",
+      "bbox": [
+        120.84,
+        155.98,
+        126.38,
+        167.1
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0035",
+      "text": "02h",
+      "bbox": [
+        149.88,
+        155.98,
+        166.52,
+        167.1
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0036",
+      "text": "00h",
+      "bbox": [
+        247.08,
+        155.98,
+        263.71,
+        167.1
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0037",
+      "text": "00h",
+      "bbox": [
+        344.27,
+        155.98,
+        360.97,
+        167.1
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0038",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        155.98,
+        458.16,
+        167.1
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0039",
+      "text": "1",
+      "bbox": [
+        120.84,
+        172.96,
+        126.38,
+        184.08
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0040",
+      "text": "Reserved",
+      "bbox": [
+        149.88,
+        172.96,
+        192.66,
+        184.08
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0041",
+      "text": "Hard Address of Responder",
+      "bbox": [
+        247.12,
+        172.96,
+        370.98,
+        184.08
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0042",
+      "text": "2",
+      "bbox": [
+        120.84,
+        190.0,
+        126.38,
+        201.12
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0043",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        190.0,
+        171.52,
+        201.12
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0044",
+      "text": "N_Port_Name of Responder",
+      "bbox": [
+        279.24,
+        191.98,
+        405.31,
+        203.1
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0045",
+      "text": "(8 bytes)",
+      "bbox": [
+        322.86,
+        203.98,
+        361.76,
+        215.1
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0046",
+      "text": "3",
+      "bbox": [
+        120.84,
+        206.98,
+        126.38,
+        218.1
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0047",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        206.98,
+        460.36,
+        218.1
+      ],
+      "block_index": 19,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0048",
+      "text": "4",
+      "bbox": [
+        120.84,
+        223.96,
+        126.38,
+        235.08
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0049",
+      "text": "MSB",
+      "bbox": [
+        149.88,
+        223.96,
+        171.53,
+        235.08
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0050",
+      "text": "Node_Name of Responder",
+      "bbox": [
+        282.84,
+        226.0,
+        401.71,
+        237.12
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0051",
+      "text": "(8 bytes)",
+      "bbox": [
+        322.86,
+        238.0,
+        361.76,
+        249.12
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0052",
+      "text": "5",
+      "bbox": [
+        120.84,
+        241.0,
+        126.38,
+        252.12
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0053",
+      "text": "LSB",
+      "bbox": [
+        441.48,
+        241.0,
+        460.37,
+        252.12
+      ],
+      "block_index": 20,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0054",
+      "text": "6",
+      "bbox": [
+        120.84,
+        257.98,
+        126.38,
+        269.1
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0055",
+      "text": "Reserved",
+      "bbox": [
+        149.88,
+        257.98,
+        192.67,
+        269.1
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p110_s0056",
+      "text": "N_Port_ID of Responder",
+      "bbox": [
+        247.13,
+        257.98,
+        356.56,
+        269.1
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0093"
+  ]
+}

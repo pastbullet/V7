@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0075",
+  "type": "table",
+  "caption": "Table 71 – Incident Qualifier(Continued)",
+  "pages": [
+    95
+  ],
+  "bbox": [
+    96.88,
+    76.28,
+    538.76,
+    511.7
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 95,
+  "logical_table": false
+}

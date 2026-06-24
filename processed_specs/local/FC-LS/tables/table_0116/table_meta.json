@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0116",
+  "type": "table",
+  "caption": "Table 112 – RPSC Payload",
+  "pages": [
+    126
+  ],
+  "bbox": [
+    99.8,
+    387.99,
+    536.2,
+    432.68
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 126,
+  "logical_table": false
+}

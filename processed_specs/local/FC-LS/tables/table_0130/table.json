@@ -1,0 +1,39 @@
+{
+  "rows": [
+    [
+      null,
+      null,
+      "Peer Tagging Mode",
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      "OFF",
+      "ON",
+      "AUTO"
+    ],
+    [
+      "Local\nTagging\nMode",
+      "OFF",
+      "Non Tagging",
+      "Non Tagging",
+      "Non Tagging"
+    ],
+    [
+      null,
+      "ON",
+      "Non Tagging",
+      "Tagging",
+      "Tagging"
+    ],
+    [
+      null,
+      "AUTO",
+      "Non Tagging",
+      "Tagging",
+      "Non Tagging"
+    ]
+  ]
+}

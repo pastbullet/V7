@@ -1,0 +1,36 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Value (hex)", "page": 87, "bbox": [143.7, 98.28, 278.55, 120.0]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Type", "page": 87, "bbox": [278.55, 98.28, 492.3, 120.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00 00 00 00", "page": 87, "bbox": [143.7, 120.0, 278.55, 144.03]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Reserved", "page": 87, "bbox": [278.55, 120.0, 492.3, 144.03]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "00 00 00 01", "page": 87, "bbox": [143.7, 144.03, 278.55, 168.03]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Unknown", "page": 87, "bbox": [278.55, 144.03, 492.3, 168.03]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "00 00 00 02", "page": 87, "bbox": [143.7, 168.03, 278.55, 192.03]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Other (none of the following)", "page": 87, "bbox": [278.55, 168.03, 492.3, 192.03]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "00 00 00 03", "page": 87, "bbox": [143.7, 192.03, 278.55, 216.03]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Hub", "page": 87, "bbox": [278.55, 192.03, 492.3, 216.03]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "00 00 00 04", "page": 87, "bbox": [143.7, 216.03, 278.55, 240.03]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "Switch", "page": 87, "bbox": [278.55, 216.03, 492.3, 240.03]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "00 00 00 05", "page": 87, "bbox": [143.7, 240.03, 278.55, 264.03]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "Gateway", "page": 87, "bbox": [278.55, 240.03, 492.3, 264.03]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "00 00 00 06", "page": 87, "bbox": [143.7, 264.03, 278.55, 288.03]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "obsolete", "page": 87, "bbox": [278.55, 264.03, 492.3, 288.03]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "00 00 00 07", "page": 87, "bbox": [143.7, 288.03, 278.55, 312.03]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "obsolete", "page": 87, "bbox": [278.55, 288.03, 492.3, 312.03]}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "00 00 00 09", "page": 87, "bbox": [143.7, 312.03, 278.55, 346.05]}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "Storage device (i.e., disk drive, CD-ROM drive,\ntape drive).", "page": 87, "bbox": [278.55, 312.03, 492.3, 346.05]}
+{"cell_id": "r11c1", "row": 11, "col": 1, "text": "00 00 00 0A", "page": 87, "bbox": [143.7, 346.05, 278.55, 370.05]}
+{"cell_id": "r11c2", "row": 11, "col": 2, "text": "Host", "page": 87, "bbox": [278.55, 346.05, 492.3, 370.05]}
+{"cell_id": "r12c1", "row": 12, "col": 1, "text": "00 00 00 0B", "page": 87, "bbox": [143.7, 370.05, 278.55, 394.05]}
+{"cell_id": "r12c2", "row": 12, "col": 2, "text": "Storage subsystem (e.g., raid, library)", "page": 87, "bbox": [278.55, 370.05, 492.3, 394.05]}
+{"cell_id": "r13c1", "row": 13, "col": 1, "text": "00 00 00 0E", "page": 87, "bbox": [143.7, 394.05, 278.55, 418.05]}
+{"cell_id": "r13c2", "row": 13, "col": 2, "text": "Storage Access Device (e.g., Media changer)", "page": 87, "bbox": [278.55, 394.05, 492.3, 418.05]}
+{"cell_id": "r14c1", "row": 14, "col": 1, "text": "00 00 00 11", "page": 87, "bbox": [143.7, 418.05, 278.55, 442.05]}
+{"cell_id": "r14c2", "row": 14, "col": 2, "text": "NAS server", "page": 87, "bbox": [278.55, 418.05, 492.3, 442.05]}
+{"cell_id": "r15c1", "row": 15, "col": 1, "text": "00 00 00 12", "page": 87, "bbox": [143.7, 442.05, 278.55, 466.05]}
+{"cell_id": "r15c2", "row": 15, "col": 2, "text": "Bridge", "page": 87, "bbox": [278.55, 442.05, 492.3, 466.05]}
+{"cell_id": "r16c1", "row": 16, "col": 1, "text": "00 00 00 13", "page": 87, "bbox": [143.7, 466.05, 278.55, 490.05]}
+{"cell_id": "r16c2", "row": 16, "col": 2, "text": "Virtualization device", "page": 87, "bbox": [278.55, 466.05, 492.3, 490.05]}
+{"cell_id": "r17c1", "row": 17, "col": 1, "text": "xx xx xx FF", "page": 87, "bbox": [143.7, 490.05, 278.55, 524.01]}
+{"cell_id": "r17c2", "row": 17, "col": 2, "text": "Multi-function device (see Table 64 for values to\nfill in for xx xx xx)", "page": 87, "bbox": [278.55, 490.05, 492.3, 524.01]}
+{"cell_id": "r18c1", "row": 18, "col": 1, "text": "All Others", "page": 87, "bbox": [143.7, 524.01, 278.55, 547.7]}
+{"cell_id": "r18c2", "row": 18, "col": 2, "text": "Reserved", "page": 87, "bbox": [278.55, 524.01, 492.3, 547.7]}

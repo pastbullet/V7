@@ -1,0 +1,853 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 31,
+  "spans": [
+    {
+      "span_id": "p031_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0002",
+      "text": " 12",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0003",
+      "text": "b) State transitions are logically instantaneous, so the only actions taken during a transition are",
+      "bbox": [
+        106.02,
+        321.65,
+        539.92,
+        332.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0004",
+      "text": "setting flags and variables and sending signals. These actions complete before the next state",
+      "bbox": [
+        122.4,
+        333.65,
+        539.96,
+        344.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0005",
+      "text": "is entered.",
+      "bbox": [
+        122.4,
+        345.65,
+        169.03,
+        356.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0006",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        370.97,
+        114.35,
+        382.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0007",
+      "text": "Every time a state is entered, the actions of that state are started. Note that this means that a",
+      "bbox": [
+        122.37,
+        370.97,
+        539.98,
+        382.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0008",
+      "text": "transition that points back to the same state repeats the actions from the beginning. All the ac-",
+      "bbox": [
+        122.4,
+        382.97,
+        540.01,
+        394.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0009",
+      "text": "tions started upon entry complete before any tests are made to exit the state.",
+      "bbox": [
+        122.4,
+        394.97,
+        462.36,
+        406.08
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0010",
+      "text": "d) When Virtual Fabrics are used there is a different state for each Virtual Fabric negotiated to be",
+      "bbox": [
+        106.02,
+        418.97,
+        540.05,
+        430.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0011",
+      "text": "used on a link. The state Px for Virtual Fabric K is denoted Px(k).",
+      "bbox": [
+        122.4,
+        430.97,
+        408.99,
+        442.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0012",
+      "text": "3.5",
+      "bbox": [
+        96.0,
+        454.96,
+        109.88,
+        466.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0013",
+      "text": "Abbreviations and acronyms",
+      "bbox": [
+        119.88,
+        454.96,
+        257.07,
+        466.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0014",
+      "text": "Abbreviations and acronyms applicable to this standard are listed. Definitions of several of these",
+      "bbox": [
+        96.0,
+        478.96,
+        539.96,
+        490.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0015",
+      "text": "items are included in 3.2.",
+      "bbox": [
+        96.0,
+        490.96,
+        207.15,
+        502.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0016",
+      "text": "ABTS",
+      "bbox": [
+        96.0,
+        514.96,
+        123.16,
+        526.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0017",
+      "text": "Abort Sequence ",
+      "bbox": [
+        156.0,
+        514.96,
+        230.39,
+        526.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0018",
+      "text": "ACK",
+      "bbox": [
+        96.0,
+        526.96,
+        117.59,
+        538.08
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0019",
+      "text": "Acknowledgement ",
+      "bbox": [
+        156.0,
+        526.96,
+        240.46,
+        538.08
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0020",
+      "text": "ADVC",
+      "bbox": [
+        96.0,
+        538.96,
+        124.25,
+        550.08
+      ],
+      "block_index": 8,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0021",
+      "text": "Advise Credit ",
+      "bbox": [
+        156.0,
+        538.96,
+        218.14,
+        550.08
+      ],
+      "block_index": 8,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0022",
+      "text": "AE",
+      "bbox": [
+        96.0,
+        550.96,
+        109.84,
+        562.08
+      ],
+      "block_index": 8,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0023",
+      "text": "Avionics Environment",
+      "bbox": [
+        156.0,
+        550.96,
+        252.04,
+        562.08
+      ],
+      "block_index": 8,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0024",
+      "text": "AL_PA",
+      "bbox": [
+        96.0,
+        562.96,
+        128.73,
+        574.08
+      ],
+      "block_index": 8,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0025",
+      "text": "Arbitrated Loop Physical Address",
+      "bbox": [
+        156.0,
+        562.96,
+        303.73,
+        574.08
+      ],
+      "block_index": 8,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0026",
+      "text": "BA_ACC",
+      "bbox": [
+        96.0,
+        574.96,
+        137.62,
+        586.08
+      ],
+      "block_index": 8,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0027",
+      "text": "Basic Accept ",
+      "bbox": [
+        156.0,
+        574.96,
+        216.51,
+        586.08
+      ],
+      "block_index": 8,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0028",
+      "text": "BB_Credit",
+      "bbox": [
+        96.0,
+        586.96,
+        144.88,
+        598.08
+      ],
+      "block_index": 8,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0029",
+      "text": "buffer-to-buffer Credit ",
+      "bbox": [
+        156.0,
+        586.96,
+        254.28,
+        598.08
+      ],
+      "block_index": 8,
+      "line_index": 14,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0030",
+      "text": "BB_Credit_CNT",
+      "bbox": [
+        96.0,
+        598.96,
+        170.88,
+        610.08
+      ],
+      "block_index": 8,
+      "line_index": 15,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0031",
+      "text": "buffer-to-buffer Credit_Count ",
+      "bbox": [
+        170.94,
+        598.96,
+        301.53,
+        610.08
+      ],
+      "block_index": 8,
+      "line_index": 15,
+      "span_index": 2
+    },
+    {
+      "span_id": "p031_s0032",
+      "text": "BB_SCs",
+      "bbox": [
+        96.0,
+        610.96,
+        135.37,
+        622.08
+      ],
+      "block_index": 8,
+      "line_index": 16,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0033",
+      "text": "buffer-to-buffer State Change (SOF)",
+      "bbox": [
+        156.0,
+        610.96,
+        315.94,
+        622.08
+      ],
+      "block_index": 8,
+      "line_index": 17,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0034",
+      "text": "BB_SCr",
+      "bbox": [
+        96.0,
+        622.96,
+        133.71,
+        634.08
+      ],
+      "block_index": 8,
+      "line_index": 18,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0035",
+      "text": "buffer-to-buffer State Change (R_RDY)",
+      "bbox": [
+        156.0,
+        622.96,
+        329.24,
+        634.08
+      ],
+      "block_index": 8,
+      "line_index": 19,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0036",
+      "text": "BB_SC_N",
+      "bbox": [
+        96.0,
+        635.02,
+        142.62,
+        646.14
+      ],
+      "block_index": 8,
+      "line_index": 20,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0037",
+      "text": "buffer-to-buffer State Change Number",
+      "bbox": [
+        156.0,
+        635.02,
+        324.33,
+        646.14
+      ],
+      "block_index": 8,
+      "line_index": 21,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0038",
+      "text": "BSY",
+      "bbox": [
+        96.0,
+        647.02,
+        116.5,
+        658.14
+      ],
+      "block_index": 8,
+      "line_index": 22,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0039",
+      "text": "busy",
+      "bbox": [
+        156.0,
+        647.02,
+        177.06,
+        658.14
+      ],
+      "block_index": 8,
+      "line_index": 23,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0040",
+      "text": "Credit_CNT",
+      "bbox": [
+        96.0,
+        659.02,
+        150.91,
+        670.14
+      ],
+      "block_index": 8,
+      "line_index": 24,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0041",
+      "text": " Credit_Count ",
+      "bbox": [
+        150.91,
+        659.02,
+        217.63,
+        670.14
+      ],
+      "block_index": 8,
+      "line_index": 24,
+      "span_index": 2
+    },
+    {
+      "span_id": "p031_s0042",
+      "text": "CR_TOV",
+      "bbox": [
+        96.0,
+        671.02,
+        136.48,
+        682.14
+      ],
+      "block_index": 8,
+      "line_index": 25,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0043",
+      "text": "Connection Request_Timeout value",
+      "bbox": [
+        156.0,
+        671.02,
+        314.82,
+        682.14
+      ],
+      "block_index": 8,
+      "line_index": 26,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0044",
+      "text": "DF_CTL",
+      "bbox": [
+        96.0,
+        683.02,
+        134.3,
+        694.14
+      ],
+      "block_index": 8,
+      "line_index": 27,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0045",
+      "text": "Data_Field Control ",
+      "bbox": [
+        156.0,
+        683.02,
+        242.07,
+        694.14
+      ],
+      "block_index": 8,
+      "line_index": 28,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0046",
+      "text": "D_ID",
+      "bbox": [
+        96.0,
+        695.02,
+        118.72,
+        706.14
+      ],
+      "block_index": 8,
+      "line_index": 29,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0047",
+      "text": "Destination_Identifier ",
+      "bbox": [
+        156.0,
+        695.02,
+        252.68,
+        706.14
+      ],
+      "block_index": 8,
+      "line_index": 30,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0048",
+      "text": " Figure 1 – State Machine Example",
+      "bbox": [
+        236.04,
+        298.18,
+        399.95,
+        309.3
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0049",
+      "text": "S0: State 0",
+      "bbox": [
+        250.98,
+        103.67,
+        302.05,
+        114.78
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0050",
+      "text": "*actions started on entry to S0",
+      "bbox": [
+        216.54,
+        114.86,
+        336.47,
+        124.9
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0051",
+      "text": "state label",
+      "bbox": [
+        350.52,
+        73.82,
+        391.49,
+        83.86
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0052",
+      "text": "S1: State 1",
+      "bbox": [
+        412.98,
+        109.67,
+        464.04,
+        120.78
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0053",
+      "text": "*actions started on entry to S1",
+      "bbox": [
+        378.54,
+        120.86,
+        498.53,
+        130.9
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0054",
+      "text": "S0:S1",
+      "bbox": [
+        285.12,
+        149.08,
+        306.9,
+        157.98
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0055",
+      "text": "S1:S0",
+      "bbox": [
+        402.12,
+        197.08,
+        423.9,
+        205.98
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0056",
+      "text": "S0:S0",
+      "bbox": [
+        243.12,
+        161.08,
+        264.9,
+        169.98
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0057",
+      "text": "condition for transition from S0 to S1",
+      "bbox": [
+        298.86,
+        140.08,
+        428.17,
+        148.98
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0058",
+      "text": "action taken on this transition",
+      "bbox": [
+        311.76,
+        158.08,
+        415.25,
+        166.98
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0059",
+      "text": "condition for transition from S1 to S0",
+      "bbox": [
+        298.86,
+        188.08,
+        428.17,
+        196.98
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0060",
+      "text": "action taken on this transition",
+      "bbox": [
+        287.76,
+        206.08,
+        391.25,
+        214.98
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0061",
+      "text": "condition for transition from S0 back to S0",
+      "bbox": [
+        121.32,
+        152.08,
+        269.65,
+        160.98
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0062",
+      "text": "action taken on this transition",
+      "bbox": [
+        149.76,
+        170.08,
+        253.24,
+        178.98
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0063",
+      "text": "transition label",
+      "bbox": [
+        285.06,
+        265.88,
+        342.95,
+        275.92
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0064",
+      "text": "note that the S0 actions are ",
+      "bbox": [
+        134.58,
+        241.88,
+        247.06,
+        251.92
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p031_s0065",
+      "text": "restarted following this transaction",
+      "bbox": [
+        121.56,
+        251.35,
+        257.41,
+        261.4
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

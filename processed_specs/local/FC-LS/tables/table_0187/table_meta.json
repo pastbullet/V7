@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0187",
+  "type": "table",
+  "caption": "Table 175 – FLOGI/PLOGI CS_QoS_Request",
+  "pages": [
+    193
+  ],
+  "bbox": [
+    104.66,
+    507.64,
+    531.34,
+    635.04
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 193,
+  "logical_table": false
+}

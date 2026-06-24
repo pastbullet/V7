@@ -1,0 +1,843 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 183,
+  "spans": [
+    {
+      "span_id": "p183_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0002",
+      "text": " 164",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0003",
+      "text": "If the Preference bit (word 0, bit 22) is set to one by an Nx_Port, then it is requested that all frames",
+      "bbox": [
+        96.0,
+        57.65,
+        540.06,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0004",
+      "text": "transmitted by the Nx_Port requesting this function be delivered according to the setting of the PREF",
+      "bbox": [
+        96.0,
+        69.65,
+        539.93,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0005",
+      "text": "field in the CS_CTL field of the Frame_Header.  If this bit is set to one by the Fx_Port, the Fx_Port is",
+      "bbox": [
+        96.0,
+        81.65,
+        540.1,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0006",
+      "text": "indicating that it shall deliver Class 2 and 3 frames transmitted by the requesting Nx_Port according",
+      "bbox": [
+        96.0,
+        93.65,
+        539.95,
+        104.76
+      ],
+      "block_index": 3,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0007",
+      "text": "to the setting of the PREF field.",
+      "bbox": [
+        96.0,
+        105.64,
+        234.41,
+        116.76
+      ],
+      "block_index": 3,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0008",
+      "text": "NOTE 17 – An Fx_Port that responds with bit 22 set to zero may not itself support Preferred delivery, but other",
+      "bbox": [
+        105.0,
+        129.85,
+        539.99,
+        139.9
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0009",
+      "text": "Fabric Elements in the path to the destination may support it.  An Nx_Port may attempt Preferred delivery",
+      "bbox": [
+        105.0,
+        140.83,
+        540.03,
+        150.88
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0010",
+      "text": "even if the Fx_Port does not indicate support.",
+      "bbox": [
+        105.0,
+        151.88,
+        285.76,
+        161.92
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0011",
+      "text": "If this bit is set to one, the Fabric shall deliver both Data and Link_Control (class 2 only) frames ac-",
+      "bbox": [
+        96.0,
+        178.97,
+        539.96,
+        190.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0012",
+      "text": "cording to the setting of the PREF field in the CS_CTL field of the frame header.",
+      "bbox": [
+        96.0,
+        190.97,
+        449.25,
+        202.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0013",
+      "text": "The Preference bit is not meaningful for Class 1, and Class 6.",
+      "bbox": [
+        96.0,
+        214.97,
+        368.15,
+        226.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0014",
+      "text": "Table 163 summarizes the function of the PREF bit for both Class 2 and Class 3.",
+      "bbox": [
+        96.0,
+        238.97,
+        453.21,
+        250.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0015",
+      "text": "Table 164 summarizes the relationship between Preferred delivery and sequential delivery for both",
+      "bbox": [
+        96.0,
+        442.96,
+        539.74,
+        454.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0016",
+      "text": "Class 2 and Class 3.",
+      "bbox": [
+        96.0,
+        454.96,
+        187.6,
+        466.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0017",
+      "text": " Table 163 – Class 2 and 3 Preference Bit Function",
+      "bbox": [
+        198.6,
+        260.98,
+        437.55,
+        272.1
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0018",
+      "text": "Nx_Port",
+      "bbox": [
+        144.06,
+        283.0,
+        182.35,
+        294.12
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0019",
+      "text": "Word 0, Bit 22",
+      "bbox": [
+        129.9,
+        295.0,
+        196.59,
+        306.12
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0020",
+      "text": "Fx_Port",
+      "bbox": [
+        238.2,
+        283.0,
+        275.42,
+        294.12
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0021",
+      "text": "Word 0, Bit 22",
+      "bbox": [
+        223.5,
+        295.0,
+        290.16,
+        306.12
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0022",
+      "text": "Meaning",
+      "bbox": [
+        391.36,
+        295.0,
+        431.88,
+        306.12
+      ],
+      "block_index": 10,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0023",
+      "text": "0",
+      "bbox": [
+        118.38,
+        317.98,
+        123.92,
+        329.1
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0024",
+      "text": "0",
+      "bbox": [
+        211.98,
+        317.98,
+        217.52,
+        329.1
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0025",
+      "text": "Preferred delivery by the Fabric may be ",
+      "bbox": [
+        305.58,
+        311.98,
+        483.32,
+        323.1
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0026",
+      "text": "functional",
+      "bbox": [
+        305.58,
+        323.98,
+        348.38,
+        335.1
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0027",
+      "text": "0",
+      "bbox": [
+        118.38,
+        346.96,
+        123.92,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0028",
+      "text": "1",
+      "bbox": [
+        211.98,
+        346.96,
+        217.52,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0029",
+      "text": "Preferred delivery by the Fabric shall be ",
+      "bbox": [
+        305.58,
+        340.96,
+        485.01,
+        352.08
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0030",
+      "text": "functional",
+      "bbox": [
+        305.58,
+        352.96,
+        348.38,
+        364.08
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0031",
+      "text": "1",
+      "bbox": [
+        118.38,
+        376.0,
+        123.92,
+        387.12
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0032",
+      "text": "0",
+      "bbox": [
+        211.98,
+        376.0,
+        217.52,
+        387.12
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0033",
+      "text": "Nx_Port support requested, Preferred delivery ",
+      "bbox": [
+        305.58,
+        370.0,
+        512.25,
+        381.12
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0034",
+      "text": "by the Fabric may be functional",
+      "bbox": [
+        305.58,
+        382.0,
+        444.49,
+        393.12
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0035",
+      "text": "1",
+      "bbox": [
+        118.38,
+        404.98,
+        123.92,
+        416.1
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0036",
+      "text": "1",
+      "bbox": [
+        211.98,
+        404.98,
+        217.52,
+        416.1
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0037",
+      "text": "Nx_Port requested, Fabric agrees, Preferred ",
+      "bbox": [
+        305.58,
+        398.98,
+        505.58,
+        410.1
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0038",
+      "text": "delivery by the Fabric shall be functional",
+      "bbox": [
+        305.58,
+        410.98,
+        483.41,
+        422.1
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0039",
+      "text": " Table 164 – Relationship between Preferred delivery and sequential deliver",
+      "bbox": [
+        136.62,
+        476.98,
+        494.41,
+        488.1
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0040",
+      "text": "y",
+      "bbox": [
+        494.4,
+        476.98,
+        499.38,
+        488.1
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p183_s0041",
+      "text": "Preference ",
+      "bbox": [
+        103.68,
+        511.0,
+        158.11,
+        522.12
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0042",
+      "text": "Functional",
+      "bbox": [
+        104.22,
+        523.0,
+        154.76,
+        534.12
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0043",
+      "text": "Sequential ",
+      "bbox": [
+        176.22,
+        499.0,
+        229.52,
+        510.12
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0044",
+      "text": "delivery ",
+      "bbox": [
+        182.58,
+        511.0,
+        223.17,
+        522.12
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0045",
+      "text": "Functional",
+      "bbox": [
+        176.22,
+        523.0,
+        226.74,
+        534.12
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0046",
+      "text": "Meaning",
+      "bbox": [
+        369.72,
+        523.0,
+        410.27,
+        534.12
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0047",
+      "text": "0",
+      "bbox": [
+        96.0,
+        539.98,
+        101.54,
+        551.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0048",
+      "text": "0",
+      "bbox": [
+        166.98,
+        539.98,
+        172.52,
+        551.1
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0049",
+      "text": "Frames may be delivered in any order",
+      "bbox": [
+        240.0,
+        539.98,
+        408.22,
+        551.1
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0050",
+      "text": "0",
+      "bbox": [
+        96.0,
+        562.96,
+        101.54,
+        574.08
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0051",
+      "text": "1",
+      "bbox": [
+        166.98,
+        562.96,
+        172.52,
+        574.08
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0052",
+      "text": "Frames shall be delivered to a destination in the same order received ",
+      "bbox": [
+        240.0,
+        556.96,
+        541.67,
+        568.08
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0053",
+      "text": "from the source, PREF is ignored",
+      "bbox": [
+        240.0,
+        568.96,
+        387.75,
+        580.08
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0054",
+      "text": "1",
+      "bbox": [
+        96.0,
+        592.0,
+        101.54,
+        603.12
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0055",
+      "text": "0",
+      "bbox": [
+        166.98,
+        592.0,
+        172.52,
+        603.12
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0056",
+      "text": "Frames may be delivered in any order, but frames with PREF set to ",
+      "bbox": [
+        240.0,
+        586.0,
+        540.98,
+        597.12
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0057",
+      "text": "one may be delivered prior to frames with PREF set to zero",
+      "bbox": [
+        240.0,
+        598.0,
+        502.24,
+        609.12
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0058",
+      "text": "1",
+      "bbox": [
+        96.0,
+        638.98,
+        101.54,
+        650.1
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0059",
+      "text": "1",
+      "bbox": [
+        166.98,
+        638.98,
+        172.52,
+        650.1
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0060",
+      "text": "Frames with PREF set to one shall be delivered to a destination in the ",
+      "bbox": [
+        240.0,
+        614.98,
+        541.78,
+        626.1
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0061",
+      "text": "same order received from the source relative to each other, and may ",
+      "bbox": [
+        240.0,
+        626.98,
+        541.52,
+        638.1
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0062",
+      "text": "be delivered prior to frames with PREF set to zero; frames with PREF ",
+      "bbox": [
+        240.0,
+        638.98,
+        541.71,
+        650.1
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0063",
+      "text": "set to zero shall also be delivered to a destination in the same order ",
+      "bbox": [
+        240.0,
+        650.98,
+        540.8,
+        662.1
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p183_s0064",
+      "text": "received from the source relative to each other",
+      "bbox": [
+        240.0,
+        662.98,
+        446.06,
+        674.1
+      ],
+      "block_index": 22,
+      "line_index": 5,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0175",
+    "table_0176"
+  ]
+}

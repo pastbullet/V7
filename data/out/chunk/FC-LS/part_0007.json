@@ -1,0 +1,627 @@
+{
+  "success": true,
+  "doc_name": "FC-LS.pdf",
+  "structure": [
+    {
+      "node_id": "0290",
+      "title": "6 Login and Service Parameters",
+      "summary": "Covers Login and Service Parameters introduction: how an `Nx_Port` establishes its operating environment with a Fabric or peer `Nx_Ports`, including long-lived Login scope, concurrency limits, and lack of one-to-one relationship with Class 1 dedicated connections. Describes explicit vs implicit Login, with exact anchors `FLOGI`, `PLOGI`, `D_ID`, `S_ID`, `ELS`, `LS_ACC`, `Service Parameters`, `Payload`, `N_Port_ID`, and point-to-point topology. Explicit Login uses a new Exchange carrying initiator `Service Parameters`; `LS_ACC` returns responder parameters. Implicit Login provides equivalent functionality by unspecified methods; Implicit Fabric Login does not require support for `FLOGI` request/reply. Also lists how `Nx_Ports` obtain native `N_Port_ID` and collect Address Identifiers. Content types: procedure/flow, response/branch handling, timer/negotiation. Tables: none. Figures: none.",
+      "is_skeleton": true,
+      "children": [
+        {
+          "node_id": "0323",
+          "title": "6.6 Service Parameters",
+          "summary": "6.6 Service Parameters: defines the Service Parameters context for Login-related payloads, specifically the `ELS` and `LS_ACC` Payload formats and parameter applicability for `PLOGI`, `FLOGI`, `PLOGI LS_ACC`, and `FLOGI LS_ACC`. `Table 149` defines the Payload format for the `FLOGI` and `PLOGI ELSs` and the `LS_ACCs`. States that there are no separate `Class 6` login Service Parameters; `Class 1 service parameters` are used instead. Includes `NOTE 13` that the Link Service may further limit values supplied during Login as specified by individual Upper Level Protocols. Content types: `message/frame format`, `timer/negotiation` (service-parameter applicability/limits). Figures: none. Tables: `Table 149` — Payload format definition for `FLOGI`/`PLOGI` and `LS_ACC`.",
+          "is_skeleton": true,
+          "children": [
+            {
+              "node_id": "0392",
+              "title": "6.6.7 Services Availability",
+              "summary": "Defines `Services Availability` in `FLOGI LS_ACC`: fabric routing availability to well-known addresses, meaningful only for `FLOGI LS_ACC`. `6.6.7.1 Introduction` says only `word 30, bits 10 - 3` are meaningful; `word 29` and `word 30 bits 31 - 11 and 2 - 0` are reserved. `6.6.7.2 Multicast Server`: `word 30, bit 10`; `1` means routing supported to well-known `Multicast Server` address identifier `FFFFF5h`, `0` means not supported. `6.6.7.3 Clock Synchronization Server`: `word 30, bit 9`; `1` means routing supported to `Clock Synchronization Server` address identifier `FFFFF6h`, `0` means not supported. Content types: message/frame format, response/branch handling. Tables: none. Figures: none.",
+              "is_skeleton": true,
+              "children": [
+                {
+                  "node_id": "0393",
+                  "title": "6.6.7.1 Introduction",
+                  "summary": "Section `6.6.7.1 Introduction` indexes the `Services Availability` field: it returns the Fabric’s ability to route to defined well-known addresses and is meaningful only for `FLOGI LS_ACC`. Exact anchors: `Services Availability`, `FLOGI LS_ACC`, `word 30`, `bits 10 - 3`, `Word 29`, `bits 31 - 11`, `bits 2 - 0`, `FC-FS-2`. Scope/constraints: only `bits 10 - 3` of `word 30` are meaningful; `Word 29` and `bits 31 - 11 and 2 - 0 of word 30` are reserved. Nearby routed-address detail introduced by this section’s context: `Multicast Server` at `word 30, bit 10`, identifier `FFFFF5h`; `Clock Synchronization Server` at `word 30, bit 9`, identifier `FFFFF6h`. Content types: `message/frame format`, `response/branch handling` (meaningful only for `FLOGI LS_ACC`).",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 190,
+                  "end_index": 190,
+                  "subtree_start_index": 190,
+                  "subtree_end_index": 190
+                },
+                {
+                  "node_id": "0394",
+                  "title": "6.6.7.2 Multicast Server",
+                  "summary": "Defines the `Services Availability` indication for `6.6.7.2 Multicast Server`: the `Multicast Server bit` at `word 30, bit 10` in `FLOGI LS_ACC`. Core meaning: when set to one, the Fabric supports routing to the well-known `Multicast Server` address identifier `FFFFF5h`; when set to zero, the Fabric does not support routing to that identifier. References `FC-FS-2` for the server specification. Relevant exact anchors: `Services Availability`, `Multicast Server`, `Multicast Server bit`, `word 30, bit 10`, `FLOGI LS_ACC`, `FFFFF5h`, `FC-FS-2`. Content types: response/branch handling (bit value `one` vs `zero` support indication); message/frame context (`FLOGI LS_ACC`). No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 190,
+                  "end_index": 190,
+                  "subtree_start_index": 190,
+                  "subtree_end_index": 190
+                },
+                {
+                  "node_id": "0395",
+                  "title": "6.6.7.3 Clock Synchronization Server",
+                  "summary": "Core topic: `6.6.7.3 Clock Synchronization Server` defines the `Clock Synchronization Server bit` in `word 30, bit 9` within `Services Availability`, meaningful for `FLOGI LS_ACC`, indicating whether the Fabric supports routing to the well-known `Clock Synchronization Server` address identifier `FFFFF6h`. If set to one, routing to `FFFFF6h` is supported; if set to zero, routing is not supported. Exact anchors: `Clock Synchronization Server bit`, `word 30, bit 9`, `FLOGI LS_ACC`, `Clock Synchronization Server`, `FFFFF6h`, `FC-FS-2`. Content types: response/branch handling (bit value `one` vs `zero` support indication). Tables: none. Figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 190,
+                  "end_index": 190,
+                  "subtree_start_index": 190,
+                  "subtree_end_index": 190
+                },
+                {
+                  "node_id": "0396",
+                  "title": "6.6.7.4 Security Key Distribution Server",
+                  "summary": "Defines the `Security Key Distribution Server` capability bit in Fabric service capability signaling: `word 30, bit 8` indicates whether the Fabric supports routing to the well-known Key Distribution Server address identifier `FFFFF7h`; set to one = supported, set to zero = not supported. Core anchor is the `Security Key Distribution Server bit`; nearby continuity text also names `Alias Server bit` (`word 30, bit 7`, `FFFFF8h`), `Management Server bit` (`word 30, bit 5`, `FFFFFAh`), `Time Server bit` (`word 30, bit 4`, `FFFFFBh`), `Directory Server bit` (`word 30, bit 3`, `FFFFFCh`), plus `Login request`, `LS_RJT`, `LS_ACC`, `Payload Bit`, `Login Extension Data Length`, reason code `Logical error`, and reason code explanations `Invalid Payload length` and `Login Extension not supported`. Content type: response/branch handling.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 191,
+                  "end_index": 191,
+                  "subtree_start_index": 191,
+                  "subtree_end_index": 191
+                },
+                {
+                  "node_id": "0397",
+                  "title": "6.6.7.5 Alias Server",
+                  "summary": "Core topic: `6.6.7.5 Alias Server` capability bit semantics for Fabric routing support to the well-known Alias Server address identifier. Defines that the `Alias Server bit` at `word 30, bit 7` indicates whether the Fabric supports routing to `FFFFF8h`: set to one = supports routing; set to zero = does not support routing. Nearby anchors appearing in the provided text: `Security Key Distribution Server bit`, `word 30, bit 8`, `FFFFF7h`; `Management Server bit`, `word 30, bit 5`, `FFFFFAh`; `Time Server bit`, `word 30, bit 4`, `FFFFFBh`; `Directory Server bit`, `word 30, bit 3`, `FFFFFCh`. Content types: response/branch handling (bit set to one/zero meaning), completion/exception conditions absent, procedure/flow absent, message/frame format absent, state machine absent, timer/negotiation absent.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 191,
+                  "end_index": 191,
+                  "subtree_start_index": 191,
+                  "subtree_end_index": 191
+                },
+                {
+                  "node_id": "0398",
+                  "title": "6.6.7.6 Management Server",
+                  "summary": "Core topic: `6.6.7.6 Management Server` defines the meaning of the `Management Server bit` in `word 30, bit 5` as a fabric-routing capability indicator. If set to one, the Fabric supports routing to the well-known `Management Server` address identifier `FFFFFAh`; if set to zero, the Fabric does not support routing to `FFFFFAh`. References `FC-GS-5` for the server specification. Exact anchors: `Management Server bit`, `word 30, bit 5`, `FFFFFAh`, `FC-GS-5`. Content types: response/branch handling (bit value `one` vs `zero` meaning supported vs not supported); completion/exception conditions absent; procedure/flow absent; message/frame format absent; state machine absent; timer/negotiation absent. Tables: none. Figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 191,
+                  "end_index": 191,
+                  "subtree_start_index": 191,
+                  "subtree_end_index": 191
+                },
+                {
+                  "node_id": "0399",
+                  "title": "6.6.7.7 Time Server",
+                  "summary": "Core topic: `6.6.7.7 Time Server` defines the meaning of the `Time Server bit` in `word 30, bit 4` as a Fabric capability indicator for routing to the `well-known Time Server address identifier` `FFFFFBh`. When set to one, the Fabric supports routing to `FFFFFBh`; when set to zero, it does not support routing to that identifier. Key anchors: `Time Server bit`, `word 30, bit 4`, `well-known Time Server address identifier`, `FFFFFBh`. Content types: response/branch handling only in the sense of set-to-one vs set-to-zero interpretation; no procedure/flow, message/frame format, state machine, timer/negotiation, or completion/exception conditions. Tables: none. Figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 191,
+                  "end_index": 191,
+                  "subtree_start_index": 191,
+                  "subtree_end_index": 191
+                },
+                {
+                  "node_id": "0400",
+                  "title": "6.6.7.8 Directory Server",
+                  "summary": "Defines the `Directory Server` capability bit in Fabric service advertisement: `word 30, bit 3` indicates whether the Fabric supports routing to the well-known `Directory Server` address identifier `FFFFFCh`; `one` = supports routing, `zero` = does not support routing. References `FC-GS-5` for the server specification. Contextually adjacent anchors on the same page include `Security Key Distribution Server` (`word 30, bit 8`, `FFFFF7h`), `Alias Server` (`word 30, bit 7`, `FFFFF8h`), `Management Server` (`word 30, bit 5`, `FFFFFAh`), and `Time Server` (`word 30, bit 4`, `FFFFFBh`). Content types: identifier/bit definition, routing support indication; no procedure/flow, no message/frame format, no response/branch handling, no state machine, no timer/negotiation, no completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 191,
+                  "end_index": 191,
+                  "subtree_start_index": 191,
+                  "subtree_end_index": 191
+                }
+              ],
+              "start_index": 190,
+              "end_index": 190,
+              "subtree_start_index": 190,
+              "subtree_end_index": 191
+            },
+            {
+              "node_id": "0401",
+              "title": "6.6.8 Login Extension",
+              "summary": "Login Extension general behavior for `Login` / `LS_ACC` capability mismatches and rejection rules. Covers `procedure/flow`, `response/branch handling`, and `completion/exception conditions` for ports handling a `Login request` with `Payload Bit` set to one, a non-zero `Login Extension Data Length` field, or an unsupported `page code`. Required outcomes: reject with `LS_RJT` when unsupported; reason code `\"Logical error\"` with reason code explanation `\"Invalid Payload length\"` if `Payload Bit` set to one is unsupported, or `\"Login Extension not supported\"` if non-zero `Login Extension Data Length` or unsupported `page code` is received. If a port does not support an `LS_ACC reply Sequence` with `Payload Bit` set to one, it shall perform an explicit `Logout` with the replying port. No tables. No figures.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0402",
+                  "title": "6.6.8.1 General",
+                  "summary": "Login Extension general error handling and interoperability requirements for unsupported `Login request` / `LS_ACC reply Sequence` payload or extension usage. Covers rejection behavior when `Payload Bit` is set to one and unsupported, when `Login Extension Data Length field` is non-zero and unsupported, and when an unsupported `page code` is received. Required responses: reject with `LS_RJT`, `reason code` = `Logical error`, with `reason code explanation` = `Invalid Payload length` or `Login Extension not supported`; for unsupported `LS_ACC reply Sequence` with `Payload Bit` set to one, perform explicit `Logout`. Content types: response/branch handling; completion/exception conditions. Named identifiers/codes present: `LS_RJT`, `LS_ACC`, `Payload Bit`, `Login Extension Data Length field`, `page code`, `Logical error`, `Invalid Payload length`, `Login Extension not supported`, `Logout`. No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 191,
+                  "end_index": 191,
+                  "subtree_start_index": 191,
+                  "subtree_end_index": 191
+                },
+                {
+                  "node_id": "0403",
+                  "title": "6.6.8.2 Login Extension Data Length",
+                  "summary": "Covers `6.6.8.2 Login Extension Data Length`: semantics of the `Login Extension Data Length` field (`word 31`) in `FLOGI/PLOGI/ACC` payloads, when a `Login Extension` follows the normal payload, and the rule that the `Payload Bit` (see `6.6.2.4.19`) shall be `one` if this field is non-zero. Also introduces `6.6.8.3 Login Extension format`: `Login Extension Page` sequence length equals `Login Extension Length field`; first page starts at `word 64`. Message/frame format; completion/exception conditions. `Table 171 – Login Extension Page format`: defines page layout with `Page Length (n)`, `Reserved`, `Page Code`, `Page Code Specific Data`. `Table 172 – Page Code Definitions`: defines codes `00h - EFh`, `F0h`, `F1h - FFh`. `Table 173 – Vendor Specific Page format`: shows `Vendor Specific Page`, `Page Code (F0h)`, `Vendor Identification Data`, `Vendor Specific Data`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 192,
+                  "end_index": 192,
+                  "subtree_start_index": 192,
+                  "subtree_end_index": 192
+                },
+                {
+                  "node_id": "0404",
+                  "title": "6.6.8.3 Login Extension format",
+                  "summary": "Defines the `Login Extension` field structure for `FLOGI/PLOGI/ACC payload`: a sequence of zero or more `Login Extension Pages`, whose total length in words equals the `Login Extension Length` field; `Word 0` of the first page, if present, is `word 64` of the `FLOGI/PLOGI/ACC payload`. `Login Extension Page` format uses `Page Length (n)`, `Reserved`, `Page Code`, and `Page Code Specific Data`; `Page Length Field` includes the whole page. `Page Code Field` values: `00h - EFh Reserved`, `F0h Vendor Specific`, `F1h - FFh Reserved`. `Vendor Specific Page` format includes `Vendor Identification Data` and `Vendor Specific Data`. Tables: `Table 171 – Login Extension Page format` (generic page layout); `Table 172 – Page Code Definitions` (code meanings); `Table 173 – Vendor Specific Page format` (vendor-specific layout). Content types: message/frame format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 192,
+                  "end_index": 192,
+                  "subtree_start_index": 192,
+                  "subtree_end_index": 192
+                }
+              ],
+              "start_index": 191,
+              "end_index": 191,
+              "subtree_start_index": 191,
+              "subtree_end_index": 192
+            },
+            {
+              "node_id": "0405",
+              "title": "6.6.9 Clock Synchronization Quality of Service",
+              "summary": "Covers `6.6.9 Clock Synchronization Quality of Service` for `PLOGI ELS`, `LS_ACC`, and `FLOGI` `N_Port Login`, specifically Clock Synchronization QoS in `words 62-63` when communicating with Clock Synchronization Server `FFFFF6h`. Defines applicability of `Clock Synchronization Quality of Service (QoS)` based on `Clock Synchronization Primitive Capable` (word 1, bit 20) or `Clock Synchronization ELS capable` (word 1, bit 19); otherwise field shall be zero per `FC-FS-2`. Names and semantics for `CS_QoS_Request`, `CS_Accuracy`, `CS_Implemented_MS`, `CS_Implemented_LS`, `CS_Update_Period`, plus `CS_Accuracy_Mantissa` and `CS_Accuracy_Exponent`. `Table 174 – N_Port Clock Synchronization QoS`: field layout/format. `Table 175 – FLOGI/PLOGI CS_QoS_Request`: request code meanings for `00h`, `01h`, `02h – FFh Reserved`. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0406",
+                  "title": "6.6.9.1 N_Port Login",
+                  "summary": "Core topic: `6.6.9.1 N_Port Login` defines `Clock Synchronization Quality of Service` usage in `PLOGI ELS` / `LS_ACC` (words `62-63`) for `N_Port Login`, including applicability to the `Clock Synchronization Server` (`FFFFF6h`) and the `Clock Synchronization Primitive Capable` bit / `Clock Synchronization ELS capable` bit gating whether the field is meaningful; otherwise it shall be `zero` (`FC-FS-2`). Field anchors: `CS_QoS_Request`, `CS_Accuracy`, `CS_Implemented_MS`, `CS_Implemented_LS`, `CS_Update_Period`, `CS_Accuracy_Mantissa`, `CS_Accuracy_Exponent`. `PLOGI`, `FLOGI Request`, and `PLOGI LS_ACC` handling: `00h` = other QoS fields not meaningful; `01h` = requested Quality of Service Parameters; `02h–FFh` reserved. Table `174 – N_Port Clock Synchronization QoS`: defines word/bit layout of the QoS field. Table `175 – FLOGI/PLOGI CS_QoS_Request`: defines request code meanings. Table `173 – Vendor Specific Page format`: shows `Vendor Identification field`, `Vendor Specific Data field`, `Page Code (F0h)` format. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [
+                    {
+                      "node_id": "0407",
+                      "title": "6.6.9.1.1 Applicability",
+                      "summary": "Applicability of `Clock Synchronization Quality of Service (QoS)` in `N_Port Login`: the `Clock Synchronization QoS` field in `PLOGI ELS` or `LS_ACC` (`words 62-63`) is only meaningful when sent to or received from the `Clock Synchronization Server` (`FFFFF6h`). Meaningful only if `Clock Synchronization Primitive Capable` (`word 1, bit 20`) = 1 or `Clock Synchronization ELS capable` in an `N_Port Class Service Parameter Recipient control field` (`word 1, bit 19`) = 1; otherwise field shall be zero (`FC-FS-2`). Defines `CS_QoS_Request`, `CS_Accuracy`, `CS_Implemented_MS`, `CS_Implemented_LS`, `CS_Update_Period`. `Table 174 – N_Port Clock Synchronization QoS`: field layout/format. `Table 175 – FLOGI/PLOGI CS_QoS_Request`: request values `00h`, `01h`, `02h – FFh Reserved` and whether QoS parameter fields are meaningful. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 193,
+                      "end_index": 193,
+                      "subtree_start_index": 193,
+                      "subtree_end_index": 193
+                    },
+                    {
+                      "node_id": "0408",
+                      "title": "6.6.9.1.2 CS_QoS_Request",
+                      "summary": "Section `6.6.9.1.2 CS_QoS_Request` defines the `CS_QoS_Request` field in `N_Port Login` Clock Synchronization QoS for `PLOGI` and `FLOGI Request`, and states `PLOGI LS_ACC` handling. Core rule: in `Word 62, Bits 31-24`, `00h` means `CS_Accuracy`, `CS_Implemented_MSB`, `CS_Implemented_LSB`, and `CS_Update_Period` are not meaningful in the `FLOGI/PLOGI Request`; `01h` means those fields contain the requested Quality of Service Parameters; `02h – FFh` are `Reserved`. `PLOGI LS_ACC` makes this field not meaningful and it shall be set to zero. Table `175 – FLOGI/PLOGI CS_QoS_Request` defines the value-to-meaning mapping for `CS_QoS_Request`. Content types: `message/frame format`, `response/branch handling`, `completion/exception conditions`.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 193,
+                      "end_index": 193,
+                      "subtree_start_index": 193,
+                      "subtree_end_index": 193
+                    },
+                    {
+                      "node_id": "0409",
+                      "title": "6.6.9.1.3 CS_Accuracy (Mantissa and Exponent)",
+                      "summary": "Section `6.6.9.1.3 CS_Accuracy (Mantissa and Exponent)` defines the `CS_Accuracy` field within `N_Port Clock Synchronization QoS` for `PLOGI ELS`, `LS_ACC`, and `FLOGI/PLOGI Request` context, specifically splitting `word 62` into `CS_Accuracy_Mantissa` (`bits 23-21`) and `CS_Accuracy_Exponent` (`bits 20-16`). Closely tied anchors: `Clock Synchronization Server (FFFFF6h)`, `CS_QoS_Request`, `CS_Implemented_MSB`, `CS_Implemented_LSB`, `CS_Update_Period`, `00h`, `01h`, `02h – FFh`, `table 174`, `table 175 – FLOGI/PLOGI CS_QoS_Request` (defines when `CS_Accuracy`, `CS_Implemented_MSB`, `CS_Implemented_LSB`, and `CS_Update_Period` are meaningful or zero/requested). Content types: message/frame format, timer/negotiation, response/branch handling.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 193,
+                      "end_index": 193,
+                      "subtree_start_index": 193,
+                      "subtree_end_index": 193
+                    },
+                    {
+                      "node_id": "0410",
+                      "title": "6.6.9.1.4 Clock Synchronization Implemented MSB",
+                      "summary": "Section `6.6.9.1.4 Clock Synchronization Implemented MSB` defines the `Clock Synchronization Implemented MSB` field in `word 62, bits 13 - 8` as a 6-bit value, with `bits 15-14` reserved and set to zero. Core topic: how this field is used with the `Clock Synchronization Server (FFFFF6h)` during `PLOGI` to request or report the most significant implemented bit position in the 64-bit `Clock Count` field of the `CSU ELS Payload`. Includes `NOTE 20`: `Clock Count` wraps to zero on overflow from the `Clock Synchronization Implemented MSB`; example value `110111b` means the MSB of byte 1 is the highest meaningful bit. Content types: message/frame format, negotiation, completion/exception conditions. No tables. No figures.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 194,
+                      "end_index": 194,
+                      "subtree_start_index": 194,
+                      "subtree_end_index": 194
+                    },
+                    {
+                      "node_id": "0411",
+                      "title": "6.6.9.1.5 Clock Synchronization Implemented LSB",
+                      "summary": "Defines `Clock Synchronization Implemented LSB` for `word 62, bits 13 - 8` as a `6-bit` field, with `Word 62, bits 7-6` reserved and required to be zero. Scope is the field-level definition of `Clock Synchronization Implemented LSB`; nearby context also names `Fabric`, `FLOGI`, `Clock Synchronization Server (FFFFF6h)`, `CS_Accuracy`, `CS_Accuracy_Mantissa`, `CS_Accuracy_Exponent`, `T_reference`, `PLOGI`, `Clock Synchronization Implemented MSB`, `Clock Count field`, `CSU ELS Payload`, and `NOTE 20`, but this section text itself only states the `Clock Synchronization Implemented LSB` field size/bit placement and reserved bits requirement. Content types: `message/frame format` (field layout/bit assignment). Tables: none. Figures: none.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 194,
+                      "end_index": 194,
+                      "subtree_start_index": 194,
+                      "subtree_end_index": 194
+                    },
+                    {
+                      "node_id": "0412",
+                      "title": "6.6.9.1.6 Clock Synchronization Update Period",
+                      "summary": "Covers `6.6.9.1.6 Clock Synchronization Update Period` and start of `6.6.9.2 Fabric Login`: semantics of `Clock Synchronization Update Period` (word 63) when sent to or received from the `Clock Synchronization Server` `FFFFF6h`, in `PLOGI`, and the rule that it is not meaningful for `FLOGI` and shall be zero. Also includes preceding `Clock Count` least-significant-bit-position meaning for the `CSU ELS Payload`. For `Fabric Login`, defines applicability of `Clock Synchronization Quality of Service` based on `Word 1, bit 20 - Clock Synchronization Primitive Capable` and `Word 1, bit 19 - Clock Synchronization ELS capable`, else zero per `FC-FS-2`. `Table 176 – Fx_Port Clock Synchronization QoS`: shows `Fx_Port Clock Synchronization Quality of Service` layout/fields (`CS_Transfer_Accuracy`, `CS_Implemented_MSB`, `CS_Implemented_LSB`, reserved words 62-63). Content types: message/frame format, response/branch handling, timer/negotiation.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 195,
+                      "end_index": 195,
+                      "subtree_start_index": 195,
+                      "subtree_end_index": 195
+                    }
+                  ],
+                  "start_index": 193,
+                  "end_index": 193,
+                  "subtree_start_index": 193,
+                  "subtree_end_index": 195
+                },
+                {
+                  "node_id": "0413",
+                  "title": "6.6.9.2 Fabric Login",
+                  "summary": "Fabric Login clock-synchronization QoS for `Fx_Port` during `PLOGI`/`FLOGI`, tied to Clock Synchronization Server `FFFFF6h`. Applicability: `Clock Synchronization Quality of Service` is meaningful only if `Word 1, bit 20 - Clock Synchronization Primitive Capable` in the Common features field or `Word 1, bit 19 - Clock Synchronization ELS capable` in the Recipient control field is `1`; otherwise it shall be `0` (see `FC-FS-2`). Defines `Fx_Port Clock Synchronization QoS` layout and `CS_Transfer_Accuracy` semantics, including `CS_Transfer_Accuracy_Mantissa` (`word 62, bits 23-21`) and `CS_Transfer_Accuracy_Exponent` (`word 62, bits 20-16`), plus `CS_Implemented_MSB`/`CS_Implemented_LSB`. `Table 176 – Fx_Port Clock Synchronization QoS`: shows words `62`/`63` field mapping. Content types: message/frame format, timer/negotiation, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [
+                    {
+                      "node_id": "0414",
+                      "title": "6.6.9.2.1 Applicability",
+                      "summary": "Defines applicability of the `Clock Synchronization Quality of Service` field for `6.6.9.2 Fabric Login`: meaningful only when `Word 1, bit 20 - Clock Synchronization Primitive Capable` in the `Common features field` = 1, or `Word 1, bit 19 - Clock Synchronization ELS capable` in the `Recipient control field` = 1; otherwise the field shall be set to zero (`see FC-FS-2`). Covers the `Fx_Port Clock Synchronization Quality of Service field` layout reference and links forward to `6.6.9.2.2 CS_Transfer_Accuracy`. `Table 176 – Fx_Port Clock Synchronization QoS`: shows word/bit allocation for `word 62`, `word 63`, `CS_Transfer_Accuracy`, `CS_Implemented_MSB`, `CS_Implemented_LSB`, and `Reserved`. Content types: message/frame format, completion/exception conditions.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 195,
+                      "end_index": 195,
+                      "subtree_start_index": 195,
+                      "subtree_end_index": 195
+                    },
+                    {
+                      "node_id": "0415",
+                      "title": "6.6.9.2.2 CS_Transfer_Accuracy",
+                      "summary": "Section `6.6.9.2.2 CS_Transfer_Accuracy` defines the `CS_Transfer_Accuracy` field for `Fabric Login`, specifically `CS_Transfer_Accuracy_Mantissa` (`word 62, bits 23-21`) and `CS_Transfer_Accuracy_Exponent` (`word 62, bits 20-16`). Core topic: Fabric-maintained clock-sync transfer accuracy passed from the `Clock Synchronization Server` to clients, expressed as accuracy bounds around `(T_server + T_fabric_delay)` using `(0.5 + CS_Accuracy_Mantissa * 2-4)* 2 (CS_Accuracy_Exponent-30)`. Includes surrounding applicability/QoS context: `Clock Synchronization Quality of Service`, `Word 1, bit 20 - Clock Synchronization Primitive Capable`, `Word 1, bit 19 - Clock Synchronization ELS capable`, `FC-FS-2`. Table `176 – Fx_Port Clock Synchronization QoS` shows the `Fx_Port Clock Synchronization QoS` layout, including `CS_Transfer_Accuracy`, `CS_Implemented_MSB`, `CS_Implemented_LSB`. Content types: message/frame format.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 195,
+                      "end_index": 195,
+                      "subtree_start_index": 195,
+                      "subtree_end_index": 195
+                    },
+                    {
+                      "node_id": "0416",
+                      "title": "6.6.9.2.3 Clock Synchronization Implemented MSB",
+                      "summary": "Core topic: `6.6.9.2.3 Clock Synchronization Implemented MSB` defines the `Clock Synchronization Implemented MSB` field in `word 62, bits 13 - 8` as a 6-bit indicator of the highest meaningful bit position in the 64-bit `Clock Count` field; `Word 62, bits 15-14` are reserved and shall be zero. Scope note: this describes Fabric transfer capability for clock synchronization values received from the `Clock Synchronization Server` (`FFFFF6h`) to clients, not server capability. Nearby context includes accuracy terms `T_server`, `T_fabric_delay`, `CS_Accuracy_Mantissa`, `CS_Accuracy_Exponent`, and examples using `CS_Transfer_Accuracy Mantissa`/Exponent. Also references adjacent field `Clock Synchronization Implemented LSB` in `word 62, bits 5 - 0`, with `Word 62, bits 7-6` reserved. Content types: message/frame format, completion/exception conditions. Tables: none. Figures: none.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 196,
+                      "end_index": 196,
+                      "subtree_start_index": 196,
+                      "subtree_end_index": 196
+                    },
+                    {
+                      "node_id": "0417",
+                      "title": "6.6.9.2.4 Word 0, Bits 7-0 Clock Synchronization Implemented LSB",
+                      "summary": "Defines `Clock Synchronization Implemented LSB` for `word 62, bits 5 - 0`: a 6-bit field giving the least significant bit position in the 64-bit `Clock Count` field that contains meaningful information; example `001000b` means the LSB of byte 6 is the lowest meaningful bit. Also states `Word 62, bits 7-6` are reserved and shall be set to zero. Scope/capability note: this field describes Fabric transfer capability for a clock synchronization value received from the `Clock Synchronization Server` (`FFFFF6h`) to clients, not the server’s own capability. Named related identifier in surrounding text: `Clock Synchronization Implemented MSB`. Content types: message/frame format, completion/exception conditions (reserved bits set to zero). Tables: none. Figures: none.",
+                      "is_skeleton": false,
+                      "children": [],
+                      "start_index": 196,
+                      "end_index": 196,
+                      "subtree_start_index": 196,
+                      "subtree_end_index": 196
+                    }
+                  ],
+                  "start_index": 195,
+                  "end_index": 195,
+                  "subtree_start_index": 195,
+                  "subtree_end_index": 196
+                }
+              ],
+              "start_index": 193,
+              "end_index": 193,
+              "subtree_start_index": 193,
+              "subtree_end_index": 196
+            }
+          ],
+          "start_index": 165,
+          "end_index": 165,
+          "subtree_start_index": 165,
+          "subtree_end_index": 196
+        }
+      ],
+      "start_index": 152,
+      "end_index": 152,
+      "subtree_start_index": 152,
+      "subtree_end_index": 196
+    },
+    {
+      "node_id": "0418",
+      "title": "7 Process Login/Logout",
+      "summary": "Covers `7 Process Login/Logout`, specifically `7.1 Process Login` / `7.1.1 Introduction`: purpose and scope of the `Process Login (PRLI) ELS request` and `PRLI ELS Sequence` for establishing the operating environment between related processes at originating and responding `Nx_Port`s. Names and identifiers present: `PRLI`, `Process Login`, `Process Logout`, `N_Port Login`, `Implicit Process Login`, `Explicit Process Login`, `Process_Associator`, `D_ID`, `Responder Process_Associator`, `S_ID`, `Originator Process_Associator`, `image`, `image pair`, `N_Port_ID`, `Nx_Port`, `N_Port`, `FC-4`. States/conditions: PRLI remains in effect until process logout; concurrent logins depend on `Nx_Port` facilities; explicit vs implicit branch. Figures: `Figure 4 – Image/Group of Related Processes` shows image/group behind an `Nx_Port`; `figure_0001`, `figure_0002`, `figure_0003`, `figure_0004` are figure crops on page 197. Table: `table_0189` (`Table fragment on page 197`) shows related process/image fragment. Content types: procedure/flow, response/branch handling, completion/exception conditions.",
+      "is_skeleton": false,
+      "children": [
+        {
+          "node_id": "0419",
+          "title": "7.1 Process Login",
+          "summary": "Defines **Process Login (PRLI)** in section **7.1 Process Login**: the **PRLI ELS request** / **PRLI ELS Sequence** establishes the operating environment between related process groups at originating and responding **Nx_Port**s. Covers duration until process logout, separation from **N_Port Login**, and the two types: **Implicit Process Login** and **Explicit Process Login**. Names key identifiers/fields: **Process_Associator**, **D_ID**, **Responder Process_Associator**, **S_ID**, **Originator Process_Associator**, **N_Port_ID**; defines an **image** and **image pair**. References **figure 4** (Image/Group of Related Processes; shows image/group behind an **Nx_Port**) and **figure 5** (image pair; cited as the identifier combination example). Includes **table_0189** / “**Table fragment on page 197**” (table fragment present; content not described). Content types: procedure/flow, message/frame format.",
+          "is_skeleton": false,
+          "children": [
+            {
+              "node_id": "0420",
+              "title": "7.1.1 Introduction",
+              "summary": "Core topic: Process Login (PRLI) introduction—PRLI ELS request establishes the operating environment between related process groups/images at originating/responding `Nx_Port`; defines `Implicit Process Login` vs `Explicit Process Login`, `image`, `image pair`, `Process_Associator`, `D_ID`, `S_ID`, `Responder Process_Associator`, `Originator Process_Associator`, relation to `N_Port Login`, `PRLO`, `LS_ACC`, `ABTS`, and when PRLI is used/left in effect. Covers combinations: `Nx_Port`↔`Nx_Port`, `Nx_Port`↔image, image↔image; Service Parameters exchange, modifying established image pairs, and failure/non-impact rules. Figures: `Figure 4 – Image/Group of Related Processes` shows an image/group behind an `Nx_Port`; `Figure 5 – Image pairs` shows paired images across a link. Tables present only as extracted fragments: `table_0189` (`Table fragment on page 197`) and `table_0191` (`Table fragment on page 198`), showing figure/table fragment content. Content types: procedure/flow, response/branch handling, completion/exception conditions.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 197,
+              "end_index": 198,
+              "subtree_start_index": 197,
+              "subtree_end_index": 198
+            },
+            {
+              "node_id": "0421",
+              "title": "7.1.2 PRLI/PRLO Relationships",
+              "summary": "Covers PRLI/PRLO relationship rules for establishing and using Process_Associator (PA) images, especially `7.1.2.1 Introduction`, `7.1.2.2 PA not supported`, and `7.1.2.3 PA required by originator, supported by responder`. Defines cases where one or both `Originator`/`Responder` do not support `PAs` (no valid `PA` in any frame of any exchange), and where the `Originator` requires `PAs`, including valid `Originator PA` and invalid `Responder PA` values in `PRLI` request pages, use of `Association_Header`, `TYPE of FC-4`, and per-process access control via `PRLI`/`PRLO`. States that communication with image pairs not established is not allowed. Content types: timer/negotiation, response/branch handling, completion/exception conditions. No tables. No figures.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0422",
+                  "title": "7.1.2.1 Introduction",
+                  "summary": "Core topic: `7.1.2.1 Introduction` to `7.1.2 PRLI/PRLO Relationships`; defines that `Process_Associator (PA)` images may exist in multiple relationships, and that any such relationships may be established as a default condition using mechanisms not specified by this standard. Exact anchors: `PRLI`, `PRLO`, `Process_Associator (PA)`, `PA images`, `Nx_Port`. This section is a scope/setup note for the PA relationship model, not a detailed rule set; it introduces the relationship concept before cases such as `PA not supported` and `PA required by originator, supported by responder`. Content types present: timer/negotiation (relationship/default establishment context). Tables: none. Figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 199,
+                  "end_index": 199,
+                  "subtree_start_index": 199,
+                  "subtree_end_index": 199
+                },
+                {
+                  "node_id": "0423",
+                  "title": "7.1.2.2 PA not supported",
+                  "summary": "Section `7.1.2.2 PA not supported` defines the PRLI/PRLO relationship when `Process_Associator (PA)` support is absent on one or both ends. Core rule: if either `Originator` or `Responder` does not support `PAs`, then no valid `PA` is specified in any frame of any exchange. It states that `PRLI`/`PRLO` should allow control over enabling/disabling the specified services for the entire `Nx_Port`. Nearby context on `PRLI request` establishment and retries mentions `LS_ACC`, `LS_RJT`, `P_BSY`, `F_BSY`, `P_RJT`, `F_RJT`, `LOGO ELS Sequence`, reason code `Unable to perform command request`, and reason code explanation `N_Port Login required`, but this subsection itself is specifically the no-PA relationship case. Content types: timer/negotiation, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 199,
+                  "end_index": 199,
+                  "subtree_start_index": 199,
+                  "subtree_end_index": 199
+                },
+                {
+                  "node_id": "0424",
+                  "title": "7.1.2.3 PA required by originator, supported by responder",
+                  "summary": "Section `7.1.2.3 PA required by originator, supported by responder`: PRLI/PRLO relationship where the `Originator` requires `PA` and the `Responder` supports it. Core rules: `Originator` communicates only when a valid `PA` is included in the initial `Association_Header`; `Responder` provides a final `Association_Header` and other `Association_Headers` as required. `PA` establishes routing to a particular `Originator` process (or related group); no relationship exists between `PAs` on different `Nx_Port`s of the same host. `PRLI` request has valid `Originator PA` values and invalid `Responder PA` values, informing `Responder` of `Originator` requirements/capabilities for each `TYPE` of `FC-4`. `PRLI`/`PRLO` may control access per `Originator Process` to `Responder Nx_Port`. Communication with unestablished image pairs is not allowed. Content types: message/frame format, negotiation, completion/exception conditions. Tables: none. Figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 199,
+                  "end_index": 199,
+                  "subtree_start_index": 199,
+                  "subtree_end_index": 199
+                },
+                {
+                  "node_id": "0425",
+                  "title": "7.1.2.4 PA required by responder, supported by originator",
+                  "summary": "Covers PA usage when the Responder requires PAs and the Originator supports them: valid `Responder PA` must appear in the initial `Association_Header`; the Responder returns a final `Association_Header` and other `Association_Headers` as required; PA routes to a specific Responder process and is per `Nx_Port`. `PRLI` request pages carry valid `Responder PA` and invalid `Originator PA`; `Responder PA` may be learned via informative `PRLI`. `PRLI`/`PRLO` may enable or disable access of each Responder Process to the Originating `Nx_Port`; communication with image pairs not established is not allowed. Also includes adjacent rules for `7.1.2.5`, `Establish Image Pair bit`, `Informative mode`, and `Binding mode`. Content types: message/frame format, response/branch handling, negotiation, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 200,
+                  "end_index": 200,
+                  "subtree_start_index": 200,
+                  "subtree_end_index": 200
+                },
+                {
+                  "node_id": "0426",
+                  "title": "7.1.2.5 PA required by originator and responder",
+                  "summary": "Covers PA-required communication when both originator and responder require valid `PA` values. Core rules: communication should occur only when valid `Originator PA` and `Responder PA` are specified; `PRLI` request pages shall contain valid `Originator PA` and `Responder PA` and set `Establish Image Pair` bit to one to create image pairs in a binding manner. `Responder PA` values may be learned via informative `PRLI`. `PRLI` and `PRLO` pages with complete PA information enable/disable the specified image pair; incomplete `Originator PA`/`Responder PA` information in `PRLI` is invalid. Communication with unestablished image pairs is not allowed. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions, timer/negotiation (`Informative mode`, `Binding mode`, `Establish Image Pair`). No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 200,
+                  "end_index": 200,
+                  "subtree_start_index": 200,
+                  "subtree_end_index": 200
+                }
+              ],
+              "start_index": 199,
+              "end_index": 199,
+              "subtree_start_index": 199,
+              "subtree_end_index": 200
+            },
+            {
+              "node_id": "0427",
+              "title": "7.1.3 Mode of operation",
+              "summary": "Covers `7.1.3 Mode of operation`: the two PRLI operating modes for process/image-pair setup and how subsequent communication is constrained. `7.1.3.1 Informative mode` exchanges `Service Parameter` information to enable later negotiation for image pair establishment. `7.1.3.2 Binding mode` exchanges information that explicitly establishes a relationship between processes in communicating `Nx_Ports`; no communication types or paths other than those established by the `PRLI` are allowed. Mode selection is determined by the `Establish Image Pair bit` in the `PRLI request page`. Binding use requires precise knowledge of `PAs` and capabilities in the `Responder`, obtainable from `Directory Services`, configuration outside FC scope, or an `Informative PRLI`. Content types: timer/negotiation, completion/exception conditions.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0428",
+                  "title": "7.1.3.1 Informative mode",
+                  "summary": "Core topic: `7.1.3.1 Informative mode` in `7.1.3 Mode of operation` defines PRLI operation where `Service Parameter` information is exchanged to enable later image pair negotiation, contrasted with `7.1.3.2 Binding mode`. Exact anchors: `PRLI`, `PRLO`, `Association_Header`, `Responder PA`, `Originator PA`, `PA`, `Nx_Port`, `FC-4`, `PRLI request pages`, `Establish Image Pair bit`, `Informative PRLI`, `Binding PRLI`, `Directory Services`, `image pair`. Includes surrounding rules from `7.1.2.4 PA required by responder, supported by originator` and `7.1.2.5 PA required by originator and responder`: valid/invalid `Responder PA` and `Originator PA` usage, complete vs incomplete PA information, and prohibition on communication with image pairs not established. Content types: procedure/flow, response/branch handling, timer/negotiation, completion/exception conditions. Tables/figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 200,
+                  "end_index": 200,
+                  "subtree_start_index": 200,
+                  "subtree_end_index": 200
+                },
+                {
+                  "node_id": "0429",
+                  "title": "7.1.3.2 Binding mode",
+                  "summary": "Core topic: `7.1.3.2 Binding mode` defines PRLI-based binding operation where exchanged information explicitly establishes relationships between processes in communicating `Nx_Ports`; only communication types/paths established by `PRLI` are allowed. Exact anchors: `Binding mode`, `PRLI`, `Binding PRLI page`, `Informative PRLI`, `PRLI request page`, `Establish Image Pair bit`, `Originator`, `Responder`, `PAs`, `Nx_Ports`, `Directory Services`. A `Binding PRLI page` requires the `Originator` to have precise knowledge of `Responder` `PAs` and capabilities, obtainable via `Directory Services`, out-of-scope configuration, or an `Informative PRLI`. `Binding` versus `Informative mode` is determined by the setting of the `Establish Image Pair bit` in the `PRLI request page`. Content types: timer/negotiation.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 200,
+                  "end_index": 200,
+                  "subtree_start_index": 200,
+                  "subtree_end_index": 200
+                }
+              ],
+              "start_index": 200,
+              "end_index": 200,
+              "subtree_start_index": 200,
+              "subtree_end_index": 200
+            },
+            {
+              "node_id": "0430",
+              "title": "7.1.4 Protocol",
+              "summary": "Protocol rules for PRLI page semantics in Binding mode, covering how Service Parameters act as requirements vs capabilities and how `Originator PA validity bit`, `Responder PA validity bit`, `Originator PA`, and `Responder PA` are carried in `PRLI request page` and `LS_ACC response page`. Anchors: `PRLI`, `PRLI request page`, `LS_ACC response page`, `Originator`, `Responder`, `Originator Nx_Port`, `Responder Nx_Port`, `Binding mode PRLI operation`, `Service Parameters`, `Originator PA validity bit`, `Responder PA validity bit`, `Originator PA`, `Responder PA`, `FC-4`, `FC-SB-3`, `FCP-2`, `Nx_Port`. Subcases: `7.1.4.1 PA required by originator and responder`; `7.1.4.2 PA required by originator, supported by responder`; `7.1.4.3 PA supported by originator, required by responder`. Content types: procedure/flow; message/frame format; response/branch handling; timer/negotiation; completion/exception conditions (`Error responses are possible`).",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0431",
+                  "title": "7.1.4.1 PA required by originator and responder",
+                  "summary": "Section `7.1.4.1 PA required by originator and responder`: rules for `PRLI request page` and `LS_ACC response page` when both `Originator PA validity bits` and `Responder PA validity bits` are set to one and valid `Originator PA` / `Responder PA` values are specified. In requests, `Service Parameters` `requirements` reflect the combined understanding expected to be agreed to by the `Responder`; `capabilities` are those of the `Originator` only. In responses, `requirements` are those agreed to by the `Responder`; `capabilities` are those of the `Responder` only. Each page identifies a `Binding mode PRLI operation` between one image at the Originator `Nx_Port` and one image at the Responder `Nx_Port`. `Error responses` are possible. Content types: procedure/flow, response/branch handling, timer/negotiation, completion/exception conditions. No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 201,
+                  "end_index": 201,
+                  "subtree_start_index": 201,
+                  "subtree_end_index": 201
+                },
+                {
+                  "node_id": "0432",
+                  "title": "7.1.4.2 PA required by originator, supported by responder",
+                  "summary": "Section `7.1.4.2 PA required by originator, supported by responder` defines PRLI `Binding mode` behavior when the `Originator PA validity bit` is `one` and the `Responder PA validity bit` is `zero`. For each `PRLI request page`, a valid `Originator PA` is specified; `Service Parameter requirements` reflect the combined understanding expected to be agreed to by the Responder, and `Service Parameter capabilities` are those of the Originator only. For each `LS_ACC response page`, the `Originator PA` is returned; `Service Parameter requirements` are those agreed to by the Responder, and `Service Parameter capabilities` are those of the Responder only. `Error responses are possible`. Content types: procedure/flow, message/frame format, response/branch handling, timer/negotiation. No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 201,
+                  "end_index": 201,
+                  "subtree_start_index": 201,
+                  "subtree_end_index": 201
+                },
+                {
+                  "node_id": "0433",
+                  "title": "7.1.4.3 PA supported by originator, required by responder",
+                  "summary": "Covers `7.1.4.3 PA supported by originator, required by responder`: PRLI/LS_ACC page semantics when the Originator supports but does not require PA, and the Responder requires PA. In each `PRLI request page`, `Originator PA validity bit` = zero, `Responder PA validity bit` = one, and a valid `Responder PA` is specified. In each `LS_ACC response page`, `Originator PA validity bit` = zero, `Responder PA validity bit` = one, and the `Responder PA` is returned. `Service Parameter requirements` are those expected to be agreed to / agreed to by the Responder; `Service Parameter capabilities` are those of the Originator in requests and the Responder in responses. Includes response/branch handling: `Error responses are possible`. Content types: procedure/flow, response/branch handling, message/frame format, negotiation.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 201,
+                  "end_index": 201,
+                  "subtree_start_index": 201,
+                  "subtree_end_index": 201
+                }
+              ],
+              "start_index": 201,
+              "end_index": 201,
+              "subtree_start_index": 201,
+              "subtree_end_index": 201
+            }
+          ],
+          "start_index": 197,
+          "end_index": 197,
+          "subtree_start_index": 197,
+          "subtree_end_index": 201
+        },
+        {
+          "node_id": "0434",
+          "title": "7.2 Process Logout",
+          "summary": "Section 7.2 `Process Logout`: defines use of the `PRLO` ELS request to invalidate the operating environment between an image at the initiating `Nx_Port` and an image at the recipient `Nx_Port`, freeing resources from prior `PRLI`. Covers `TYPE-specific Service Parameter` reset and image-pair removal semantics, scoped by `Originator Process Associator` and `Responder Process Associator`. Response/branch handling: removal/reset takes effect only on `LS_ACC` reply Sequence receipt/send; nonexistent image pair or `FC-4 TYPE` still accepted with `LS_ACC` if no link errors; `P_BSY`, `F_BSY`, `P_RJT`, `F_RJT` permit retry; no valid response means action status cannot be assumed, retry is recommended/vendor unique. Completion/exception conditions: after `PRLO`, no `Information Units` for that image pair/`FC-4 TYPE`; active `Sequences` and `Exchanges` terminated via `ABTS`. Content types: procedure/flow, response/branch handling, completion/exception conditions.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 202,
+          "end_index": 202,
+          "subtree_start_index": 202,
+          "subtree_end_index": 202
+        }
+      ],
+      "start_index": 197,
+      "end_index": 197,
+      "subtree_start_index": 197,
+      "subtree_end_index": 202
+    },
+    {
+      "node_id": "0435",
+      "title": "8 Virtual Fabrics N_Port Support",
+      "summary": "Covers Virtual Fabrics support on `N_Ports`: `VFT_Header` tagging with `VF_ID`, shared-link tagged-frame use across VFs, and how Virtual Fabrics are enabled during `FLOGI`. Includes `procedure/flow`, `response/branch handling`, and `timer/negotiation` content. Key anchors: `Virtual Fabrics bit`, `FLOGI`, `LS_ACC`, `EVFP` transaction (`see 4.2.43`), `FLOGI Common Service Parameters`, `table 150`, `D_ID`, `N_Port_ID`, `N_Port Controller Well Known Address`, `S_ID`, `000000h`, `FFFFF0h`, `Authentication transaction`. Explains negotiation outcomes when the `Virtual Fabrics bit` is `0b` or `1b` in request/reply, including when the Fabric requires `EVFP` and returns `LS_ACC with Virtual Fabrics Bit = 1b`. `Table 177 – Virtual Fabrics Bit Usage`: shows request/configuration/behavior combinations for Virtual Fabrics allowed/not allowed.",
+      "is_skeleton": false,
+      "children": [
+        {
+          "node_id": "0436",
+          "title": "8.1 Overview",
+          "summary": "Covers Virtual Fabrics N_Port support overview and initial enablement context: `VFT_Header` (see `FC-FS-2`) tags frames with `VF_ID` so tagged frames from different Virtual Fabrics can share one physical link; support may exist on `N_Ports`, `F_Ports`, and `E_Ports`. Includes `FLOGI` negotiation via the `Virtual Fabrics bit` in `FLOGI Common Service Parameters` (see `table 150`) and `FLOGI LS_ACC` behavior indicating whether the Fabric requires `EVFP` (`see 4.2.43`). `Table 177 – Virtual Fabrics Bit Usage` shows request/configuration/response combinations for `Virtual Fabrics Bit = 0b/1b` and whether Virtual Fabrics are allowed. Also notes `D_ID = 000000h` in `FLOGI LS_ACC` when EVFP is requested, no `N_Port_ID` assignment, and use of `FFFFF0h` as `S_ID`. Content types: timer/negotiation, response/branch handling, procedure/flow.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 203,
+          "end_index": 203,
+          "subtree_start_index": 203,
+          "subtree_end_index": 203
+        },
+        {
+          "node_id": "0437",
+          "title": "8.2 Enabling VFT Tagging on N_Ports",
+          "summary": "Covers enabling VFT tagging on `N_Ports` during `FLOGI`/`LS_ACC` negotiation and when `EVFP` must be initiated. Key negotiation fields/codes: `Virtual Fabrics bit`, `Security bit`, `D_ID = 000000h`, `N_Port Controller Well Known Address = FFFFF0h`, `S_ID`, `VF_ID`, `N_Port_ID`, `N_Port_Name`, `Fabric_Name`, `VFT_Header`. `Table 177 – Virtual Fabrics Bit Usage` defines request/`F_Port` configuration vs `LS_ACC` behavior for `Virtual Fabrics Bit = 0b/1b`. `Figure 6 – Logical N_Port Initialization` shows initialization flow for Virtual Fabrics and Logical `N_Ports`. State machine content: `P1: FLOGI`, `P2: AUTH_ELS`, `P3: N_Port`, `P4: Process EVFP`, `P5(k): FLOGI`, `P6(k): AUTH_ELS`, `P7(k): Logical N_Port`, `P8: Isolated`, plus transitions `P1:P2`, `P1:P3`, `P2:P3`, `P1:P4`, `P2:P4`, `P4:P5(k)`, `P5(k):P6(k)`. Content types: procedure/flow, response/branch handling, state machine, timer/negotiation, completion/exception conditions.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 203,
+          "end_index": 205,
+          "subtree_start_index": 203,
+          "subtree_end_index": 205
+        },
+        {
+          "node_id": "0438",
+          "title": "8.3 Configuration Information",
+          "summary": "Section 8.3 Configuration Information: defines VF capable N_Port configuration parameters used for VFT tagging and Virtual Fabric operation: `Tagging Administrative Status`, `Port VF_ID`, and `Locally-Enabled VF_ID List`. Page also includes adjacent state-machine/flow anchors for link behavior: `Transition P5(k):P7(k)`, `Transition P6(k):P7(k)`, `State P7(k): Logical N_Port`, `Transition P4:P1`, `Transition P4:P8`, `State P8: Isolated`; protocol/message anchors `FLOGI`, `FLOGI LS_ACC`, `Security bit`, `EVFP`, `Link Reset`, `Link Initialization`, `Exchange Virtual Fabrics Parameters ELS (EVFP)`. Key branches/completion conditions: `Security bit set to zero`, authentication completes successfully, EVFP determines tagging/not-tagging and matching/non-matching `Port VF_ID`. Tables: none. Figures: none. Contains: procedure/flow, response/branch handling, state machine, negotiation, completion/exception conditions.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 206,
+          "end_index": 206,
+          "subtree_start_index": 206,
+          "subtree_end_index": 206
+        },
+        {
+          "node_id": "0439",
+          "title": "8.4 Exchange Virtual Fabrics Parameters Processing",
+          "summary": "Section `8.4 Exchange Virtual Fabrics Parameters Processing` / `8.4.1 Overview`: overview of the `Exchange Virtual Fabrics Parameters ELS (EVFP)` protocol between a `VF capable N_Port` and a `VF capable F_Port`. Core topic: EVFP is used to negotiate `VFT Tagging` operational mode, verify consistency of the two `Port VF_ID`s, and establish the list of `operational Virtual Fabrics` across the link. Exact anchors present: `Exchange Virtual Fabrics Parameters ELS (EVFP)`, `VFT Tagging`, `Port VF_ID`, `VF capable N_Port`, `VF capable F_Port`, `operational Virtual Fabrics`. Content types: `timer/negotiation` (mode/VF negotiation), `procedure/flow` (protocol purpose/processing overview). Tables: none. Figures: none.",
+          "is_skeleton": false,
+          "children": [
+            {
+              "node_id": "0440",
+              "title": "8.4.1 Overview",
+              "summary": "EVFP protocol overview for VF capable `N_Port`/`F_Port`: negotiates `VFT Tagging` mode, checks `Port VF_ID` consistency, and establishes operational Virtual Fabrics. Procedure/flow + timer/negotiation + response/branch handling + completion/exception conditions + state machine. EVFP transaction roles: `EVFP Initiator`, `EVFP Responder`; unique `Transaction Identifier (T_ID)`; phases `EVFP_SYNC` then `EVFP_COMMIT`; uses `LS_ACC`, `LS_RJT`, code `'EVFP collision'`. Figure `7 – A Generic EVFP Transaction`: shows `EVFP_SYNC / T_ID=Q`, `LS_ACC / T_ID=Q`, `EVFP_COMMIT / T_ID=Q`, enabling reception/transmission of VFT tagged frames. Named fields/identities: `Tagging Administrative Status`, `Port VF_ID`, `Locally-Enabled VF_ID List`, `Core N_Port_Name`, `Core Switch_Name`. Special identifier/code: `Control VF_ID`, `FEFh`. Branches/states: `P1`, `P4`, `P5(k)`, `P8`, `Isolated`; references `table 126`; NULL operational VF_ID set handling and simultaneous-start collision resolution.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 206,
+              "end_index": 208,
+              "subtree_start_index": 206,
+              "subtree_end_index": 208
+            },
+            {
+              "node_id": "0441",
+              "title": "8.4.2 Changing the VFT Tagging Mode",
+              "summary": "Section `8.4.2 Changing the VFT Tagging Mode` covers the EVFP procedure/flow for changing link VFT tagging mode after a management change to `Administrative Tagging Mode` on a VF-capable `N_Port` or `F_Port` that supports the `EVFP protocol`. `EVFP_SYNC` initiates; `LS_ACC` responds. Message carriage rule: if currently performing tagging, EVFP messages are tagged with the `Control VF_ID`; if not performing tagging, EVFP messages are untagged. `EVFP_SYNC` carries updated `Tagging Administrative Status`, `Port VF_ID`, and `Locally-Enabled VF_ID List`; `LS_ACC` carries responder `Tagging Administrative Status`, `Port VF_ID`, and `Locally-Enabled VF_ID List`. Response/branch handling uses `table 126` to decide whether `VFT Tagging` changes; if not, terminate EVFP on exchange completion; if yes, the `EVFP Responder` performs link initialization and the `EVFP Initiator` participates. Contained types: procedure/flow, response/branch handling, completion/exception conditions.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 209,
+              "end_index": 209,
+              "subtree_start_index": 209,
+              "subtree_end_index": 209
+            },
+            {
+              "node_id": "0442",
+              "title": "8.4.3 Adding or Removing Virtual Fabrics",
+              "summary": "Covers EVFP behavior for adding or removing Virtual Fabrics when a management action changes the `Locally-Enabled VF_ID List` on a tagging `N_Port` or `F_Port`. Procedure/flow and response/branch handling: all EVFP protocol messages are tagged with the `Control VF_ID`; the `EVFP Initiator` sends `EVFP_SYNC` carrying `Tagging Administrative Status`, `Port VF_ID`, and updated `Locally-Enabled VF_ID List` (see `4.2.43.2.4`); the `EVFP Responder` replies with `LS_ACC` carrying its `Tagging Administrative Status`, `Port VF_ID`, and `Locally-Enabled VF_ID List`, then acts depending on the resulting operational `VF_ID List` (see `4.2.43.2.4`). Anchors: `EVFP`, `EVFP_SYNC`, `LS_ACC`, `Control VF_ID`, `Locally-Enabled VF_ID List`, `Tagging Administrative Status`, `Port VF_ID`, operational `VF_ID List`, `N_Port`, `F_Port`. No tables. No figures.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 209,
+              "end_index": 209,
+              "subtree_start_index": 209,
+              "subtree_end_index": 209
+            },
+            {
+              "node_id": "0443",
+              "title": "8.4.4 Changing the Port VF_ID",
+              "summary": "Section `8.4.4 Changing the Port VF_ID` covers management-triggered behavior when the `Port VF_ID` is changed on `N_Port` or `F_Port`, distinguishing tagging vs non tagging ports and `Isolated state` handling. For a tagging `N_Port` or `F_Port`, no changes are applied to the link. For a non tagging `N_Port` or `F_Port`, the `FC_Port` shall perform a link initialization. If the `Port VF_ID` changes while the `N_Port` or `F_Port` is in `Isolated state` (`state P8`), the `FC_Port` shall go to `state P1` (see `8.2`). Content types: state machine, completion/exception conditions. Tables: none. Figures: none.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 210,
+              "end_index": 210,
+              "subtree_start_index": 210,
+              "subtree_end_index": 210
+            }
+          ],
+          "start_index": 206,
+          "end_index": 206,
+          "subtree_start_index": 206,
+          "subtree_end_index": 210
+        }
+      ],
+      "start_index": 203,
+      "end_index": 203,
+      "subtree_start_index": 203,
+      "subtree_end_index": 210
+    }
+  ],
+  "next_steps": {
+    "options": [
+      "Request previous part with part: 6",
+      "Proceed to get_page_content() for specific sections"
+    ],
+    "summary": "Showing part 7 of 7."
+  },
+  "pagination": {
+    "part": "7",
+    "has_more": false,
+    "total_parts": "7"
+  },
+  "total_parts": "7"
+}

@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0010",
+  "type": "table",
+  "caption": "Table 7 – ECHO Payload",
+  "pages": [
+    45
+  ],
+  "bbox": [
+    99.94,
+    435.99,
+    536.06,
+    532.32
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 45
+}

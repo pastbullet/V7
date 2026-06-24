@@ -1,0 +1,805 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 69,
+  "spans": [
+    {
+      "span_id": "p069_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0002",
+      "text": " 50",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0003",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        57.65,
+        140.41,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0004",
+      "text": "The format of the SCR Request Payload is shown in table 39.",
+      "bbox": [
+        140.4,
+        57.65,
+        412.68,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p069_s0005",
+      "text": "Registration Function: ",
+      "bbox": [
+        96.0,
+        172.67,
+        205.41,
+        183.78
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0006",
+      "text": "The format of the Registration Function field is shown in table 40.",
+      "bbox": [
+        205.38,
+        172.67,
+        493.13,
+        183.78
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p069_s0007",
+      "text": "4.2.19.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        430.97,
+        214.86,
+        442.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0008",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        454.96,
+        138.19,
+        466.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0009",
+      "text": "LS_RJT signifies the rejection of the SCR command.",
+      "bbox": [
+        138.18,
+        454.96,
+        371.52,
+        466.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p069_s0010",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        478.96,
+        142.05,
+        490.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0011",
+      "text": "LS_ACC signifies acceptance of the SCR Request and registration for RSCN.  The format",
+      "bbox": [
+        142.08,
+        478.96,
+        540.08,
+        490.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p069_s0012",
+      "text": "of the LS_ACC Payload is shown in table 41.",
+      "bbox": [
+        96.0,
+        490.96,
+        294.82,
+        502.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0013",
+      "text": "4.2.20",
+      "bbox": [
+        96.0,
+        598.96,
+        123.76,
+        610.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0014",
+      "text": "Process login (PRLI)",
+      "bbox": [
+        133.76,
+        598.96,
+        231.5,
+        610.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0015",
+      "text": "4.2.20.1  Introduction",
+      "bbox": [
+        96.0,
+        622.96,
+        195.92,
+        634.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0016",
+      "text": "The PRLI ELS is used to establish the operating environment between a group of related processes",
+      "bbox": [
+        96.0,
+        647.02,
+        539.93,
+        658.14
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0017",
+      "text": "at the originating Nx_Port and a group of related processes at the responding Nx_Port (see 7.1).",
+      "bbox": [
+        96.0,
+        659.02,
+        521.54,
+        670.14
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0018",
+      "text": " Table 39 – SCR Payload",
+      "bbox": [
+        259.98,
+        79.66,
+        376.11,
+        90.78
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0019",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        101.62,
+        133.06,
+        112.74
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0020",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        113.62,
+        136.34,
+        124.74
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0021",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        101.62,
+        233.97,
+        112.74
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0022",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        101.62,
+        328.41,
+        112.74
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0023",
+      "text": "15         ..       08",
+      "bbox": [
+        354.79,
+        101.62,
+        427.0,
+        112.74
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0024",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        101.62,
+        522.83,
+        112.74
+      ],
+      "block_index": 12,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0025",
+      "text": "0",
+      "bbox": [
+        120.84,
+        130.66,
+        126.38,
+        141.78
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0026",
+      "text": "SCR (62h)",
+      "bbox": [
+        149.88,
+        130.66,
+        197.06,
+        141.78
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0027",
+      "text": "00h",
+      "bbox": [
+        247.08,
+        130.66,
+        263.72,
+        141.78
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0028",
+      "text": "00h",
+      "bbox": [
+        344.28,
+        130.66,
+        360.97,
+        141.78
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0029",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        130.66,
+        458.15,
+        141.78
+      ],
+      "block_index": 13,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0030",
+      "text": "Reserved",
+      "bbox": [
+        149.88,
+        147.64,
+        192.62,
+        158.76
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0031",
+      "text": "Registration Function",
+      "bbox": [
+        441.48,
+        147.64,
+        535.73,
+        158.76
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0032",
+      "text": " Table 40 – Registration Function",
+      "bbox": [
+        239.4,
+        194.62,
+        396.55,
+        205.74
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0033",
+      "text": "Function",
+      "bbox": [
+        277.8,
+        216.64,
+        319.92,
+        227.76
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0034",
+      "text": "Value",
+      "bbox": [
+        499.06,
+        216.64,
+        525.75,
+        227.76
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0035",
+      "text": "Reserved",
+      "bbox": [
+        106.5,
+        239.62,
+        149.25,
+        250.74
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0036",
+      "text": "0",
+      "bbox": [
+        509.64,
+        240.64,
+        515.18,
+        251.76
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0037",
+      "text": "Fabric Detected registration - Register to receive all RSCN Requests issued by the ",
+      "bbox": [
+        106.5,
+        262.66,
+        474.71,
+        273.78
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0038",
+      "text": "Fabric Controller for events detected by the Fabric.",
+      "bbox": [
+        106.5,
+        274.66,
+        331.59,
+        285.78
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0039",
+      "text": "1",
+      "bbox": [
+        509.64,
+        264.64,
+        515.18,
+        275.76
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0040",
+      "text": "Nx_Port Detected registration - Register to receive all RSCN Requests issued for events ",
+      "bbox": [
+        106.5,
+        296.62,
+        492.89,
+        307.74
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0041",
+      "text": "detected by the affected Nx_Port.",
+      "bbox": [
+        106.5,
+        308.62,
+        254.87,
+        319.74
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0042",
+      "text": "2",
+      "bbox": [
+        509.64,
+        298.66,
+        515.18,
+        309.78
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0043",
+      "text": "Full registration - Register to receive all RSCN Requests issued.  The RSCN Request ",
+      "bbox": [
+        106.5,
+        330.64,
+        486.96,
+        341.76
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0044",
+      "text": "shall return all affected N_Port_ID pages.",
+      "bbox": [
+        106.5,
+        342.64,
+        289.23,
+        353.76
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0045",
+      "text": "3",
+      "bbox": [
+        509.64,
+        332.62,
+        515.18,
+        343.74
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0046",
+      "text": "Reserved",
+      "bbox": [
+        106.5,
+        365.62,
+        149.25,
+        376.74
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0047",
+      "text": "4 - 254",
+      "bbox": [
+        496.86,
+        366.64,
+        527.96,
+        377.76
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0048",
+      "text": "Clear registration - Remove any current RSCN registrations.",
+      "bbox": [
+        106.5,
+        389.62,
+        372.4,
+        400.74
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0049",
+      "text": "255",
+      "bbox": [
+        504.06,
+        390.64,
+        520.7,
+        401.76
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0050",
+      "text": " Table 41 – SCR LS_ACC Payload",
+      "bbox": [
+        238.56,
+        512.98,
+        397.32,
+        524.1
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0051",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        535.0,
+        133.06,
+        546.12
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0052",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        547.0,
+        136.35,
+        558.12
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0053",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        535.0,
+        233.97,
+        546.12
+      ],
+      "block_index": 24,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0054",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        535.0,
+        328.41,
+        546.12
+      ],
+      "block_index": 24,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0055",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        535.0,
+        427.0,
+        546.12
+      ],
+      "block_index": 24,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0056",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        535.0,
+        522.83,
+        546.12
+      ],
+      "block_index": 24,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0057",
+      "text": "0",
+      "bbox": [
+        120.84,
+        563.98,
+        126.38,
+        575.1
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0058",
+      "text": "02h",
+      "bbox": [
+        149.88,
+        563.98,
+        166.52,
+        575.1
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0059",
+      "text": "00h",
+      "bbox": [
+        247.08,
+        563.98,
+        263.71,
+        575.1
+      ],
+      "block_index": 25,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0060",
+      "text": "00h",
+      "bbox": [
+        344.27,
+        563.98,
+        360.97,
+        575.1
+      ],
+      "block_index": 25,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p069_s0061",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        563.98,
+        458.16,
+        575.1
+      ],
+      "block_index": 25,
+      "line_index": 5,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0041",
+    "table_0043",
+    "table_0044"
+  ]
+}

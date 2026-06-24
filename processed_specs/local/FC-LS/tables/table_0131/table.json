@@ -1,0 +1,53 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "Descriptor Control =\n01h",
+      "Descriptor Type =\n02h",
+      "Descriptor Length = 0004h",
+      null
+    ],
+    [
+      "1",
+      "Port Flags",
+      null,
+      "Port VF_ID",
+      null
+    ],
+    [
+      "0",
+      "Descriptor Control =\n01h",
+      "Descriptor Type =\n03h",
+      "Descriptor Length = 0200h",
+      null
+    ],
+    [
+      "1",
+      "VF_ID Bitmap",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "128",
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

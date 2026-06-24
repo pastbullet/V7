@@ -1,0 +1,554 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 153,
+  "spans": [
+    {
+      "span_id": "p153_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0002",
+      "text": " 134",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0003",
+      "text": "6.2",
+      "bbox": [
+        96.0,
+        57.65,
+        109.88,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0004",
+      "text": "Fabric Login",
+      "bbox": [
+        119.88,
+        57.65,
+        179.87,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0005",
+      "text": "6.2.1",
+      "bbox": [
+        96.0,
+        82.97,
+        118.22,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0006",
+      "text": "Introduction",
+      "bbox": [
+        128.22,
+        82.97,
+        186.53,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0007",
+      "text": "Login with the Fabric is required for all Nx_Ports, regardless of the class supported.  Communication",
+      "bbox": [
+        96.0,
+        106.97,
+        539.89,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0008",
+      "text": "with other Nx_Ports shall not be attempted until the Fabric Login procedure is complete.",
+      "bbox": [
+        96.0,
+        118.97,
+        483.79,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0009",
+      "text": "Fabric Login accomplishes the following functions:",
+      "bbox": [
+        96.0,
+        142.96,
+        318.19,
+        154.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0010",
+      "text": "a) It determines the presence or absence of a Fabric.",
+      "bbox": [
+        106.02,
+        166.96,
+        345.71,
+        178.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0011",
+      "text": "b) If a Fabric is present, it provides the Nx_Port with the specific set of operating characteristics",
+      "bbox": [
+        106.02,
+        190.96,
+        540.03,
+        202.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0012",
+      "text": "associated with the entire Fabric, F_Port_Name and Fabric_Name.",
+      "bbox": [
+        122.4,
+        202.96,
+        418.52,
+        214.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0013",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        226.96,
+        114.34,
+        238.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0014",
+      "text": "If a Fabric is present, it provides the Fabric with the specific set of operating characteristics,",
+      "bbox": [
+        122.36,
+        226.96,
+        540.01,
+        238.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0015",
+      "text": "N_Port_Name and Node_Name of the Nx_Port",
+      "bbox": [
+        122.4,
+        238.96,
+        330.63,
+        250.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0016",
+      "text": "d) If a Fabric is present, the Fabric shall optionally assign or shall confirm the N_Port_ID of the",
+      "bbox": [
+        106.02,
+        262.96,
+        540.02,
+        274.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0017",
+      "text": "Nx_Port that initiated the Login.",
+      "bbox": [
+        122.4,
+        274.96,
+        261.9,
+        286.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0018",
+      "text": "e) If a Fabric is present, it initializes the buffer-to-buffer Credit.",
+      "bbox": [
+        106.02,
+        298.96,
+        384.51,
+        310.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0019",
+      "text": "f)",
+      "bbox": [
+        106.02,
+        322.96,
+        112.14,
+        334.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0020",
+      "text": "If the Nx_Port and the Fabric support Authentication, it enables the subsequent Nx_Port to",
+      "bbox": [
+        122.38,
+        322.96,
+        540.02,
+        334.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0021",
+      "text": "Fabric Authentication (see FC-SP).",
+      "bbox": [
+        122.4,
+        334.96,
+        277.26,
+        346.08
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0022",
+      "text": "g) If the N_Port and the Fabric support Virtual Fabrics, it enables the subsequent negotiation of",
+      "bbox": [
+        106.02,
+        358.96,
+        540.04,
+        370.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0023",
+      "text": "Virtual Fabrics parameters (see 8.2).",
+      "bbox": [
+        122.4,
+        370.96,
+        284.54,
+        382.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0024",
+      "text": "6.2.2",
+      "bbox": [
+        96.0,
+        394.96,
+        118.22,
+        406.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0025",
+      "text": "Explicit Fabric Login",
+      "bbox": [
+        128.22,
+        394.96,
+        226.55,
+        406.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0026",
+      "text": "6.2.2.1  Introduction",
+      "bbox": [
+        96.0,
+        418.96,
+        190.41,
+        430.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0027",
+      "text": "The explicit Fabric Login procedure shall require an Nx_Port to transmit a Fabric Login (FLOGI) Link",
+      "bbox": [
+        96.0,
+        442.96,
+        539.97,
+        454.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0028",
+      "text": "Service ELS (see 4.2.7). ",
+      "bbox": [
+        96.0,
+        454.96,
+        207.05,
+        466.08
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0029",
+      "text": "Explicit Fabric Login replaces previous Service Parameters. The Login procedure shall follow the Ex-",
+      "bbox": [
+        96.0,
+        478.96,
+        540.0,
+        490.07
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0030",
+      "text": "change and Sequence management rules, the buffer-to-buffer flow control rules, and the end-to-end",
+      "bbox": [
+        96.0,
+        490.96,
+        540.11,
+        502.07
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0031",
+      "text": "flow control rules as specified in FC-FS-2.",
+      "bbox": [
+        96.0,
+        502.96,
+        280.89,
+        514.07
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0032",
+      "text": "6.2.2.2  Explicit Fabric Login Request",
+      "bbox": [
+        96.0,
+        526.96,
+        272.62,
+        538.07
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0033",
+      "text": "The Nx_Port shall transmit the FLOGI in a new Exchange.  The Payload of FLOGI contains the Ser-",
+      "bbox": [
+        96.0,
+        550.96,
+        540.07,
+        562.07
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0034",
+      "text": "vice Parameters of the Nx_Port, a 64-bit N_Port_Name of the Nx_Port, and a 64-bit Node_Name.",
+      "bbox": [
+        96.0,
+        562.96,
+        539.92,
+        574.07
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0035",
+      "text": "The Service Parameters are as specified for F_Port Login in 6.6.  The applicability of the Service Pa-",
+      "bbox": [
+        96.0,
+        574.96,
+        539.96,
+        586.07
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0036",
+      "text": "rameters to Fabric Login are given in tables 150 and 155.  The Nx_Port shall assign an OX_ID and",
+      "bbox": [
+        96.0,
+        586.96,
+        539.85,
+        598.07
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0037",
+      "text": "set the D_ID to the well-known F_Port address (i.e., FFFFFEh). ",
+      "bbox": [
+        96.0,
+        598.96,
+        379.25,
+        610.07
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0038",
+      "text": "If the Nx_Port is unidentified, an Nx_Port shall set the S_ID in the FLOGI to 000000h or 0000h || YY.",
+      "bbox": [
+        96.0,
+        622.96,
+        540.09,
+        634.07
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0039",
+      "text": "If the Nx_Port sets the S_ID to 000000h, the Nx_Port is requesting the Fabric assign all 24 bits of the",
+      "bbox": [
+        96.0,
+        635.02,
+        539.98,
+        646.13
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0040",
+      "text": "N_Port_ID.  If the Nx_Port sets the S_ID to 0000h || YY, the Nx_Port is requesting the Fabric assign",
+      "bbox": [
+        96.0,
+        647.02,
+        539.92,
+        658.13
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0041",
+      "text": "the upper 16 bits, bits 23 to 8, and validate the lower 8 bits, bits 7 to 0, of the N_Port_ID.  An example",
+      "bbox": [
+        96.0,
+        659.02,
+        539.8,
+        670.13
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p153_s0042",
+      "text": "of the use of S_ID of 0000h || YY is FC-AL-2.  The lower 8 bits of the N_Port_ID are the AL_PA.",
+      "bbox": [
+        96.0,
+        671.02,
+        518.94,
+        682.13
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

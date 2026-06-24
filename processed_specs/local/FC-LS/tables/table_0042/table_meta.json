@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0042",
+  "type": "table",
+  "caption": "Table 39 – SCR Payload",
+  "pages": [
+    69
+  ],
+  "bbox": [
+    102.38,
+    98.62,
+    533.62,
+    160.68
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 69
+}

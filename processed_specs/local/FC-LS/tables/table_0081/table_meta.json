@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0081",
+  "type": "table",
+  "caption": "Table 77 – LIRR LS_ACC Payload",
+  "pages": [
+    100
+  ],
+  "bbox": [
+    99.31,
+    110.62,
+    536.69,
+    155.36
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 100,
+  "logical_table": false
+}

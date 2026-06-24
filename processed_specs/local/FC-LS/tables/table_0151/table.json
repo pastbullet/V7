@@ -1,0 +1,54 @@
+{
+  "rows": [
+    [
+      "Encoded Value\n(Bits 23-16)",
+      "Description",
+      "Explanation"
+    ],
+    [
+      "01h",
+      "Invalid ELS_Command code",
+      "The ELS_Command code in the Sequence\nbeing rejected is invalid."
+    ],
+    [
+      "03h",
+      "Logical error",
+      "The request identified by the ELS_Command\ncode and Payload content is invalid or\nlogically inconsistent for the conditions\npresent."
+    ],
+    [
+      "05h",
+      "Logical busy",
+      "The Link Service is logically busy and unable\nto process the request at this time."
+    ],
+    [
+      "07h",
+      "Protocol error",
+      "This indicates that an error has been detected\nthat violates the rules of the ELS Protocol that\nare not specified by other error codes."
+    ],
+    [
+      "09h",
+      "Unable to perform command\nrequest",
+      "The Recipient of a Link Service command is\nunable to perform the request at this time."
+    ],
+    [
+      "0Bh",
+      "Command not supported",
+      "The Recipient of a Link Service command\ndoes not support the command requested."
+    ],
+    [
+      "0Eh",
+      "Command already in progress",
+      ""
+    ],
+    [
+      "FFh",
+      "Vendor specific error (See bits 7-0)",
+      "The Vendor specific error bits may be used by\nVendors to specify additional reason codes."
+    ],
+    [
+      "Others",
+      "Reserved",
+      ""
+    ]
+  ]
+}

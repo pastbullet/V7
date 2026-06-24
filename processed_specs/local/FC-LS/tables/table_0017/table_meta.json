@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0017",
+  "type": "table",
+  "caption": "Table 14 – RCS Payload",
+  "pages": [
+    51
+  ],
+  "bbox": [
+    99.6,
+    291.96,
+    536.4,
+    354.04
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 51
+}

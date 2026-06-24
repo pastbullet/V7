@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0071",
+  "type": "table",
+  "caption": "Table 68 – Link Incident Record Format",
+  "pages": [
+    92
+  ],
+  "bbox": [
+    163.5,
+    110.28,
+    472.5,
+    179.7
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 92,
+  "logical_table": false
+}

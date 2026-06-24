@@ -1,0 +1,843 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 80,
+  "spans": [
+    {
+      "span_id": "p080_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0002",
+      "text": " 61",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0003",
+      "text": "a)",
+      "bbox": [
+        106.02,
+        310.97,
+        114.91,
+        322.08
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0004",
+      "text": " Originator Process_Associator validity:",
+      "bbox": [
+        114.91,
+        310.97,
+        311.15,
+        322.08
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p080_s0005",
+      "text": " Identifies the process or group of processes within",
+      "bbox": [
+        311.1,
+        310.97,
+        539.93,
+        322.08
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p080_s0006",
+      "text": "the Originator (see FC-FS-2).",
+      "bbox": [
+        122.4,
+        322.97,
+        252.36,
+        334.08
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0007",
+      "text": "0 = not meaningful",
+      "bbox": [
+        122.4,
+        346.97,
+        204.85,
+        358.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0008",
+      "text": "1 = meaningful",
+      "bbox": [
+        122.4,
+        358.97,
+        188.2,
+        370.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0009",
+      "text": "b)",
+      "bbox": [
+        106.02,
+        382.97,
+        114.91,
+        394.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0010",
+      "text": " Responder Process_Associator validity:",
+      "bbox": [
+        114.91,
+        382.97,
+        314.24,
+        394.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p080_s0011",
+      "text": " Identifies the process or group of processes within",
+      "bbox": [
+        314.22,
+        382.97,
+        539.95,
+        394.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p080_s0012",
+      "text": "the Responder (see FC-FS-2).",
+      "bbox": [
+        122.4,
+        394.96,
+        257.35,
+        406.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0013",
+      "text": "0 = not meaningful",
+      "bbox": [
+        122.4,
+        418.96,
+        204.85,
+        430.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0014",
+      "text": "1 = meaningful",
+      "bbox": [
+        122.4,
+        430.96,
+        188.2,
+        442.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0015",
+      "text": "4.2.22.4  Reply sequence",
+      "bbox": [
+        96.0,
+        454.96,
+        213.75,
+        466.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0016",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        478.96,
+        138.19,
+        490.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0017",
+      "text": "LS_RJT signifies rejection of the TPLS Request.",
+      "bbox": [
+        138.18,
+        478.96,
+        352.05,
+        490.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p080_s0018",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        502.96,
+        142.05,
+        514.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0019",
+      "text": "LS_ACC signifies successful completion of the TPLS Request.  The format of the LS_ACC",
+      "bbox": [
+        142.08,
+        502.96,
+        540.04,
+        514.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p080_s0020",
+      "text": "Payload is shown in table 54.",
+      "bbox": [
+        96.0,
+        514.96,
+        225.45,
+        526.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0021",
+      "text": " Table 53 – TPLS image pair ID page format",
+      "bbox": [
+        215.52,
+        79.66,
+        420.51,
+        90.78
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0022",
+      "text": "Item",
+      "bbox": [
+        262.02,
+        101.62,
+        282.55,
+        112.74
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0023",
+      "text": "Word",
+      "bbox": [
+        394.18,
+        101.62,
+        419.68,
+        112.74
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0024",
+      "text": "Bit",
+      "bbox": [
+        445.99,
+        101.62,
+        459.34,
+        112.74
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0025",
+      "text": "Reserved",
+      "bbox": [
+        159.06,
+        124.66,
+        201.75,
+        135.78
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0026",
+      "text": "0",
+      "bbox": [
+        404.16,
+        125.62,
+        409.7,
+        136.74
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0027",
+      "text": "31-16",
+      "bbox": [
+        439.86,
+        125.62,
+        465.37,
+        136.74
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0028",
+      "text": "Originator Process_Associator Validity",
+      "bbox": [
+        159.06,
+        148.66,
+        329.02,
+        159.78
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0029",
+      "text": "0",
+      "bbox": [
+        404.16,
+        149.62,
+        409.7,
+        160.74
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0030",
+      "text": "15",
+      "bbox": [
+        447.06,
+        149.62,
+        458.18,
+        160.74
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0031",
+      "text": "Responder Process_Associator Validity",
+      "bbox": [
+        159.06,
+        172.66,
+        334.09,
+        183.78
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0032",
+      "text": "0",
+      "bbox": [
+        404.16,
+        173.62,
+        409.7,
+        184.74
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0033",
+      "text": "14",
+      "bbox": [
+        447.06,
+        173.62,
+        458.18,
+        184.74
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0034",
+      "text": "Reserved",
+      "bbox": [
+        159.06,
+        196.66,
+        201.75,
+        207.78
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0035",
+      "text": "0",
+      "bbox": [
+        404.16,
+        197.62,
+        409.7,
+        208.74
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0036",
+      "text": "13-0",
+      "bbox": [
+        442.62,
+        197.62,
+        462.61,
+        208.74
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0037",
+      "text": "Originator Process_Associator",
+      "bbox": [
+        159.06,
+        220.66,
+        294.03,
+        231.78
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0038",
+      "text": "1",
+      "bbox": [
+        404.16,
+        221.62,
+        409.7,
+        232.74
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0039",
+      "text": "31-0",
+      "bbox": [
+        442.62,
+        221.62,
+        462.61,
+        232.74
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0040",
+      "text": "Responder Process_Associator",
+      "bbox": [
+        159.06,
+        244.66,
+        299.11,
+        255.78
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0041",
+      "text": "2",
+      "bbox": [
+        404.16,
+        245.62,
+        409.7,
+        256.74
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0042",
+      "text": "31-0",
+      "bbox": [
+        442.62,
+        245.62,
+        462.61,
+        256.74
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0043",
+      "text": "Reserved",
+      "bbox": [
+        159.06,
+        268.66,
+        201.75,
+        279.78
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0044",
+      "text": "3",
+      "bbox": [
+        404.16,
+        269.62,
+        409.7,
+        280.74
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0045",
+      "text": "31-0",
+      "bbox": [
+        442.62,
+        269.62,
+        462.61,
+        280.74
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0046",
+      "text": " Table 54 – TPLS LS_ACC Payload",
+      "bbox": [
+        236.34,
+        536.98,
+        399.54,
+        548.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0047",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        559.0,
+        133.06,
+        570.12
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0048",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        571.0,
+        136.35,
+        582.12
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0049",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        559.0,
+        233.97,
+        570.12
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0050",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        559.0,
+        328.42,
+        570.12
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0051",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        559.0,
+        427.0,
+        570.12
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0052",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        559.0,
+        522.83,
+        570.12
+      ],
+      "block_index": 20,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0053",
+      "text": "0",
+      "bbox": [
+        120.84,
+        587.98,
+        126.38,
+        599.1
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0054",
+      "text": "(02h)",
+      "bbox": [
+        149.88,
+        587.98,
+        173.22,
+        599.1
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0055",
+      "text": "Obsolete (10h)",
+      "bbox": [
+        247.07,
+        587.98,
+        313.22,
+        599.1
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0056",
+      "text": "a",
+      "bbox": [
+        313.2,
+        585.76,
+        317.64,
+        594.66
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 2
+    },
+    {
+      "span_id": "p080_s0057",
+      "text": "Payload Length",
+      "bbox": [
+        344.28,
+        587.99,
+        413.71,
+        599.1
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0058",
+      "text": "1",
+      "bbox": [
+        120.84,
+        604.97,
+        126.38,
+        616.08
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0059",
+      "text": "TPLS Response page",
+      "bbox": [
+        293.4,
+        607.01,
+        391.1,
+        618.12
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0060",
+      "text": "(4 words)",
+      "bbox": [
+        321.48,
+        619.01,
+        363.14,
+        630.12
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0061",
+      "text": "..",
+      "bbox": [
+        120.84,
+        622.01,
+        126.37,
+        633.12
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0062",
+      "text": "N",
+      "bbox": [
+        120.0,
+        638.99,
+        127.19,
+        650.1
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0063",
+      "text": "a",
+      "bbox": [
+        107.52,
+        656.6,
+        111.52,
+        664.64
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p080_s0064",
+      "text": " This field is obsolete, but shall be set to 10h for compatibility.",
+      "bbox": [
+        111.52,
+        654.97,
+        359.21,
+        668.62
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 2
+    }
+  ],
+  "asset_ids": [
+    "table_0056",
+    "table_0057"
+  ]
+}

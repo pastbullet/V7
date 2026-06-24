@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0083",
+  "type": "table",
+  "caption": "Table 79 – NP_List Entry Format",
+  "pages": [
+    101
+  ],
+  "bbox": [
+    95.75,
+    255.96,
+    540.25,
+    300.9
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 101
+}

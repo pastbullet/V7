@@ -1,0 +1,45 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 113, "bbox": [96.7, 303.96, 144.66, 332.04], "source_fragment_id": "table_0098", "source_cell_id": "r1c1"}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 113, "bbox": [144.66, 303.96, 241.88, 332.04], "source_fragment_id": "table_0098", "source_cell_id": "r1c2"}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 113, "bbox": [241.88, 303.96, 345.57, 332.04], "source_fragment_id": "table_0098", "source_cell_id": "r1c3"}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08", "page": 113, "bbox": [345.57, 303.96, 442.75, 332.04], "source_fragment_id": "table_0098", "source_cell_id": "r1c4"}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00", "page": 113, "bbox": [442.75, 303.96, 539.3, 332.04], "source_fragment_id": "table_0098", "source_cell_id": "r1c5"}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 113, "bbox": [96.7, 332.04, 144.66, 349.61], "source_fragment_id": "table_0098", "source_cell_id": "r2c1"}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "02h", "page": 113, "bbox": [144.66, 332.04, 241.88, 349.61], "source_fragment_id": "table_0098", "source_cell_id": "r2c2"}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Obsolete (10h)a", "page": 113, "bbox": [241.88, 332.04, 345.57, 349.61], "source_fragment_id": "table_0098", "source_cell_id": "r2c3"}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "Payload Length", "page": 113, "bbox": [345.57, 332.04, 539.3, 349.61], "source_fragment_id": "table_0098", "source_cell_id": "r2c4"}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "", "page": 113, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0098", "source_cell_id": "r2c5"}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 113, "bbox": [96.7, 349.61, 144.66, 366.39], "source_fragment_id": "table_0098", "source_cell_id": "r3c1"}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Logout Parameter page\n(4 words)", "page": 113, "bbox": [144.66, 349.61, 539.3, 400.32], "source_fragment_id": "table_0098", "source_cell_id": "r3c2"}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 113, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0098", "source_cell_id": "r3c3"}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "", "page": 113, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0098", "source_cell_id": "r3c4"}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "", "page": 113, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0098", "source_cell_id": "r3c5"}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "..", "page": 113, "bbox": [96.7, 366.39, 144.66, 383.37], "source_fragment_id": "table_0098", "source_cell_id": "r4c1"}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "", "page": 113, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0098", "source_cell_id": "r4c2"}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "", "page": 113, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0098", "source_cell_id": "r4c3"}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "", "page": 113, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0098", "source_cell_id": "r4c4"}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "", "page": 113, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0098", "source_cell_id": "r4c5"}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "n", "page": 113, "bbox": [96.7, 383.37, 144.66, 400.32], "source_fragment_id": "table_0098", "source_cell_id": "r5c1"}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "", "page": 113, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0098", "source_cell_id": "r5c2"}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "", "page": 113, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0098", "source_cell_id": "r5c3"}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "", "page": 113, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0098", "source_cell_id": "r5c4"}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "", "page": 113, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0098", "source_cell_id": "r5c5"}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "a This field is obsolete, but shall be set to 10h for compatibility.", "page": 113, "bbox": [96.7, 400.32, 539.3, 420.72], "source_fragment_id": "table_0098", "source_cell_id": "r6c1"}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "", "page": 113, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0098", "source_cell_id": "r6c2"}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "", "page": 113, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0098", "source_cell_id": "r6c3"}
+{"cell_id": "r6c4", "row": 6, "col": 4, "text": "", "page": 113, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0098", "source_cell_id": "r6c4"}
+{"cell_id": "r6c5", "row": 6, "col": 5, "text": "", "page": 113, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0098", "source_cell_id": "r6c5"}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "0", "page": 114, "bbox": [94.33, 202.98, 142.56, 224.01], "source_fragment_id": "table_0099", "source_cell_id": "r2c1"}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "CSR (68h)", "page": 114, "bbox": [142.56, 202.98, 239.79, 224.01], "source_fragment_id": "table_0099", "source_cell_id": "r2c2"}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "00h", "page": 114, "bbox": [239.79, 202.98, 336.93, 224.01], "source_fragment_id": "table_0099", "source_cell_id": "r2c3"}
+{"cell_id": "r7c4", "row": 7, "col": 4, "text": "00h", "page": 114, "bbox": [336.93, 202.98, 441.51, 224.01], "source_fragment_id": "table_0099", "source_cell_id": "r2c4"}
+{"cell_id": "r7c5", "row": 7, "col": 5, "text": "00h", "page": 114, "bbox": [441.51, 202.98, 541.67, 224.01], "source_fragment_id": "table_0099", "source_cell_id": "r2c5"}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "1", "page": 114, "bbox": [94.33, 224.01, 142.56, 253.32], "source_fragment_id": "table_0099", "source_cell_id": "r3c1"}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "Clock Sync Mode", "page": 114, "bbox": [142.56, 224.01, 239.79, 253.32], "source_fragment_id": "table_0099", "source_cell_id": "r3c2"}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "CS_Accuracy", "page": 114, "bbox": [239.79, 224.01, 336.93, 253.32], "source_fragment_id": "table_0099", "source_cell_id": "r3c3"}
+{"cell_id": "r8c4", "row": 8, "col": 4, "text": "CS_Implemented_M\nSB", "page": 114, "bbox": [336.93, 224.01, 441.51, 253.32], "source_fragment_id": "table_0099", "source_cell_id": "r3c4"}
+{"cell_id": "r8c5", "row": 8, "col": 5, "text": "CS_Implemented_L\nSB", "page": 114, "bbox": [441.51, 224.01, 541.67, 253.32], "source_fragment_id": "table_0099", "source_cell_id": "r3c5"}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "3", "page": 114, "bbox": [94.33, 253.32, 142.56, 273.99], "source_fragment_id": "table_0099", "source_cell_id": "r4c1"}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "CS_Update_Period", "page": 114, "bbox": [142.56, 253.32, 541.67, 273.99], "source_fragment_id": "table_0099", "source_cell_id": "r4c2"}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "", "page": 114, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0099", "source_cell_id": "r4c3"}
+{"cell_id": "r9c4", "row": 9, "col": 4, "text": "", "page": 114, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0099", "source_cell_id": "r4c4"}
+{"cell_id": "r9c5", "row": 9, "col": 5, "text": "", "page": 114, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0099", "source_cell_id": "r4c5"}

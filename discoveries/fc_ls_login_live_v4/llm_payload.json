@@ -1,0 +1,551 @@
+{
+  "doc_id": "FC-LS",
+  "discovery_md": "Discovered login-related FC-LS units by following structure from section 6 (Login and Service Parameters) and section 7 (Process Login/Logout), then inspecting referenced applicability tables 150 and 155. The login space breaks into: generic explicit login framing (FLOGI/PLOGI with LS_ACC carrying responder parameters), explicit Fabric Login, explicit N_Port Login, point-to-point/no-Fabric N_Port Login behavior, Fabric relogin behavior, and Process Login (PRLI) after N_Port Login. Response branching is implementation-relevant for FLOGI, PLOGI with Fabric present, PLOGI without Fabric, and PRLI retry/reject handling. Tables 150 and 155 are relevant because section 6 repeatedly defers Service Parameter meaning/applicability to them. Figures 4 and 5 are referenced by PRLI text for image and image-pair identification, but figure assets were not recoverable with stable captioned figure metadata, so they remain unresolved dependencies.",
+  "unit_candidates": [
+    {
+      "unit_id": "login-explicit-overview",
+      "title": "Explicit login exchange overview",
+      "kind": "procedure",
+      "reason": "Section 6 introduces explicit login as an ELS-based procedure using FLOGI or PLOGI in a new Exchange, with LS_ACC returning responder Service Parameters.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p152_s0019",
+          "quote": "Explicit Login is accomplished using a Login (FLOGI or PLOGI) ELS"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p152_s0021",
+          "quote": "The LS_ACC contains the Service Parameters of the Responder"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fabric-login-request",
+      "title": "Explicit Fabric Login request",
+      "kind": "procedure",
+      "reason": "Explicit Fabric Login requires an Nx_Port to send FLOGI in a new Exchange; the payload carries Service Parameters, N_Port_Name, and Node_Name, and the D_ID is the well-known F_Port address.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0033",
+          "quote": "The Nx_Port shall transmit the FLOGI in a new Exchange."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p153_s0036",
+          "quote": "The Nx_Port shall assign an OX_ID and"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p153_s0037",
+          "quote": "set the D_ID to the well-known F_Port address (i.e., FFFFFEh)."
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fabric-login-response-branches",
+      "title": "Explicit Fabric Login response branches",
+      "kind": "procedure",
+      "reason": "The Fabric Login procedure has distinct implementation branches for Fabric LS_ACC, point-to-point LS_ACC from another Nx_Port, F_BSY, P_BSY, F_RJT, P_RJT, LS_RJT, no response, and self-connect discard.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0003",
+          "quote": "Responses to Explicit Fabric Login"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0005",
+          "quote": "LS_ACC reply Sequence"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0016",
+          "quote": "LS_ACC reply Sequence with OX_ID equal to the OX_ID of the FLOGI, and the Common Ser"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0025",
+          "quote": "F_BSY with OX_ID equal to the OX_ID of the FLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0027",
+          "quote": "P_BSY Sequence with OX_ID equal to the OX_ID of the FLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0031",
+          "quote": "F_RJT Sequence with OX_ID equal to the OX_ID of the FLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0043",
+          "quote": "P_RJT Sequence, with OX_ID equal to the OX_ID of the FLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0003",
+          "quote": "LS_RJT Sequence with OX_ID equal to the OX_ID of the FLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0009",
+          "quote": "No Response may indicate a delivery error"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0013",
+          "quote": "If the received N_Port_Name is equal to its N_Port_Name"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fabric-relogin-change-handling",
+      "title": "Fabric relogin change handling",
+      "kind": "procedure",
+      "reason": "When Fabric relogin reveals changed N_Port_ID, F_Port_Name, or Fabric_Name, the Nx_Port must implicitly logout existing Nx_Port relationships, wait R_A_TOV, and require new N_Port Logins before resuming communication.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p155_s0025",
+          "quote": "Relogin with the Fabric"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0029",
+          "quote": "Nx_Port detects that the N_Port_ID, F_Port_Name, and/or the Fabric_Name has changed"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0030",
+          "quote": "the Nx_Port shall implicitly logout with all Nx_Ports and wait an R_A_TOV timeout"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0032",
+          "quote": "After waiting the timeout period, new N_Port Logins are"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0033",
+          "quote": "required before the Nx_Port may communicate with other Nx_Ports."
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "nport-login-request-fabric-present",
+      "title": "Explicit N_Port Login with Fabric present",
+      "kind": "procedure",
+      "reason": "Section 6.3 states N_Port Login follows Fabric Login, and section 6.3.2 defines explicit N_Port Login via PLOGI Link Service Sequence sent within an Exchange to a destination Nx_Port.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p156_s0044",
+          "quote": "N_Port Login follows the Fabric Login procedure."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0022",
+          "quote": "The destination Nx_Port explicit Login procedure requires transmission of a N_Port Login (PLOGI)"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0023",
+          "quote": "Link Service Sequence.  The PLOGI is sent within an Exchange with an assigned OX_ID"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "nport-login-response-branches-fabric",
+      "title": "N_Port Login response branches with Fabric present",
+      "kind": "procedure",
+      "reason": "PLOGI with a Fabric present has implementation branches for normal LS_ACC, F_BSY, F_RJT, P_BSY, P_RJT, inbound PLOGI collision, LS_RJT, no response, and self-connection case.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p158_s0033",
+          "quote": "Responses to N_Port Login - Fabric present"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0036",
+          "quote": "LS_ACC reply Sequence with OX_ID equal to the OX_ID of the PLOGI"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0044",
+          "quote": "F_BSY with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0004",
+          "quote": "F_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0009",
+          "quote": "P_BSY Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0011",
+          "quote": "P_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0016",
+          "quote": "PLOGI Sequence.  The D_ID is the N_Port_ID of receiving Nx_Port."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0024",
+          "quote": "LS_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0028",
+          "quote": "No Response may indicate a delivery error"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0032",
+          "quote": "If the received N_Port_Name is equal to its N_Port_Name"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "nport-login-point-to-point-initiation",
+      "title": "Point-to-point N_Port Login initiation without Fabric",
+      "kind": "procedure",
+      "reason": "Without a Fabric, only one Nx_Port needs to originate PLOGI, normally the one with the highest N_Port_Name if names were learned during Fabric Login.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p159_s0034",
+          "quote": "N_Port Login - No Fabric present"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0038",
+          "quote": "Only one Nx_Port in the point-to-point connection is required to transmit a PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0039",
+          "quote": "N_Port_Names are exchanged during Fabric Login, the Nx_Port with the highest N_Port_Name shall"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "nport-login-response-branches-no-fabric",
+      "title": "N_Port Login response branches without Fabric",
+      "kind": "procedure",
+      "reason": "In point-to-point mode without a Fabric, PLOGI handling includes LS_ACC, P_BSY, P_RJT, LS_RJT, inbound PLOGI collision, no response, and self-connection case.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p160_s0003",
+          "quote": "Responses to N_Port Login - No Fabric present"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0006",
+          "quote": "LS_ACC reply Sequence with OX_ID equal to the OX_ID of the PLOGI"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0014",
+          "quote": "P_BSY Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0017",
+          "quote": "P_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0021",
+          "quote": "LS_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0025",
+          "quote": "PLOGI Sequence.  The D_ID is the address identifier of receiving Nx_Port."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0034",
+          "quote": "No Response may indicate a delivery error"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0037",
+          "quote": "If the received N_Port_Name is equal to its N_Port_Name"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "prli-overview",
+      "title": "Process Login after N_Port Login",
+      "kind": "procedure",
+      "reason": "PRLI establishes the operating environment between related process groups, runs after successful N_Port Login and before other FC-4 transfers, and may establish or modify image pairs with PRLI plus LS_ACC.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p197_s0009",
+          "quote": "The Process Login (PRLI) ELS request shall be used to establish the operating environment"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p198_s0004",
+          "quote": "PRLI, if required, is performed after N_Port Login is successful and prior to other FC-4 transfers."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p198_s0014",
+          "quote": "An image pair may be established or modified with a PRLI request and LS_ACC reply Sequence set."
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "prli-response-handling",
+      "title": "PRLI response and retry handling",
+      "kind": "procedure",
+      "reason": "PRLI establishment is not considered complete until local action plus LS_ACC; if the requester is not logged in, the responder returns LOGO or LS_RJT with N_Port Login required; several reject/busy outcomes allow retry, and no valid response should trigger retry.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p199_s0003",
+          "quote": "The Nx_Port originating the PRLI request shall not consider the image pair to be established until it"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0006",
+          "quote": "quest does not consider the image pair to be established until the necessary action is taken at the"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0010",
+          "quote": "it shall reply with a LOGO ELS Sequence, or with an LS_RJT ELS Sequence"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0011",
+          "quote": "\"Unable to perform command request\" and a reason code explanation of \"N_Port Login required\"."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0013",
+          "quote": "If an LS_RJT, P_BSY, F_BSY, P_RJT, or F_RJT response is re"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0014",
+          "quote": "ceived to a PRLI request, the PRLI request may be retried until the image pair is established."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0018",
+          "quote": "shall not assume that the requested action has or has not taken place. If the Nx_Port that originates"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0019",
+          "quote": "a PRLI request receives no valid response, the Nx_Port should retry the request."
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "table-common-service-parameter-applicability",
+      "title": "Common Service Parameter applicability table for login procedures",
+      "kind": "message_structure",
+      "reason": "Table 150 is directly referenced by FLOGI and PLOGI text and shows which Common Service Parameters matter in PLOGI, FLOGI, and FLOGI LS_ACC contexts; for example Buffer-to-buffer Credit and N_Port/F_Port are applicable, while the Virtual Fabrics bit is not applicable to PLOGI but is applicable to FLOGI and FLOGI LS_ACC.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r5c1",
+          "quote": "Buffer-to-buffer Credit"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r5c5",
+          "quote": "y"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r5c8",
+          "quote": "y"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r18c1",
+          "quote": "N_Port/F_Port"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r18c5",
+          "quote": "y"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r18c11",
+          "quote": "y"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r11c1",
+          "quote": "Virtual Fabrics bit"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r11c5",
+          "quote": "n"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r11c8",
+          "quote": "y"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0158",
+          "cell_id": "r11c11",
+          "quote": "y"
+        }
+      ],
+      "related_assets": [
+        {
+          "type": "table",
+          "asset_id": "table_0158"
+        }
+      ]
+    },
+    {
+      "unit_id": "table-class-service-parameter-applicability",
+      "title": "Class Service Parameter applicability table for login procedures",
+      "kind": "message_structure",
+      "reason": "Table 155 is the class-parameter counterpart referenced by login sections and shows which Class Service Parameters are meaningful in PLOGI, FLOGI, and FLOGI LS_ACC; for example Class Validity applies everywhere, Initial Responder Process_Associator applies to PLOGI but not FLOGI, and CR_TOV appears only in FLOGI LS_ACC Class 1 applicability.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r4c1",
+          "quote": "Class Validity"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r4c5",
+          "quote": "y"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r4c11",
+          "quote": "y"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r22c1",
+          "quote": "Initial Responder\nProcess_Associator"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r22c5",
+          "quote": "y"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r22c8",
+          "quote": "n"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r55c1",
+          "quote": "CR_TOV"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r55c11",
+          "quote": "y"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r55c12",
+          "quote": "n"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0165",
+          "cell_id": "r55c13",
+          "quote": "n"
+        }
+      ],
+      "related_assets": [
+        {
+          "type": "table",
+          "asset_id": "table_0165"
+        }
+      ]
+    },
+    {
+      "unit_id": "prli-image-figure-dependency",
+      "title": "PRLI image and image-pair figures dependency",
+      "kind": "other",
+      "reason": "PRLI text explicitly depends on figure 4 for Process_Associator/image identification and figure 5 for image-pair identification, but usable figure assets with stable captioned evidence were not recoverable from the processed assets inspected.",
+      "status": "unresolved",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p197_s0025",
+          "quote": "A group of related processes is known as an image and is identified by the Process_Associator (see"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0027",
+          "quote": "Process_Associator identify the image pair (see figure 5)."
+        }
+      ],
+      "related_assets": []
+    }
+  ]
+}

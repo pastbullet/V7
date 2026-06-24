@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Type\nClock Synchronization Server (N_Port\nLogin only)\nOther FC_Ports (N_Port Login only)\nFabric (FLOGI LS_ACC only)",
+      "Meaning if bit set to one"
+    ],
+    [
+      null,
+      "The Clock Synchronization Server is capable of generating\nclock synchronization Primitive Signals (see FC-FS-2)."
+    ],
+    [
+      null,
+      "The FC_Port is capable of receiving the clock synchronization\nPrimitive Signals (see FC-FS-2) and acting upon them."
+    ],
+    [
+      null,
+      "The Fabric is capable of receiving the clock synchronization\nPrimitive Signals (see FC-FS-2) and acting upon them."
+    ]
+  ]
+}

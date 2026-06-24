@@ -1,0 +1,580 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 174,
+  "spans": [
+    {
+      "span_id": "p174_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0002",
+      "text": " 155",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0003",
+      "text": "The R_T_TOV value (word 1, bit 19) indicates support for the short value of R_T_TOV.  If this bit is",
+      "bbox": [
+        96.0,
+        57.65,
+        540.02,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0004",
+      "text": "set to zero, the default value of 100 milliseconds is specified.  If it is set to one, the value of 100 mi-",
+      "bbox": [
+        96.0,
+        69.65,
+        540.04,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0005",
+      "text": "croseconds is specified.",
+      "bbox": [
+        96.0,
+        81.65,
+        202.1,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0006",
+      "text": "6.6.2.4.17   Dynamic Half Duplex Supported",
+      "bbox": [
+        96.0,
+        106.97,
+        300.9,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0007",
+      "text": "0 = DHD not supported",
+      "bbox": [
+        96.0,
+        130.97,
+        198.38,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0008",
+      "text": "1 = DHD supported",
+      "bbox": [
+        96.0,
+        142.96,
+        181.81,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0009",
+      "text": "The Dynamic Half Duplex Supported bit (word 1, bit 18) indicates support for Dynamic Half Duplex.  If",
+      "bbox": [
+        96.0,
+        166.96,
+        540.0,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0010",
+      "text": "it is set to zero, Dynamic Half Duplex is not supported.  If it is set to one, the FC_Port supports the re-",
+      "bbox": [
+        96.0,
+        178.96,
+        540.05,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0011",
+      "text": "ception of the DHD primitive.",
+      "bbox": [
+        96.0,
+        190.96,
+        223.12,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0012",
+      "text": "NOTE 15 – DHD is applicable to FC-AL topologies.  See FC-AL-2 for a description of DHD behavior.",
+      "bbox": [
+        105.0,
+        215.17,
+        503.55,
+        225.22
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0013",
+      "text": "6.6.2.4.18  SEQ_CNT",
+      "bbox": [
+        96.0,
+        238.97,
+        193.16,
+        250.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0014",
+      "text": "0 = Normal rules apply to SEQ_CNT",
+      "bbox": [
+        96.0,
+        262.97,
+        257.23,
+        274.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0015",
+      "text": "1 = Continuously Increasing SEQ_CNT shall be used.",
+      "bbox": [
+        96.0,
+        274.97,
+        334.02,
+        286.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0016",
+      "text": "SEQ_CNT (word 1, bit 17) indicates the requirement on SEQ_CNT.  If the bit is set to zero, normal",
+      "bbox": [
+        96.0,
+        298.97,
+        539.93,
+        310.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0017",
+      "text": "rules shall apply to SEQ_CNT usage.  If the bit is set to one, the Nx_Port is guaranteeing that it shall",
+      "bbox": [
+        96.0,
+        310.97,
+        540.06,
+        322.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0018",
+      "text": "transmit all frames within an Exchange using a continuously increasing SEQ_CNT.  Each Exchange",
+      "bbox": [
+        96.0,
+        322.96,
+        539.92,
+        334.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0019",
+      "text": "shall start with SEQ_CNT set to zero in the first frame, and every frame transmitted after that shall in-",
+      "bbox": [
+        96.0,
+        334.96,
+        540.0,
+        346.08
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0020",
+      "text": "crement the previous SEQ_CNT by one, even across transfers of Sequence Initiative.  Any frames",
+      "bbox": [
+        96.0,
+        346.96,
+        539.98,
+        358.08
+      ],
+      "block_index": 10,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0021",
+      "text": "received from the other Nx_Port in the Exchange shall have no effect on the transmitted SEQ_CNT",
+      "bbox": [
+        96.0,
+        358.96,
+        539.96,
+        370.08
+      ],
+      "block_index": 10,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0022",
+      "text": "(see FC-FS-2).",
+      "bbox": [
+        96.0,
+        370.96,
+        162.61,
+        382.08
+      ],
+      "block_index": 10,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0023",
+      "text": "6.6.2.4.19  Payload Bit",
+      "bbox": [
+        96.0,
+        394.96,
+        200.39,
+        406.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0024",
+      "text": "0 = Payload length is 116 bytes",
+      "bbox": [
+        96.0,
+        418.96,
+        235.19,
+        430.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0025",
+      "text": "1 = Payload length in bytes is 256 plus four times the value of the Login Extension Length field",
+      "bbox": [
+        96.0,
+        430.96,
+        512.99,
+        442.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0026",
+      "text": "The Payload Bit (word 1 bit 16) indicates the length of the FLOGI or PLOGI Payload.  If it is set to ze-",
+      "bbox": [
+        96.0,
+        454.96,
+        540.0,
+        466.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0027",
+      "text": "ro, the Payload length shall be 116 bytes.  If it is set to one, the Payload length in bytes shall be 256",
+      "bbox": [
+        96.0,
+        466.96,
+        540.05,
+        478.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0028",
+      "text": "plus four times the value of the Login Extension Length field.",
+      "bbox": [
+        96.0,
+        478.96,
+        363.15,
+        490.08
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0029",
+      "text": "If Payload Bit is 0 in PLOGI or FLOGI, then LS_ACC sent in response shall  have the Payload Bit set",
+      "bbox": [
+        96.0,
+        502.96,
+        539.98,
+        514.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0030",
+      "text": "to 0.",
+      "bbox": [
+        96.0,
+        514.96,
+        115.44,
+        526.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0031",
+      "text": "6.6.2.5  BB_SC_N",
+      "bbox": [
+        96.0,
+        538.96,
+        178.7,
+        550.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0032",
+      "text": "The Buffer-to-buffer State Change Number (BB_SC_N) field (word 1, bits 15-12) specifies the Buffer-",
+      "bbox": [
+        96.0,
+        562.96,
+        540.09,
+        574.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0033",
+      "text": "to-buffer State Change Number.  It indicates that the sender of the PLOGI or FLOGI frame is request-",
+      "bbox": [
+        96.0,
+        574.96,
+        540.18,
+        586.08
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0034",
+      "text": "ing 2",
+      "bbox": [
+        96.0,
+        586.96,
+        119.42,
+        598.08
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0035",
+      "text": "BB_SC_N",
+      "bbox": [
+        119.82,
+        584.8,
+        158.52,
+        593.7
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 2
+    },
+    {
+      "span_id": "p174_s0036",
+      "text": " number of frames to be sent between two consecutive BB_SCs primitives, and",
+      "bbox": [
+        158.88,
+        586.97,
+        540.01,
+        598.08
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 3
+    },
+    {
+      "span_id": "p174_s0037",
+      "text": "2",
+      "bbox": [
+        96.0,
+        598.97,
+        101.54,
+        610.08
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0038",
+      "text": "BB_SC_N",
+      "bbox": [
+        101.52,
+        596.8,
+        138.0,
+        605.7
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 2
+    },
+    {
+      "span_id": "p174_s0039",
+      "text": " number of R_RDY primitives to be sent between two consecutive BB_SCr primitives.  See",
+      "bbox": [
+        138.0,
+        598.97,
+        540.02,
+        610.08
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 3
+    },
+    {
+      "span_id": "p174_s0040",
+      "text": "FC-FS-2 for a description of the BB_Credit recovery process.",
+      "bbox": [
+        96.0,
+        610.97,
+        366.03,
+        622.08
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0041",
+      "text": "6.6.2.6  Buffer-to-buffer Receive Data_Field size",
+      "bbox": [
+        96.0,
+        635.03,
+        321.48,
+        646.14
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0042",
+      "text": "The buffer-to-buffer Receive Data_Field Size field (word 1, bits 11-0) specifies the largest frame",
+      "bbox": [
+        96.0,
+        659.03,
+        540.06,
+        670.14
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0043",
+      "text": "Data_Field Size that may be received by the Nx_Port supplying the Service Parameters as a Se-",
+      "bbox": [
+        96.0,
+        671.03,
+        540.14,
+        682.14
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p174_s0044",
+      "text": "quence Recipient for:",
+      "bbox": [
+        96.0,
+        683.03,
+        190.44,
+        694.14
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

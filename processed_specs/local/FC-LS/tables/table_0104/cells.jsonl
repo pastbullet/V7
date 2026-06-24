@@ -1,0 +1,18 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Byte Number", "page": 117, "bbox": [174.95, 495.64, 246.03, 517.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Meaning", "page": 117, "bbox": [246.03, 495.64, 461.05, 517.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 117, "bbox": [174.95, 517.32, 246.03, 535.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Counter value, byte 0 (MSB)", "page": 117, "bbox": [246.03, 517.32, 461.05, 535.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 117, "bbox": [174.95, 535.35, 246.03, 553.35]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Counter value, byte 1", "page": 117, "bbox": [246.03, 535.35, 461.05, 553.35]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "2", "page": 117, "bbox": [174.95, 553.35, 246.03, 571.35]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Counter value, byte 2", "page": 117, "bbox": [246.03, 553.35, 461.05, 571.35]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "3", "page": 117, "bbox": [174.95, 571.35, 246.03, 589.35]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Counter value, byte 3", "page": 117, "bbox": [246.03, 571.35, 461.05, 589.35]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "4", "page": 117, "bbox": [174.95, 589.35, 246.03, 607.35]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "Counter value, byte 4", "page": 117, "bbox": [246.03, 589.35, 461.05, 607.35]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "5", "page": 117, "bbox": [174.95, 607.35, 246.03, 625.35]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "Counter value, byte 5", "page": 117, "bbox": [246.03, 607.35, 461.05, 625.35]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "6", "page": 117, "bbox": [174.95, 625.35, 246.03, 643.35]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "Counter value, byte 6", "page": 117, "bbox": [246.03, 625.35, 461.05, 643.35]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "7", "page": 117, "bbox": [174.95, 643.35, 246.03, 661.04]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "Counter value, byte 7 (LSB)", "page": 117, "bbox": [246.03, 643.35, 461.05, 661.04]}

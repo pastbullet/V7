@@ -1,0 +1,842 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 76,
+  "spans": [
+    {
+      "span_id": "p076_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0002",
+      "text": " 57",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0003",
+      "text": "The format of PRLO Logout Parameter pages is described in table 48.",
+      "bbox": [
+        96.0,
+        57.65,
+        405.88,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0004",
+      "text": "The PRLO logout parameter page format fields shall be defined as follows:",
+      "bbox": [
+        96.0,
+        370.97,
+        425.82,
+        382.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0005",
+      "text": "a)",
+      "bbox": [
+        106.02,
+        394.96,
+        114.91,
+        406.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0006",
+      "text": " TYPE code or common logout parameters:",
+      "bbox": [
+        114.91,
+        394.96,
+        329.51,
+        406.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p076_s0007",
+      "text": " Identifies the protocol associated with this Lo-",
+      "bbox": [
+        329.46,
+        394.96,
+        540.11,
+        406.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p076_s0008",
+      "text": "gout Parameter page.  If byte 0 of the first word of a Logout Parameter page contains the value",
+      "bbox": [
+        122.4,
+        406.96,
+        540.07,
+        418.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0009",
+      "text": "00h, the Logout Parameter page contains Logout Parameters common to all FC-4 Types at",
+      "bbox": [
+        122.4,
+        418.96,
+        540.1,
+        430.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0010",
+      "text": "that image pair or Nx_Port pair.  If byte 0 of the first word of a Logout Parameter page contains",
+      "bbox": [
+        122.4,
+        430.96,
+        539.97,
+        442.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0011",
+      "text": "the value other than 00h, the Logout Parameter page contains Logout Parameters for the FC-4",
+      "bbox": [
+        122.4,
+        442.96,
+        540.04,
+        454.08
+      ],
+      "block_index": 5,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0012",
+      "text": "TYPE indicated.",
+      "bbox": [
+        122.4,
+        454.96,
+        194.07,
+        466.08
+      ],
+      "block_index": 5,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0013",
+      "text": "b)",
+      "bbox": [
+        106.02,
+        478.96,
+        114.91,
+        490.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0014",
+      "text": " TYPE code extension:",
+      "bbox": [
+        114.91,
+        478.96,
+        227.35,
+        490.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p076_s0015",
+      "text": " Reserved for future use.",
+      "bbox": [
+        227.34,
+        478.96,
+        337.27,
+        490.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p076_s0016",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        502.96,
+        114.38,
+        514.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0017",
+      "text": "Originator Process_Associator validity:",
+      "bbox": [
+        122.4,
+        502.96,
+        311.15,
+        514.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0018",
+      "text": " Identifies the process or group of processes within",
+      "bbox": [
+        311.1,
+        502.96,
+        539.93,
+        514.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p076_s0019",
+      "text": "the Originator (see FC-FS-2).",
+      "bbox": [
+        122.4,
+        514.96,
+        252.36,
+        526.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0020",
+      "text": "0 = not meaningful",
+      "bbox": [
+        122.4,
+        538.96,
+        204.85,
+        550.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0021",
+      "text": "1 = meaningful",
+      "bbox": [
+        122.4,
+        550.96,
+        188.2,
+        562.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0022",
+      "text": "d)",
+      "bbox": [
+        106.02,
+        574.96,
+        114.91,
+        586.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0023",
+      "text": " Responder Process_Associator validity:",
+      "bbox": [
+        114.91,
+        574.96,
+        314.24,
+        586.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p076_s0024",
+      "text": " Identifies the process or group of processes within",
+      "bbox": [
+        314.22,
+        574.96,
+        539.95,
+        586.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p076_s0025",
+      "text": "the Responder (see FC-FS-2).",
+      "bbox": [
+        122.4,
+        586.96,
+        257.35,
+        598.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0026",
+      "text": "0 = not meaningful",
+      "bbox": [
+        122.4,
+        610.96,
+        204.85,
+        622.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0027",
+      "text": "1 = meaningful",
+      "bbox": [
+        122.4,
+        622.96,
+        188.2,
+        634.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0028",
+      "text": "4.2.21.4  Reply sequence",
+      "bbox": [
+        96.0,
+        647.02,
+        213.75,
+        658.14
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0029",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        671.02,
+        138.19,
+        682.14
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0030",
+      "text": "LS_RJT signifies rejection of the PRLO Request",
+      "bbox": [
+        138.18,
+        671.02,
+        351.43,
+        682.14
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p076_s0031",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        695.02,
+        142.05,
+        706.14
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0032",
+      "text": "LS_ACC signifies successful completion of the PRLO Request",
+      "bbox": [
+        142.08,
+        695.02,
+        418.13,
+        706.14
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p076_s0033",
+      "text": " Table 48 – PRLO logout parameter page format",
+      "bbox": [
+        204.96,
+        79.66,
+        430.98,
+        90.78
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0034",
+      "text": "Item",
+      "bbox": [
+        262.02,
+        101.62,
+        282.55,
+        112.74
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0035",
+      "text": "Word",
+      "bbox": [
+        394.17,
+        101.62,
+        419.68,
+        112.74
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0036",
+      "text": "Bit",
+      "bbox": [
+        445.99,
+        101.62,
+        459.34,
+        112.74
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0037",
+      "text": "TYPE Code or Common Logout Parameters",
+      "bbox": [
+        159.06,
+        124.66,
+        354.6,
+        135.78
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0038",
+      "text": "a",
+      "bbox": [
+        354.6,
+        122.44,
+        359.04,
+        131.34
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p076_s0039",
+      "text": "0",
+      "bbox": [
+        404.16,
+        125.63,
+        409.7,
+        136.74
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0040",
+      "text": "31-24",
+      "bbox": [
+        439.86,
+        125.63,
+        465.37,
+        136.74
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0041",
+      "text": "TYPE Code Extension",
+      "bbox": [
+        159.06,
+        148.67,
+        258.47,
+        159.78
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0042",
+      "text": "0",
+      "bbox": [
+        404.16,
+        149.63,
+        409.7,
+        160.74
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0043",
+      "text": "23-16",
+      "bbox": [
+        439.86,
+        149.63,
+        465.37,
+        160.74
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0044",
+      "text": "Originator Process_Associator Validity",
+      "bbox": [
+        159.06,
+        172.67,
+        329.02,
+        183.78
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0045",
+      "text": "0",
+      "bbox": [
+        404.16,
+        173.63,
+        409.7,
+        184.74
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0046",
+      "text": "15",
+      "bbox": [
+        447.06,
+        173.63,
+        458.18,
+        184.74
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0047",
+      "text": "Responder Process_Associator Validity",
+      "bbox": [
+        159.06,
+        196.67,
+        334.09,
+        207.78
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0048",
+      "text": "0",
+      "bbox": [
+        404.16,
+        197.63,
+        409.7,
+        208.74
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0049",
+      "text": "14",
+      "bbox": [
+        447.06,
+        197.63,
+        458.18,
+        208.74
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0050",
+      "text": "Reserved",
+      "bbox": [
+        159.06,
+        220.67,
+        201.75,
+        231.78
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0051",
+      "text": "0",
+      "bbox": [
+        404.16,
+        221.63,
+        409.7,
+        232.74
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0052",
+      "text": "13-0",
+      "bbox": [
+        442.62,
+        221.63,
+        462.61,
+        232.74
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0053",
+      "text": "Originator Process_Associator",
+      "bbox": [
+        159.06,
+        244.67,
+        294.03,
+        255.78
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0054",
+      "text": "1",
+      "bbox": [
+        404.16,
+        245.63,
+        409.7,
+        256.74
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0055",
+      "text": "31-0",
+      "bbox": [
+        442.62,
+        245.63,
+        462.61,
+        256.74
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0056",
+      "text": "Responder Process_Associator",
+      "bbox": [
+        159.06,
+        268.67,
+        299.11,
+        279.78
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0057",
+      "text": "2",
+      "bbox": [
+        404.16,
+        269.63,
+        409.7,
+        280.74
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0058",
+      "text": "31-0",
+      "bbox": [
+        442.62,
+        269.63,
+        462.61,
+        280.74
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0059",
+      "text": "Reserved",
+      "bbox": [
+        159.06,
+        292.67,
+        201.75,
+        303.78
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0060",
+      "text": "3",
+      "bbox": [
+        404.16,
+        293.63,
+        409.7,
+        304.74
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0061",
+      "text": "31-0",
+      "bbox": [
+        442.62,
+        293.63,
+        462.61,
+        304.74
+      ],
+      "block_index": 23,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0062",
+      "text": "a",
+      "bbox": [
+        165.3,
+        316.28,
+        169.3,
+        324.32
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p076_s0063",
+      "text": " If byte 0 of the first word of a Logout Parameter page is set to the value 00h, ",
+      "bbox": [
+        169.3,
+        314.65,
+        478.1,
+        328.3
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p076_s0064",
+      "text": "the Logout Parameter page is common to all FC-4 Types at that image pair.",
+      "bbox": [
+        176.1,
+        329.24,
+        475.62,
+        339.28
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0051"
+  ]
+}

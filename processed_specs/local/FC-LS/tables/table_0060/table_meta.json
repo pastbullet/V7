@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0060",
+  "type": "table",
+  "caption": "Table 57 – RNID Payload",
+  "pages": [
+    83
+  ],
+  "bbox": [
+    99.18,
+    195.96,
+    536.82,
+    270.02
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 83,
+  "logical_table": false
+}

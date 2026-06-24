@@ -1,0 +1,778 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 144,
+  "spans": [
+    {
+      "span_id": "p144_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0002",
+      "text": " 125",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0003",
+      "text": "4.2.50",
+      "bbox": [
+        96.0,
+        57.65,
+        123.74,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0004",
+      "text": "FFI Suspend Map Updates (FFI_SMU)",
+      "bbox": [
+        133.8,
+        57.65,
+        311.04,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0005",
+      "text": "4.2.50.1  Description",
+      "bbox": [
+        96.0,
+        82.97,
+        192.69,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0006",
+      "text": "The FFI_SMU ELS Request shall request the Domain Controller of the",
+      "bbox": [
+        96.0,
+        106.97,
+        412.63,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0007",
+      "text": "AE Principal Switch, to sus-",
+      "bbox": [
+        415.8,
+        106.97,
+        540.01,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p144_s0008",
+      "text": "pend Domain Topology Map updates as specified in FC-SW-4.  If Domain Topology Map updates are",
+      "bbox": [
+        96.0,
+        118.97,
+        539.97,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0009",
+      "text": "currently suspended, this request is treated as a NOP function. Successful execution of this ELS",
+      "bbox": [
+        96.0,
+        130.97,
+        539.95,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0010",
+      "text": "shall also suspend Registered Map Updates Notifications, if any (see 4.2.49).",
+      "bbox": [
+        96.0,
+        142.96,
+        436.99,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0011",
+      "text": "Support for this ELS is mandatory for a Domain Controller in an AE Principal Switch or an AE Switch",
+      "bbox": [
+        96.0,
+        166.96,
+        540.08,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0012",
+      "text": "that is capable of becoming an AE Principal switch. Support for this ELS is optional for Nx_Ports.",
+      "bbox": [
+        96.0,
+        178.96,
+        523.13,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0013",
+      "text": "If the Domain Controller that receives an FFI_SMU request currently is not the AE Principal Switch, it",
+      "bbox": [
+        96.0,
+        202.96,
+        540.02,
+        214.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0014",
+      "text": "shall respond with an LS_RJT reply with a reason code of “Logical error”.",
+      "bbox": [
+        96.0,
+        214.96,
+        418.64,
+        226.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0015",
+      "text": "If a destination receives this ELS Request that is not a Domain Controller, it shall respond with an",
+      "bbox": [
+        96.0,
+        238.96,
+        539.82,
+        250.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0016",
+      "text": "LS_RJT reply with a reason code of “Command not supported”.",
+      "bbox": [
+        96.0,
+        250.96,
+        376.48,
+        262.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0017",
+      "text": "4.2.50.2  Protocol",
+      "bbox": [
+        96.0,
+        274.96,
+        178.28,
+        286.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0018",
+      "text": "a) FFI Suspend Map Updates Request Sequence; and ",
+      "bbox": [
+        106.02,
+        298.96,
+        354.64,
+        310.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0019",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence.",
+      "bbox": [
+        106.02,
+        322.96,
+        290.7,
+        334.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0020",
+      "text": "4.2.50.3  Request Sequence",
+      "bbox": [
+        96.0,
+        346.96,
+        227.13,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0021",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        370.96,
+        157.1,
+        382.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0022",
+      "text": "The S_ID field value identifies the Nx_Port requesting suspension of Domain Topology",
+      "bbox": [
+        157.08,
+        370.96,
+        540.03,
+        382.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p144_s0023",
+      "text": "Map updates by the Domain Controller of the AE Principal Switch. The D_ID field value identifies the",
+      "bbox": [
+        96.0,
+        382.96,
+        540.08,
+        394.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0024",
+      "text": "Domain Controller of the AE Principal Switch in the form FFFCxxh, where xx is the one-byte value",
+      "bbox": [
+        96.0,
+        394.96,
+        539.97,
+        406.08
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0025",
+      "text": "assigned to the Domain Controller.",
+      "bbox": [
+        96.0,
+        406.96,
+        249.86,
+        418.08
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0026",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        430.96,
+        140.41,
+        442.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0027",
+      "text": "The format of the FFI_SMU Request Payload is shown in table 142.",
+      "bbox": [
+        140.4,
+        430.96,
+        439.92,
+        442.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p144_s0028",
+      "text": "4.2.50.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        538.96,
+        214.96,
+        550.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0029",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        562.96,
+        139.27,
+        574.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0030",
+      "text": "LS_RJT signifies the rejection of the FFI_SMU Request. The LS_RJT reply contains an ap-",
+      "bbox": [
+        139.14,
+        562.96,
+        540.04,
+        574.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p144_s0031",
+      "text": "propriate reject reason code.",
+      "bbox": [
+        96.0,
+        574.96,
+        223.19,
+        586.08
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0032",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        598.96,
+        142.05,
+        610.08
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0033",
+      "text": "LS_ACC signifies acceptance of a valid FFI_SMU Request and indicates that the Domain",
+      "bbox": [
+        142.32,
+        598.96,
+        539.91,
+        610.08
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p144_s0034",
+      "text": "Controller of the AE Principal Switch has suspended Domain Topology Map updates. The format of",
+      "bbox": [
+        96.0,
+        610.96,
+        539.96,
+        622.07
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0035",
+      "text": "the LS_ACC Payload for FFI_SMU is shown in table 143.",
+      "bbox": [
+        96.0,
+        622.96,
+        349.3,
+        634.07
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0036",
+      "text": " Table 142 – FFI_SMU Payload",
+      "bbox": [
+        246.36,
+        452.98,
+        389.69,
+        464.09
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0037",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        475.0,
+        133.06,
+        486.11
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0038",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        487.0,
+        136.35,
+        498.11
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0039",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        475.0,
+        233.97,
+        486.11
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0040",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        475.0,
+        328.42,
+        486.11
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0041",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        475.0,
+        427.0,
+        486.11
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0042",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        475.0,
+        522.83,
+        486.11
+      ],
+      "block_index": 19,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0043",
+      "text": "0",
+      "bbox": [
+        120.84,
+        503.98,
+        126.38,
+        515.09
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0044",
+      "text": "FFI_SMU (A5h)",
+      "bbox": [
+        149.88,
+        503.98,
+        219.9,
+        515.09
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0045",
+      "text": "00h",
+      "bbox": [
+        247.12,
+        503.98,
+        263.75,
+        515.09
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0046",
+      "text": "00h",
+      "bbox": [
+        344.31,
+        503.98,
+        360.99,
+        515.09
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0047",
+      "text": "00h",
+      "bbox": [
+        441.49,
+        503.98,
+        458.16,
+        515.09
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0048",
+      "text": " Table 143 – FFI_SMU LS_ACC Payload",
+      "bbox": [
+        224.94,
+        644.98,
+        411.06,
+        656.09
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0049",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        667.0,
+        133.06,
+        678.11
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0050",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        679.0,
+        136.35,
+        690.11
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0051",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        667.0,
+        233.97,
+        678.11
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0052",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        667.0,
+        328.42,
+        678.11
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0053",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        667.0,
+        427.0,
+        678.11
+      ],
+      "block_index": 22,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0054",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        667.0,
+        522.83,
+        678.11
+      ],
+      "block_index": 22,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0055",
+      "text": "0",
+      "bbox": [
+        120.84,
+        695.98,
+        126.38,
+        707.09
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0056",
+      "text": "02h",
+      "bbox": [
+        149.88,
+        695.98,
+        166.52,
+        707.09
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0057",
+      "text": "00h",
+      "bbox": [
+        247.08,
+        695.98,
+        263.71,
+        707.09
+      ],
+      "block_index": 23,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0058",
+      "text": "00h",
+      "bbox": [
+        344.27,
+        695.98,
+        360.97,
+        707.09
+      ],
+      "block_index": 23,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p144_s0059",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        695.98,
+        458.16,
+        707.09
+      ],
+      "block_index": 23,
+      "line_index": 5,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0144",
+    "table_0147"
+  ]
+}

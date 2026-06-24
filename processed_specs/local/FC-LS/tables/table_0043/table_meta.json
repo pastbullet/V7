@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0043",
+  "type": "table",
+  "caption": "Table 40 – Registration Function",
+  "pages": [
+    69
+  ],
+  "bbox": [
+    102.38,
+    213.3,
+    533.62,
+    408.72
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 69,
+  "logical_table": false
+}

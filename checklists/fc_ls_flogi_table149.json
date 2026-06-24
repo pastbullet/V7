@@ -1,0 +1,524 @@
+{
+  "id": "fc_ls_flogi_table149_v1",
+  "title": "FC-LS FLOGI + Table 149 reading acceptance checklist",
+  "doc_id": "FC-LS.pdf",
+  "scope": "Fixture-level regression checklist for the FLOGI long QA and Table 149 payload reading. Protocol facts live here, not in the generic scorer.",
+  "items": [
+    {
+      "id": "flogi_function_detect_fabric",
+      "category": "flogi_functions",
+      "description": "FLOGI detects whether a Fabric exists.",
+      "expected_cite_pages": [153],
+      "must_any": [
+        {"label": "fabric existence detection", "patterns": ["判断是否存在\\s*Fabric", "Fabric\\s*是否存在", "detects?\\s+(whether\\s+)?a?\\s*Fabric", "detects?\\s+Fabric\\s+presence"]}
+      ]
+    },
+    {
+      "id": "flogi_function_get_fabric_params_names",
+      "category": "flogi_functions",
+      "description": "FLOGI obtains Fabric operating characteristics, F_Port_Name, and Fabric_Name.",
+      "expected_cite_pages": [153],
+      "must_any": [
+        {"label": "Fabric operating characteristics", "patterns": ["Fabric\\s*的运行特征", "entire Fabric.*operating characteristics", "operating characteristics.*Fabric"]},
+        {"label": "F_Port_Name", "patterns": ["F_Port_Name"]},
+        {"label": "Fabric_Name", "patterns": ["Fabric_Name"]}
+      ]
+    },
+    {
+      "id": "flogi_function_send_nx_params_names",
+      "category": "flogi_functions",
+      "description": "FLOGI provides Nx_Port operating characteristics, N_Port_Name, and Node_Name to the Fabric.",
+      "expected_cite_pages": [153],
+      "must_any": [
+        {"label": "Nx_Port characteristics", "patterns": ["Nx_Port\\s*的运行特征", "operating characteristics.*Nx_Port", "Nx_Port.*operating characteristics"]},
+        {"label": "N_Port_Name", "patterns": ["N_Port_Name"]},
+        {"label": "Node_Name", "patterns": ["Node_Name"]}
+      ]
+    },
+    {
+      "id": "flogi_function_assign_confirm_n_port_id",
+      "category": "flogi_functions",
+      "description": "FLOGI lets Fabric assign or confirm the originator N_Port_ID.",
+      "expected_cite_pages": [153],
+      "must_any": [
+        {"label": "assign or confirm N_Port_ID", "patterns": ["分配或确认\\s*`?N_Port_ID`?", "assign.*confirm.*N_Port_ID", "confirm.*N_Port_ID"]}
+      ]
+    },
+    {
+      "id": "flogi_function_initialize_bb_credit",
+      "category": "flogi_functions",
+      "description": "FLOGI initializes buffer-to-buffer Credit.",
+      "expected_cite_pages": [153, 156],
+      "must_any": [
+        {"label": "buffer-to-buffer Credit initialization", "patterns": ["初始化\\s*buffer-to-buffer\\s*Credit", "buffer-to-buffer\\s+Credit.*initialized", "Credit\\s*的值被初始化"]}
+      ]
+    },
+    {
+      "id": "flogi_function_authentication_entry",
+      "category": "flogi_functions",
+      "description": "FLOGI can enable subsequent Nx_Port-to-Fabric Authentication when both support it.",
+      "expected_cite_pages": [153],
+      "must_any": [
+        {"label": "authentication entry", "patterns": ["Authentication", "认证"]}
+      ]
+    },
+    {
+      "id": "flogi_function_virtual_fabrics_entry",
+      "category": "flogi_functions",
+      "description": "FLOGI can enable subsequent Virtual Fabrics parameter negotiation when both support it.",
+      "expected_cite_pages": [153],
+      "must_any": [
+        {"label": "Virtual Fabrics entry", "patterns": ["Virtual\\s+Fabrics", "VF\\s*参数协商", "VF\\s+parameter"]}
+      ]
+    },
+    {
+      "id": "flogi_request_new_exchange_oxid",
+      "category": "request_setup",
+      "description": "Explicit Fabric Login sends FLOGI in a new Exchange and the Nx_Port assigns OX_ID.",
+      "expected_cite_pages": [153],
+      "must_any": [
+        {"label": "new Exchange", "patterns": ["新的\\s*Exchange", "new\\s+Exchange"]},
+        {"label": "OX_ID", "patterns": ["OX_ID"]}
+      ]
+    },
+    {
+      "id": "flogi_request_d_id",
+      "category": "request_setup",
+      "description": "FLOGI D_ID is the well-known F_Port address FFFFFEh.",
+      "expected_cite_pages": [153],
+      "must_any": [
+        {"label": "D_ID FFFFFEh", "patterns": ["D_ID\\s*=\\s*FFFFFEh", "D_ID.*FFFFFEh", "well-known F_Port address.*FFFFFEh"]}
+      ]
+    },
+    {
+      "id": "flogi_request_s_id_zero",
+      "category": "request_setup",
+      "description": "S_ID 000000h requests assignment of all 24 bits of N_Port_ID.",
+      "expected_cite_pages": [153],
+      "must_any": [
+        {"label": "S_ID 000000h all 24 bits", "patterns": ["000000h.*24", "S_ID.*000000h", "assign all 24 bits"]}
+      ]
+    },
+    {
+      "id": "flogi_request_s_id_yy",
+      "category": "request_setup",
+      "description": "S_ID 0000h||YY requests upper 16 bits and validation of lower 8 bits / AL_PA.",
+      "expected_cite_pages": [153],
+      "must_any": [
+        {"label": "S_ID 0000h YY", "patterns": ["0000h\\s*\\|\\|\\s*YY", "0000h\\s*\\|\\|\\s*yy", "upper\\s+16\\s+bits"]},
+        {"label": "AL_PA or lower 8 bits", "patterns": ["AL_PA", "低\\s*8\\s*位", "lower\\s+8\\s+bits"]}
+      ]
+    },
+    {
+      "id": "response_ls_acc_fabric",
+      "category": "response_branches",
+      "description": "LS_ACC with N_Port/F_Port bit 1 is normal Fabric success and returns assigned/confirmed D_ID plus Fabric parameters/names.",
+      "expected_cite_pages": [154],
+      "must_any": [
+        {"label": "LS_ACC fabric", "patterns": ["LS_ACC"]},
+        {"label": "N_Port/F_Port bit 1", "patterns": ["N_Port/F_Port.*1", "bit\\s*=\\s*1", "Fx_Port"]},
+        {"label": "D_ID assigned", "patterns": ["D_ID.*N_Port_ID", "分配给本端的\\s*`?N_Port_ID`?", "assigned.*N_Port_ID"]},
+        {"label": "Fabric parameters names", "patterns": ["F_Port_Name", "Fabric_Name"]}
+      ]
+    },
+    {
+      "id": "response_ls_acc_point_to_point",
+      "category": "response_branches",
+      "description": "LS_ACC with N_Port/F_Port bit 0 means point-to-point Nx_Port; compare N_Port_Name to decide PLOGI originator.",
+      "expected_cite_pages": [154, 155],
+      "must_any": [
+        {"label": "LS_ACC point to point", "patterns": ["point-to-point", "点对点"]},
+        {"label": "N_Port/F_Port bit 0", "patterns": ["N_Port/F_Port.*0", "bit\\s*=\\s*0", "Nx_Port/F_Port"]},
+        {"label": "N_Port_Name comparison", "patterns": ["N_Port_Name.*小于", "N_Port_Name.*大于", "compare.*N_Port_Name", "N_Port_Name.*PLOGI"]}
+      ]
+    },
+    {
+      "id": "response_f_bsy",
+      "category": "response_branches",
+      "description": "F_BSY means Fabric busy and FLOGI may be retried later.",
+      "expected_cite_pages": [154],
+      "must_any": [
+        {"label": "F_BSY", "patterns": ["F_BSY"]},
+        {"label": "retry later", "patterns": ["稍后重试", "retry\\s+FLOGI", "retransmit.*FLOGI"]}
+      ]
+    },
+    {
+      "id": "response_p_bsy",
+      "category": "response_branches",
+      "description": "P_BSY means point-to-point Nx_Port busy; continue N_Port Login after delay.",
+      "expected_cite_pages": [154],
+      "must_any": [
+        {"label": "P_BSY", "patterns": ["P_BSY"]},
+        {"label": "delay N_Port Login", "patterns": ["延迟后.*N_Port Login", "delay.*N_Port Login", "continue.*N_Port Login"]}
+      ]
+    },
+    {
+      "id": "response_f_rjt_class_not_supported",
+      "category": "response_branches",
+      "description": "F_RJT with Class not supported can retry FLOGI with another class/SOF.",
+      "expected_cite_pages": [154, 155, 156],
+      "must_any": [
+        {"label": "F_RJT", "patterns": ["F_RJT"]},
+        {"label": "Class not supported", "patterns": ["Class not supported", "Class of service not supported", "class.*not supported"]},
+        {"label": "retry other class or SOF", "patterns": ["换.*class", "不同.*class", "另一.*SOF", "different class", "different SOF"]}
+      ]
+    },
+    {
+      "id": "response_f_rjt_invalid_s_id",
+      "category": "response_branches",
+      "description": "F_RJT with Invalid S_ID can retry using another S_ID form.",
+      "expected_cite_pages": [154],
+      "must_any": [
+        {"label": "F_RJT", "patterns": ["F_RJT"]},
+        {"label": "Invalid S_ID", "patterns": ["Invalid\\s+S_ID", "S_ID.*被拒", "S_ID.*rejected"]},
+        {"label": "retry S_ID", "patterns": ["重发\\s*FLOGI", "再发\\s*FLOGI", "retry.*S_ID", "different S_ID", "新的\\s*`?XX"]}
+      ]
+    },
+    {
+      "id": "response_p_rjt",
+      "category": "response_branches",
+      "description": "P_RJT is point-to-point rejection and Class not supported can continue N_Port Login with another class.",
+      "expected_cite_pages": [154],
+      "must_any": [
+        {"label": "P_RJT", "patterns": ["P_RJT"]},
+        {"label": "N_Port Login", "patterns": ["N_Port Login"]}
+      ]
+    },
+    {
+      "id": "response_ls_rjt",
+      "category": "response_branches",
+      "description": "LS_RJT handling depends on reason code and may modify Service Parameters before retrying FLOGI.",
+      "expected_cite_pages": [155],
+      "must_any": [
+        {"label": "LS_RJT", "patterns": ["LS_RJT"]},
+        {"label": "reason code", "patterns": ["reason code", "Reason Code", "reason"]},
+        {"label": "modify service parameters", "patterns": ["Service Parameters.*重", "修改.*Service Parameters", "modify.*Service Parameters"]}
+      ]
+    },
+    {
+      "id": "response_no_response",
+      "category": "response_branches",
+      "description": "No response means possible physical transmission error; perform FC-FS-2 recovery and retry FLOGI.",
+      "expected_cite_pages": [155],
+      "must_any": [
+        {"label": "No Response", "patterns": ["No Response", "无响应"]},
+        {"label": "error recovery", "patterns": ["error recovery", "错误恢复"]},
+        {"label": "retry FLOGI", "patterns": ["重.*FLOGI", "retry.*FLOGI"]}
+      ]
+    },
+    {
+      "id": "response_self_connection",
+      "category": "response_branches",
+      "description": "If the received N_Port_Name equals the originator's own N_Port_Name, the port is connected to itself and FLOGI is discarded/out of scope.",
+      "expected_cite_pages": [155],
+      "must_any": [
+        {"label": "self N_Port_Name", "patterns": ["N_Port_Name.*自身", "N_Port_Name.*相等", "N_Port_Name.*own"]},
+        {"label": "discard or out of scope", "patterns": ["丢弃", "out of.*scope", "超出.*标准范围"]}
+      ]
+    },
+    {
+      "id": "completion_originator_class1",
+      "category": "completion_conditions",
+      "description": "Originator completes Class 1 Fabric Login after transmitting ACK to LS_ACC with EOFt or EOFdt.",
+      "expected_cite_pages": [156],
+      "must_any": [
+        {"label": "originator", "patterns": ["Originator", "发起.*方"]},
+        {"label": "Class 1", "patterns": ["Class\\s*1"]},
+        {"label": "ACK EOFt EOFdt", "patterns": ["ACK.*EOFt.*EOFdt", "EOFt.*EOFdt"]}
+      ]
+    },
+    {
+      "id": "completion_originator_class2",
+      "category": "completion_conditions",
+      "description": "Originator completes Class 2 Fabric Login after transmitting ACK to LS_ACC with EOFt.",
+      "expected_cite_pages": [156],
+      "must_any": [
+        {"label": "originator", "patterns": ["Originator", "发起.*方"]},
+        {"label": "Class 2", "patterns": ["Class\\s*2"]},
+        {"label": "ACK EOFt", "patterns": ["ACK.*EOFt", "EOFt"]}
+      ]
+    },
+    {
+      "id": "completion_originator_class3",
+      "category": "completion_conditions",
+      "description": "Originator completes Class 3 Fabric Login when LS_ACC is received.",
+      "expected_cite_pages": [156],
+      "must_any": [
+        {"label": "originator", "patterns": ["Originator", "发起.*方"]},
+        {"label": "Class 3", "patterns": ["Class\\s*3"]},
+        {"label": "received LS_ACC", "patterns": ["收到\\s*`?LS_ACC`?", "LS_ACC.*received"]}
+      ]
+    },
+    {
+      "id": "completion_responder_class1",
+      "category": "completion_conditions",
+      "description": "Responder completes Class 1 Fabric Login after receiving ACK to LS_ACC with EOFt or EOFdt.",
+      "expected_cite_pages": [156],
+      "must_any": [
+        {"label": "responder", "patterns": ["Responder", "响应.*方"]},
+        {"label": "Class 1", "patterns": ["Class\\s*1"]},
+        {"label": "ACK EOFt EOFdt", "patterns": ["ACK.*EOFt.*EOFdt", "EOFt.*EOFdt"]}
+      ]
+    },
+    {
+      "id": "completion_responder_class2",
+      "category": "completion_conditions",
+      "description": "Responder completes Class 2 Fabric Login after receiving ACK to LS_ACC with EOFt.",
+      "expected_cite_pages": [156],
+      "must_any": [
+        {"label": "responder", "patterns": ["Responder", "响应.*方"]},
+        {"label": "Class 2", "patterns": ["Class\\s*2"]},
+        {"label": "ACK EOFt", "patterns": ["ACK.*EOFt", "EOFt"]}
+      ]
+    },
+    {
+      "id": "completion_responder_class3",
+      "category": "completion_conditions",
+      "description": "Responder completes Class 3 Fabric Login after transmitting LS_ACC.",
+      "expected_cite_pages": [156],
+      "must_any": [
+        {"label": "responder", "patterns": ["Responder", "响应.*方"]},
+        {"label": "Class 3", "patterns": ["Class\\s*3"]},
+        {"label": "transmitted LS_ACC", "patterns": ["发出\\s*`?LS_ACC`?", "transmitted.*LS_ACC"]}
+      ]
+    },
+    {
+      "id": "sof_class_scope",
+      "category": "sof_relogin",
+      "description": "Fabric Login only uses Class 1/2/3; Class 6 is not allowed.",
+      "expected_cite_pages": [155],
+      "must_any": [
+        {"label": "Class 1/2/3", "patterns": ["Class\\s*1/2/3", "Class\\s*1、?2、?3", "Classes\\s+1,?\\s*2,?\\s*and\\s*3"]},
+        {"label": "Class 6 not allowed", "patterns": ["Class\\s*6.*不", "Class\\s*6.*不能", "Class\\s*6.*not"]}
+      ]
+    },
+    {
+      "id": "sof_sofc1_sofi1",
+      "category": "sof_relogin",
+      "description": "SOFc1 may be used for Fabric Login/Relogin; SOFi1 shall not be used.",
+      "expected_cite_pages": [155],
+      "must_any": [
+        {"label": "SOFc1", "patterns": ["SOFc1"]},
+        {"label": "SOFi1 prohibited", "patterns": ["SOFi1.*不", "SOFi1.*not", "SOFi1.*shall not"]}
+      ]
+    },
+    {
+      "id": "relogin_same_identity",
+      "category": "sof_relogin",
+      "description": "If new N_Port_ID, F_Port_Name, and Fabric_Name are the same as before, the Nx_Port may continue existing operations.",
+      "expected_cite_pages": [155],
+      "must_any": [
+        {"label": "same identity tuple", "patterns": ["N_Port_ID.*F_Port_Name.*Fabric_Name", "F_Port_Name.*Fabric_Name"]},
+        {"label": "continue operations", "patterns": ["继续.*操作", "continue.*operation"]}
+      ]
+    },
+    {
+      "id": "relogin_changed_identity_implicit_logout_ra_tov",
+      "category": "sof_relogin",
+      "description": "If N_Port_ID, F_Port_Name, or Fabric_Name changes, Nx_Port performs implicit logout for all Nx_Ports and waits R_A_TOV before communication.",
+      "expected_cite_pages": [155],
+      "must_any": [
+        {"label": "implicit logout", "patterns": ["implicit logout", "隐式\\s*logout"]},
+        {"label": "R_A_TOV", "patterns": ["R_A_TOV"]},
+        {"label": "all Nx_Ports", "patterns": ["所有\\s*Nx_Ports", "all\\s+Nx_Ports"]}
+      ]
+    },
+    {
+      "id": "table149_scope",
+      "category": "table149_payload",
+      "description": "Table 149 defines the payload format for FLOGI, PLOGI, and LS_ACC.",
+      "expected_cite_pages": [165, 166],
+      "must_any": [
+        {"label": "Table 149", "patterns": ["Table\\s*149", "表\\s*149"]},
+        {"label": "FLOGI PLOGI LS_ACC scope", "patterns": ["FLOGI.*PLOGI.*LS_ACC", "FLOGI、PLOGI.*LS_ACC"]}
+      ]
+    },
+    {
+      "id": "table149_word0",
+      "category": "table149_payload",
+      "description": "Word 0 is ELS_Command code.",
+      "expected_cite_pages": [166],
+      "must_any": [
+        {"label": "Word 0", "patterns": ["Word\\s*0", "word\\s*0"]},
+        {"label": "ELS_Command code", "patterns": ["ELS_Command\\s+code", "ELS_Command"]}
+      ]
+    },
+    {
+      "id": "table149_words1_4",
+      "category": "table149_payload",
+      "description": "Words 1-4 are Common Service Parameters (16 bytes).",
+      "expected_cite_pages": [166],
+      "must_any": [
+        {"label": "Words 1-4", "patterns": ["Word\\s*1.*4", "words?\\s*1[–-]4", "1–4"]},
+        {"label": "Common Service Parameters", "patterns": ["Common Service Parameters"]},
+        {"label": "16 bytes", "patterns": ["16\\s*bytes", "16\\s*字节"]}
+      ]
+    },
+    {
+      "id": "table149_words5_6",
+      "category": "table149_payload",
+      "description": "Words 5-6 are Port_Name.",
+      "expected_cite_pages": [166],
+      "must_any": [
+        {"label": "Words 5-6", "patterns": ["Word\\s*5.*6", "words?\\s*5[–-]6", "5–6"]},
+        {"label": "Port_Name", "patterns": ["Port_Name", "N_Port_Name"]}
+      ]
+    },
+    {
+      "id": "table149_words7_8",
+      "category": "table149_payload",
+      "description": "Words 7-8 are Node_Name or Fabric_Name.",
+      "expected_cite_pages": [166],
+      "must_any": [
+        {"label": "Words 7-8", "patterns": ["Word\\s*7.*8", "words?\\s*7[–-]8", "7–8"]},
+        {"label": "Node or Fabric name", "patterns": ["Node_?Name.*Fabric_?Name", "Node_ or Fabric_Name", "Node_Name\\s*或\\s*Fabric_Name"]}
+      ]
+    },
+    {
+      "id": "table149_words9_12",
+      "category": "table149_payload",
+      "description": "Words 9-12 are Class 1 and Class 6 Service Parameters.",
+      "expected_cite_pages": [166],
+      "must_any": [
+        {"label": "Words 9-12", "patterns": ["Word\\s*9.*12", "words?\\s*9[–-]12", "9–12"]},
+        {"label": "Class 1 and Class 6", "patterns": ["Class\\s*1.*Class\\s*6", "Class 1 and Class 6"]}
+      ]
+    },
+    {
+      "id": "table149_class6_uses_class1",
+      "category": "table149_payload",
+      "description": "Class 6 has no separate login Service Parameters; Class 1 parameters are used instead.",
+      "expected_cite_pages": [165],
+      "must_any": [
+        {"label": "Class 6 uses Class 1", "patterns": ["Class\\s*6.*Class\\s*1", "Class\\s*1.*Class\\s*6", "no separate Class 6"]}
+      ]
+    },
+    {
+      "id": "table149_words13_16",
+      "category": "table149_payload",
+      "description": "Words 13-16 are Class 2 Service Parameters.",
+      "expected_cite_pages": [166],
+      "must_any": [
+        {"label": "Words 13-16", "patterns": ["Word\\s*13.*16", "words?\\s*13[–-]16", "13–16"]},
+        {"label": "Class 2 Service Parameters", "patterns": ["Class\\s*2\\s+Service Parameters"]}
+      ]
+    },
+    {
+      "id": "table149_words17_20",
+      "category": "table149_payload",
+      "description": "Words 17-20 are Class 3 Service Parameters.",
+      "expected_cite_pages": [166],
+      "must_any": [
+        {"label": "Words 17-20", "patterns": ["Word\\s*17.*20", "words?\\s*17[–-]20", "17–20"]},
+        {"label": "Class 3 Service Parameters", "patterns": ["Class\\s*3\\s+Service Parameters"]}
+      ]
+    },
+    {
+      "id": "table149_words21_24",
+      "category": "table149_payload",
+      "description": "Words 21-24 are Obsolete.",
+      "expected_cite_pages": [166],
+      "must_any": [
+        {"label": "Words 21-24", "patterns": ["Word\\s*21.*24", "words?\\s*21[–-]24", "21–24"]},
+        {"label": "Obsolete", "patterns": ["Obsolete", "废弃"]}
+      ]
+    },
+    {
+      "id": "table149_words25_28",
+      "category": "table149_payload",
+      "description": "Words 25-28 are Vendor Version Level (16 bytes).",
+      "expected_cite_pages": [166],
+      "must_any": [
+        {"label": "Words 25-28", "patterns": ["Word\\s*25.*28", "words?\\s*25[–-]28", "25–28"]},
+        {"label": "Vendor Version Level", "patterns": ["Vendor Version Level"]},
+        {"label": "16 bytes", "patterns": ["16\\s*bytes", "16\\s*字节"]}
+      ]
+    },
+    {
+      "id": "table149_words29_30",
+      "category": "table149_payload",
+      "description": "Words 29-30 are Services Availability and only present when Payload Bit is 1.",
+      "expected_cite_pages": [166],
+      "must_any": [
+        {"label": "Words 29-30", "patterns": ["Word\\s*29.*30", "words?\\s*29[–-]30", "29–30"]},
+        {"label": "Services Availability", "patterns": ["Services Availability"]},
+        {"label": "Payload Bit", "patterns": ["Payload Bit"]}
+      ]
+    },
+    {
+      "id": "table149_word31",
+      "category": "table149_payload",
+      "description": "Word 31 is Login Extension Data Length and only present when Payload Bit is 1.",
+      "expected_cite_pages": [166],
+      "must_any": [
+        {"label": "Word 31", "patterns": ["Word\\s*31", "word\\s*31", "\\|\\s*31\\s*\\|", "^\\s*31\\s+"]},
+        {"label": "Login Extension Data Length", "patterns": ["Login Extension Data Length"]},
+        {"label": "Payload Bit", "patterns": ["Payload Bit"]}
+      ]
+    },
+    {
+      "id": "table149_words32_61",
+      "category": "table149_payload",
+      "description": "Words 32-61 are Reserved in the Payload-Bit extension area.",
+      "expected_cite_pages": [166],
+      "must_any": [
+        {"label": "Words 32-61", "patterns": ["Word\\s*32.*61", "words?\\s*32[–-]61", "32–61"]},
+        {"label": "Reserved", "patterns": ["Reserved", "保留"]}
+      ]
+    },
+    {
+      "id": "table149_words62_63",
+      "category": "table149_payload",
+      "description": "Words 62-63 are Clock Synchronization QoS and only present when Payload Bit is 1.",
+      "expected_cite_pages": [166],
+      "must_any": [
+        {"label": "Words 62-63", "patterns": ["Word\\s*62.*63", "words?\\s*62[–-]63", "62–63"]},
+        {"label": "Clock Synchronization QoS", "patterns": ["Clock Synchronization QoS"]},
+        {"label": "Payload Bit", "patterns": ["Payload Bit"]}
+      ]
+    },
+    {
+      "id": "table149_words64_to_n",
+      "category": "table149_payload",
+      "description": "Words 64-n are Login Extension Data if any.",
+      "expected_cite_pages": [166],
+      "must_any": [
+        {"label": "Words 64-n", "patterns": ["Word\\s*64.*n", "64[–-]n", "64 to n"]},
+        {"label": "Login Extension Data", "patterns": ["Login Extension Data"]}
+      ]
+    },
+    {
+      "id": "table149_payload_bit_zero_length",
+      "category": "table149_payload",
+      "description": "When Payload Bit is 0, extension fields are absent and the payload is 116 bytes long.",
+      "expected_cite_pages": [166],
+      "must_any": [
+        {"label": "Payload Bit zero", "patterns": ["Payload Bit\\s*=\\s*0", "Payload Bit.*zero", "Payload Bit.*0"]},
+        {"label": "116 bytes", "patterns": ["116\\s*bytes", "116\\s*字节"]},
+        {"label": "fields absent", "patterns": ["不出现", "不存在", "not present", "absent"]}
+      ]
+    },
+    {
+      "id": "table149_payload_bit_one_variable",
+      "category": "table149_payload",
+      "description": "When Payload Bit is 1, extension fields such as Services Availability, Clock Synchronization QoS, and Login Extension Data may be present.",
+      "expected_cite_pages": [166],
+      "must_any": [
+        {"label": "Payload Bit one", "patterns": ["Payload Bit\\s*=\\s*1", "Payload Bit.*one", "Payload Bit.*1"]},
+        {"label": "Services Availability", "patterns": ["Services Availability"]},
+        {"label": "Clock Synchronization QoS", "patterns": ["Clock Synchronization QoS"]},
+        {"label": "Login Extension Data", "patterns": ["Login Extension Data"]}
+      ]
+    },
+    {
+      "id": "vf_evfp_support_pages",
+      "category": "vf_evfp_coverage",
+      "description": "Long FLOGI reading should follow the Virtual Fabrics / EVFP dependency rather than only mention VF from page 153.",
+      "expected_cite_pages": ["203-206"],
+      "must_any": [
+        {"label": "Virtual Fabrics", "patterns": ["Virtual\\s+Fabrics", "\\bVF\\b"]},
+        {"label": "EVFP", "patterns": ["EVFP", "Exchange\\s+Virtual\\s+Fabrics\\s+Parameters"]}
+      ]
+    }
+  ]
+}

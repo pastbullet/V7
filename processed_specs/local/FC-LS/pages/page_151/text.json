@@ -1,0 +1,489 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 151,
+  "spans": [
+    {
+      "span_id": "p151_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0002",
+      "text": " 132",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0003",
+      "text": "5",
+      "bbox": [
+        96.0,
+        57.38,
+        102.1,
+        69.64
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0004",
+      "text": "FC-4 Link Service",
+      "bbox": [
+        114.0,
+        57.38,
+        206.21,
+        69.64
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0005",
+      "text": "An FC-4 Link Service request solicits a destination Port (Fx_Port or Nx_Port) to perform a function or",
+      "bbox": [
+        96.0,
+        82.97,
+        540.05,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0006",
+      "text": "service in order to support an individual FC-4 Device_Data protocol.  The Information Category for a",
+      "bbox": [
+        96.0,
+        94.97,
+        540.04,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0007",
+      "text": "request shall be specified as Unsolicited Control.  A FC-4 Link Service reply may be transmitted in",
+      "bbox": [
+        96.0,
+        106.97,
+        539.95,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0008",
+      "text": "answer to a FC-4 Link Service request.  The Information Category for a reply shall be specified as",
+      "bbox": [
+        96.0,
+        118.97,
+        539.99,
+        130.08
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0009",
+      "text": "Solicited Control.  Each request or reply shall be composed of a single Sequence.  The format of the",
+      "bbox": [
+        96.0,
+        130.97,
+        540.0,
+        142.08
+      ],
+      "block_index": 4,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0010",
+      "text": "request or reply shall be specified by the individual FC-4 being supported and is beyond the scope of",
+      "bbox": [
+        96.0,
+        142.97,
+        540.04,
+        154.08
+      ],
+      "block_index": 4,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0011",
+      "text": "this standard.  Each Sequence may be composed of one or more frames.",
+      "bbox": [
+        96.0,
+        154.97,
+        420.31,
+        166.08
+      ],
+      "block_index": 4,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0012",
+      "text": "The protocols supported by the FC-4 Link Services shall be performed within a single Exchange, in-",
+      "bbox": [
+        96.0,
+        178.96,
+        540.07,
+        190.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0013",
+      "text": "tended exclusively for the purpose.  FC-4 Link Service protocols are performed using a two Se-",
+      "bbox": [
+        96.0,
+        190.96,
+        540.14,
+        202.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0014",
+      "text": "quence Exchange.  The protocols consist of a request Sequence by the Originator (Nx_Port), transfer",
+      "bbox": [
+        96.0,
+        202.96,
+        540.03,
+        214.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0015",
+      "text": "of Sequence Initiative (see FC-FS-2), and a reply Sequence from the Responder (Nx_Port or",
+      "bbox": [
+        96.0,
+        214.96,
+        539.96,
+        226.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0016",
+      "text": "Fx_Port).  The execution of a FC-4 Link Service may perform sequence abort functions and modify",
+      "bbox": [
+        96.0,
+        226.96,
+        539.92,
+        238.08
+      ],
+      "block_index": 5,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0017",
+      "text": "sequence initiative of other exchanges in a protocol specific manner.  The Sequence Initiator and Se-",
+      "bbox": [
+        96.0,
+        238.96,
+        539.94,
+        250.08
+      ],
+      "block_index": 5,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0018",
+      "text": "quence Recipient shall follow the rules for Sequence management and Recovery_Qualifier reuse as",
+      "bbox": [
+        96.0,
+        250.96,
+        540.07,
+        262.08
+      ],
+      "block_index": 5,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0019",
+      "text": "specified in FC-FS-2.  The following rules regarding Sequence and Exchange management apply to",
+      "bbox": [
+        96.0,
+        262.96,
+        539.95,
+        274.08
+      ],
+      "block_index": 5,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0020",
+      "text": "FC-4 Link Services in addition to the rules specified in FC-FS-2:",
+      "bbox": [
+        96.0,
+        274.96,
+        377.56,
+        286.08
+      ],
+      "block_index": 5,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0021",
+      "text": "a) FC-4 Link Services shall only be Exchanges originated following N_Port Login.",
+      "bbox": [
+        106.02,
+        298.96,
+        469.5,
+        310.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0022",
+      "text": "b) the Originator of the Exchange shall use the Discard multiple Sequences Exchange Error Poli-",
+      "bbox": [
+        106.02,
+        322.96,
+        540.01,
+        334.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0023",
+      "text": "cy (see FC-FS-2) for all FC-4 Link Service Exchanges.",
+      "bbox": [
+        122.4,
+        334.96,
+        363.41,
+        346.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0024",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        358.96,
+        114.35,
+        370.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0025",
+      "text": "the Originator of an FC-4 Link Service Exchange shall detect an Exchange error following Se-",
+      "bbox": [
+        122.37,
+        358.96,
+        540.15,
+        370.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0026",
+      "text": "quence Initiative transfer if the reply Sequence is not received within a timeout interval equal to",
+      "bbox": [
+        122.4,
+        370.96,
+        539.89,
+        382.08
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0027",
+      "text": "twice the value of R_A_TOV.",
+      "bbox": [
+        122.4,
+        382.96,
+        250.63,
+        394.08
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0028",
+      "text": "d) if the Exchange Originator of an FC-4 Link Service Exchange detects an Exchange error, it",
+      "bbox": [
+        106.02,
+        406.96,
+        540.03,
+        418.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0029",
+      "text": "shall abort the Exchange using ABTS and retry the protocol of the aborted Exchange with a dif-",
+      "bbox": [
+        122.4,
+        418.96,
+        540.12,
+        430.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0030",
+      "text": "ferent Exchange.",
+      "bbox": [
+        122.4,
+        430.96,
+        197.97,
+        442.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0031",
+      "text": "e) if the Sequence Initiator aborts a Sequence using ABTS (Abort Sequence Protocol) due to re-",
+      "bbox": [
+        106.02,
+        454.96,
+        540.07,
+        466.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0032",
+      "text": "ceiving an ACK with the Abort Sequence bits (5-4) set to 01b, the Sequence Initiator shall re-try",
+      "bbox": [
+        122.4,
+        466.96,
+        539.96,
+        478.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0033",
+      "text": "the Sequence after the Basic Accept (see FC-FS-2) is received for the aborted Sequence one",
+      "bbox": [
+        122.4,
+        478.96,
+        540.02,
+        490.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0034",
+      "text": "time only.",
+      "bbox": [
+        122.4,
+        490.96,
+        165.11,
+        502.08
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0035",
+      "text": "R_CTL bits 31-28 (Word 0) are set = to 0011b to indicate a FC-4 Link_Data frame.  The TYPE field",
+      "bbox": [
+        96.0,
+        514.96,
+        539.94,
+        526.07
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0036",
+      "text": "for each FC-4 Link Service frame shall match the FC-4 Device_Data TYPE field as specified in FC-",
+      "bbox": [
+        96.0,
+        526.96,
+        540.0,
+        538.07
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p151_s0037",
+      "text": "FS-2.",
+      "bbox": [
+        96.0,
+        538.96,
+        120.43,
+        550.07
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

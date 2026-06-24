@@ -1,0 +1,10 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Word 1, bits 25-24", "page": 188, "bbox": [114.64, 363.64, 234.03, 385.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Meaning", "page": 188, "bbox": [234.03, 363.64, 521.36, 385.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00b", "page": 188, "bbox": [114.64, 385.32, 234.03, 407.37]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "1 Category/Sequence", "page": 188, "bbox": [234.03, 385.32, 521.36, 407.37]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "01b", "page": 188, "bbox": [114.64, 407.37, 234.03, 429.39]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "2 Categories/Sequence", "page": 188, "bbox": [234.03, 407.37, 521.36, 429.39]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "10b", "page": 188, "bbox": [114.64, 429.39, 234.03, 451.35]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Reserved", "page": 188, "bbox": [234.03, 429.39, 521.36, 451.35]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "11b", "page": 188, "bbox": [114.64, 451.35, 234.03, 473.04]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "More than 2 Categories/Sequence", "page": 188, "bbox": [234.03, 451.35, 521.36, 473.04]}

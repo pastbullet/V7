@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0171",
+  "type": "table",
+  "caption": "Table 159 – Intermix Mode Support",
+  "pages": [
+    180
+  ],
+  "bbox": [
+    95.14,
+    519.84,
+    540.86,
+    603.84
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 180,
+  "logical_table": false
+}

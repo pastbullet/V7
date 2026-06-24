@@ -1,0 +1,556 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 185,
+  "spans": [
+    {
+      "span_id": "p185_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0002",
+      "text": " 166",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0003",
+      "text": "6.6.5.5  Initiator control",
+      "bbox": [
+        96.0,
+        57.65,
+        205.41,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0004",
+      "text": "6.6.5.5.1  Introduction",
+      "bbox": [
+        96.0,
+        82.97,
+        198.76,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0005",
+      "text": "The Initiator Control Flags shall specify which protocols, policies or functions the Sequence Initiator",
+      "bbox": [
+        96.0,
+        106.97,
+        539.93,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0006",
+      "text": "function in the Nx_Port supplying the Service Parameters requests of the recipient or is capable of as",
+      "bbox": [
+        96.0,
+        118.97,
+        540.06,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0007",
+      "text": "a Sequence initiator.",
+      "bbox": [
+        96.0,
+        130.97,
+        187.1,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0008",
+      "text": "6.6.5.5.2  Initial Process_Associator",
+      "bbox": [
+        96.0,
+        154.96,
+        265.39,
+        166.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0009",
+      "text": "The definition of the Initial Process_Associator bits (word 0, bits 13-12) is shown in table 166.",
+      "bbox": [
+        96.0,
+        178.96,
+        507.04,
+        190.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0010",
+      "text": "Initial Process_Associator required indicates that the Nx_Port supplying this parameter requires an",
+      "bbox": [
+        96.0,
+        346.96,
+        539.88,
+        358.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0011",
+      "text": "Association_Header at certain Sequence boundaries (see FC-FS-2) that contains a specific initial",
+      "bbox": [
+        96.0,
+        358.96,
+        539.95,
+        370.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0012",
+      "text": "value in the Process_Associator field.  An Nx_Port that supports Initial Process_Associator shall sup-",
+      "bbox": [
+        96.0,
+        370.96,
+        540.01,
+        382.08
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0013",
+      "text": "ply an Association_Header with an initial Responder Process_Associator value at certain Sequence",
+      "bbox": [
+        96.0,
+        382.96,
+        539.98,
+        394.08
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0014",
+      "text": "boundaries, such as when it originates an Exchange.  If an Initial Process_Associator is required or",
+      "bbox": [
+        96.0,
+        394.96,
+        539.97,
+        406.08
+      ],
+      "block_index": 8,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0015",
+      "text": "supported, then X_ID interlock also is required in Class 1 and 2.",
+      "bbox": [
+        96.0,
+        406.96,
+        378.19,
+        418.08
+      ],
+      "block_index": 8,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0016",
+      "text": "If the Responder Nx_Port to the PLOGI request requires an Initial Process_Associator and the Origi-",
+      "bbox": [
+        96.0,
+        430.96,
+        540.11,
+        442.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0017",
+      "text": "nator of the PLOGI request does not support an Initial Process_Associator, the Responder shall",
+      "bbox": [
+        96.0,
+        442.96,
+        539.98,
+        454.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0018",
+      "text": "transmit an LS_RJT indicating the Initiator Control bits are in conflict.  If the Responder Nx_Port to",
+      "bbox": [
+        96.0,
+        454.96,
+        539.91,
+        466.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0019",
+      "text": "the PLOGI request does not support an Initial Process_Associator and the Originator of the PLOGI",
+      "bbox": [
+        96.0,
+        466.96,
+        539.96,
+        478.08
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0020",
+      "text": "request has indicated that Initial Process_Associator is required, the Responder shall transmit an",
+      "bbox": [
+        96.0,
+        478.96,
+        539.92,
+        490.08
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0021",
+      "text": "LS_RJT indicating the Initiator Control bits are in conflict.  In either of these cases, the Nx_Ports are",
+      "bbox": [
+        96.0,
+        490.96,
+        540.02,
+        502.08
+      ],
+      "block_index": 9,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0022",
+      "text": "unable to communicate.",
+      "bbox": [
+        96.0,
+        502.96,
+        202.07,
+        514.08
+      ],
+      "block_index": 9,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0023",
+      "text": "These bits only have meaning for PLOGI and PLOGI LS_ACC.",
+      "bbox": [
+        96.0,
+        526.96,
+        373.77,
+        538.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0024",
+      "text": "6.6.5.5.3  ACK_0 capability",
+      "bbox": [
+        96.0,
+        550.96,
+        221.98,
+        562.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0025",
+      "text": "0 = ACK_0 incapable",
+      "bbox": [
+        96.0,
+        574.96,
+        190.15,
+        586.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0026",
+      "text": "1 = ACK_0 capable",
+      "bbox": [
+        96.0,
+        586.96,
+        182.33,
+        598.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0027",
+      "text": "The ACK_0 capability bit (word 0, bit 11) specifies if the Nx_Port supplying these Class Service Pa-",
+      "bbox": [
+        96.0,
+        610.96,
+        540.01,
+        622.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0028",
+      "text": "rameters is capable of support for ACK_0 as a Sequence Initiator for acknowledgement of an entire",
+      "bbox": [
+        96.0,
+        622.96,
+        539.95,
+        634.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0029",
+      "text": "Sequence in either Discard or Process Exchange Error Policies.  As a Sequence Initiator an Nx_Port",
+      "bbox": [
+        96.0,
+        634.96,
+        540.01,
+        646.08
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0030",
+      "text": "receives and processes ACK frames in response to Data frame transmission.  ACK_0 support is ap-",
+      "bbox": [
+        96.0,
+        647.02,
+        540.03,
+        658.14
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0031",
+      "text": "plicable to acknowledged class of service Sequences (see FC-FC-2).",
+      "bbox": [
+        96.0,
+        659.02,
+        401.47,
+        670.13
+      ],
+      "block_index": 13,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0032",
+      "text": " Table 166 – Initial Process_Associator Bits Definition",
+      "bbox": [
+        190.5,
+        200.98,
+        445.6,
+        212.09
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0033",
+      "text": "Word 0, bits 13-12",
+      "bbox": [
+        131.22,
+        223.0,
+        216.76,
+        234.11
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0034",
+      "text": "Meaning",
+      "bbox": [
+        357.74,
+        223.0,
+        398.26,
+        234.11
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0035",
+      "text": "00b",
+      "bbox": [
+        115.98,
+        244.96,
+        132.6,
+        256.07
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0036",
+      "text": "Initial Process_Associator not supported",
+      "bbox": [
+        235.96,
+        244.96,
+        414.37,
+        256.07
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0037",
+      "text": "01b",
+      "bbox": [
+        115.98,
+        266.98,
+        132.6,
+        278.09
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0038",
+      "text": "Initial Process_Associator supported",
+      "bbox": [
+        235.96,
+        266.98,
+        397.66,
+        278.09
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0039",
+      "text": "10b",
+      "bbox": [
+        115.98,
+        289.0,
+        132.6,
+        300.11
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0040",
+      "text": "Reserved",
+      "bbox": [
+        235.96,
+        289.0,
+        278.7,
+        300.11
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0041",
+      "text": "11b",
+      "bbox": [
+        115.98,
+        310.96,
+        132.6,
+        322.07
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p185_s0042",
+      "text": "Initial Process_Associator required (and supported)",
+      "bbox": [
+        235.96,
+        310.96,
+        463.2,
+        322.07
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0178"
+  ]
+}

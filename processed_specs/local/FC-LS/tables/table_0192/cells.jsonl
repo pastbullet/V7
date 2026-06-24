@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Requesting Nx_Port", "page": 203, "bbox": [101.14, 315.33, 213.09, 331.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "F_Port Configuration", "page": 203, "bbox": [213.09, 315.33, 357.15, 331.32]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Behavior", "page": 203, "bbox": [357.15, 315.33, 534.87, 331.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "Virtual Fabrics Bit = 0b", "page": 203, "bbox": [101.14, 331.32, 213.09, 347.37]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Virtual Fabrics Not Allowed", "page": 203, "bbox": [213.09, 331.32, 357.15, 347.37]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "LS_ACC with Virtual Fabrics Bit = 0b", "page": 203, "bbox": [357.15, 331.32, 534.87, 347.37]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "Virtual Fabrics Bit = 1b", "page": 203, "bbox": [101.14, 347.37, 213.09, 363.39]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Virtual Fabrics Not Allowed", "page": 203, "bbox": [213.09, 347.37, 357.15, 363.39]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "LS_ACC with Virtual Fabrics Bit = 0b", "page": 203, "bbox": [357.15, 347.37, 534.87, 363.39]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "Virtual Fabrics Bit = 0b", "page": 203, "bbox": [101.14, 363.39, 213.09, 379.35]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Virtual Fabrics Allowed", "page": 203, "bbox": [213.09, 363.39, 357.15, 379.35]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "LS_ACC with Virtual Fabrics Bit = 0b", "page": 203, "bbox": [357.15, 363.39, 534.87, 379.35]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "Virtual Fabrics Bit = 1b", "page": 203, "bbox": [101.14, 379.35, 213.09, 395.35]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Virtual Fabrics Allowed", "page": 203, "bbox": [213.09, 379.35, 357.15, 395.35]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "LS_ACC with Virtual Fabrics Bit = 1b", "page": 203, "bbox": [357.15, 379.35, 534.87, 395.35]}

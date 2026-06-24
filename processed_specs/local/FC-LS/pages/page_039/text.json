@@ -1,0 +1,1401 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 39,
+  "spans": [
+    {
+      "span_id": "p039_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0002",
+      "text": " 20",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0003",
+      "text": "60h",
+      "bbox": [
+        116.7,
+        127.67,
+        133.33,
+        138.78
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0004",
+      "text": "Fabric Address Notification",
+      "bbox": [
+        156.18,
+        126.65,
+        275.63,
+        137.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0005",
+      "text": "FAN",
+      "bbox": [
+        368.67,
+        126.65,
+        388.63,
+        137.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0006",
+      "text": "4.2.15",
+      "bbox": [
+        438.49,
+        126.65,
+        466.23,
+        137.76
+      ],
+      "block_index": 3,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0007",
+      "text": "No",
+      "bbox": [
+        490.33,
+        126.65,
+        503.07,
+        137.76
+      ],
+      "block_index": 3,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0008",
+      "text": "61h",
+      "bbox": [
+        116.7,
+        151.67,
+        133.34,
+        162.78
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0009",
+      "text": "Registered State Change Notification",
+      "bbox": [
+        156.18,
+        150.65,
+        320.61,
+        161.76
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0010",
+      "text": "RSCN",
+      "bbox": [
+        368.65,
+        150.65,
+        396.97,
+        161.76
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0011",
+      "text": "4.2.18",
+      "bbox": [
+        438.49,
+        150.65,
+        466.25,
+        161.76
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0012",
+      "text": "No",
+      "bbox": [
+        490.35,
+        150.65,
+        503.09,
+        161.76
+      ],
+      "block_index": 4,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0013",
+      "text": "62h",
+      "bbox": [
+        116.7,
+        175.67,
+        133.34,
+        186.78
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0014",
+      "text": "State Change Registration",
+      "bbox": [
+        156.18,
+        174.65,
+        273.44,
+        185.76
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0015",
+      "text": "SCR",
+      "bbox": [
+        368.7,
+        174.65,
+        389.78,
+        185.76
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0016",
+      "text": "4.2.19",
+      "bbox": [
+        438.51,
+        174.65,
+        466.3,
+        185.76
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0017",
+      "text": "No",
+      "bbox": [
+        490.4,
+        174.65,
+        503.14,
+        185.76
+      ],
+      "block_index": 5,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0018",
+      "text": "63h",
+      "bbox": [
+        116.7,
+        199.67,
+        133.34,
+        210.78
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0019",
+      "text": "Report node FC-4 Types",
+      "bbox": [
+        156.18,
+        198.65,
+        266.11,
+        209.76
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0020",
+      "text": "RNFT",
+      "bbox": [
+        368.6,
+        198.65,
+        395.22,
+        209.76
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0021",
+      "text": "4.2.38",
+      "bbox": [
+        438.39,
+        198.65,
+        466.18,
+        209.76
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0022",
+      "text": "Yes",
+      "bbox": [
+        490.28,
+        198.65,
+        507.44,
+        209.76
+      ],
+      "block_index": 6,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0023",
+      "text": "68h",
+      "bbox": [
+        116.7,
+        223.67,
+        133.34,
+        234.78
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0024",
+      "text": "Clock Synchronization Request",
+      "bbox": [
+        156.18,
+        222.65,
+        295.09,
+        233.76
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0025",
+      "text": "CSR",
+      "bbox": [
+        368.7,
+        222.65,
+        389.76,
+        233.76
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0026",
+      "text": "4.2.35",
+      "bbox": [
+        438.49,
+        222.65,
+        466.23,
+        233.76
+      ],
+      "block_index": 7,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0027",
+      "text": "No",
+      "bbox": [
+        490.33,
+        222.65,
+        503.08,
+        233.76
+      ],
+      "block_index": 7,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0028",
+      "text": "69h",
+      "bbox": [
+        116.7,
+        247.67,
+        133.34,
+        258.78
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0029",
+      "text": "Clock Synchronization Update",
+      "bbox": [
+        156.18,
+        246.65,
+        290.08,
+        257.76
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0030",
+      "text": "CSU",
+      "bbox": [
+        368.66,
+        246.65,
+        389.74,
+        257.76
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0031",
+      "text": "4.2.36",
+      "bbox": [
+        438.47,
+        246.65,
+        466.24,
+        257.76
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0032",
+      "text": "No",
+      "bbox": [
+        490.34,
+        246.65,
+        503.08,
+        257.76
+      ],
+      "block_index": 8,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0033",
+      "text": "70h",
+      "bbox": [
+        116.7,
+        271.67,
+        133.34,
+        282.78
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0034",
+      "text": "Loop Initialize",
+      "bbox": [
+        156.18,
+        270.65,
+        217.34,
+        281.76
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0035",
+      "text": "LINIT",
+      "bbox": [
+        368.7,
+        270.65,
+        393.14,
+        281.76
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0036",
+      "text": "4.2.16",
+      "bbox": [
+        438.54,
+        270.65,
+        466.3,
+        281.76
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0037",
+      "text": "No",
+      "bbox": [
+        490.41,
+        270.65,
+        503.15,
+        281.76
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0038",
+      "text": "71h",
+      "bbox": [
+        116.7,
+        295.67,
+        133.34,
+        306.78
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0039",
+      "text": "Loop Port Control - obsolete",
+      "bbox": [
+        156.18,
+        294.65,
+        281.21,
+        305.76
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0040",
+      "text": "LPC",
+      "bbox": [
+        368.67,
+        294.65,
+        388.07,
+        305.76
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0041",
+      "text": "N/A",
+      "bbox": [
+        438.48,
+        294.65,
+        455.11,
+        305.76
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0042",
+      "text": "No",
+      "bbox": [
+        490.34,
+        294.65,
+        503.09,
+        305.76
+      ],
+      "block_index": 10,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0043",
+      "text": "72h",
+      "bbox": [
+        116.7,
+        319.67,
+        133.34,
+        330.78
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0044",
+      "text": "Loop Status",
+      "bbox": [
+        156.18,
+        318.65,
+        209.56,
+        329.76
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0045",
+      "text": "LSTS",
+      "bbox": [
+        368.68,
+        318.65,
+        393.67,
+        329.76
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0046",
+      "text": "4.2.17",
+      "bbox": [
+        438.51,
+        318.65,
+        466.26,
+        329.76
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0047",
+      "text": "No",
+      "bbox": [
+        490.36,
+        318.65,
+        503.12,
+        329.76
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0048",
+      "text": "77h",
+      "bbox": [
+        116.7,
+        343.67,
+        133.34,
+        354.78
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0049",
+      "text": "Vendor Specific",
+      "bbox": [
+        156.18,
+        342.65,
+        226.09,
+        353.76
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0050",
+      "text": "N/A",
+      "bbox": [
+        490.27,
+        342.65,
+        506.91,
+        353.76
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0051",
+      "text": "78h",
+      "bbox": [
+        116.7,
+        367.66,
+        133.34,
+        378.78
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0052",
+      "text": "Request node Identification Data",
+      "bbox": [
+        156.18,
+        366.64,
+        301.1,
+        377.76
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0053",
+      "text": "RNID",
+      "bbox": [
+        368.58,
+        366.64,
+        392.99,
+        377.76
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0054",
+      "text": "4.2.23",
+      "bbox": [
+        438.42,
+        366.64,
+        466.15,
+        377.76
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0055",
+      "text": "No",
+      "bbox": [
+        490.25,
+        366.64,
+        503.0,
+        377.76
+      ],
+      "block_index": 13,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0056",
+      "text": "79h",
+      "bbox": [
+        116.7,
+        391.66,
+        133.34,
+        402.78
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0057",
+      "text": "Registered Link Incident Report",
+      "bbox": [
+        156.18,
+        390.64,
+        296.19,
+        401.76
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0058",
+      "text": "RLIR",
+      "bbox": [
+        368.67,
+        390.64,
+        391.43,
+        401.76
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0059",
+      "text": "4.2.24",
+      "bbox": [
+        438.54,
+        390.64,
+        466.28,
+        401.76
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0060",
+      "text": "Yes",
+      "bbox": [
+        490.38,
+        390.64,
+        507.55,
+        401.76
+      ],
+      "block_index": 14,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0061",
+      "text": "7Ah",
+      "bbox": [
+        116.16,
+        415.66,
+        133.94,
+        426.78
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0062",
+      "text": "Link Incident Record Registration",
+      "bbox": [
+        156.18,
+        414.65,
+        303.4,
+        425.76
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0063",
+      "text": "LIRR",
+      "bbox": [
+        368.66,
+        414.65,
+        391.42,
+        425.76
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0064",
+      "text": "4.2.25",
+      "bbox": [
+        438.53,
+        414.65,
+        466.27,
+        425.76
+      ],
+      "block_index": 15,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0065",
+      "text": "Yes",
+      "bbox": [
+        490.37,
+        414.65,
+        507.53,
+        425.76
+      ],
+      "block_index": 15,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0066",
+      "text": "7Bh",
+      "bbox": [
+        116.16,
+        439.66,
+        133.94,
+        450.78
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0067",
+      "text": "Scan Remote Loop",
+      "bbox": [
+        156.18,
+        438.64,
+        241.71,
+        449.76
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0068",
+      "text": "SRL",
+      "bbox": [
+        368.65,
+        438.64,
+        388.07,
+        449.76
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0069",
+      "text": "4.2.39",
+      "bbox": [
+        438.45,
+        438.64,
+        466.22,
+        449.76
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0070",
+      "text": "Yes",
+      "bbox": [
+        490.32,
+        438.64,
+        507.49,
+        449.76
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0071",
+      "text": "7Ch",
+      "bbox": [
+        115.86,
+        463.67,
+        134.18,
+        474.78
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0072",
+      "text": "Set Bit-error Reporting Parameters",
+      "bbox": [
+        156.18,
+        462.65,
+        310.56,
+        473.76
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0073",
+      "text": "SBRP",
+      "bbox": [
+        368.64,
+        462.65,
+        395.85,
+        473.76
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0074",
+      "text": "4.2.40",
+      "bbox": [
+        438.46,
+        462.65,
+        466.24,
+        473.76
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0075",
+      "text": "Yes",
+      "bbox": [
+        490.35,
+        462.65,
+        507.5,
+        473.76
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0076",
+      "text": "7Dh",
+      "bbox": [
+        115.86,
+        487.66,
+        134.18,
+        498.78
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0077",
+      "text": "Report Port Speed Capabilities",
+      "bbox": [
+        156.18,
+        486.64,
+        293.36,
+        497.76
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0078",
+      "text": "RPSC",
+      "bbox": [
+        368.6,
+        486.64,
+        396.37,
+        497.76
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0079",
+      "text": "4.2.41",
+      "bbox": [
+        438.43,
+        486.64,
+        466.14,
+        497.76
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0080",
+      "text": "Yes",
+      "bbox": [
+        490.24,
+        486.64,
+        507.43,
+        497.76
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0081",
+      "text": "7Eh",
+      "bbox": [
+        116.16,
+        511.66,
+        133.94,
+        522.78
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0082",
+      "text": "Query Security Attributes",
+      "bbox": [
+        156.18,
+        510.64,
+        267.2,
+        521.76
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0083",
+      "text": "QSA",
+      "bbox": [
+        368.6,
+        510.64,
+        389.71,
+        521.76
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0084",
+      "text": "see FC-SP see FC-SP",
+      "bbox": [
+        438.44,
+        510.64,
+        539.13,
+        521.76
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0085",
+      "text": "7Fh",
+      "bbox": [
+        116.4,
+        535.66,
+        133.64,
+        546.78
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0086",
+      "text": "Exchange Virtual Fabrics Parameters",
+      "bbox": [
+        156.18,
+        534.64,
+        321.65,
+        545.76
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0087",
+      "text": "EVFP",
+      "bbox": [
+        368.63,
+        534.64,
+        394.72,
+        545.76
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0088",
+      "text": "4.2.43",
+      "bbox": [
+        438.48,
+        534.64,
+        466.25,
+        545.76
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0089",
+      "text": "N/A",
+      "bbox": [
+        490.35,
+        534.64,
+        506.99,
+        545.76
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0090",
+      "text": "80h",
+      "bbox": [
+        116.7,
+        559.66,
+        133.34,
+        570.78
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0091",
+      "text": "Link Keep Alive",
+      "bbox": [
+        156.18,
+        558.64,
+        225.0,
+        569.76
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0092",
+      "text": "LKA",
+      "bbox": [
+        368.62,
+        558.64,
+        387.49,
+        569.76
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0093",
+      "text": "4.2.44",
+      "bbox": [
+        438.44,
+        558.64,
+        466.21,
+        569.76
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0094",
+      "text": "No",
+      "bbox": [
+        490.31,
+        558.64,
+        503.04,
+        569.76
+      ],
+      "block_index": 21,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0095",
+      "text": " Table 3 – ELS_Command codes (Continued)",
+      "bbox": [
+        211.62,
+        57.64,
+        424.4,
+        68.76
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0096",
+      "text": "Value",
+      "bbox": [
+        111.66,
+        91.66,
+        138.32,
+        102.78
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0097",
+      "text": "(Bits 31-24)",
+      "bbox": [
+        98.1,
+        103.66,
+        151.89,
+        114.78
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0098",
+      "text": "Description",
+      "bbox": [
+        232.87,
+        103.66,
+        287.96,
+        114.78
+      ],
+      "block_index": 23,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0099",
+      "text": "Abbr.",
+      "bbox": [
+        388.55,
+        103.66,
+        414.67,
+        114.78
+      ],
+      "block_index": 23,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0100",
+      "text": "Reference",
+      "bbox": [
+        438.3,
+        103.66,
+        486.54,
+        114.78
+      ],
+      "block_index": 23,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0101",
+      "text": "N_Port ",
+      "bbox": [
+        497.82,
+        79.66,
+        533.36,
+        90.78
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0102",
+      "text": "Login ",
+      "bbox": [
+        500.64,
+        91.66,
+        530.61,
+        102.78
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0103",
+      "text": "Required",
+      "bbox": [
+        492.54,
+        103.66,
+        535.85,
+        114.78
+      ],
+      "block_index": 24,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0104",
+      "text": "a",
+      "bbox": [
+        104.04,
+        582.26,
+        108.04,
+        590.3
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0105",
+      "text": " Some early implementations of FCP-2 may have used the value 14h for SRR (Sequence Retransmission ",
+      "bbox": [
+        108.04,
+        580.64,
+        533.68,
+        594.28
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p039_s0106",
+      "text": "Request). This code is permanently reserved in this standard to avoid conflicts with such implementations. ",
+      "bbox": [
+        114.84,
+        595.28,
+        538.48,
+        605.32
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p039_s0107",
+      "text": "See FCP-3 for the standard implementation of SRR as an FC-4 Link Service.",
+      "bbox": [
+        114.84,
+        606.26,
+        420.32,
+        616.3
+      ],
+      "block_index": 25,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0003"
+  ]
+}

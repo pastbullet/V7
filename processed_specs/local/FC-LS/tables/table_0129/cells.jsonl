@@ -1,0 +1,12 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Value", "page": 134, "bbox": [109.93, 97.99, 183.27, 117.99]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Notation", "page": 134, "bbox": [183.27, 97.99, 244.77, 117.99]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Description", "page": 134, "bbox": [244.77, 97.99, 526.09, 117.99]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0000 0001h", "page": 134, "bbox": [109.93, 117.99, 183.27, 140.01]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "OFF", "page": 134, "bbox": [183.27, 117.99, 244.77, 140.01]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "The FC_Port shall not perform VFT Tagging", "page": 134, "bbox": [244.77, 117.99, 526.09, 140.01]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "0000 0002h", "page": 134, "bbox": [109.93, 140.01, 183.27, 172.05]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "ON", "page": 134, "bbox": [183.27, 140.01, 244.77, 172.05]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "The FC_Port may perform VFT Tagging if the peer does not\nprohibit it", "page": 134, "bbox": [244.77, 140.01, 526.09, 172.05]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "0000 0003h", "page": 134, "bbox": [109.93, 172.05, 183.27, 194.01]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "AUTO", "page": 134, "bbox": [183.27, 172.05, 244.77, 194.01]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "The FC_Port may perform VFT Tagging if the peer request it", "page": 134, "bbox": [244.77, 172.05, 526.09, 194.01]}

@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0037",
+  "type": "table",
+  "caption": "Table 34 – RSCN Payload",
+  "pages": [
+    66
+  ],
+  "bbox": [
+    99.94,
+    435.99,
+    536.06,
+    532.32
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 66,
+  "logical_table": false
+}

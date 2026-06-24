@@ -1,0 +1,974 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 179,
+  "spans": [
+    {
+      "span_id": "p179_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0002",
+      "text": " 160",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0003",
+      "text": "6.6.5.2  Payload",
+      "bbox": [
+        96.0,
+        57.65,
+        170.43,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0004",
+      "text": "The Payload Class Service Parameters using FLOGI is shown in table 156.",
+      "bbox": [
+        96.0,
+        82.97,
+        428.71,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0005",
+      "text": "The Payload Service Parameters using PLOGI and PLOGI LS_ACC is shown in table 157.",
+      "bbox": [
+        96.0,
+        262.97,
+        495.93,
+        274.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0006",
+      "text": "The Payload Parameters using FLOGI LS_ACC is shown in table 158.",
+      "bbox": [
+        96.0,
+        442.97,
+        406.5,
+        454.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0007",
+      "text": "6.6.5.3  Class validity",
+      "bbox": [
+        96.0,
+        598.97,
+        195.97,
+        610.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0008",
+      "text": "0 = Invalid - Class not supported",
+      "bbox": [
+        96.0,
+        622.97,
+        239.55,
+        634.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0009",
+      "text": "1 = Valid - Class supported",
+      "bbox": [
+        96.0,
+        635.03,
+        216.2,
+        646.14
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0010",
+      "text": "The Class validity bit (word 0, bit 31) shall indicate whether this Class is supported or not.  If the",
+      "bbox": [
+        96.0,
+        659.03,
+        539.9,
+        670.14
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0011",
+      "text": "Class validity bit is set to zero, this set of sixteen bytes shall be ignored.  If the Class validity bit is",
+      "bbox": [
+        96.0,
+        671.03,
+        540.03,
+        682.14
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0012",
+      "text": "one, this Class shall be supported.",
+      "bbox": [
+        96.0,
+        683.03,
+        248.78,
+        694.14
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0013",
+      "text": " Table 156 – Class Service Parameters - FLOGI",
+      "bbox": [
+        207.42,
+        104.99,
+        428.58,
+        116.1
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0014",
+      "text": "Bits",
+      "bbox": [
+        107.88,
+        126.95,
+        126.76,
+        138.06
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0015",
+      "text": "Word",
+      "bbox": [
+        104.52,
+        138.95,
+        130.05,
+        150.06
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0016",
+      "text": "31        ..         24",
+      "bbox": [
+        152.76,
+        126.95,
+        227.71,
+        138.06
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0017",
+      "text": "23        ..       16",
+      "bbox": [
+        252.77,
+        126.95,
+        322.2,
+        138.06
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0018",
+      "text": "15   ..   12",
+      "bbox": [
+        342.34,
+        126.95,
+        386.75,
+        138.06
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0019",
+      "text": "11   ..   08",
+      "bbox": [
+        397.05,
+        126.95,
+        441.44,
+        138.06
+      ],
+      "block_index": 11,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0020",
+      "text": "07        ..       00",
+      "bbox": [
+        459.48,
+        126.95,
+        528.91,
+        138.06
+      ],
+      "block_index": 11,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0021",
+      "text": "0",
+      "bbox": [
+        114.54,
+        155.99,
+        120.08,
+        167.1
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0022",
+      "text": "Service Options",
+      "bbox": [
+        143.64,
+        155.99,
+        214.11,
+        167.1
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0023",
+      "text": "Initiator Control",
+      "bbox": [
+        338.19,
+        155.99,
+        406.01,
+        167.1
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0024",
+      "text": "1",
+      "bbox": [
+        114.54,
+        172.97,
+        120.08,
+        184.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0025",
+      "text": "Recipient Control",
+      "bbox": [
+        143.64,
+        172.97,
+        220.27,
+        184.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0026",
+      "text": "Reserved",
+      "bbox": [
+        338.18,
+        172.97,
+        380.99,
+        184.08
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0027",
+      "text": "2",
+      "bbox": [
+        114.54,
+        196.01,
+        120.08,
+        207.12
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0028",
+      "text": "Reserved",
+      "bbox": [
+        143.64,
+        196.01,
+        186.33,
+        207.12
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0029",
+      "text": "Total Concurrent ",
+      "bbox": [
+        240.96,
+        190.01,
+        318.16,
+        201.12
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0030",
+      "text": "Sequences",
+      "bbox": [
+        240.96,
+        202.01,
+        290.94,
+        213.12
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0031",
+      "text": "Nx_Port End-to-end Credit",
+      "bbox": [
+        338.22,
+        196.01,
+        456.08,
+        207.12
+      ],
+      "block_index": 14,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0032",
+      "text": "3",
+      "bbox": [
+        114.54,
+        224.99,
+        120.08,
+        236.1
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0033",
+      "text": "Reserved",
+      "bbox": [
+        143.64,
+        224.99,
+        186.33,
+        236.1
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0034",
+      "text": "Open Sequences per ",
+      "bbox": [
+        240.96,
+        218.99,
+        336.22,
+        230.1
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0035",
+      "text": "Exchange",
+      "bbox": [
+        240.96,
+        230.99,
+        285.4,
+        242.1
+      ],
+      "block_index": 15,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0036",
+      "text": "Reserved",
+      "bbox": [
+        338.22,
+        224.99,
+        381.01,
+        236.1
+      ],
+      "block_index": 15,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0037",
+      "text": " Table 157 – Class Service Parameters - PLOGI and PLOGI LS_ACC",
+      "bbox": [
+        158.58,
+        284.99,
+        477.38,
+        296.1
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0038",
+      "text": "Bits",
+      "bbox": [
+        107.88,
+        307.01,
+        126.76,
+        318.12
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0039",
+      "text": "Word",
+      "bbox": [
+        104.52,
+        319.01,
+        130.05,
+        330.12
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0040",
+      "text": "31        ..         24",
+      "bbox": [
+        152.76,
+        307.01,
+        227.81,
+        318.12
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0041",
+      "text": "23        ..       16",
+      "bbox": [
+        252.87,
+        307.01,
+        322.29,
+        318.12
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0042",
+      "text": "15                                  ..                                00",
+      "bbox": [
+        337.27,
+        307.01,
+        542.09,
+        318.12
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0043",
+      "text": "0",
+      "bbox": [
+        114.54,
+        335.98,
+        120.08,
+        347.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0044",
+      "text": "Service Options",
+      "bbox": [
+        143.64,
+        335.98,
+        214.14,
+        347.1
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0045",
+      "text": "Initiator Control",
+      "bbox": [
+        338.22,
+        335.98,
+        406.0,
+        347.1
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0046",
+      "text": "1",
+      "bbox": [
+        114.54,
+        352.96,
+        120.08,
+        364.08
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0047",
+      "text": "Recipient Control",
+      "bbox": [
+        143.64,
+        352.96,
+        220.29,
+        364.08
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0048",
+      "text": "Reserved",
+      "bbox": [
+        338.19,
+        352.96,
+        381.0,
+        364.08
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0049",
+      "text": "Receive Data Field Size",
+      "bbox": [
+        394.97,
+        352.96,
+        501.57,
+        364.08
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0050",
+      "text": "2",
+      "bbox": [
+        114.54,
+        376.01,
+        120.08,
+        387.12
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0051",
+      "text": "Reserved",
+      "bbox": [
+        143.64,
+        376.01,
+        186.33,
+        387.12
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0052",
+      "text": "Total Concurrent ",
+      "bbox": [
+        240.96,
+        370.01,
+        318.16,
+        381.12
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0053",
+      "text": "Sequences",
+      "bbox": [
+        240.96,
+        382.0,
+        290.94,
+        393.12
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0054",
+      "text": "Nx_Port End-to-end Credit",
+      "bbox": [
+        338.22,
+        376.01,
+        456.08,
+        387.12
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0055",
+      "text": "3",
+      "bbox": [
+        114.54,
+        404.98,
+        120.08,
+        416.1
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0056",
+      "text": "Reserved",
+      "bbox": [
+        143.64,
+        404.98,
+        186.34,
+        416.1
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0057",
+      "text": "Open Sequences per ",
+      "bbox": [
+        240.96,
+        398.98,
+        336.22,
+        410.1
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0058",
+      "text": "Exchange",
+      "bbox": [
+        240.96,
+        410.98,
+        285.41,
+        422.1
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0059",
+      "text": "Reserved",
+      "bbox": [
+        338.23,
+        398.98,
+        381.02,
+        410.1
+      ],
+      "block_index": 21,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0060",
+      "text": " Table 158 – Class Service Parameters - FLOGI LS_ACC",
+      "bbox": [
+        186.07,
+        464.98,
+        449.98,
+        476.1
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0061",
+      "text": "Bits",
+      "bbox": [
+        107.22,
+        487.0,
+        126.1,
+        498.12
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0062",
+      "text": "Word",
+      "bbox": [
+        103.87,
+        499.0,
+        129.39,
+        510.12
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0063",
+      "text": "31                          ..                                 16 15                               ..                                 00",
+      "bbox": [
+        142.8,
+        487.0,
+        542.74,
+        498.12
+      ],
+      "block_index": 23,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0064",
+      "text": "0",
+      "bbox": [
+        113.89,
+        515.98,
+        119.42,
+        527.1
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0065",
+      "text": "Service Options",
+      "bbox": [
+        143.04,
+        515.98,
+        213.72,
+        527.1
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0066",
+      "text": "Reserved",
+      "bbox": [
+        338.4,
+        515.98,
+        381.16,
+        527.1
+      ],
+      "block_index": 24,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0067",
+      "text": "1",
+      "bbox": [
+        113.89,
+        532.96,
+        119.42,
+        544.08
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0068",
+      "text": "Recipient Control",
+      "bbox": [
+        143.04,
+        532.96,
+        219.68,
+        544.08
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0069",
+      "text": "Reserved",
+      "bbox": [
+        338.24,
+        532.96,
+        381.05,
+        544.08
+      ],
+      "block_index": 25,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0070",
+      "text": "2",
+      "bbox": [
+        113.89,
+        550.0,
+        119.42,
+        561.12
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0071",
+      "text": "Reserved",
+      "bbox": [
+        143.04,
+        550.0,
+        185.8,
+        561.12
+      ],
+      "block_index": 26,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0072",
+      "text": "Reserved",
+      "bbox": [
+        338.3,
+        550.0,
+        381.04,
+        561.12
+      ],
+      "block_index": 26,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0073",
+      "text": "3",
+      "bbox": [
+        113.89,
+        566.98,
+        119.42,
+        578.1
+      ],
+      "block_index": 27,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p179_s0074",
+      "text": "CR_TOV",
+      "bbox": [
+        143.04,
+        566.98,
+        183.6,
+        578.1
+      ],
+      "block_index": 27,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0168",
+    "table_0169",
+    "table_0170"
+  ]
+}

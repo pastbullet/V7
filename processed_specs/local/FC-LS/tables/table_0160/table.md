@@ -1,0 +1,10 @@
+| PLOGI and FLOGI<br>PLOGI FLOGI LS_ACC<br>LS_ACC Parameter Parameter<br>Parameter applicability applicability<br>applicability<br>Default Class Class Class<br>Login<br>Service Parameter Word Bits Value 1a 2 3 1a 2 3 1a 2 3<br>BB_SC_N 1 15-12 0 y y y y y y y y y<br>Buffer-to-Buffer Receive Data Field 1 11-0 128 y y y y y y y y y<br>Size<br>Nx_Port Total Concurrent 2 31-16 1 y y y n n n n n n<br>Sequences<br>Relative offset by Info Category 2 15-0 0 y y y n n n n n n<br>R_A_TOV 2 31-0 10 000 n n n n n n y y y<br>E_D_TOV Value 3 31-0 2 000 yb yb yb n n n y y y<br>Legend:<br>"y" indicates yes, applicable (i.e., has meaning);<br>"n" indicates no, not applicable (i.e., has no meaning)<br>a The Class 1 Service Parameters shall be used for Class 6. Each has the same applicability as Class 1.<br>b E_D_TOV resolution and the corresponding value are only meaningful in a point-to-point topology or when<br>doing PLOGI with an NL_Port on the same loop.<br>c The Common Service Parameter applicability is specified in FC-SP.<br>d Default buffer-to-buffer credit = 1 for all ports but an L_Port, and Buffer-to-buffer credit=0 for an L_Port.<br>e N_Port/F_Port=0 for an N_Port, and N_Port/F_Port=1 for an F_Port.<br>f BB_Credit Management=0 for an N_Port or F_Port, BB_Credit_Management=1 for an L_Port | Word | Bits | Default<br>Login<br>Value | PLOGI and<br>PLOGI<br>LS_ACC<br>Parameter<br>applicability |  |  | FLOGI<br>Parameter<br>applicability |  |  | FLOGI<br>LS_ACC<br>Parameter<br>applicability |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  |  |  | Class |  |  | Class |  |  | Class |  |  |
+|  |  |  |  | 1a | 2 | 3 | 1a | 2 | 3 | 1a | 2 | 3 |
+|  | 1 | 15-12 | 0 | y | y | y | y | y | y | y | y | y |
+|  | 1 | 11-0 | 128 | y | y | y | y | y | y | y | y | y |
+|  | 2 | 31-16 | 1 | y | y | y | n | n | n | n | n | n |
+|  | 2 | 15-0 | 0 | y | y | y | n | n | n | n | n | n |
+|  | 2 | 31-0 | 10 000 | n | n | n | n | n | n | y | y | y |
+|  | 3 | 31-0 | 2 000 | yb | yb | yb | n | n | n | y | y | y |

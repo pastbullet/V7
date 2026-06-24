@@ -1,0 +1,12 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Value", "page": 130, "bbox": [159.49, 109.99, 232.83, 129.99]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Description", "page": 130, "bbox": [232.83, 109.99, 404.91, 129.99]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Reference", "page": 130, "bbox": [404.91, 109.99, 476.53, 129.99]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "01h", "page": 130, "bbox": [159.49, 129.99, 232.83, 152.01]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "EVFP_SYNC", "page": 130, "bbox": [232.83, 129.99, 404.91, 152.01]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "4.2.43.2", "page": 130, "bbox": [404.91, 129.99, 476.53, 152.01]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "02h", "page": 130, "bbox": [159.49, 152.01, 232.83, 174.03]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "EVFP_COMMIT", "page": 130, "bbox": [232.83, 152.01, 404.91, 174.03]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "4.2.43.3", "page": 130, "bbox": [404.91, 152.01, 476.53, 174.03]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "all others", "page": 130, "bbox": [159.49, 174.03, 232.83, 196.01]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Reserved", "page": 130, "bbox": [232.83, 174.03, 404.91, 196.01]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "", "page": 130, "bbox": [404.91, 174.03, 476.53, 196.01]}

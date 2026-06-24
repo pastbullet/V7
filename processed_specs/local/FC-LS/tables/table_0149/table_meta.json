@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0149",
+  "type": "table",
+  "caption": "Table 145 – FFI_RMU LS_ACC Payload",
+  "pages": [
+    145
+  ],
+  "bbox": [
+    99.3,
+    664.0,
+    536.7,
+    708.69
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 145,
+  "logical_table": false
+}

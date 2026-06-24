@@ -1,0 +1,53 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24\nByte 0",
+      "23 .. 16\nByte 1",
+      "15 .. 08\nByte 2",
+      "07 .. 00\nByte 3"
+    ],
+    [
+      "0",
+      "LS_ACC (02h)",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "OX_ID",
+      null,
+      "RX_ID",
+      null
+    ],
+    [
+      "2",
+      "Reserved",
+      "Originator Address Identifier",
+      null,
+      null
+    ],
+    [
+      "3",
+      "Reserved",
+      "Responder Address Identifier",
+      null,
+      null
+    ],
+    [
+      "4",
+      "FC4VALUE",
+      null,
+      null,
+      null
+    ],
+    [
+      "5",
+      "E_STAT",
+      null,
+      null,
+      null
+    ]
+  ]
+}

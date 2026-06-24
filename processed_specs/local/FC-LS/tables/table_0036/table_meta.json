@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0036",
+  "type": "table",
+  "caption": "Table 33 – Loop State",
+  "pages": [
+    64
+  ],
+  "bbox": [
+    175.55,
+    98.28,
+    460.45,
+    315.7
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 64,
+  "logical_table": false
+}

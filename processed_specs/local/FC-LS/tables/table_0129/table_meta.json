@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0129",
+  "type": "table",
+  "caption": "Table 125 – Administrative Tagging Modes",
+  "pages": [
+    134
+  ],
+  "bbox": [
+    109.93,
+    97.99,
+    526.09,
+    194.01
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 134,
+  "logical_table": false
+}

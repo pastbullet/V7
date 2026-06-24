@@ -1,0 +1,513 @@
+{
+  "doc_id": "FC-LS",
+  "accepted_count": 10,
+  "unresolved_count": 1,
+  "invalid_count": 1,
+  "accepted": [
+    {
+      "unit_id": "login-overview",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p152_s0007",
+          "quote": "The Login procedure is a method by which an Nx_Port establishes its operating environment with a"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p152_s0015",
+          "quote": "Login between an Nx_Port and the Fabric or between two Nx_Ports may use an explicit or implicit"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p152_s0019",
+          "quote": "Explicit Login is accomplished using a Login (FLOGI or PLOGI) ELS"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p152_s0021",
+          "quote": "gin Exchange.  The LS_ACC contains the Service Parameters of the Responder"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fabric-login-flogi",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0027",
+          "quote": "The explicit Fabric Login procedure shall require an Nx_Port to transmit a Fabric Login (FLOGI) Link"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p153_s0033",
+          "quote": "The Nx_Port shall transmit the FLOGI in a new Exchange."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p153_s0037",
+          "quote": "set the D_ID to the well-known F_Port address (i.e., FFFFFEh)."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0003",
+          "quote": "6.2.2.3  Responses to Explicit Fabric Login"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0025",
+          "quote": "6.2.2.5  Relogin with the Fabric"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p156_s0013",
+          "quote": "Fabric Login completion - Originator"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p156_s0027",
+          "quote": "Fabric Login completion - Responder"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fabric-login-response-branches",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0004",
+          "quote": "The following are possible responses the Nx_Port may receive when transmitting a FLOGI:"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0005",
+          "quote": "a) LS_ACC reply Sequence with OX_ID equal to the OX_ID of the FLOGI"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0016",
+          "quote": "b) LS_ACC reply Sequence with OX_ID equal to the OX_ID of the FLOGI"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0025",
+          "quote": "F_BSY with OX_ID equal to the OX_ID of the FLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0027",
+          "quote": "d) P_BSY Sequence with OX_ID equal to the OX_ID of the FLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0031",
+          "quote": "e) F_RJT Sequence with OX_ID equal to the OX_ID of the FLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0043",
+          "quote": "P_RJT Sequence, with OX_ID equal to the OX_ID of the FLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0003",
+          "quote": "g) LS_RJT Sequence with OX_ID equal to the OX_ID of the FLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0009",
+          "quote": "h) No Response may indicate a delivery error"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0013",
+          "quote": "If the received N_Port_Name is equal to its N_Port_Name"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "nport-login-response-branches",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p158_s0033",
+          "quote": "6.3.2.3  Responses to N_Port Login - Fabric present"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0036",
+          "quote": "a) LS_ACC reply Sequence with OX_ID equal to the OX_ID of the PLOGI"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0044",
+          "quote": "b) F_BSY with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0004",
+          "quote": "F_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0009",
+          "quote": "d) P_BSY Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0011",
+          "quote": "e) P_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0016",
+          "quote": "PLOGI Sequence.  The D_ID is the N_Port_ID of receiving Nx_Port."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0021",
+          "quote": "sends LS_RJT to the originating Nx_Port with reason code \"Command already in progress\"."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0003",
+          "quote": "6.3.2.5  Responses to N_Port Login - No Fabric present"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0025",
+          "quote": "e) PLOGI Sequence.  The D_ID is the address identifier of receiving Nx_Port."
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "process-login-prli",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p197_s0009",
+          "quote": "The Process Login (PRLI) ELS request shall be used to establish the operating environment between"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0016",
+          "quote": "A Process Login remains in effect until a process logout occurs."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0019",
+          "quote": "There are 2 types of Process Login:"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0023",
+          "quote": "b) Explicit Process Login is accomplished by using the PRLI ELS Sequence within a separate Ex-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p198_s0004",
+          "quote": "PRLI, if required, is performed after N_Port Login is successful and prior to other FC-4 transfers."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p198_s0014",
+          "quote": "An image pair may be established or modified with a PRLI request and LS_ACC reply Sequence set."
+        }
+      ],
+      "related_assets": [
+        {
+          "type": "figure",
+          "asset_id": "figure_0005"
+        },
+        {
+          "type": "table",
+          "asset_id": "table_0189"
+        }
+      ]
+    },
+    {
+      "unit_id": "process-login-image-pair-structure",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p197_s0025",
+          "quote": "A group of related processes is known as an image and is identified by the Process_Associator (see"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0026",
+          "quote": "figure 4).  The combination of the D_ID, Responder Process_Associator, S_ID and Originator"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0027",
+          "quote": "Process_Associator identify the image pair (see figure 5)."
+        }
+      ],
+      "related_assets": [
+        {
+          "type": "figure",
+          "asset_id": "figure_0005"
+        },
+        {
+          "type": "table",
+          "asset_id": "table_0189"
+        }
+      ]
+    },
+    {
+      "unit_id": "prli-error-retry-branches",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p199_s0003",
+          "quote": "The Nx_Port originating the PRLI request shall not consider the image pair to be established until it"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0008",
+          "quote": "If a link error is detected when a PRLI request is received"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0009",
+          "quote": "and the image pair is not established.  If the recipient Nx_Port is not logged in with the requesting"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0010",
+          "quote": "port it shall reply with a LOGO ELS Sequence, or with an LS_RJT ELS Sequence"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0013",
+          "quote": "existing image pair is unaffected.  If an LS_RJT, P_BSY, F_BSY, P_RJT, or F_RJT response is re-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0019",
+          "quote": "a PRLI request receives no valid response, the Nx_Port should retry the request."
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "prli-pa-modes",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p199_s0024",
+          "quote": "Process_Associator (PA) images may exist in the following relationships."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0026",
+          "quote": "7.1.2.2  PA not supported"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0031",
+          "quote": "7.1.2.3  PA required by originator, supported by responder"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p200_s0003",
+          "quote": "7.1.2.4  PA required by responder, supported by originator"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p200_s0016",
+          "quote": "7.1.2.5  PA required by originator and responder"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p200_s0029",
+          "quote": "7.1.3.1  Informative mode"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p200_s0032",
+          "quote": "7.1.3.2  Binding mode"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p200_s0040",
+          "quote": "Binding or Informative mode is determined by the setting of the Establish Image Pair bit in the PRLI"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "prli-page-protocol-rules",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p201_s0009",
+          "quote": "7.1.4.1  PA required by originator and responder"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p201_s0010",
+          "quote": "For each PRLI request page the Originator and Responder PA validity bits are set to one and valid"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p201_s0016",
+          "quote": "For each LS_ACC response page, the Originator and Responder PA validity bits are set to one and"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p201_s0022",
+          "quote": "7.1.4.2  PA required by originator, supported by responder"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p201_s0023",
+          "quote": "For each PRLI request page the Originator PA validity bit is set to one and the Responder PA validity"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p201_s0035",
+          "quote": "7.1.4.3  PA supported by originator, required by responder"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p201_s0036",
+          "quote": "For each PRLI request page, the Originator PA validity bit is set to zero and the Responder PA valid-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0003",
+          "quote": "Each page identifies a Binding mode PRLI operation between the Originator Nx_Port and one image"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "process-logout-prlo",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p202_s0007",
+          "quote": "The Process Logout (PRLO) ELS request shall be used to request invalidation of the operating envi-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0009",
+          "quote": "frees resources committed by a previous PRLI function."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0013",
+          "quote": "TYPE-specific Service Parameter settings may be reset or image pairs removed with a PRLO re-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0019",
+          "quote": "If a PRLO request is received for an image pair or FC-4 TYPE that does not exist, the request is ac-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0021",
+          "quote": "The Nx_Port originating the PRLO request shall not consider an image pair to be removed until it re-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0024",
+          "quote": "ate, until the LS_ACC reply Sequence is sent.  An Nx_Port that receives a P_BSY, F_BSY, P_RJT,"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0031",
+          "quote": "A PRLO page identifies a particular image pair to logout by marking either or both the Originator Pro-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0035",
+          "quote": "and properly terminated prior to issuing a PRLO request. Following PRLO execution, all active Se-"
+        }
+      ],
+      "related_assets": []
+    }
+  ],
+  "unresolved": [
+    {
+      "unit_id": "login-service-parameter-tables",
+      "title": "Login service-parameter applicability tables",
+      "kind": "other",
+      "reason": "The retrieved login procedures repeatedly reference tables 150 and 155 as defining applicability of service parameters to Fabric Login and N_Port Login, but those tables were not retrieved in this evidence pass, so their exact unit role cannot be confirmed here.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0035",
+          "quote": "The Service Parameters are as specified for F_Port Login in 6.6.  The applicability of the Service Pa-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p153_s0036",
+          "quote": "rameters to Fabric Login are given in tables 150 and 155."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0026",
+          "quote": "quence.  The N_Port Service Parameters are as specified  in 6.6.  The applicability of the Service Pa-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0027",
+          "quote": "rameters to N_Port Login are given in tables 150 and 155."
+        }
+      ],
+      "related_assets": []
+    }
+  ],
+  "invalid": [
+    {
+      "unit_id": "nport-login-plogi",
+      "title": "Nx_Port-to-Nx_Port login procedure using PLOGI",
+      "kind": "procedure",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p158_s0006",
+          "quote": "The explicit N_Port Login procedure shall require an Nx_Port to transmit a PLOGI Link request Se-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0008",
+          "quote": "Explicit N_Port Login replaces previous Service Parameters."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0014",
+          "quote": "During the N_Port Login procedure, other communication with the destination Nx_Port shall not be initiated or accepted."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0021",
+          "quote": "6.3.2.2  N_Port Login - Fabric present"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0034",
+          "quote": "6.3.2.4  N_Port Login - No Fabric present"
+        }
+      ],
+      "related_assets": [],
+      "invalid_refs": [
+        {
+          "ref": {
+            "type": "text_span",
+            "span_id": "p158_s0014",
+            "quote": "During the N_Port Login procedure, other communication with the destination Nx_Port shall not be initiated or accepted."
+          },
+          "reason": "quote not found in text span"
+        }
+      ],
+      "invalid_assets": []
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "asset_id": "table_0091",
+  "type": "table",
+  "caption": "Table 87 – N_Port Deactivate Alias_ID Payload",
+  "pages": [
+    106,
+    107
+  ],
+  "bbox": [
+    97.81,
+    471.99,
+    538.19,
+    534.33
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 106,
+  "logical_table": true,
+  "fragment_ids": [
+    "table_0091",
+    "table_0092"
+  ],
+  "continuation": {
+    "type": "adjacent_same_header",
+    "header_source_fragment": "table_0091"
+  },
+  "fragment_crops": [
+    {
+      "fragment_id": "table_0091",
+      "pages": [
+        106
+      ],
+      "crop_path": "tables/table_0091/crop.png"
+    },
+    {
+      "fragment_id": "table_0092",
+      "pages": [
+        107
+      ],
+      "crop_path": "tables/table_0092/crop.png"
+    }
+  ]
+}

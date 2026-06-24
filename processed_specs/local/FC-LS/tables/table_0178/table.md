@@ -1,0 +1,6 @@
+| Word 0, bits 13-12 | Meaning |
+| --- | --- |
+| 00b | Initial Process_Associator not supported |
+| 01b | Initial Process_Associator supported |
+| 10b | Reserved |
+| 11b | Initial Process_Associator required (and supported) |

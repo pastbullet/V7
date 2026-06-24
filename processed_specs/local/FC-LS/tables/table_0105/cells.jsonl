@@ -1,0 +1,20 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 118, "bbox": [99.8, 519.99, 147.9, 547.84]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 118, "bbox": [147.9, 519.99, 245.13, 547.84]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 118, "bbox": [245.13, 519.99, 342.33, 547.84]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08", "page": 118, "bbox": [342.33, 519.99, 439.53, 547.84]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00", "page": 118, "bbox": [439.53, 519.99, 536.2, 547.84]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 118, "bbox": [99.8, 547.84, 147.9, 565.52]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "RPBC (58h)", "page": 118, "bbox": [147.9, 547.84, 245.13, 565.52]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Reserved", "page": 118, "bbox": [245.13, 547.84, 536.2, 565.52]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "", "page": 118, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "", "page": 118, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 118, "bbox": [99.8, 565.52, 147.9, 582.2]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "ELS Buffer Parameters", "page": 118, "bbox": [147.9, 565.52, 536.2, 582.2]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 118, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "", "page": 118, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "", "page": 118, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "2", "page": 118, "bbox": [99.8, 582.2, 147.9, 599.04]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Reserved", "page": 118, "bbox": [147.9, 582.2, 245.13, 599.04]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Originator S_ID - obsolete", "page": 118, "bbox": [245.13, 582.2, 536.2, 599.04]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "", "page": 118, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "", "page": 118, "bbox": [0.0, 0.0, 0.0, 0.0]}

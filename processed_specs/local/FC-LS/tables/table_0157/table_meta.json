@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0157",
+  "type": "table",
+  "caption": "Table 149 – FLOGI, PLOGI or LS_ACC Payload",
+  "pages": [
+    166
+  ],
+  "bbox": [
+    98.47,
+    98.62,
+    537.55,
+    704.4
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 166,
+  "logical_table": false
+}

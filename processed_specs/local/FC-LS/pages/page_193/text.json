@@ -1,0 +1,739 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 193,
+  "spans": [
+    {
+      "span_id": "p193_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0002",
+      "text": " 174",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0003",
+      "text": "Vendor Identification field: ",
+      "bbox": [
+        96.0,
+        57.65,
+        224.33,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0004",
+      "text": "The value of the Vendor Identification field shall be a T10 Vendor ID.",
+      "bbox": [
+        224.28,
+        57.65,
+        539.98,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p193_s0005",
+      "text": "The format and interpretation of the Vendor Specific Data field is vendor specific to the vendor identi-",
+      "bbox": [
+        96.0,
+        69.65,
+        540.02,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0006",
+      "text": "fied by the value of the Vendor Identification field.",
+      "bbox": [
+        96.0,
+        81.65,
+        314.38,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0007",
+      "text": "Vendor Specific Data Field: ",
+      "bbox": [
+        96.0,
+        105.64,
+        227.14,
+        116.76
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0008",
+      "text": "The Vendor Specific Data field contains vendor specific data and shall",
+      "bbox": [
+        227.16,
+        105.64,
+        540.0,
+        116.76
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p193_s0009",
+      "text": "be padded to a word boundary.",
+      "bbox": [
+        96.0,
+        117.64,
+        234.24,
+        128.76
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0010",
+      "text": "6.6.9",
+      "bbox": [
+        96.0,
+        142.96,
+        118.22,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0011",
+      "text": "Clock Synchronization Quality of Service",
+      "bbox": [
+        128.22,
+        142.96,
+        323.29,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0012",
+      "text": "6.6.9.1  N_Port Login",
+      "bbox": [
+        96.0,
+        166.96,
+        194.8,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0013",
+      "text": "6.6.9.1.1  Applicability",
+      "bbox": [
+        96.0,
+        190.96,
+        199.87,
+        202.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0014",
+      "text": "The Clock Synchronization Quality of Service (QoS) field in PLOGI ELS or LS_ACC (words 62-63) is",
+      "bbox": [
+        96.0,
+        214.96,
+        539.99,
+        226.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0015",
+      "text": "only meaningful when sent to or received from the Clock Synchronization Server (i.e., FFFFF6h).",
+      "bbox": [
+        96.0,
+        226.96,
+        540.05,
+        238.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0016",
+      "text": "This field contains meaningful information only if either the Clock Synchronization Primitive Capable",
+      "bbox": [
+        96.0,
+        238.96,
+        539.99,
+        250.08
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0017",
+      "text": "bit of the Common features field (word 1, bit 20) is set to one; or if the Clock Synchronization ELS ca-",
+      "bbox": [
+        96.0,
+        250.96,
+        539.91,
+        262.08
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0018",
+      "text": "pable bit of one of the N_Port Class Service Parameter Recipient control fields (word 1, bit 19) is set",
+      "bbox": [
+        96.0,
+        262.96,
+        540.1,
+        274.08
+      ],
+      "block_index": 8,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0019",
+      "text": "to one.  If this field does not contain meaningful information, it shall be set to zero (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        274.96,
+        523.71,
+        286.08
+      ],
+      "block_index": 8,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0020",
+      "text": "The Clock Synchronization QoS field is defined in table 174.",
+      "bbox": [
+        96.0,
+        298.96,
+        361.43,
+        310.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0021",
+      "text": "6.6.9.1.2  CS_QoS_Request",
+      "bbox": [
+        96.0,
+        430.96,
+        225.41,
+        442.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0022",
+      "text": "For PLOGI and FLOGI Request, the meaning is defined in table 175.  This field is not meaningful for",
+      "bbox": [
+        96.0,
+        454.96,
+        540.06,
+        466.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0023",
+      "text": "PLOGI LS_ACC and shall be set to zero.",
+      "bbox": [
+        96.0,
+        466.96,
+        277.04,
+        478.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0024",
+      "text": "6.6.9.1.3  CS_Accuracy (Mantissa and Exponent)",
+      "bbox": [
+        96.0,
+        647.02,
+        325.99,
+        658.14
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0025",
+      "text": "This field contains the CS_Accuracy_Mantissa (word 62, bits 23-21) and CS_Accuracy_Exponent",
+      "bbox": [
+        96.0,
+        671.02,
+        540.01,
+        682.14
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0026",
+      "text": "(bits word 62, 20-16).",
+      "bbox": [
+        96.0,
+        683.02,
+        190.39,
+        694.14
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0027",
+      "text": " Table 174 – N_Port Clock Synchronization QoS",
+      "bbox": [
+        204.96,
+        320.98,
+        431.03,
+        332.1
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0028",
+      "text": "Bits",
+      "bbox": [
+        104.22,
+        343.0,
+        123.1,
+        354.12
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0029",
+      "text": "Word",
+      "bbox": [
+        100.86,
+        355.0,
+        126.39,
+        366.12
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0030",
+      "text": "31          ..         24",
+      "bbox": [
+        143.58,
+        343.0,
+        224.12,
+        354.12
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0031",
+      "text": "23            ..       16",
+      "bbox": [
+        245.7,
+        343.0,
+        326.22,
+        354.12
+      ],
+      "block_index": 15,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0032",
+      "text": "15            ..        08",
+      "bbox": [
+        346.42,
+        343.0,
+        429.77,
+        354.12
+      ],
+      "block_index": 15,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0033",
+      "text": "07          ..          00",
+      "bbox": [
+        448.59,
+        343.0,
+        531.93,
+        354.12
+      ],
+      "block_index": 15,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0034",
+      "text": "62",
+      "bbox": [
+        108.12,
+        377.98,
+        119.18,
+        389.1
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0035",
+      "text": "CS_QoS_Request",
+      "bbox": [
+        134.82,
+        377.98,
+        216.99,
+        389.1
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0036",
+      "text": "CS_Accuracy",
+      "bbox": [
+        236.96,
+        377.98,
+        297.51,
+        389.1
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0037",
+      "text": "CS_Implemented_MS",
+      "bbox": [
+        339.18,
+        371.98,
+        436.93,
+        383.1
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0038",
+      "text": "B",
+      "bbox": [
+        339.18,
+        383.98,
+        345.82,
+        395.1
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0039",
+      "text": "CS_Implemented_LS",
+      "bbox": [
+        441.36,
+        371.98,
+        536.35,
+        383.1
+      ],
+      "block_index": 16,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0040",
+      "text": "B",
+      "bbox": [
+        441.36,
+        383.98,
+        448.0,
+        395.1
+      ],
+      "block_index": 16,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0041",
+      "text": "63",
+      "bbox": [
+        108.12,
+        400.96,
+        119.18,
+        412.08
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0042",
+      "text": "CS_Update_Period",
+      "bbox": [
+        134.82,
+        400.96,
+        220.92,
+        412.08
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0043",
+      "text": " Table 175 – FLOGI/PLOGI CS_QoS_Request",
+      "bbox": [
+        212.16,
+        488.98,
+        423.81,
+        500.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0044",
+      "text": "Word 62,",
+      "bbox": [
+        137.04,
+        511.0,
+        179.21,
+        522.12
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0045",
+      "text": "Bits 31-24",
+      "bbox": [
+        134.52,
+        523.0,
+        181.73,
+        534.12
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0046",
+      "text": "Meaning",
+      "bbox": [
+        351.69,
+        523.0,
+        392.23,
+        534.12
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0047",
+      "text": "00h",
+      "bbox": [
+        106.14,
+        551.98,
+        122.78,
+        563.09
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0048",
+      "text": "The CS_Accuracy, CS_Implemented_MSB, CS_Implemented_LSB, ",
+      "bbox": [
+        214.14,
+        539.98,
+        517.39,
+        551.09
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0049",
+      "text": "and CS_Update_Period fields are not meaningful in the FLOGI/PLOGI ",
+      "bbox": [
+        214.14,
+        551.98,
+        527.4,
+        563.09
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0050",
+      "text": "Request.",
+      "bbox": [
+        214.14,
+        563.98,
+        254.19,
+        575.09
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0051",
+      "text": "01h",
+      "bbox": [
+        106.14,
+        592.96,
+        122.78,
+        604.07
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0052",
+      "text": "The CS_Accuracy, CS_Implemented_MSB, CS_Implemented_LSB, ",
+      "bbox": [
+        214.14,
+        580.96,
+        517.39,
+        592.07
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0053",
+      "text": "and CS_Update_Period fields contain the requested Quality of Service ",
+      "bbox": [
+        214.14,
+        592.96,
+        528.68,
+        604.07
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0054",
+      "text": "Parameters.",
+      "bbox": [
+        214.14,
+        604.96,
+        268.59,
+        616.07
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0055",
+      "text": "02h – FFh",
+      "bbox": [
+        106.14,
+        622.0,
+        151.7,
+        633.11
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p193_s0056",
+      "text": "Reserved",
+      "bbox": [
+        214.14,
+        622.0,
+        256.91,
+        633.11
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0185",
+    "table_0187"
+  ]
+}

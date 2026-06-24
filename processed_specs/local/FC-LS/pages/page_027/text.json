@@ -1,0 +1,970 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 27,
+  "spans": [
+    {
+      "span_id": "p027_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0002",
+      "text": " 8",
+      "bbox": [
+        523.86,
+        723.59,
+        532.16,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0003",
+      "text": "3.2.84",
+      "bbox": [
+        96.0,
+        57.65,
+        123.76,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0004",
+      "text": "NAS server: ",
+      "bbox": [
+        133.82,
+        57.65,
+        193.8,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0005",
+      "text": "A device that connects to a network and provides file access services.",
+      "bbox": [
+        193.74,
+        57.65,
+        503.11,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0006",
+      "text": "3.2.85",
+      "bbox": [
+        96.0,
+        82.97,
+        125.38,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0007",
+      "text": "Network_Address_Authority (NAA): ",
+      "bbox": [
+        135.68,
+        82.97,
+        318.24,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0008",
+      "text": "An organization such as IEEE that administers",
+      "bbox": [
+        318.84,
+        82.97,
+        540.0,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0009",
+      "text": "network addresses (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        94.97,
+        249.23,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0010",
+      "text": "3.2.86",
+      "bbox": [
+        96.0,
+        118.97,
+        124.48,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0011",
+      "text": "Network_Address_Authority (NAA) identifier: ",
+      "bbox": [
+        134.66,
+        118.97,
+        358.48,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0012",
+      "text": "A four-bit identifier defined to indicate a",
+      "bbox": [
+        358.92,
+        118.97,
+        539.95,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0013",
+      "text": "Network_Address_Authority (NAA) (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        130.97,
+        319.32,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0014",
+      "text": "3.2.87",
+      "bbox": [
+        96.0,
+        154.96,
+        124.29,
+        166.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0015",
+      "text": "NL_Port: ",
+      "bbox": [
+        134.47,
+        154.96,
+        180.3,
+        166.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0016",
+      "text": "An N_Port that contains the Loop Port State Machine defined in [], FC-AL-2.  It",
+      "bbox": [
+        180.66,
+        154.96,
+        539.74,
+        166.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0017",
+      "text": "may be attached via a link to one or more NL_Ports and zero or more FL_Ports in an Arbitrated Loop",
+      "bbox": [
+        96.0,
+        166.96,
+        540.0,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0018",
+      "text": "topology.  Without the qualifier \"Public\" or \"Private,\" an NL_Port is assumed to be a Public NL_Port.",
+      "bbox": [
+        96.0,
+        178.96,
+        535.14,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0019",
+      "text": "3.2.88",
+      "bbox": [
+        96.0,
+        202.96,
+        123.74,
+        214.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0020",
+      "text": "node: ",
+      "bbox": [
+        133.8,
+        202.96,
+        163.81,
+        214.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0021",
+      "text": "A collection of one or more Nx_Ports controlled by a level above FC-2 (see FC-FS-2).",
+      "bbox": [
+        163.62,
+        202.96,
+        539.95,
+        214.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0022",
+      "text": "3.2.89",
+      "bbox": [
+        96.0,
+        226.96,
+        123.74,
+        238.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0023",
+      "text": "Node_Name: ",
+      "bbox": [
+        133.8,
+        226.96,
+        197.7,
+        238.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0024",
+      "text": "A Name_Identifier associated with a node (see FC-FS-2).",
+      "bbox": [
+        197.64,
+        226.96,
+        451.51,
+        238.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0025",
+      "text": "3.2.90",
+      "bbox": [
+        96.0,
+        250.96,
+        123.78,
+        262.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0026",
+      "text": "N_Port: ",
+      "bbox": [
+        133.84,
+        250.96,
+        172.68,
+        262.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0027",
+      "text": "A hardware entity that includes a LCF but not Arbitrated Loop functions associated",
+      "bbox": [
+        172.86,
+        250.96,
+        540.01,
+        262.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0028",
+      "text": "with Arbitrated Loop topology, and has the ability to act as an Originator, a Responder, or both.  Well-",
+      "bbox": [
+        96.0,
+        262.96,
+        539.99,
+        274.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0029",
+      "text": "known addresses are considered to be N_Ports (see FC-AL-2 and FC-FS-2).",
+      "bbox": [
+        96.0,
+        274.96,
+        435.87,
+        286.08
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0030",
+      "text": "3.2.91",
+      "bbox": [
+        96.0,
+        298.96,
+        125.76,
+        310.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0031",
+      "text": "N_Port_ID: ",
+      "bbox": [
+        136.18,
+        298.96,
+        194.47,
+        310.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0032",
+      "text": "A topology (see FC-FS-2) unique address identifier of an Nx_Port.  The",
+      "bbox": [
+        195.12,
+        298.96,
+        539.87,
+        310.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0033",
+      "text": "identifier may be assigned by the Fabric during the initialization procedure or by other procedures not",
+      "bbox": [
+        96.0,
+        310.96,
+        540.04,
+        322.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0034",
+      "text": "defined in this standard.  The identifier is used in the S_ID and D_ID fields of a frame (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        322.96,
+        540.0,
+        334.08
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0035",
+      "text": "3.2.92",
+      "bbox": [
+        96.0,
+        346.96,
+        123.78,
+        358.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0036",
+      "text": "N_Port_Name: ",
+      "bbox": [
+        133.84,
+        346.96,
+        205.44,
+        358.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0037",
+      "text": "A Name_Identifier associated with an Nx_Port (see FC-FS-2).",
+      "bbox": [
+        205.44,
+        346.96,
+        478.78,
+        358.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0038",
+      "text": "3.2.93",
+      "bbox": [
+        96.0,
+        370.96,
+        123.92,
+        382.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0039",
+      "text": "Nx_Port: ",
+      "bbox": [
+        133.98,
+        370.96,
+        178.67,
+        382.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0040",
+      "text": "A port capable of operating as an N_Port or Public NL_Port, but not as a Private",
+      "bbox": [
+        179.04,
+        370.96,
+        539.99,
+        382.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0041",
+      "text": "NL_Port.  By use of the term Nx_Port, this standard neither specifies nor constrains the behavior of",
+      "bbox": [
+        96.0,
+        382.96,
+        539.96,
+        394.08
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0042",
+      "text": "Private NL_Ports (see FC-AL-2).",
+      "bbox": [
+        96.0,
+        394.96,
+        240.31,
+        406.08
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0043",
+      "text": "3.2.94",
+      "bbox": [
+        96.0,
+        418.96,
+        124.47,
+        430.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0044",
+      "text": "open: ",
+      "bbox": [
+        134.59,
+        418.96,
+        165.25,
+        430.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0045",
+      "text": "The period of time starting when a Sequence or an Exchange is initiated until that",
+      "bbox": [
+        165.66,
+        418.96,
+        540.01,
+        430.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0046",
+      "text": "Sequence or  Exchange is normally or abnormally terminated (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        430.96,
+        436.0,
+        442.08
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0047",
+      "text": "3.2.95",
+      "bbox": [
+        96.0,
+        454.96,
+        124.16,
+        466.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0048",
+      "text": "Originator: ",
+      "bbox": [
+        134.28,
+        454.96,
+        189.55,
+        466.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0049",
+      "text": "The logical function associated with an Nx_Port responsible for originating an",
+      "bbox": [
+        189.9,
+        454.96,
+        539.96,
+        466.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0050",
+      "text": "Exchange.",
+      "bbox": [
+        96.0,
+        466.96,
+        143.25,
+        478.08
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0051",
+      "text": "3.2.96",
+      "bbox": [
+        96.0,
+        490.96,
+        124.6,
+        502.07
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0052",
+      "text": "Originator Exchange_ID (OX_ID):",
+      "bbox": [
+        134.78,
+        490.96,
+        296.83,
+        502.07
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0053",
+      "text": " An identifier assigned by an Originator to identify an",
+      "bbox": [
+        297.0,
+        490.96,
+        539.87,
+        502.07
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0054",
+      "text": "Exchange (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        502.96,
+        209.83,
+        514.07
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0055",
+      "text": "3.2.97",
+      "bbox": [
+        96.0,
+        526.96,
+        123.73,
+        538.07
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0056",
+      "text": "Payload: ",
+      "bbox": [
+        133.79,
+        526.96,
+        178.27,
+        538.07
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0057",
+      "text": "Contents of the Data Field of a frame, excluding Optional Headers and fill bytes, if",
+      "bbox": [
+        178.26,
+        526.96,
+        540.07,
+        538.07
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0058",
+      "text": "present (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        538.96,
+        198.72,
+        550.07
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0059",
+      "text": "3.2.98",
+      "bbox": [
+        96.0,
+        562.96,
+        123.77,
+        574.07
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0060",
+      "text": "Permanent Port Name:",
+      "bbox": [
+        133.83,
+        562.96,
+        241.0,
+        574.07
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0061",
+      "text": " The Permanent Port Name is the Name_Identifier associated with a",
+      "bbox": [
+        241.02,
+        562.96,
+        539.99,
+        574.07
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0062",
+      "text": "physical Nx_Port (see FC-GS-5).",
+      "bbox": [
+        96.0,
+        574.96,
+        242.02,
+        586.07
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0063",
+      "text": "3.2.99",
+      "bbox": [
+        96.0,
+        598.96,
+        125.26,
+        610.07
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0064",
+      "text": "Policy: ",
+      "bbox": [
+        135.56,
+        598.96,
+        173.17,
+        610.07
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0065",
+      "text": "The rule used to determine how frames not received are handled during error",
+      "bbox": [
+        173.76,
+        598.96,
+        539.99,
+        610.07
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0066",
+      "text": "recovery (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        610.96,
+        203.7,
+        622.07
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0067",
+      "text": "3.2.100",
+      "bbox": [
+        96.0,
+        635.02,
+        129.34,
+        646.13
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0068",
+      "text": "Port VF_ID: ",
+      "bbox": [
+        139.34,
+        635.02,
+        196.68,
+        646.13
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0069",
+      "text": "A configurable VF_ID that is associated with any untagged frame received by",
+      "bbox": [
+        196.92,
+        635.02,
+        540.05,
+        646.13
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0070",
+      "text": "a VF capable N_Port or F_Port (see FC-FS-2).",
+      "bbox": [
+        96.0,
+        647.02,
+        302.58,
+        658.13
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0071",
+      "text": "3.2.101",
+      "bbox": [
+        96.0,
+        671.02,
+        129.48,
+        682.13
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0072",
+      "text": "Private NL_Port: ",
+      "bbox": [
+        139.54,
+        671.02,
+        221.28,
+        682.13
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p027_s0073",
+      "text": "An NL_Port that does not attempt a Fabric Login and does not transmit",
+      "bbox": [
+        221.58,
+        671.02,
+        539.95,
+        682.13
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p027_s0074",
+      "text": "OPN(00,x) (see FC-AL-2).",
+      "bbox": [
+        96.0,
+        683.02,
+        211.99,
+        694.13
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

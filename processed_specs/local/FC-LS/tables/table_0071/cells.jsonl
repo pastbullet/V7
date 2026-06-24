@@ -1,0 +1,6 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Description", "page": 92, "bbox": [163.5, 110.28, 328.83, 132.0]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Value", "page": 92, "bbox": [328.83, 110.28, 472.5, 132.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "Common Link Incident Record", "page": 92, "bbox": [163.5, 132.0, 328.83, 156.03]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "00h", "page": 92, "bbox": [328.83, 132.0, 472.5, 156.03]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "Specific-coded value", "page": 92, "bbox": [163.5, 156.03, 328.83, 179.7]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "01h - FFh", "page": 92, "bbox": [328.83, 156.03, 472.5, 179.7]}

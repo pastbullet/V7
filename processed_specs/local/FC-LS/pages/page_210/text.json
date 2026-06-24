@@ -1,0 +1,411 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 210,
+  "spans": [
+    {
+      "span_id": "p210_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0002",
+      "text": " 191",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0003",
+      "text": "A) if the operational VF_ID List did not change, on completion of the Exchange in the Control",
+      "bbox": [
+        122.4,
+        57.65,
+        540.04,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0004",
+      "text": "VF_ID terminates the EVFP protocol; or",
+      "bbox": [
+        138.0,
+        69.65,
+        314.05,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0005",
+      "text": "B) if the operational VF_ID List did change, on completion of the Exchange in the Control",
+      "bbox": [
+        122.4,
+        94.97,
+        540.06,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0006",
+      "text": "VF_ID goes to step 3.",
+      "bbox": [
+        138.0,
+        106.97,
+        234.65,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0007",
+      "text": "On receiving the EVFP_SYNC LS_ACC in the Control VF_ID, the EVFP Initiator, depending on",
+      "bbox": [
+        122.4,
+        130.97,
+        539.99,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0008",
+      "text": "the resulting operational VF_ID List:",
+      "bbox": [
+        122.4,
+        142.96,
+        281.26,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0009",
+      "text": "A) if the operational VF_ID List did not change, on completion of the Exchange in the Control",
+      "bbox": [
+        122.4,
+        166.96,
+        540.04,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0010",
+      "text": "VF_ID terminates the EVFP protocol; or",
+      "bbox": [
+        138.0,
+        178.96,
+        314.05,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0011",
+      "text": "B) if the operational VF_ID List did change, on completion of the Exchange in the Control",
+      "bbox": [
+        122.4,
+        202.96,
+        540.06,
+        214.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0012",
+      "text": "VF_ID goes to step 4.",
+      "bbox": [
+        138.0,
+        214.96,
+        234.65,
+        226.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0013",
+      "text": "3) On completion of the EVFP_SYNC Exchange in the Control VF_ID, the EVFP Responder shall",
+      "bbox": [
+        106.02,
+        238.96,
+        539.95,
+        250.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0014",
+      "text": "apply the updated operational VF_ID List, enabling the added Virtual Fabrics and disabling the",
+      "bbox": [
+        122.4,
+        250.96,
+        539.96,
+        262.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0015",
+      "text": "removed Virtual Fabrics. The removal of a Virtual Fabric should be treated as an implicit logout.",
+      "bbox": [
+        122.4,
+        262.96,
+        539.97,
+        274.08
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0016",
+      "text": "Then the EVFP Responder shall send an EVFP_COMMIT message; and",
+      "bbox": [
+        122.4,
+        274.96,
+        444.59,
+        286.08
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0017",
+      "text": "4) On receiving the EVFP_COMMIT message, the EVFP Initiator shall apply the updated opera-",
+      "bbox": [
+        106.02,
+        298.96,
+        540.06,
+        310.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0018",
+      "text": "tional VF_ID List, enabling the added Virtual Fabrics and disabling the removed Virtual Fabrics.",
+      "bbox": [
+        122.4,
+        310.96,
+        540.04,
+        322.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0019",
+      "text": "The removal of a Virtual Fabric should be treated as an implicit logout. Then the EVFP Initiator",
+      "bbox": [
+        122.4,
+        322.96,
+        540.08,
+        334.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0020",
+      "text": "shall send an EVFP_COMMIT LS_ACC message.",
+      "bbox": [
+        122.4,
+        334.96,
+        343.98,
+        346.08
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0021",
+      "text": "When the operational VF_ID List changes, the EVFP transaction completes successfully on comple-",
+      "bbox": [
+        96.0,
+        358.96,
+        539.99,
+        370.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0022",
+      "text": "tion of the EVFP_COMMIT Exchange for both the EVFP Initiator and EVFP Responder. When the",
+      "bbox": [
+        96.0,
+        370.96,
+        539.95,
+        382.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0023",
+      "text": "EVFP transaction is completed, the updated operational VF_ID List is operative.",
+      "bbox": [
+        96.0,
+        382.96,
+        449.31,
+        394.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0024",
+      "text": "8.4.4",
+      "bbox": [
+        96.0,
+        406.96,
+        118.24,
+        418.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0025",
+      "text": "Changing the Port VF_ID",
+      "bbox": [
+        128.24,
+        406.96,
+        245.95,
+        418.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0026",
+      "text": "When a management action changes the Port VF_ID of a tagging N_Port or F_Port, no changes are",
+      "bbox": [
+        96.0,
+        430.96,
+        539.97,
+        442.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0027",
+      "text": "applied to the link.",
+      "bbox": [
+        96.0,
+        442.96,
+        176.51,
+        454.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0028",
+      "text": "When a management action changes the Port VF_ID of a non tagging N_Port or F_Port, the FC_Port",
+      "bbox": [
+        96.0,
+        466.96,
+        540.08,
+        478.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0029",
+      "text": "shall perform a link initialization.",
+      "bbox": [
+        96.0,
+        478.96,
+        237.08,
+        490.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0030",
+      "text": "When a management action changes the Port VF_ID of an N_Port or F_Port in Isolated state (i.e.,",
+      "bbox": [
+        96.0,
+        502.96,
+        540.07,
+        514.07
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p210_s0031",
+      "text": "state P8), the FC_Port shall go in state P1 (see 8.2).",
+      "bbox": [
+        96.0,
+        514.96,
+        327.72,
+        526.07
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0122",
+  "type": "table",
+  "caption": "Table 118 – EVFP Accept Payload",
+  "pages": [
+    130
+  ],
+  "bbox": [
+    100.25,
+    495.99,
+    535.87,
+    666.36
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 130,
+  "logical_table": false
+}

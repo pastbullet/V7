@@ -1,0 +1,947 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 77,
+  "spans": [
+    {
+      "span_id": "p077_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0002",
+      "text": " 58",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0003",
+      "text": "LS_ACC Payload: ",
+      "bbox": [
+        96.0,
+        57.65,
+        183.21,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0004",
+      "text": "The format of the LS_ACC Payload is shown in table 49.",
+      "bbox": [
+        183.18,
+        57.65,
+        433.13,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p077_s0005",
+      "text": "The PRLO LS_ACC Payload fields shall be defined as follows:",
+      "bbox": [
+        96.0,
+        238.97,
+        372.06,
+        250.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0006",
+      "text": "a)",
+      "bbox": [
+        106.02,
+        262.97,
+        114.91,
+        274.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0007",
+      "text": " Payload length:",
+      "bbox": [
+        114.91,
+        262.97,
+        196.83,
+        274.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p077_s0008",
+      "text": " The Payload length shall be 20 (see table 50).",
+      "bbox": [
+        196.8,
+        262.97,
+        403.42,
+        274.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p077_s0009",
+      "text": "b)",
+      "bbox": [
+        106.02,
+        286.96,
+        114.91,
+        298.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0010",
+      "text": " Logout parameter response page:",
+      "bbox": [
+        114.91,
+        286.96,
+        283.72,
+        298.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p077_s0011",
+      "text": " Words 1:N of the PRLO LS_ACC Payload contain the Lo-",
+      "bbox": [
+        283.74,
+        286.96,
+        540.04,
+        298.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p077_s0012",
+      "text": "gout Parameter Response page.  The Logout Parameter Response page contains a logout pa-",
+      "bbox": [
+        122.4,
+        298.96,
+        540.01,
+        310.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0013",
+      "text": "rameter response for a single image pair and is associated with a single FC-4 TYPE or",
+      "bbox": [
+        122.4,
+        310.96,
+        540.05,
+        322.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0014",
+      "text": "common to all FC-4 Types at that image pair or Nx_Port pair.",
+      "bbox": [
+        122.4,
+        322.96,
+        392.34,
+        334.08
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0015",
+      "text": "The format of PRLO LS_ACC Logout Parameter Response pages is described in table 50.",
+      "bbox": [
+        96.0,
+        346.96,
+        495.54,
+        358.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0016",
+      "text": " Table 49 – PRLO LS_ACC Payload",
+      "bbox": [
+        235.26,
+        79.66,
+        400.73,
+        90.78
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0017",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        101.62,
+        133.06,
+        112.74
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0018",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        113.62,
+        136.35,
+        124.74
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0019",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        101.62,
+        233.97,
+        112.74
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0020",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        101.62,
+        328.41,
+        112.74
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0021",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        101.62,
+        427.0,
+        112.74
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0022",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        101.62,
+        522.83,
+        112.74
+      ],
+      "block_index": 9,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0023",
+      "text": "0",
+      "bbox": [
+        120.84,
+        130.66,
+        126.38,
+        141.78
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0024",
+      "text": "02h",
+      "bbox": [
+        149.88,
+        130.66,
+        166.51,
+        141.78
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0025",
+      "text": "Obsolete (10h)",
+      "bbox": [
+        247.07,
+        130.66,
+        313.22,
+        141.78
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0026",
+      "text": "a",
+      "bbox": [
+        313.2,
+        128.44,
+        317.64,
+        137.34
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 2
+    },
+    {
+      "span_id": "p077_s0027",
+      "text": "Payload Length",
+      "bbox": [
+        344.28,
+        130.67,
+        413.71,
+        141.78
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0028",
+      "text": "1",
+      "bbox": [
+        120.84,
+        147.65,
+        126.38,
+        158.76
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0029",
+      "text": "Logout Parameter Response page",
+      "bbox": [
+        265.92,
+        149.63,
+        418.75,
+        160.74
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0030",
+      "text": "(4 words)",
+      "bbox": [
+        321.48,
+        161.63,
+        363.14,
+        172.74
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0031",
+      "text": "..",
+      "bbox": [
+        120.84,
+        164.63,
+        126.37,
+        175.74
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0032",
+      "text": "N",
+      "bbox": [
+        120.0,
+        181.67,
+        127.19,
+        192.78
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0033",
+      "text": "a",
+      "bbox": [
+        107.52,
+        199.28,
+        111.52,
+        207.32
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0034",
+      "text": " This field is obsolete, but shall be set to 10h for compatibility.",
+      "bbox": [
+        111.52,
+        197.65,
+        359.21,
+        211.3
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p077_s0035",
+      "text": " Table 50 – PRLO LS_ACC logout parameter response page format",
+      "bbox": [
+        159.96,
+        368.99,
+        476.06,
+        380.1
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0036",
+      "text": "Item",
+      "bbox": [
+        262.02,
+        391.01,
+        282.55,
+        402.12
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0037",
+      "text": "Word",
+      "bbox": [
+        394.18,
+        391.01,
+        419.68,
+        402.12
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0038",
+      "text": "Bit",
+      "bbox": [
+        445.99,
+        391.01,
+        459.34,
+        402.12
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0039",
+      "text": "TYPE Code or Common Logout Parameters",
+      "bbox": [
+        159.06,
+        413.99,
+        354.6,
+        425.1
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0040",
+      "text": "a",
+      "bbox": [
+        354.6,
+        411.76,
+        359.04,
+        420.66
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p077_s0041",
+      "text": "0",
+      "bbox": [
+        404.16,
+        415.01,
+        409.7,
+        426.12
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0042",
+      "text": "31-24",
+      "bbox": [
+        439.86,
+        415.01,
+        465.37,
+        426.12
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0043",
+      "text": "TYPE Code Extension",
+      "bbox": [
+        159.06,
+        437.99,
+        258.47,
+        449.1
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0044",
+      "text": "0",
+      "bbox": [
+        404.16,
+        439.01,
+        409.7,
+        450.12
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0045",
+      "text": "23-16",
+      "bbox": [
+        439.86,
+        439.01,
+        465.37,
+        450.12
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0046",
+      "text": "Originator Process_Associator Validity",
+      "bbox": [
+        159.06,
+        461.99,
+        329.02,
+        473.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0047",
+      "text": "0",
+      "bbox": [
+        404.16,
+        463.01,
+        409.7,
+        474.12
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0048",
+      "text": "15",
+      "bbox": [
+        447.06,
+        463.01,
+        458.18,
+        474.12
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0049",
+      "text": "Responder Process_Associator Validity",
+      "bbox": [
+        159.06,
+        485.99,
+        334.09,
+        497.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0050",
+      "text": "0",
+      "bbox": [
+        404.16,
+        487.01,
+        409.7,
+        498.12
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0051",
+      "text": "14",
+      "bbox": [
+        447.06,
+        487.01,
+        458.18,
+        498.12
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0052",
+      "text": "Reserved",
+      "bbox": [
+        159.06,
+        509.98,
+        201.75,
+        521.1
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0053",
+      "text": "0",
+      "bbox": [
+        404.16,
+        511.0,
+        409.7,
+        522.12
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0054",
+      "text": "13-12",
+      "bbox": [
+        439.86,
+        511.0,
+        465.37,
+        522.12
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0055",
+      "text": "Response Code (see table 51)",
+      "bbox": [
+        159.06,
+        533.98,
+        294.59,
+        545.1
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0056",
+      "text": "0",
+      "bbox": [
+        404.16,
+        535.0,
+        409.7,
+        546.12
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0057",
+      "text": "11-8",
+      "bbox": [
+        442.62,
+        535.0,
+        462.61,
+        546.12
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0058",
+      "text": "Reserved",
+      "bbox": [
+        159.06,
+        557.98,
+        201.75,
+        569.1
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0059",
+      "text": "0",
+      "bbox": [
+        404.16,
+        559.0,
+        409.7,
+        570.12
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0060",
+      "text": "7-0",
+      "bbox": [
+        445.44,
+        559.0,
+        459.86,
+        570.12
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0061",
+      "text": "Originator Process_Associator",
+      "bbox": [
+        159.06,
+        581.98,
+        294.03,
+        593.1
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0062",
+      "text": "1",
+      "bbox": [
+        404.16,
+        583.0,
+        409.7,
+        594.12
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0063",
+      "text": "31-0",
+      "bbox": [
+        442.62,
+        583.0,
+        462.61,
+        594.12
+      ],
+      "block_index": 23,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0064",
+      "text": "Responder Process_Associator",
+      "bbox": [
+        159.06,
+        605.98,
+        299.11,
+        617.1
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0065",
+      "text": "2",
+      "bbox": [
+        404.16,
+        607.0,
+        409.7,
+        618.12
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0066",
+      "text": "31-0",
+      "bbox": [
+        442.62,
+        607.0,
+        462.61,
+        618.12
+      ],
+      "block_index": 24,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0067",
+      "text": "Reserved",
+      "bbox": [
+        159.06,
+        629.98,
+        201.75,
+        641.1
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0068",
+      "text": "3",
+      "bbox": [
+        404.16,
+        631.0,
+        409.7,
+        642.12
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0069",
+      "text": "31-0",
+      "bbox": [
+        442.62,
+        631.0,
+        462.61,
+        642.12
+      ],
+      "block_index": 25,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0070",
+      "text": "a",
+      "bbox": [
+        165.3,
+        653.6,
+        169.3,
+        661.64
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p077_s0071",
+      "text": " If byte 0 of the first word of a Logout Parameter page is set to the value 00h, ",
+      "bbox": [
+        169.3,
+        651.97,
+        478.1,
+        665.62
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p077_s0072",
+      "text": "the Logout Parameter page is common to all FC-4 Types at that image pair.",
+      "bbox": [
+        176.1,
+        666.62,
+        475.62,
+        676.66
+      ],
+      "block_index": 26,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0052",
+    "table_0053"
+  ]
+}

@@ -1,0 +1,786 @@
+{
+  "success": true,
+  "doc_name": "FC-LS.pdf",
+  "structure": [
+    {
+      "node_id": "0000",
+      "title": "Front Matter",
+      "summary": "Front Matter (pp. 1-19): administrative and orientation material for `Fibre Channel Link Services (FC-LS)` `Rev 1.61` / `INCITS xxx-200x`, not protocol behavior. Contains working-draft/approval notices, points of contact, release notes for versions `1.61`, `1.6`, `1.51`, `1.5`, `1.4`, `1.3`, `1.2`, `1.1`, `1.0`, `0.3`, `0.2`, abstract, foreword, committee/task-group rosters, acknowledgements, plus the document map. Key anchors named here: sections `1 Scope`, `2 Normative References`, `3 Definitions and conventions`, `4 Extended Link Services`, `5 FC-4 Link Service`, `6 Login and Service Parameters`, `7 Process Login/Logout`, `8 Virtual Fabrics N_Port Support`; commands/messages including `FLOGI`, `PLOGI`, `LOGO`, `LS_ACC`, `LS_RJT`, `PRLI`, `PRLO`, `FDISC`, `ADISC`, `EVFP`, `LKA`. Content types: procedure/flow absent; message/frame format only via TOC/listings; state machine listed (`Figure 1`); response/branch handling listed; completion/exception conditions listed. Figures/tables physically present here: `Figure 1 – State Machine Example` shows notation example; `Figure 2 – Illustration of parameters` shows parameters; `Figure 3 – LS_RJT format` shows reject format; `Figure 4 – Image/Group of Related Processes` shows process grouping; `Figure 5 – Image pairs` shows pair relationships; `Figure 6 – Logical N_Port Initialization` shows initialization; `Figure 7 – A Generic EVFP Transaction` shows EVFP flow; `Table 1 – ISO and American Conventions` defines conventions; `Table 2` through `Table 177` are listed by caption in the contents/tables pages.",
+      "is_skeleton": false,
+      "children": [
+        {
+          "node_id": "0001",
+          "title": "Abstract",
+          "summary": "Abstract overview of scope and document relationships for Link Services requirements. States that this standard describes the Link Services requirements, while Physical Interface requirements are in `Fibre Channel-Physical Interfaces - 2(FC-PI-2)` and Framing and Signaling requirements are in `Fibre Channel-Physical Framing and Signaling - 2 (FC-FS-2)`. Notes it is recommended for new implementations but does not obsolete the existing Fibre Channel standard. Core topic: high-level abstract and cross-reference to related standards, not protocol detail. Exact named anchors present: `Abstract`, `Link Services requirements`, `Fibre Channel-Physical Interfaces - 2(FC-PI-2)`, `Fibre Channel-Physical Framing and Signaling - 2 (FC-FS-2)`. No tables. No figures. No procedure/flow, message/frame format, response/branch handling, state machine, timer/negotiation, or completion/exception conditions.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 4,
+          "end_index": 4,
+          "subtree_start_index": 4,
+          "subtree_end_index": 4,
+          "start_line": 10,
+          "end_line": 15,
+          "retrieval_disabled": true
+        }
+      ],
+      "start_index": 1,
+      "end_index": 19,
+      "subtree_start_index": 1,
+      "subtree_end_index": 19,
+      "retrieval_disabled": true
+    },
+    {
+      "node_id": "0002",
+      "title": "1 Scope",
+      "summary": "Defines the document scope for `FC-LS` and immediately lists `Normative References` relevant to this standard. Core topic: `1 Scope` states that `FC-LS` describes in detail the `Fibre Channel Extended Link Services`. Named anchors present: `FC-LS`, `Fibre Channel Extended Link Services`, `2 Normative References`, `2.1 Overview`, `2.2 Approved references`, `2.3 References under development`, `ANSI INCITS 332-1999`, `ANSI INCITS 332-1999/AM1-2003`, `ANSI INCITS 373-2003`, `ANSI INCITS 387-2004`, `ANSI INCITS 384-2004`, `ANSI INCITS 374-2003`, `ANSI INCITS Project 1619-D`, `FC-AL-2`, `FC-FS`, `FC-GS-4`, `FC-SW-3`, `FC-SB-3`, `FC-FS-2`. No tables. No figures. Content types: references/catalog only; no procedure/flow, message/frame format, response/branch handling, state machine, timer/negotiation, or completion/exception conditions.",
+      "is_skeleton": false,
+      "children": [],
+      "start_index": 20,
+      "end_index": 20,
+      "subtree_start_index": 20,
+      "subtree_end_index": 20
+    },
+    {
+      "node_id": "0003",
+      "title": "2 Normative References",
+      "summary": "Normative references section for FC-LS: identifies external standards incorporated by reference and where to obtain them. Anchors: `2 Normative References`, `2.1 Overview`, `2.2 Approved references`, `2.3 References under development`; `ANSI INCITS 332-1999`, `FC-AL-2`; `ANSI INCITS 332-1999/AM1-2003`, `Amendment 1`; `ANSI INCITS 373-2003`, `FC-FS`; `ANSI INCITS 387-2004`, `FC-GS-4`; `ANSI INCITS 384-2004`, `FC-SW-3`; `ANSI INCITS 374-2003`, `FC-SB-3`; `ANSI INCITS Project 1619-D`, `FC-FS-2`; `ANSI’s Electronic Standards Store (ESS)`; `Global Engineering Documents`. No tables. No figures. Content types: reference catalog only; no procedure/flow, no message/frame format, no response/branch handling, no state machine, no timer/negotiation, no completion/exception conditions.",
+      "is_skeleton": false,
+      "children": [
+        {
+          "node_id": "0004",
+          "title": "2.1 Overview",
+          "summary": "Covers `2.1 Overview` within `2 Normative References`: explains that referenced standards “constitute provisions of this standard,” editions listed were valid at publication, standards may be revised, and users should check for newer editions. Includes availability/source pointers: `ANSI’s Electronic Standards Store (ESS)` at `www.ansi.org`, `Global Engineering Documents`, `15 Inverness Way East, Englewood, CO; 80112-5704`, `(800) 854-7179`. Names adjacent normative-reference anchors appearing in this section block: `2.2 Approved references`, `2.3 References under development`, `ANSI INCITS 332-1999`, `ANSI INCITS 332-1999/AM1-2003`, `ANSI INCITS 373-2003`, `ANSI INCITS 387-2004`, `ANSI INCITS 384-2004`, `ANSI INCITS 374-2003`, `ANSI INCITS Project 1619-D`. No tables. No figures. Content types: none of procedure/flow, message/frame format, response/branch handling, state machine, timer/negotiation, completion/exception conditions.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 20,
+          "end_index": 20,
+          "subtree_start_index": 20,
+          "subtree_end_index": 20
+        },
+        {
+          "node_id": "0005",
+          "title": "2.2 Approved references",
+          "summary": "Core topic: approved normative references for FC-LS, within `2 Normative References`, specifically `2.2 Approved references`, with surrounding context from `2.1 Overview` and `2.3 References under development`. Exact anchors/identifiers listed: `ANSI INCITS 332-1999`, `FC-AL-2`, `ANSI INCITS 332-1999/AM1-2003`, `Amendment 1`, `ANSI INCITS 373-2003`, `FC-FS`, `ANSI INCITS 387-2004`, `FC-GS-4`, `ANSI INCITS 384-2004`, `FC-SW-3`, `ANSI INCITS 374-2003`, `FC-SB-3`, and under development `ANSI INCITS Project 1619-D`, `FC-FS-2`. Also notes ANSI ESS (`www.ansi.org`) and Global Engineering Documents availability contact. Tables: none. Figures: none. Content types present: reference list; no procedure/flow, message/frame format, response/branch handling, state machine, timer/negotiation, or completion/exception conditions.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 20,
+          "end_index": 20,
+          "subtree_start_index": 20,
+          "subtree_end_index": 20
+        },
+        {
+          "node_id": "0006",
+          "title": "2.3 References under development",
+          "summary": "Section `2.3 References under development` indexes in-development normative references for `FC-LS` and tells readers where to check current status or availability. Core content: a publication-time notice that some referenced standards were still under development, with contact via the relevant standards body or organization. Exact identifiers/names present: `ANSI INCITS Project 1619-D`, `Fibre Channel - Framing and Signaling (FC-FS-2)`, `FC-LS`, `2.3 References under development`. It also contextually follows `2 Normative References`, `2.1 Overview`, and `2.2 Approved references`, but this subsection itself lists only the under-development reference above. No tables. No figures. Content types: normative-reference listing; availability/status note. No procedure/flow, message/frame format, response/branch handling, state machine, timer/negotiation, or completion/exception conditions.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 20,
+          "end_index": 20,
+          "subtree_start_index": 20,
+          "subtree_end_index": 20
+        },
+        {
+          "node_id": "0007",
+          "title": "2.4 Other references",
+          "summary": "Lists external normative/informative references used by the spec, mainly IETF RFCs plus related Fibre Channel project documents. Core topic: “2.4 Other references” identifies where RFCs may be obtained (`http://www.ietf.org/rfc.html`) and enumerates cited network/transport/application references: `RFC 768` “User Datagram Protocol,” `RFC 791` “Internet Protocol,” `RFC 793` “Transmission Control Protocol,” `RFC 854` “Telnet Protocol Specification,” `RFC 1157` “A Simple Network Management Protocol (SNMP),” `RFC 1901` “Introduction to Community-based SNMPv2,” `RFC 2373` “IP Version 6 Addressing Architecture,” `RFC 2460` “Internet Protocol, Version 6 (IPv6) Specification,” `RFC 2616` “Hypertext Transfer Protocol -- HTTP/1.1,” `RFC 2818` “HTTP Over TLS,” `RFC 4338` “Transmission of IPv6, IPv4, and Address Resolution Protocol (ARP) Packets over Fibre Channel.” Also names `FC-GS-5`, `FC-SW-4`, `FCP-3`. No tables, no figures. Content type: references list only.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 21,
+          "end_index": 21,
+          "subtree_start_index": 21,
+          "subtree_end_index": 21
+        }
+      ],
+      "start_index": 20,
+      "end_index": 20,
+      "subtree_start_index": 20,
+      "subtree_end_index": 21
+    },
+    {
+      "node_id": "0008",
+      "title": "3 Definitions and conventions",
+      "summary": "Defines FC-LS section-wide terminology and conventions used by later clauses. Covers 3.1 Overview and 3.2 Definitions, including exact identifiers and fields: acknowledged class, address identifier, `S_ID`, `D_ID`, `AE Principal Switch`, `AE Secondary Principal Switch`, `AE Switch`, `AE_Port`, `Alias_ID`, `Alias_Token`, `Arbitrated Loop topology`, `Association_Header`, `Avionics Fabric`, `BB_Credit`, `BB_Credit_CNT`, `B_Port`, `E_Ports`, `Nx_Ports`, `L_Ports`, and `Fast Fabric Intialization`. Also notes references to FC-FS-2, FC-SW-4, FC-GS-5, FC-AL-2, and FC-SW-3. No tables. No figures. Content type: definitions/glossary only; no procedure/flow, message/frame format, response/branch handling, state machine, timer/negotiation, or completion/exception conditions.",
+      "is_skeleton": false,
+      "children": [
+        {
+          "node_id": "0009",
+          "title": "3.1 Overview",
+          "summary": "Section `3.1 Overview` is the entry point for Section 3 terminology: it states that, for `FC-LS`, the following definitions, conventions, abbreviations, acronyms, and symbols apply, leading into `3.2 Definitions`. Named anchors visible on this page include `acknowledged class`, `address identifier`, `S_ID`, `D_ID`, `AE Principal Switch`, `AE Secondary Principal Switch`, `AE Switch`, `Alias_ID`, `Alias_Token`, `Arbitrated Loop topology`, `Association_Header`, `Avionics Fabric`, `buffer-to-buffer credit (BB_Credit)`, `buffer-to-buffer Credit_Count (BB_Credit_CNT)`, `B_Port`, `buffer`, `circuit`, and `class of service`, with references to `FC-FS-2`, `FC-SW-4`, `FC-GS-5`, `FC-AL-2`, and `FC-SW-3`. No tables or figures. Content type: terminology/identifier definitions only; no procedure/flow, message/frame format, response/branch handling, state machine, timer/negotiation, or completion/exception conditions.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 22,
+          "end_index": 22,
+          "subtree_start_index": 22,
+          "subtree_end_index": 22
+        },
+        {
+          "node_id": "0010",
+          "title": "3.2 Definitions",
+          "summary": "Defines FC-LS terminology and naming conventions used across the spec: service classes, ports, addressing, exchanges/sequences, flow control, Fabric entities, Avionics Fabric/FFI, virtualization, and network protocol terms. Named anchors include `S_ID`, `D_ID`, `Alias_ID`, `Alias_Token`, `BB_Credit`, `BB_Credit_CNT`, `EE_Credit`, `EE_Credit_CNT`, `Domain_ID`, `OX_ID`, `RX_ID`, `X_ID`, `SEQ_ID`, `N_Port_ID`, `N_Port_Name`, `Node_Name`, `Fabric_Name`, `F_Port_Name`, `VF_ID`, `Port VF_ID`, `Process_Associator`, `VFT_Header`, `FFFFFEh`, `FFFFFDh`, `FFFFFFEh`, `SOFc1`, `0000b`, `0010b`, `0011b`, `0100b`, `1111b`, `ROI`, `S_ID||X_ID`. Covers exact term definitions for `AE Principal Switch`, `AE Secondary Principal Switch`, `AE Switch`, `Fast Fabric Initialization (FFI)`, `FFI SW_ILS`, `FFI Link State Record`, `Loop Fabric Address (LFA)`, `Well-known addresses`. Content types: definitions/glossary only; no procedure/flow, message/frame format, response/branch handling, state machine, timer/negotiation, or completion/exception conditions.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 22,
+          "end_index": 29,
+          "subtree_start_index": 22,
+          "subtree_end_index": 29
+        },
+        {
+          "node_id": "0011",
+          "title": "3.3 Editorial Conventions",
+          "summary": "Defines editorial rules for interpreting this standard: special capitalization marks terms with defined meanings; lowercase uses normal English meaning. Lists by letters indicate no priority, numbered lists indicate priority order. Uses ISO numbering (space for thousands, comma decimal) and precedence rules: text over tables over figures; most significant bit shown on the left. Reserved frame fields/control bits: sender sets to zero, receiver does not check; `x`/`xx` mean value not relevant. Numeric notation: plain numbers are decimal, suffix `b` is binary, suffix `h` is hexadecimal. Includes `Table 1 – ISO and American Conventions`, showing ISO vs American numeric formatting examples. Content types: message/frame format; completion/exception conditions.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 30,
+          "end_index": 30,
+          "subtree_start_index": 30,
+          "subtree_end_index": 30
+        },
+        {
+          "node_id": "0012",
+          "title": "3.4 State Machine notation",
+          "summary": "Section `3.4 State Machine notation` defines the notation/style used for state machines in this standard, anchored by `figure 1` (“style shown in figure 1”) and the explicit assumption `a) Time elapses only within discrete states.` Use this section when questions ask how standard state machines are represented or what baseline assumptions apply to their execution. Related page content also includes `Table 1 – ISO and American Conventions`, which shows numeric formatting conventions (`0,6` vs `0.6`, `1 000` vs `1,000`) used elsewhere in the document. Content types: `state machine`; limited `procedure/flow` context via notation assumptions. No message/frame format, timer names, response branches, or completion/exception rules are defined here.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 30,
+          "end_index": 30,
+          "subtree_start_index": 30,
+          "subtree_end_index": 30
+        },
+        {
+          "node_id": "0013",
+          "title": "3.5 Abbreviations and acronyms",
+          "summary": "Section `3.5 Abbreviations and acronyms` is the glossary/index of abbreviations used by the standard, with note that definitions of several items are included in `3.2`. Contains acronym expansions for protocol, service, timer, identifier, and primitive names such as `ABTS`, `ACK`, `ADVC`, `BB_Credit`, `BB_Credit_CNT`, `CR_TOV`, `E_D_TOV`, `EE_Credit`, `EE_Credit_CNT`, `ELS`, `ELS_Command`, `FLOGI`, `LOGO`, `PLOGI`, `PRLI`, `PRLO`, `R_A_TOV`, `R_T_TOV`, `RTV`, `D_ID`, `S_ID`, `OX_ID`, `RX_ID`, `X_ID`, `WWN`, `SOF`, `EOFdt`, `EOFt`, `NOS`, `OLS`, `LR`, `LRR`, `R_RDY`, `TCP`, `UDP`, `HTTP`, `HTTPS`, `SNMP`. Nearby anchors on same pages: `Figure 1 – State Machine Example` (shows state machine with `S0`, `S1`, transitions `S0:S1`, `S0:S0`, `S1:S0`), `3.6 Symbols`, `3.7 Keywords`. Content types: `timer/negotiation`.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 31,
+          "end_index": 33,
+          "subtree_start_index": 31,
+          "subtree_end_index": 33
+        },
+        {
+          "node_id": "0014",
+          "title": "3.6 Symbols",
+          "summary": "Defines the notation used in `3.6 Symbols`: symbol meanings for `||` (concatenation), `m` (micro, e.g., `μm = micrometer`), and `L >>` (`Received from Link`). Core topic is symbol/notation interpretation, not protocol behavior. Useful when a question asks how expressions or directional annotations in this specification should be read. Adjacent text begins `3.7 Keywords` and includes `expected`, but that is outside the symbol definitions. Tables: none. Figures: none. Content types present: notation/definitions only; no procedure/flow, message/frame format, response/branch handling, state machine, timer/negotiation, or completion/exception conditions.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 33,
+          "end_index": 33,
+          "subtree_start_index": 33,
+          "subtree_end_index": 33
+        },
+        {
+          "node_id": "0015",
+          "title": "3.7 Keywords",
+          "summary": "Defines normative keyword semantics for the specification’s requirements language in `3.7 Keywords`: `expected`, `ignored`, `invalid`, `mandatory`, `may`, `may not`, `meaningful`, `not meaningful`, `obsolete`, `optional`, `reserved`, `restricted`, `shall`, `should`, `x or xx`. Core topic: how these words classify implementation requirements, unsupported/unused values, applicability of fields/bits, and error/reporting expectations. Exact anchors present: `3.7.1 expected`, `3.7.2 ignored`, `3.7.3 invalid`, `3.7.4 mandatory`, `3.7.5 may`, `3.7.6 may not`, `3.7.7 meaningful`, `3.7.8 not meaningful`, `3.7.9 obsolete`, `3.7.10 optional`, `3.7.11 reserved`, `3.7.12 restricted`, `3.7.13 shall`, `3.7.14 should`, `3.7.15 x or xx`. Content types: completion/exception conditions (e.g., invalid/reserved code values reported as error). Tables: none. Figures: none.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 33,
+          "end_index": 34,
+          "subtree_start_index": 33,
+          "subtree_end_index": 34
+        },
+        {
+          "node_id": "0016",
+          "title": "3.8 T10 Vendor ID fields",
+          "summary": "Defines `3.8 T10 Vendor ID fields`: encoding and padding rules for a `T10 Vendor ID` placed into a field. A `T10 Vendor ID` shall be a string of one to eight characters, recorded in the informal list maintained by `INCITS Technical Committee T10` at `http://www.t10.org`. Byte placement rule: the first character goes in the most significant byte, with successive characters in successively less significant bytes. Unused bytes in the field shall be filled with ASCII space characters `20h`. Exact anchors present: `T10 Vendor ID`, `INCITS Technical Committee T10`, `20h`. No tables. No figures. Content types: message/frame format (field byte layout and padding); completion/exception conditions not present; procedure/flow not present; response/branch handling not present; state machine not present; timer/negotiation not present.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 34,
+          "end_index": 35,
+          "subtree_start_index": 34,
+          "subtree_end_index": 35
+        }
+      ],
+      "start_index": 22,
+      "end_index": 22,
+      "subtree_start_index": 22,
+      "subtree_end_index": 35
+    },
+    {
+      "node_id": "0017",
+      "title": "4 Extended Link Services",
+      "summary": "Covers Extended Link Services (ELS) basics and request rules: an ELS request solicits a destination `Nx_Port` function; an ELS reply is required unless otherwise specified. Defines single-`Sequence` request/reply structure, `ELS_Command` code in the first word/first byte of `Payload`, one-`Exchange` request/reply pairing, `Last Sequence bit` termination on `LS_ACC`, and normal `Exchange`/`Sequence` management per `FC-FS-2`. Specifies frame fields: `TYPE` = `01h`, `R_CTL` values, `Payload`, `D_ID`, `S_ID`, `LFA`, valid addresses, well known addresses, and `FLOGI` before all ELSs in a Fabric. `Table 2 – Extended Link Services Routing Bits and Information Categories` defines `R_CTL` routing/info categories: `0001b` Solicited Data, `0010b` Request, `0011b` Reply, Others Reserved; note `CSU`. Content types: message/frame format, response/branch handling, completion/exception conditions, procedure/flow.",
+      "is_skeleton": false,
+      "children": [
+        {
+          "node_id": "0018",
+          "title": "4.1 Introduction",
+          "summary": "Overview of `4.1 Introduction` for `Extended Link Services (ELS)`: defines the generic ELS request/reply model and framing rules before `4.2`. An `ELS` request solicits a destination `Nx_Port`; an `ELS` reply is required unless otherwise specified. Request/reply are a single `Sequence`; `ELS_Command` code is in the first word / first byte of the `Payload` of the first frame only; later frames carry additional `Payload` only. `LS_ACC` terminates the `Exchange` by setting `Last Sequence bit` to one on the last reply frame. Request and reply occur within one `Exchange`; normal `Exchange`/`Sequence` rules from `FC-FS-2` apply. `TYPE` for ELS frames = `01h`; `R_CTL` as in `Table 2 – Extended Link Services Routing Bits and Information Categories` (defines `R_CTL` values: `0001b` `Solicited Data`, `0010b` `Request`, `0011b` `Reply`; others reserved; `CSU` note). Content types: message/frame format, response/branch handling, completion/exception conditions.",
+          "is_skeleton": false,
+          "children": [],
+          "start_index": 36,
+          "end_index": 36,
+          "subtree_start_index": 36,
+          "subtree_end_index": 36
+        },
+        {
+          "node_id": "0019",
+          "title": "4.2 Extended Link Service requests",
+          "summary": "Section `4.2 Extended Link Service requests` defines when and how a Sequence Initiator sends an ELS Sequence to solicit a destination `Nx_Port` link-level function/service. Covers request preconditions and addressing rules: ELS requests shall not be issued before completion of `N_Port Login` unless otherwise noted; `FLOGI` is required before all ELSs if a Fabric is present; `Table 3` applies to ELSs sent to or received by all valid addresses, including well known addresses. Specifies `LFA` usage: destination ID (`D_ID`) for `LINIT` and `LSTS` ELS Request Sequences, source ID (`S_ID`) in Reply Sequences; no other Sequences shall be directed to `LFA`. Content types: procedure/flow, response/branch handling, completion/exception conditions. Table `2 – Extended Link Services Routing Bits and Information Categories`: defines `R_CTL` routing/information values for ELS frames.",
+          "is_skeleton": false,
+          "children": [
+            {
+              "node_id": "0020",
+              "title": "4.2.1 Introduction",
+              "summary": "Core topic: `4.2.1 Introduction` for Extended Link Service requests: when an Nx_Port may send an ELS Sequence, addressing/login prerequisites, `ELS_Command` identification, reply/`Sequence Initiative` rules, and minimum mandatory ELS support. `TYPE=01h`; `R_CTL` uses `0001b` Solicited Data and `0010b` Request / `0011b` Reply. `D_ID`, `S_ID`, `LFA`, `Nx_Port`, `N_Port Login`, `FLOGI`, `PLOGI`, `LOGO`, `LS_ACC`, `LS_RJT`, `LINIT`, `LSTS` are explicitly covered. `Table 2 – Extended Link Services Routing Bits and Information Categories`: defines `R_CTL` routing/information categories. `Table 3 – ELS_Command codes`: maps command hex values (`01h`-`A6h`, `7Eh`, `7Fh`, `80h`, `90h`, `97h`, `14h` reserved, others reserved) to description, abbreviation, reference, and `N_Port Login Required`. Contains: [procedure/flow], [message/frame format], [response/branch handling], [completion/exception conditions].",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 36,
+              "end_index": 40,
+              "subtree_start_index": 36,
+              "subtree_end_index": 40
+            },
+            {
+              "node_id": "0021",
+              "title": "4.2.2 Sequence and Exchange management",
+              "summary": "Section `4.2.2 Sequence and Exchange management` covers ELS Sequence/Exchange rules and adjacent response handling for received ELSs. `Table 4 – Responses to Received ELSs` defines response branching by `N_Port Login` required/not required and whether logged in with the source `N_Port`; outcomes include `LOGO ELS Exchange`, `LS_RJT ELS Sequence`, discard, or normal response, with reason code `\"Unable to perform command request\"` and explanation `\"N_Port Login required\"`. Also states `PLOGI ELS request` must be answered with `LS_ACC Link Service Reply` or `LS_RJT`, and `LS_RJT` shall not use `\"Command not supported\"` for `PLOGI`. Covers `RSI` collision handling with `LS_RJT` reason `\"command already in progress\"`. Sequence rules: all ELS except `ESTS`, `ESTC`, `ADVC` use a single Exchange; reply terminates by setting `Last_Sequence` bit `(bit 20)` in `F_CTL`. Content types: procedure/flow, response/branch handling, completion/exception conditions.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 41,
+              "end_index": 41,
+              "subtree_start_index": 41,
+              "subtree_end_index": 41
+            },
+            {
+              "node_id": "0022",
+              "title": "4.2.3 Advise Credit (ADVC)",
+              "summary": "Section `4.2.3 Advise Credit (ADVC)` covers the `ADVC` ELS: advising a destination `Nx_Port` of the estimated end-to-end Credit a source `Nx_Port` requests to be allocated, including independent use from the Estimate Credit procedure. Named anchors: `ADVC`, `Advise Credit (ADVC)`, `FC-FS-2`, `LS_ACC`, `LS_RJT`, `S_ID`, `D_ID`, `Nx_Port`, `Advise Credit Request Sequence`, `LS_ACC or LS_RJT Reply Sequence`. Protocol content is minimal but specific: request is a separate `Sequence`, may be a separate `Exchange`; protocol consists of request then `LS_ACC`/`LS_RJT` reply; addressing defines `S_ID` as source `Nx_Port` requesting Credit revision and `D_ID` as destination `Nx_Port`. Content types: procedure/flow, response/branch handling, timer/negotiation. No tables. No figures.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0023",
+                  "title": "4.2.3.1 Description",
+                  "summary": "Core topic: `4.2.3.1 Description` defines the purpose and usage constraints of the `ADVC` ELS (`Advise Credit`). `ADVC` is used to advise the destination `Nx_Port` of the estimated end-to-end `Credit` the source `Nx_Port` requests to be allocated. The `ADVC` ELS request shall be a separate `Sequence`; it may also be requested in a separate `Exchange`. Usage reference: `FC-FS-2`. The `ADVC` request may also be used independently from the `Estimate Credit` procedure (`FC-FS-2`). Exact anchors present: `ADVC`, `Advise Credit`, `Nx_Port`, `Credit`, `Sequence`, `Exchange`, `FC-FS-2`, `Estimate Credit`. Content types: procedure/flow, timer/negotiation. No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 42,
+                  "end_index": 42,
+                  "subtree_start_index": 42,
+                  "subtree_end_index": 42
+                },
+                {
+                  "node_id": "0024",
+                  "title": "4.2.3.2 Protocol",
+                  "summary": "Core topic: ELS protocol rules for Sequence/Exchange management plus `4.2.3.2 Protocol` for `Advise Credit (ADVC)`. General ELS rules: Request and Reply Sequences may use any class of service; reply uses same class as request; before successful Login use default Login values; after successful Login Originator uses Discard multiple Sequences Error Policy; detect missing Reply Sequence after Sequence Initiative transfer at `2 X R_A_TOV`; on Exchange error abort with `ABTS-LS` and retry with a different Exchange; Sequence abort/retry behavior covers `ABTS`, `BA_ACC`, `ACK`, Abort Sequence bits `01b`, and `E_D_TOV`. ADVC protocol anchor points: `Advise Credit Request Sequence`; `LS_ACC` or `LS_RJT Reply Sequence`. Content types: procedure/flow, response/branch handling, timer/negotiation, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 42,
+                  "end_index": 42,
+                  "subtree_start_index": 42,
+                  "subtree_end_index": 42
+                },
+                {
+                  "node_id": "0025",
+                  "title": "4.2.3.3 Request Sequence",
+                  "summary": "ADVC `4.2.3.3 Request Sequence`: defines ADVC request addressing for Credit revision—`S_ID` identifies the source `Nx_Port` requesting Credit revision, `D_ID` identifies the destination `Nx_Port`. Nearby ELS request/reply sequence management rules on this page include class-of-service rules for Request/Reply Sequences, same-class reply requirement, default Login values before successful Login, `Discard multiple Sequences Error Policy` after Login, timeout/error handling with `2 X R_A_TOV`, `E_D_TOV`, `ABTS`, `ABTS-LS`, `BA_ACC`, `ACK`, and `Abort Sequence bits` = `01b`, including retry/abort behavior with a different Exchange. Content types: procedure/flow, response/branch handling, timer/negotiation, completion/exception conditions. Tables: none. Figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 42,
+                  "end_index": 42,
+                  "subtree_start_index": 42,
+                  "subtree_end_index": 42
+                },
+                {
+                  "node_id": "0026",
+                  "title": "4.2.3.4 Reply Sequence",
+                  "summary": "Defines ADVC reply handling for `4.2.3.4 Reply Sequence`: `LS_RJT` signifies rejection of the `ADVC` command; `LS_ACC` signifies successful completion of the `ADVC` function and permanently replaces end-to-end `Credit` for the current `N_Port Login`. Covers `LS_ACC` Payload requirements: revised end-to-end `Credit` in the appropriate Class Service Parameters indicated by `Class Validity bit`; recipient ignores other Service Parameter fields; revised value applies to current `Login` for the `Nx_Port` transmitting the `LS_ACC` Sequence. Includes `Table 6 – ADVC LS_ACC Payload`, showing the `LS_ACC` Payload format, including word `0 = 02h 00h 00h 00h`, `Common Service Parameters`, `N_Port_Name`, `Node_Name`, `Class 1 Service Parameters`, `Class 2 Service Parameters`, `Class 3 Service Parameters`, `Reserved`, `Vendor Version Level`. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 43,
+                  "end_index": 44,
+                  "subtree_start_index": 43,
+                  "subtree_end_index": 44
+                }
+              ],
+              "start_index": 42,
+              "end_index": 42,
+              "subtree_start_index": 42,
+              "subtree_end_index": 44
+            },
+            {
+              "node_id": "0027",
+              "title": "4.2.4 Echo (ECHO)",
+              "summary": "Echo (`ECHO`) Extended Link Service loopback diagnostic: Recipient returns the Payload following `ELS_Command` to the Initiator in the same order using an `LS_ACC` Reply Sequence; both the `ECHO` Request Sequence and `LS_ACC` Reply Sequence shall be one-frame Sequences. Covers `LS_ACC` / `LS_RJT` reply handling, Request Sequence addressing via `D_ID` and `S_ID`, `S_ID`, and Payload sizing rules based on Login existence and `Buffer-to-buffer Receive Data_Field Size`; size limit is `- 4`, default example `124 bytes`. Payload format references `Table 7 – ECHO Payload`: Word 0 = `ECHO (10h) 00h 00h 00h`, followed by `ECHO data`. Also contains `Table 5 – ADVC Payload`, which defines the `ADVC` Payload layout. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0028",
+                  "title": "4.2.4.1 Description",
+                  "summary": "Echo (ECHO) ELS description and basic protocol scope: `Echo ELS` requests the Recipient to return Payload following `ELS_Command` to the Initiator via `LS_ACC Reply Sequence`, as a simple loopback diagnostic. Covers one-frame `Echo` Request Sequence and one-frame `LS_ACC Reply Sequence`. Names and codes present: `ECHO (10h)`, `LS_ACC`, `LS_RJT`, `D_ID`, `S_ID`, `Nx_Port`, `Buffer-to-buffer Receive Data_Field Size - 4`, `Receive Data_Field Size`, `class of service`, `124 bytes`. `Table 7 – ECHO Payload` defines the `ECHO` Payload/message format: Word 0=`ECHO (10h) 00h 00h 00h`, Word 1..n=`ECHO data`, `MSB`, `LSB`, up to max frame length - 4. `LS_RJT` signifies rejection of the `ECHO` command. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 45,
+                  "end_index": 45,
+                  "subtree_start_index": 45,
+                  "subtree_end_index": 45
+                },
+                {
+                  "node_id": "0029",
+                  "title": "4.2.4.2 Protocol",
+                  "summary": "Defines `4.2.4.2 Protocol` for `Echo (ECHO)`: the protocol consists of `a) Echo Request Sequence` and `b) LS_ACC or LS_RJT Reply Sequence` for the `ECHO` exchange. Core named items present in this section context: `ECHO`, `LS_ACC`, `LS_RJT`, `ELS_Command`, `Payload`, `D_ID`, `S_ID`, `Nx_Port`, `Receive Data_Field Size`, `Buffer-to-buffer Receive Data_Field Size`, `Table 7 – ECHO Payload`, code `ECHO (10h)`, value `124 bytes`, and `Word 0`. Content types: procedure/flow, response/branch handling, message/frame format, completion/exception conditions. `LS_ACC` returns payload in the same order as received; `LS_RJT` signifies rejection. Table present: `Table 5 – ADVC Payload` — defines `ADVC` payload layout (listed with this section’s extracted tables).",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 45,
+                  "end_index": 45,
+                  "subtree_start_index": 45,
+                  "subtree_end_index": 45
+                },
+                {
+                  "node_id": "0030",
+                  "title": "4.2.4.3 Request Sequence",
+                  "summary": "Defines `ECHO` Request Sequence for `4.2.4 Echo (ECHO)`: addressing and payload limits for the one-frame request. Core fields: `D_ID` designates destination, `S_ID` designates source; Payload format is in `Table 7 – ECHO Payload`. `Word 0` contains `ECHO (10h) 00h 00h 00h`; `Word 1` starts `MSB ECHO data`; `Word n` ends `LSB`, up to max frame length `- 4`. Size rules branch on whether a Login with the destination `Nx_Port` exists: default `Buffer-to-buffer Receive Data_Field Size - 4` (`124 bytes`) if no Login; otherwise limited by smallest supported `Receive Data_Field Size` of destination `Nx_Port`, the `Fabric`, and source `Nx_Port` for the class of service, minus `4`. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 45,
+                  "end_index": 45,
+                  "subtree_start_index": 45,
+                  "subtree_end_index": 45
+                },
+                {
+                  "node_id": "0031",
+                  "title": "4.2.4.4 Reply Sequence",
+                  "summary": "Section `4.2.4.4 Reply Sequence` covers `ECHO` reply behavior, specifically rejection handling for the Echo Extended Link Service. Core rule: `LS_RJT` signifies rejection of the `ECHO` command. Named anchors present from the section context: `LS_ACC`, `LS_RJT`, `ECHO (10h)`, `D_ID`, `S_ID`, `Nx_Port`, `Receive Data_Field Size`, `Buffer-to-buffer Receive Data_Field Size - 4`, `124 bytes`, `table 7`, `Table 5 – ADVC Payload`. Content types: response/branch handling, completion/exception conditions. Related message/frame format context is referenced via `table 7` for `ECHO Payload` (defines payload layout, including `Word 0 ECHO (10h) 00h 00h 00h` and ECHO data bytes). Included table: `Table 5 – ADVC Payload` — shows `ADVC` payload field layout.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 45,
+                  "end_index": 45,
+                  "subtree_start_index": 45,
+                  "subtree_end_index": 45
+                }
+              ],
+              "start_index": 45,
+              "end_index": 45,
+              "subtree_start_index": 45,
+              "subtree_end_index": 45
+            },
+            {
+              "node_id": "0032",
+              "title": "4.2.5 Estimate Credit (ESTC)",
+              "summary": "Section `4.2.5 Estimate Credit (ESTC)` defines the `ESTC` ELS used to estimate the minimum `Credit` needed to achieve maximum bandwidth for a given distance between an `Nx_Port` pair. Includes `4.2.5.1 Description`, `4.2.5.2 Protocol`, and `4.2.5.3 Request Sequence`. Protocol names/branches: `Estimate Credit Request Sequence`, `No Reply Sequence`. Key identifiers/fields: `S_ID`, `D_ID`, `Nx_Port`, `SOF`, `ELS_Command`, `ESTC Request`, `Data frames`, `Login parameters`, `Establish Streaming frame`. Exact code/value: `ESTC (0Ch)`, `00h`. `Table 9 – ESTC Payload` shows the `ESTC` Payload/message format: word 0 contains `ESTC (0Ch) 00h 00h 00h`; subsequent payload is `Any data (see FC-FS-2)`. Content types: procedure/flow, message/frame format, response/branch handling.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0033",
+                  "title": "4.2.5.1 Description",
+                  "summary": "ESTC ELS description and request framing for estimating minimum Credit to achieve maximum bandwidth between an Nx_Port pair at a given distance. Names/anchors: `ESTC`, `Estimate Credit (ESTC)`, `Nx_Port`, `SOF`, `ESTC Request`, `Data frames`, `Login parameters`, `FC-FS-2`, `S_ID`, `D_ID`, `Establish Streaming frame`, `Payload`, `ELS_Command`, `ESTC (0Ch)`, `00h`. Specifies that the class of the `SOF` identifies the class being estimated, and the destination `Nx_Port` acknowledges `Data frames` per `Login parameters`. Content types: message/frame format, procedure/flow, response/branch handling. Procedures listed: `Estimate Credit Request Sequence`; `No Reply Sequence`. Table `Table 9 – ESTC Payload`: defines ESTC request payload layout, with word 0 `ESTC (0Ch) 00h 00h 00h` and subsequent `Any data (see FC-FS-2)`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 46,
+                  "end_index": 46,
+                  "subtree_start_index": 46,
+                  "subtree_end_index": 46
+                },
+                {
+                  "node_id": "0034",
+                  "title": "4.2.5.2 Protocol",
+                  "summary": "4.2.5.2 `Protocol` covers `Estimate Credit (ESTC)` exchange behavior for estimating minimum Credit between an `Nx_Port` pair. Named protocol branches: `a) Estimate Credit Request Sequence` and `b) No Reply Sequence`. Related request context carried into this section includes `S_ID`, `D_ID`, `ELS_Command`, `ESTC (0Ch)`, and valid data bytes in the `Payload`; addressing ties `D_ID` to the destination `Nx_Port` from the `Establish Streaming` frame. Content types: procedure/flow, response/branch handling, message/frame format, completion/exception conditions (`No Reply Sequence`). `Table 5 – ADVC Payload`: shows `ADVC (0Dh)` payload word layout. `Table 9 – ESTC Payload`: defines `ESTC (0Ch)` payload format, with word 0 containing the `ELS_Command` and subsequent words carrying `Any data`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 46,
+                  "end_index": 46,
+                  "subtree_start_index": 46,
+                  "subtree_end_index": 46
+                },
+                {
+                  "node_id": "0035",
+                  "title": "4.2.5.3 Request Sequence",
+                  "summary": "Core topic: `4.2.5.3 Request Sequence` for `ESTC` (`Estimate Credit`) ELS request framing and addressing. Content types: procedure/flow, message/frame format. Defines `Addressing`: `S_ID` = source `Nx_Port` requesting the Credit estimate; `D_ID` = destination `Nx_Port` specified in the `Establish Streaming` frame. Defines `Payload`: first word of first frame shall contain `ELS_Command`; payload after `ELS_Command` and in subsequent frames shall be valid data bytes. `Table 9 – ESTC Payload` shows the `ESTC` request payload format: word 0 = `ESTC (0Ch) 00h 00h 00h`, word 1..n = `Any data (see FC-FS-2)` from `MSB` to `LSB`. `Table 5 – ADVC Payload` appears and defines/shows `ADVC` payload format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 46,
+                  "end_index": 46,
+                  "subtree_start_index": 46,
+                  "subtree_end_index": 46
+                },
+                {
+                  "node_id": "0036",
+                  "title": "4.2.5.4 Reply Sequence",
+                  "summary": "Section `4.2.5.4 Reply Sequence` states `None.` for reply behavior of the prior subsection. It immediately begins `4.2.6 Establish Streaming (ESTS)`: `ESTS` requests temporary `Streaming Credit`; `SOF` identifies the class; protocol lists `Establish Streaming Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`. Request sequence uses `S_ID`, `D_ID`; payload format in `Table 10 – ESTS Payload` with `Word 0` = `ESTS (0Bh) 00h 00h 00h`. Reply sequence: `LS_RJT` rejects `ESTS`; `LS_ACC` indicates success and carries `Streaming Credit` in `Nx_Port end-to-end Credit` of `Class Service Parameters`; `Class Validity bit` selects the class; other `Service Parameter` fields ignored. `Table 9 – ESTC Payload`: defines `ESTC` payload format. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 47,
+                  "end_index": 47,
+                  "subtree_start_index": 47,
+                  "subtree_end_index": 47
+                }
+              ],
+              "start_index": 46,
+              "end_index": 46,
+              "subtree_start_index": 46,
+              "subtree_end_index": 47
+            },
+            {
+              "node_id": "0037",
+              "title": "4.2.6 Establish Streaming (ESTS)",
+              "summary": "4.2.6 Establish Streaming (ESTS): defines the `ESTS` ELS for temporary allocation of Streaming Credit to support continuous streaming of Data frames; the `SOF` identifies the class for which Credit is being estimated; references `FC-FS-2`. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions. Procedure: `Establish Streaming Request Sequence`; `LS_ACC or LS_RJT Reply Sequence`. Request Sequence: `S_ID` = source `Nx_Port` requesting Streaming; `D_ID` = destination `Nx_Port`; payload format in `Table 10 – ESTS Payload`, showing `Word 0` = `ESTS (0Bh) 00h 00h 00h`. Reply Sequence: `LS_RJT` rejects `ESTS`; `LS_ACC` indicates success, with payload carrying Streaming Credit in the `Nx_Port end-to-end Credit` field of the appropriate `Class Service Parameters` (see `6.6.5`); `Class Validity bit` identifies the class; recipient ignores other Service Parameter fields. `Table 9 – ESTC Payload`: shows `ESTC` payload format.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0038",
+                  "title": "4.2.6.1 Description",
+                  "summary": "Section 4.2.6.1 `Description` covers `Establish Streaming (ESTS)` as an `ELS` that requests temporary `Credit` allocation called `Streaming Credit` for continuous streaming of `Data` frames; the `SOF` of the `ESTS Request` identifies the class for which Credit is estimated; usage references `FC-FS-2`. Related protocol anchors on this page: `Establish Streaming Request Sequence`; `LS_ACC or LS_RJT Reply Sequence`; addressing fields `S_ID`, `D_ID`; `ESTS` payload `table 10` with `Word 0 = ESTS (0Bh) 00h 00h 00h`; reply handling where `LS_RJT` rejects and `LS_ACC` completes, returning Streaming Credit in the `Nx_Port end-to-end Credit` field of `Class Service Parameters` (`6.6.5`) with `Class Validity bit`. Table present: `Table 9 – ESTC Payload`, defines `ESTC` payload format. [message/frame format] [procedure/flow] [response/branch handling] [completion/exception conditions]",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 47,
+                  "end_index": 47,
+                  "subtree_start_index": 47,
+                  "subtree_end_index": 47
+                },
+                {
+                  "node_id": "0039",
+                  "title": "4.2.6.2 Protocol",
+                  "summary": "Defines the `4.2.6.2 Protocol` for `Establish Streaming (ESTS)`: sequence structure only. Core content is the ESTS exchange flow: `a) Establish Streaming Request Sequence` followed by `b) LS_ACC or LS_RJT Reply Sequence`. Anchors present: `ESTS`, `LS_ACC`, `LS_RJT`. Content types: procedure/flow, response/branch handling. This section does not give payload layout itself, but points into the surrounding ESTS procedure where the request payload uses `ESTS (0Bh)` and addressing/fields such as `S_ID`, `D_ID`, and later reply payload placement in the `Nx_Port end-to-end Credit` field with `Class Validity` and `Class Service Parameters`. Table present: `Table 9 – ESTC Payload` — shows ESTC payload word/bit layout including `ESTC (0Ch)` and `00h` values. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 47,
+                  "end_index": 47,
+                  "subtree_start_index": 47,
+                  "subtree_end_index": 47
+                },
+                {
+                  "node_id": "0040",
+                  "title": "4.2.6.3 Request Sequence",
+                  "summary": "Request Sequence for `4.2.6 Establish Streaming (ESTS)`: defines ESTS request addressing and payload for the Establish Streaming request. `S_ID` designates the source `Nx_Port` requesting Streaming; `D_ID` designates the destination `Nx_Port` addressed. Payload format is said to be shown in `Table 10 – ESTS Payload`: `Word 0` = `ESTS (0Bh) 00h 00h 00h`. Nearby protocol context names `Establish Streaming Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`; reply handling immediately following states `LS_RJT` rejects the `ESTS` command and `LS_ACC` signifies successful completion. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions. Table present in section materials: `Table 9 – ESTC Payload`, shows `ESTC` payload layout/fields.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 47,
+                  "end_index": 47,
+                  "subtree_start_index": 47,
+                  "subtree_end_index": 47
+                },
+                {
+                  "node_id": "0041",
+                  "title": "4.2.6.4 Reply Sequence",
+                  "summary": "Reply Sequence for `Establish Streaming (ESTS)`: defines reply outcomes to an `ESTS` request and what successful completion returns. [response/branch handling] `LS_RJT` signifies rejection of the `ESTS` command; `LS_ACC` signifies successful completion of the `ESTS` function. [completion/exception conditions] On `LS_ACC`, the `Payload` format is referenced in `table 11`; the `Payload` shall contain Streaming Credit allocated in the `Nx_Port end-to-end Credit field` of the appropriate `Class Service Parameters` (see `6.6.5`), and the `Class Validity bit`, when set to one, identifies the class containing the Streaming Credit; recipients ignore other Service Parameter fields. Related context anchors: `S_ID`, `D_ID`, `table 10`, `ESTS (0Bh)`, `FC-FS-2`. Table present: `Table 9 – ESTC Payload`, shows/defines the `ESTC` Payload format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 47,
+                  "end_index": 47,
+                  "subtree_start_index": 47,
+                  "subtree_end_index": 47
+                }
+              ],
+              "start_index": 47,
+              "end_index": 47,
+              "subtree_start_index": 47,
+              "subtree_end_index": 47
+            },
+            {
+              "node_id": "0042",
+              "title": "4.2.7 Login (FLOGI/PLOGI)",
+              "summary": "Core topic: `4.2.7 Login (FLOGI/PLOGI)` and `4.2.7.1 Description` define how `FLOGI`/`PLOGI` `ELS` transfer `Service Parameters` from an initiating `Nx_Port` to the `FC_Port` associated with the `D_ID`. `FLOGI` requests Login with the Fabric; `PLOGI` requests Login with another `Nx_Port` prior to other `Data frame` transfers. For Fabric login, the `Nx_Port` shall specify `D_ID` as well-known `F_Port_ID` `FFFFFEh`. Named anchors present: `Nx_Port`, `FC_Port`, `D_ID`, `FLOGI`, `PLOGI`, `ELS`, `Service Parameters`, `Fabric`, `F_Port_ID`, `FFFFFEh`, `6.2`, `6.3`. Table: `Table 9 – ESTC Payload` — defines `ESTC` payload layout (`ESTC (0Ch)`). Content types: procedure/flow, message/frame format, timer/negotiation.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0043",
+                  "title": "4.2.7.1 Description",
+                  "summary": "Section `4.2.7.1 Description` covers `Login (FLOGI/PLOGI)` purpose and use: `FLOGI`/`PLOGI` `ELS` transfer `Service Parameters` from initiating `Nx_Port` to the `FC_Port` associated with the `D_ID`. It states `FLOGI` requests Login with the Fabric (`6.2`), `PLOGI` requests Login with another `Nx_Port` before other Data frame transfers (`6.3`), and for Fabric Login an `Nx_Port` shall use the well-known `F_Port_ID` `FFFFFEh` as `D_ID`. Nearby payload context includes `Table 11 – ESTS LS_ACC Payload` with fields `Common Service Parameters`, `N_Port_Name`, `node Name`, `Class 1 Service Parameters`, `Class 2 Service Parameters`, `Class 3 Service Parameters`, `Reserved`, `Vendor Version Level`, code `02h`. Table present: `Table 9 – ESTC Payload` — defines `ESTC` payload format. Content types: message/frame format, procedure/flow.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 48,
+                  "end_index": 48,
+                  "subtree_start_index": 48,
+                  "subtree_end_index": 48
+                },
+                {
+                  "node_id": "0044",
+                  "title": "4.2.7.2 Protocol",
+                  "summary": "Defines Login protocol sequencing for `FLOGI`/`PLOGI` and reply handling. Core content: `procedure/flow`, `response/branch handling`, `completion/exception conditions`. Protocol is explicitly: `FLOGI or PLOGI Request Sequence` followed by `LS_ACC or LS_RJT Reply Sequence`. Related addressing/payload details in adjacent text: `S_ID` identifies the source `Nx_Port` requesting Login, `D_ID` identifies the destination `Nx_Port` or `Fx_Port`; if unidentified in `Fabric Login`, `binary zeros` are used. `LS_RJT` signifies rejection of the `FLOGI or PLOGI Request Sequence`; `LS_ACC` signifies successful completion. Payload format for request and `LS_ACC` reply is shown in `table 149` — defines Login/`LS_ACC` payload format; `Service Parameters` are defined in `6.6`. Exception condition noted nearby: open `Sequences` with the logging-in `Nx_Port` are abnormally terminated.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 49,
+                  "end_index": 49,
+                  "subtree_start_index": 49,
+                  "subtree_end_index": 49
+                },
+                {
+                  "node_id": "0045",
+                  "title": "4.2.7.3 Request Sequence",
+                  "summary": "Covers `4.2.7.3 Request Sequence` for Login request framing and addressing in `FLOGI`/`PLOGI`. Core points: `S_ID` designates the source `Nx_Port` requesting Login; if unidentified, as in `Fabric Login`, binary zeros are used. `D_ID` designates the destination `Nx_Port` or `Fx_Port` of the Login. Payload format is shown in `table 149`; `Service Parameters` are defined in `6.6`. Context on same page includes request/reply pairing `FLOGI or PLOGI Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`, plus behavior that when an `Nx_Port` receives a Login from an `Nx_Port`, all open `Sequences` with the logging-in `Nx_Port` are abnormally terminated. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions. Tables: `table 149` — Login/`LS_ACC` payload format. Figures: none.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 49,
+                  "end_index": 49,
+                  "subtree_start_index": 49,
+                  "subtree_end_index": 49
+                },
+                {
+                  "node_id": "0046",
+                  "title": "4.2.7.4 Reply Sequence",
+                  "summary": "Reply Sequence for Login ELS (`4.2.7.4`): defines reply handling for `FLOGI` or `PLOGI` Request Sequence, specifically `LS_RJT` and `LS_ACC`. `LS_RJT` signifies rejection of the `FLOGI` or `PLOGI` Request Sequence; `LS_ACC` signifies successful completion of the `FLOGI` or `PLOGI` Request Sequence. For `LS_ACC`, the Payload format is shown in `table 149`, and `Service Parameters` are defined in `6.6`. Exact anchors present: `FLOGI`, `PLOGI`, `LS_RJT`, `LS_ACC`, `Payload`, `table 149`, `Service Parameters`, `6.6`. Content types: response/branch handling, completion/exception conditions, message/frame format. Tables/figures: `table 149` — defines the `LS_ACC Payload` format; no figures present.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 49,
+                  "end_index": 49,
+                  "subtree_start_index": 49,
+                  "subtree_end_index": 49
+                }
+              ],
+              "start_index": 48,
+              "end_index": 48,
+              "subtree_start_index": 48,
+              "subtree_end_index": 49
+            },
+            {
+              "node_id": "0047",
+              "title": "4.2.8 Logout (LOGO)",
+              "summary": "Section `4.2.8 Logout (LOGO)`: explicit logout/removal of service between two `Nx_Port_IDs` or between an `N_Port_ID` and a Fabric; releases resources, identifiers, and relationships associated with Service. Covers `LOGO ELS` behavior when `S_ID` and `D_ID` are both `Address_Identifiers` of `Nx_Ports`, and when either `S_ID` or `D_ID` is the `F_Port` well-known address `FFFFFEh` (Fabric logout). Named anchors: `LOGO`, `LOGO ELS`, `Logout Request Sequence`, `S_ID`, `D_ID`, `Nx_Port_ID`, `N_Port_ID`, `Address_Identifiers`, `Nx_Ports`, `F_Port`, `FFFFFEh`, `Fabric`. Key conditions: payload `N_Port_ID` may differ from `S_ID`; old Identifier may be logged out using a new Identifier after `N_Port_ID` change; both source and destination shall abnormally terminate all open `Exchanges`; Fabric logout implicitly logs out from all other `Nx_Port_IDs`. Content types: completion/exception conditions.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0048",
+                  "title": "4.2.8.1 Description",
+                  "summary": "Core topic: `4.2.8 Logout (LOGO)` / `4.2.8.1 Description` defines what the `LOGO ELS` does: explicit removal of service between two `Nx_Port_IDs` or between an `N_Port_ID` and a `Fabric`, releasing resources, identifiers, and relationships. Anchors: `LOGO ELS`, `Nx_Port_IDs`, `N_Port_ID`, `Fabric`, `S_ID`, `D_ID`, `Address_Identifiers`, `Nx_Ports`, `F_Port well-known address`, `FFFFFEh`, `Logout Request Sequence`, `Exchanges`, `Payload`, `N_Port_ID has changed`. Covers branch behavior for two cases: `S_ID`/`D_ID` both `Nx_Ports`, or either equals `FFFFFEh` for Fabric logout. Completion/exception conditions: both source and destination shall abnormally terminate all open `Exchanges`; Fabric logout also implicitly logs out the payload `N_Port_ID` from all other `Nx_Port_IDs`. Content types: response/branch handling, completion/exception conditions. No tables. No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 49,
+                  "end_index": 49,
+                  "subtree_start_index": 49,
+                  "subtree_end_index": 49
+                },
+                {
+                  "node_id": "0049",
+                  "title": "4.2.8.2 Protocol",
+                  "summary": "LOGO `Protocol` section for `Logout Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`, covering `Request Sequence` and `Reply Sequence` for explicit `Nx_Port Logout` and explicit `Fabric Logout`. Includes addressing rules using `S_ID`, `D_ID`, `Nx_Port_ID`, `N_Port_ID`, `F_Port Well-known address`, `FFFFFEh`; payload identifiers/codes `LOGO (05h)`, `LS_ACC`, `LS_RJT`, `02h`. States that `LS_RJT` rejects the `LOGO` command; `LS_ACC` confirms service removal for the `N_Port_ID` in the `LOGO ELS` payload, including Fabric logout/release. `Table 12 – LOGO Payload`: defines `LOGO` payload format with `Reserved`, `N_Port_ID`, `MSB N_Port_Name`, `LSB`. `Table 13 – LOGO LS_ACC Payload`: defines `LS_ACC` payload format. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 50,
+                  "end_index": 50,
+                  "subtree_start_index": 50,
+                  "subtree_end_index": 50
+                },
+                {
+                  "node_id": "0050",
+                  "title": "4.2.8.3 Request Sequence",
+                  "summary": "LOGO `4.2.8.3 Request Sequence`: request addressing and payload rules for explicit `Nx_Port Logout` and explicit `Fabric Logout`. Covers `S_ID`, `D_ID`, `Nx_Port_ID`, `N_Port_ID`, `N_Port_Name`, `F_Port Well-known address`, `FFFFFEh`, and `Payload` contents. Specifies source/destination field mappings for Logout originated by an `Nx_Port` or by the `Fabric`. `Table 12 – LOGO Payload` defines the `LOGO (05h)` request payload layout, including `Reserved`, `N_Port_ID`, and 8-byte `N_Port_Name`. Nearby reply context references `LS_ACC` / `LS_RJT`; `LS_ACC` payload uses `Table 13 – LOGO LS_ACC Payload`, showing code `02h` and indicating service removed / Fabric logout completed for the `N_Port_ID`. Content types: procedure/flow, message/frame format, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 50,
+                  "end_index": 50,
+                  "subtree_start_index": 50,
+                  "subtree_end_index": 50
+                },
+                {
+                  "node_id": "0051",
+                  "title": "4.2.8.4 Reply Sequence",
+                  "summary": "Section 4.2.8.4 Reply Sequence: LOGO ELS reply handling for `LS_RJT` and `LS_ACC` after the LOGO command; core meaning is whether the `LOGO` command is rejected or service/logout is completed for the `N_Port_ID` named in the Payload. `LS_RJT` signifies rejection of the `LOGO` command. `LS_ACC` signifies service has been removed for the `N_Port_ID` indicated in the Payload of the `LOGO ELS`; for Fabric Logout, the `N_Port_ID` in the Payload has been logged out from the Fabric and released. `Table 13 – LOGO LS_ACC Payload` defines the `LS_ACC` Payload format, with Word 0 = `02h 00h 00h 00h`. Nearby context includes `Table 12 – LOGO Payload`, which defines the `LOGO (05h)` Payload format. Content types: response/branch handling, message/frame format, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 50,
+                  "end_index": 50,
+                  "subtree_start_index": 50,
+                  "subtree_end_index": 50
+                }
+              ],
+              "start_index": 49,
+              "end_index": 49,
+              "subtree_start_index": 49,
+              "subtree_end_index": 50
+            },
+            {
+              "node_id": "0052",
+              "title": "4.2.9 Read Connection Status (RCS)",
+              "summary": "Core topic: `4.2.9 Read Connection Status (RCS)` — `RCS ELS` requests the `Fabric Controller` to return current dedicated connection status for the `Nx_Port` named in the `Payload` of the `RCS frame`; lets an `Nx_Port` interrogate the Fabric for connection status of other `Nx_Ports` within the Fabric. Named anchors present in the excerpt: `Read Connection Status (RCS)`, `RCS ELS`, `Fabric Controller`, `Nx_Port`, `Payload`, `RCS frame`. Content types: `message/frame format` (request purpose and addressed object only). Nearby carried-over tables on this page: `Table 12 – LOGO Payload` — defines `LOGO (05h)` payload fields including `N_Port_ID`, `N_Port_Name`; `Table 13 – LOGO LS_ACC Payload` — defines `LS_ACC` payload `02h 00h 00h 00h`. No figures.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0053",
+                  "title": "4.2.9.1 Description",
+                  "summary": "Core topic: `4.2.9.1 Description` for `Read Connection Status (RCS)`. Defines that the `RCS ELS` requests the `Fabric Controller` to return the current dedicated connection status for the `Nx_Port` specified in the `Payload` of the `RCS` frame; states an `Nx_Port` may interrogate the Fabric for the Connection status of other `Nx_Ports` within the Fabric. Also present on this page is surrounding `LOGO` material: `Logout Request Sequence`, `LS_ACC or LS_RJT Reply Sequence`, `Request Sequence`, `Reply Sequence`, addressing fields `S_ID`, `D_ID`, `Nx_Port_ID`, `N_Port_ID`, `N_Port_Name`, `F_Port Well-known address`, `FFFFFEh`, `LOGO (05h)`, `LS_RJT`, `LS_ACC`, `02h`. Tables: `Table 12 – LOGO Payload` defines `LOGO` payload format; `Table 13 – LOGO LS_ACC Payload` defines `LS_ACC` payload format. Content types: procedure/flow, message/frame format, response/branch handling.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 50,
+                  "end_index": 50,
+                  "subtree_start_index": 50,
+                  "subtree_end_index": 50
+                },
+                {
+                  "node_id": "0054",
+                  "title": "4.2.9.2 Protocol",
+                  "summary": "RCS `4.2.9.2 Protocol` for directing an RCS ELS Request frame to the Fabric: `Nx_Port` sets `D_ID` to Fabric Controller `FFFFFDh`. Covers procedure/flow and response/branch handling: `a) Read Connection Status Request Sequence`; `b) LS_ACC or LS_RJT Reply Sequence`. Related message/frame format in adjacent request/reply text: `S_ID` = source `Nx_Port`, `D_ID` = Fabric Controller (`FFFFFDh`), Payload word 0 `RCS (07h)`, word 1 `Reserved N_Port_ID`; `LS_RJT` rejects the `RCS` command, `LS_ACC` signifies the Fabric has completed the request. `Table 15 – RCS LS_ACC Payload` shows the `LS_ACC` payload format (`02h 00h 00h 00h`; `Connection Status`, `N_Port_ID`). `Table 13 – LOGO LS_ACC Payload` appears on these pages and shows the `LOGO LS_ACC` payload format.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 51,
+                  "end_index": 51,
+                  "subtree_start_index": 51,
+                  "subtree_end_index": 51
+                },
+                {
+                  "node_id": "0055",
+                  "title": "4.2.9.3 Request Sequence",
+                  "summary": "RCS Request Sequence for Read Connection Status: how an Nx_Port addresses and formats an `RCS` ELS request to the Fabric Controller. Contains `procedure/flow`, `message/frame format`, `response/branch handling`, `completion/exception conditions`. Addressing uses `S_ID` = source `Nx_Port` requesting Connection status and `D_ID` = Fabric Controller `FFFFFDh`. Payload rules: first word contains `ELS_Command` code; second word contains `N_Port_ID` whose Connection status is requested. `Table 14 – RCS Payload` shows request payload format: Word 0 `RCS (07h) 00h 00h 00h`; Word 1 `Reserved N_Port_ID`. Contextual reply path immediately referenced: `LS_RJT` rejects `RCS`; `LS_ACC` means Fabric completed the request. `Table 15 – RCS LS_ACC Payload` shows reply payload: Word 0 `02h 00h 00h 00h`; Word 1 `Connection Status N_Port_ID`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 51,
+                  "end_index": 51,
+                  "subtree_start_index": 51,
+                  "subtree_end_index": 51
+                },
+                {
+                  "node_id": "0056",
+                  "title": "4.2.9.4 Reply Sequence",
+                  "summary": "Core topic: `4.2.9.4 Reply Sequence` for `RCS` (`07h`) handling, defining `LS_RJT` and `LS_ACC` outcomes after a Read Connection Status request. Contains `response/branch handling`, `message/frame format`, and `completion/exception conditions`. `LS_RJT` signifies rejection of the `RCS` command. `LS_ACC` signifies the Fabric has completed the request and uses the `LS_ACC Payload` format in `Table 15 – RCS LS_ACC Payload`, which shows reply payload words/bytes: Word `0` = `02h 00h 00h 00h`; Word `1` = `Connection Status` and `N_Port_ID`. Exact fields/codes present: `Connection Status`, `N_Port_ID`, `LS_RJT`, `LS_ACC`, `RCS`, `07h`, `02h`. Also references that `Connection Status Codes` are defined in `table 16`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 51,
+                  "end_index": 51,
+                  "subtree_start_index": 51,
+                  "subtree_end_index": 51
+                }
+              ],
+              "start_index": 50,
+              "end_index": 50,
+              "subtree_start_index": 50,
+              "subtree_end_index": 51
+            },
+            {
+              "node_id": "0057",
+              "title": "4.2.10 Read Link Error Status Block (RLS)",
+              "summary": "Section `4.2.10 Read Link Error Status Block (RLS)` covers the `RLS ELS` request and reply behavior for reading a `Link Error Status Block (LESB)` from an `FC_Port` for the `Port_ID` in the Payload, giving the requesting `Nx_Port` link-error information for the designated `FC_Port`. Named anchors: `Read Link Error Status Block (RLS)`, `RLS ELS`, `LESB`, `FC_Port`, `Port_ID`, `Payload`, `Nx_Port`, `4.2.10.1 Description`, `4.2.10.2 Protocol`, `Read Link Error Status Request Sequence`, `LS_ACC`, `LS_RJT`. Also present on this page: `Table 16 – Connection Status Codes`, defining `Connect-Request delivered`, `Connect-Request stacked`, `Connection established`, and `Intermix mode` bit/value meanings. Content types: `procedure/flow`, `response/branch handling`, `completion/exception conditions`.",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0058",
+                  "title": "4.2.10.1 Description",
+                  "summary": "4.2.10.1 Description — Core topic: `Read Link Error Status Block (RLS)` / `RLS ELS` requests an `FC_Port` to return the identified `Link Error Status Block (LESB)` associated with the `Port_ID` specified in the `Payload`, giving the transmitting `Nx_Port` information about `Link Errors` detected within the designated `FC_Port`. Named anchors present: `RLS`, `RLS ELS`, `FC_Port`, `LESB`, `Port_ID`, `Payload`, `Nx_Port`, `LS_ACC`, `LS_RJT`. Also on this page: `Table 16 – Connection Status Codes` — defines status bits/values for dedicated-connection state, including `Connect-Request delivered`, `Connect-Request stacked`, `Connection established`, and `Intermix mode`. Content types: message/frame format; response/branch handling (`LS_ACC or LS_RJT Reply Sequence`).",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 52,
+                  "end_index": 52,
+                  "subtree_start_index": 52,
+                  "subtree_end_index": 52
+                },
+                {
+                  "node_id": "0059",
+                  "title": "4.2.10.2 Protocol",
+                  "summary": "Defines `4.2.10.2 Protocol` for `Read Link Error Status Block (RLS)`: the exchange consists of `a) Read Link Error Status Request Sequence` and `b) LS_ACC or LS_RJT Reply Sequence`. Core topic is the protocol sequencing for `RLS ELS` access to the `Link Error Status Block (LESB)` associated with a `Port_ID` in the payload. Nearby referenced status material on the same page includes `Table 16 – Connection Status Codes`, which defines bit-coded connection status fields: `Connect-Request delivered` (bit `31`), `Connect-Request stacked` (bit `30`), `Connection established` (bit `29`), and `Intermix mode` (bit `28`), with identifiers such as `Nx_Port`, `N_Port`, `F_Port`, `RCS ELS Request Sequence frame`, and state/condition names `Connected`, `Established Connection`, `dedicated connection`, `Intermix mode`. Content types: procedure/flow, response/branch handling, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 52,
+                  "end_index": 52,
+                  "subtree_start_index": 52,
+                  "subtree_end_index": 52
+                },
+                {
+                  "node_id": "0060",
+                  "title": "4.2.10.3 Request Sequence",
+                  "summary": "Defines the `4.2.10.3 Request Sequence` for `RLS`/`LESB` requests: addressing rules, `Payload`, and how `S_ID`, `D_ID`, and `N_Port_ID` identify the requested `LESB`. `D_ID` shall be set to Domain Controller well known address `FFFCxxh`, F_Port well known address `FFFFFEh`, or any logged-in `Nx_Port`; `S_ID` designates the source `Nx_Port`. `Table 17 – RLS Payload` shows the `RLS Payload` message/frame format: Word 0 `RLS (0Fh) 00h 00h 00h`; Word 1 `Reserved` + `N_Port_ID`. Includes procedure/flow and message/frame format. Also contains response/branch handling via the adjacent `4.2.10.4 Reply Sequence`: `LS_RJT`, reason code `09h`/`Unable to perform command request` with `2Ch`/`Request not supported`, and `03h`/`Logical error` with `1Fh`/`Invalid N_Port_ID`.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 53,
+                  "end_index": 53,
+                  "subtree_start_index": 53,
+                  "subtree_end_index": 53
+                },
+                {
+                  "node_id": "0061",
+                  "title": "4.2.10.4 Reply Sequence",
+                  "summary": "Section `4.2.10.4 Reply Sequence` covers `RLS` reply behavior, specifically `LS_RJT` rejection handling for the `RLS` command; content type: response/branch handling, completion/exception conditions. It defines two rejection branches: if an `FC_Port` does not support the `LESB`, reply with `LS_RJT` reason code `\"Unable to perform command request\"` (`09h`) and should use reason code explanation `\"Request not supported\"` (`2Ch`); if `N_Port_ID` is not logged in with an `F_Port` within the domain, the `Domain Controller` should reply with `LS_RJT` reason code `\"Logical error\"` (`03h`) and reason code explanation `\"Invalid N_Port_ID\"` (`1Fh`). Related table present: `Table 17 – RLS Payload`, which defines/shows the `RLS` payload format, including fields `RLS (0Fh)` and `N_Port_ID` (message/frame format).",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 53,
+                  "end_index": 53,
+                  "subtree_start_index": 53,
+                  "subtree_end_index": 53
+                }
+              ],
+              "start_index": 52,
+              "end_index": 52,
+              "subtree_start_index": 52,
+              "subtree_end_index": 53
+            },
+            {
+              "node_id": "0062",
+              "title": "4.2.11 Read Timeout Value (RTV)",
+              "summary": "Defines **4.2.11 Read Timeout Value (RTV)** ELS: an `RTV` request asks an `FC_Port` to return `R_A_TOV` and `E_D_TOV` in `LS_ACC`, and `LS_ACC` returns the value the `FC_Port` uses for `R_T_TOV`; references timeout usage requirements in `FC-FS-2`. Covers `4.2.11.2 Protocol`: `Read Timeout Value (RTV) Request Sequence` and `LS_ACC or LS_RJT Reply Sequence` [procedure/flow, response/branch handling, timer/negotiation]. `4.2.11.3 Request Sequence` gives addressing with `S_ID` and `D_ID`, plus payload format [message/frame format]. `Table 19 – RTV Payload` defines the `RTV` payload layout, including `Word 0 = RTV (0Eh) 00h 00h 00h`. `4.2.11.4 Reply Sequence`: `LS_RJT` signifies rejection of the `RTV` command [completion/exception conditions].",
+              "is_skeleton": false,
+              "children": [
+                {
+                  "node_id": "0063",
+                  "title": "4.2.11.1 Description",
+                  "summary": "Section `4.2.11.1 Description` defines the `Read Timeout Value (RTV)` ELS purpose: an `RTV` request asks an `FC_Port` to return `R_A_TOV` and `E_D_TOV` in `LS_ACC`; the `LS_ACC` also returns the value the `FC_Port` uses for `R_T_TOV`, giving the requesting `FC_Port` timeout information from another `FC_Port`. Named anchors: `RTV`, `ELS`, `FC_Port`, `LS_ACC`, `R_A_TOV`, `E_D_TOV`, `R_T_TOV`, `FC-FS-2`. Content types: `timer/negotiation`, `response/branch handling`. Nearby structural anchors included on this page: `4.2.11.2 Protocol` with `Read Timeout Value (RTV) Request Sequence` and `LS_ACC or LS_RJT Reply Sequence`; `4.2.11.3 Request Sequence` names `S_ID`, `D_ID`, `Payload`, `Table 19 – RTV Payload` showing request payload format with `RTV (0Eh)`; `4.2.11.4 Reply Sequence` notes `LS_RJT` rejection.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 54,
+                  "end_index": 54,
+                  "subtree_start_index": 54,
+                  "subtree_end_index": 54
+                },
+                {
+                  "node_id": "0064",
+                  "title": "4.2.11.2 Protocol",
+                  "summary": "Section `4.2.11.2 Protocol` defines the `Read Timeout Value (RTV)` protocol flow for an `RTV ELS`: `a) Read Timeout Value (RTV) Request Sequence` and `b) LS_ACC or LS_RJT Reply Sequence`. Core anchors: `LS_ACC`, `LS_RJT`, `RTV`, `ELS`, `S_ID`, `D_ID`, `Nx_Port`, `FC_Port`, `R_A_TOV`, `E_D_TOV`, `R_T_TOV`, `0Eh`. Content types: [procedure/flow] request/reply sequence names; [response/branch handling] `LS_ACC or LS_RJT Reply Sequence`; [timer/negotiation] timeout values `R_A_TOV`, `E_D_TOV`, `R_T_TOV`; [message/frame format] `Table 19 – RTV Payload` shows payload format, including `Word 0` = `RTV (0Eh) 00h 00h 00h`. Also listed: `Table 17 – RLS Payload` shows `RLS` payload format (`RLS (0Fh)`). No figures.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 54,
+                  "end_index": 54,
+                  "subtree_start_index": 54,
+                  "subtree_end_index": 54
+                },
+                {
+                  "node_id": "0065",
+                  "title": "4.2.11.3 Request Sequence",
+                  "summary": "Section 4.2.11.3 Request Sequence covers the `Read Timeout Value (RTV) Request Sequence` for requesting timeout interval values from a destination `FC_Port`. It specifies addressing and request payload details: `S_ID` designates the source `Nx_Port`, `D_ID` designates the destination `FC_Port`. `Payload` uses `Table 19 – RTV Payload`, which defines the request message/frame format: `Word 0` = `RTV (0Eh) 00h 00h 00h`. Related surrounding response/branch handling is `LS_ACC or LS_RJT Reply Sequence`, with `LS_RJT` signifying rejection of the `RTV` command. Related timer/negotiation identifiers in this RTV section are `R_A_TOV`, `E_D_TOV`, and `R_T_TOV`. Also present in this section’s tables: `Table 17 – RLS Payload`, showing the `RLS (0Fh)` payload format. Content types: procedure/flow, message/frame format, response/branch handling, timer/negotiation.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 54,
+                  "end_index": 54,
+                  "subtree_start_index": 54,
+                  "subtree_end_index": 54
+                },
+                {
+                  "node_id": "0066",
+                  "title": "4.2.11.4 Reply Sequence",
+                  "summary": "Core topic: `4.2.11.4 Reply Sequence` for `Read Timeout Value (RTV)` reply handling. Covers `LS_RJT` only: `LS_RJT` signifies rejection of the `RTV` command. Context from adjacent `4.2.11` text: `RTV` requests return of `R_A_TOV` and `E_D_TOV` in `LS_ACC`, and `LS_ACC` returns the value used for `R_T_TOV`; request uses `S_ID`, `D_ID`, and payload `RTV (0Eh) 00h 00h 00h`. Tables present in section span: `Table 19 – RTV Payload` defines the `RTV` payload/message format; `Table 17 – RLS Payload` shows the `RLS` payload format; `Table 18 – RLS LS_ACC Payload` defines `LS_ACC` payload with `02h 00h 00h 00h` and `Link Error Status Block`. Content types: procedure/flow, message/frame format, response/branch handling, timer/negotiation, completion/exception conditions.",
+                  "is_skeleton": false,
+                  "children": [],
+                  "start_index": 54,
+                  "end_index": 54,
+                  "subtree_start_index": 54,
+                  "subtree_end_index": 54
+                }
+              ],
+              "start_index": 54,
+              "end_index": 54,
+              "subtree_start_index": 54,
+              "subtree_end_index": 54
+            },
+            {
+              "node_id": "0067",
+              "title": "4.2.12 Reinstate Recovery Qualifier (RRQ)",
+              "summary": "RRQ section defines `4.2.12 Reinstate Recovery Qualifier (RRQ)` / `4.2.12.1 Description`: the `RRQ ELS` notifies the destination `Nx_Port` that the `Recovery_Qualifier` is available for reuse. Covers identifiers/fields `S_ID`, `D_ID`, `OX_ID`, `RX_ID`, `SEQ_CNT`, `N_Port_ID`, `Originator Nx_Port`, `Responder Nx_Port`, and target `Exchange`; applies after `Abort Sequence`, `Abort Exchange`, and `ABTS-LS`. Acceptance rule: request only accepted if Originator or Responder `N_Port_ID` matches requester `Nx_Port`; otherwise return `LS_RJT` with reason code `Unable to perform command request` and reason code explanation `Invalid Originator S_ID`. Notes reuse/purge behavior for `ESB` and `Recovery_Qualifier`, and that a separate `Exchange` carries payload with `OX_ID`, `RX_ID`, and `S_ID`. Table present: `Table 19 – RTV Payload` shows `RTV (0Eh)` payload format. Content types: message/frame format, response/branch handling, completion/exception conditions.",
+              "is_skeleton": false,
+              "children": [],
+              "start_index": 55,
+              "end_index": 55,
+              "subtree_start_index": 55,
+              "subtree_end_index": 56
+            }
+          ],
+          "start_index": 36,
+          "end_index": 36,
+          "subtree_start_index": 36,
+          "subtree_end_index": 145
+        }
+      ],
+      "start_index": 36,
+      "end_index": 36,
+      "subtree_start_index": 36,
+      "subtree_end_index": 150
+    }
+  ],
+  "next_steps": {
+    "options": [
+      "Request next part with part: 2",
+      "Jump to last part with part: 7",
+      "Proceed to get_page_content() for specific sections"
+    ],
+    "summary": "Showing part 1 of 7."
+  },
+  "pagination": {
+    "part": "1",
+    "has_more": true,
+    "total_parts": "7"
+  },
+  "total_parts": "7"
+}

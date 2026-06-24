@@ -1,0 +1,8 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits", "page": 94, "bbox": [96.88, 591.66, 159.21, 613.35]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Meaning", "page": 94, "bbox": [159.21, 591.66, 539.12, 613.35]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "31", "page": 94, "bbox": [96.88, 613.35, 159.21, 635.37]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Reserved.", "page": 94, "bbox": [159.21, 613.35, 539.12, 635.37]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "30", "page": 94, "bbox": [96.88, 635.37, 159.21, 657.39]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Reserved.", "page": 94, "bbox": [159.21, 635.37, 539.12, 657.39]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "29", "page": 94, "bbox": [96.88, 657.39, 159.21, 703.04]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Switch:\nWhen set to one, indicates that the incident port is a port on a switch node. When set\nto zero, indicates that the incident port is not a port on a switch node.", "page": 94, "bbox": [159.21, 657.39, 539.12, 703.04]}

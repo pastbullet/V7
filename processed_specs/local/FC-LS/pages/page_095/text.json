@@ -1,0 +1,608 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 95,
+  "spans": [
+    {
+      "span_id": "p095_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0002",
+      "text": " 76",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0003",
+      "text": "B) Incident Code (IC):  This field (byte 1 of the Common Link Incident Descriptor) contains the",
+      "bbox": [
+        122.4,
+        525.65,
+        540.03,
+        536.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0004",
+      "text": "incident code that describes the incident that was observed by the incident node.",
+      "bbox": [
+        138.0,
+        537.65,
+        494.66,
+        548.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0005",
+      "text": "aa) Bit 23 is reserved.",
+      "bbox": [
+        138.0,
+        562.97,
+        235.97,
+        574.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0006",
+      "text": "bb) Bits 22-16 is the value that specifies the type of incident that was observed.  The values",
+      "bbox": [
+        138.0,
+        586.97,
+        540.03,
+        598.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0007",
+      "text": "specified and their meanings are shown in table 72.",
+      "bbox": [
+        156.0,
+        598.97,
+        383.78,
+        610.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0008",
+      "text": "28",
+      "bbox": [
+        122.16,
+        103.67,
+        133.28,
+        114.78
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0009",
+      "text": "Expansion Port: ",
+      "bbox": [
+        161.22,
+        101.63,
+        234.58,
+        112.74
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0010",
+      "text": "When set to one, indicates that the switch port is an Inter-Switch-Link Expansion port ",
+      "bbox": [
+        161.22,
+        113.63,
+        538.69,
+        124.74
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0011",
+      "text": "(E_Port).  When zero, bit 28 indicates that the switch port is not an Inter-Switch-Link ",
+      "bbox": [
+        161.22,
+        125.63,
+        534.5,
+        136.74
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0012",
+      "text": "Expansion port.",
+      "bbox": [
+        161.22,
+        137.63,
+        230.66,
+        148.74
+      ],
+      "block_index": 6,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0013",
+      "text": "27-26",
+      "bbox": [
+        114.96,
+        161.62,
+        140.47,
+        172.74
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0014",
+      "text": "Severity Indication: ",
+      "bbox": [
+        161.22,
+        159.64,
+        248.41,
+        170.76
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0015",
+      "text": "Bits 27-26 constitute a two-bit code that identifies the severity indication for the link ",
+      "bbox": [
+        161.22,
+        171.64,
+        528.96,
+        182.76
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0016",
+      "text": "incident.  The codes and their meanings are as follows:",
+      "bbox": [
+        161.22,
+        183.64,
+        405.03,
+        194.76
+      ],
+      "block_index": 7,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0017",
+      "text": "Code",
+      "bbox": [
+        161.22,
+        205.66,
+        185.05,
+        216.78
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0018",
+      "text": "Meaning",
+      "bbox": [
+        195.77,
+        205.66,
+        234.12,
+        216.78
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0019",
+      "text": "0",
+      "bbox": [
+        161.22,
+        233.62,
+        166.76,
+        244.74
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0020",
+      "text": "Informational report: ",
+      "bbox": [
+        195.78,
+        227.62,
+        288.01,
+        238.74
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0021",
+      "text": "Indicates link incident notification of an informational purpose.",
+      "bbox": [
+        195.78,
+        239.62,
+        467.98,
+        250.74
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0022",
+      "text": "1",
+      "bbox": [
+        161.22,
+        273.64,
+        166.76,
+        284.76
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0023",
+      "text": "Link degraded but operational: ",
+      "bbox": [
+        195.78,
+        261.64,
+        333.58,
+        272.76
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0024",
+      "text": "Indicates if the link associated with the incident port is not in a Link-Failure or ",
+      "bbox": [
+        195.78,
+        273.64,
+        537.92,
+        284.76
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0025",
+      "text": "Offline State as a result of the event that generated the Link Incident Record.",
+      "bbox": [
+        195.78,
+        285.64,
+        535.32,
+        296.76
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0026",
+      "text": "2",
+      "bbox": [
+        161.22,
+        319.66,
+        166.76,
+        330.78
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0027",
+      "text": "Link not operational: ",
+      "bbox": [
+        195.78,
+        307.66,
+        288.57,
+        318.78
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0028",
+      "text": "Indicates if the link associated with the incident port is in a Link-Failure or ",
+      "bbox": [
+        195.78,
+        319.66,
+        521.21,
+        330.78
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0029",
+      "text": "Offline State as a result of the event that generated the Link Incident Record.",
+      "bbox": [
+        195.78,
+        331.66,
+        535.32,
+        342.78
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0030",
+      "text": "3",
+      "bbox": [
+        161.22,
+        353.62,
+        166.76,
+        364.74
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0031",
+      "text": "Reserved.",
+      "bbox": [
+        195.78,
+        353.62,
+        241.31,
+        364.74
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0032",
+      "text": "25",
+      "bbox": [
+        122.16,
+        377.62,
+        133.28,
+        388.74
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0033",
+      "text": "Subassembly type: ",
+      "bbox": [
+        161.22,
+        375.64,
+        248.45,
+        386.76
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0034",
+      "text": "When set to one, specifies that the type of subassembly used for the port that is the ",
+      "bbox": [
+        161.22,
+        387.64,
+        532.92,
+        398.76
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0035",
+      "text": "subject of this Link Incident Record is a laser.  When set to zero, specifies that the type ",
+      "bbox": [
+        161.22,
+        399.64,
+        539.38,
+        410.76
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0036",
+      "text": "of subassembly used for the port that is the subject of this Link Incident Record is not ",
+      "bbox": [
+        161.22,
+        411.64,
+        538.8,
+        422.76
+      ],
+      "block_index": 13,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0037",
+      "text": "a laser.",
+      "bbox": [
+        161.22,
+        423.64,
+        193.98,
+        434.76
+      ],
+      "block_index": 13,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0038",
+      "text": "24",
+      "bbox": [
+        122.16,
+        447.64,
+        133.28,
+        458.76
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0039",
+      "text": "FRU identification: ",
+      "bbox": [
+        161.22,
+        445.66,
+        244.15,
+        456.78
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0040",
+      "text": "When set to one, specifies that the Specific-Link Incident Record Data is in a format ",
+      "bbox": [
+        161.22,
+        457.66,
+        533.4,
+        468.78
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0041",
+      "text": "that provides field-replaceable-unit (FRU) identification.  When set to zero, specifies ",
+      "bbox": [
+        161.22,
+        469.66,
+        533.28,
+        480.78
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0042",
+      "text": "that the Specific-Link Incident Record Data is not in a format that provides field-",
+      "bbox": [
+        161.22,
+        481.66,
+        511.59,
+        492.78
+      ],
+      "block_index": 14,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0043",
+      "text": "replaceable-unit (FRU) identification.",
+      "bbox": [
+        161.22,
+        493.66,
+        323.36,
+        504.78
+      ],
+      "block_index": 14,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0044",
+      "text": " Table 71 – Incident Qualifier(Continued)",
+      "bbox": [
+        222.18,
+        57.64,
+        413.81,
+        68.76
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0045",
+      "text": "Bits",
+      "bbox": [
+        118.26,
+        79.66,
+        137.12,
+        90.78
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p095_s0046",
+      "text": "Meaning",
+      "bbox": [
+        329.22,
+        79.66,
+        369.72,
+        90.78
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0075"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "rows": [
+    [
+      "Item",
+      "Word",
+      "Bit"
+    ],
+    [
+      "TYPE Code or Common Service Parameters*",
+      "0",
+      "31-24"
+    ],
+    [
+      "TYPE Code Extension",
+      "0",
+      "23-16"
+    ],
+    [
+      "Originator Process_Associator Validity",
+      "0",
+      "15"
+    ],
+    [
+      "Responder Process_Associator Validity",
+      "0",
+      "14"
+    ],
+    [
+      "Establish Image Pair",
+      "0",
+      "13"
+    ],
+    [
+      "Reserved",
+      "0",
+      "12-0"
+    ],
+    [
+      "Originator Process_Associator",
+      "1",
+      "31-0"
+    ],
+    [
+      "Responder Process_Associator",
+      "2",
+      "31-0"
+    ],
+    [
+      "Service Parameters (optional per FC-4)",
+      "3 - 63 as\nsepcified by\neach FC-4",
+      "31-0"
+    ]
+  ]
+}

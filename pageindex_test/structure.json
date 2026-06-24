@@ -1,0 +1,944 @@
+{
+"success":true
+"doc_name":"FC-LS.pdf"
+"structure"
+:
+[
+0
+:
+{
+"title":"4 Extended Link Services"
+"node_id":"0015"
+"start_index":36
+"end_index":36
+"summary":"This document section details Extended Link Services (ELS), which are requests and replies used for Nx_Port functions. ELSs are structured as single Sequences with a specific ELS_Command code. Zoning affects ELS responses, and normal Exchange/Sequence management rules apply. ELS frames use TYPE 01h and have specific R_CTL values. The Payload starts with the ELS_Command code. ELS requests are initiated after N_Port Login and require FLOGI in a Fabric. The Link Fabric Address (LFA) has specific roles in certain ELS sequences."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2 Extended Link Service requests"
+"node_id":"0017"
+"start_index":36
+"end_index":36
+"summary":"This document section details Extended Link Services (ELS), which are requests and replies used for Nx_Port functions. ELSs are structured as single Sequences with a specific ELS_Command code. Zoning affects ELS responses, and normal Exchange/Sequence management rules apply. ELS frames use TYPE 01h and have specific R_CTL values. The Payload starts with the ELS_Command code. ELS requests are initiated after N_Port Login and require FLOGI in a Fabric. The Link Fabric Address (LFA) has specific ro..."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.21 Process logout (PRLO)"
+"node_id":"0114"
+"start_index":75
+"end_index":75
+"summary":"This text describes the Process Logout (PRLO) Extended Link Services (ELS) used to invalidate the operating environment between Nx_Ports and free resources. It outlines the protocol sequence, including the request and reply sequences, and details the addressing and payload format. The payload includes a fixed length and a Logout Parameter page containing parameters for a single image pair, which can be specific to an FC-4 TYPE or common to all FC-4 TYPE codes."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.21.1 Description"
+"node_id":"0115"
+"start_index":75
+"end_index":75
+"summary":"This text describes the Process Logout (PRLO) Extended Link Services (ELS) used to invalidate the operating environment between Nx_Ports and free resources. It outlines the protocol sequence, including the request and reply sequences, and details the addressing and payload format. The payload includes a fixed length and a Logout Parameter page containing parameters for a single image pair, which can be specific to an FC-4 TYPE or common to all FC-4 TYPE codes."
+}
+1
+:
+{
+"title":"4.2.21.2 Protocol"
+"node_id":"0116"
+"start_index":75
+"end_index":75
+"summary":"This text describes the Process Logout (PRLO) Extended Link Services (ELS) used to invalidate the operating environment between Nx_Ports and free resources. It outlines the protocol sequence, including the request and reply sequences, and details the addressing and payload format. The payload includes a fixed length and a Logout Parameter page containing parameters for a single image pair, which can be specific to an FC-4 TYPE or common to all FC-4 TYPE codes."
+}
+2
+:
+{
+"title":"4.2.21.3 Request Sequence"
+"node_id":"0117"
+"start_index":75
+"end_index":76
+"summary":"This document section describes the Process Logout (PRLO) Extended Link Service (ELS), which is used to invalidate the operating environment between Nx_Ports and free resources. It details the protocol, including the request sequence with addressing (S_ID and D_ID) and payload structure. The payload contains a fixed length and a logout parameter page, which can be specific to an FC-4 TYPE or common to all types. The parameter page defines type codes, validity of originator and responder process ..."
+}
+3
+:
+{
+"title":"4.2.21.4 Reply sequence"
+"node_id":"0118"
+"start_index":76
+"end_index":79
+"summary":"The text details the format and functionality of the PRLO (Protocol Logout) and TPLS (Test Process Login State) Link Services. For PRLO, it describes the logout parameter page format, including type codes, process associator validity, and the LS_ACC payload structure with response codes indicating the outcome of a logout request. For TPLS, it explains its purpose in verifying established image pairs between Nx_Ports, outlining the request and reply sequences, and the format of its payload containing image pair identification."
+}
+]
+}
+1
+:
+{
+"title":"4.2.22 Test Process Login State (TPLS)"
+"node_id":"0119"
+"start_index":79
+"end_index":79
+"summary":"The text describes the Test Process Login State (TPLS) Extended Link Service (ELS), a mechanism used to verify the establishment of image pairs between Nx_Ports. It details the TPLS Request and Reply sequences, including addressing fields (S_ID, D_ID) and the TPLS Payload structure. The Payload contains information about the image pair's login state and identification parameters. The LS_ACC Reply confirms successful TPLS operation and the status of the image pair."
+"nodes"
+:
+[
+]
+}
+2
+:
+{
+"title":"4.2.23 Request Node Identification Data (RNID)"
+"node_id":"0124"
+"start_index":82
+"end_index":82
+"summary":"The text describes the Response code field and Image pair state within the INCITS xxx-200x Link Services Rev 1.61 standard. It then details the Request Node Identification Data (RNID) ELS, explaining its purpose for acquiring Node Identification Data. The document outlines the expected responses (Accept or LS_RJT) based on support for the RNID ELS and requested data formats, including specific reason codes for rejections. It also covers retry mechanisms, the use of Common Identification Data, and the scope of ULP processing. The text specifies how RNID ELS should be sent to Nx_Ports and Fx_Ports, including the special case of sending it to the Fabric Controller (FFFFFF) for Fx_Ports and the expected replies in each scenario. Finally, it briefly mentions the RNID request Sequence under the Protocol section."
+"nodes"
+:
+[
+]
+}
+3
+:
+{
+"title":"4.2.24 Registered Link Incident Report (RLIR)"
+"node_id":"0130"
+"start_index":90
+"end_index":90
+"summary":"This text describes the Registered Link Incident Report (RLIR) mechanism, defining key terms like incident port, connected port, reporting port, registered port, and reporting node. It details how the RLIR Extended Link Services (ELS) facilitate sending Link Incident Records from a reporting Nx_Port to a registered Nx_Port, outlining expected responses (LS_ACC) and error conditions (LS_RJT). The process of recognizing and reporting link incidents, including the generation of Link Incident Records and potential delays for recovery, is explained. It also covers the procedure for generating and sending these records, including resource management for storing records and the discarding of records after successful transmission."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.24.1 Description"
+"node_id":"0131"
+"start_index":90
+"end_index":90
+"summary":"This text describes the Registered Link Incident Report (RLIR) mechanism, defining key terms like incident port, connected port, reporting port, registered port, and reporting node. It details how the RLIR Extended Link Services (ELS) facilitate sending Link Incident Records from a reporting Nx_Port to a registered Nx_Port, outlining expected responses (LS_ACC) and error conditions (LS_RJT). The process of recognizing and reporting link incidents, including the generation of Link Incident Records and potential delays for recovery, is explained. It also covers the procedure for generating and sending these records, including resource management for storing records and the discarding of records after successful transmission."
+}
+1
+:
+{
+"title":"4.2.24.2 Link Incident reporting procedure"
+"node_id":"0132"
+"start_index":90
+"end_index":91
+"summary":"This document section details the Registered Link Incident Report (RLIR) mechanism within Fibre Channel link services. It defines key terms like incident port, reporting port, and registered port. The RLIR ELS allows a reporting Nx_Port to send a Link Incident Record to a registered Nx_Port upon detecting a link incident. The process involves generating a Link Incident Record when a defined incident code is detected, with potential delays for Link Failures to allow for protocol-level recovery. The reporting node generates these records, and the reporting port transmits them via RLIR ELSs to registered recipients, prioritizing those set to always receive. The document outlines the protocol for RLIR requests and replies (LS_ACC/LS_RJT), including addressing and the structure of the RLIR Payload, which contains information about the link incident."
+}
+2
+:
+{
+"title":"4.2.24.3 Protocol"
+"node_id":"0133"
+"start_index":91
+"end_index":91
+"summary":"This document section details the process for reporting Link Incident Records (RLIRs) by selecting registered ports, prioritizing those set to always receive RLIRs, and then conditionally receiving ports if initial attempts fail. It outlines procedures for handling unsuccessful transmissions, including discarding registrations and selecting alternative reporting ports. The protocol specifies RLIR Request and Reply Sequences, addressing fields (S_ID and D_ID), and provides a detailed breakdown of the RLIR Payload structure, including its various components like the Common Link Incident Record, Common Link Incident Descriptor, and Specific Link Incident Record."
+}
+3
+:
+{
+"title":"4.2.24.4 Request Sequence"
+"node_id":"0134"
+"start_index":91
+"end_index":97
+"summary":"This document details the Link Services protocol, focusing on the reporting and registration of link incidents. It outlines the process for sending Link Incident Record Formats (RLIRs), including how reporting ports select recipients, handle transmission failures, and the structure of the RLIR payload. The payload includes various data fields describing the incident port, connected port, fabric, transaction details, and timestamps. It also defines the Common Link Incident Descriptor with fields for Incident Qualifier (IQ) and Incident Code (IC), specifying incident details and severity. The document further describes the Reply Sequence (LS_ACC, LS_RJT) for RLIR requests. Additionally, it covers the Link Incident Record Registration (LIRR) ELS, which allows ports to register or de-register for receiving RLIRs, specifying the process, responses, and management of registration lists. The LIRR mechanism is crucial for ULPs to obtain and process link incident information from ports of interest."
+}
+4
+:
+{
+"title":"4.2.24.5 Reply Sequence"
+"node_id":"0135"
+"start_index":97
+"end_index":97
+"summary":"This document section details Link Services (LS) reply codes and the Link Incident Record Registration (LIRR) Extended Link Services (ELS). LS_RJT indicates rejection and LS_ACC indicates acceptance of an RLIR Request, with the LS_ACC payload format defined. The LIRR ELS allows Nx_Ports to register or de-register for receiving Registered Link Incident Reports (RLIR) from other ports. Responses to LIRR ELS are typically LS_ACC (with no payload) or LS_RJT with specific reason codes for unsupported commands or inability to perform the request. Registration and de-registration for Link Incident Records are handled by sending LIRR ELS to the Management Server. A User Level Protocol (ULP) registers its port with 'ports of interest' to receive their Link Incident Records, specifying the desired format. The recipient maintains separate registration lists for each format. The system handles duplicate registration or de-registration requests gracefully by accepting them without further action."
+}
+]
+}
+4
+:
+{
+"title":"4.2.25 Link Incident Record Registration (LIRR)"
+"node_id":"0136"
+"start_index":97
+"end_index":97
+"summary":"This document section details Link Services (LS) reply codes and the Link Incident Record Registration (LIRR) Extended Link Services (ELS). LS_RJT indicates rejection and LS_ACC indicates acceptance of an RLIR Request, with the LS_ACC payload format defined. The LIRR ELS allows Nx_Ports to register or de-register for receiving Registered Link Incident Reports (RLIR) from other ports. Responses to LIRR ELS are typically LS_ACC (with no payload) or LS_RJT with specific reason codes for unsupported commands or inability to perform the request. Registration and de-registration for Link Incident Records are handled by sending LIRR ELS to the Management Server. A User Level Protocol (ULP) registers its port with 'ports of interest' to receive their Link Incident Records, specifying the desired format. The recipient maintains separate registration lists for each format. The system handles duplicate registration or de-registration requests gracefully by accepting them without further action."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.25.1 Description"
+"node_id":"0137"
+"start_index":97
+"end_index":97
+"summary":"This document section details Link Services (LS) reply codes and the Link Incident Record Registration (LIRR) Extended Link Services (ELS). LS_RJT indicates rejection and LS_ACC indicates acceptance of an RLIR Request, with the LS_ACC payload format defined. The LIRR ELS allows Nx_Ports to register or de-register for receiving Registered Link Incident Reports (RLIR) from other ports. Responses to LIRR ELS are typically LS_ACC (with no payload) or LS_RJT with specific reason codes for unsupported commands or inability to perform the request. Registration and de-registration for Link Incident Records are handled by sending LIRR ELS to the Management Server. A User Level Protocol (ULP) registers its port with 'ports of interest' to receive their Link Incident Records, specifying the desired format. The recipient maintains separate registration lists for each format. The system handles duplicate registration or de-registration requests gracefully by accepting them without further action."
+}
+1
+:
+{
+"title":"4.2.25.2 Registration for Link Incident Records"
+"node_id":"0138"
+"start_index":97
+"end_index":98
+"summary":"This document section details the Reply Sequence for Link Services, specifically LS_RJT (rejection) and LS_ACC (acceptance) for RLIR Requests, including the LS_ACC payload format. It then describes the Link Incident Record Registration (LIRR) ELS, which allows Nx_Ports to register or de-register for receiving Registered Link Incident Reports (RLIR). The process involves sending LIRR ELS to the Management Server, with LS_ACC as the normal response and LS_RJT for errors like unsupported commands or inability to perform the request. The text outlines the registration process, including specifying the format of interest, and de-registration. It also covers scenarios like attempting to de-register an unregistered port or register an already registered port, and the responsibilities of valid-registered recipients, including handling mismatched formats. The protocol for LIRR involves a Request Sequence followed by a Reply Sequence, and the LIRR Payload structure is defined, specifying the registration function (add/remove) and the Link Incident Record-Registration Format."
+}
+2
+:
+{
+"title":"4.2.25.3 Responsibilities of Valid-Registered Recipients"
+"node_id":"0139"
+"start_index":98
+"end_index":98
+"summary":"This text describes the management of Link Incident Record registrations, including how ports handle full registration lists, the consequences of logouts on registrations, and the responsibilities of valid-registered recipients. It specifies that recipients must process records in the registered format and reject mismatched formats. The protocol for Link Incident Record Registration (LIRR) requests and replies is outlined, detailing addressing and the LIRR Payload structure which defines registr..."
+}
+3
+:
+{
+"title":"4.2.25.4 Protocol"
+"node_id":"0140"
+"start_index":98
+"end_index":98
+"summary":"This text describes the management of Link Incident Record registrations, including how ports handle full registration lists, the consequences of logouts on registrations, and the responsibilities of valid-registered recipients. It specifies that recipients must process records in the registered format and reject mismatched formats. The protocol for Link Incident Record Registration (LIRR) requests and replies is outlined, detailing addressing and the LIRR Payload structure which defines registration functions and record formats."
+}
+4
+:
+{
+"title":"4.2.25.5 Request Sequence"
+"node_id":"0141"
+"start_index":98
+"end_index":99
+"summary":"This document section details the Link Incident Record Registration (LIRR) process within Link Services. It covers the management of vendor-specific registration lists, the handling of full lists, and the consequences of logout operations on registered recipients. Responsibilities of valid-registered recipients include processing Link Incident Records and rejecting mismatched formats. The protocol defines request and reply sequences, with the LIRR request specifying the source and destination ports, and a payload containing the registration function (add conditionally, add always, or clear registration) and the desired registration format (common or specific-coded). The document also outlines the meaning of specific-coded values for custom format registration and defines LS_RJT as the rejection reply for LIRR requests."
+}
+5
+:
+{
+"title":"4.2.25.6 Reply Sequence"
+"node_id":"0142"
+"start_index":99
+"end_index":100
+"summary":"This document section details Link Incident Record Registration (RLIR ELSs) and Get Alias_ID (GAID) Extended Link Services (ELSs). For RLIR, it defines registration functions (conditional/always receive, clear registration) and registration types (common/specific format), along with the reply sequences (LS_RJT, LS_ACC) and LS_ACC payload. For GAID, it describes the process where an Alias Server requests a unique Alias_ID from a Fabric Controller for an Alias Group, specifying the addressing, payload structure (including Alias_Token, Alias_SP, and NP_List), and reply sequences."
+}
+]
+}
+5
+:
+{
+"title":"4.2.26 Get Alias_ID (GAID)"
+"node_id":"0143"
+"start_index":100
+"end_index":100
+"summary":"The text describes the LS_ACC (Link Services Acceptance) payload format and the Get Alias_ID (GAID) Extended Link Services (ELS). LS_ACC confirms acceptance of a Link Services Request and registration for ELSs. The GAID ELS is used by an Alias Server to request a unique Alias_ID from the Fabric Controller for a specified Alias Group, identified by an Alias_Token. The document details the addressing, protocol sequences (request and reply), and the payload structure for the GAID request, including fields for the Alias_Token, Alias_SP, and a list of Name Server Port (NP) entries."
+"nodes"
+:
+[
+]
+}
+6
+:
+{
+"title":"4.2.27 Fabric Activate Alias_ID (FACT)"
+"node_id":"0148"
+"start_index":101
+"end_index":101
+"summary":"This text describes parameters and sequences related to Alias Groups in a link services context. It details the Alias Group Service Parameters (Alias_SP) for defining operation parameters and preventing conflicts, the Nx_Port List (NP_List) for specifying member Nx_Ports, and the NP_List entry format. It also covers reply sequences, including LS_RJT for rejection and LS_ACC for successful completion, which carries the Alias Group Identifier. Finally, it introduces the Fabric Activate Alias_ID (FACT) ELS, used by an Alias Server to assign an Alias_ID to Nx_Ports via the Fabric Controller."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.27.1 Description"
+"node_id":"0149"
+"start_index":101
+"end_index":102
+"summary":"The text details parameters and protocols for managing Alias Groups in a link services context. It covers Alias Group Service Parameters (Alias_SP) for defining operation parameters and ensuring compatibility, along with the Nx_Port List (NP_List) and its length (NP_List_Length) for specifying members of an Alias Group. The Fabric Controller's role in validating Alias Group composition is explained. It also describes the reply sequences for Get Alias_ID requests, including LS_RJT for rejection and LS_ACC for successful Alias_ID generation. Furthermore, the Fabric Activate Alias_ID (FACT) ELS is detailed, outlining its description, protocol, request sequence (addressing and payload format including Alias_ID, NP_List_Length, and NP_List), and reply sequence (LS_RJT for rejection)."
+}
+1
+:
+{
+"title":"4.2.27.2 Protocol"
+"node_id":"0150"
+"start_index":102
+"end_index":102
+"summary":"This document section details the Protocol and Request/Reply Sequences for Link Services (LS) related to activating Alias_IDs. It specifies the addressing for the FACT Request (Alias Server and Fabric Controller) and the structure of the Payload, which includes the Alias_ID to be recognized and a list of Nx_Ports. The Payload format is defined in Table 81, outlining fields for the command, Alias_ID, list length, and the Nx_Port list itself, where Nx_Port_IDs are right-aligned. The Reply Sequence can result in an LS_ACC or an LS_RJT, with LS_RJT indicating rejection and providing a reason code if an Alias_ID cannot be activated."
+}
+2
+:
+{
+"title":"4.2.27.3 Request Sequence"
+"node_id":"0151"
+"start_index":102
+"end_index":102
+"summary":"This document section details the Protocol and Request/Reply Sequences for Link Services (LS) related to activating Alias_IDs. It specifies the addressing for the FACT Request (Alias Server and Fabric Controller) and the structure of the Payload, which includes the Alias_ID to be recognized and a list of Nx_Ports. The Payload format is defined in Table 81, outlining fields for the command, Alias_ID, list length, and the Nx_Port list itself, where Nx_Port_IDs are right-aligned. The Reply Sequence can result in an LS_ACC or an LS_RJT, with LS_RJT indicating rejection and providing a reason code if an Alias_ID cannot be activated."
+}
+3
+:
+{
+"title":"4.2.27.4 Reply Sequence"
+"node_id":"0152"
+"start_index":102
+"end_index":103
+"summary":"This document details the Link Services (LS) protocol for managing Alias IDs within a fabric network, specifically covering the Fabric Activate Alias_ID (FACT) and Fabric Deactivate Alias_ID (FDACT) operations. It outlines the request and reply sequences for both operations, including addressing schemes (Alias Server to Fabric Controller) and payload structures. The FACT operation allows an Alias Server to assign an Alias ID to a list of Nx_Ports, while FDACT deassigns it. The document specifies the format of the request payloads, which include the Alias ID, the list of Nx_Ports, and the list length. It also describes the success (LS_ACC) and rejection (LS_RJT) reply formats for these commands."
+}
+]
+}
+7
+:
+{
+"title":"4.2.28 Fabric Deactivate Alias_ID (FDACT)"
+"node_id":"0153"
+"start_index":103
+"end_index":103
+"summary":"The text describes the Fabric Deactivate Alias_ID (FDACT) command, detailing its purpose, protocol, and request sequence. It explains how an Alias Server requests the Fabric Controller to deassign an Alias_ID for specific Nx_Ports, and how the Fabric Controller frees up the Alias_ID when it's no longer in use. The document also includes the payload format for the FDACT request, specifying the Alias_ID and a list of Nx_Ports, and references the LS_ACC payload format for successful request completion."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.28.1 Description"
+"node_id":"0154"
+"start_index":103
+"end_index":103
+"summary":"The text describes the Fabric Deactivate Alias_ID (FDACT) command, detailing its purpose, protocol, and request sequence. It explains how an Alias Server requests the Fabric Controller to deassign an Alias_ID for specific Nx_Ports, and how the Fabric Controller frees up the Alias_ID when it's no longer in use. The document also includes the payload format for the FDACT request, specifying the Alias_ID and a list of Nx_Ports, and references the LS_ACC payload format for successful request completion."
+}
+1
+:
+{
+"title":"4.2.28.2 Protocol"
+"node_id":"0155"
+"start_index":103
+"end_index":103
+"summary":"The text describes the Fabric Deactivate Alias_ID (FDACT) command, detailing its purpose, protocol, and request sequence. It explains how an Alias Server requests the Fabric Controller to deassign an Alias_ID for specific Nx_Ports, and how the Fabric Controller frees up the Alias_ID when it's no longer in use. The document also includes the payload format for the FDACT request, specifying the Alias_ID and a list of Nx_Ports, and references the LS_ACC payload format for successful request completion."
+}
+2
+:
+{
+"title":"4.2.28.3 Request Sequence"
+"node_id":"0156"
+"start_index":103
+"end_index":104
+"summary":"The document details two Extended Link Services (ELS) related to Alias IDs in a fabric network: Fabric Deactivate Alias_ID (FDACT) and N_Port Activate Alias_ID (NACT). FDACT is used by the Alias Server to instruct the Fabric Controller to deassign an Alias_ID from specified Nx_Ports, with defined request and reply sequences, including payload formats for both the request (containing Alias_ID and Nx_Port list) and successful (LS_ACC) or rejected (LS_RJT) replies. NACT is used by the Alias Server to assign an Alias_ID to an Nx_Port, also with defined request and reply sequences and a payload format that includes the Alias_Token, Service Parameters, and the Alias_ID to be assigned. The document also specifies the payload format for a successful LS_ACC response for a generic request."
+}
+3
+:
+{
+"title":"4.2.28.4 Reply Sequence"
+"node_id":"0157"
+"start_index":104
+"end_index":104
+"summary":"This text describes the Link Services (LS) protocol for managing Alias_IDs in a network. It details the format of the Nx_Port List (NP_List) for deactivating Alias_IDs and the reply sequences for the Fabric Deactivate Alias_ID (FDACT) command, including LS_RJT for rejections and LS_ACC for successful deactivations, along with its payload structure. It also introduces the N_Port Activate Alias_ID (NACT) ELS, explaining its purpose, protocol, addressing, and the format of its payload which includes Alias_Token, Service Parameters, and the Alias_ID to be assigned."
+}
+]
+}
+8
+:
+{
+"title":"4.2.29 N_Port Activate Alias_ID (NACT)"
+"node_id":"0158"
+"start_index":104
+"end_index":104
+"summary":"This text describes the Link Services (LS) protocol for managing Alias_IDs in a network. It details the format of the Nx_Port List (NP_List) for deactivating Alias_IDs and the reply sequences for the Fabric Deactivate Alias_ID (FDACT) command, including LS_RJT for rejections and LS_ACC for successful deactivations, along with its payload structure. It also introduces the N_Port Activate Alias_ID (NACT) ELS, explaining its purpose, protocol, addressing, and the format of its payload which includes Alias_Token, Service Parameters, and the Alias_ID to be assigned."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.29.1 Description"
+"node_id":"0159"
+"start_index":104
+"end_index":104
+"summary":"This text describes the Link Services (LS) protocol for managing Alias_IDs in a network. It details the format of the Nx_Port List (NP_List) for deactivating Alias_IDs and the reply sequences for the Fabric Deactivate Alias_ID (FDACT) command, including LS_RJT for rejections and LS_ACC for successful deactivations, along with its payload structure. It also introduces the N_Port Activate Alias_ID (NACT) ELS, explaining its purpose, protocol, addressing, and the format of its payload which includes Alias_Token, Service Parameters, and the Alias_ID to be assigned."
+}
+1
+:
+{
+"title":"4.2.29.2 Protocol"
+"node_id":"0160"
+"start_index":104
+"end_index":104
+"summary":"This text describes the Link Services (LS) protocol for managing Alias_IDs in a network. It details the format of the Nx_Port List (NP_List) for deactivating Alias_IDs and the reply sequences for the Fabric Deactivate Alias_ID (FDACT) command, including LS_RJT for rejections and LS_ACC for successful deactivations, along with its payload structure. It also introduces the N_Port Activate Alias_ID (NACT) ELS, explaining its purpose, protocol, addressing, and the format of its payload which includes Alias_Token, Service Parameters, and the Alias_ID to be assigned."
+}
+2
+:
+{
+"title":"4.2.29.3 Reply Sequence"
+"node_id":"0161"
+"start_index":104
+"end_index":105
+"summary":"This document section details two Link Services operations: deactivating Nx_Port Alias_IDs and activating Nx_Port Alias_IDs. For deactivation, it specifies the NP_List format and the LS_RJT/LS_ACC replies. For activation (NACT), it describes the ELS purpose, request/reply sequences, addressing, and the detailed payload structure containing Alias_Token, Alias_ID, and Alias_SP. It also outlines the conditions under which an Nx_Port accepts or rejects the NACT request, including specific reason codes for rejection."
+}
+3
+:
+{
+"title":"4.2.29.4 Reply Sequence"
+"node_id":"0162"
+"start_index":105
+"end_index":106
+"summary":"This document section details two Fibre Channel Link Services commands: N_Port Activate Alias_ID (NACT) and N_Port Deactivate Alias_ID (NDACT). For NACT, it describes the payload structure including FACT, Alias_Token (containing Alias_Class and Alias_Qualifier), Alias_ID, and Alias_SP (Service Parameters). It outlines the Nx_Port's validation responsibilities and the conditions for sending an LS_ACC (successful activation) or LS_RJT (rejection). For NDACT, it explains the command's purpose to deactivate an Alias_ID, its addressing, payload structure containing the Alias_ID, and the expected LS_ACC or LS_RJT replies."
+}
+]
+}
+9
+:
+{
+"title":"4.2.30 N_Port Deactivate Alias_ID (NDACT)"
+"node_id":"0163"
+"start_index":106
+"end_index":106
+"summary":"The text describes the Link Services (LS) protocol, specifically focusing on the N_Port Activate Alias_ID (LS_ACC) success payload format and the N_Port Deactivate Alias_ID (NDACT) Extended Link Service (ELS). It details the purpose, protocol, addressing, and payload structure for the NDACT command, which is used by an Alias Server to instruct an Nx_Port to deactivate a specific Alias_ID. The document also outlines the conditions under which an LS_RJT (Link Service Reject) would be returned for an NDACT request, including a specific reason code for failure."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.30.1 Description"
+"node_id":"0164"
+"start_index":106
+"end_index":106
+"summary":"The text describes the Link Services (LS) protocol, specifically focusing on the N_Port Activate Alias_ID (LS_ACC) success payload format and the N_Port Deactivate Alias_ID (NDACT) Extended Link Service (ELS). It details the purpose, protocol, addressing, and payload structure for the NDACT command, which is used by an Alias Server to instruct an Nx_Port to deactivate a specific Alias_ID. The document also outlines the conditions under which an LS_RJT (Link Service Reject) would be returned for an NDACT request, including a specific reason code for failure."
+}
+1
+:
+{
+"title":"4.2.30.2 Protocol"
+"node_id":"0165"
+"start_index":106
+"end_index":106
+"summary":"The text describes the Link Services (LS) protocol, specifically focusing on the N_Port Activate Alias_ID (LS_ACC) success payload format and the N_Port Deactivate Alias_ID (NDACT) Extended Link Service (ELS). It details the purpose, protocol, addressing, and payload structure for the NDACT command, which is used by an Alias Server to instruct an Nx_Port to deactivate a specific Alias_ID. The document also outlines the conditions under which an LS_RJT (Link Service Reject) would be returned for an NDACT request, including a specific reason code for failure."
+}
+2
+:
+{
+"title":"4.2.30.3 Request Sequence"
+"node_id":"0166"
+"start_index":106
+"end_index":106
+"summary":"The text describes the Link Services (LS) protocol, specifically focusing on the N_Port Activate Alias_ID (LS_ACC) success payload format and the N_Port Deactivate Alias_ID (NDACT) Extended Link Service (ELS). It details the purpose, protocol, addressing, and payload structure for the NDACT command, which is used by an Alias Server to instruct an Nx_Port to deactivate a specific Alias_ID. The document also outlines the conditions under which an LS_RJT (Link Service Reject) would be returned for an NDACT request, including a specific reason code for failure."
+}
+3
+:
+{
+"title":"4.2.30.4 Reply Sequence"
+"node_id":"0167"
+"start_index":106
+"end_index":107
+"summary":"The document details several Link Services (LS) commands, including the format of LS_ACC payloads for successful operations and the use of LS_RJT for rejections. It describes the N_Port Deactivate Alias_ID (NDACT) ELS, which allows an Alias Server to instruct an Nx_Port to deactivate an Alias_ID, specifying the request and reply sequences, addressing, and payload format. It also covers the Discover N_Port/Service Parameters (PDISC) ELS, which enables the exchange of Service Parameters between Nx_Ports without altering the operating environment, and the Discover F_Port Service Parameters (FDISC) ELS, which facilitates the transfer of Service Parameters from an Nx_Port to an Fx_Port at a well-known ID."
+}
+]
+}
+10
+:
+{
+"title":"4.2.31 Discover N_Port/Service Parameters (PDISC)"
+"node_id":"0168"
+"start_index":107
+"end_index":107
+"summary":"The text details the Link Services (LS) protocol, specifically focusing on the LS_ACC payload for successful completion and the LS_RJT for errors. It then describes two discovery mechanisms: PDISC (Discover N_Port/Service Parameters), which allows for the exchange of service parameters between Nx_Ports without altering the existing operating environment or sequences, and FDISC (Discover F_Port Service Parameters), which facilitates the transfer of service parameters to an Fx_Port and the assignment of N_Port_IDs without changing service parameters. Both PDISC and FDISC have defined protocols involving their respective sequences and reply sequences (LS_ACC or LS_RJT)."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.31.1 Description"
+"node_id":"0169"
+"start_index":107
+"end_index":107
+"summary":"The text details the Link Services (LS) protocol, specifically focusing on the LS_ACC payload for successful completion and the LS_RJT for errors. It then describes two discovery mechanisms: PDISC (Discover N_Port/Service Parameters), which allows for the exchange of service parameters between Nx_Ports without altering the existing operating environment or sequences, and FDISC (Discover F_Port Service Parameters), which facilitates the transfer of service parameters to an Fx_Port and the assignment of N_Port_IDs without changing service parameters. Both PDISC and FDISC have defined protocols involving their respective sequences and reply sequences (LS_ACC or LS_RJT)."
+}
+1
+:
+{
+"title":"4.2.31.2 Protocol"
+"node_id":"0170"
+"start_index":107
+"end_index":107
+"summary":"The text details the Link Services (LS) protocol, specifically focusing on the LS_ACC payload for successful completion and the LS_RJT for errors. It then describes two discovery mechanisms: PDISC (Discover N_Port/Service Parameters), which allows for the exchange of service parameters between Nx_Ports without altering the existing operating environment or sequences, and FDISC (Discover F_Port Service Parameters), which facilitates the transfer of service parameters to an Fx_Port and the assignment of N_Port_IDs without changing service parameters. Both PDISC and FDISC have defined protocols involving their respective sequences and reply sequences (LS_ACC or LS_RJT)."
+}
+2
+:
+{
+"title":"4.2.31.3 Request Sequence"
+"node_id":"0171"
+"start_index":107
+"end_index":107
+"summary":"The text details the Link Services (LS) protocol, specifically focusing on the LS_ACC payload for successful completion and the LS_RJT for errors. It then describes two discovery mechanisms: PDISC (Discover N_Port/Service Parameters), which allows for the exchange of service parameters between Nx_Ports without altering the existing operating environment or sequences, and FDISC (Discover F_Port Service Parameters), which facilitates the transfer of service parameters to an Fx_Port and the assignment of N_Port_IDs without changing service parameters. Both PDISC and FDISC have defined protocols involving their respective sequences and reply sequences (LS_ACC or LS_RJT)."
+}
+3
+:
+{
+"title":"4.2.31.4 Reply Sequence"
+"node_id":"0172"
+"start_index":107
+"end_index":107
+"summary":"The text details the Link Services (LS) protocol, specifically focusing on the LS_ACC payload for successful completion and the LS_RJT for errors. It then describes two discovery mechanisms: PDISC (Discover N_Port/Service Parameters), which allows for the exchange of service parameters between Nx_Ports without altering the existing operating environment or sequences, and FDISC (Discover F_Port Service Parameters), which facilitates the transfer of service parameters to an Fx_Port and the assignment of N_Port_IDs without changing service parameters. Both PDISC and FDISC have defined protocols involving their respective sequences and reply sequences (LS_ACC or LS_RJT)."
+}
+]
+}
+11
+:
+{
+"title":"4.2.32 Discover F_Port Service Parameters (FDISC)"
+"node_id":"0173"
+"start_index":107
+"end_index":107
+"summary":"The text details the Link Services (LS) protocol, specifically focusing on the LS_ACC payload for successful completion and the LS_RJT for errors. It then describes two discovery mechanisms: PDISC (Discover N_Port/Service Parameters), which allows for the exchange of service parameters between Nx_Ports without altering the existing operating environment or sequences, and FDISC (Discover F_Port Service Parameters), which facilitates the transfer of service parameters to an Fx_Port and the assignment of N_Port_IDs without changing service parameters. Both PDISC and FDISC have defined protocols involving their respective sequences and reply sequences (LS_ACC or LS_RJT)."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.32.1 Description"
+"node_id":"0174"
+"start_index":107
+"end_index":107
+"summary":"The text details the Link Services (LS) protocol, specifically focusing on the LS_ACC payload for successful completion and the LS_RJT for errors. It then describes two discovery mechanisms: PDISC (Discover N_Port/Service Parameters), which allows for the exchange of service parameters between Nx_Ports without altering the existing operating environment or sequences, and FDISC (Discover F_Port Service Parameters), which facilitates the transfer of service parameters to an Fx_Port and the assignm..."
+}
+1
+:
+{
+"title":"4.2.32.2 Protocol"
+"node_id":"0175"
+"start_index":107
+"end_index":108
+"summary":"This document excerpt details Link Services (LS) protocols, specifically focusing on the PDISC, FDISC, and ADISC Extended Link Services (ELS). It defines the payload formats for LS_ACC and LS_RJT, and outlines the request and reply sequences for PDISC (Discover N_Port/Service Parameters) and FDISC (Discover F_Port Service Parameters). PDISC facilitates the exchange of Service Parameters between Nx_Ports without altering the existing operating environment. FDISC enables the transfer of Service Pa..."
+}
+2
+:
+{
+"title":"4.2.32.3 Request Sequence"
+"node_id":"0176"
+"start_index":108
+"end_index":108
+"summary":"The text details the FDISC (Fabric Discovery) ELS (Extended Link Services) request and reply sequences, outlining how it handles N_Port Name, node name, and N_Port_ID assignment and login, particularly when the Source ID (S_ID) is zero or a previously assigned ID. It specifies error handling and the non-modification of Service Parameters. Additionally, it introduces the ADISC (Address Discovery) ELS, which is used to exchange addresses and identifiers between Nx_Ports, and describes its protocol involving an ADISC sequence and a reply sequence."
+}
+3
+:
+{
+"title":"4.2.32.4 Reply Sequence"
+"node_id":"0177"
+"start_index":108
+"end_index":108
+"summary":"The text details the FDISC (Fabric Discovery) ELS (Extended Link Services) request and reply sequences, outlining how it handles N_Port Name, node name, and N_Port_ID assignment and login, particularly when the Source ID (S_ID) is zero or a previously assigned ID. It specifies error handling and the non-modification of Service Parameters. Additionally, it introduces the ADISC (Address Discovery) ELS, which is used to exchange addresses and identifiers between Nx_Ports, and describes its protocol involving an ADISC sequence and a reply sequence."
+}
+]
+}
+12
+:
+{
+"title":"4.2.33 Discover Address (ADISC)"
+"node_id":"0178"
+"start_index":108
+"end_index":108
+"summary":"The text details the FDISC (Fabric Discovery) ELS (Extended Link Services) request and reply sequences, outlining how it handles N_Port Name, node name, and N_Port_ID assignment and login, particularly when the Source ID (S_ID) is zero or a previously assigned ID. It specifies error handling and the non-modification of Service Parameters. Additionally, it introduces the ADISC (Address Discovery) ELS, which is used to exchange addresses and identifiers between Nx_Ports, and describes its protocol involving an ADISC sequence and a reply sequence."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.33.1 Description"
+"node_id":"0179"
+"start_index":108
+"end_index":108
+"summary":"The text details the FDISC (Fabric Discovery) ELS (Extended Link Services) request and reply sequences, outlining how it handles N_Port Name, node name, and N_Port_ID assignment and login, particularly when the Source ID (S_ID) is zero or a previously assigned ID. It specifies error handling and the non-modification of Service Parameters. Additionally, it introduces the ADISC (Address Discovery) ELS, which is used to exchange addresses and identifiers between Nx_Ports, and describes its protocol involving an ADISC sequence and a reply sequence."
+}
+1
+:
+{
+"title":"4.2.33.2 Protocol"
+"node_id":"0180"
+"start_index":108
+"end_index":109
+"summary":"This document section details the FDISC (Fabric Discovery) and ADISC (Address Discovery) Link Services. For FDISC, it describes the request and reply sequences, including payload formats, conditions for requesting new N_Port_IDs, and error handling. For ADISC, it outlines its purpose of exchanging Nx_Port addresses and identifiers, and specifies the request sequence payload format, including fields for the originator's hard address, N_Port Name, Node Name, and N_Port_ID."
+}
+2
+:
+{
+"title":"4.2.33.3 Request Sequence"
+"node_id":"0181"
+"start_index":109
+"end_index":110
+"summary":"This text describes the payload formats for the ADISC Request and its corresponding LS_ACC (Reply) sequence within the INCITS xxx-200x Link Services standard. It details the specific fields within each payload, including the opcode, reserved bits, and crucial originator/responder information such as Hard Address, N_Port_Name, Node_Name, and N_Port_ID. The Hard Address is further broken down into Domain, Area, and AL_PA components. The text also outlines conditions that invalidate or prevent the sending of an ADISC response, specifically related to Link Resets (LR) or loop initialization events. Finally, it references a summary table for responses to ADISC, FDISC, and PDISC."
+}
+3
+:
+{
+"title":"4.2.33.4 Reply Sequence"
+"node_id":"0182"
+"start_index":110
+"end_index":111
+"summary":"The text details the LS_ACC Payload format for ADISC, specifying fields like Hard Address, N_Port_Name, Node_Name, and N_Port_ID, and defines the Hard Address structure. It outlines conditions for ignoring or not sending ADISC responses due to loop events. A summary table details responses to FDISC, PDISC, and ADISC commands based on port status and class, including specific rejection codes and actions. The document also describes the Third Party Process Logout (TPRLO) ELS command, its purpose in invalidating operating environments, its equivalence to individual Process Logouts, and its request/reply protocol and addressing."
+}
+]
+}
+13
+:
+{
+"title":"4.2.34 Third Party Process Logout (TPRLO)"
+"node_id":"0183"
+"start_index":111
+"end_index":111
+"summary":"The text covers a table summarizing responses to FDISC/PDISC ELS commands based on port status and type, including specific reason codes for rejections. It also details the Third Party Process Logout (TPRLO) ELS command, explaining its purpose of invalidating operating environments and resources at a recipient Nx_Port, its protocol involving request and reply sequences, and its addressing mechanism."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.34.1 Description"
+"node_id":"0184"
+"start_index":111
+"end_index":111
+"summary":"The text covers a table summarizing responses to FDISC/PDISC ELS commands based on port status and type, including specific reason codes for rejections. It also details the Third Party Process Logout (TPRLO) ELS command, explaining its purpose of invalidating operating environments and resources at a recipient Nx_Port, its protocol involving request and reply sequences, and its addressing mechanism."
+}
+1
+:
+{
+"title":"4.2.34.2 Protocol"
+"node_id":"0185"
+"start_index":111
+"end_index":111
+"summary":"The text covers a table summarizing responses to FDISC/PDISC ELS commands based on port status and type, including specific reason codes for rejections. It also details the Third Party Process Logout (TPRLO) ELS command, explaining its purpose of invalidating operating environments and resources at a recipient Nx_Port, its protocol involving request and reply sequences, and its addressing mechanism."
+}
+2
+:
+{
+"title":"4.2.34.3 Request Sequence"
+"node_id":"0186"
+"start_index":111
+"end_index":113
+"summary":"The document details responses to FDISC/PDISC commands in Table 91, including specific error conditions. It then describes the Third Party Process Logout (TPRLO) ELS command (Section 4.2.34), explaining its purpose to invalidate operating environments and remove image pairs. The protocol, request sequence, and payload structure of TPRLO are outlined, including detailed formats for the payload and logout parameter pages (Tables 92 and 93). The TPRLO LS_ACC payload format is also presented (Table 94). Finally, the Clock Synchronization Request (CSR) ELS command (Section 4.2.35) is introduced, which is used to manage periodic clock synchronization updates."
+}
+]
+}
+14
+:
+{
+"title":"4.2.35 Clock Synchronization Request (CSR)"
+"node_id":"0187"
+"start_index":113
+"end_index":113
+"summary":"The text details the interpretation of the TPRLO Logout Parameter page, including the Global Process Logout bit's function for managing image pairs and resources associated with specific FC-4 TYPEs. It also describes the TPRLO LS_ACC Payload format, specifying the Payload Length and the reuse of the Logout Parameter page format. Additionally, it introduces the Clock Synchronization Request (CSR) ELS, explaining its purpose for managing periodic clock synchronization updates and its associated protocol sequence."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.35.1 Description"
+"node_id":"0188"
+"start_index":113
+"end_index":113
+"summary":"The text details the interpretation of the TPRLO Logout Parameter page, including the Global Process Logout bit's function for managing image pairs and resources associated with specific FC-4 TYPEs. It also describes the TPRLO LS_ACC Payload format, specifying the Payload Length and the reuse of the Logout Parameter page format. Additionally, it introduces the Clock Synchronization Request (CSR) ELS, explaining its purpose for managing periodic clock synchronization updates and its associated protocol sequence."
+}
+1
+:
+{
+"title":"4.2.35.2 Protocol"
+"node_id":"0189"
+"start_index":113
+"end_index":114
+"summary":"This text details the TPRLO Logout Parameter page, explaining its structure and the implications of the Global Process Logout bit for managing image pairs and resources. It also describes the TPRLO LS_ACC Payload format and its fields. Furthermore, it introduces the Clock Synchronization Request (CSR) ELS, outlining its purpose for managing clock synchronization updates. The protocol, addressing, and payload format of the CSR are explained, including the various meanings of the Clock Sync Mode based on the recipient (Clock Sync Server or Fabric Controller). The CS_Accuracy field is defined, specifying the requested accuracy range for clock synchronization values using a provided formula."
+}
+2
+:
+{
+"title":"4.2.35.3 Request Sequence"
+"node_id":"0190"
+"start_index":114
+"end_index":115
+"summary":"This document section details the Request and Reply Sequences for Clock Synchronization (CSR) updates in Link Services. The Request Sequence specifies addressing (source and destination Nx_Ports) and the CSR Payload format, which includes Clock Sync Mode, CS_Accuracy, CS_Implemented_MSB, CS_Implemented_LSB, and CS_Update_Period. The meaning of Clock Sync Mode values for enabling/disabling services and handling Quality of Service parameters when communicating with the Clock Sync Server or Fabric Controller is defined. CS_Accuracy, CS_Implemented_MSB, and CS_Implemented_LSB define the requested precision and bit positions for the clock count, while CS_Update_Period sets the desired update frequency. The Reply Sequence includes LS_RJT for rejection and LS_ACC for acceptance, with the LS_ACC Payload mirroring the accepted CSR parameters."
+}
+3
+:
+{
+"title":"4.2.35.4 Reply Sequence"
+"node_id":"0191"
+"start_index":115
+"end_index":117
+"summary":"This document excerpt details aspects of clock synchronization within a Link Services protocol, specifically focusing on the Clock Synchronization Server (CSR) and Clock Synchronization Update (CSU) Extended Link Services (ELS). It defines parameters like T_reference, CS_Accuracy (Mantissa and Exponent), CS_Implemented_MSB, CS_Implemented_LSB, and CS_Update_Period, providing formulas and examples for accuracy calculations. The document also outlines the reply sequences for CSR commands (rejection and acceptance), including the structure of the acceptance payload. Furthermore, it describes the CSU ELS used by the server to transmit clock values to clients, detailing its request sequence, addressing, and payload format, including the 8-byte Clock Count field and its byte-level meaning. The information is presented with reference to INCITS xxx-200x Link Services Rev 1.61, dated November 3, 2006."
+}
+]
+}
+15
+:
+{
+"title":"4.2.36 Clock Synchronization Update (CSU)"
+"node_id":"0192"
+"start_index":117
+"end_index":117
+"summary":"This document section describes the Clock Synchronization Update (CSU) Extended Link Services (ELS) used by a Clock Synchronization Server to transmit its current clock value to clients. It details the CSU's purpose, its protocol sequences (Request and No Reply), and the specifics of the Request Sequence. This includes the Information Category (Solicited Data), addressing (well-known server address to Nx_Port(s)), and the payload format. The payload contains the CSU opcode and an 8-byte Clock Count, whose individual bytes are defined as the counter value from most significant to least significant. The bit values are derived from 1Gbits/s Fibre Channel clock frequencies, with a specific definition for Bit 7 in Word 2."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.36.1 Description"
+"node_id":"0193"
+"start_index":117
+"end_index":117
+"summary":"This document section describes the Clock Synchronization Update (CSU) Extended Link Services (ELS) used by a Clock Synchronization Server to transmit its current clock value to clients. It details the CSU's purpose, its protocol sequences (Request and No Reply), and the specifics of the Request Sequence. This includes the Information Category (Solicited Data), addressing (well-known server address to Nx_Port(s)), and the payload format. The payload contains the CSU opcode and an 8-byte Clock Count, whose individual bytes are defined as the counter value from most significant to least significant. The bit values are derived from 1Gbits/s Fibre Channel clock frequencies, with a specific definition for Bit 7 in Word 2."
+}
+1
+:
+{
+"title":"4.2.36.2 Protocol"
+"node_id":"0194"
+"start_index":117
+"end_index":117
+"summary":"This document section describes the Clock Synchronization Update (CSU) Extended Link Services (ELS) used by a Clock Synchronization Server to transmit its current clock value to clients. It details the CSU's purpose, its protocol sequences (Request and No Reply), and the specifics of the Request Sequence. This includes the Information Category (Solicited Data), addressing (well-known server address to Nx_Port(s)), and the payload format. The payload contains the CSU opcode and an 8-byte Clock Count, whose individual bytes are defined as the counter value from most significant to least significant. The bit values are derived from 1Gbits/s Fibre Channel clock frequencies, with a specific definition for Bit 7 in Word 2."
+}
+2
+:
+{
+"title":"4.2.36.3 Request Sequence"
+"node_id":"0195"
+"start_index":117
+"end_index":118
+"summary":"The text describes two Link Services (ELS) from INCITS xxx-200x Link Services Rev 1.61: Clock Synchronization Update (CSU) and Report Port Buffer Conditions (RPBC). The CSU ELS is used by a Clock Synchronization Server to transmit its clock value to clients, detailing its protocol, request sequence, addressing, and a specific payload format including an 8-byte clock count derived from Fibre Channel frequencies. The RPBC ELS provides a mechanism for a port to report its buffer conditions, outlining its protocol, request sequence, addressing, and payload format, with a standard LS_ACC or LS_RJT reply."
+}
+3
+:
+{
+"title":"4.2.36.4 Reply Sequence"
+"node_id":"0196"
+"start_index":118
+"end_index":118
+"summary":"The text details the timing specifications for link services, including bit value representations, time ranges, and the definition of the Clock Count. It also outlines the Report Port Buffer Conditions (RPBC) Extended Link Services (ELS) command, its protocol, addressing, and payload structure. The RPBC ELS allows a port to report its buffer conditions, with normal responses being LS_ACC and error responses being LS_RJT. The payload includes fields for the RPBC opcode and ELS Buffer Parameters, which describe the sender's buffer status."
+}
+]
+}
+16
+:
+{
+"title":"4.2.37 Report Port Buffer Conditions (RPBC)"
+"node_id":"0197"
+"start_index":118
+"end_index":118
+"summary":"The text details the timing specifications for link services, including bit value representations, time ranges, and the definition of the Clock Count. It also outlines the Report Port Buffer Conditions (RPBC) Extended Link Services (ELS) command, its protocol, addressing, and payload structure. The RPBC ELS allows a port to report its buffer conditions, with normal responses being LS_ACC and error responses being LS_RJT. The payload includes fields for the RPBC opcode and ELS Buffer Parameters, which describe the sender's buffer status."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.37.1 Description"
+"node_id":"0198"
+"start_index":118
+"end_index":118
+"summary":"The text details the timing specifications for link services, including bit value representations, time ranges, and the definition of the Clock Count. It also outlines the Report Port Buffer Conditions (RPBC) Extended Link Services (ELS) command, its protocol, addressing, and payload structure. The RPBC ELS allows a port to report its buffer conditions, with normal responses being LS_ACC and error responses being LS_RJT. The payload includes fields for the RPBC opcode and ELS Buffer Parameters, which describe the sender's buffer status."
+}
+1
+:
+{
+"title":"4.2.37.2 Protocol"
+"node_id":"0199"
+"start_index":118
+"end_index":118
+"summary":"The text details the timing specifications for link services, including bit value representations, time ranges, and the definition of the Clock Count. It also outlines the Report Port Buffer Conditions (RPBC) Extended Link Services (ELS) command, its protocol, addressing, and payload structure. The RPBC ELS allows a port to report its buffer conditions, with normal responses being LS_ACC and error responses being LS_RJT. The payload includes fields for the RPBC opcode and ELS Buffer Parameters, which describe the sender's buffer status."
+}
+2
+:
+{
+"title":"4.2.37.3 Request Sequence"
+"node_id":"0200"
+"start_index":118
+"end_index":119
+"summary":"The text details specific link services within a document, starting with the representation and handling of Clock Count values, including bit significance and range. It then describes the Report Port Buffer Conditions (RPBC) Extended Link Service (ELS), outlining its purpose for reporting port buffer status, its request and reply sequences, addressing, payload structure (including ELS Buffer Parameters and ELS Receive Data Field Size), and acceptance/rejection mechanisms. Finally, it explains the Report node FC-4 Types (RNFT) ELS, which facilitates the exchange of supported FC-4 protocol lists between N_Ports after login, and the interpretation of its responses."
+}
+3
+:
+{
+"title":"4.2.37.4 Reply Sequence"
+"node_id":"0201"
+"start_index":119
+"end_index":119
+"summary":"This text details ELS (Extended Link Services) buffer parameters, including support for multi-frame sequences and the size of ELS receive data fields, with specified valid ranges and interactions with buffer-to-buffer sizes. It also describes the reply sequence for commands, distinguishing between rejection (LS_RJT) and acceptance (LS_ACC), and outlines the RPBC LS_ACC payload structure which incorporates ELS buffer information. Furthermore, it explains the Report node FC-4 Types (RNFT) ELS, a mechanism for exchanging and verifying supported FC-4 protocols between Nx_Ports, and the implications of command support or lack thereof."
+}
+]
+}
+17
+:
+{
+"title":"4.2.38 Report node FC-4 Types (RNFT)"
+"node_id":"0202"
+"start_index":119
+"end_index":119
+"summary":"This text details ELS (Extended Link Services) buffer parameters, including support for multi-frame sequences and the size of ELS receive data fields, with specified valid ranges and interactions with buffer-to-buffer sizes. It also describes the reply sequence for commands, distinguishing between rejection (LS_RJT) and acceptance (LS_ACC), and outlines the RPBC LS_ACC payload structure which incorporates ELS buffer information. Furthermore, it explains the Report node FC-4 Types (RNFT) ELS, a mechanism for exchanging and verifying supported FC-4 protocols between Nx_Ports, and the implications of command support or lack thereof."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.38.1 Description"
+"node_id":"0203"
+"start_index":119
+"end_index":120
+"summary":"The text details Link Services (LS) within the INCITS xxx-200x standard, focusing on ELS buffer parameters and the Report node FC-4 Types (RNFT) ELS. It defines ELS buffer parameters like multi-frame support and receive data field size, along with their constraints. The document explains the reply sequences for RPBC commands, including LS_RJT and LS_ACC, and the structure of the RPBC LS_ACC payload which incorporates ELS buffer information. The RNFT ELS is described as a mechanism for exchanging supported FC-4 protocol lists, used after N_Port Login to verify compatibility. The text outlines the RNFT protocol, including its request and reply sequences, addressing, and payload formats. The RNFT request payload specifies the maximum acceptable LS_ACC size and an index for retrieving FC-4 entries. The RNFT LS_ACC payload contains the requested FC-4 entries, along with length and index information."
+}
+1
+:
+{
+"title":"4.2.38.2 Protocol"
+"node_id":"0204"
+"start_index":120
+"end_index":120
+"summary":"This text describes the Report node FC-4 Types (RNFT) protocol within Link Services. It outlines the request sequence, specifying how a source Nx_Port requests FC-4 Types information from a destination Nx_Port using S_ID and D_ID. The RNFT request payload format is detailed, including fields for the maximum acceptable reply size and an index to specify the starting FC-4 Entry. The text also covers the reply sequence, explaining that LS_RJT signifies rejection and LS_ACC signifies acceptance. The LS_ACC payload format is presented, which includes the payload length, the total list length of supported FC-4 Types, and the actual FC-4 Entries."
+}
+2
+:
+{
+"title":"4.2.38.3 Request Sequence"
+"node_id":"0205"
+"start_index":120
+"end_index":120
+"summary":"This text describes the Report node FC-4 Types (RNFT) protocol within Link Services. It outlines the request sequence, specifying how a source Nx_Port requests FC-4 Types information from a destination Nx_Port using S_ID and D_ID. The RNFT request payload format is detailed, including fields for the maximum acceptable reply size and an index to specify the starting FC-4 Entry. The text also covers the reply sequence, explaining that LS_RJT signifies rejection and LS_ACC signifies acceptance. The LS_ACC payload format is presented, which includes the payload length, the total list length of supported FC-4 Types, and the actual FC-4 Entries."
+}
+3
+:
+{
+"title":"4.2.38.4 Reply Sequence"
+"node_id":"0206"
+"start_index":120
+"end_index":121
+"summary":"This document section details two Link Services (LS) commands: Report Node FC-4 Types (RNFT) and Scan Remote Loop (SRL). The RNFT command is used to request information about supported FC-4 Types from a destination Nx_Port. It specifies addressing, maximum acceptable reply size, and an index for the first entry. The reply can be an LS_ACC containing a list of FC-4 Entries (each with a Type and Qualifier, where Qualifiers are defined for standard and vendor-specific types) or an LS_RJT. The SRL command instructs a switch to scan attached loops to detect disabled or removed L_Ports, triggering name server updates and RSCN notifications. The SRL payload determines whether to scan all loops or a specific one."
+}
+]
+}
+18
+:
+{
+"title":"4.2.39 Scan Remote Loop (SRL)"
+"node_id":"0207"
+"start_index":121
+"end_index":121
+"summary":"The text describes the structure and fields of the RNFT LS_ACC Payload, including Payload Length, List Length, Index, and FC-4 Entry details. It elaborates on FC-4 Type codes and the use of FC-4 Qualifiers, particularly for vendor-specific protocols using IEEE Company_IDs. Additionally, it details the Scan Remote Loop (SRL) ELS command, its function in scanning loops for L_Port status changes, and the subsequent actions taken by the switch, such as name server updates and RSCN notifications. The SRL Payload's role in specifying the scope of the scan (all loops or a single loop) is also covered."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.39.1 Description"
+"node_id":"0208"
+"start_index":121
+"end_index":122
+"summary":"This document describes the RNFT LS_ACC Payload structure, detailing its Payload Length, List Length, Index, and FC-4 Entry. It elaborates on FC-4 Entry components like FC-4 Type and FC-4 Qualifier, explaining their usage for both standard and vendor-specific protocols. The document then introduces the Scan Remote Loop (SRL) ELS, a mechanism for switches to scan attached loops for disabled or removed L_Ports, updating the name server and sending RSCN notifications. The SRL Payload specifies whether to scan all loops or a single loop. The protocol details include the Request Sequence with addressing information and the Payload format, which contains a Flag and Flag Parameter to control scanning behavior (all loops, specific loop, periodic scanning). It also defines the Reply Sequence, where LS_RJT indicates a rejected request. Specifics on periodic scanning, including scan periods and rejection scenarios, are also provided."
+}
+1
+:
+{
+"title":"4.2.39.2 Protocol"
+"node_id":"0209"
+"start_index":122
+"end_index":122
+"summary":"This document section details the Scan Remote Loop (SRL) protocol, including its request and reply sequences. The protocol defines addressing mechanisms using S_ID and D_ID fields, with the D_ID specifying the Domain Controller address. The SRL payload structure is outlined, featuring a Flag field that controls whether all FL_Ports, a specific FL_Port, or periodic scanning is initiated. The Flag Parameter provides additional details for the Flag, such as the address identifier of a specific FL_Port or the scan period in seconds. Rejection of the SRL request is indicated by an LS_RJT reply."
+}
+2
+:
+{
+"title":"4.2.39.3 Request Sequence"
+"node_id":"0210"
+"start_index":122
+"end_index":122
+"summary":"This document section details the Scan Remote Loop (SRL) protocol, including its request and reply sequences. The protocol defines addressing mechanisms using S_ID and D_ID fields, with the D_ID specifying the Domain Controller address. The SRL payload structure is outlined, featuring a Flag field that controls whether all FL_Ports, a specific FL_Port, or periodic scanning is initiated. The Flag Parameter provides additional details for the Flag, such as the address identifier of a specific FL_Port or the scan period in seconds. Rejection of the SRL request is indicated by an LS_RJT reply."
+}
+3
+:
+{
+"title":"4.2.39.4 Reply Sequence"
+"node_id":"0211"
+"start_index":122
+"end_index":123
+"summary":"This document section details two Link Services (LS) protocols: Scan Remote Loop (SRL) and Set Bit-error Reporting Parameters (SBRP). The SRL protocol defines how to scan remote loops within a fabric, specifying addressing, payload formats, flag options for scanning (all ports, specific port, periodic scanning), and reply sequences (LS_ACC or LS_RJT). The SBRP protocol allows for setting bit error reporting parameters (Error Interval, Error Window, Error Threshold) to monitor link quality and generate reports when thresholds are exceeded. It also covers the protocol for requesting and accepting/rejecting these settings."
+}
+]
+}
+19
+:
+{
+"title":"4.2.40 Set Bit-error Reporting Parameters (SBRP)"
+"node_id":"0212"
+"start_index":123
+"end_index":123
+"summary":"The document describes the LS_ACC (Link Services Acceptance) payload, which indicates acceptance of an SRL Request and includes a Scan Period value. It then details the Set Bit-error Reporting Parameters (SBRP) ELS, used to configure bit error reporting parameters (Error Interval, Error Window, Error Threshold) for a Port or Domain. The SBRP mechanism integrates bit error bursts over intervals within a window, triggering a Registered Link Incident Report (RLIR) if a threshold is exceeded. The parameters can be queried without modification, and their actual setting is managed externally. The SBRP protocol involves a request and an acceptance or rejection reply."
+"nodes"
+:
+[
+0
+:
+{
+"title":"4.2.40.1 Description"
+"node_id":"0213"
+"start_index":123
+"end_index":123
+"summary":"The document describes the LS_ACC (Link Services Acceptance) payload, which indicates acceptance of an SRL Request and includes a Scan Period value. It then details the Set Bit-error Reporting Parameters (SBRP) ELS, used to configure bit error reporting parameters (Error Interval, Error Window, Error Threshold) for a Port or Domain. The SBRP mechanism integrates bit error bursts over intervals within a window, triggering a Registered Link Incident Report (RLIR) if a threshold is exceeded. The parameters can be queried without modification, and their actual setting is managed externally. The SBRP protocol involves a request and an acceptance or rejection reply."
+}
+1
+:
+{
+"title":"4.2.40.2 Protocol"
+"node_id":"0214"
+"start_index":123
+"end_index":124
+"summary":"The document describes two Link Services (LS) related to network communication. LS_ACC handles acceptance of SRL Requests, providing periodic scanning period information. The main focus is on the Set Bit-error Reporting Parameters (SBRP) ELS, which allows for the configuration and retrieval of bit error reporting parameters like Error Interval, Error Window, and Error Threshold. It details the purpose of these parameters in detecting and reporting bit error bursts, the structure of the SBRP payload, addressing mechanisms, and the protocol sequences involved in setting or reporting these parameters. The Error Window and Error Interval are defined using a base value and an exponent to represent time durations."
+}
+2
+:
+{
+"title":"4.2.40.3 Request Sequence"
+"node_id":"0215"
+"start_index":124
+"end_index":125
+"summary":"This document section details the Request and Reply Sequences for Bit Error Rate Reporting Parameters (SBRP ELS) within the INCITS xxx-200x Link Services standard. It defines the addressing scheme for requests, the structure of the SBRP Payload (including error flags, window, interval, and threshold parameters), and the format of the LS_ACC Payload for replies. The reply payload indicates whether the request was accepted or rejected, and echoes the relevant parameter values, including handling of unaccepted parameters."
+}
+3
+:
+{
+"title":"4.2.40.4 Reply Sequence"
+"node_id":"0216"
+"start_index":125
+"end_index":126
+"summary":"The text describes parameters related to error reporting and port speed capabilities within a link services protocol. It defines Error Interval (with exponent, value, and tolerance) and Error Threshold. It details the Reply Sequence for SBRP (Single Bit Rate Protocol) requests, including LS_RJT for rejection and LS_ACC for acceptance, which can convey current, accepted, or acceptable Bit Error Rate Reporting Parameters. The format of the LS_ACC Payload for SBRP is specified. Additionally, it introduces the Report Port Speed Capabilities (RPSC) ELS, which allows a port to report its link operating speeds. The RPSC protocol involves a request and a reply sequence (LS_ACC or LS_RJT). The addressing for RPSC requests and the format of the RPSC Payload are provided. The RPSC LS_ACC Payload format is also detailed, including the number of entries and speed capabilities/operating speeds for individual ports."
+}
+]
+}
+]
+}
+]
+}
+]
+"next_steps"
+:
+{
+"options"
+:
+[
+0:"Request next part with part: 3"
+1:"Jump to last part with part: 5"
+2:"Proceed to get_page_content() for specific sections"
+]
+"summary":"Showing part 2 of 5."
+}
+"pagination"
+:
+{
+"part":2
+"has_more":true
+"total_parts":5
+}
+"total_parts":5
+}

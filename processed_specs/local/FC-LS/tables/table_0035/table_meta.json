@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0035",
+  "type": "table",
+  "caption": "Table 32 – LSTS LS_ACC Payload",
+  "pages": [
+    63
+  ],
+  "bbox": [
+    100.37,
+    110.62,
+    535.63,
+    337.98
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 63
+}

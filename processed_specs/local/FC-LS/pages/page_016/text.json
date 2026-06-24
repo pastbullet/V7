@@ -1,0 +1,1464 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 16,
+  "spans": [
+    {
+      "span_id": "p016_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0002",
+      "text": " xvi",
+      "bbox": [
+        520.5,
+        723.59,
+        535.49,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0003",
+      "text": "Table",
+      "bbox": [
+        96.0,
+        57.65,
+        122.07,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0004",
+      "text": "Page",
+      "bbox": [
+        516.12,
+        57.65,
+        539.93,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0005",
+      "text": " Table 1 –",
+      "bbox": [
+        96.0,
+        82.97,
+        140.29,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0006",
+      "text": "ISO and American Conventions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11",
+      "bbox": [
+        155.87,
+        82.97,
+        539.95,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0007",
+      "text": " Table 2 –",
+      "bbox": [
+        96.0,
+        94.97,
+        140.39,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0008",
+      "text": "Extended Link Services Routing Bits and Information Categories . . . . . . . . . . . . . . . 17",
+      "bbox": [
+        155.97,
+        94.97,
+        539.93,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0009",
+      "text": " Table 3 –",
+      "bbox": [
+        96.0,
+        106.97,
+        140.27,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0010",
+      "text": "ELS_Command codes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18",
+      "bbox": [
+        155.85,
+        106.97,
+        539.99,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0011",
+      "text": " Table 4 –",
+      "bbox": [
+        96.0,
+        118.97,
+        140.28,
+        130.08
+      ],
+      "block_index": 4,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0012",
+      "text": "Responses to Received ELSs. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22",
+      "bbox": [
+        155.86,
+        118.97,
+        539.96,
+        130.08
+      ],
+      "block_index": 4,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0013",
+      "text": " Table 5 –",
+      "bbox": [
+        96.0,
+        130.97,
+        140.26,
+        142.08
+      ],
+      "block_index": 4,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0014",
+      "text": "ADVC Payload  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24",
+      "bbox": [
+        155.84,
+        130.97,
+        539.96,
+        142.08
+      ],
+      "block_index": 4,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0015",
+      "text": " Table 6 –",
+      "bbox": [
+        96.0,
+        142.96,
+        140.26,
+        154.08
+      ],
+      "block_index": 4,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0016",
+      "text": "ADVC LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25",
+      "bbox": [
+        155.85,
+        142.96,
+        539.99,
+        154.08
+      ],
+      "block_index": 4,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0017",
+      "text": " Table 7 –",
+      "bbox": [
+        96.0,
+        154.96,
+        140.26,
+        166.08
+      ],
+      "block_index": 4,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0018",
+      "text": "ECHO Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26",
+      "bbox": [
+        155.84,
+        154.96,
+        539.96,
+        166.08
+      ],
+      "block_index": 4,
+      "line_index": 14,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0019",
+      "text": " Table 8 –",
+      "bbox": [
+        96.0,
+        166.96,
+        140.26,
+        178.08
+      ],
+      "block_index": 4,
+      "line_index": 15,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0020",
+      "text": "ECHO LS_ACC Payload. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27",
+      "bbox": [
+        155.85,
+        166.96,
+        540.01,
+        178.08
+      ],
+      "block_index": 4,
+      "line_index": 16,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0021",
+      "text": " Table 9 –",
+      "bbox": [
+        96.0,
+        178.96,
+        140.26,
+        190.08
+      ],
+      "block_index": 4,
+      "line_index": 17,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0022",
+      "text": "ESTC Payload. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27",
+      "bbox": [
+        155.85,
+        178.96,
+        539.97,
+        190.08
+      ],
+      "block_index": 4,
+      "line_index": 18,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0023",
+      "text": " Table 10 –",
+      "bbox": [
+        96.0,
+        190.96,
+        145.98,
+        202.08
+      ],
+      "block_index": 4,
+      "line_index": 19,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0024",
+      "text": "ESTS",
+      "bbox": [
+        156.0,
+        191.83,
+        179.46,
+        201.88
+      ],
+      "block_index": 4,
+      "line_index": 20,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0025",
+      "text": " Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28",
+      "bbox": [
+        179.46,
+        190.97,
+        540.13,
+        202.08
+      ],
+      "block_index": 4,
+      "line_index": 20,
+      "span_index": 2
+    },
+    {
+      "span_id": "p016_s0026",
+      "text": " Table 11 –",
+      "bbox": [
+        96.0,
+        202.97,
+        145.86,
+        214.08
+      ],
+      "block_index": 4,
+      "line_index": 21,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0027",
+      "text": "ESTS LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29",
+      "bbox": [
+        155.86,
+        202.97,
+        539.94,
+        214.08
+      ],
+      "block_index": 4,
+      "line_index": 22,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0028",
+      "text": " Table 12 –",
+      "bbox": [
+        96.0,
+        214.97,
+        145.84,
+        226.08
+      ],
+      "block_index": 4,
+      "line_index": 23,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0029",
+      "text": "LOGO Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31",
+      "bbox": [
+        155.84,
+        214.97,
+        539.97,
+        226.08
+      ],
+      "block_index": 4,
+      "line_index": 24,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0030",
+      "text": " Table 13 –",
+      "bbox": [
+        96.0,
+        226.97,
+        145.85,
+        238.08
+      ],
+      "block_index": 4,
+      "line_index": 25,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0031",
+      "text": "LOGO LS_ACC Payload. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31",
+      "bbox": [
+        155.86,
+        226.97,
+        539.98,
+        238.08
+      ],
+      "block_index": 4,
+      "line_index": 26,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0032",
+      "text": " Table 14 –",
+      "bbox": [
+        96.0,
+        238.97,
+        145.85,
+        250.08
+      ],
+      "block_index": 4,
+      "line_index": 27,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0033",
+      "text": "RCS Payload. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32",
+      "bbox": [
+        155.85,
+        238.97,
+        539.97,
+        250.08
+      ],
+      "block_index": 4,
+      "line_index": 28,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0034",
+      "text": " Table 15 –",
+      "bbox": [
+        96.0,
+        250.97,
+        145.85,
+        262.08
+      ],
+      "block_index": 4,
+      "line_index": 29,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0035",
+      "text": "RCS LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32",
+      "bbox": [
+        155.85,
+        250.97,
+        539.96,
+        262.08
+      ],
+      "block_index": 4,
+      "line_index": 30,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0036",
+      "text": " Table 16 –",
+      "bbox": [
+        96.0,
+        262.97,
+        145.86,
+        274.08
+      ],
+      "block_index": 4,
+      "line_index": 31,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0037",
+      "text": "Connection Status Codes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33",
+      "bbox": [
+        155.86,
+        262.97,
+        539.96,
+        274.08
+      ],
+      "block_index": 4,
+      "line_index": 32,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0038",
+      "text": " Table 17 –",
+      "bbox": [
+        96.0,
+        274.96,
+        145.85,
+        286.08
+      ],
+      "block_index": 4,
+      "line_index": 33,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0039",
+      "text": "RLS Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34",
+      "bbox": [
+        155.86,
+        274.96,
+        539.97,
+        286.08
+      ],
+      "block_index": 4,
+      "line_index": 34,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0040",
+      "text": " Table 18 –",
+      "bbox": [
+        96.0,
+        286.96,
+        145.87,
+        298.08
+      ],
+      "block_index": 4,
+      "line_index": 35,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0041",
+      "text": "RLS LS_ACC Payload  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35",
+      "bbox": [
+        155.87,
+        286.96,
+        539.96,
+        298.08
+      ],
+      "block_index": 4,
+      "line_index": 36,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0042",
+      "text": " Table 19 –",
+      "bbox": [
+        96.0,
+        298.96,
+        145.86,
+        310.08
+      ],
+      "block_index": 4,
+      "line_index": 37,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0043",
+      "text": "RTV Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35",
+      "bbox": [
+        155.86,
+        298.96,
+        539.97,
+        310.08
+      ],
+      "block_index": 4,
+      "line_index": 38,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0044",
+      "text": " Table 20 –",
+      "bbox": [
+        96.0,
+        310.96,
+        145.86,
+        322.08
+      ],
+      "block_index": 4,
+      "line_index": 39,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0045",
+      "text": "RTV LS_ACC Payload  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36",
+      "bbox": [
+        155.86,
+        310.96,
+        539.96,
+        322.08
+      ],
+      "block_index": 4,
+      "line_index": 40,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0046",
+      "text": " Table 21 –",
+      "bbox": [
+        96.0,
+        322.96,
+        145.85,
+        334.08
+      ],
+      "block_index": 4,
+      "line_index": 41,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0047",
+      "text": "RRQ Payload  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37",
+      "bbox": [
+        155.86,
+        322.96,
+        539.97,
+        334.08
+      ],
+      "block_index": 4,
+      "line_index": 42,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0048",
+      "text": " Table 22 –",
+      "bbox": [
+        96.0,
+        334.96,
+        145.85,
+        346.08
+      ],
+      "block_index": 4,
+      "line_index": 43,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0049",
+      "text": "RRQ LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38",
+      "bbox": [
+        155.86,
+        334.96,
+        539.97,
+        346.08
+      ],
+      "block_index": 4,
+      "line_index": 44,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0050",
+      "text": " Table 23 –",
+      "bbox": [
+        96.0,
+        346.96,
+        145.85,
+        358.08
+      ],
+      "block_index": 4,
+      "line_index": 45,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0051",
+      "text": "RSI Payload  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39",
+      "bbox": [
+        155.85,
+        346.96,
+        539.97,
+        358.08
+      ],
+      "block_index": 4,
+      "line_index": 46,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0052",
+      "text": " Table 24 –",
+      "bbox": [
+        96.0,
+        358.96,
+        145.85,
+        370.08
+      ],
+      "block_index": 4,
+      "line_index": 47,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0053",
+      "text": "RSI LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39",
+      "bbox": [
+        155.85,
+        358.96,
+        539.96,
+        370.08
+      ],
+      "block_index": 4,
+      "line_index": 48,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0054",
+      "text": " Table 25 –",
+      "bbox": [
+        96.0,
+        370.96,
+        145.85,
+        382.08
+      ],
+      "block_index": 4,
+      "line_index": 49,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0055",
+      "text": "TEST Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40",
+      "bbox": [
+        155.86,
+        370.96,
+        539.97,
+        382.08
+      ],
+      "block_index": 4,
+      "line_index": 50,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0056",
+      "text": " Table 26 –",
+      "bbox": [
+        96.0,
+        382.96,
+        145.85,
+        394.08
+      ],
+      "block_index": 4,
+      "line_index": 51,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0057",
+      "text": "FAN Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41",
+      "bbox": [
+        155.86,
+        382.96,
+        539.97,
+        394.08
+      ],
+      "block_index": 4,
+      "line_index": 52,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0058",
+      "text": " Table 27 –",
+      "bbox": [
+        96.0,
+        394.96,
+        145.85,
+        406.08
+      ],
+      "block_index": 4,
+      "line_index": 53,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0059",
+      "text": "LINIT Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42",
+      "bbox": [
+        155.86,
+        394.96,
+        539.97,
+        406.08
+      ],
+      "block_index": 4,
+      "line_index": 54,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0060",
+      "text": " Table 28 –",
+      "bbox": [
+        96.0,
+        406.96,
+        145.88,
+        418.08
+      ],
+      "block_index": 4,
+      "line_index": 55,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0061",
+      "text": "Initialization Function. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42",
+      "bbox": [
+        155.88,
+        406.96,
+        539.97,
+        418.08
+      ],
+      "block_index": 4,
+      "line_index": 56,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0062",
+      "text": " Table 29 –",
+      "bbox": [
+        96.0,
+        418.96,
+        145.91,
+        430.08
+      ],
+      "block_index": 4,
+      "line_index": 57,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0063",
+      "text": "LINIT LS_ACC Payload. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42",
+      "bbox": [
+        155.91,
+        418.96,
+        539.96,
+        430.08
+      ],
+      "block_index": 4,
+      "line_index": 58,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0064",
+      "text": " Table 30 –",
+      "bbox": [
+        96.0,
+        430.96,
+        145.84,
+        442.08
+      ],
+      "block_index": 4,
+      "line_index": 59,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0065",
+      "text": "LINIT Status  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43",
+      "bbox": [
+        155.84,
+        430.96,
+        539.97,
+        442.08
+      ],
+      "block_index": 4,
+      "line_index": 60,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0066",
+      "text": " Table 31 –",
+      "bbox": [
+        96.0,
+        442.96,
+        145.98,
+        454.08
+      ],
+      "block_index": 4,
+      "line_index": 61,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0067",
+      "text": "LSTS",
+      "bbox": [
+        156.0,
+        443.84,
+        178.5,
+        453.88
+      ],
+      "block_index": 4,
+      "line_index": 62,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0068",
+      "text": " Payload  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43",
+      "bbox": [
+        178.5,
+        442.97,
+        540.08,
+        454.08
+      ],
+      "block_index": 4,
+      "line_index": 62,
+      "span_index": 2
+    },
+    {
+      "span_id": "p016_s0069",
+      "text": " Table 32 –",
+      "bbox": [
+        96.0,
+        454.97,
+        145.85,
+        466.08
+      ],
+      "block_index": 4,
+      "line_index": 63,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0070",
+      "text": "LSTS LS_ACC Payload  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44",
+      "bbox": [
+        155.85,
+        454.97,
+        540.0,
+        466.08
+      ],
+      "block_index": 4,
+      "line_index": 64,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0071",
+      "text": " Table 33 –",
+      "bbox": [
+        96.0,
+        466.97,
+        145.85,
+        478.08
+      ],
+      "block_index": 4,
+      "line_index": 65,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0072",
+      "text": "Loop State. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45",
+      "bbox": [
+        155.85,
+        466.97,
+        539.98,
+        478.08
+      ],
+      "block_index": 4,
+      "line_index": 66,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0073",
+      "text": " Table 34 –",
+      "bbox": [
+        96.0,
+        478.97,
+        145.86,
+        490.08
+      ],
+      "block_index": 4,
+      "line_index": 67,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0074",
+      "text": "RSCN Payload  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47",
+      "bbox": [
+        155.86,
+        478.97,
+        539.97,
+        490.08
+      ],
+      "block_index": 4,
+      "line_index": 68,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0075",
+      "text": " Table 35 –",
+      "bbox": [
+        96.0,
+        490.97,
+        145.88,
+        502.08
+      ],
+      "block_index": 4,
+      "line_index": 69,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0076",
+      "text": "Generic affected Port_ID page . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48",
+      "bbox": [
+        155.88,
+        490.97,
+        539.89,
+        502.08
+      ],
+      "block_index": 4,
+      "line_index": 70,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0077",
+      "text": " Table 36 –",
+      "bbox": [
+        96.0,
+        502.97,
+        145.88,
+        514.08
+      ],
+      "block_index": 4,
+      "line_index": 71,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0078",
+      "text": "RSCN Event Qualifier values  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48",
+      "bbox": [
+        155.88,
+        502.97,
+        539.99,
+        514.08
+      ],
+      "block_index": 4,
+      "line_index": 72,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0079",
+      "text": " Table 37 –",
+      "bbox": [
+        96.0,
+        514.97,
+        145.86,
+        526.08
+      ],
+      "block_index": 4,
+      "line_index": 73,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0080",
+      "text": "Address Format. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49",
+      "bbox": [
+        155.86,
+        514.97,
+        539.97,
+        526.08
+      ],
+      "block_index": 4,
+      "line_index": 74,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0081",
+      "text": " Table 38 –",
+      "bbox": [
+        96.0,
+        526.96,
+        145.98,
+        538.08
+      ],
+      "block_index": 4,
+      "line_index": 75,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0082",
+      "text": "RSCN",
+      "bbox": [
+        156.0,
+        527.83,
+        181.45,
+        537.88
+      ],
+      "block_index": 4,
+      "line_index": 76,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0083",
+      "text": " LS_ACC Payload  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49",
+      "bbox": [
+        181.44,
+        526.97,
+        540.04,
+        538.08
+      ],
+      "block_index": 4,
+      "line_index": 76,
+      "span_index": 2
+    },
+    {
+      "span_id": "p016_s0084",
+      "text": " Table 39 –",
+      "bbox": [
+        96.0,
+        538.97,
+        145.84,
+        550.08
+      ],
+      "block_index": 4,
+      "line_index": 77,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0085",
+      "text": "SCR Payload. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50",
+      "bbox": [
+        155.84,
+        538.97,
+        539.97,
+        550.08
+      ],
+      "block_index": 4,
+      "line_index": 78,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0086",
+      "text": " Table 40 –",
+      "bbox": [
+        96.0,
+        550.97,
+        145.87,
+        562.08
+      ],
+      "block_index": 4,
+      "line_index": 79,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0087",
+      "text": "Registration Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50",
+      "bbox": [
+        155.87,
+        550.97,
+        539.96,
+        562.08
+      ],
+      "block_index": 4,
+      "line_index": 80,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0088",
+      "text": " Table 41 –",
+      "bbox": [
+        96.0,
+        562.97,
+        145.85,
+        574.08
+      ],
+      "block_index": 4,
+      "line_index": 81,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0089",
+      "text": "SCR LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50",
+      "bbox": [
+        155.85,
+        562.97,
+        539.96,
+        574.08
+      ],
+      "block_index": 4,
+      "line_index": 82,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0090",
+      "text": " Table 42 –",
+      "bbox": [
+        96.0,
+        574.97,
+        145.85,
+        586.08
+      ],
+      "block_index": 4,
+      "line_index": 83,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0091",
+      "text": "PRLI Payload  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51",
+      "bbox": [
+        155.86,
+        574.97,
+        539.97,
+        586.08
+      ],
+      "block_index": 4,
+      "line_index": 84,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0092",
+      "text": " Table 43 –",
+      "bbox": [
+        96.0,
+        586.97,
+        145.88,
+        598.08
+      ],
+      "block_index": 4,
+      "line_index": 85,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0093",
+      "text": "PRLI service parameter page format  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52",
+      "bbox": [
+        155.88,
+        586.97,
+        539.91,
+        598.08
+      ],
+      "block_index": 4,
+      "line_index": 86,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0094",
+      "text": " Table 44 –",
+      "bbox": [
+        96.0,
+        598.96,
+        145.9,
+        610.08
+      ],
+      "block_index": 4,
+      "line_index": 87,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0095",
+      "text": "PRLI LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53",
+      "bbox": [
+        155.9,
+        598.96,
+        539.96,
+        610.08
+      ],
+      "block_index": 4,
+      "line_index": 88,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0096",
+      "text": " Table 45 –",
+      "bbox": [
+        96.0,
+        610.96,
+        145.97,
+        622.08
+      ],
+      "block_index": 4,
+      "line_index": 89,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0097",
+      "text": "PRLI LS_ACC service parameter response page format . . . . . . . . . . . . . . . . . . . . . . 54",
+      "bbox": [
+        155.97,
+        610.96,
+        540.01,
+        622.08
+      ],
+      "block_index": 4,
+      "line_index": 90,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0098",
+      "text": " Table 46 –",
+      "bbox": [
+        96.0,
+        622.96,
+        145.92,
+        634.08
+      ],
+      "block_index": 4,
+      "line_index": 91,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0099",
+      "text": "PRLI accept response code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55",
+      "bbox": [
+        155.93,
+        622.96,
+        540.06,
+        634.08
+      ],
+      "block_index": 4,
+      "line_index": 92,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0100",
+      "text": " Table 47 –",
+      "bbox": [
+        96.0,
+        635.02,
+        145.98,
+        646.14
+      ],
+      "block_index": 4,
+      "line_index": 93,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0101",
+      "text": "PRLO",
+      "bbox": [
+        156.0,
+        635.89,
+        180.45,
+        645.94
+      ],
+      "block_index": 4,
+      "line_index": 94,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0102",
+      "text": " Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56",
+      "bbox": [
+        180.48,
+        635.03,
+        540.08,
+        646.14
+      ],
+      "block_index": 4,
+      "line_index": 94,
+      "span_index": 2
+    },
+    {
+      "span_id": "p016_s0103",
+      "text": " Table 48 –",
+      "bbox": [
+        96.0,
+        647.03,
+        145.96,
+        658.14
+      ],
+      "block_index": 4,
+      "line_index": 95,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0104",
+      "text": "PRLO logout parameter page format  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57",
+      "bbox": [
+        155.96,
+        647.03,
+        540.05,
+        658.14
+      ],
+      "block_index": 4,
+      "line_index": 96,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0105",
+      "text": " Table 49 –",
+      "bbox": [
+        96.0,
+        659.03,
+        145.86,
+        670.14
+      ],
+      "block_index": 4,
+      "line_index": 97,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0106",
+      "text": "PRLO LS_ACC Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58",
+      "bbox": [
+        155.86,
+        659.03,
+        539.93,
+        670.14
+      ],
+      "block_index": 4,
+      "line_index": 98,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0107",
+      "text": " Table 50 –",
+      "bbox": [
+        96.0,
+        671.03,
+        145.94,
+        682.14
+      ],
+      "block_index": 4,
+      "line_index": 99,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0108",
+      "text": "PRLO LS_ACC logout parameter response page format . . . . . . . . . . . . . . . . . . . . . . 58",
+      "bbox": [
+        155.94,
+        671.03,
+        539.99,
+        682.14
+      ],
+      "block_index": 4,
+      "line_index": 100,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0109",
+      "text": " Table 51 –",
+      "bbox": [
+        96.0,
+        683.03,
+        145.99,
+        694.14
+      ],
+      "block_index": 4,
+      "line_index": 101,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0110",
+      "text": "PRLO accept response code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59",
+      "bbox": [
+        155.99,
+        683.03,
+        540.12,
+        694.14
+      ],
+      "block_index": 4,
+      "line_index": 102,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0111",
+      "text": " Table 52 –",
+      "bbox": [
+        96.0,
+        695.03,
+        145.86,
+        706.14
+      ],
+      "block_index": 4,
+      "line_index": 103,
+      "span_index": 1
+    },
+    {
+      "span_id": "p016_s0112",
+      "text": "TPLS Payload . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60",
+      "bbox": [
+        155.86,
+        695.03,
+        539.97,
+        706.14
+      ],
+      "block_index": 4,
+      "line_index": 104,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

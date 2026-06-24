@@ -1,0 +1,751 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 96,
+  "spans": [
+    {
+      "span_id": "p096_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0002",
+      "text": " 77",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0003",
+      "text": ".",
+      "bbox": [
+        96.0,
+        57.65,
+        98.77,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0004",
+      "text": "C)",
+      "bbox": [
+        122.4,
+        562.97,
+        132.91,
+        574.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0005",
+      "text": " Expansion Port address identifier (EPAI):",
+      "bbox": [
+        132.91,
+        562.97,
+        339.45,
+        574.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p096_s0006",
+      "text": "When bits 29 and 28 of the IQ field of the",
+      "bbox": [
+        343.62,
+        562.97,
+        540.03,
+        574.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p096_s0007",
+      "text": "Common Link Incident Descriptor word of the RLIR payload (see table 67) of the Payload",
+      "bbox": [
+        138.0,
+        574.96,
+        539.84,
+        586.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0008",
+      "text": "are both ones, indicating that the incident port is an Inter-Switch-Link Expansion port (word",
+      "bbox": [
+        138.0,
+        586.96,
+        539.99,
+        598.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0009",
+      "text": "0 bits 15-0 of the Common Link Incident Descriptor) contain the Domain and Area address",
+      "bbox": [
+        138.0,
+        598.96,
+        540.03,
+        610.08
+      ],
+      "block_index": 4,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0010",
+      "text": "identifiers (DDAAh {CWC: Is this right?}) of the connected Expansion port on this Inter-",
+      "bbox": [
+        138.0,
+        610.96,
+        540.17,
+        622.08
+      ],
+      "block_index": 4,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0011",
+      "text": "Switch-Link.",
+      "bbox": [
+        138.0,
+        622.96,
+        191.81,
+        634.08
+      ],
+      "block_index": 4,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0012",
+      "text": "D)",
+      "bbox": [
+        122.4,
+        647.02,
+        132.91,
+        658.14
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0013",
+      "text": " Specific Link Incident Record:",
+      "bbox": [
+        132.91,
+        647.02,
+        280.52,
+        658.14
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p096_s0014",
+      "text": " The format of the Specific Link Incident Record Field is de-",
+      "bbox": [
+        280.56,
+        647.02,
+        540.08,
+        658.14
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p096_s0015",
+      "text": "pendent on the Link Incident Record Format. Specific Link Incident Record formats are de-",
+      "bbox": [
+        138.0,
+        659.02,
+        540.0,
+        670.14
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0016",
+      "text": "fined in the specification for the specific FC-4 (e.g., FC-SB-3) indicated by the Link Incident",
+      "bbox": [
+        138.0,
+        671.02,
+        540.11,
+        682.14
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0017",
+      "text": "Record Format.",
+      "bbox": [
+        138.0,
+        683.02,
+        207.42,
+        694.14
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0018",
+      "text": " Table 72 – Incident Code values",
+      "bbox": [
+        241.08,
+        79.66,
+        394.95,
+        90.78
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0019",
+      "text": "Value",
+      "bbox": [
+        113.16,
+        101.62,
+        139.76,
+        112.74
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0020",
+      "text": "Meaning",
+      "bbox": [
+        322.56,
+        101.62,
+        363.11,
+        112.74
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0021",
+      "text": "00h",
+      "bbox": [
+        118.14,
+        125.62,
+        134.78,
+        136.74
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0022",
+      "text": "Reserved.",
+      "bbox": [
+        153.3,
+        124.66,
+        198.82,
+        135.78
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0023",
+      "text": "01h",
+      "bbox": [
+        118.14,
+        149.62,
+        134.78,
+        160.74
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0024",
+      "text": "Implicit incident: ",
+      "bbox": [
+        153.3,
+        147.64,
+        227.18,
+        158.76
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0025",
+      "text": "A condition, caused by an event known to have occurred within the incident port, has ",
+      "bbox": [
+        153.3,
+        159.64,
+        530.48,
+        170.76
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0026",
+      "text": "been recognized by the incident port.  The condition affects the attached link in such a ",
+      "bbox": [
+        153.3,
+        171.64,
+        533.66,
+        182.76
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0027",
+      "text": "way that it may cause a link incident to be recognized by the connected port.",
+      "bbox": [
+        153.3,
+        183.64,
+        491.08,
+        194.76
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0028",
+      "text": "02h",
+      "bbox": [
+        118.14,
+        207.64,
+        134.78,
+        218.76
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0029",
+      "text": "Bit-error-rate threshold exceeded: ",
+      "bbox": [
+        153.3,
+        205.66,
+        305.58,
+        216.78
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0030",
+      "text": "The incident port has detected that the Error Interval Count equals the Error Threshold ",
+      "bbox": [
+        153.3,
+        217.66,
+        533.74,
+        228.78
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0031",
+      "text": "(see FC-FS-2).",
+      "bbox": [
+        153.3,
+        229.66,
+        219.88,
+        240.78
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0032",
+      "text": "03h",
+      "bbox": [
+        118.14,
+        253.66,
+        134.78,
+        264.78
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0033",
+      "text": "Link Failure - Loss-of-Signal or synchronization: ",
+      "bbox": [
+        153.3,
+        251.62,
+        367.13,
+        262.74
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0034",
+      "text": "The incident port has recognized a Loss-of-Synchronization condition, and it persisted ",
+      "bbox": [
+        153.3,
+        263.62,
+        533.62,
+        274.74
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0035",
+      "text": "for more than the R_T_TOV timeout period (see FC-FS-2).",
+      "bbox": [
+        153.3,
+        275.62,
+        412.66,
+        286.74
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0036",
+      "text": "04h",
+      "bbox": [
+        118.14,
+        299.62,
+        134.78,
+        310.74
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0037",
+      "text": "Link Failure - NOS recognized: ",
+      "bbox": [
+        153.3,
+        297.64,
+        292.69,
+        308.76
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0038",
+      "text": "The NOS has been recognized by the incident port (see FC-FS-2)",
+      "bbox": [
+        153.3,
+        309.64,
+        444.39,
+        320.76
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0039",
+      "text": "05h",
+      "bbox": [
+        118.14,
+        333.64,
+        134.78,
+        344.76
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0040",
+      "text": "Link Failure - Primitive Sequence timeout: ",
+      "bbox": [
+        153.3,
+        331.66,
+        340.98,
+        342.78
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0041",
+      "text": "The incident port has recognized either a Link-Reset-Protocol timeout (see FC-FS-2),  ",
+      "bbox": [
+        153.3,
+        343.66,
+        533.54,
+        354.78
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0042",
+      "text": "or a timeout when timing for the appropriate response while in the LF1 State and after ",
+      "bbox": [
+        153.3,
+        355.66,
+        533.49,
+        366.78
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0043",
+      "text": "NOS is no longer recognized (see FC-FS-2).",
+      "bbox": [
+        153.3,
+        367.66,
+        350.4,
+        378.78
+      ],
+      "block_index": 13,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0044",
+      "text": "06h",
+      "bbox": [
+        118.14,
+        391.66,
+        134.78,
+        402.77
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0045",
+      "text": "Link Failure - Invalid Primitive Sequence for port state: ",
+      "bbox": [
+        153.3,
+        389.62,
+        396.05,
+        400.73
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0046",
+      "text": "The incident port recognized either a LR or LRR Primitive Sequence while in the OL3 ",
+      "bbox": [
+        153.3,
+        401.62,
+        531.57,
+        412.73
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0047",
+      "text": "State (see FC-FS-2).",
+      "bbox": [
+        153.3,
+        413.62,
+        246.13,
+        424.73
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0048",
+      "text": "07h",
+      "bbox": [
+        118.14,
+        437.62,
+        134.78,
+        448.73
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0049",
+      "text": "Link Failure - Loop Initialization time out: ",
+      "bbox": [
+        153.3,
+        435.64,
+        334.81,
+        446.75
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0050",
+      "text": "The incident port failed to complete loop initialization within the normal loop time out ",
+      "bbox": [
+        153.3,
+        447.64,
+        525.98,
+        458.75
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0051",
+      "text": "period (see FC-AL-2).",
+      "bbox": [
+        153.3,
+        459.64,
+        249.97,
+        470.75
+      ],
+      "block_index": 15,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0052",
+      "text": "08h",
+      "bbox": [
+        118.14,
+        483.64,
+        134.78,
+        494.75
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0053",
+      "text": "Link Failure – receiving LIP(F8): ",
+      "bbox": [
+        153.3,
+        481.66,
+        297.7,
+        492.77
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0054",
+      "text": "The incident port is receiving LIP(F8) indicating some other port on the loop is ",
+      "bbox": [
+        153.3,
+        493.66,
+        499.29,
+        504.77
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0055",
+      "text": "experiencing a Loss-of-Signal condition.",
+      "bbox": [
+        153.3,
+        505.66,
+        330.4,
+        516.77
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0056",
+      "text": "09h - FFh ",
+      "bbox": [
+        104.82,
+        528.64,
+        153.3,
+        540.77
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p096_s0057",
+      "text": "Reserved.",
+      "bbox": [
+        153.3,
+        528.64,
+        198.82,
+        539.75
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 2
+    }
+  ],
+  "asset_ids": [
+    "table_0076"
+  ]
+}

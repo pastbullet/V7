@@ -1,0 +1,12 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord\n0\n1", "page": 122, "bbox": [97.14, 255.96, 147.17, 318.02]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 122, "bbox": [147.17, 255.96, 245.13, 283.84]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 122, "bbox": [245.13, 255.96, 342.33, 283.84]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08", "page": 122, "bbox": [342.33, 255.96, 439.53, 283.84]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "", "page": 122, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "SRL (7Bh)", "page": 122, "bbox": [147.17, 283.84, 245.13, 301.35]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "", "page": 122, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "", "page": 122, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "", "page": 122, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Flag", "page": 122, "bbox": [147.17, 301.35, 245.13, 318.02]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 122, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "", "page": 122, "bbox": [0.0, 0.0, 0.0, 0.0]}

@@ -1,0 +1,1012 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 89,
+  "spans": [
+    {
+      "span_id": "p089_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0002",
+      "text": " 70",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0003",
+      "text": "e)",
+      "bbox": [
+        106.02,
+        394.97,
+        114.91,
+        406.08
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0004",
+      "text": " IP Version:",
+      "bbox": [
+        114.91,
+        394.97,
+        174.64,
+        406.08
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p089_s0005",
+      "text": " The IP versions are shown in table 66.",
+      "bbox": [
+        174.6,
+        394.97,
+        347.33,
+        406.08
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p089_s0006",
+      "text": "f)",
+      "bbox": [
+        106.02,
+        586.97,
+        112.16,
+        598.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0007",
+      "text": "UDP/TCP Port Number:",
+      "bbox": [
+        122.4,
+        586.97,
+        233.83,
+        598.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0008",
+      "text": " The numerical value used in UDP (see RFC 768) or TCP (see RFC",
+      "bbox": [
+        233.88,
+        586.97,
+        540.05,
+        598.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p089_s0009",
+      "text": "793) to distinguish among multiple destinations at the same IP address.",
+      "bbox": [
+        122.4,
+        598.97,
+        438.48,
+        610.08
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0010",
+      "text": "g)",
+      "bbox": [
+        106.02,
+        622.97,
+        114.92,
+        634.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0011",
+      "text": " IP Address:",
+      "bbox": [
+        114.92,
+        622.97,
+        177.69,
+        634.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p089_s0012",
+      "text": " The IP address by which a Node Management Entity for the responding node may",
+      "bbox": [
+        177.66,
+        622.97,
+        540.03,
+        634.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p089_s0013",
+      "text": "be reached.  If the IP version field is set to one, the IPv4 address shall be stored in the least",
+      "bbox": [
+        122.4,
+        635.02,
+        540.06,
+        646.14
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0014",
+      "text": "significant word of the IP field and the remainder shall be set to zero.",
+      "bbox": [
+        122.4,
+        647.02,
+        425.67,
+        658.14
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0015",
+      "text": " Table 65 – Node Management",
+      "bbox": [
+        246.6,
+        79.66,
+        389.38,
+        90.78
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0016",
+      "text": "Value",
+      "bbox": [
+        110.94,
+        101.62,
+        137.64,
+        112.74
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0017",
+      "text": "Protocol",
+      "bbox": [
+        169.42,
+        101.62,
+        209.98,
+        112.74
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0018",
+      "text": "Reference",
+      "bbox": [
+        359.26,
+        101.62,
+        407.55,
+        112.74
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0019",
+      "text": "00h",
+      "bbox": [
+        115.92,
+        125.62,
+        132.56,
+        136.74
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0020",
+      "text": "IP/UDP/SNMP See RFC 791, RFC 2460, RFC 768, RFC 1157, and RFC 1901",
+      "bbox": [
+        157.14,
+        124.66,
+        508.59,
+        136.74
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0021",
+      "text": "01h",
+      "bbox": [
+        115.92,
+        149.62,
+        132.62,
+        160.74
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0022",
+      "text": "IP/TCP/Telnet",
+      "bbox": [
+        158.28,
+        149.63,
+        221.05,
+        160.74
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0023",
+      "text": "See RFC 791, RFC 2460, RFC 793 and RFC 854",
+      "bbox": [
+        229.74,
+        148.67,
+        449.13,
+        159.78
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0024",
+      "text": "02h",
+      "bbox": [
+        115.92,
+        173.63,
+        132.62,
+        184.74
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0025",
+      "text": "IP/TCP/HTTP",
+      "bbox": [
+        159.12,
+        173.63,
+        220.21,
+        184.74
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0026",
+      "text": "See RFC 791, RFC 2460, RFC 793, and RFC 2616",
+      "bbox": [
+        229.74,
+        172.67,
+        457.46,
+        183.78
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0027",
+      "text": "03h",
+      "bbox": [
+        115.92,
+        197.63,
+        132.61,
+        208.74
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0028",
+      "text": "IP/TCP/HTTPS See RFC 791, RFC 2460, RFC 793, and RFC 2818",
+      "bbox": [
+        155.75,
+        196.67,
+        457.46,
+        208.74
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0029",
+      "text": "04h",
+      "bbox": [
+        115.92,
+        221.63,
+        132.57,
+        232.74
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0030",
+      "text": "IP/TCP/HTTP/X",
+      "bbox": [
+        154.33,
+        221.63,
+        224.93,
+        232.74
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0031",
+      "text": "ML",
+      "bbox": [
+        182.7,
+        233.63,
+        196.58,
+        244.74
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0032",
+      "text": "See RFC 791, RFC 2460, RFC 793, RFC 2616, CIM",
+      "bbox": [
+        229.74,
+        220.67,
+        461.91,
+        231.78
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0033",
+      "text": "a",
+      "bbox": [
+        461.88,
+        218.44,
+        466.32,
+        227.34
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 2
+    },
+    {
+      "span_id": "p089_s0034",
+      "text": ", XML",
+      "bbox": [
+        466.32,
+        220.67,
+        492.45,
+        231.78
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 3
+    },
+    {
+      "span_id": "p089_s0035",
+      "text": "b",
+      "bbox": [
+        492.48,
+        218.44,
+        496.92,
+        227.34
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 4
+    },
+    {
+      "span_id": "p089_s0036",
+      "text": ", CIM-",
+      "bbox": [
+        496.92,
+        220.67,
+        524.12,
+        231.78
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 5
+    },
+    {
+      "span_id": "p089_s0037",
+      "text": "XML",
+      "bbox": [
+        229.74,
+        232.67,
+        250.22,
+        243.78
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0038",
+      "text": "c",
+      "bbox": [
+        250.26,
+        230.44,
+        254.25,
+        239.34
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 2
+    },
+    {
+      "span_id": "p089_s0039",
+      "text": ", and CIM-HTTP",
+      "bbox": [
+        254.28,
+        232.67,
+        327.03,
+        243.78
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 3
+    },
+    {
+      "span_id": "p089_s0040",
+      "text": "d",
+      "bbox": [
+        327.0,
+        230.44,
+        331.44,
+        239.34
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 4
+    },
+    {
+      "span_id": "p089_s0041",
+      "text": "05h - FFh",
+      "bbox": [
+        102.6,
+        257.63,
+        145.89,
+        268.74
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0042",
+      "text": "Reserved",
+      "bbox": [
+        168.25,
+        257.63,
+        211.03,
+        268.74
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0043",
+      "text": "a",
+      "bbox": [
+        105.18,
+        280.28,
+        109.18,
+        288.32
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0044",
+      "text": " Distributed Management Task Force, ",
+      "bbox": [
+        109.18,
+        278.65,
+        265.32,
+        292.3
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p089_s0045",
+      "text": "Common Information Model (CIM) in XML",
+      "bbox": [
+        265.32,
+        282.26,
+        431.57,
+        292.3
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p089_s0046",
+      "text": ", Version 2.2, June 14, ",
+      "bbox": [
+        431.64,
+        282.26,
+        523.5,
+        292.3
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 4
+    },
+    {
+      "span_id": "p089_s0047",
+      "text": "1999",
+      "bbox": [
+        115.98,
+        293.24,
+        135.98,
+        303.28
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0048",
+      "text": "b",
+      "bbox": [
+        105.18,
+        304.7,
+        109.18,
+        312.74
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0049",
+      "text": " World Wide Web consortium, ",
+      "bbox": [
+        109.18,
+        303.08,
+        234.58,
+        316.72
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 2
+    },
+    {
+      "span_id": "p089_s0050",
+      "text": "Extensible Markup Language (XML) 1.0",
+      "bbox": [
+        234.48,
+        306.68,
+        392.79,
+        316.72
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 3
+    },
+    {
+      "span_id": "p089_s0051",
+      "text": ", Second Edition, October, 6, 2000",
+      "bbox": [
+        392.82,
+        306.68,
+        529.81,
+        316.72
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 4
+    },
+    {
+      "span_id": "p089_s0052",
+      "text": "c",
+      "bbox": [
+        105.18,
+        318.08,
+        108.78,
+        326.12
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0053",
+      "text": " Distributed Management Task Force, ",
+      "bbox": [
+        115.98,
+        320.06,
+        267.9,
+        330.1
+      ],
+      "block_index": 14,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0054",
+      "text": "Specification for the Representation of CIM in XML (CIM-XML), ",
+      "bbox": [
+        267.78,
+        320.06,
+        520.93,
+        330.1
+      ],
+      "block_index": 14,
+      "line_index": 5,
+      "span_index": 2
+    },
+    {
+      "span_id": "p089_s0055",
+      "text": "Version 2.0, July 20, 1999",
+      "bbox": [
+        115.98,
+        331.04,
+        219.35,
+        341.08
+      ],
+      "block_index": 14,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0056",
+      "text": "d",
+      "bbox": [
+        105.18,
+        342.5,
+        109.18,
+        350.54
+      ],
+      "block_index": 14,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0057",
+      "text": "  Distributed Management Task Force, ",
+      "bbox": [
+        109.18,
+        340.88,
+        267.9,
+        354.52
+      ],
+      "block_index": 14,
+      "line_index": 7,
+      "span_index": 2
+    },
+    {
+      "span_id": "p089_s0058",
+      "text": "Specification for CIM Operations over HTTP (CIM-HTTP), ",
+      "bbox": [
+        267.78,
+        344.48,
+        499.65,
+        354.52
+      ],
+      "block_index": 14,
+      "line_index": 7,
+      "span_index": 3
+    },
+    {
+      "span_id": "p089_s0059",
+      "text": "Version ",
+      "bbox": [
+        499.56,
+        344.48,
+        531.99,
+        354.52
+      ],
+      "block_index": 14,
+      "line_index": 7,
+      "span_index": 4
+    },
+    {
+      "span_id": "p089_s0060",
+      "text": "1.0, August 11, 1999",
+      "bbox": [
+        115.98,
+        355.46,
+        198.37,
+        365.5
+      ],
+      "block_index": 14,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0061",
+      "text": " Table 66 – IP Version",
+      "bbox": [
+        266.64,
+        416.99,
+        369.37,
+        428.1
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0062",
+      "text": "Value",
+      "bbox": [
+        123.96,
+        439.01,
+        150.61,
+        450.12
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0063",
+      "text": "Version",
+      "bbox": [
+        201.05,
+        439.01,
+        237.68,
+        450.12
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0064",
+      "text": "Description",
+      "bbox": [
+        372.59,
+        439.01,
+        427.52,
+        450.12
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0065",
+      "text": "00h",
+      "bbox": [
+        128.94,
+        463.01,
+        145.58,
+        474.12
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0066",
+      "text": "None",
+      "bbox": [
+        207.42,
+        463.01,
+        231.31,
+        474.12
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0067",
+      "text": "Indicates that this port is not providing IP support, and the ",
+      "bbox": [
+        275.04,
+        460.97,
+        526.77,
+        472.08
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0068",
+      "text": "Node Management, UDP Port, and IP Address fields shall ",
+      "bbox": [
+        275.04,
+        472.97,
+        526.99,
+        484.08
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0069",
+      "text": "be ignored.",
+      "bbox": [
+        275.04,
+        484.97,
+        325.02,
+        496.08
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0070",
+      "text": "01h",
+      "bbox": [
+        128.94,
+        508.96,
+        145.57,
+        520.08
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0071",
+      "text": "IPv4 (IP version 4)",
+      "bbox": [
+        178.25,
+        508.96,
+        260.49,
+        520.08
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0072",
+      "text": "See RFC 791",
+      "bbox": [
+        275.04,
+        508.0,
+        335.55,
+        519.12
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0073",
+      "text": "02h",
+      "bbox": [
+        128.94,
+        532.96,
+        145.57,
+        544.08
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0074",
+      "text": "IPv6 (IP version 6)",
+      "bbox": [
+        178.25,
+        532.96,
+        260.49,
+        544.08
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0075",
+      "text": "See RFC 2460",
+      "bbox": [
+        275.04,
+        532.0,
+        341.11,
+        543.12
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0076",
+      "text": "03h - FFh",
+      "bbox": [
+        115.62,
+        556.96,
+        158.94,
+        568.08
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p089_s0077",
+      "text": "Reserved",
+      "bbox": [
+        197.98,
+        556.96,
+        240.76,
+        568.08
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0068",
+    "table_0069"
+  ]
+}

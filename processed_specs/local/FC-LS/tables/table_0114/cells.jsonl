@@ -1,0 +1,40 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord\n0\n1\n2\n3", "page": 124, "bbox": [90.79, 196.21, 141.36, 318.33]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 28", "page": 124, "bbox": [141.36, 196.21, 189.99, 223.7]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "27 .. 24", "page": 124, "bbox": [189.99, 196.21, 244.83, 223.7]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "23 .. 16", "page": 124, "bbox": [244.83, 196.21, 342.03, 223.7]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "15 .. 12", "page": 124, "bbox": [342.03, 196.21, 390.63, 223.7]}
+{"cell_id": "r1c6", "row": 1, "col": 6, "text": "11 .. 08", "page": 124, "bbox": [390.63, 196.21, 444.45, 223.7]}
+{"cell_id": "r1c7", "row": 1, "col": 7, "text": "07 .. 03", "page": 124, "bbox": [444.45, 196.21, 503.19, 223.7]}
+{"cell_id": "r1c8", "row": 1, "col": 8, "text": "02 .. 00", "page": 124, "bbox": [503.19, 196.21, 542.6, 223.7]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "SBRP (7Ch)", "page": 124, "bbox": [141.36, 223.7, 244.83, 243.64]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "00h", "page": 124, "bbox": [244.83, 223.7, 342.03, 243.64]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "00h", "page": 124, "bbox": [342.03, 223.7, 444.45, 243.64]}
+{"cell_id": "r2c6", "row": 2, "col": 6, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c7", "row": 2, "col": 7, "text": "00h", "page": 124, "bbox": [444.45, 223.7, 542.6, 243.64]}
+{"cell_id": "r2c8", "row": 2, "col": 8, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Error Flags", "page": 124, "bbox": [141.36, 243.64, 542.6, 260.03]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c6", "row": 3, "col": 6, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c7", "row": 3, "col": 7, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c8", "row": 3, "col": 8, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Error\nWindow\nexponent", "page": 124, "bbox": [141.36, 260.03, 189.99, 301.62]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Error Window value", "page": 124, "bbox": [189.99, 260.03, 342.03, 301.62]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "Error\nInterval\nexponent", "page": 124, "bbox": [342.03, 260.03, 390.63, 301.62]}
+{"cell_id": "r4c6", "row": 4, "col": 6, "text": "Error Interval value", "page": 124, "bbox": [390.63, 260.03, 542.6, 301.62]}
+{"cell_id": "r4c7", "row": 4, "col": 7, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c8", "row": 4, "col": 8, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Error Threshold", "page": 124, "bbox": [141.36, 301.62, 542.6, 318.33]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c6", "row": 5, "col": 6, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c7", "row": 5, "col": 7, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c8", "row": 5, "col": 8, "text": "", "page": 124, "bbox": [0.0, 0.0, 0.0, 0.0]}

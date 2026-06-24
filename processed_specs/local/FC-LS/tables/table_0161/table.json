@@ -1,0 +1,76 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 12",
+      "11 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "FC-PH Version - obsolete",
+      null,
+      "Buffer-to-buffer Credit",
+      null,
+      null
+    ],
+    [
+      "1",
+      "Common Features (see table 150)",
+      null,
+      "BB_SC_N",
+      "Buffer-to-buffer\nReceive Data Field size",
+      null
+    ],
+    [
+      "2",
+      "Reserved",
+      null,
+      "Reserved",
+      null,
+      null
+    ],
+    [
+      "3",
+      "Reserved",
+      null,
+      "Reserved",
+      null,
+      null
+    ],
+    [
+      "0",
+      "FC-PH Version - obsolete",
+      null,
+      "Buffer-to-buffer Credit",
+      null,
+      null
+    ],
+    [
+      "1",
+      "Common Features (see table 150)",
+      null,
+      "BB_SC_N",
+      "Buffer-to-buffer\nReceive Data Field size",
+      null
+    ],
+    [
+      "2",
+      "Reserved",
+      "Total Concurrent\nSequences",
+      "Relative offset by Information Category",
+      null,
+      null
+    ],
+    [
+      "3",
+      "E_D_TOV",
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

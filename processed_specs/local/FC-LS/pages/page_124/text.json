@@ -1,0 +1,855 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 124,
+  "spans": [
+    {
+      "span_id": "p124_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0002",
+      "text": " 105",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0003",
+      "text": "4.2.40.3  Request Sequence",
+      "bbox": [
+        96.0,
+        57.65,
+        227.06,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0004",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        81.65,
+        157.1,
+        92.76
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0005",
+      "text": "The S_ID designates the source Nx_Port requesting the bit error rate reporting param-",
+      "bbox": [
+        157.08,
+        81.65,
+        540.09,
+        92.76
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p124_s0006",
+      "text": "eters.  The D_ID designates the destination Nx_Port or the Domain Controller (FFFCh ||",
+      "bbox": [
+        96.0,
+        93.65,
+        540.02,
+        104.76
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0007",
+      "text": "<Domain_ID>).  Domain_ID is the Domain_ID of the recipient switch) to process the SBRP ELS.",
+      "bbox": [
+        96.0,
+        105.64,
+        520.92,
+        116.76
+      ],
+      "block_index": 4,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0008",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        129.64,
+        140.41,
+        140.76
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0009",
+      "text": "The format of the SBRP Payload is shown in table 110.",
+      "bbox": [
+        140.4,
+        129.64,
+        384.3,
+        140.76
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p124_s0010",
+      "text": "a)",
+      "bbox": [
+        106.02,
+        334.96,
+        114.91,
+        346.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0011",
+      "text": " Error Flags:",
+      "bbox": [
+        114.91,
+        334.96,
+        179.08,
+        346.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p124_s0012",
+      "text": " The following bits are mutually exclusive and only one bit shall be set for each in-",
+      "bbox": [
+        179.04,
+        334.96,
+        540.16,
+        346.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p124_s0013",
+      "text": "stance of the SBRP ELS. ",
+      "bbox": [
+        122.4,
+        346.96,
+        236.88,
+        358.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0014",
+      "text": "Bit 0 – Set Error Reporting Parameters:  The bit is set to request that the destination set the Er-",
+      "bbox": [
+        122.4,
+        370.96,
+        540.06,
+        382.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0015",
+      "text": "ror Window, the Error Interval and the Bit-error Threshold parameters.  If the destination is the",
+      "bbox": [
+        122.4,
+        382.96,
+        539.98,
+        394.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0016",
+      "text": "Domain Controller then the request is for the switch to set all ports to the requested values.",
+      "bbox": [
+        122.4,
+        394.96,
+        524.05,
+        406.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0017",
+      "text": "Bit 1 – Report Error Reporting Parameters:  The bit is set to request that the destination return",
+      "bbox": [
+        122.4,
+        418.96,
+        539.97,
+        430.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0018",
+      "text": "the active parameters, currently being enforced.",
+      "bbox": [
+        122.4,
+        430.96,
+        334.04,
+        442.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0019",
+      "text": "Bits 2-31:   Reserved",
+      "bbox": [
+        122.4,
+        454.96,
+        215.68,
+        466.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0020",
+      "text": "b)",
+      "bbox": [
+        106.02,
+        478.96,
+        114.91,
+        490.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0021",
+      "text": " Error Window exponent and Error Window value:",
+      "bbox": [
+        114.91,
+        478.96,
+        357.78,
+        490.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p124_s0022",
+      "text": " The Error Window is a time duration de-",
+      "bbox": [
+        357.78,
+        478.96,
+        540.05,
+        490.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p124_s0023",
+      "text": "scribed by a 16-bit value.  Twelve bits, Bits 28-16, are used for the base value.  Four bits, Bits",
+      "bbox": [
+        122.4,
+        490.96,
+        540.03,
+        502.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0024",
+      "text": "31-28 are encoded to form the exponent.  The product of the base value and the exponent",
+      "bbox": [
+        122.4,
+        502.96,
+        539.96,
+        514.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0025",
+      "text": "yields the time duration in seconds.  The encoded exponent is defined as follows:",
+      "bbox": [
+        122.4,
+        514.96,
+        481.19,
+        526.08
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0026",
+      "text": "0h represents 10",
+      "bbox": [
+        122.4,
+        538.96,
+        197.35,
+        550.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0027",
+      "text": "0",
+      "bbox": [
+        197.4,
+        536.8,
+        201.84,
+        545.7
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p124_s0028",
+      "text": "1h represents 10",
+      "bbox": [
+        122.4,
+        562.97,
+        197.35,
+        574.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0029",
+      "text": "-1",
+      "bbox": [
+        197.4,
+        560.8,
+        204.48,
+        569.7
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p124_s0030",
+      "text": "2h represents 10",
+      "bbox": [
+        122.4,
+        586.97,
+        197.35,
+        598.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0031",
+      "text": "-2",
+      "bbox": [
+        197.4,
+        584.8,
+        204.48,
+        593.7
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p124_s0032",
+      "text": "...",
+      "bbox": [
+        132.0,
+        603.69,
+        137.0,
+        647.78
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0033",
+      "text": "Fh represents 10",
+      "bbox": [
+        122.4,
+        659.03,
+        197.88,
+        670.14
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0034",
+      "text": "-15",
+      "bbox": [
+        197.94,
+        656.8,
+        209.52,
+        665.7
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p124_s0035",
+      "text": "(e.g., a base value of 300h multiplied by an exponent of 0h would yield a value of 1 times 10",
+      "bbox": [
+        122.4,
+        683.03,
+        532.99,
+        694.14
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0036",
+      "text": "-0",
+      "bbox": [
+        532.92,
+        680.8,
+        540.0,
+        689.7
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p124_s0037",
+      "text": "or 300h seconds).  The tolerance for the Error Window   -0 to + 1 Error Interval.",
+      "bbox": [
+        122.4,
+        695.03,
+        472.07,
+        706.14
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0038",
+      "text": " Table 110 – SBRP Payload",
+      "bbox": [
+        253.86,
+        176.99,
+        382.14,
+        188.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0039",
+      "text": "Bits",
+      "bbox": [
+        107.64,
+        199.01,
+        126.52,
+        210.12
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0040",
+      "text": "Word",
+      "bbox": [
+        104.28,
+        211.01,
+        129.81,
+        222.12
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0041",
+      "text": "31  ..  28",
+      "bbox": [
+        146.22,
+        199.01,
+        185.1,
+        210.12
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0042",
+      "text": "27  ..  24",
+      "bbox": [
+        197.92,
+        199.01,
+        236.8,
+        210.12
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0043",
+      "text": "23        ..       16",
+      "bbox": [
+        258.62,
+        199.01,
+        328.06,
+        210.12
+      ],
+      "block_index": 19,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0044",
+      "text": "15 .. 12",
+      "bbox": [
+        349.58,
+        199.01,
+        382.88,
+        210.12
+      ],
+      "block_index": 19,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0045",
+      "text": "11 .. 08",
+      "bbox": [
+        400.8,
+        199.01,
+        434.09,
+        210.12
+      ],
+      "block_index": 19,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0046",
+      "text": "07 .. 03",
+      "bbox": [
+        457.05,
+        199.01,
+        490.33,
+        210.12
+      ],
+      "block_index": 19,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0047",
+      "text": "02 .. 00",
+      "bbox": [
+        506.39,
+        199.01,
+        539.7,
+        210.12
+      ],
+      "block_index": 19,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0048",
+      "text": "0",
+      "bbox": [
+        114.3,
+        229.01,
+        119.84,
+        240.12
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0049",
+      "text": "SBRP (7Ch)",
+      "bbox": [
+        143.4,
+        229.01,
+        198.34,
+        240.12
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0050",
+      "text": "00h",
+      "bbox": [
+        246.86,
+        229.01,
+        263.47,
+        240.12
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0051",
+      "text": "00h",
+      "bbox": [
+        344.03,
+        229.01,
+        360.68,
+        240.12
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0052",
+      "text": "00h",
+      "bbox": [
+        445.44,
+        227.63,
+        463.44,
+        240.91
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0053",
+      "text": "1",
+      "bbox": [
+        114.3,
+        247.01,
+        119.84,
+        258.12
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0054",
+      "text": "Error Flags",
+      "bbox": [
+        143.4,
+        247.01,
+        192.79,
+        258.12
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0055",
+      "text": "2",
+      "bbox": [
+        114.3,
+        275.99,
+        119.84,
+        287.1
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0056",
+      "text": "Error ",
+      "bbox": [
+        143.4,
+        263.99,
+        168.37,
+        275.1
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0057",
+      "text": "Window",
+      "bbox": [
+        143.4,
+        275.99,
+        178.92,
+        287.1
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0058",
+      "text": " exponent",
+      "bbox": [
+        143.4,
+        287.99,
+        187.25,
+        299.1
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0059",
+      "text": "Error Window value",
+      "bbox": [
+        192.0,
+        275.99,
+        279.14,
+        287.1
+      ],
+      "block_index": 22,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0060",
+      "text": "Error ",
+      "bbox": [
+        344.04,
+        263.99,
+        369.01,
+        275.1
+      ],
+      "block_index": 22,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0061",
+      "text": "Interval",
+      "bbox": [
+        344.04,
+        275.99,
+        376.82,
+        287.1
+      ],
+      "block_index": 22,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0062",
+      "text": " exponent",
+      "bbox": [
+        344.04,
+        287.99,
+        387.88,
+        299.1
+      ],
+      "block_index": 22,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0063",
+      "text": "Error Interval value",
+      "bbox": [
+        392.64,
+        275.99,
+        477.04,
+        287.1
+      ],
+      "block_index": 22,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0064",
+      "text": "3",
+      "bbox": [
+        114.3,
+        304.97,
+        119.84,
+        316.08
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p124_s0065",
+      "text": "Error Threshold",
+      "bbox": [
+        143.4,
+        304.97,
+        212.76,
+        316.08
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0114"
+  ]
+}

@@ -1,0 +1,580 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 160,
+  "spans": [
+    {
+      "span_id": "p160_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0002",
+      "text": " 141",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0003",
+      "text": "6.3.2.5  Responses to N_Port Login - No Fabric present",
+      "bbox": [
+        96.0,
+        57.65,
+        357.03,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0004",
+      "text": "The following are possible responses the Nx_Port may receive in response to transmitting a PLOGI",
+      "bbox": [
+        96.0,
+        82.97,
+        539.99,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0005",
+      "text": "in a point-to-point configuration:",
+      "bbox": [
+        96.0,
+        94.97,
+        236.0,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0006",
+      "text": "a) LS_ACC reply Sequence with OX_ID equal to the OX_ID of the PLOGI, and the Common Ser-",
+      "bbox": [
+        106.02,
+        118.97,
+        540.1,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0007",
+      "text": "vice N_Port/F_Port bit  = 0  (Nx_Port).  The D_ID of the LS_ACC shall be the S_ID from the",
+      "bbox": [
+        122.4,
+        130.97,
+        539.92,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0008",
+      "text": "PLOGI.  The S_ID shall be the destination Nx_Port's N_Port_ID assigned by the D_ID in the",
+      "bbox": [
+        122.4,
+        142.96,
+        539.97,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0009",
+      "text": "PLOGI.  The Payload shall include the Service Parameters for the destination Nx_Port, a 64-bit",
+      "bbox": [
+        122.4,
+        154.96,
+        540.03,
+        166.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0010",
+      "text": "N_Port_Name and a 64-bit Node_Name.  The N_Port Service Parameters are as specified in",
+      "bbox": [
+        122.4,
+        166.96,
+        539.95,
+        178.08
+      ],
+      "block_index": 5,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0011",
+      "text": "6.6.  The applicability of the Service Parameters to N_Port Login are given in tables 150 and",
+      "bbox": [
+        122.4,
+        178.96,
+        539.73,
+        190.08
+      ],
+      "block_index": 5,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0012",
+      "text": "155.  This is the normal response to a N_Port Login request.  The Nx_Port may begin normal",
+      "bbox": [
+        122.4,
+        190.96,
+        539.9,
+        202.08
+      ],
+      "block_index": 5,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0013",
+      "text": "communication with the remote N_Port.",
+      "bbox": [
+        122.4,
+        202.96,
+        297.37,
+        214.08
+      ],
+      "block_index": 5,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0014",
+      "text": "b) P_BSY Sequence with OX_ID equal to the OX_ID of the PLOGI.  The D_ID shall be the S_ID",
+      "bbox": [
+        106.02,
+        226.96,
+        539.98,
+        238.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0015",
+      "text": "of the PLOGI.  The destination Nx_Port is busy.  The Nx_Port may retry the PLOGI again later.",
+      "bbox": [
+        122.4,
+        238.96,
+        539.96,
+        250.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0016",
+      "text": "c)",
+      "bbox": [
+        106.02,
+        262.96,
+        114.35,
+        274.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0017",
+      "text": "P_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI.  The D_ID shall be the S_ID of",
+      "bbox": [
+        122.37,
+        262.96,
+        540.15,
+        274.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0018",
+      "text": "the PLOGI.  The reason code contained in the Payload determines the Nx_Port’s action.  If the",
+      "bbox": [
+        122.4,
+        274.96,
+        540.05,
+        286.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0019",
+      "text": "reason code is \"Class not supported\", the Nx_Port may attempt N_Port Login in a different",
+      "bbox": [
+        122.4,
+        286.96,
+        539.98,
+        298.08
+      ],
+      "block_index": 7,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0020",
+      "text": "Class.  For other reason codes, the Nx_Port should respond according to the code.",
+      "bbox": [
+        122.4,
+        298.96,
+        489.6,
+        310.08
+      ],
+      "block_index": 7,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0021",
+      "text": "d) LS_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI.  The D_ID of the LS_ACC",
+      "bbox": [
+        106.02,
+        322.96,
+        539.99,
+        334.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0022",
+      "text": "shall be the N_Port_ID of the destination Nx_Port.  The reason code contained in the Payload",
+      "bbox": [
+        122.4,
+        334.96,
+        540.05,
+        346.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0023",
+      "text": "determines the Nx_Port’s action.  The Nx_Port may alter the Service Parameters based on the",
+      "bbox": [
+        122.4,
+        346.96,
+        540.07,
+        358.08
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0024",
+      "text": "reason code and originate a new PLOGI.",
+      "bbox": [
+        122.4,
+        358.96,
+        303.46,
+        370.08
+      ],
+      "block_index": 8,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0025",
+      "text": "e) PLOGI Sequence.  The D_ID is the address identifier of receiving Nx_Port.  The S_ID is the",
+      "bbox": [
+        106.02,
+        382.96,
+        539.97,
+        394.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0026",
+      "text": "N_Port_ID of the originating Nx_Port.  The OX_ID is as assigned by the originating Nx_Port.",
+      "bbox": [
+        122.4,
+        394.96,
+        540.02,
+        406.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0027",
+      "text": "The Payload shall include a 64-bit N_Port_Name and 64-bit Node_Name of the Nx_Port origi-",
+      "bbox": [
+        122.4,
+        406.96,
+        539.97,
+        418.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0028",
+      "text": "nating the PLOGI.  This indicates a collision with N_Port Login from the destination Nx_Port.  If",
+      "bbox": [
+        122.4,
+        418.96,
+        540.05,
+        430.08
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0029",
+      "text": "the received N_Port_Name is less than the receiving Nx_Port's N_Port_Name, the Nx_Port",
+      "bbox": [
+        122.4,
+        430.96,
+        540.01,
+        442.08
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0030",
+      "text": "sends LS_RJT to the originating Nx_Port with reason code \"Command already in progress\".  If",
+      "bbox": [
+        122.4,
+        442.96,
+        540.16,
+        454.08
+      ],
+      "block_index": 9,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0031",
+      "text": "the received N_Port_Name is greater than its N_Port_Name, the Nx_Port processes the re-",
+      "bbox": [
+        122.4,
+        454.96,
+        540.07,
+        466.08
+      ],
+      "block_index": 9,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0032",
+      "text": "ceived PLOGI.",
+      "bbox": [
+        122.4,
+        466.96,
+        187.4,
+        478.08
+      ],
+      "block_index": 9,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0033",
+      "text": "f)",
+      "bbox": [
+        106.02,
+        490.96,
+        112.14,
+        502.07
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0034",
+      "text": "No Response may indicate a delivery error, e.g., error on the physical transport.  The Nx_Port",
+      "bbox": [
+        122.38,
+        490.96,
+        540.05,
+        502.07
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0035",
+      "text": "shall perform error recovery per FC-FS-2.  The Nx_Port may originate a new PLOGI after re-",
+      "bbox": [
+        122.4,
+        502.96,
+        540.08,
+        514.07
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0036",
+      "text": "covery.",
+      "bbox": [
+        122.4,
+        514.96,
+        154.57,
+        526.07
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0037",
+      "text": "g) If the received N_Port_Name is equal to its N_Port_Name, then the Nx_Port is connected to it-",
+      "bbox": [
+        106.02,
+        538.96,
+        539.95,
+        550.07
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0038",
+      "text": "self and this case is outside the scope of this standard.",
+      "bbox": [
+        122.4,
+        550.96,
+        364.6,
+        562.07
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0039",
+      "text": "6.3.3",
+      "bbox": [
+        96.0,
+        574.96,
+        118.22,
+        586.07
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0040",
+      "text": "SOFs",
+      "bbox": [
+        128.22,
+        574.96,
+        154.28,
+        586.07
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0041",
+      "text": "N_Port Login is only supported in Class 1, 2, and 3.  Since the destination Nx_Port may not support",
+      "bbox": [
+        96.0,
+        598.96,
+        539.93,
+        610.07
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0042",
+      "text": "all these classes for Login, the PLOGI Sequence may require retransmission in a different Class with",
+      "bbox": [
+        96.0,
+        610.96,
+        539.73,
+        622.07
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0043",
+      "text": "the appropriate SOF in the same manner described for Fabric Login (see 6.2.3).  Login is valid for all",
+      "bbox": [
+        96.0,
+        622.96,
+        540.08,
+        634.07
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p160_s0044",
+      "text": "supported classes as indicated by the validity bits in the PLOGI LS_ACC Reply Sequence.",
+      "bbox": [
+        96.0,
+        634.96,
+        495.52,
+        646.07
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

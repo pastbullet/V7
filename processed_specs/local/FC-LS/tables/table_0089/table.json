@@ -1,0 +1,67 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "FACT (33h)",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "MSB Alias_Token\n(12 bytes)\nLSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "2",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "3",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "4",
+      "Alias_ID",
+      null,
+      null,
+      null
+    ],
+    [
+      "5",
+      "Alias_SP\n(80 bytes)",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "24",
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

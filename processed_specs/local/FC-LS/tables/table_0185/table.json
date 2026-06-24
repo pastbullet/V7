@@ -1,0 +1,67 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "Page Length (n)",
+      null,
+      "Reserved",
+      "Page Code (F0h)"
+    ],
+    [
+      "1",
+      "(MSB)\nVendor Identification Data\n(LSB)",
+      null,
+      null,
+      null
+    ],
+    [
+      "2",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "3",
+      "Vendor Specific Data",
+      null,
+      null,
+      null
+    ],
+    [
+      "...",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "n - 1",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "62",
+      "CS_QoS_Request",
+      "CS_Accuracy",
+      "CS_Implemented_MS\nB",
+      "CS_Implemented_LS\nB"
+    ],
+    [
+      "63",
+      "CS_Update_Period",
+      null,
+      null,
+      null
+    ]
+  ]
+}

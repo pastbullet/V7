@@ -1,0 +1,25 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 179, "bbox": [92.89, 303.82, 141.46, 332.04]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 179, "bbox": [141.46, 303.82, 238.95, 332.04]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 179, "bbox": [238.95, 303.82, 336.29, 332.04]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 00", "page": 179, "bbox": [336.29, 303.82, 542.61, 332.04]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "", "page": 179, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 179, "bbox": [92.89, 332.04, 141.46, 349.18]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Service Options", "page": 179, "bbox": [141.46, 332.04, 336.29, 349.18]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "", "page": 179, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "Initiator Control", "page": 179, "bbox": [336.29, 332.04, 542.61, 349.18]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "", "page": 179, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 179, "bbox": [92.89, 349.18, 141.46, 366.36]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Recipient Control", "page": 179, "bbox": [141.46, 349.18, 336.29, 366.36]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 179, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "Reserved", "page": 179, "bbox": [336.29, 349.18, 393.03, 366.36]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "Receive Data Field Size", "page": 179, "bbox": [393.03, 349.18, 542.61, 366.36]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "2", "page": 179, "bbox": [92.89, 366.36, 141.46, 395.37]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Reserved", "page": 179, "bbox": [141.46, 366.36, 238.95, 395.37]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Total Concurrent\nSequences", "page": 179, "bbox": [238.95, 366.36, 336.29, 395.37]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "Nx_Port End-to-end Credit", "page": 179, "bbox": [336.29, 366.36, 542.61, 395.37]}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "", "page": 179, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "3", "page": 179, "bbox": [92.89, 395.37, 141.46, 423.82]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Reserved", "page": 179, "bbox": [141.46, 395.37, 238.95, 423.82]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "Open Sequences per\nExchange", "page": 179, "bbox": [238.95, 395.37, 336.29, 423.82]}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "Reserved", "page": 179, "bbox": [336.29, 395.37, 542.61, 423.82]}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "", "page": 179, "bbox": [0.0, 0.0, 0.0, 0.0]}

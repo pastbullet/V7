@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0183",
+  "type": "table",
+  "caption": "Table 171 – Login Extension Page format",
+  "pages": [
+    192
+  ],
+  "bbox": [
+    94.54,
+    231.96,
+    541.7,
+    328.32
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 192,
+  "logical_table": false
+}

@@ -1,0 +1,39 @@
+{
+  "doc_id": "FC-LS.pdf",
+  "unit_id": "unit_fc_ls_flogi",
+  "accepted_count": 7,
+  "unresolved_count": 0,
+  "invalid_count": 0,
+  "accepted": [
+    {
+      "task_id": "flogi_els_envelope",
+      "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_els_envelope/task_input.json"
+    },
+    {
+      "task_id": "flogi_procedure_branches",
+      "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_procedure_branches/task_input.json"
+    },
+    {
+      "task_id": "flogi_payload_table149",
+      "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_payload_table149/task_input.json"
+    },
+    {
+      "task_id": "flogi_common_service_parameters",
+      "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_common_service_parameters/task_input.json"
+    },
+    {
+      "task_id": "flogi_class_service_parameters",
+      "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_class_service_parameters/task_input.json"
+    },
+    {
+      "task_id": "flogi_relogin_logout_side_effects",
+      "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_relogin_logout_side_effects/task_input.json"
+    },
+    {
+      "task_id": "flogi_virtual_fabrics_evfp",
+      "task_input_path": "processed_specs/local/FC-LS/reading/units/unit_fc_ls_flogi/tasks/flogi_virtual_fabrics_evfp/task_input.json"
+    }
+  ],
+  "unresolved": [],
+  "invalid": []
+}

@@ -1,0 +1,255 @@
+{
+  "doc_id": "FC-LS",
+  "unit_id": "els_frame_envelope_fields",
+  "reading_md": "Read only the common ELS envelope text around section 4.1 and the request/reply exchange rule on page 40, plus Table 2 and Table 3 as directly referenced there. Excluded FLOGI-specific flow details and did not summarize Table 149. The relevant common rules state that an ELS reply is sent to an ELS request unless otherwise specified; each request or reply is a single Sequence with the ELS_Command code in the first word of the Payload of the first frame; each Sequence may use one or more frames; LS_ACC terminates the Exchange by setting Last Sequence on the last reply frame; request and reply occur within a single Exchange; ELS TYPE is 01h; R_CTL is set per Table 2; the first byte of the Payload is the ELS_Command code per Table 3; the remaining Payload is ELS-unique; and subsequent frames carry only additional Payload without repeating ELS_Command. Page 40 adds the common rule that an ELS protocol is an ELS request Sequence and, for some requests, an ELS Reply Sequence, and if a request expecting a reply is sent without transferring Sequence Initiative, the recipient shall abort the Exchange and not perform the request.",
+  "claim_candidates": [
+    {
+      "claim_id": "els_env_001",
+      "text": "An ELS reply shall be transmitted in response to an ELS request, unless otherwise specified.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0008",
+          "quote": "reply shall be transmitted in response to an ELS request, unless otherwise specified."
+        }
+      ]
+    },
+    {
+      "claim_id": "els_env_002",
+      "text": "Each ELS request or reply is composed of a single Sequence with the ELS_Command code specified in the first word of the Payload of the first frame of the Sequence.",
+      "kind": "field_presence",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0009",
+          "quote": "or reply is composed of a single Sequence with the ELS_Command code being specified in the first"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p036_s0010",
+          "quote": "word of the Payload of the first frame of the Sequence."
+        }
+      ]
+    },
+    {
+      "claim_id": "els_env_003",
+      "text": "An ELS Sequence may be composed of one or more frames.",
+      "kind": "other",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0013",
+          "quote": "Each Sequence may be composed of one or more frames."
+        }
+      ]
+    },
+    {
+      "claim_id": "els_env_004",
+      "text": "An Accept (LS_ACC) to an ELS shall terminate the Exchange by setting the Last Sequence bit to one on the last frame of the reply.",
+      "kind": "completion_condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0014",
+          "quote": "quence management apply to ELS frames, Sequences, and Exchanges.  An Accept (LS_ACC) to an"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p036_s0015",
+          "quote": "ELS shall terminate the Exchange by setting the Last Sequence bit to one on the last frame of the re-"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0003",
+          "cell_id": "r3c2",
+          "quote": "Link Service Accept"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0003",
+          "cell_id": "r3c3",
+          "quote": "LS_ACC"
+        }
+      ]
+    },
+    {
+      "claim_id": "els_env_005",
+      "text": "An ELS request and the corresponding reply shall be performed within a single Exchange.",
+      "kind": "condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0016",
+          "quote": "ply.  An ELS request and the corresponding reply shall be performed within a single Exchange."
+        }
+      ]
+    },
+    {
+      "claim_id": "els_env_006",
+      "text": "The TYPE field for ELS frames shall be set to 01h.",
+      "kind": "field_presence",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0018",
+          "quote": "The TYPE field for ELS frames shall be set to 01h."
+        }
+      ]
+    },
+    {
+      "claim_id": "els_env_007",
+      "text": "The R_CTL for ELS request frames is 0010b.",
+      "kind": "field_presence",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0019",
+          "quote": "The R_CTL shall be set as specified in table 2."
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0002",
+          "cell_id": "r4c2",
+          "quote": "0010b"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0002",
+          "cell_id": "r4c3",
+          "quote": "Request"
+        }
+      ]
+    },
+    {
+      "claim_id": "els_env_008",
+      "text": "The R_CTL for ELS reply frames is 0011b.",
+      "kind": "field_presence",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0019",
+          "quote": "The R_CTL shall be set as specified in table 2."
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0002",
+          "cell_id": "r5c2",
+          "quote": "0011b"
+        },
+        {
+          "type": "table_cell",
+          "asset_id": "table_0002",
+          "cell_id": "r5c3",
+          "quote": "Reply"
+        }
+      ]
+    },
+    {
+      "claim_id": "els_env_009",
+      "text": "The first byte of the Payload of an ELS request or reply Sequence is the ELS_Command code.",
+      "kind": "offset",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0020",
+          "quote": "The first byte of the Payload (ELS_Command code) of the request or reply Sequence shall be as"
+        }
+      ]
+    },
+    {
+      "claim_id": "els_env_010",
+      "text": "The remainder of the Payload after the ELS_Command code is ELS-unique.",
+      "kind": "field_presence",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0021",
+          "quote": "shown in table 3.  The remainder of the Payload is ELS unique."
+        }
+      ]
+    },
+    {
+      "claim_id": "els_env_011",
+      "text": "Subsequent frames of an ELS request or reply Sequence carry only additional Payload and do not repeat the ELS_Command code.",
+      "kind": "condition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0021",
+          "quote": "shown in table 3.  The remainder of the Payload is ELS unique.  Subsequent frames, if any, for a re-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p036_s0022",
+          "quote": "quest or reply Sequence shall only contain additional Payload in the Payload field (i.e., the"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p036_s0023",
+          "quote": "ELS_Command code is not repeated in each frame)."
+        }
+      ]
+    },
+    {
+      "claim_id": "els_env_012",
+      "text": "An ELS protocol is composed of an ELS request Sequence and, for some requests, an ELS Reply Sequence.",
+      "kind": "other",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p040_s0003",
+          "quote": "An ELS Protocol is composed of an ELS request Sequence and, for some requests, an ELS Reply"
+        }
+      ]
+    },
+    {
+      "claim_id": "els_env_013",
+      "text": "The last Data frame of an ELS request Sequence with a Reply Sequence shall transfer the Sequence Initiative to the Recipient to allow the reply to be transmitted.",
+      "kind": "transition",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p040_s0004",
+          "quote": "Sequence.  The last Data frame of an ELS request Sequence with a Reply Sequence shall transfer"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p040_s0005",
+          "quote": "the Sequence Initiative to the Recipient in order to allow the reply to be transmitted (see FC-FS-2). If"
+        }
+      ]
+    },
+    {
+      "claim_id": "els_env_014",
+      "text": "If an ELS request Sequence that has a Reply Sequence is transmitted without transfer of Sequence Initiative, the Recipient shall abort the Exchange and not perform the request.",
+      "kind": "response_branch",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p040_s0006",
+          "quote": "an ELS request Sequence that has a Reply Sequence is transmitted without the transfer of Se-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p040_s0007",
+          "quote": "quence Initiative, the Recipient shall abort the Exchange and not perform the request."
+        }
+      ]
+    }
+  ]
+}

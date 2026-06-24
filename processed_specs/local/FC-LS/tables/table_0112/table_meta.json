@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0112",
+  "type": "table",
+  "caption": "Table 108 – Flag field definitions",
+  "pages": [
+    122
+  ],
+  "bbox": [
+    97.14,
+    399.84,
+    538.86,
+    632.76
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 122,
+  "logical_table": false
+}

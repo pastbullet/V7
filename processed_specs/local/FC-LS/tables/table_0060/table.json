@@ -1,0 +1,25 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 ... 24\nByte 0",
+      "23 ... 16\nByte 1",
+      "15 ... 08\nByte 2",
+      "07 ... 00\nByte 3"
+    ],
+    [
+      "0",
+      "RNID (78h)",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "Node Identification\nData Format",
+      "Reserved",
+      null,
+      null
+    ]
+  ]
+}

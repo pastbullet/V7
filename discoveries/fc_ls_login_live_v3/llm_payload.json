@@ -1,0 +1,776 @@
+{
+  "doc_id": "FC-LS",
+  "discovery_md": "Discovered login-related FC-LS units by following structure-led reading across sections 4, 5, 6, 7, and 8. The main login family is introduced in section 6 as a Login procedure with explicit and implicit forms, where explicit login uses Login ELSs FLOGI or PLOGI and LS_ACC carries responder Service Parameters. Section 4 provides the general ELS exchange model and the ELS command code table, which identifies PLOGI, FLOGI, PRLI, and PRLO as distinct ELS request types and indicates whether prior N_Port Login is required. Section 5 adds FC-4 Link Service exchange rules, including that such exchanges are only originated following N_Port Login. Section 6 gives the common login payload structure and FLOGI-related common service parameter applicability, including the Virtual Fabrics bit. Section 7 defines Process Login and Process Logout behavior, including operating-environment establishment, image-pair establishment/removal, retry/error branches, and PA-dependent protocol variants. Figures on pages 197-198 were referenced by text for image/group and image-pair concepts, but the extracted figure assets are unlabeled crops and were not reliable enough to ground accepted figure-specific claims, so those dependencies remain unresolved. A referenced login payload table for FLOGI/PLOGI/LS_ACC and a common-parameter payload table were inspected; PRLI/PRLO page-format tables were not found in the inspected pages/assets, so message-structure details for PRLI/PRLO pages remain unresolved rather than assumed.",
+  "unit_candidates": [
+    {
+      "unit_id": "login-procedure",
+      "title": "Login procedure for establishing Nx_Port operating environment",
+      "kind": "procedure",
+      "reason": "Section 6 introduces Login as the procedure by which an Nx_Port establishes its operating environment with a Fabric and other destination Nx_Ports, and states that Fabric Login and N_Port Login use a similar procedure with different D_IDs and possibly S_IDs. It also distinguishes explicit and implicit login.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p152_s0007",
+          "quote": "The Login procedure is a method by which an Nx_Port establishes its operating environment with a"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p152_s0008",
+          "quote": "Fabric, if present, and other destination Nx_Ports with which it communicates.  Fabric Login and"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p152_s0009",
+          "quote": "N_Port Login are both accomplished with a similar procedure using different D_IDs and possibly dif-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p152_s0015",
+          "quote": "Login between an Nx_Port and the Fabric or between two Nx_Ports may use an explicit or implicit"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "explicit-login-els",
+      "title": "Explicit Login using Login ELSs and LS_ACC",
+      "kind": "procedure",
+      "reason": "Explicit login is defined as using a Login ELS within a new Exchange to transfer initiator Service Parameters, with LS_ACC carrying responder Service Parameters. This is the core login exchange procedure for FLOGI/PLOGI.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p152_s0019",
+          "quote": "Explicit Login is accomplished using a Login (FLOGI or PLOGI) ELS (see 4.2.7) within a new Ex-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p152_s0020",
+          "quote": "change to transfer the Service Parameters (contained in the Payload) of the Nx_Port initiating the Lo-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p152_s0021",
+          "quote": "gin Exchange.  The LS_ACC contains the Service Parameters of the Responder (contained in the"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p152_s0022",
+          "quote": "Payload)."
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "login-command-codes",
+      "title": "ELS command units for FLOGI, PLOGI, PRLI, and PRLO",
+      "kind": "protocol_unit",
+      "reason": "The ELS command-code table identifies the login-related request types and where they are specified. It shows PLOGI and FLOGI as Login ELSs, and PRLI/PRLO as process login/logout ELSs.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p037_s0022",
+          "quote": "03h"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p037_s0023",
+          "quote": "N_Port Login"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p037_s0024",
+          "quote": "PLOGI"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p037_s0027",
+          "quote": "04h"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p037_s0028",
+          "quote": "F_Port Login"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p037_s0029",
+          "quote": "FLOGI"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p037_s0110",
+          "quote": "20h"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p037_s0111",
+          "quote": "Process Login"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p037_s0112",
+          "quote": "PRLI"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p038_s0003",
+          "quote": "21h"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p038_s0004",
+          "quote": "Process Logout"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p038_s0005",
+          "quote": "PRLO"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "els-exchange-model",
+      "title": "General ELS request/reply exchange model used by login-related ELSs",
+      "kind": "procedure",
+      "reason": "Section 4 defines the common ELS exchange pattern: request/reply as single sequences within one Exchange, and later clarifies that most ELS protocols are two-sequence exchanges with transferred Sequence Initiative and responder reply termination. This model underlies FLOGI, PLOGI, PRLI, and PRLO.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p036_s0007",
+          "quote": "An Extended Link Service (ELS) request solicits a destination Nx_Port to perform a function.  An ELS"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p036_s0008",
+          "quote": "reply shall be transmitted in response to an ELS request, unless otherwise specified.  Each request"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p036_s0014",
+          "quote": "quence management apply to ELS frames, Sequences, and Exchanges.  An Accept (LS_ACC) to an"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p036_s0016",
+          "quote": "ply.  An ELS request and the corresponding reply shall be performed within a single Exchange. Nor-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p041_s0025",
+          "quote": "formed in a separate Exchange. Most ELS protocols are performed as a two Sequence Exchange."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p041_s0026",
+          "quote": "Each of these two Sequence Exchanges consist of a request Sequence by the Originator, transfer of"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p041_s0027",
+          "quote": "Sequence Initiative, and a reply Sequence from the Responder that terminates the Exchange by set-"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "received-els-response-branch",
+      "title": "Received ELS response branch when login is or is not established",
+      "kind": "procedure",
+      "reason": "Table 4 gives implementation-facing response branches for received ELSs based on whether N_Port Login is required and whether the source is logged in. For login-required ELSs from a source not logged in, the receiver either originates LOGO or replies LS_RJT with reason 'Unable to perform command request' and explanation 'N_Port Login required'. This branch is directly relevant to PRLI and other login-dependent ELSs.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p041_s0003",
+          "quote": "An Nx_Port receiving an ELS request shall respond to it in accord with table 4, depending on its"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p041_s0004",
+          "quote": "N_Port Login state with the Nx_Port sending the ELS request and the PLOGI requirement for the"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p041_s0040",
+          "quote": "If a reply sequence is defined for the "
+        },
+        {
+          "type": "text_span",
+          "span_id": "p041_s0041",
+          "quote": "ELS, originate a LOGO ELS Exchange "
+        },
+        {
+          "type": "text_span",
+          "span_id": "p041_s0043",
+          "quote": "reply with an LS_RJT ELS Sequence "
+        },
+        {
+          "type": "text_span",
+          "span_id": "p041_s0044",
+          "quote": "with a reason code of \"Unable to "
+        },
+        {
+          "type": "text_span",
+          "span_id": "p041_s0046",
+          "quote": "reason code explanation of \"N_Port "
+        },
+        {
+          "type": "text_span",
+          "span_id": "p041_s0047",
+          "quote": "Login required\"."
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fcls-after-nport-login",
+      "title": "FC-4 Link Service exchanges only after N_Port Login",
+      "kind": "procedure",
+      "reason": "Section 5 states that FC-4 Link Services shall only be exchanges originated following N_Port Login. This is a gating rule for login-related flows and later FC-4 service use.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p151_s0021",
+          "quote": "a) FC-4 Link Services shall only be Exchanges originated following N_Port Login."
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "flogi-plogi-lsacc-payload",
+      "title": "FLOGI/PLOGI/LS_ACC payload structure",
+      "kind": "message_structure",
+      "reason": "Table 149 defines the payload used by FLOGI, PLOGI, or LS_ACC, including ELS command code, Common Service Parameters, Port_Name, Node_or_Fabric_Name, class service parameters, Vendor Version Level, Services Availability, Login Extension Data Length, and optional Login Extension Data.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p166_s0003",
+          "quote": " Table 149 – FLOGI, PLOGI or LS_ACC Payload"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p166_s0011",
+          "quote": "ELS_Command code"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p166_s0014",
+          "quote": "Common Service Parameters"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p166_s0021",
+          "quote": "Port_Name"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p166_s0026",
+          "quote": "Node_ or Fabric_Name"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p166_s0056",
+          "quote": "Vendor Version Level"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p166_s0063",
+          "quote": "Services Availability"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p166_s0069",
+          "quote": "Login Extension Data Length"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p166_s0081",
+          "quote": "Login Extension Data (if any)"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "flogi-common-service-parameters",
+      "title": "FLOGI common service parameters and Virtual Fabrics applicability",
+      "kind": "message_structure",
+      "reason": "Section 6.6.2 and Table 150 define Common Service Parameter applicability for login payload words 1-4, including the Virtual Fabrics bit in word 1 bit 30 and whether it applies to PLOGI, FLOGI, and FLOGI LS_ACC.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p167_s0006",
+          "quote": "Table 150 defines the applicability, by class as well as by PLOGI, FLOGI, PLOGI LS_ACC and FLO-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p167_s0008",
+          "quote": "ue column (see table 150) refers to the Login values to be used prior to a sucessful Login. These are"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p167_s0009",
+          "quote": "words 1-4 in the Payload (see table 150)."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p167_s0126",
+          "quote": "Virtual Fabrics bit"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p167_s0127",
+          "quote": "1"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p167_s0128",
+          "quote": "30"
+        }
+      ],
+      "related_assets": [
+        {
+          "type": "table",
+          "asset_id": "table_0158"
+        }
+      ]
+    },
+    {
+      "unit_id": "vf-bit-negotiation",
+      "title": "Virtual Fabrics negotiation branch in FLOGI and FLOGI LS_ACC",
+      "kind": "procedure",
+      "reason": "Section 8.2 states that Virtual Fabrics use is negotiated during FLOGI via the Virtual Fabrics bit of FLOGI Common Service Parameters, and Table 177 gives the response branch matrix for request bit vs F_Port configuration.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p203_s0014",
+          "quote": "The use of Virtual Fabrics is negotiated when FLOGI is performed via the Virtual Fabrics bit of the"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p203_s0015",
+          "quote": "FLOGI Common Service Parameters (see table 150). "
+        },
+        {
+          "type": "text_span",
+          "span_id": "p203_s0016",
+          "quote": "When set to one in the FLOGI request, the Virtual Fabrics bit indicates that the sending N_Port may"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p203_s0017",
+          "quote": "negotiate Virtual Fabrics parameters. When set to one in the FLOGI LS_ACC reply, the Virtual Fab-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p203_s0018",
+          "quote": "rics bit indicates that the Fabric requires the N_Port to initiate an EVFP transaction (see 4.2.43). Ta-"
+        }
+      ],
+      "related_assets": [
+        {
+          "type": "table",
+          "asset_id": "table_0192"
+        }
+      ]
+    },
+    {
+      "unit_id": "prli-procedure",
+      "title": "Process Login operating-environment establishment",
+      "kind": "procedure",
+      "reason": "PRLI is defined as an ELS request used to establish the operating environment between groups of related processes at originating and responding Nx_Ports. It may establish image pairs and exchange FC-4-dependent Service Parameters.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p197_s0009",
+          "quote": "The Process Login (PRLI) ELS request shall be used to establish the operating environment between"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0010",
+          "quote": "a group of related processes at the originating Nx_Port and a group of related processes at the re-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0012",
+          "quote": "Establishing the operating environment may include the establishment of image pairs and the ex-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0014",
+          "quote": "structure dependent.  The exchange of Service Parameters is FC-4 dependent, and if required by a"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "prli-trigger-placement",
+      "title": "PRLI timing relative to N_Port Login and FC-4 transfers",
+      "kind": "procedure",
+      "reason": "PRLI, if required, is performed after N_Port Login succeeds and prior to other FC-4 transfers.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p198_s0004",
+          "quote": "PRLI, if required, is performed after N_Port Login is successful and prior to other FC-4 transfers.  Ex-"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "prli-image-pair-lifecycle",
+      "title": "PRLI image-pair establishment, modification, and retry/error branches",
+      "kind": "procedure",
+      "reason": "Pages 198-199 define PRLI lifecycle behavior: PRLI with LS_ACC may establish or modify an image pair; failure to establish one pair does not affect others; PRLI may exchange Service Parameters without establishing image pairs; and on link/error or certain responses the requester may retry. If not logged in, the recipient responds with LOGO or LS_RJT indicating N_Port Login required.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p198_s0014",
+          "quote": "An image pair may be established or modified with a PRLI request and LS_ACC reply Sequence set."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p198_s0015",
+          "quote": "Failure to establish a particular image pair does not affect existing image pairs or the ability to estab-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p198_s0017",
+          "quote": "PRLI may also be used to exchange Service Parameters without establishing image pairs.  However,"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0008",
+          "quote": "If a link error is detected when a PRLI request is received, the appropriate response, if any, is made,"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0010",
+          "quote": "port it shall reply with a LOGO ELS Sequence, or with an LS_RJT ELS Sequence with a reason code"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0011",
+          "quote": "of \"Unable to perform command request\" and a reason code explanation of \"N_Port Login required\"."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0013",
+          "quote": "existing image pair is unaffected.  If an LS_RJT, P_BSY, F_BSY, P_RJT, or F_RJT response is re-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0014",
+          "quote": "ceived to a PRLI request, the PRLI request may be retried until the image pair is established."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0019",
+          "quote": "a PRLI request receives no valid response, the Nx_Port should retry the request."
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "prli-pa-modes",
+      "title": "PRLI Process_Associator relationship variants and binding/informative modes",
+      "kind": "state_machine",
+      "reason": "Sections 7.1.2-7.1.4 specify distinct PRLI variants depending on Originator/Responder PA support and define informative versus binding mode by the Establish Image Pair bit. They also specify how validity bits and PA values are set in request and LS_ACC response pages.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p199_s0026",
+          "quote": "7.1.2.2  PA not supported"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0031",
+          "quote": "7.1.2.3  PA required by originator, supported by responder"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p200_s0003",
+          "quote": "7.1.2.4  PA required by responder, supported by originator"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p200_s0016",
+          "quote": "7.1.2.5  PA required by originator and responder"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p200_s0029",
+          "quote": "7.1.3.1  Informative mode"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p200_s0032",
+          "quote": "7.1.3.2  Binding mode"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p200_s0040",
+          "quote": "Binding or Informative mode is determined by the setting of the Establish Image Pair bit in the PRLI"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p201_s0010",
+          "quote": "For each PRLI request page the Originator and Responder PA validity bits are set to one and valid"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p201_s0016",
+          "quote": "For each LS_ACC response page, the Originator and Responder PA validity bits are set to one and"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "prlo-procedure",
+      "title": "Process Logout invalidation and cleanup procedure",
+      "kind": "procedure",
+      "reason": "PRLO is the ELS request used to invalidate the operating environment between images, free resources from PRLI, reset TYPE-specific Process Login Service Parameters or remove image pairs, and constrain subsequent communication for the affected image pair/FC-4 type.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p202_s0007",
+          "quote": "The Process Logout (PRLO) ELS request shall be used to request invalidation of the operating envi-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0008",
+          "quote": "ronment between an image at the initiating Nx_Port and an image at the recipient Nx_Port.  PRLO"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0009",
+          "quote": "frees resources committed by a previous PRLI function."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0011",
+          "quote": "Examples of PRLO usage include image re-configuration and TYPE-specific reset of Process Login"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0013",
+          "quote": "TYPE-specific Service Parameter settings may be reset or image pairs removed with a PRLO re-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0016",
+          "quote": "specific Service Parameter settings are reset or image pair is removed, Information Units may not be"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "prlo-response-branches",
+      "title": "PRLO acceptance, retry, and post-action branches",
+      "kind": "procedure",
+      "reason": "Section 7.2 defines PRLO response branches: non-existent image pair or FC-4 TYPE is accepted with LS_ACC if no link errors; requester considers removal complete only after LS_ACC; P_BSY/F_BSY/P_RJT/F_RJT may be retried; lack of valid response should cause retry; and after PRLO all active sequences and exchanges shall be terminated by ABTS.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p202_s0019",
+          "quote": "If a PRLO request is received for an image pair or FC-4 TYPE that does not exist, the request is ac-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0020",
+          "quote": "cepted, provided that no link errors are detected, and the LS_ACC response is sent."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0021",
+          "quote": "The Nx_Port originating the PRLO request shall not consider an image pair to be removed until it re-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0024",
+          "quote": "ate, until the LS_ACC reply Sequence is sent.  An Nx_Port that receives a P_BSY, F_BSY, P_RJT,"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0025",
+          "quote": "or F_RJT reply in response to a PRLO request may retry the PRLO request."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0027",
+          "quote": "Unless the requesting Nx_Port receives a valid response to a PRLO request, that Nx_Port shall not"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0029",
+          "quote": "request receives no valid response, the Nx_Port should retry the request."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0035",
+          "quote": "and properly terminated prior to issuing a PRLO request. Following PRLO execution, all active Se-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0036",
+          "quote": "quences and Exchanges shall be terminated by invoking Abort Sequence (ABTS)."
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "figure-image-group",
+      "title": "Image/group of related processes figure dependency",
+      "kind": "other",
+      "reason": "The PRLI introduction explicitly references figure 4 for the meaning of an image/group of related processes, but the figure assets extracted for page 197 are unlabeled crops and were not reliable enough to support accepted figure facts. The dependency remains open.",
+      "status": "unresolved",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p197_s0025",
+          "quote": "A group of related processes is known as an image and is identified by the Process_Associator (see"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0030",
+          "quote": " Figure 4 – Image/Group of Related Processes"
+        }
+      ],
+      "related_assets": [
+        {
+          "type": "figure",
+          "asset_id": "figure_0001"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0002"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0003"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0004"
+        }
+      ]
+    },
+    {
+      "unit_id": "figure-image-pairs",
+      "title": "Image-pair figure dependency",
+      "kind": "other",
+      "reason": "The PRLI introduction and page 198 text explicitly reference figure 5 for image pairs, but the extracted figure assets on page 198 were unlabeled crops and not reliable enough for accepted figure-specific claims. The dependency remains open.",
+      "status": "unresolved",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p197_s0026",
+          "quote": "figure 4).  The combination of the D_ID, Responder Process_Associator, S_ID and Originator"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0027",
+          "quote": "Process_Associator identify the image pair (see figure 5).  Either a single group or multiple groups of"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p198_s0003",
+          "quote": " Figure 5 – Image pairs"
+        }
+      ],
+      "related_assets": [
+        {
+          "type": "figure",
+          "asset_id": "figure_0005"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0006"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0007"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0008"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0009"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0010"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0011"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0012"
+        }
+      ]
+    },
+    {
+      "unit_id": "prli-prlo-page-format",
+      "title": "PRLI/PRLO page message-format dependency",
+      "kind": "message_structure",
+      "reason": "The PRLI/PRLO protocol text repeatedly specifies request and LS_ACC response page validity bits, PAs, and Establish Image Pair behavior, implying a concrete page format, but the corresponding page layout/bit tables were not located in the inspected pages/assets. Because the referenced message structure was not inspected, it remains unresolved.",
+      "status": "unresolved",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p201_s0010",
+          "quote": "For each PRLI request page the Originator and Responder PA validity bits are set to one and valid"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p201_s0016",
+          "quote": "For each LS_ACC response page, the Originator and Responder PA validity bits are set to one and"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p200_s0020",
+          "quote": "the Establish Image Pair bit set to one in order to create image pairs in an binding manner."
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "table-177-vf-bit-usage",
+      "title": "Virtual Fabrics Bit usage table",
+      "kind": "other",
+      "reason": "Table 177 gives the concrete branch matrix for FLOGI Virtual Fabrics bit negotiation between the requesting Nx_Port and F_Port configuration. This table is directly implementation-relevant to login negotiation behavior.",
+      "status": "accepted",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p203_s0019",
+          "quote": "ble 177 shows the usage of the Virtual Fabrics bit."
+        }
+      ],
+      "related_assets": [
+        {
+          "type": "table",
+          "asset_id": "table_0192"
+        }
+      ]
+    }
+  ]
+}

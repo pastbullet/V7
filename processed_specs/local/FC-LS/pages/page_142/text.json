@@ -1,0 +1,687 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 142,
+  "spans": [
+    {
+      "span_id": "p142_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0002",
+      "text": " 123",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0003",
+      "text": "Registration Function: ",
+      "bbox": [
+        96.0,
+        57.65,
+        205.41,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0004",
+      "text": "The format of the Registration Function field is shown in table 139.",
+      "bbox": [
+        205.38,
+        57.65,
+        498.65,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p142_s0005",
+      "text": "4.2.48.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        274.97,
+        214.96,
+        286.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0006",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        298.97,
+        139.27,
+        310.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0007",
+      "text": "LS_RJT signifies the rejection of the FFI_MUR Request. The LS_RJT reply contains an ap-",
+      "bbox": [
+        139.14,
+        298.97,
+        540.06,
+        310.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p142_s0008",
+      "text": "propriate reject reason code.",
+      "bbox": [
+        96.0,
+        310.97,
+        223.19,
+        322.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0009",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        334.96,
+        144.67,
+        346.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0010",
+      "text": "LS_ACC signifies acceptance of the FFI_MUR Request and registration to receive",
+      "bbox": [
+        145.32,
+        334.96,
+        539.96,
+        346.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p142_s0011",
+      "text": "FFI_RMUN Requests. The format of the LS_ACC Payload for FFI_MUR is shown in table 140.",
+      "bbox": [
+        96.0,
+        346.96,
+        513.09,
+        358.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0012",
+      "text": "4.2.49",
+      "bbox": [
+        96.0,
+        454.96,
+        123.76,
+        466.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0013",
+      "text": "FFI Registered Map Update Notification (FFI_RMUN)",
+      "bbox": [
+        133.83,
+        454.96,
+        380.34,
+        466.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0014",
+      "text": "4.2.49.1  Description",
+      "bbox": [
+        96.0,
+        478.96,
+        192.69,
+        490.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0015",
+      "text": "A unidirectional FFI_RMUN Request shall be sent to registered Nx_Ports (see 4.2.48) when the AE",
+      "bbox": [
+        96.0,
+        502.96,
+        539.88,
+        514.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0016",
+      "text": "Principal Switch sends an Fast Fabric Initialization (FFI) Request Sequence initiated by the AE Prin-",
+      "bbox": [
+        96.0,
+        514.96,
+        540.09,
+        526.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0017",
+      "text": "cipal Switch. ",
+      "bbox": [
+        96.0,
+        526.96,
+        154.35,
+        538.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0018",
+      "text": "Support for this ELS is mandatory for a Domain Controller in an AE Principal Switch or an AE Switch",
+      "bbox": [
+        96.0,
+        550.96,
+        540.08,
+        562.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0019",
+      "text": "that is capable of becoming an AE Principal Switch. Support for this ELS is optional for Nx_Ports.",
+      "bbox": [
+        96.0,
+        562.96,
+        539.9,
+        574.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0020",
+      "text": "However, if the Nx_Port invokes the FFI_MUR ELS, it shall support receipt of the FFI_RMUN Re-",
+      "bbox": [
+        96.0,
+        574.96,
+        540.17,
+        586.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0021",
+      "text": "quest.",
+      "bbox": [
+        96.0,
+        586.96,
+        123.17,
+        598.08
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0022",
+      "text": "FFI_RMUN Request is intended to provide a timely indication of Map Updates to avoid the consider-",
+      "bbox": [
+        96.0,
+        610.96,
+        540.06,
+        622.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0023",
+      "text": "able time to discover any such failure. ",
+      "bbox": [
+        96.0,
+        622.96,
+        265.96,
+        634.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0024",
+      "text": "Sending FFI_RMUN Requests between Nx_Ports is prohibited. Sending FFI_RMUN Requests by a",
+      "bbox": [
+        96.0,
+        647.02,
+        539.94,
+        658.14
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0025",
+      "text": "Domain Controller that is not an AE Principal Switch is prohibited.",
+      "bbox": [
+        96.0,
+        659.02,
+        385.36,
+        670.14
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0026",
+      "text": " Table 139 – Registration Function",
+      "bbox": [
+        236.64,
+        79.66,
+        399.33,
+        90.78
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0027",
+      "text": "Function ",
+      "bbox": [
+        275.28,
+        101.62,
+        320.28,
+        112.74
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0028",
+      "text": "Value",
+      "bbox": [
+        436.08,
+        101.62,
+        462.77,
+        112.74
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0029",
+      "text": "Reserved",
+      "bbox": [
+        166.98,
+        124.66,
+        209.67,
+        135.78
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0030",
+      "text": "0",
+      "bbox": [
+        446.64,
+        125.62,
+        452.18,
+        136.74
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0031",
+      "text": "Full registration - Register to receive FFI_RMUN Requests. ",
+      "bbox": [
+        166.98,
+        147.64,
+        427.38,
+        158.76
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0032",
+      "text": "If the requesting Nx_Port is already registered, this request ",
+      "bbox": [
+        166.98,
+        159.64,
+        427.21,
+        170.76
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0033",
+      "text": "is treated as a NOP function.",
+      "bbox": [
+        166.98,
+        171.64,
+        294.72,
+        182.76
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0034",
+      "text": "3",
+      "bbox": [
+        446.64,
+        160.66,
+        452.18,
+        171.78
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0035",
+      "text": "Reserved",
+      "bbox": [
+        166.98,
+        194.62,
+        209.67,
+        205.74
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0036",
+      "text": "4 - 254",
+      "bbox": [
+        433.86,
+        195.64,
+        464.96,
+        206.76
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0037",
+      "text": "Clear registration – Remove the current FFI_RMUN ",
+      "bbox": [
+        166.98,
+        217.66,
+        398.03,
+        228.78
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0038",
+      "text": "registration, if any. If the requesting Nx_Port is not ",
+      "bbox": [
+        166.98,
+        229.66,
+        391.32,
+        240.78
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0039",
+      "text": "registered, this request is treated as a NOP function.",
+      "bbox": [
+        166.98,
+        241.66,
+        399.2,
+        252.77
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0040",
+      "text": "255",
+      "bbox": [
+        441.06,
+        230.62,
+        457.7,
+        241.74
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0041",
+      "text": " Table 140 – FFI_MUR LS_ACC Payload",
+      "bbox": [
+        224.7,
+        368.98,
+        411.24,
+        380.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0042",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        391.0,
+        133.06,
+        402.12
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0043",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        403.0,
+        136.35,
+        414.11
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0044",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        391.0,
+        233.97,
+        402.12
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0045",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        391.0,
+        328.41,
+        402.12
+      ],
+      "block_index": 20,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0046",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        391.0,
+        427.0,
+        402.12
+      ],
+      "block_index": 20,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0047",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        391.0,
+        522.83,
+        402.12
+      ],
+      "block_index": 20,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0048",
+      "text": "0",
+      "bbox": [
+        120.84,
+        419.98,
+        126.38,
+        431.09
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0049",
+      "text": "02h",
+      "bbox": [
+        149.88,
+        419.98,
+        166.52,
+        431.09
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0050",
+      "text": "00h",
+      "bbox": [
+        247.08,
+        419.98,
+        263.71,
+        431.09
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0051",
+      "text": "00h",
+      "bbox": [
+        344.27,
+        419.98,
+        360.97,
+        431.09
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p142_s0052",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        419.98,
+        458.16,
+        431.09
+      ],
+      "block_index": 21,
+      "line_index": 5,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0143",
+    "table_0144"
+  ]
+}

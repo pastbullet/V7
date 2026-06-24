@@ -1,0 +1,121 @@
+{
+  "items": [
+    {
+      "unit_id": "figure-image-group",
+      "title": "Image/group of related processes figure dependency",
+      "kind": "other",
+      "reason": "The PRLI introduction explicitly references figure 4 for the meaning of an image/group of related processes, but the figure assets extracted for page 197 are unlabeled crops and were not reliable enough to support accepted figure facts. The dependency remains open.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p197_s0025",
+          "quote": "A group of related processes is known as an image and is identified by the Process_Associator (see"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0030",
+          "quote": " Figure 4 – Image/Group of Related Processes"
+        }
+      ],
+      "related_assets": [
+        {
+          "type": "figure",
+          "asset_id": "figure_0001"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0002"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0003"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0004"
+        }
+      ]
+    },
+    {
+      "unit_id": "figure-image-pairs",
+      "title": "Image-pair figure dependency",
+      "kind": "other",
+      "reason": "The PRLI introduction and page 198 text explicitly reference figure 5 for image pairs, but the extracted figure assets on page 198 were unlabeled crops and not reliable enough for accepted figure-specific claims. The dependency remains open.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p197_s0026",
+          "quote": "figure 4).  The combination of the D_ID, Responder Process_Associator, S_ID and Originator"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0027",
+          "quote": "Process_Associator identify the image pair (see figure 5).  Either a single group or multiple groups of"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p198_s0003",
+          "quote": " Figure 5 – Image pairs"
+        }
+      ],
+      "related_assets": [
+        {
+          "type": "figure",
+          "asset_id": "figure_0005"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0006"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0007"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0008"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0009"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0010"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0011"
+        },
+        {
+          "type": "figure",
+          "asset_id": "figure_0012"
+        }
+      ]
+    },
+    {
+      "unit_id": "prli-prlo-page-format",
+      "title": "PRLI/PRLO page message-format dependency",
+      "kind": "message_structure",
+      "reason": "The PRLI/PRLO protocol text repeatedly specifies request and LS_ACC response page validity bits, PAs, and Establish Image Pair behavior, implying a concrete page format, but the corresponding page layout/bit tables were not located in the inspected pages/assets. Because the referenced message structure was not inspected, it remains unresolved.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p201_s0010",
+          "quote": "For each PRLI request page the Originator and Responder PA validity bits are set to one and valid"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p201_s0016",
+          "quote": "For each LS_ACC response page, the Originator and Responder PA validity bits are set to one and"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p200_s0020",
+          "quote": "the Establish Image Pair bit set to one in order to create image pairs in an binding manner."
+        }
+      ],
+      "related_assets": []
+    }
+  ]
+}

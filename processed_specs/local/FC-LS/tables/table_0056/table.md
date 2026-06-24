@@ -1,0 +1,9 @@
+| Item | Word | Bit |
+| --- | --- | --- |
+| Reserved | 0 | 31-16 |
+| Originator Process_Associator Validity | 0 | 15 |
+| Responder Process_Associator Validity | 0 | 14 |
+| Reserved | 0 | 13-0 |
+| Originator Process_Associator | 1 | 31-0 |
+| Responder Process_Associator | 2 | 31-0 |
+| Reserved | 3 | 31-0 |

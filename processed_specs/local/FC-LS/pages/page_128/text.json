@@ -1,0 +1,999 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 128,
+  "spans": [
+    {
+      "span_id": "p128_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0002",
+      "text": " 109",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0003",
+      "text": "4.2.42.2  Protocol",
+      "bbox": [
+        96.0,
+        57.65,
+        178.22,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0004",
+      "text": "a)",
+      "bbox": [
+        114.0,
+        81.65,
+        122.84,
+        92.76
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0005",
+      "text": "Read Exchange Concise (REC) Request Sequence",
+      "bbox": [
+        132.0,
+        81.65,
+        360.24,
+        92.76
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0006",
+      "text": "b)",
+      "bbox": [
+        114.0,
+        96.64,
+        122.84,
+        107.76
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0007",
+      "text": "LS_ACC or LS_RJT Reply Sequence",
+      "bbox": [
+        132.0,
+        96.64,
+        297.49,
+        107.76
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0008",
+      "text": "4.2.42.3  Request Sequence",
+      "bbox": [
+        96.0,
+        118.97,
+        227.06,
+        130.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0009",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        142.96,
+        157.1,
+        154.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0010",
+      "text": "The S_ID designates the source port that is requesting exchange information.  The",
+      "bbox": [
+        157.08,
+        142.96,
+        539.88,
+        154.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p128_s0011",
+      "text": "D_ID field designates the recipient that is requested to provide exchange information.",
+      "bbox": [
+        96.0,
+        154.96,
+        472.65,
+        166.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0012",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        178.96,
+        140.41,
+        190.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0013",
+      "text": "The format of the REC Payload is shown in table 114.",
+      "bbox": [
+        140.4,
+        178.96,
+        378.18,
+        190.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p128_s0014",
+      "text": "Exchange Originator S_ID:",
+      "bbox": [
+        96.0,
+        334.96,
+        222.64,
+        346.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0015",
+      "text": " shall be set to the address identifier of the target Exchange Originator.",
+      "bbox": [
+        222.6,
+        334.96,
+        535.46,
+        346.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p128_s0016",
+      "text": "OX_ID:",
+      "bbox": [
+        96.0,
+        358.96,
+        129.32,
+        370.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0017",
+      "text": " shall be set to the Originator Exchange_ID value of the target Exchange.",
+      "bbox": [
+        129.3,
+        358.96,
+        452.63,
+        370.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p128_s0018",
+      "text": "RX_ID:",
+      "bbox": [
+        96.0,
+        382.96,
+        128.71,
+        394.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0019",
+      "text": " shall be set to the Responder Exchange_ID value of the target Exchange.",
+      "bbox": [
+        128.76,
+        382.96,
+        457.04,
+        394.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p128_s0020",
+      "text": "4.2.42.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        406.96,
+        214.86,
+        418.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0021",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        430.96,
+        138.19,
+        442.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0022",
+      "text": "LS_RJT signifies the rejection of the REC Request",
+      "bbox": [
+        138.18,
+        430.96,
+        362.1,
+        442.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p128_s0023",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        454.96,
+        142.05,
+        466.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0024",
+      "text": "LS_ACC signifies acceptance of the REC Request and returns the requested exchange in-",
+      "bbox": [
+        142.08,
+        454.96,
+        539.97,
+        466.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p128_s0025",
+      "text": "formation.  The format of the LS_ACC Payload is shown in table 115.",
+      "bbox": [
+        96.0,
+        466.96,
+        401.51,
+        478.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0026",
+      "text": " Table 114 – REC Payload",
+      "bbox": [
+        257.16,
+        200.98,
+        378.82,
+        212.1
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0027",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        223.0,
+        133.06,
+        234.12
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0028",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        235.0,
+        136.34,
+        246.12
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0029",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        223.0,
+        233.97,
+        234.12
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0030",
+      "text": "Byte 0",
+      "bbox": [
+        181.5,
+        235.0,
+        211.43,
+        246.12
+      ],
+      "block_index": 16,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0031",
+      "text": "23        ..       16",
+      "bbox": [
+        258.96,
+        223.0,
+        328.4,
+        234.12
+      ],
+      "block_index": 16,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0032",
+      "text": "Byte 1",
+      "bbox": [
+        278.7,
+        235.0,
+        308.63,
+        246.12
+      ],
+      "block_index": 16,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0033",
+      "text": "15         ..       08",
+      "bbox": [
+        354.78,
+        223.0,
+        426.99,
+        234.12
+      ],
+      "block_index": 16,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0034",
+      "text": "Byte 2",
+      "bbox": [
+        375.9,
+        235.0,
+        405.83,
+        246.12
+      ],
+      "block_index": 16,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0035",
+      "text": "07        ..       00",
+      "bbox": [
+        453.36,
+        223.0,
+        522.8,
+        234.12
+      ],
+      "block_index": 16,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0036",
+      "text": "Byte 3",
+      "bbox": [
+        473.1,
+        235.0,
+        503.03,
+        246.12
+      ],
+      "block_index": 16,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0037",
+      "text": "0",
+      "bbox": [
+        120.84,
+        256.96,
+        126.38,
+        268.08
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0038",
+      "text": "REC (13h)",
+      "bbox": [
+        149.88,
+        256.96,
+        197.06,
+        268.08
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0039",
+      "text": "00h",
+      "bbox": [
+        247.08,
+        256.96,
+        263.72,
+        268.08
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0040",
+      "text": "00h",
+      "bbox": [
+        344.28,
+        256.96,
+        360.96,
+        268.08
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0041",
+      "text": "00h",
+      "bbox": [
+        441.47,
+        256.96,
+        458.15,
+        268.08
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0042",
+      "text": "1",
+      "bbox": [
+        120.84,
+        278.98,
+        126.38,
+        290.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0043",
+      "text": "Reserved",
+      "bbox": [
+        149.88,
+        278.98,
+        192.62,
+        290.1
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0044",
+      "text": "Exchange Originator S_ID",
+      "bbox": [
+        247.08,
+        278.98,
+        363.15,
+        290.1
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0045",
+      "text": "2",
+      "bbox": [
+        120.84,
+        301.0,
+        126.38,
+        312.12
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0046",
+      "text": "OX_ID",
+      "bbox": [
+        149.88,
+        301.0,
+        179.87,
+        312.12
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0047",
+      "text": "RX_ID",
+      "bbox": [
+        344.28,
+        301.0,
+        373.73,
+        312.12
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0048",
+      "text": " Table 115 – REC LS_ACC Payload",
+      "bbox": [
+        235.8,
+        488.98,
+        400.13,
+        500.1
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0049",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        511.0,
+        133.06,
+        522.12
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0050",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        523.0,
+        136.34,
+        534.12
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0051",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        511.0,
+        233.97,
+        522.12
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0052",
+      "text": "Byte 0",
+      "bbox": [
+        181.5,
+        523.0,
+        211.43,
+        534.12
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0053",
+      "text": "23        ..       16",
+      "bbox": [
+        258.96,
+        511.0,
+        328.4,
+        522.12
+      ],
+      "block_index": 21,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0054",
+      "text": "Byte 1",
+      "bbox": [
+        278.7,
+        523.0,
+        308.63,
+        534.12
+      ],
+      "block_index": 21,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0055",
+      "text": "15         ..       08",
+      "bbox": [
+        354.78,
+        511.0,
+        426.99,
+        522.12
+      ],
+      "block_index": 21,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0056",
+      "text": "Byte 2",
+      "bbox": [
+        375.9,
+        523.0,
+        405.83,
+        534.12
+      ],
+      "block_index": 21,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0057",
+      "text": "07        ..       00",
+      "bbox": [
+        453.36,
+        511.0,
+        522.8,
+        522.12
+      ],
+      "block_index": 21,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0058",
+      "text": "Byte 3",
+      "bbox": [
+        473.1,
+        523.0,
+        503.03,
+        534.12
+      ],
+      "block_index": 21,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0059",
+      "text": "0",
+      "bbox": [
+        120.84,
+        544.96,
+        126.38,
+        556.08
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0060",
+      "text": "LS_ACC (02h)",
+      "bbox": [
+        149.88,
+        544.96,
+        214.91,
+        556.08
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0061",
+      "text": "00h",
+      "bbox": [
+        247.11,
+        544.96,
+        263.75,
+        556.08
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0062",
+      "text": "00h",
+      "bbox": [
+        344.31,
+        544.96,
+        360.98,
+        556.08
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0063",
+      "text": "00h",
+      "bbox": [
+        441.48,
+        544.96,
+        458.15,
+        556.08
+      ],
+      "block_index": 22,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0064",
+      "text": "1",
+      "bbox": [
+        120.84,
+        566.98,
+        126.38,
+        578.1
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0065",
+      "text": "OX_ID",
+      "bbox": [
+        149.88,
+        566.98,
+        179.87,
+        578.1
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0066",
+      "text": "RX_ID",
+      "bbox": [
+        344.28,
+        566.98,
+        373.73,
+        578.1
+      ],
+      "block_index": 23,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0067",
+      "text": "2",
+      "bbox": [
+        120.84,
+        589.0,
+        126.38,
+        600.11
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0068",
+      "text": "Reserved",
+      "bbox": [
+        149.88,
+        589.0,
+        192.62,
+        600.11
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0069",
+      "text": "Originator Address Identifier",
+      "bbox": [
+        247.08,
+        589.0,
+        371.52,
+        600.11
+      ],
+      "block_index": 24,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0070",
+      "text": "3",
+      "bbox": [
+        120.84,
+        610.96,
+        126.38,
+        622.07
+      ],
+      "block_index": 25,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0071",
+      "text": "Reserved",
+      "bbox": [
+        149.88,
+        610.96,
+        192.62,
+        622.07
+      ],
+      "block_index": 25,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0072",
+      "text": "Responder Address Identifier",
+      "bbox": [
+        247.08,
+        610.96,
+        376.53,
+        622.07
+      ],
+      "block_index": 25,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0073",
+      "text": "4",
+      "bbox": [
+        120.84,
+        632.98,
+        126.38,
+        644.09
+      ],
+      "block_index": 26,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0074",
+      "text": "FC4VALUE",
+      "bbox": [
+        149.88,
+        632.98,
+        201.51,
+        644.09
+      ],
+      "block_index": 26,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0075",
+      "text": "5",
+      "bbox": [
+        120.84,
+        655.0,
+        126.38,
+        666.11
+      ],
+      "block_index": 27,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p128_s0076",
+      "text": "E_STAT",
+      "bbox": [
+        149.88,
+        655.0,
+        187.64,
+        666.11
+      ],
+      "block_index": 27,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0118",
+    "table_0119"
+  ]
+}

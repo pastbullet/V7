@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0013",
+  "type": "table",
+  "caption": "Table 10 – ESTS Payload",
+  "pages": [
+    47
+  ],
+  "bbox": [
+    99.3,
+    375.99,
+    536.7,
+    420.68
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 47
+}

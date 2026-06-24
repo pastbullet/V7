@@ -1,0 +1,35 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 134, "bbox": [99.6, 483.99, 147.9, 512.04], "source_fragment_id": "table_0131", "source_cell_id": "r1c1"}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 134, "bbox": [147.9, 483.99, 244.77, 512.04], "source_fragment_id": "table_0131", "source_cell_id": "r1c2"}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 134, "bbox": [244.77, 483.99, 342.33, 512.04], "source_fragment_id": "table_0131", "source_cell_id": "r1c3"}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08", "page": 134, "bbox": [342.33, 483.99, 439.53, 512.04], "source_fragment_id": "table_0131", "source_cell_id": "r1c4"}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00", "page": 134, "bbox": [439.53, 483.99, 536.4, 512.04], "source_fragment_id": "table_0131", "source_cell_id": "r1c5"}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 134, "bbox": [99.6, 512.04, 147.9, 543.54], "source_fragment_id": "table_0131", "source_cell_id": "r2c1"}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Descriptor Control =\n01h", "page": 134, "bbox": [147.9, 512.04, 244.77, 543.54], "source_fragment_id": "table_0131", "source_cell_id": "r2c2"}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Descriptor Type =\n02h", "page": 134, "bbox": [244.77, 512.04, 342.33, 543.54], "source_fragment_id": "table_0131", "source_cell_id": "r2c3"}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "Descriptor Length = 0004h", "page": 134, "bbox": [342.33, 512.04, 536.4, 543.54], "source_fragment_id": "table_0131", "source_cell_id": "r2c4"}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "", "page": 134, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0131", "source_cell_id": "r2c5"}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 134, "bbox": [99.6, 543.54, 147.9, 562.02], "source_fragment_id": "table_0131", "source_cell_id": "r3c1"}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Port Flags", "page": 134, "bbox": [147.9, 543.54, 342.33, 562.02], "source_fragment_id": "table_0131", "source_cell_id": "r3c2"}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 134, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0131", "source_cell_id": "r3c3"}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "Port VF_ID", "page": 134, "bbox": [342.33, 543.54, 536.4, 562.02], "source_fragment_id": "table_0131", "source_cell_id": "r3c4"}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "", "page": 134, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0131", "source_cell_id": "r3c5"}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "0", "page": 135, "bbox": [100.05, 152.04, 147.32, 183.59], "source_fragment_id": "table_0132", "source_cell_id": "r2c1"}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Descriptor Control =\n01h", "page": 135, "bbox": [147.32, 152.04, 245.13, 183.59], "source_fragment_id": "table_0132", "source_cell_id": "r2c2"}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Descriptor Type =\n03h", "page": 135, "bbox": [245.13, 152.04, 342.33, 183.59], "source_fragment_id": "table_0132", "source_cell_id": "r2c3"}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "Descriptor Length = 0200h", "page": 135, "bbox": [342.33, 152.04, 536.29, 183.59], "source_fragment_id": "table_0132", "source_cell_id": "r2c4"}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "", "page": 135, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0132", "source_cell_id": "r2c5"}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "1", "page": 135, "bbox": [100.05, 183.59, 147.32, 200.37], "source_fragment_id": "table_0132", "source_cell_id": "r3c1"}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "VF_ID Bitmap", "page": 135, "bbox": [147.32, 183.59, 536.29, 234.33], "source_fragment_id": "table_0132", "source_cell_id": "r3c2"}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "", "page": 135, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0132", "source_cell_id": "r3c3"}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "", "page": 135, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0132", "source_cell_id": "r3c4"}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "", "page": 135, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0132", "source_cell_id": "r3c5"}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "..", "page": 135, "bbox": [100.05, 200.37, 147.32, 217.35], "source_fragment_id": "table_0132", "source_cell_id": "r4c1"}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "", "page": 135, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0132", "source_cell_id": "r4c2"}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "", "page": 135, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0132", "source_cell_id": "r4c3"}
+{"cell_id": "r6c4", "row": 6, "col": 4, "text": "", "page": 135, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0132", "source_cell_id": "r4c4"}
+{"cell_id": "r6c5", "row": 6, "col": 5, "text": "", "page": 135, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0132", "source_cell_id": "r4c5"}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "128", "page": 135, "bbox": [100.05, 217.35, 147.32, 234.33], "source_fragment_id": "table_0132", "source_cell_id": "r5c1"}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "", "page": 135, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0132", "source_cell_id": "r5c2"}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "", "page": 135, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0132", "source_cell_id": "r5c3"}
+{"cell_id": "r7c4", "row": 7, "col": 4, "text": "", "page": 135, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0132", "source_cell_id": "r5c4"}
+{"cell_id": "r7c5", "row": 7, "col": 5, "text": "", "page": 135, "bbox": [0.0, 0.0, 0.0, 0.0], "source_fragment_id": "table_0132", "source_cell_id": "r5c5"}

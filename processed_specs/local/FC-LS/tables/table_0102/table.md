@@ -1,0 +1,5 @@
+| Hex Value | Meaning |
+| --- | --- |
+| 00h | Clock synchronization service enabled to this client |
+| 01h - FEh | Reserved |
+| FFh | Clock synchronization service disabled to this client |

@@ -1,0 +1,21 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "R_CTL", "page": 36, "bbox": [168.4, 327.64, 341.1, 344.2]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "", "page": 36, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Description", "page": 36, "bbox": [341.1, 327.64, 467.25, 361.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "ROUTING", "page": 36, "bbox": [168.4, 344.2, 239.81, 361.32]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "INFORMATION", "page": 36, "bbox": [239.81, 344.2, 341.1, 361.32]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "", "page": 36, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "0010b", "page": 36, "bbox": [168.4, 361.32, 239.81, 436.84]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "0001b", "page": 36, "bbox": [239.81, 361.32, 341.1, 379.7]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "Solicited Dataa", "page": 36, "bbox": [341.1, 361.32, 467.25, 379.7]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "", "page": 36, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "0010b", "page": 36, "bbox": [239.81, 379.7, 341.1, 399.39]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Request", "page": 36, "bbox": [341.1, 379.7, 467.25, 399.39]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "", "page": 36, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "0011b", "page": 36, "bbox": [239.81, 399.39, 341.1, 418.35]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "Reply", "page": 36, "bbox": [341.1, 399.39, 467.25, 418.35]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "", "page": 36, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "Others", "page": 36, "bbox": [239.81, 418.35, 341.1, 436.84]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "Reserved", "page": 36, "bbox": [341.1, 418.35, 467.25, 436.84]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "a This value is only used by the Clock Synchronization Update (CSU)\nELS.", "page": 36, "bbox": [168.4, 436.84, 467.25, 468.72]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "", "page": 36, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "", "page": 36, "bbox": [0.0, 0.0, 0.0, 0.0]}

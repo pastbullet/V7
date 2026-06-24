@@ -1,0 +1,35 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 128, "bbox": [100.0, 507.99, 147.9, 541.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24\nByte 0", "page": 128, "bbox": [147.9, 507.99, 245.13, 541.32]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16\nByte 1", "page": 128, "bbox": [245.13, 507.99, 342.33, 541.32]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08\nByte 2", "page": 128, "bbox": [342.33, 507.99, 439.53, 541.32]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00\nByte 3", "page": 128, "bbox": [439.53, 507.99, 536.0, 541.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 128, "bbox": [100.0, 541.32, 147.9, 563.6]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "LS_ACC (02h)", "page": 128, "bbox": [147.9, 541.32, 245.13, 563.6]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "00h", "page": 128, "bbox": [245.13, 541.32, 342.33, 563.6]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "00h", "page": 128, "bbox": [342.33, 541.32, 439.53, 563.6]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "00h", "page": 128, "bbox": [439.53, 541.32, 536.0, 563.6]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 128, "bbox": [100.0, 563.6, 147.9, 585.36]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "OX_ID", "page": 128, "bbox": [147.9, 563.6, 342.33, 585.36]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 128, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "RX_ID", "page": 128, "bbox": [342.33, 563.6, 536.0, 585.36]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "", "page": 128, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "2", "page": 128, "bbox": [100.0, 585.36, 147.9, 607.35]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Reserved", "page": 128, "bbox": [147.9, 585.36, 245.13, 607.35]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Originator Address Identifier", "page": 128, "bbox": [245.13, 585.36, 536.0, 607.35]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "", "page": 128, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "", "page": 128, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "3", "page": 128, "bbox": [100.0, 607.35, 147.9, 629.52]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Reserved", "page": 128, "bbox": [147.9, 607.35, 245.13, 629.52]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "Responder Address Identifier", "page": 128, "bbox": [245.13, 607.35, 536.0, 629.52]}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "", "page": 128, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "", "page": 128, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "4", "page": 128, "bbox": [100.0, 629.52, 147.9, 651.39]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "FC4VALUE", "page": 128, "bbox": [147.9, 629.52, 536.0, 651.39]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "", "page": 128, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r6c4", "row": 6, "col": 4, "text": "", "page": 128, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r6c5", "row": 6, "col": 5, "text": "", "page": 128, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "5", "page": 128, "bbox": [100.0, 651.39, 147.9, 673.35]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "E_STAT", "page": 128, "bbox": [147.9, 651.39, 536.0, 673.35]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "", "page": 128, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r7c4", "row": 7, "col": 4, "text": "", "page": 128, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r7c5", "row": 7, "col": 5, "text": "", "page": 128, "bbox": [0.0, 0.0, 0.0, 0.0]}

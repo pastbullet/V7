@@ -1,0 +1,45 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 84, "bbox": [97.45, 98.62, 144.18, 126.99]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 ... 24\nByte 0", "page": 84, "bbox": [144.18, 98.62, 236.65, 126.99]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 ... 16\nByte 1", "page": 84, "bbox": [236.65, 98.62, 346.05, 126.99]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 ... 08\nByte 2", "page": 84, "bbox": [346.05, 98.62, 433.09, 126.99]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 ... 00\nByte 3", "page": 84, "bbox": [433.09, 98.62, 538.55, 126.99]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 84, "bbox": [97.45, 126.99, 144.18, 144.03]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "02h", "page": 84, "bbox": [144.18, 126.99, 236.65, 144.03]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "00h", "page": 84, "bbox": [236.65, 126.99, 346.05, 144.03]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "00h", "page": 84, "bbox": [346.05, 126.99, 433.09, 144.03]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "00h", "page": 84, "bbox": [433.09, 126.99, 538.55, 144.03]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 84, "bbox": [97.45, 144.03, 144.18, 185.32]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Node Identification\nData Format", "page": 84, "bbox": [144.18, 144.03, 236.65, 185.32]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "Common\nIdentification Data\nLength (0 or 16)", "page": 84, "bbox": [236.65, 144.03, 346.05, 185.32]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "Reserved", "page": 84, "bbox": [346.05, 144.03, 433.09, 185.32]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "Specific\nIdentification Data\nLength", "page": 84, "bbox": [433.09, 144.03, 538.55, 185.32]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "2", "page": 84, "bbox": [97.45, 185.32, 144.18, 202.05]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Common Identification Data\n(0 bytes or 16 bytes)", "page": 84, "bbox": [144.18, 185.32, 538.55, 236.01]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "...", "page": 84, "bbox": [97.45, 202.05, 144.18, 219.03]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "5", "page": 84, "bbox": [97.45, 219.03, 144.18, 236.01]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r6c4", "row": 6, "col": 4, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r6c5", "row": 6, "col": 5, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "6", "page": 84, "bbox": [97.45, 236.01, 144.18, 253.05]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "Specific Identification Data (m)\n(0 - max bytes)", "page": 84, "bbox": [144.18, 236.01, 538.55, 286.98]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r7c4", "row": 7, "col": 4, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r7c5", "row": 7, "col": 5, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "...", "page": 84, "bbox": [97.45, 253.05, 144.18, 270.03]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r8c4", "row": 8, "col": 4, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r8c5", "row": 8, "col": 5, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "m", "page": 84, "bbox": [97.45, 270.03, 144.18, 286.98]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r9c4", "row": 9, "col": 4, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r9c5", "row": 9, "col": 5, "text": "", "page": 84, "bbox": [0.0, 0.0, 0.0, 0.0]}

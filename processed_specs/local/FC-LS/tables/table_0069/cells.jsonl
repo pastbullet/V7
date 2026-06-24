@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Value", "page": 89, "bbox": [109.48, 435.84, 165.75, 457.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Version", "page": 89, "bbox": [165.75, 435.84, 273.03, 457.32]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Description", "page": 89, "bbox": [273.03, 435.84, 526.52, 457.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "00h", "page": 89, "bbox": [109.48, 457.32, 165.75, 503.37]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "None", "page": 89, "bbox": [165.75, 457.32, 273.03, 503.37]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Indicates that this port is not providing IP support, and the\nNode Management, UDP Port, and IP Address fields shall\nbe ignored.", "page": 89, "bbox": [273.03, 457.32, 526.52, 503.37]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "01h", "page": 89, "bbox": [109.48, 503.37, 165.75, 527.37]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "IPv4 (IP version 4)", "page": 89, "bbox": [165.75, 503.37, 273.03, 527.37]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "See RFC 791", "page": 89, "bbox": [273.03, 503.37, 526.52, 527.37]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "02h", "page": 89, "bbox": [109.48, 527.37, 165.75, 551.37]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "IPv6 (IP version 6)", "page": 89, "bbox": [165.75, 527.37, 273.03, 551.37]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "See RFC 2460", "page": 89, "bbox": [273.03, 527.37, 526.52, 551.37]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "03h - FFh", "page": 89, "bbox": [109.48, 551.37, 165.75, 574.84]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Reserved", "page": 89, "bbox": [165.75, 551.37, 273.03, 574.84]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "", "page": 89, "bbox": [273.03, 551.37, 526.52, 574.84]}

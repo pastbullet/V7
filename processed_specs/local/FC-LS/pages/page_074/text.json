@@ -1,0 +1,673 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 74,
+  "spans": [
+    {
+      "span_id": "p074_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0002",
+      "text": " 55",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0003",
+      "text": "e)",
+      "bbox": [
+        106.02,
+        57.65,
+        114.91,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0004",
+      "text": " Image Pair Established:",
+      "bbox": [
+        114.91,
+        57.65,
+        236.48,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p074_s0005",
+      "text": " Image Pair Established is valid only if bit 13 was set to one on the",
+      "bbox": [
+        236.58,
+        57.65,
+        540.07,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p074_s0006",
+      "text": "corresponding Service Parameter page of the PRLI Request.",
+      "bbox": [
+        122.4,
+        69.65,
+        391.82,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0007",
+      "text": "0 = Image pair not established, see response code for additional information",
+      "bbox": [
+        122.4,
+        94.97,
+        458.76,
+        106.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0008",
+      "text": "1 = Image pair established",
+      "bbox": [
+        122.4,
+        106.97,
+        239.92,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0009",
+      "text": "f)",
+      "bbox": [
+        106.02,
+        130.97,
+        112.16,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0010",
+      "text": "Response code:",
+      "bbox": [
+        122.4,
+        130.97,
+        199.77,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0011",
+      "text": " The response code field contains an encoded binary value indicating the re-",
+      "bbox": [
+        199.8,
+        130.97,
+        540.05,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p074_s0012",
+      "text": "sult of the PRLI Request.  The meanings of the encoded response code values are shown in",
+      "bbox": [
+        122.4,
+        142.96,
+        540.03,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0013",
+      "text": "table 46.",
+      "bbox": [
+        122.4,
+        154.96,
+        160.76,
+        166.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0014",
+      "text": "g)",
+      "bbox": [
+        106.02,
+        178.96,
+        114.91,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0015",
+      "text": " Service parameter response:",
+      "bbox": [
+        114.91,
+        178.96,
+        260.06,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p074_s0016",
+      "text": " Provides feedback to the Originator as to the resultant state of",
+      "bbox": [
+        260.1,
+        178.96,
+        540.07,
+        190.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p074_s0017",
+      "text": "the Service Parameters as returned by the Responder. The length of the PRLI LS_ACC service",
+      "bbox": [
+        122.4,
+        190.96,
+        540.02,
+        202.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0018",
+      "text": "parameter repsonse may be 0 to 60 words long as specified in the respective FC-4 standard",
+      "bbox": [
+        122.4,
+        202.96,
+        539.98,
+        214.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0019",
+      "text": "(see 7.1.1). The first three words of each PRLI LS_ACC service parameter response page",
+      "bbox": [
+        122.4,
+        214.96,
+        539.57,
+        226.08
+      ],
+      "block_index": 6,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0020",
+      "text": "shall be as specified in table 45, words 0 to 2.",
+      "bbox": [
+        122.4,
+        226.96,
+        324.02,
+        238.08
+      ],
+      "block_index": 6,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0021",
+      "text": " Table 46 – PRLI accept response code",
+      "bbox": [
+        225.78,
+        248.98,
+        410.13,
+        260.1
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0022",
+      "text": "Encoded Value",
+      "bbox": [
+        112.38,
+        271.0,
+        184.06,
+        282.12
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0023",
+      "text": "Word 0, Bits 11-8",
+      "bbox": [
+        107.7,
+        283.0,
+        188.76,
+        294.12
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0024",
+      "text": "Description",
+      "bbox": [
+        334.54,
+        283.0,
+        389.54,
+        294.12
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0025",
+      "text": "0000b",
+      "bbox": [
+        134.34,
+        307.0,
+        162.07,
+        318.12
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0026",
+      "text": "Reserved",
+      "bbox": [
+        194.22,
+        305.98,
+        236.97,
+        317.1
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0027",
+      "text": "0001b",
+      "bbox": [
+        134.34,
+        331.0,
+        162.07,
+        342.12
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0028",
+      "text": "Request executed",
+      "bbox": [
+        194.22,
+        329.98,
+        274.74,
+        341.1
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0029",
+      "text": "0010b",
+      "bbox": [
+        134.34,
+        355.0,
+        162.07,
+        366.12
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0030",
+      "text": "The Exchange recipient has no resources available for establishing image ",
+      "bbox": [
+        194.22,
+        352.96,
+        523.61,
+        364.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0031",
+      "text": "pairs between the specified source and destination Nx_Ports.  The PRLI ",
+      "bbox": [
+        194.22,
+        364.96,
+        515.86,
+        376.08
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0032",
+      "text": "Request may be retried.",
+      "bbox": [
+        194.22,
+        376.96,
+        300.77,
+        388.08
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0033",
+      "text": "0011b",
+      "bbox": [
+        134.34,
+        400.96,
+        162.07,
+        412.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0034",
+      "text": "Initialization is not complete for the Exchange recipient.  The PRLI Request ",
+      "bbox": [
+        194.22,
+        398.98,
+        528.6,
+        410.1
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0035",
+      "text": "may be retried.",
+      "bbox": [
+        194.22,
+        410.98,
+        260.86,
+        422.1
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0036",
+      "text": "0100b",
+      "bbox": [
+        134.34,
+        434.98,
+        162.07,
+        446.1
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0037",
+      "text": "The Exchange recipient corresponding to the Responder ",
+      "bbox": [
+        194.22,
+        433.0,
+        447.54,
+        444.12
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0038",
+      "text": "Process_Associator specified in the PRLI Request and PRLI LS_ACC ",
+      "bbox": [
+        194.22,
+        445.0,
+        505.86,
+        456.12
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0039",
+      "text": "response does not exist.  The PRLI Request shall not be retried.",
+      "bbox": [
+        194.22,
+        457.0,
+        477.99,
+        468.12
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0040",
+      "text": "0101b",
+      "bbox": [
+        134.34,
+        481.0,
+        162.07,
+        492.12
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0041",
+      "text": "The Exchange recipient has a predefined configuration that precludes ",
+      "bbox": [
+        194.22,
+        478.96,
+        504.77,
+        490.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0042",
+      "text": "establishing this image pair.  The PRLI Request shall not be retried.",
+      "bbox": [
+        194.22,
+        490.96,
+        493.18,
+        502.08
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0043",
+      "text": "0110b",
+      "bbox": [
+        134.34,
+        514.96,
+        162.07,
+        526.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0044",
+      "text": "Request executed conditionally.  Some Service Parameters were not able to ",
+      "bbox": [
+        194.22,
+        512.98,
+        531.08,
+        524.1
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0045",
+      "text": "be set to their requested state (see table 43)",
+      "bbox": [
+        194.22,
+        524.98,
+        390.31,
+        536.1
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0046",
+      "text": "0111b",
+      "bbox": [
+        134.34,
+        548.98,
+        162.07,
+        560.09
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0047",
+      "text": "Obsolete",
+      "bbox": [
+        194.22,
+        547.96,
+        234.18,
+        559.08
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0048",
+      "text": "1000b",
+      "bbox": [
+        134.34,
+        572.98,
+        162.07,
+        584.09
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0049",
+      "text": "Service Parameters are invalid",
+      "bbox": [
+        194.22,
+        571.96,
+        330.24,
+        583.07
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0050",
+      "text": "1001b to 1111b",
+      "bbox": [
+        113.46,
+        596.98,
+        182.96,
+        608.09
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p074_s0051",
+      "text": "Reserved",
+      "bbox": [
+        194.22,
+        595.96,
+        236.97,
+        607.07
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0049"
+  ]
+}

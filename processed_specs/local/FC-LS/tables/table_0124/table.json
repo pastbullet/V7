@@ -1,0 +1,95 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "Descriptor #1 = Tagging Administrative Status (see 4.2.43.2.2)a",
+      null,
+      null,
+      null
+    ],
+    [
+      "1",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "2",
+      "Descriptor #2 = Port VF_ID (see 4.2.43.2.3)b",
+      null,
+      null,
+      null
+    ],
+    [
+      "3",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "4",
+      "Descriptor #3 = Locally-Enabled VF_ID List (see 4.2.43.2.4)c",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "132",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "...",
+      "...",
+      null,
+      null,
+      null
+    ],
+    [
+      "H",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "...",
+      "Descriptor #m",
+      null,
+      null,
+      null
+    ],
+    [
+      "K",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "a Decriptor #1 is required to be present in EVFP_SYNC request.\nb Decriptor #2 is required to be present in EVFP_SYNC request.\nc Decriptor #3 is required to be present in EVFP_SYNC request.",
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Nx_Port\n0\n0\n1\n1", "page": 181, "bbox": [90.51, 615.86, 141.21, 711.84]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Fx_Port", "page": 181, "bbox": [141.21, 615.86, 189.45, 632.34]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Meaning", "page": 181, "bbox": [189.45, 615.86, 542.36, 632.34]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "", "page": 181, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "0", "page": 181, "bbox": [141.21, 632.34, 189.45, 649.35]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Neither supports", "page": 181, "bbox": [189.45, 632.34, 542.36, 649.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "", "page": 181, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "1", "page": 181, "bbox": [141.21, 649.35, 189.45, 666.39]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "Fabric is capable of supporting, Sequential delivery is functional", "page": 181, "bbox": [189.45, 649.35, 542.36, 666.39]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "", "page": 181, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "0", "page": 181, "bbox": [141.21, 666.39, 189.45, 683.37]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "Nx_Port support requested, Fabric does not support", "page": 181, "bbox": [189.45, 666.39, 542.36, 683.37]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "", "page": 181, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "1", "page": 181, "bbox": [141.21, 683.37, 189.45, 711.84]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "Nx_Port requested, Fabric is capable of supporting, Sequential delivery is\nfunctional", "page": 181, "bbox": [189.45, 683.37, 542.36, 711.84]}

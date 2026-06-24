@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0029",
+  "type": "table",
+  "caption": "Table 26 – FAN Payload",
+  "pages": [
+    60
+  ],
+  "bbox": [
+    100.13,
+    158.62,
+    535.87,
+    288.99
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 60
+}

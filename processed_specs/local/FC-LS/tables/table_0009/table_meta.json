@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0009",
+  "type": "table",
+  "caption": "Table 6 – ADVC LS_ACC Payload",
+  "pages": [
+    44
+  ],
+  "bbox": [
+    100.57,
+    243.96,
+    535.43,
+    709.35
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 44
+}

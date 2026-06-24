@@ -1,0 +1,10 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Function", "page": 142, "bbox": [165.64, 98.28, 427.83, 120.0]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Value", "page": 142, "bbox": [427.83, 98.28, 470.36, 120.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "Reserved", "page": 142, "bbox": [165.64, 120.0, 427.83, 144.03]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "0", "page": 142, "bbox": [427.83, 120.0, 470.36, 144.03]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "Full registration - Register to receive FFI_RMUN Requests.\nIf the requesting Nx_Port is already registered, this request\nis treated as a NOP function.", "page": 142, "bbox": [165.64, 144.03, 427.83, 190.05]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "3", "page": 142, "bbox": [427.83, 144.03, 470.36, 190.05]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "Reserved", "page": 142, "bbox": [165.64, 190.05, 427.83, 214.05]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "4 - 254", "page": 142, "bbox": [427.83, 190.05, 470.36, 214.05]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "Clear registration – Remove the current FFI_RMUN\nregistration, if any. If the requesting Nx_Port is not\nregistered, this request is treated as a NOP function.", "page": 142, "bbox": [165.64, 214.05, 427.83, 259.68]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "255", "page": 142, "bbox": [427.83, 214.05, 470.36, 259.68]}

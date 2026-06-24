@@ -1,0 +1,764 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 149,
+  "spans": [
+    {
+      "span_id": "p149_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0002",
+      "text": " 130",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0003",
+      "text": "25h",
+      "bbox": [
+        123.66,
+        127.67,
+        140.3,
+        138.78
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0004",
+      "text": "Obsolete",
+      "bbox": [
+        170.16,
+        126.65,
+        210.14,
+        137.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0005",
+      "text": "27h",
+      "bbox": [
+        123.66,
+        151.67,
+        140.3,
+        162.78
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0006",
+      "text": "Obsolete",
+      "bbox": [
+        170.16,
+        150.65,
+        210.14,
+        161.76
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0007",
+      "text": "29h",
+      "bbox": [
+        123.66,
+        175.67,
+        140.3,
+        186.78
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0008",
+      "text": "Insufficient resources to support Login FLOGI, PLOGI, FDISC",
+      "bbox": [
+        170.16,
+        174.65,
+        442.47,
+        185.76
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0009",
+      "text": "2Ah",
+      "bbox": [
+        123.06,
+        199.67,
+        140.84,
+        210.78
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0010",
+      "text": "Unable to supply requested data",
+      "bbox": [
+        170.16,
+        198.65,
+        314.08,
+        209.76
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0011",
+      "text": "ADVC, ESTS, RCS, RLS, RTV",
+      "bbox": [
+        340.76,
+        198.65,
+        477.33,
+        209.76
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0012",
+      "text": "2Ch",
+      "bbox": [
+        122.82,
+        223.67,
+        141.13,
+        234.78
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0013",
+      "text": "Request not supported",
+      "bbox": [
+        170.16,
+        233.63,
+        271.29,
+        244.74
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0014",
+      "text": "ADVC, ESTS, PRLI, PRLO, TPLS, TPRLO, ",
+      "bbox": [
+        340.74,
+        221.63,
+        535.62,
+        232.74
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0015",
+      "text": "GAID, FACT, FDACT, NACT, NDACT, ",
+      "bbox": [
+        340.74,
+        233.63,
+        514.02,
+        244.74
+      ],
+      "block_index": 7,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0016",
+      "text": "PDISC, FDISC, ADISC, RNC, RNFT",
+      "bbox": [
+        340.74,
+        245.63,
+        502.33,
+        256.74
+      ],
+      "block_index": 7,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0017",
+      "text": "2Dh",
+      "bbox": [
+        122.82,
+        269.63,
+        141.13,
+        280.74
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0018",
+      "text": "Invalid Payload length",
+      "bbox": [
+        170.16,
+        268.67,
+        267.84,
+        279.78
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0019",
+      "text": "FLOGI, PLOGI",
+      "bbox": [
+        340.66,
+        268.67,
+        406.77,
+        279.78
+      ],
+      "block_index": 8,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0020",
+      "text": "30h",
+      "bbox": [
+        123.66,
+        293.63,
+        140.29,
+        304.74
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0021",
+      "text": "No Alias_IDs available for this ",
+      "bbox": [
+        170.16,
+        291.65,
+        305.71,
+        302.76
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0022",
+      "text": "Alias_ID Type",
+      "bbox": [
+        170.16,
+        303.65,
+        232.37,
+        314.76
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0023",
+      "text": "Get Alias_ID",
+      "bbox": [
+        340.74,
+        297.65,
+        396.8,
+        308.76
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0024",
+      "text": "31h",
+      "bbox": [
+        123.66,
+        327.65,
+        140.29,
+        338.76
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0025",
+      "text": "Alias_ID not activated",
+      "bbox": [
+        170.16,
+        325.67,
+        266.77,
+        336.78
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0026",
+      "text": "(no resources available)",
+      "bbox": [
+        170.16,
+        337.67,
+        276.84,
+        348.78
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0027",
+      "text": "Fabric Activate Alias ID,",
+      "bbox": [
+        340.74,
+        325.67,
+        446.79,
+        336.78
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0028",
+      "text": "N_Port Activate Alias ID",
+      "bbox": [
+        340.74,
+        337.67,
+        447.27,
+        348.78
+      ],
+      "block_index": 10,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0029",
+      "text": "32h",
+      "bbox": [
+        123.66,
+        361.66,
+        140.29,
+        372.78
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0030",
+      "text": "Alias_ID not activated ",
+      "bbox": [
+        170.16,
+        359.62,
+        269.55,
+        370.74
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0031",
+      "text": "(invalid Alias_ID)",
+      "bbox": [
+        170.16,
+        371.62,
+        245.06,
+        382.74
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0032",
+      "text": "Fabric Activate Alias ID,",
+      "bbox": [
+        340.74,
+        359.62,
+        446.79,
+        370.74
+      ],
+      "block_index": 11,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0033",
+      "text": "N_Port Activate Alias ID",
+      "bbox": [
+        340.74,
+        371.62,
+        447.27,
+        382.74
+      ],
+      "block_index": 11,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0034",
+      "text": "33h",
+      "bbox": [
+        123.66,
+        395.62,
+        140.29,
+        406.74
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0035",
+      "text": "Alias_ID not deactivated",
+      "bbox": [
+        170.16,
+        393.64,
+        277.87,
+        404.76
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0036",
+      "text": "(doesn’t exist)",
+      "bbox": [
+        170.16,
+        405.64,
+        232.41,
+        416.76
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0037",
+      "text": "Fabric Deactivate Alias ID,",
+      "bbox": [
+        340.74,
+        393.64,
+        458.48,
+        404.76
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0038",
+      "text": "N_Port Deactivate Alias ID",
+      "bbox": [
+        340.74,
+        405.64,
+        458.97,
+        416.76
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0039",
+      "text": "34h",
+      "bbox": [
+        123.66,
+        429.64,
+        140.29,
+        440.76
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0040",
+      "text": "Alias_ID not deactivated",
+      "bbox": [
+        170.16,
+        427.66,
+        277.87,
+        438.78
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0041",
+      "text": "(resource problem)",
+      "bbox": [
+        170.16,
+        439.66,
+        254.62,
+        450.78
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0042",
+      "text": "Fabric Deactivate Alias ID,",
+      "bbox": [
+        340.74,
+        427.66,
+        458.48,
+        438.78
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0043",
+      "text": "N_Port Deactivate Alias ID",
+      "bbox": [
+        340.74,
+        439.66,
+        458.97,
+        450.78
+      ],
+      "block_index": 13,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0044",
+      "text": "35h",
+      "bbox": [
+        123.66,
+        463.66,
+        140.29,
+        474.78
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0045",
+      "text": "Service Parameter conflict",
+      "bbox": [
+        170.16,
+        462.64,
+        286.88,
+        473.76
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0046",
+      "text": "N_Port Activate Alias ID",
+      "bbox": [
+        340.81,
+        462.64,
+        447.32,
+        473.76
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0047",
+      "text": "36h",
+      "bbox": [
+        123.66,
+        487.66,
+        140.29,
+        498.78
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0048",
+      "text": "Invalid Alias_Token",
+      "bbox": [
+        170.16,
+        486.64,
+        256.76,
+        497.76
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0049",
+      "text": "Get Alias_ID",
+      "bbox": [
+        340.68,
+        486.64,
+        396.75,
+        497.76
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0050",
+      "text": "37h",
+      "bbox": [
+        123.66,
+        511.66,
+        140.29,
+        522.78
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0051",
+      "text": "Unsupported Alias_Token",
+      "bbox": [
+        170.16,
+        510.64,
+        285.05,
+        521.76
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0052",
+      "text": "N_Port Activate Alias ID",
+      "bbox": [
+        340.65,
+        510.64,
+        447.39,
+        521.76
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0053",
+      "text": " Table 147 – LS_RJT Reason Code Explanations(Continued)",
+      "bbox": [
+        175.8,
+        57.64,
+        460.18,
+        68.76
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0054",
+      "text": "Encoded ",
+      "bbox": [
+        110.88,
+        79.66,
+        155.83,
+        90.78
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0055",
+      "text": "Value",
+      "bbox": [
+        118.62,
+        91.66,
+        145.28,
+        102.78
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0056",
+      "text": "(Bits 15-8)",
+      "bbox": [
+        107.82,
+        103.66,
+        156.13,
+        114.78
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0057",
+      "text": "Description",
+      "bbox": [
+        225.95,
+        103.66,
+        280.91,
+        114.78
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p149_s0058",
+      "text": "Applicable ELSs",
+      "bbox": [
+        400.29,
+        103.66,
+        478.65,
+        114.78
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0152"
+  ]
+}

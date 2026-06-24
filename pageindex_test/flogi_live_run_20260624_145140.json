@@ -1,0 +1,1006 @@
+{
+  "query": "FLOGI 的完整流程、涉及机制和帧/Payload 结构是什么？请系统梳理。",
+  "answer": "下面按“定位 → 帧/Payload 结构 → 完整流程 → 关键机制/分支 → 实现视角总结”的顺序，系统梳理 FLOGI。所有具体结论都只基于已读取页面。\n\n---\n\n## 1. FLOGI 在 FC-LS 里的定位\n\nFLOGI（F_Port Login）是一个 ELS（Extended Link Service）命令；ELS 请求/应答都在单个 Exchange 内完成，且 ELS 帧的 `TYPE` 固定为 `01h`。<cite doc=\"FC-LS.pdf\" page=\"36\"/>  \n在 ELS 通用规则里，如果 Fabric 存在，则 **FLOGI 必须先于其他 ELS**。<cite doc=\"FC-LS.pdf\" page=\"36\"/>  \n表 3 进一步给出：`FLOGI` 的 `ELS_Command code` 是 `04h`，描述为 `F_Port Login`。<cite doc=\"FC-LS.pdf\" page=\"37\"/>\n\n从登录章节看，Login 的目标是让 Nx_Port 与 Fabric（若存在）以及后续通信对象建立运行环境；Fabric Login 和 N_Port Login 使用相似过程，但 `D_ID`、可能的 `S_ID` 不同。显式 Login 使用 FLOGI 或 PLOGI 这类 Login ELS，在新的 Exchange 中传送本端 Service Parameters，而 `LS_ACC` 返回对端的 Service Parameters。<cite doc=\"FC-LS.pdf\" page=\"152\"/>\n\n---\n\n## 2. FLOGI 的作用：它到底完成什么\n\n文档把 Fabric Login 的作用列得很清楚：\n\n1. 判断是否存在 Fabric；  \n2. 若存在，向 Nx_Port 提供整个 Fabric 的运行特征、`F_Port_Name` 和 `Fabric_Name`；  \n3. 若存在，把 Nx_Port 的运行特征、`N_Port_Name` 和 `Node_Name` 提供给 Fabric；  \n4. 若存在，Fabric 可为发起方分配或确认 `N_Port_ID`；  \n5. 初始化 buffer-to-buffer Credit；  \n6. 若双方支持认证，开启后续 Nx_Port-to-Fabric Authentication；  \n7. 若双方支持 Virtual Fabrics，开启后续 VF 参数协商。<cite doc=\"FC-LS.pdf\" page=\"153\"/>\n\n同时，**未完成 Fabric Login 前，不得尝试与其他 Nx_Ports 通信**。<cite doc=\"FC-LS.pdf\" page=\"153\"/>\n\n---\n\n## 3. 通用 ELS 帧规则：FLOGI 所依附的外层封装\n\n### 3.1 Exchange / Sequence 规则\n\n- 一个 ELS 请求或应答由 **单个 Sequence** 组成；  \n- `ELS_Command code` 位于 **该 Sequence 首帧 Payload 的第一个字**；  \n- 一个 ELS 请求及其应答必须在 **同一个 Exchange** 内完成；  \n- `LS_ACC` 通过在应答最后一帧把 **Last Sequence bit 置 1** 来结束该 Exchange；  \n- 若请求或应答有后续帧，这些后续帧只承载补充 Payload，不重复 `ELS_Command code`。<cite doc=\"FC-LS.pdf\" page=\"36\"/>\n\n### 3.2 TYPE / R_CTL\n\n- `TYPE = 01h`（ELS 帧固定值）。<cite doc=\"FC-LS.pdf\" page=\"36\"/>  \n- `R_CTL` 按表 2：  \n  - `0010b` = Request  \n  - `0011b` = Reply  \n  - `0001b` = Solicited Data（仅特殊 CSU ELS 使用）<cite doc=\"FC-LS.pdf\" page=\"36\"/>\n\n---\n\n## 4. FLOGI/PLOGI/LS_ACC 的总 Payload 版式\n\n表 149 给出了 **FLOGI、PLOGI 或 LS_ACC** 的通用 Login Payload 版式：\n\n| Word 范围 | 内容 |\n|---|---|\n| 0 | `ELS_Command code` |\n| 1–4 | `Common Service Parameters`（16 bytes） |\n| 5–6 | `Port_Name` |\n| 7–8 | `Node_Name` 或 `Fabric_Name` |\n| 9–12 | `Class 1 and Class 6 Service Parameters`（16 bytes） |\n| 13–16 | `Class 2 Service Parameters`（16 bytes） |\n| 17–20 | `Class 3 Service Parameters`（16 bytes） |\n| 21–24 | Obsolete |\n| 25–28 | `Vendor Version Level`（16 bytes） |\n| 29–30 | `Services Availability`（8 bytes）* |\n| 31 | `Login Extension Data Length` * |\n| 32–61 | Reserved * |\n| 62–63 | `Clock Synchronization QoS`（8 bytes）* |\n| 64–n | `Login Extension Data` * |\n\n其中带 `*` 的字段只有在 **Payload Bit=1** 时才出现；若 `Payload Bit=0`，这些字段不存在，此时 Payload 长度为 **116 bytes**。<cite doc=\"FC-LS.pdf\" page=\"166\"/>\n\n这意味着：**FLOGI 本质上是“ELS 外层 + Login 通用载荷 + FLOGI 专用适用性规则”**。<cite doc=\"FC-LS.pdf\" page=\"166\"/>\n\n---\n\n## 5. FLOGI 请求帧：发起时要怎么填\n\n### 5.1 发送条件与地址填写\n\n显式 Fabric Login 要求 Nx_Port 发送一个 `FLOGI` ELS。<cite doc=\"FC-LS.pdf\" page=\"153\"/>  \n该 FLOGI：\n\n- 必须在 **新的 Exchange** 中发送；<cite doc=\"FC-LS.pdf\" page=\"153\"/>\n- 由 Nx_Port 分配 `OX_ID`；<cite doc=\"FC-LS.pdf\" page=\"153\"/>\n- `D_ID` 必须设为 **众所周知的 F_Port 地址 `FFFFFEh`**。<cite doc=\"FC-LS.pdf\" page=\"153\"/>\n\n### 5.2 Payload 内容\n\nFLOGI Payload 包含：\n\n- 发起方的 `Service Parameters`；\n- 64-bit `N_Port_Name`；\n- 64-bit `Node_Name`。<cite doc=\"FC-LS.pdf\" page=\"153\"/>\n\n这些 Service Parameters 的总体结构与适用性由 6.6 节及表 150/155/151/156 等决定。<cite doc=\"FC-LS.pdf\" page=\"153\"/><cite doc=\"FC-LS.pdf\" page=\"167\"/><cite doc=\"FC-LS.pdf\" page=\"169\"/><cite doc=\"FC-LS.pdf\" page=\"179\"/>\n\n### 5.3 未标识端口时的 S_ID 语义\n\n若 Nx_Port 尚未标识，它在 FLOGI 里的 `S_ID` 有两种合法请求方式：\n\n| S_ID 填法 | 含义 |\n|---|---|\n| `000000h` | 请求 Fabric 分配全部 24 位 `N_Port_ID` |\n| `0000h || YY` | 请求 Fabric 分配高 16 位（23:8），并校验低 8 位（7:0） |\n\n这里低 8 位就是 `AL_PA`。<cite doc=\"FC-LS.pdf\" page=\"153\"/>\n\n---\n\n## 6. FLOGI 的 Payload 内部结构：重点字段怎么理解\n\n## 6.1 Common Service Parameters（FLOGI 请求）\n\n文档明确说：FLOGI 的 Common Service Parameters Payload 见 **表 151**。<cite doc=\"FC-LS.pdf\" page=\"169\"/>\n\n表 151 给出 FLOGI 请求中 Common Service Parameters 的布局：\n\n| Word | 内容 |\n|---|---|\n| 0 | `FC-PH Version - obsolete` + `Buffer-to-buffer Credit` |\n| 1 | `Common Features` + `BB_SC_N` + `Buffer-to-buffer Receive Data Field size` |\n| 2 | Reserved |\n| 3 | Reserved |\n\n但这是“版式表”；哪些字段对 FLOGI 真正有意义，要结合 **表 150（适用性）** 看。<cite doc=\"FC-LS.pdf\" page=\"169\"/><cite doc=\"FC-LS.pdf\" page=\"167\"/><cite doc=\"FC-LS.pdf\" page=\"168\"/>\n\n### 6.1.1 表 150 中与 FLOGI 最相关的 Common 参数\n\n对 FLOGI 请求/LS_ACC 特别关键的点可归纳为：\n\n| 参数 | 位置 | 对 FLOGI 的意义 |\n|---|---|---|\n| `Buffer-to-buffer Credit` | word 0 bits 15:0 | 对 FLOGI 与 FLOGI LS_ACC 都适用 |\n| `Virtual Fabrics bit` | word 1 bit 30 | 对 FLOGI 与 FLOGI LS_ACC 都适用 |\n| `N_Port/F_Port` | word 1 bit 28 | 对 FLOGI 与 FLOGI LS_ACC 都适用 |\n| `Payload Bit` | word 1 bit 16 | 对 FLOGI 与 FLOGI LS_ACC 都适用；决定后续扩展字段是否存在 |\n| `R_T_TOV Value` | word 1 bit 19 所在参数项 | 对 FLOGI 与 FLOGI LS_ACC 都适用 |\n| `Clock Synchronization Primitive Capable` | word 1 bit 20 | 对 FLOGI 与 FLOGI LS_ACC 都适用 |\n| `Multicast/Broadcast/Hunt Group supported by Fabric` | word 1 bits 25/24/23 | **只对 FLOGI LS_ACC 有意义**，对 FLOGI 请求无意义 |\n| `Multiple N_Port_ID Support` | word 1 bit 31（在 FLOGI 列） | 对 FLOGI 请求适用，对 FLOGI LS_ACC 不适用 |\n| `Multiple N_Port_ID Assignment` | word 1 bit 29（在 FLOGI LS_ACC 列） | 对 FLOGI LS_ACC 适用，对 FLOGI 请求不适用 |\n\n以上可直接从表 150 的 FLOGI / FLOGI LS_ACC applicability 列读出。<cite doc=\"FC-LS.pdf\" page=\"167\"/><cite doc=\"FC-LS.pdf\" page=\"168\"/>\n\n### 6.1.2 若需要特别关心的数值/约束\n\n- `Buffer-to-buffer Credit` 的取值范围是 **1 到 32767**，`0` 保留。<cite doc=\"FC-LS.pdf\" page=\"170\"/>\n- 在表 150 中，`Payload Bit` 默认值是 `0`；它决定表 149 后半部分扩展字段是否出现。<cite doc=\"FC-LS.pdf\" page=\"168\"/><cite doc=\"FC-LS.pdf\" page=\"166\"/>\n- `N_Port/F_Port` 的注释说明：`0` 表示 N_Port，`1` 表示 F_Port。<cite doc=\"FC-LS.pdf\" page=\"167\"/>\n\n## 6.2 FLOGI LS_ACC 的 Common Service Parameters\n\n文档说 FLOGI LS_ACC 的 Common Service Parameters Payload 见 **表 153**。<cite doc=\"FC-LS.pdf\" page=\"170\"/>\n\n表 153 的布局为：\n\n| Word | 内容 |\n|---|---|\n| 0 | `FC-PH Version - obsolete` + `Buffer-to-buffer Credit (Fx_Port)` |\n| 1 | `Common Features` + `BB_SC_N` + `Buffer-to-buffer Receive Data Field size` |\n| 2 | `R_A_TOV` |\n| 3 | `E_D_TOV` |\n\n这和 FLOGI 请求（表 151）形成重要区别：  \n**FLOGI 请求的 word 2/3 版式是 Reserved，而 FLOGI LS_ACC 的 word 2/3 承载 `R_A_TOV` 与 `E_D_TOV`。**<cite doc=\"FC-LS.pdf\" page=\"169\"/><cite doc=\"FC-LS.pdf\" page=\"170\"/>\n\n## 6.3 Class Service Parameters（FLOGI 请求 / FLOGI LS_ACC）\n\n文档说：\n\n- FLOGI 的 Payload Class Service Parameters 见 **表 156**；  \n- FLOGI LS_ACC 的 Payload Class Service Parameters 见 **表 158**。<cite doc=\"FC-LS.pdf\" page=\"179\"/>\n\n### 6.3.1 表 156：FLOGI 请求中的 Class Service Parameters\n\n| Word | 内容 |\n|---|---|\n| 0 | `Service Options` + `Initiator Control` |\n| 1 | `Recipient Control` + `Reserved` |\n| 2 | `Reserved` + `Total Concurrent Sequences` + `Nx_Port End-to-end Credit` |\n| 3 | `Reserved` + `Open Sequences per Exchange` + `Reserved` |\n\n<cite doc=\"FC-LS.pdf\" page=\"179\"/>\n\n### 6.3.2 表 158：FLOGI LS_ACC 中的 Class Service Parameters\n\n| Word | 内容 |\n|---|---|\n| 0 | `Service Options` + `Reserved` |\n| 1 | `Recipient Control` + `Reserved` |\n| 2 | `Reserved` + `Reserved` |\n| 3 | `CR_TOV` |\n\n<cite doc=\"FC-LS.pdf\" page=\"179\"/>\n\n### 6.3.3 Class validity 规则\n\n类服务参数是否有效由 **word 0 bit 31** 的 Class validity bit 决定：\n\n- `0` = Invalid / Class not supported  \n- `1` = Valid / Class supported  \n\n若为 `0`，这一整组 16 字节应被忽略；若为 `1`，则该 Class 被支持。<cite doc=\"FC-LS.pdf\" page=\"179\"/>\n\n---\n\n## 7. FLOGI 的完整流程\n\n下面把 FLOGI 流程分成“发起 → 正常接受 → 非 Fabric/点对点分支 → Busy/Reject/超时分支 → 完成判定”。\n\n### 7.1 发起阶段\n\n1. Nx_Port 决定执行显式 Fabric Login；<cite doc=\"FC-LS.pdf\" page=\"152\"/><cite doc=\"FC-LS.pdf\" page=\"153\"/>\n2. 在 **新的 Exchange** 中发送 `FLOGI`；<cite doc=\"FC-LS.pdf\" page=\"153\"/>\n3. 填入本端 Service Parameters、`N_Port_Name`、`Node_Name`；<cite doc=\"FC-LS.pdf\" page=\"153\"/>\n4. `D_ID = FFFFFEh`；<cite doc=\"FC-LS.pdf\" page=\"153\"/>\n5. 若尚无地址，则 `S_ID` 用 `000000h` 或 `0000h||YY` 表达地址分配诉求。<cite doc=\"FC-LS.pdf\" page=\"153\"/>\n\n---\n\n### 7.2 正常成功：收到 Fabric 的 LS_ACC\n\n这是最标准的 FLOGI 成功路径：\n\n- 返回帧是 `LS_ACC`；\n- `OX_ID` 与原 FLOGI 相同；\n- Common Service `N_Port/F_Port bit = 1`，表示响应方是 `Fx_Port`；\n- `LS_ACC` 的 `D_ID` 是 Fabric 分配给本端的 `N_Port_ID`；  \n  - 若原 `S_ID = 000000h`，则返回的 `D_ID = XXXXXX`；  \n  - 若原 `S_ID = 0000h || YY`，则返回 `D_ID = XXXXYY`；  \n  - 若原 `S_ID = XXXXXX`，则返回同值 `XXXXXX`；\n- Payload 中包含：\n  - 整个 Fabric 的 Service Parameters；\n  - 64-bit `F_Port_Name`；\n  - 64-bit `Fabric_Name`。<cite doc=\"FC-LS.pdf\" page=\"154\"/>\n\n收到这个成功应答后，Nx_Port：\n- 如果新的 `N_Port_ID / F_Port_Name / Fabric_Name` 与之前登录结果一致，可继续已有操作；\n- 或继续进入 `N_Port Login`。<cite doc=\"FC-LS.pdf\" page=\"154\"/>\n\n---\n\n### 7.3 非 Fabric 分支：FLOGI 实际打到了另一个 Nx_Port（点对点判定）\n\n如果收到的是：\n\n- `LS_ACC`；\n- `OX_ID` 与原 FLOGI 相同；\n- Common Service `Nx_Port/F_Port bit = 0`，表示响应方是 `Nx_Port`；\n\n那么这说明当前是 **point-to-point 连接到了另一个 Nx_Port，而不是 Fabric**。此时：\n\n- `LS_ACC.D_ID = FLOGI.S_ID`；\n- Payload 带回“来自 FLOGI 的 Service Parameters，但所有 classes 标记为 invalid”，以及该对端的 64-bit `N_Port_Name` 和 64-bit `Node_Name`；  \n- 若收到的 `N_Port_Name` **小于** 本端的 `N_Port_Name`，本端继续执行 `N_Port Login`；  \n- 若收到的 `N_Port_Name` **大于** 本端的 `N_Port_Name`，本端等待对方发来 `PLOGI`。<cite doc=\"FC-LS.pdf\" page=\"154\"/>\n\n文档在 6.2.2.4 还给出对称规则：  \n如果一个 Nx_Port **收到** FLOGI，它也应返回上述这种 `Nx_Port/F_Port bit = 0` 的 `LS_ACC`，并按双方 `N_Port_Name` 的大小关系决定自己是继续 PLOGI 还是等待。<cite doc=\"FC-LS.pdf\" page=\"155\"/>\n\n这一步很关键：  \n**FLOGI 不只是“登录 Fabric”，它还承担“探测当前是不是 Fabric、否则识别点对点邻居”的作用。**<cite doc=\"FC-LS.pdf\" page=\"153\"/><cite doc=\"FC-LS.pdf\" page=\"154\"/>\n\n---\n\n### 7.4 Busy / Reject / No Response 分支\n\n#### 7.4.1 `F_BSY`\n\n若收到 `F_BSY`，说明 **Fabric busy**，可以稍后重试 FLOGI。<cite doc=\"FC-LS.pdf\" page=\"154\"/>\n\n#### 7.4.2 `P_BSY`\n\n若收到 `P_BSY`，说明实际上连到一个当前 busy 的 `Nx_Port`；本端可在延迟后继续尝试 `N_Port Login`。<cite doc=\"FC-LS.pdf\" page=\"154\"/>\n\n#### 7.4.3 `F_RJT`\n\n若收到 `F_RJT`，说明 Fabric 拒绝了 FLOGI，请根据 reason code 动作：\n\n- 若 reason = `\"Class not supported\"`：  \n  可换一个 class 重新发起 FLOGI；<cite doc=\"FC-LS.pdf\" page=\"154\"/>\n- 若 reason = `\"Invalid S_ID\"`：  \n  - 若被拒请求中的 `S_ID` 是 `000000h` 或 `0000h || YY`，可在标准外方法下自行选择一个 24-bit `N_Port_ID = XXXXXX`，再以此 `S_ID` 重发 FLOGI；  \n  - 若被拒请求中的 `S_ID = XXXXXX`，可重新选择 `00 00 00`、`00 00 yy` 或新的 `XX XX XX`，再重发。<cite doc=\"FC-LS.pdf\" page=\"154\"/>\n\n#### 7.4.4 `P_RJT`\n\n若收到 `P_RJT`，说明是点对点的另一个 `Nx_Port` 拒绝。  \n- 若 reason = `\"Class not supported\"`：可用不同 class 继续做 `N_Port Login`；  \n- 其他 reason 按相应 code 处理。<cite doc=\"FC-LS.pdf\" page=\"154\"/>\n\n#### 7.4.5 `LS_RJT`\n\n若收到 `LS_RJT`：\n\n- `D_ID` 取 Fabric 分配给本端的 `N_Port_ID`（规则与前述地址分配情况一致）；\n- 动作由 Payload 中 reason code 决定；\n- 可根据 reason 修改 Service Parameters 后重新发起 FLOGI。<cite doc=\"FC-LS.pdf\" page=\"155\"/>\n\n#### 7.4.6 无响应\n\n若 **No Response**：\n\n- 可能表示物理传输投递错误；\n- 应按 FC-FS-2 做 error recovery；\n- 恢复后可重新发起 FLOGI。<cite doc=\"FC-LS.pdf\" page=\"155\"/>\n\n#### 7.4.7 自连场景\n\n若收到的 `N_Port_Name` 与自身相等，则视为端口连到自己；该情况超出本标准范围，FLOGI 被丢弃。<cite doc=\"FC-LS.pdf\" page=\"155\"/>\n\n---\n\n### 7.5 完成条件：什么时候算 FLOGI 结束\n\n文档分别定义了发起方与响应方的“Fabric Login completion”。\n\n#### 7.5.1 发起方完成条件\n\n发起 FLOGI 的 Originator 认为 Fabric Login 已结束，当：\n\n- Class 1：已向 `LS_ACC` 发送 ACK（`EOFt` 或 `EOFdt`）；  \n- Class 2：已向 `LS_ACC` 发送 ACK（`EOFt`）；  \n- Class 3：已收到 `LS_ACC`。<cite doc=\"FC-LS.pdf\" page=\"156\"/>\n\n完成后，buffer-to-buffer Credit 的值被初始化。<cite doc=\"FC-LS.pdf\" page=\"156\"/>\n\n#### 7.5.2 响应方完成条件\n\n响应方认为 Fabric Login 已结束，当：\n\n- Class 1：已收到对 `LS_ACC` 的 ACK（`EOFt` 或 `EOFdt`）；  \n- Class 2：已收到对 `LS_ACC` 的 ACK（`EOFt`）；  \n- Class 3：已发出 `LS_ACC`。<cite doc=\"FC-LS.pdf\" page=\"156\"/>\n\n成功结束后，同样初始化 buffer-to-buffer Credit。<cite doc=\"FC-LS.pdf\" page=\"156\"/>\n\n---\n\n## 8. FLOGI 之后与后续 PLOGI 的衔接\n\n文档明确写明：\n\n- 若通过 FLOGI 判定 **Fabric 存在**，则后续按 6.3.2.2 执行 `N_Port Login (PLOGI)`；  \n- 若通过 FLOGI 判定 **Fabric 不存在**，则按 6.3.2.4 执行点对点 N_Port Login。<cite doc=\"FC-LS.pdf\" page=\"156\"/>\n\n所以从“整体初始化流程”看：\n\n```text\n上电/初始化\n  → 尝试 FLOGI\n      → 若是 Fabric：拿到 Fabric 参数 / 地址 / 名称\n          → 再对具体目标做 PLOGI\n      → 若其实是点对点 Nx_Port：\n          → 用 FLOGI 结果决定谁发 PLOGI\n```\n\n这也是为什么 FLOGI 既是“登录”，也是“拓扑与角色探测”的第一步。<cite doc=\"FC-LS.pdf\" page=\"153\"/><cite doc=\"FC-LS.pdf\" page=\"154\"/><cite doc=\"FC-LS.pdf\" page=\"156\"/>\n\n---\n\n## 9. FLOGI 相关机制：你实现时最该关心的点\n\n## 9.1 显式 vs 隐式 Login\n\n- 标准允许显式和隐式 Login；\n- 显式 Login 就是通过 FLOGI/PLOGI ELS 交换 Service Parameters；\n- 隐式 Fabric Login **不要求** Nx_Port 必须支持 FLOGI 请求/应答。<cite doc=\"FC-LS.pdf\" page=\"152\"/>\n\n所以若你做的是“显式 FC 登录栈”，FLOGI 是核心；但标准承认还有其他不通过 FLOGI 的实现路径。<cite doc=\"FC-LS.pdf\" page=\"152\"/>\n\n## 9.2 旧参数替换\n\n显式 Fabric Login 会 **替换之前的 Service Parameters**。<cite doc=\"FC-LS.pdf\" page=\"153\"/>\n\n## 9.3 SOF / Class 选择与重试\n\nFabric Login 只允许在 **Class 1/2/3** 执行；若 Fabric 不支持某一类，FLOGI 可能要换 class 并用相应 SOF 重试。<cite doc=\"FC-LS.pdf\" page=\"155\"/>  \n- `SOFc1` 可用于尝试 Fabric Login 或 Relogin；  \n- `SOFi1` 不允许；  \n- Class 6 不能用于 Fabric Login。<cite doc=\"FC-LS.pdf\" page=\"155\"/>\n\n若收到 `F_RJT`，原因是 `\"Class of service not supported by entity at FFFFFEh\"`，则应改用另一受支持 SOF 继续尝试，直到完成或所有支持的 SOF 都试尽。若都失败或超时，则 Fabric 与 Nx_Port 不兼容，需要外部干预。<cite doc=\"FC-LS.pdf\" page=\"155\"/><cite doc=\"FC-LS.pdf\" page=\"156\"/>\n\n## 9.4 Relogin 的影响\n\n若之前已经登录过 Fabric：\n\n- 若新的 `N_Port_ID / F_Port_Name / Fabric_Name` 与上次相同，可继续现有通信；  \n- 若其中任一发生变化，Nx_Port 必须对所有 Nx_Ports 做 **implicit logout**，并等待一个 `R_A_TOV` 超时后，才能重新发起或接受通信；之后必须重新进行 N_Port Login。<cite doc=\"FC-LS.pdf\" page=\"155\"/>\n\n这说明 FLOGI 不是一次性的“发现过程”，而是影响整个已建立关系集的一致性检查点。<cite doc=\"FC-LS.pdf\" page=\"155\"/>\n\n---\n\n## 10. 一个面向实现者的“最小可落地流程图”\n\n### 10.1 发起侧\n\n1. 构造 ELS 帧：\n   - `TYPE=01h`\n   - `R_CTL=Request(0010b)`\n   - `ELS_Command=04h(FLOGI)`<cite doc=\"FC-LS.pdf\" page=\"36\"/><cite doc=\"FC-LS.pdf\" page=\"37\"/>\n\n2. 新建 Exchange，分配 `OX_ID`。<cite doc=\"FC-LS.pdf\" page=\"153\"/>\n\n3. 设置地址：\n   - `D_ID=FFFFFEh`\n   - `S_ID` 按已知/未知地址状态填写。<cite doc=\"FC-LS.pdf\" page=\"153\"/>\n\n4. 填充 Payload：\n   - word 0：ELS_Command\n   - words 1–4：FLOGI Common Service Parameters\n   - words 5–6：N_Port_Name\n   - words 7–8：Node_Name\n   - words 9–20：Class Service Parameters\n   - words 25–28：Vendor Version Level\n   - 如 `Payload Bit=1` 再带扩展区。<cite doc=\"FC-LS.pdf\" page=\"166\"/><cite doc=\"FC-LS.pdf\" page=\"169\"/><cite doc=\"FC-LS.pdf\" page=\"179\"/>\n\n5. 发送并等待响应。<cite doc=\"FC-LS.pdf\" page=\"153\"/>\n\n### 10.2 收到响应后的分支\n\n| 收到内容 | 解释 | 后续动作 |\n|---|---|---|\n| `LS_ACC` + `Nx_Port/F_Port=1` | 真正连到 Fabric | 接受分配/确认的地址，记录 Fabric 参数，继续 PLOGI 或继续已有会话 |\n| `LS_ACC` + `Nx_Port/F_Port=0` | 实际是点对点 Nx_Port | 比较双方 `N_Port_Name`，决定自己发 PLOGI 还是等待对方 |\n| `F_BSY` | Fabric 忙 | 稍后重试 |\n| `P_BSY` | 对端 Nx_Port 忙 | 延迟后继续 N_Port Login |\n| `F_RJT` | Fabric 拒绝 | 看 reason，改 class 或改 S_ID 后重试 |\n| `P_RJT` | 点对点对端拒绝 | 看 reason，按 PLOGI 规则处理 |\n| `LS_RJT` | 语义拒绝 | 按 reason 调整 Service Parameters 后重试 |\n| No Response | 传输/投递错误 | 先做 error recovery，再重试 |\n\n<cite doc=\"FC-LS.pdf\" page=\"154\"/><cite doc=\"FC-LS.pdf\" page=\"155\"/>\n\n---\n\n## 11. 最后给一个一句话总结\n\n**FLOGI 是 FC 初始化里“先和 Fabric（或伪装成 Fabric 的对端）打招呼”的第一步**：  \n它用标准 ELS 外层承载一套 Login Payload，完成 **Fabric 存在性判定、地址分配/确认、Service Parameters 交换、Fabric 名称信息获取、信用初始化，以及后续认证/VF 协商的入口建立**；若发现其实不是 Fabric，而是点对点另一端口，它又自然转入后续 PLOGI 决策流程。<cite doc=\"FC-LS.pdf\" page=\"153\"/><cite doc=\"FC-LS.pdf\" page=\"154\"/><cite doc=\"FC-LS.pdf\" page=\"156\"/>",
+  "answer_clean": "下面按“定位 → 帧/Payload 结构 → 完整流程 → 关键机制/分支 → 实现视角总结”的顺序，系统梳理 FLOGI。所有具体结论都只基于已读取页面。\n\n---\n\n## 1. FLOGI 在 FC-LS 里的定位\n\nFLOGI（F_Port Login）是一个 ELS（Extended Link Service）命令；ELS 请求/应答都在单个 Exchange 内完成，且 ELS 帧的 `TYPE` 固定为 `01h`。  \n在 ELS 通用规则里，如果 Fabric 存在，则 **FLOGI 必须先于其他 ELS**。  \n表 3 进一步给出：`FLOGI` 的 `ELS_Command code` 是 `04h`，描述为 `F_Port Login`。\n\n从登录章节看，Login 的目标是让 Nx_Port 与 Fabric（若存在）以及后续通信对象建立运行环境；Fabric Login 和 N_Port Login 使用相似过程，但 `D_ID`、可能的 `S_ID` 不同。显式 Login 使用 FLOGI 或 PLOGI 这类 Login ELS，在新的 Exchange 中传送本端 Service Parameters，而 `LS_ACC` 返回对端的 Service Parameters。\n\n---\n\n## 2. FLOGI 的作用：它到底完成什么\n\n文档把 Fabric Login 的作用列得很清楚：\n\n1. 判断是否存在 Fabric；  \n2. 若存在，向 Nx_Port 提供整个 Fabric 的运行特征、`F_Port_Name` 和 `Fabric_Name`；  \n3. 若存在，把 Nx_Port 的运行特征、`N_Port_Name` 和 `Node_Name` 提供给 Fabric；  \n4. 若存在，Fabric 可为发起方分配或确认 `N_Port_ID`；  \n5. 初始化 buffer-to-buffer Credit；  \n6. 若双方支持认证，开启后续 Nx_Port-to-Fabric Authentication；  \n7. 若双方支持 Virtual Fabrics，开启后续 VF 参数协商。\n\n同时，**未完成 Fabric Login 前，不得尝试与其他 Nx_Ports 通信**。\n\n---\n\n## 3. 通用 ELS 帧规则：FLOGI 所依附的外层封装\n\n### 3.1 Exchange / Sequence 规则\n\n- 一个 ELS 请求或应答由 **单个 Sequence** 组成；  \n- `ELS_Command code` 位于 **该 Sequence 首帧 Payload 的第一个字**；  \n- 一个 ELS 请求及其应答必须在 **同一个 Exchange** 内完成；  \n- `LS_ACC` 通过在应答最后一帧把 **Last Sequence bit 置 1** 来结束该 Exchange；  \n- 若请求或应答有后续帧，这些后续帧只承载补充 Payload，不重复 `ELS_Command code`。\n\n### 3.2 TYPE / R_CTL\n\n- `TYPE = 01h`（ELS 帧固定值）。  \n- `R_CTL` 按表 2：  \n  - `0010b` = Request  \n  - `0011b` = Reply  \n  - `0001b` = Solicited Data（仅特殊 CSU ELS 使用）\n\n---\n\n## 4. FLOGI/PLOGI/LS_ACC 的总 Payload 版式\n\n表 149 给出了 **FLOGI、PLOGI 或 LS_ACC** 的通用 Login Payload 版式：\n\n| Word 范围 | 内容 |\n|---|---|\n| 0 | `ELS_Command code` |\n| 1–4 | `Common Service Parameters`（16 bytes） |\n| 5–6 | `Port_Name` |\n| 7–8 | `Node_Name` 或 `Fabric_Name` |\n| 9–12 | `Class 1 and Class 6 Service Parameters`（16 bytes） |\n| 13–16 | `Class 2 Service Parameters`（16 bytes） |\n| 17–20 | `Class 3 Service Parameters`（16 bytes） |\n| 21–24 | Obsolete |\n| 25–28 | `Vendor Version Level`（16 bytes） |\n| 29–30 | `Services Availability`（8 bytes）* |\n| 31 | `Login Extension Data Length` * |\n| 32–61 | Reserved * |\n| 62–63 | `Clock Synchronization QoS`（8 bytes）* |\n| 64–n | `Login Extension Data` * |\n\n其中带 `*` 的字段只有在 **Payload Bit=1** 时才出现；若 `Payload Bit=0`，这些字段不存在，此时 Payload 长度为 **116 bytes**。\n\n这意味着：**FLOGI 本质上是“ELS 外层 + Login 通用载荷 + FLOGI 专用适用性规则”**。\n\n---\n\n## 5. FLOGI 请求帧：发起时要怎么填\n\n### 5.1 发送条件与地址填写\n\n显式 Fabric Login 要求 Nx_Port 发送一个 `FLOGI` ELS。  \n该 FLOGI：\n\n- 必须在 **新的 Exchange** 中发送；\n- 由 Nx_Port 分配 `OX_ID`；\n- `D_ID` 必须设为 **众所周知的 F_Port 地址 `FFFFFEh`**。\n\n### 5.2 Payload 内容\n\nFLOGI Payload 包含：\n\n- 发起方的 `Service Parameters`；\n- 64-bit `N_Port_Name`；\n- 64-bit `Node_Name`。\n\n这些 Service Parameters 的总体结构与适用性由 6.6 节及表 150/155/151/156 等决定。\n\n### 5.3 未标识端口时的 S_ID 语义\n\n若 Nx_Port 尚未标识，它在 FLOGI 里的 `S_ID` 有两种合法请求方式：\n\n| S_ID 填法 | 含义 |\n|---|---|\n| `000000h` | 请求 Fabric 分配全部 24 位 `N_Port_ID` |\n| `0000h || YY` | 请求 Fabric 分配高 16 位（23:8），并校验低 8 位（7:0） |\n\n这里低 8 位就是 `AL_PA`。\n\n---\n\n## 6. FLOGI 的 Payload 内部结构：重点字段怎么理解\n\n## 6.1 Common Service Parameters（FLOGI 请求）\n\n文档明确说：FLOGI 的 Common Service Parameters Payload 见 **表 151**。\n\n表 151 给出 FLOGI 请求中 Common Service Parameters 的布局：\n\n| Word | 内容 |\n|---|---|\n| 0 | `FC-PH Version - obsolete` + `Buffer-to-buffer Credit` |\n| 1 | `Common Features` + `BB_SC_N` + `Buffer-to-buffer Receive Data Field size` |\n| 2 | Reserved |\n| 3 | Reserved |\n\n但这是“版式表”；哪些字段对 FLOGI 真正有意义，要结合 **表 150（适用性）** 看。\n\n### 6.1.1 表 150 中与 FLOGI 最相关的 Common 参数\n\n对 FLOGI 请求/LS_ACC 特别关键的点可归纳为：\n\n| 参数 | 位置 | 对 FLOGI 的意义 |\n|---|---|---|\n| `Buffer-to-buffer Credit` | word 0 bits 15:0 | 对 FLOGI 与 FLOGI LS_ACC 都适用 |\n| `Virtual Fabrics bit` | word 1 bit 30 | 对 FLOGI 与 FLOGI LS_ACC 都适用 |\n| `N_Port/F_Port` | word 1 bit 28 | 对 FLOGI 与 FLOGI LS_ACC 都适用 |\n| `Payload Bit` | word 1 bit 16 | 对 FLOGI 与 FLOGI LS_ACC 都适用；决定后续扩展字段是否存在 |\n| `R_T_TOV Value` | word 1 bit 19 所在参数项 | 对 FLOGI 与 FLOGI LS_ACC 都适用 |\n| `Clock Synchronization Primitive Capable` | word 1 bit 20 | 对 FLOGI 与 FLOGI LS_ACC 都适用 |\n| `Multicast/Broadcast/Hunt Group supported by Fabric` | word 1 bits 25/24/23 | **只对 FLOGI LS_ACC 有意义**，对 FLOGI 请求无意义 |\n| `Multiple N_Port_ID Support` | word 1 bit 31（在 FLOGI 列） | 对 FLOGI 请求适用，对 FLOGI LS_ACC 不适用 |\n| `Multiple N_Port_ID Assignment` | word 1 bit 29（在 FLOGI LS_ACC 列） | 对 FLOGI LS_ACC 适用，对 FLOGI 请求不适用 |\n\n以上可直接从表 150 的 FLOGI / FLOGI LS_ACC applicability 列读出。\n\n### 6.1.2 若需要特别关心的数值/约束\n\n- `Buffer-to-buffer Credit` 的取值范围是 **1 到 32767**，`0` 保留。\n- 在表 150 中，`Payload Bit` 默认值是 `0`；它决定表 149 后半部分扩展字段是否出现。\n- `N_Port/F_Port` 的注释说明：`0` 表示 N_Port，`1` 表示 F_Port。\n\n## 6.2 FLOGI LS_ACC 的 Common Service Parameters\n\n文档说 FLOGI LS_ACC 的 Common Service Parameters Payload 见 **表 153**。\n\n表 153 的布局为：\n\n| Word | 内容 |\n|---|---|\n| 0 | `FC-PH Version - obsolete` + `Buffer-to-buffer Credit (Fx_Port)` |\n| 1 | `Common Features` + `BB_SC_N` + `Buffer-to-buffer Receive Data Field size` |\n| 2 | `R_A_TOV` |\n| 3 | `E_D_TOV` |\n\n这和 FLOGI 请求（表 151）形成重要区别：  \n**FLOGI 请求的 word 2/3 版式是 Reserved，而 FLOGI LS_ACC 的 word 2/3 承载 `R_A_TOV` 与 `E_D_TOV`。**\n\n## 6.3 Class Service Parameters（FLOGI 请求 / FLOGI LS_ACC）\n\n文档说：\n\n- FLOGI 的 Payload Class Service Parameters 见 **表 156**；  \n- FLOGI LS_ACC 的 Payload Class Service Parameters 见 **表 158**。\n\n### 6.3.1 表 156：FLOGI 请求中的 Class Service Parameters\n\n| Word | 内容 |\n|---|---|\n| 0 | `Service Options` + `Initiator Control` |\n| 1 | `Recipient Control` + `Reserved` |\n| 2 | `Reserved` + `Total Concurrent Sequences` + `Nx_Port End-to-end Credit` |\n| 3 | `Reserved` + `Open Sequences per Exchange` + `Reserved` |\n\n\n\n### 6.3.2 表 158：FLOGI LS_ACC 中的 Class Service Parameters\n\n| Word | 内容 |\n|---|---|\n| 0 | `Service Options` + `Reserved` |\n| 1 | `Recipient Control` + `Reserved` |\n| 2 | `Reserved` + `Reserved` |\n| 3 | `CR_TOV` |\n\n\n\n### 6.3.3 Class validity 规则\n\n类服务参数是否有效由 **word 0 bit 31** 的 Class validity bit 决定：\n\n- `0` = Invalid / Class not supported  \n- `1` = Valid / Class supported  \n\n若为 `0`，这一整组 16 字节应被忽略；若为 `1`，则该 Class 被支持。\n\n---\n\n## 7. FLOGI 的完整流程\n\n下面把 FLOGI 流程分成“发起 → 正常接受 → 非 Fabric/点对点分支 → Busy/Reject/超时分支 → 完成判定”。\n\n### 7.1 发起阶段\n\n1. Nx_Port 决定执行显式 Fabric Login；\n2. 在 **新的 Exchange** 中发送 `FLOGI`；\n3. 填入本端 Service Parameters、`N_Port_Name`、`Node_Name`；\n4. `D_ID = FFFFFEh`；\n5. 若尚无地址，则 `S_ID` 用 `000000h` 或 `0000h||YY` 表达地址分配诉求。\n\n---\n\n### 7.2 正常成功：收到 Fabric 的 LS_ACC\n\n这是最标准的 FLOGI 成功路径：\n\n- 返回帧是 `LS_ACC`；\n- `OX_ID` 与原 FLOGI 相同；\n- Common Service `N_Port/F_Port bit = 1`，表示响应方是 `Fx_Port`；\n- `LS_ACC` 的 `D_ID` 是 Fabric 分配给本端的 `N_Port_ID`；  \n  - 若原 `S_ID = 000000h`，则返回的 `D_ID = XXXXXX`；  \n  - 若原 `S_ID = 0000h || YY`，则返回 `D_ID = XXXXYY`；  \n  - 若原 `S_ID = XXXXXX`，则返回同值 `XXXXXX`；\n- Payload 中包含：\n  - 整个 Fabric 的 Service Parameters；\n  - 64-bit `F_Port_Name`；\n  - 64-bit `Fabric_Name`。\n\n收到这个成功应答后，Nx_Port：\n- 如果新的 `N_Port_ID / F_Port_Name / Fabric_Name` 与之前登录结果一致，可继续已有操作；\n- 或继续进入 `N_Port Login`。\n\n---\n\n### 7.3 非 Fabric 分支：FLOGI 实际打到了另一个 Nx_Port（点对点判定）\n\n如果收到的是：\n\n- `LS_ACC`；\n- `OX_ID` 与原 FLOGI 相同；\n- Common Service `Nx_Port/F_Port bit = 0`，表示响应方是 `Nx_Port`；\n\n那么这说明当前是 **point-to-point 连接到了另一个 Nx_Port，而不是 Fabric**。此时：\n\n- `LS_ACC.D_ID = FLOGI.S_ID`；\n- Payload 带回“来自 FLOGI 的 Service Parameters，但所有 classes 标记为 invalid”，以及该对端的 64-bit `N_Port_Name` 和 64-bit `Node_Name`；  \n- 若收到的 `N_Port_Name` **小于** 本端的 `N_Port_Name`，本端继续执行 `N_Port Login`；  \n- 若收到的 `N_Port_Name` **大于** 本端的 `N_Port_Name`，本端等待对方发来 `PLOGI`。\n\n文档在 6.2.2.4 还给出对称规则：  \n如果一个 Nx_Port **收到** FLOGI，它也应返回上述这种 `Nx_Port/F_Port bit = 0` 的 `LS_ACC`，并按双方 `N_Port_Name` 的大小关系决定自己是继续 PLOGI 还是等待。\n\n这一步很关键：  \n**FLOGI 不只是“登录 Fabric”，它还承担“探测当前是不是 Fabric、否则识别点对点邻居”的作用。**\n\n---\n\n### 7.4 Busy / Reject / No Response 分支\n\n#### 7.4.1 `F_BSY`\n\n若收到 `F_BSY`，说明 **Fabric busy**，可以稍后重试 FLOGI。\n\n#### 7.4.2 `P_BSY`\n\n若收到 `P_BSY`，说明实际上连到一个当前 busy 的 `Nx_Port`；本端可在延迟后继续尝试 `N_Port Login`。\n\n#### 7.4.3 `F_RJT`\n\n若收到 `F_RJT`，说明 Fabric 拒绝了 FLOGI，请根据 reason code 动作：\n\n- 若 reason = `\"Class not supported\"`：  \n  可换一个 class 重新发起 FLOGI；\n- 若 reason = `\"Invalid S_ID\"`：  \n  - 若被拒请求中的 `S_ID` 是 `000000h` 或 `0000h || YY`，可在标准外方法下自行选择一个 24-bit `N_Port_ID = XXXXXX`，再以此 `S_ID` 重发 FLOGI；  \n  - 若被拒请求中的 `S_ID = XXXXXX`，可重新选择 `00 00 00`、`00 00 yy` 或新的 `XX XX XX`，再重发。\n\n#### 7.4.4 `P_RJT`\n\n若收到 `P_RJT`，说明是点对点的另一个 `Nx_Port` 拒绝。  \n- 若 reason = `\"Class not supported\"`：可用不同 class 继续做 `N_Port Login`；  \n- 其他 reason 按相应 code 处理。\n\n#### 7.4.5 `LS_RJT`\n\n若收到 `LS_RJT`：\n\n- `D_ID` 取 Fabric 分配给本端的 `N_Port_ID`（规则与前述地址分配情况一致）；\n- 动作由 Payload 中 reason code 决定；\n- 可根据 reason 修改 Service Parameters 后重新发起 FLOGI。\n\n#### 7.4.6 无响应\n\n若 **No Response**：\n\n- 可能表示物理传输投递错误；\n- 应按 FC-FS-2 做 error recovery；\n- 恢复后可重新发起 FLOGI。\n\n#### 7.4.7 自连场景\n\n若收到的 `N_Port_Name` 与自身相等，则视为端口连到自己；该情况超出本标准范围，FLOGI 被丢弃。\n\n---\n\n### 7.5 完成条件：什么时候算 FLOGI 结束\n\n文档分别定义了发起方与响应方的“Fabric Login completion”。\n\n#### 7.5.1 发起方完成条件\n\n发起 FLOGI 的 Originator 认为 Fabric Login 已结束，当：\n\n- Class 1：已向 `LS_ACC` 发送 ACK（`EOFt` 或 `EOFdt`）；  \n- Class 2：已向 `LS_ACC` 发送 ACK（`EOFt`）；  \n- Class 3：已收到 `LS_ACC`。\n\n完成后，buffer-to-buffer Credit 的值被初始化。\n\n#### 7.5.2 响应方完成条件\n\n响应方认为 Fabric Login 已结束，当：\n\n- Class 1：已收到对 `LS_ACC` 的 ACK（`EOFt` 或 `EOFdt`）；  \n- Class 2：已收到对 `LS_ACC` 的 ACK（`EOFt`）；  \n- Class 3：已发出 `LS_ACC`。\n\n成功结束后，同样初始化 buffer-to-buffer Credit。\n\n---\n\n## 8. FLOGI 之后与后续 PLOGI 的衔接\n\n文档明确写明：\n\n- 若通过 FLOGI 判定 **Fabric 存在**，则后续按 6.3.2.2 执行 `N_Port Login (PLOGI)`；  \n- 若通过 FLOGI 判定 **Fabric 不存在**，则按 6.3.2.4 执行点对点 N_Port Login。\n\n所以从“整体初始化流程”看：\n\n```text\n上电/初始化\n  → 尝试 FLOGI\n      → 若是 Fabric：拿到 Fabric 参数 / 地址 / 名称\n          → 再对具体目标做 PLOGI\n      → 若其实是点对点 Nx_Port：\n          → 用 FLOGI 结果决定谁发 PLOGI\n```\n\n这也是为什么 FLOGI 既是“登录”，也是“拓扑与角色探测”的第一步。\n\n---\n\n## 9. FLOGI 相关机制：你实现时最该关心的点\n\n## 9.1 显式 vs 隐式 Login\n\n- 标准允许显式和隐式 Login；\n- 显式 Login 就是通过 FLOGI/PLOGI ELS 交换 Service Parameters；\n- 隐式 Fabric Login **不要求** Nx_Port 必须支持 FLOGI 请求/应答。\n\n所以若你做的是“显式 FC 登录栈”，FLOGI 是核心；但标准承认还有其他不通过 FLOGI 的实现路径。\n\n## 9.2 旧参数替换\n\n显式 Fabric Login 会 **替换之前的 Service Parameters**。\n\n## 9.3 SOF / Class 选择与重试\n\nFabric Login 只允许在 **Class 1/2/3** 执行；若 Fabric 不支持某一类，FLOGI 可能要换 class 并用相应 SOF 重试。  \n- `SOFc1` 可用于尝试 Fabric Login 或 Relogin；  \n- `SOFi1` 不允许；  \n- Class 6 不能用于 Fabric Login。\n\n若收到 `F_RJT`，原因是 `\"Class of service not supported by entity at FFFFFEh\"`，则应改用另一受支持 SOF 继续尝试，直到完成或所有支持的 SOF 都试尽。若都失败或超时，则 Fabric 与 Nx_Port 不兼容，需要外部干预。\n\n## 9.4 Relogin 的影响\n\n若之前已经登录过 Fabric：\n\n- 若新的 `N_Port_ID / F_Port_Name / Fabric_Name` 与上次相同，可继续现有通信；  \n- 若其中任一发生变化，Nx_Port 必须对所有 Nx_Ports 做 **implicit logout**，并等待一个 `R_A_TOV` 超时后，才能重新发起或接受通信；之后必须重新进行 N_Port Login。\n\n这说明 FLOGI 不是一次性的“发现过程”，而是影响整个已建立关系集的一致性检查点。\n\n---\n\n## 10. 一个面向实现者的“最小可落地流程图”\n\n### 10.1 发起侧\n\n1. 构造 ELS 帧：\n   - `TYPE=01h`\n   - `R_CTL=Request(0010b)`\n   - `ELS_Command=04h(FLOGI)`\n\n2. 新建 Exchange，分配 `OX_ID`。\n\n3. 设置地址：\n   - `D_ID=FFFFFEh`\n   - `S_ID` 按已知/未知地址状态填写。\n\n4. 填充 Payload：\n   - word 0：ELS_Command\n   - words 1–4：FLOGI Common Service Parameters\n   - words 5–6：N_Port_Name\n   - words 7–8：Node_Name\n   - words 9–20：Class Service Parameters\n   - words 25–28：Vendor Version Level\n   - 如 `Payload Bit=1` 再带扩展区。\n\n5. 发送并等待响应。\n\n### 10.2 收到响应后的分支\n\n| 收到内容 | 解释 | 后续动作 |\n|---|---|---|\n| `LS_ACC` + `Nx_Port/F_Port=1` | 真正连到 Fabric | 接受分配/确认的地址，记录 Fabric 参数，继续 PLOGI 或继续已有会话 |\n| `LS_ACC` + `Nx_Port/F_Port=0` | 实际是点对点 Nx_Port | 比较双方 `N_Port_Name`，决定自己发 PLOGI 还是等待对方 |\n| `F_BSY` | Fabric 忙 | 稍后重试 |\n| `P_BSY` | 对端 Nx_Port 忙 | 延迟后继续 N_Port Login |\n| `F_RJT` | Fabric 拒绝 | 看 reason，改 class 或改 S_ID 后重试 |\n| `P_RJT` | 点对点对端拒绝 | 看 reason，按 PLOGI 规则处理 |\n| `LS_RJT` | 语义拒绝 | 按 reason 调整 Service Parameters 后重试 |\n| No Response | 传输/投递错误 | 先做 error recovery，再重试 |\n\n\n\n---\n\n## 11. 最后给一个一句话总结\n\n**FLOGI 是 FC 初始化里“先和 Fabric（或伪装成 Fabric 的对端）打招呼”的第一步**：  \n它用标准 ELS 外层承载一套 Login Payload，完成 **Fabric 存在性判定、地址分配/确认、Service Parameters 交换、Fabric 名称信息获取、信用初始化，以及后续认证/VF 协商的入口建立**；若发现其实不是 Fabric，而是点对点另一端口，它又自然转入后续 PLOGI 决策流程。",
+  "pages_retrieved": [
+    36,
+    37,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    166,
+    167,
+    168,
+    169,
+    170,
+    179
+  ],
+  "all_pages_requested": [
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    166,
+    167,
+    168,
+    169,
+    170,
+    179,
+    36,
+    37
+  ],
+  "total_turns": 12,
+  "context_session_id": "sess_20260624_065140",
+  "trace": [
+    {
+      "turn": 1,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 1
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0000\", \"title\": \"Front Matter\", \"summary\": \"Front Matter (pp. 1-19): administrative and orientation material for `Fibre Channel Link Services (FC-LS)` `Rev 1.61` / `INCITS ..."
+    },
+    {
+      "turn": 2,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 2
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0017\", \"title\": \"4 Extended Link Services\", \"summary\": \"Covers Extended Link Services (ELS) basics and request rules: an ELS request solicits a destination `Nx_Port` functi..."
+    },
+    {
+      "turn": 2,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 3
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0017\", \"title\": \"4 Extended Link Services\", \"summary\": \"Covers Extended Link Services (ELS) basics and request rules: an ELS request solicits a destination `Nx_Port` functi..."
+    },
+    {
+      "turn": 2,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 4
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0017\", \"title\": \"4 Extended Link Services\", \"summary\": \"Covers Extended Link Services (ELS) basics and request rules: an ELS request solicits a destination `Nx_Port` functi..."
+    },
+    {
+      "turn": 2,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 5
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0017\", \"title\": \"4 Extended Link Services\", \"summary\": \"Covers Extended Link Services (ELS) basics and request rules: an ELS request solicits a destination `Nx_Port` functi..."
+    },
+    {
+      "turn": 3,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 6
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0017\", \"title\": \"4 Extended Link Services\", \"summary\": \"Covers Extended Link Services (ELS) basics and request rules: an ELS request solicits a destination `Nx_Port` functi..."
+    },
+    {
+      "turn": 3,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 7
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0017\", \"title\": \"4 Extended Link Services\", \"summary\": \"Covers Extended Link Services (ELS) basics and request rules: an ELS request solicits a destination `Nx_Port` functi..."
+    },
+    {
+      "turn": 3,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 8
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0017\", \"title\": \"4 Extended Link Services\", \"summary\": \"Covers Extended Link Services (ELS) basics and request rules: an ELS request solicits a destination `Nx_Port` functi..."
+    },
+    {
+      "turn": 3,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 9
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0017\", \"title\": \"4 Extended Link Services\", \"summary\": \"Covers Extended Link Services (ELS) basics and request rules: an ELS request solicits a destination `Nx_Port` functi..."
+    },
+    {
+      "turn": 4,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 10
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0017\", \"title\": \"4 Extended Link Services\", \"summary\": \"Covers Extended Link Services (ELS) basics and request rules: an ELS request solicits a destination `Nx_Port` functi..."
+    },
+    {
+      "turn": 4,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 11
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0017\", \"title\": \"4 Extended Link Services\", \"summary\": \"Covers Extended Link Services (ELS) basics and request rules: an ELS request solicits a destination `Nx_Port` functi..."
+    },
+    {
+      "turn": 4,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 12
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0017\", \"title\": \"4 Extended Link Services\", \"summary\": \"Covers Extended Link Services (ELS) basics and request rules: an ELS request solicits a destination `Nx_Port` functi..."
+    },
+    {
+      "turn": 4,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 13
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0290\", \"title\": \"6 Login and Service Parameters\", \"summary\": \"Covers Login and Service Parameters introduction: how an `Nx_Port` establishes its operating environment with ..."
+    },
+    {
+      "turn": 5,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 14
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0290\", \"title\": \"6 Login and Service Parameters\", \"summary\": \"Covers Login and Service Parameters introduction: how an `Nx_Port` establishes its operating environment with ..."
+    },
+    {
+      "turn": 5,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 15
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0290\", \"title\": \"6 Login and Service Parameters\", \"summary\": \"Covers Login and Service Parameters introduction: how an `Nx_Port` establishes its operating environment with ..."
+    },
+    {
+      "turn": 5,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 16
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0290\", \"title\": \"6 Login and Service Parameters\", \"summary\": \"Covers Login and Service Parameters introduction: how an `Nx_Port` establishes its operating environment with ..."
+    },
+    {
+      "turn": 5,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 17
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0290\", \"title\": \"6 Login and Service Parameters\", \"summary\": \"Covers Login and Service Parameters introduction: how an `Nx_Port` establishes its operating environment with ..."
+    },
+    {
+      "turn": 5,
+      "tool": "get_document_structure",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "part": 18
+      },
+      "result_summary": "{\"structure\": [{\"node_id\": \"0435\", \"title\": \"8 Virtual Fabrics N_Port Support\", \"summary\": \"Covers Virtual Fabrics support on `N_Ports`: `VFT_Header` tagging with `VF_ID`, shared-link tagged-frame use..."
+    },
+    {
+      "turn": 6,
+      "tool": "get_page_content",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "pages": "152-161"
+      },
+      "result_summary": "{\"content\": [{\"page\": 152, \"text\": \"INCITS xxx-200x Link Services Rev 1.61 November 3, 2006\\n 133\\n6\\nLogin and Service Parameters\\n6.1\\nIntroduction\\nThe Login procedure is a method by which an Nx_Po..."
+    },
+    {
+      "turn": 6,
+      "tool": "list_assets",
+      "arguments": {
+        "caption_query": "FLOGI",
+        "doc_id": "FC-LS.pdf",
+        "page_range": "152-196",
+        "section_id": "",
+        "type": "table"
+      },
+      "result_summary": "{\"doc_id\": \"FC-LS.pdf\", \"asset_count\": 7, \"assets\": [{\"asset_id\": \"table_0155\", \"type\": \"table\", \"caption\": \"Table 148 – Effects of FLOGI, FDISC, & LOGO on Permanent Port Name (PPN)\", \"pages\": [163, 1..."
+    },
+    {
+      "turn": 6,
+      "tool": "list_assets",
+      "arguments": {
+        "caption_query": "FLOGI",
+        "doc_id": "FC-LS.pdf",
+        "page_range": "152-196",
+        "section_id": "",
+        "type": "figure"
+      },
+      "result_summary": "{\"doc_id\": \"FC-LS.pdf\", \"asset_count\": 0, \"assets\": [], \"source_manifest\": \"/Users/zwy/毕设/V7/processed_specs/local/FC-LS/assets/assets_manifest.jsonl\"}"
+    },
+    {
+      "turn": 7,
+      "tool": "get_page_content",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "pages": "166-170,179"
+      },
+      "result_summary": "{\"content\": [{\"page\": 166, \"text\": \"INCITS xxx-200x Link Services Rev 1.61 November 3, 2006\\n 147\\n Table 149 – FLOGI, PLOGI or LS_ACC Payload\\nBits\\nWord\\n31        ..         24\\n23       ..       1..."
+    },
+    {
+      "turn": 7,
+      "tool": "get_table",
+      "arguments": {
+        "doc_id": "FC-LS.pdf",
+        "table_id": "table_0157",
+        "view": "full"
+      },
+      "result_summary": "{\"table\": {\"table_id\": \"table_0157\", \"doc_id\": \"FC-LS\", \"view\": \"full\", \"meta\": {\"asset_id\": \"table_0157\", \"type\": \"table\", \"caption\": \"Table 149 – FLOGI, PLOGI or LS_ACC Payload\", \"pages\": [166], \"bb..."
+    },
+    {
+      "turn": 7,
+      "tool": "get_table",
+      "arguments": {
+        "doc_id": "FC-LS.pdf",
+        "table_id": "table_0161",
+        "view": "full"
+      },
+      "result_summary": "{\"table\": {\"table_id\": \"table_0161\", \"doc_id\": \"FC-LS\", \"view\": \"full\", \"meta\": {\"asset_id\": \"table_0161\", \"type\": \"table\", \"caption\": \"Table 151 – Common Service Parameters - FLOGI\", \"pages\": [169, 1..."
+    },
+    {
+      "turn": 7,
+      "tool": "get_table",
+      "arguments": {
+        "doc_id": "FC-LS.pdf",
+        "table_id": "table_0163",
+        "view": "full"
+      },
+      "result_summary": "{\"table\": {\"table_id\": \"table_0163\", \"doc_id\": \"FC-LS\", \"view\": \"full\", \"meta\": {\"asset_id\": \"table_0163\", \"type\": \"table\", \"caption\": \"Table 153 – Common Service Parameters - FLOGI LS_ACC\", \"pages\": ..."
+    },
+    {
+      "turn": 7,
+      "tool": "get_table",
+      "arguments": {
+        "doc_id": "FC-LS.pdf",
+        "table_id": "table_0168",
+        "view": "full"
+      },
+      "result_summary": "{\"table\": {\"table_id\": \"table_0168\", \"doc_id\": \"FC-LS\", \"view\": \"full\", \"meta\": {\"asset_id\": \"table_0168\", \"type\": \"table\", \"caption\": \"Table 156 – Class Service Parameters - FLOGI\", \"pages\": [179], \"..."
+    },
+    {
+      "turn": 7,
+      "tool": "get_table",
+      "arguments": {
+        "doc_id": "FC-LS.pdf",
+        "table_id": "table_0170",
+        "view": "full"
+      },
+      "result_summary": "{\"table\": {\"table_id\": \"table_0170\", \"doc_id\": \"FC-LS\", \"view\": \"full\", \"meta\": {\"asset_id\": \"table_0170\", \"type\": \"table\", \"caption\": \"Table 158 – Class Service Parameters - FLOGI LS_ACC\", \"pages\": [..."
+    },
+    {
+      "turn": 7,
+      "tool": "get_page_content",
+      "arguments": {
+        "doc_name": "FC-LS.pdf",
+        "pages": "36-37"
+      },
+      "result_summary": "{\"content\": [{\"page\": 36, \"text\": \"INCITS xxx-200x Link Services Rev 1.61 November 3, 2006\\n 17\\n4\\nExtended Link Services\\n4.1\\nIntroduction\\nAn Extended Link Service (ELS) request solicits a destina..."
+    },
+    {
+      "turn": 8,
+      "tool": "verify_evidence",
+      "arguments": {
+        "doc_id": "FC-LS",
+        "claim": "FLOGI 是一种 ELS；若 Fabric 存在，则在其他 ELS 之前需要先执行 FLOGI；ELS 请求/应答在单个 Exchange 内完成，TYPE=01h，R_CTL 请求为0010b、应答为0011b。",
+        "evidence_refs": [
+          {
+            "type": "text_span",
+            "span_id": "p036_s0031",
+            "quote": "FLOGI is required before all ELSs if a Fabric is present."
+          },
+          {
+            "type": "text_span",
+            "span_id": "p036_s0016",
+            "quote": "An ELS request and the corresponding reply shall be performed within a single Exchange."
+          },
+          {
+            "type": "text_span",
+            "span_id": "p036_s0018",
+            "quote": "The TYPE field for ELS frames shall be set to 01h."
+          },
+          {
+            "type": "text_span",
+            "span_id": "p036_s0045",
+            "quote": "0010b"
+          },
+          {
+            "type": "text_span",
+            "span_id": "p036_s0046",
+            "quote": "Request"
+          },
+          {
+            "type": "text_span",
+            "span_id": "p036_s0047",
+            "quote": "0011b"
+          },
+          {
+            "type": "text_span",
+            "span_id": "p036_s0048",
+            "quote": "Reply"
+          }
+        ]
+      },
+      "result_summary": "{\"doc_id\": \"FC-LS\", \"claim\": \"FLOGI 是一种 ELS；若 Fabric 存在，则在其他 ELS 之前需要先执行 FLOGI；ELS 请求/应答在单个 Exchange 内完成，TYPE=01h，R_CTL 请求为0010b、应答为0011b。\", \"status\": \"invalid\", \"checked_refs\": [{\"type\": \"text_span\",..."
+    },
+    {
+      "turn": 9,
+      "tool": "verify_evidence",
+      "arguments": {
+        "claim": "FLOGI 的命令码是 04h；通用 Login 帧载荷由 ELS_Command、Common Service Parameters、Port_Name、Node/Fabric_Name、各类 Class Service Parameters、Vendor Version Level，以及在 Payload Bit=1 时才出现的 Services Availability、Login Extension Data Length、Clock Synchronization QoS、Login Extension Data 组成。",
+        "doc_id": "FC-LS",
+        "evidence_refs": [
+          {
+            "quote": "04h",
+            "span_id": "p037_s0027",
+            "type": "text_span"
+          },
+          {
+            "quote": "F_Port Login",
+            "span_id": "p037_s0028",
+            "type": "text_span"
+          },
+          {
+            "quote": "FLOGI",
+            "span_id": "p037_s0029",
+            "type": "text_span"
+          },
+          {
+            "asset_id": "table_0157",
+            "cell_id": "r2c2",
+            "quote": "ELS_Command code",
+            "type": "table_cell"
+          },
+          {
+            "asset_id": "table_0157",
+            "cell_id": "r3c2",
+            "quote": "Common Service Parameters\n(16 bytes)",
+            "type": "table_cell"
+          },
+          {
+            "asset_id": "table_0157",
+            "cell_id": "r6c2",
+            "quote": "Port_Name",
+            "type": "table_cell"
+          },
+          {
+            "asset_id": "table_0157",
+            "cell_id": "r8c2",
+            "quote": "Node_ or Fabric_Name",
+            "type": "table_cell"
+          },
+          {
+            "asset_id": "table_0157",
+            "cell_id": "r10c2",
+            "quote": "Class 1 and Class 6 Service Parameters\n(16 bytes)",
+            "type": "table_cell"
+          },
+          {
+            "asset_id": "table_0157",
+            "cell_id": "r13c2",
+            "quote": "Class 2 Service Parameters\n(16 bytes)",
+            "type": "table_cell"
+          },
+          {
+            "asset_id": "table_0157",
+            "cell_id": "r16c2",
+            "quote": "Class 3 Service Parameters\n(16 bytes)",
+            "type": "table_cell"
+          },
+          {
+            "asset_id": "table_0157",
+            "cell_id": "r22c2",
+            "quote": "Vendor Version Level\n(16 bytes)",
+            "type": "table_cell"
+          },
+          {
+            "asset_id": "table_0157",
+            "cell_id": "r25c2",
+            "quote": "MSB Services Availabilitya\n(8 bytes) LSB",
+            "type": "table_cell"
+          },
+          {
+            "asset_id": "table_0157",
+            "cell_id": "r27c2",
+            "quote": "Login Extension Data Lengtha",
+            "type": "table_cell"
+          },
+          {
+            "asset_id": "table_0157",
+            "cell_id": "r31c2",
+            "quote": "Clock Synchronization QoSa\n(8 bytes)",
+            "type": "table_cell"
+          },
+          {
+            "asset_id": "table_0157",
+            "cell_id": "r33c2",
+            "quote": "Login Extension Data (if any)",
+            "type": "table_cell"
+          },
+          {
+            "asset_id": "table_0157",
+            "cell_id": "r34c1",
+            "quote": "These fields are only present when the Payload Bit",
+            "type": "table_cell"
+          }
+        ]
+      },
+      "result_summary": "{\"doc_id\": \"FC-LS\", \"claim\": \"FLOGI 的命令码是 04h；通用 Login 帧载荷由 ELS_Command、Common Service Parameters、Port_Name、Node/Fabric_Name、各类 Class Service Parameters、Vendor Version Level，以及在 Payload Bit=1 时才出现的 Se..."
+    },
+    {
+      "turn": 10,
+      "tool": "verify_evidence",
+      "arguments": {
+        "claim": "显式 Fabric Login 中，Nx_Port 必须在新的 Exchange 中发送 FLOGI；Payload 携带本端 Service Parameters、64-bit N_Port_Name 和 64-bit Node_Name；D_ID 设为 FFFFFEh。若本端未标识，S_ID 可置 000000h（请求 Fabric 分配全部 24 位 N_Port_ID）或 0000h||YY（请求 Fabric 分配高 16 位并校验低 8 位 AL_PA）。",
+        "doc_id": "FC-LS",
+        "evidence_refs": [
+          {
+            "quote": "The Nx_Port shall transmit the FLOGI in a new Exchange.",
+            "span_id": "p153_s0033",
+            "type": "text_span"
+          },
+          {
+            "quote": "The Payload of FLOGI contains the Service Parameters of the Nx_Port, a 64-bit N_Port_Name of the Nx_Port, and a 64-bit Node_Name.",
+            "span_id": "p153_s0034",
+            "type": "text_span"
+          },
+          {
+            "quote": "set the D_ID to the well-known F_Port address (i.e., FFFFFEh).",
+            "span_id": "p153_s0037",
+            "type": "text_span"
+          },
+          {
+            "quote": "If the Nx_Port is unidentified, an Nx_Port shall set the S_ID in the FLOGI to 000000h or 0000h || YY.",
+            "span_id": "p153_s0038",
+            "type": "text_span"
+          },
+          {
+            "quote": "If the Nx_Port sets the S_ID to 000000h, the Nx_Port is requesting the Fabric assign all 24 bits of the N_Port_ID.",
+            "span_id": "p153_s0039",
+            "type": "text_span"
+          },
+          {
+            "quote": "If the Nx_Port sets the S_ID to 0000h || YY, the Nx_Port is requesting the Fabric assign the upper 16 bits, bits 23 to 8, and validate the lower 8 bits, bits 7 to 0, of the N_Port_ID.",
+            "span_id": "p153_s0040",
+            "type": "text_span"
+          },
+          {
+            "quote": "The lower 8 bits of the N_Port_ID are the AL_PA.",
+            "span_id": "p153_s0042",
+            "type": "text_span"
+          }
+        ]
+      },
+      "result_summary": "{\"doc_id\": \"FC-LS\", \"claim\": \"显式 Fabric Login 中，Nx_Port 必须在新的 Exchange 中发送 FLOGI；Payload 携带本端 Service Parameters、64-bit N_Port_Name 和 64-bit Node_Name；D_ID 设为 FFFFFEh。若本端未标识，S_ID 可置 000000h（请求 Fabric ..."
+    },
+    {
+      "turn": 11,
+      "tool": "verify_evidence",
+      "arguments": {
+        "claim": "显式 Fabric Login 中，Nx_Port 必须在新的 Exchange 中发送 FLOGI；Payload 携带本端 Service Parameters、64-bit N_Port_Name 和 64-bit Node_Name；D_ID 设为 FFFFFEh。若本端未标识，S_ID 可置 000000h（请求 Fabric 分配全部 24 位 N_Port_ID）或 0000h||YY（请求 Fabric 分配高 16 位并校验低 8 位 AL_PA）。",
+        "doc_id": "FC-LS",
+        "evidence_refs": [
+          {
+            "quote": "The Nx_Port shall transmit the FLOGI in a new Exchange.",
+            "span_id": "p153_s0033",
+            "type": "text_span"
+          },
+          {
+            "quote": "vice Parameters of the Nx_Port, a 64-bit N_Port_Name of the Nx_Port, and a 64-bit Node_Name.",
+            "span_id": "p153_s0034",
+            "type": "text_span"
+          },
+          {
+            "quote": "set the D_ID to the well-known F_Port address (i.e., FFFFFEh).",
+            "span_id": "p153_s0037",
+            "type": "text_span"
+          },
+          {
+            "quote": "If the Nx_Port is unidentified, an Nx_Port shall set the S_ID in the FLOGI to 000000h or 0000h || YY.",
+            "span_id": "p153_s0038",
+            "type": "text_span"
+          },
+          {
+            "quote": "If the Nx_Port sets the S_ID to 000000h, the Nx_Port is requesting the Fabric assign all 24 bits of the",
+            "span_id": "p153_s0039",
+            "type": "text_span"
+          },
+          {
+            "quote": "N_Port_ID.",
+            "span_id": "p153_s0040",
+            "type": "text_span"
+          },
+          {
+            "quote": "If the Nx_Port sets the S_ID to 0000h || YY, the Nx_Port is requesting the Fabric assign",
+            "span_id": "p153_s0040",
+            "type": "text_span"
+          },
+          {
+            "quote": "the upper 16 bits, bits 23 to 8, and validate the lower 8 bits, bits 7 to 0, of the N_Port_ID.",
+            "span_id": "p153_s0041",
+            "type": "text_span"
+          },
+          {
+            "quote": "The lower 8 bits of the N_Port_ID are the AL_PA.",
+            "span_id": "p153_s0042",
+            "type": "text_span"
+          }
+        ]
+      },
+      "result_summary": "{\"doc_id\": \"FC-LS\", \"claim\": \"显式 Fabric Login 中，Nx_Port 必须在新的 Exchange 中发送 FLOGI；Payload 携带本端 Service Parameters、64-bit N_Port_Name 和 64-bit Node_Name；D_ID 设为 FFFFFEh。若本端未标识，S_ID 可置 000000h（请求 Fabric ..."
+    }
+  ],
+  "citations": [
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 36,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 36,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 37,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 152,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 36,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 36,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 36,
+      "context": "- `0001b` = Solicited Data（仅特殊 CSU ELS 使用）"
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 166,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 166,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 167,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 169,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 179,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 169,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 169,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 167,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 168,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 167,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 168,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 170,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 168,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 166,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 167,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 170,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 169,
+      "context": "**"
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 170,
+      "context": "**"
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 179,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 179,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 179,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 179,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 152,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 154,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 154,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 154,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 155,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": "**"
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 154,
+      "context": "**"
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 154,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 154,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 154,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 154,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 154,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 155,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 155,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 155,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 156,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 156,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 156,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 156,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 156,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 154,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 156,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 152,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 152,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 155,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 155,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 155,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 156,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 155,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 155,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 36,
+      "context": "- `ELS_Command=04h(FLOGI)`"
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 37,
+      "context": "- `ELS_Command=04h(FLOGI)`"
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 166,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 169,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 179,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 154,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 155,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 153,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 154,
+      "context": ""
+    },
+    {
+      "doc_name": "FC-LS.pdf",
+      "page": 156,
+      "context": ""
+    }
+  ]
+}

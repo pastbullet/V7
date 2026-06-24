@@ -1,0 +1,28 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "ELS\nReceived\n(with D_ID\nFFFFFEh)", "page": 164, "bbox": [94.42, 76.28, 157.59, 169.68]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Condition of F_Port", "page": 164, "bbox": [157.59, 76.28, 541.47, 97.75]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "", "page": 164, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "", "page": 164, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "", "page": 164, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Condition 1:\nFLOGI not completed,\nor all IDs logged out", "page": 164, "bbox": [157.59, 97.75, 268.0, 169.68]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "Condition 2:\nFLOGI Completed, & at least one ID\nlogged in", "page": 164, "bbox": [268.0, 97.75, 460.05, 169.68]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "Condition 3:\nFDISC(s)\ncompleted, & at\nleast one ID\nlogged in", "page": 164, "bbox": [460.05, 97.75, 541.47, 169.68]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "FDISC\nS_ID=0d", "page": 164, "bbox": [94.42, 169.68, 157.59, 276.01]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "- F_RJT (RC=login\nrequired) for Class 1, or\nClass 2.\n- Discard for Class 3.", "page": 164, "bbox": [157.59, 169.68, 268.0, 276.01]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "- If N_Port ID virtualization supported,\nLS_ACC (D_ID = assigned N_Port ID), and\nset PPN of new N_Port ID to Port_Name in\nFLOGI request.a, b\n- If N_Port ID virtualization not supported,\nLS_RJT (RC=command not supported,\nRCE=Request not supported.)", "page": 164, "bbox": [268.0, 169.68, 460.05, 276.01]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "- LS_ACC (D_ID\n= assigned\nN_Port ID), and\nset PPN of new\nN_Port ID to\nPort_Name in\nFLOGI request.a,\nb", "page": 164, "bbox": [460.05, 169.68, 541.47, 276.01]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "FDISC\nS_ID not = 0", "page": 164, "bbox": [94.42, 276.01, 157.59, 346.02]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "- F_RJT (RC=login\nrequired) for Class 1, or\nClass 2.\n- Discard for Class 3.", "page": 164, "bbox": [157.59, 276.01, 268.0, 346.02]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "- If S_ID logged-in, LS_ACC\n- if S_ID not logged-in:\nF_RJT (RC=login required) for Classes 1,2,\nor 4.\n- Discard for Class 3.", "page": 164, "bbox": [268.0, 276.01, 460.05, 346.02]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "- See Condition 2\n(previous\ncolumn).", "page": 164, "bbox": [460.05, 276.01, 541.47, 346.02]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "OLS/NOS", "page": 164, "bbox": [94.42, 346.02, 157.59, 416.01]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "- Perform Primitive\nSequence Protocols\n(see FC-FS-2).", "page": 164, "bbox": [157.59, 346.02, 268.0, 416.01]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "- implicit logout of all logged-in N_Port IDs;\nPerform Primitive Sequence Protocols (see\nFC-FS-2).\n- dissasociate the logged-out N_Port IDs\nwith PPN.", "page": 164, "bbox": [268.0, 346.02, 460.05, 416.01]}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "- See Condition 2\n(previous\ncolumn).", "page": 164, "bbox": [460.05, 346.02, 541.47, 416.01]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "LOGOd", "page": 164, "bbox": [94.42, 416.01, 157.59, 473.5]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "- LS_ACC, no action", "page": 164, "bbox": [157.59, 416.01, 268.0, 473.5]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "- If S_ID logged-in, log out the individual\nS_ID only, and disassociate only the\nlogged-out N_Port ID with the PPN.c\n- if S_ID not logged-in, LS_ACC no action.", "page": 164, "bbox": [268.0, 416.01, 460.05, 473.5]}
+{"cell_id": "r6c4", "row": 6, "col": 4, "text": "- See Condition 2\n(previous\ncolumn).", "page": 164, "bbox": [460.05, 416.01, 541.47, 473.5]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "a If another N_Port ID is currently logged in with the same Port Name as contained in the FDISC request\npayload, or if the Port Name is the same as the Permanent Port Name associated with another N_Port, then\nthe response should be LS_RJT (Logical error, invalid port name).\nb When an FDISC with S_ID=0 is received when no more N_Port_IDs are available, the F_Port shall respond\nwith an LS_RJT with an LS_RJT Reason Code of Unable to perform command request and an LS_RJT\nReason Code Explanation of insufficient resources.\nc Any assigned N_Port ID may be individually logged out and disassociated with the Permanent Port Name,\nincluding the FLOGI-assigned N_Port ID; Name Server attributes for the N_Port ID are cleared. Other\nlogged-in N_Port IDs continue to be associated with their current Permanent Port Names. See FC-GS-5 for\na definition of Permanent Port name.\nd Whenever a new N_Port ID is assigned by either FLOGI or FDISC, or logged out, the nameserver database\nis updated and the applicable RSCNs are sent.", "page": 164, "bbox": [94.42, 473.5, 541.47, 627.6]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "", "page": 164, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "", "page": 164, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r7c4", "row": 7, "col": 4, "text": "", "page": 164, "bbox": [0.0, 0.0, 0.0, 0.0]}

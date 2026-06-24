@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0024",
+  "type": "table",
+  "caption": "Table 21 – RRQ Payload",
+  "pages": [
+    56
+  ],
+  "bbox": [
+    100.13,
+    435.99,
+    535.87,
+    566.34
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 56
+}

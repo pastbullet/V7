@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0162",
+  "type": "table",
+  "caption": "Table 152 – Common Service Parameters - PLOGI and PLOGI LS_ACC",
+  "pages": [
+    170
+  ],
+  "bbox": [
+    91.88,
+    98.73,
+    542.36,
+    219.0
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 170
+}

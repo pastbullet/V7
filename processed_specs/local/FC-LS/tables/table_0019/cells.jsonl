@@ -1,0 +1,36 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Name", "page": 52, "bbox": [98.38, 122.62, 215.43, 144.0]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Bit Number", "page": 52, "bbox": [215.43, 122.62, 279.37, 144.0]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Value", "page": 52, "bbox": [279.37, 122.62, 318.69, 144.0]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "Definition", "page": 52, "bbox": [318.69, 122.62, 537.31, 144.0]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "Connect-Request\ndelivered", "page": 52, "bbox": [98.38, 144.0, 215.43, 248.01]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "31", "page": 52, "bbox": [215.43, 144.0, 279.37, 248.01]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "0", "page": 52, "bbox": [279.37, 144.0, 318.69, 190.05]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "The specified Nx_Port is either not Connected, or\nis involved in an Established Connection based\non the setting of the Connection established bit.", "page": 52, "bbox": [318.69, 144.0, 537.31, 190.05]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "", "page": 52, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "", "page": 52, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "1", "page": 52, "bbox": [279.37, 190.05, 318.69, 248.01]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "A connect-Request has been delivered to the\nspecified Nx_Port, but the Nx_Port has not yet\nresponded with a proper response frame and a\ndedicated connection does not yet exist.", "page": 52, "bbox": [318.69, 190.05, 537.31, 248.01]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "Connect-Request stacked", "page": 52, "bbox": [98.38, 248.01, 215.43, 328.05]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "30", "page": 52, "bbox": [215.43, 248.01, 279.37, 328.05]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "0", "page": 52, "bbox": [279.37, 248.01, 318.69, 282.03]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "No connect-Request is stacked for the specified\nNx_Port on behalf of the requesting Nx_Port.", "page": 52, "bbox": [318.69, 248.01, 537.31, 282.03]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "", "page": 52, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "", "page": 52, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "1", "page": 52, "bbox": [279.37, 282.03, 318.69, 328.05]}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "One or more connect-Requests are stacked, but\nhave not been delivered to the specified Nx_Port\non behalf of the requesting Nx_Port", "page": 52, "bbox": [318.69, 282.03, 537.31, 328.05]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "Connection established", "page": 52, "bbox": [98.38, 328.05, 215.43, 420.03]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "29", "page": 52, "bbox": [215.43, 328.05, 279.37, 420.03]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "0", "page": 52, "bbox": [279.37, 328.05, 318.69, 362.01]}
+{"cell_id": "r6c4", "row": 6, "col": 4, "text": "The specified Nx_Port in the RCS Request is not\nin a dedicated connection", "page": 52, "bbox": [318.69, 328.05, 537.31, 362.01]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "", "page": 52, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "", "page": 52, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "1", "page": 52, "bbox": [279.37, 362.01, 318.69, 420.03]}
+{"cell_id": "r7c4", "row": 7, "col": 4, "text": "The specified Nx_Port is involved in a dedicated\nconnection. The address identifier in bits 23-0\nidentifies the other Nx_Port involved in the\ndedicated connection.", "page": 52, "bbox": [318.69, 362.01, 537.31, 420.03]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "Intermix mode", "page": 52, "bbox": [98.38, 420.03, 215.43, 523.35]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "28", "page": 52, "bbox": [215.43, 420.03, 279.37, 523.35]}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "0", "page": 52, "bbox": [279.37, 420.03, 318.69, 454.05]}
+{"cell_id": "r8c4", "row": 8, "col": 4, "text": "The N_Port specified in the RCS frame is not\nfunctioning in Intermix mode.", "page": 52, "bbox": [318.69, 420.03, 537.31, 454.05]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "", "page": 52, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "", "page": 52, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "1", "page": 52, "bbox": [279.37, 454.05, 318.69, 523.35]}
+{"cell_id": "r9c4", "row": 9, "col": 4, "text": "The N_Port specified in the request is functioning\nin Intermix mode. An N_Port is functioning in\nIntermix mode if both the N_Port and the F_Port\nhave both previously indicated that each supports\nIntermix during Login.", "page": 52, "bbox": [318.69, 454.05, 537.31, 523.35]}

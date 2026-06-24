@@ -1,0 +1,39 @@
+{
+  "rows": [
+    [
+      "R_CTL",
+      null,
+      "Description"
+    ],
+    [
+      "ROUTING",
+      "INFORMATION",
+      null
+    ],
+    [
+      "0010b",
+      "0001b",
+      "Solicited Dataa"
+    ],
+    [
+      null,
+      "0010b",
+      "Request"
+    ],
+    [
+      null,
+      "0011b",
+      "Reply"
+    ],
+    [
+      null,
+      "Others",
+      "Reserved"
+    ],
+    [
+      "a This value is only used by the Clock Synchronization Update (CSU)\nELS.",
+      null,
+      null
+    ]
+  ]
+}

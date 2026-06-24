@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0067",
+  "type": "table",
+  "caption": "Table 64 – Multi-function device bit definitions",
+  "pages": [
+    88
+  ],
+  "bbox": [
+    211.58,
+    98.28,
+    424.42,
+    407.7
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 88,
+  "logical_table": false
+}

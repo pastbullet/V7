@@ -1,0 +1,3166 @@
+{
+  "schema_version": "protocol_orientation.v1",
+  "protocol_name": "Transmission Control Protocol (TCP)",
+
+  "document_purpose": {
+    "summary": "RFC 9293 is the consolidated, updated IETF Standards Track base specification for TCP, replacing RFC 793 and six other RFCs (879, 2873, 6093, 6429, 6528, 6691). It integrates decades of errata, security improvements, and normative clarifications into a single implementation reference, updating RFC 1011, RFC 1122, and RFC 5961.",
+    "implementation_scope": "Full normative TCP implementation: header format and options, connection lifecycle (open/close/reset), sequence number management, data transfer, flow control (window management, SWS avoidance, delayed ACKs, ZWP), segmentation (MSS, PMTUD, Nagle), retransmission and congestion control hooks, keep-alives, urgent data, user/TCP API, TCP/IP interface, and event-driven state machine across all 11 connection states.",
+    "non_goals": [
+      "Design philosophy and rationale (delegated to RFC 793 and TCP Roadmap RFC 7414)",
+      "Advanced loss recovery algorithms (deferred to RFC 5681 and companions)",
+      "Detailed congestion control algorithms (referenced to RFC 5681, RFC 6298, RFC 2914)",
+      "Multipath TCP (deferred to RFC 8684)",
+      "High-performance extensions such as SACK, Window Scale, Timestamps (referenced to RFC 7323, RFC 2018)",
+      "Cryptographic security (delegated to IPsec, TLS, TCP-AO)"
+    ]
+  },
+
+  "global_implementation_model": {
+    "service_model": "Reliable, in-order, connection-oriented, bidirectional byte-stream over unicast IP. Applications interact via a named-call API (OPEN, SEND, RECEIVE, CLOSE, ABORT, STATUS, FLUSH). Each direction is independently closeable (half-close). Port numbers multiplex flows per host-pair.",
+    "endpoint_model": "Per-connection state held in a Transmission Control Block (TCB). A TCB is created on OPEN and deleted on CLOSE/ABORT/timeout. Each TCB holds local/remote socket pair, send/receive sequence variables (SND.UNA, SND.NXT, SND.WND, SND.UP, SND.WL1, SND.WL2, ISS, RCV.NXT, RCV.WND, RCV.UP, IRS), buffer pointers, retransmit queue pointer, security/compartment, and timer state.",
+    "state_model": "Finite state machine with 11 named states: CLOSED (fictional, no TCB), LISTEN, SYN-SENT, SYN-RECEIVED, ESTABLISHED, FIN-WAIT-1, FIN-WAIT-2, CLOSE-WAIT, CLOSING, LAST-ACK, TIME-WAIT. Transitions are driven by three event categories: user calls, arriving segments, and timeouts.",
+    "message_model": "Single message type: TCP segment. A segment consists of a fixed 20-byte header (extensible via options up to DOffset*4 bytes), an optional options region, and a variable-length data payload. Control is conveyed via eight named flag bits (CWR, ECE, URG, ACK, PSH, RST, SYN, FIN) and dedicated fields (SeqNo, AckNo, Window, UrgentPointer). Segment integrity is checked via a mandatory ones'-complement checksum over a pseudo-header + TCP header + data.",
+    "event_model": "Three event categories drive TCB state transitions: (1) User Calls — OPEN, SEND, RECEIVE, CLOSE, ABORT, STATUS; (2) Arriving Segments — processed in a fixed eight-step pipeline per connection state (sequence check, RST, security, SYN, ACK, URG, data, FIN); (3) Timeouts — USER TIMEOUT, RETRANSMISSION TIMEOUT, TIME-WAIT TIMEOUT.",
+    "timer_model": "Three timer classes per TCB: (1) Retransmission Timer (RTO) — dynamically computed per RFC 6298/Karn's algorithm, exponential backoff on expiry; (2) TIME-WAIT Timer — fixed 2×MSL (2×2 min = 4 min) after active close; (3) User Timeout — application-configurable per-connection send deadline. Additional implicit timers: Zero-Window Probe timer (first probe after one RTO, exponential backoff); Keep-Alive timer (default off, configurable ≥2 hr idle interval).",
+    "error_model": "Error conditions propagate via: (1) synchronous error return strings on user calls (e.g., 'error: connection not open'); (2) asynchronous ERROR_REPORT upcall to application for soft TCP errors (ICMP receipt, excessive retransmissions, urgent pointer advance); (3) RST segment to remote peer; (4) TCB deletion and CLOSED state entry. Hard ICMP errors may abort the connection; soft ICMP errors MUST NOT.",
+    "runtime_dependencies": [
+      "IP layer (IPv4 RFC 791 or IPv6 RFC 8200) — for routing, pseudo-header construction, TTL, Diffserv field, source address selection (GET_SRCADDR), MTU sizes (GET_MAXSIZES: MMS_S, MMS_R)",
+      "ICMP/ICMPv6 — for Path MTU Discovery signals and error delivery to TCP",
+      "Cryptographically secure PRF (e.g., hash of connection tuple + secret key) — for ISN generation",
+      "Clock providing ~4 µs resolution counter — for ISN clock component (M in ISN formula)",
+      "Congestion control module (RFC 5681) — slow start, congestion avoidance, fast retransmit/recovery",
+      "RTO computation module (RFC 6298) — RTT sampling with Karn's algorithm",
+      "Optional: Path MTU Discovery (RFC 1191/RFC 8201) or PLPMTUD (RFC 4821)",
+      "Optional: TCP Timestamps (RFC 7323) for PAWS and TIME-WAIT reduction"
+    ]
+  },
+
+  "section_map": [
+    {
+      "node_id": "0002",
+      "title": "Abstract",
+      "pages": [1],
+      "section_role": "boilerplate",
+      "primary_focus": "Document scope and RFC lineage statement",
+      "defines": [],
+      "mentions": ["tcp_protocol"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": [],
+        "avoid_extracting_as_full_ir": [
+          { "concept_id": "tcp_protocol", "reason": "only referenced; defined throughout section 3" }
+        ]
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0006",
+      "title": "1. Purpose and Scope",
+      "pages": [4, 5],
+      "section_role": "overview",
+      "primary_focus": "Why this document exists, what it covers and excludes, relationship to companion specs",
+      "defines": [],
+      "mentions": ["tcp_protocol", "congestion_control", "tcp_roadmap"],
+      "deferred_to": [
+        {
+          "concept_id": "congestion_control",
+          "reason": "explicitly deferred to RFC 5681 and companions",
+          "likely_defining_node_id": "0036"
+        }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": [],
+        "avoid_extracting_as_full_ir": [
+          { "concept_id": "tcp_protocol", "reason": "scope statement only, not a definition section" }
+        ]
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": ["Section explicitly disclaims normative completeness for congestion control; do not extract congestion procedures from here"]
+    },
+    {
+      "node_id": "0009",
+      "title": "2.2. Key TCP Concepts",
+      "pages": [6],
+      "section_role": "overview",
+      "primary_focus": "High-level characterization: byte-stream, reliability, connection-oriented, bidirectional, port multiplexing",
+      "defines": [],
+      "mentions": ["byte_stream", "sequence_number", "checksum", "retransmission", "connection", "port", "tcp_segment"],
+      "deferred_to": [
+        { "concept_id": "byte_stream", "reason": "overview only", "likely_defining_node_id": "0034" },
+        { "concept_id": "sequence_number", "reason": "overview only", "likely_defining_node_id": "0018" },
+        { "concept_id": "tcp_segment", "reason": "overview only", "likely_defining_node_id": "0011" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": [],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0011",
+      "title": "3.1. Header Format",
+      "pages": [7, 8, 9, 10, 11],
+      "section_role": "message_format",
+      "primary_focus": "Complete TCP segment header field definitions, flag bits, checksum algorithm including pseudo-header, options structure rules",
+      "defines": [
+        "tcp_header_format", "source_port_field", "destination_port_field", "sequence_number_field",
+        "acknowledgment_number_field", "data_offset_field", "reserved_field", "control_bits",
+        "flag_CWR", "flag_ECE", "flag_URG", "flag_ACK", "flag_PSH", "flag_RST", "flag_SYN", "flag_FIN",
+        "window_field", "checksum_field", "checksum_pseudo_header", "urgent_pointer_field",
+        "options_field", "mandatory_option_set", "tcp_segment"
+      ],
+      "mentions": ["ipv4_pseudo_header", "ipv6_pseudo_header", "ecn"],
+      "deferred_to": [
+        { "concept_id": "mandatory_option_set", "reason": "listed here but defined in detail in 3.2", "likely_defining_node_id": "0012" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["message", "visual_request"],
+        "avoid_extracting_as_full_ir": [
+          { "concept_id": "ecn", "reason": "only flag bits mentioned; ECN procedure defined in RFC 3168, not here" }
+        ]
+      },
+      "merge_hints": [
+        { "with_node_id": "0012", "reason": "option format details continue directly in 3.2", "confidence": "high" }
+      ],
+      "visual_assets": [
+        {
+          "kind": "packet_format_table",
+          "caption_or_title": "Figure 1: TCP Header Format",
+          "page": 7,
+          "target_concept_id": "tcp_header_format",
+          "why_visual_needed": "Bit-level field layout (widths, order, offsets) is only fully specified in the bitmap diagram; text describes fields but alignment requires visual"
+        },
+        {
+          "kind": "packet_format_table",
+          "caption_or_title": "Figure 2: IPv4 Pseudo-header",
+          "page": 9,
+          "target_concept_id": "checksum_pseudo_header",
+          "why_visual_needed": "Pseudo-header field widths and bit positions are defined in the figure; text describes components but layout requires visual"
+        }
+      ],
+      "risk_notes": [
+        "Window field MUST be treated as unsigned 16-bit (MUST-1); extractor must not infer signed semantics",
+        "Checksum covers pseudo-header; IPv4 and IPv6 pseudo-headers differ in width (96 vs 320 bits) — both must be captured",
+        "Options field length is derived from DOffset: size=(DOffset-5)*32 bits — formula must be preserved exactly"
+      ]
+    },
+    {
+      "node_id": "0012",
+      "title": "3.2. Specific Option Definitions",
+      "pages": [11, 12, 13],
+      "section_role": "message_format",
+      "primary_focus": "Detailed format of mandatory options: EOL (Kind=0), NOP (Kind=1), MSS (Kind=2, Length=4)",
+      "defines": [
+        "option_EOL", "option_NOP", "option_MSS", "tcp_option_format_case1", "tcp_option_format_case2"
+      ],
+      "mentions": ["option_SACK", "option_timestamp", "option_window_scale", "experimental_options"],
+      "deferred_to": [
+        { "concept_id": "option_SACK", "reason": "only referenced, defined in RFC 2018/2883", "likely_defining_node_id": "0013" },
+        { "concept_id": "option_timestamp", "reason": "only referenced, defined in RFC 7323", "likely_defining_node_id": "0013" },
+        { "concept_id": "option_window_scale", "reason": "only referenced, defined in RFC 7323", "likely_defining_node_id": "0013" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["message"],
+        "avoid_extracting_as_full_ir": [
+          { "concept_id": "option_SACK", "reason": "external RFC, only mentioned here" },
+          { "concept_id": "option_timestamp", "reason": "external RFC, only mentioned here" },
+          { "concept_id": "option_window_scale", "reason": "external RFC, only mentioned here" }
+        ]
+      },
+      "merge_hints": [
+        { "with_node_id": "0011", "reason": "option definitions complete the header format specification", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": [
+        "MSS option MUST NOT be sent on non-SYN segments (MUST-65) — this constraint applies to the message IR",
+        "EOL and NOP are the only options without length fields (MUST-68); all others must have length"
+      ]
+    },
+    {
+      "node_id": "0013",
+      "title": "3.2.1. Other Common Options",
+      "pages": [13],
+      "section_role": "reference",
+      "primary_focus": "Pointer to SACK (RFC 2018/2883), Timestamps (RFC 7323), Window Scale (RFC 7323) as recommended but not required",
+      "defines": [],
+      "mentions": ["option_SACK", "option_timestamp", "option_window_scale"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": [],
+        "avoid_extracting_as_full_ir": [
+          { "concept_id": "option_SACK", "reason": "defined in external RFC; this section only lists the option name" },
+          { "concept_id": "option_timestamp", "reason": "defined in external RFC; this section only lists the option name" }
+        ]
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": ["No normative content here; treat as reference-only node"]
+    },
+    {
+      "node_id": "0014",
+      "title": "3.2.2. Experimental TCP Options",
+      "pages": [13],
+      "section_role": "reference",
+      "primary_focus": "Pointer to RFC 4727 for experimental option values and RFC 6994 for shared experimental usage",
+      "defines": [],
+      "mentions": ["experimental_options"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": [],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0016",
+      "title": "3.3.1. Key Connection State Variables",
+      "pages": [13, 14, 15],
+      "section_role": "definition",
+      "primary_focus": "TCB structure and all send/receive/segment sequence variables; includes diagrams of send and receive sequence spaces",
+      "defines": [
+        "tcb", "SND_UNA", "SND_NXT", "SND_WND", "SND_UP", "SND_WL1", "SND_WL2", "ISS",
+        "RCV_NXT", "RCV_WND", "RCV_UP", "IRS",
+        "SEG_SEQ", "SEG_ACK", "SEG_LEN", "SEG_WND", "SEG_UP",
+        "send_sequence_space", "receive_sequence_space"
+      ],
+      "mentions": [],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "visual_request"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0018", "reason": "sequence variable semantics are fully exercised in section 3.4", "confidence": "medium" }
+      ],
+      "visual_assets": [
+        {
+          "kind": "other",
+          "caption_or_title": "Figure 3: Send Sequence Space",
+          "page": 14,
+          "target_concept_id": "send_sequence_space",
+          "why_visual_needed": "Annotated number line shows the four zones (acknowledged, unacked, allowed, future) relative to SND.UNA, SND.NXT, and SND.UNA+SND.WND; spatial relationships are lost in text extraction"
+        },
+        {
+          "kind": "other",
+          "caption_or_title": "Figure 4: Receive Sequence Space",
+          "page": 14,
+          "target_concept_id": "receive_sequence_space",
+          "why_visual_needed": "Number line shows RCV.NXT and RCV.NXT+RCV.WND zones; spatial layout conveys window semantics"
+        }
+      ],
+      "risk_notes": [
+        "SND.WL1 and SND.WL2 are anti-stale-window-update variables; their update rule is in section 3.10.7.4 (ACK check step), not here",
+        "Variable names are canonical source terms and must be preserved exactly (dot notation: SND.UNA not snd_una)"
+      ]
+    },
+    {
+      "node_id": "0017",
+      "title": "3.3.2. State Machine Overview",
+      "pages": [15, 16, 17, 18],
+      "section_role": "state_machine",
+      "primary_focus": "All 11 TCP states defined with meanings; state diagram (Figure 5) showing transitions, events, and actions; notes on omitted transitions (RST from any state, FIN-WAIT-1 to TIME-WAIT shortcut)",
+      "defines": [
+        "state_CLOSED", "state_LISTEN", "state_SYN_SENT", "state_SYN_RECEIVED",
+        "state_ESTABLISHED", "state_FIN_WAIT_1", "state_FIN_WAIT_2",
+        "state_CLOSE_WAIT", "state_CLOSING", "state_LAST_ACK", "state_TIME_WAIT",
+        "event_user_call", "event_segment_arrives", "event_timeout"
+      ],
+      "mentions": ["three_way_handshake", "rst_processing", "fin_processing"],
+      "deferred_to": [
+        { "concept_id": "three_way_handshake", "reason": "overview diagram only; full procedure in 3.5/3.10", "likely_defining_node_id": "0022" },
+        { "concept_id": "rst_processing", "reason": "mentioned; fully defined in 3.5.2, 3.5.3, 3.10.7", "likely_defining_node_id": "0024" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["state_machine", "visual_request"],
+        "avoid_extracting_as_full_ir": [
+          { "concept_id": "three_way_handshake", "reason": "diagram-level overview; procedure IR must come from 3.5 and 3.10.7" }
+        ]
+      },
+      "merge_hints": [
+        { "with_node_id": "0061", "reason": "state machine overview here should be co-read with event processing in 3.10 which provides full per-state action detail", "confidence": "high" }
+      ],
+      "visual_assets": [
+        {
+          "kind": "state_diagram",
+          "caption_or_title": "Figure 5: TCP Connection State Diagram",
+          "page": 17,
+          "target_concept_id": "tcp_fsm",
+          "why_visual_needed": "Full FSM topology including all transitions, triggering events, and resulting actions is contained in the diagram; text notes explicitly warn that the diagram cannot be fully reconstructed from surrounding text alone (several transitions omitted from text description)"
+        }
+      ],
+      "risk_notes": [
+        "Document explicitly states Figure 5 is a SUMMARY and 'must not be taken as the total specification' — FSM IR must be supplemented from section 3.10 event processing",
+        "Note 1: SYN-RECEIVED→LISTEN RST transition is conditional (passive OPEN origin only)",
+        "Note 2: FIN-WAIT-1→TIME-WAIT shortcut (when FIN received and local FIN ACKed simultaneously) is omitted from the diagram",
+        "Note 3: RST from any state → TIME-WAIT and RST receipt → LISTEN/CLOSED transitions are omitted from diagram for legibility"
+      ]
+    },
+    {
+      "node_id": "0018",
+      "title": "3.4. Sequence Numbers",
+      "pages": [18, 19, 20],
+      "section_role": "algorithm",
+      "primary_focus": "Cumulative ACK mechanism, modulo-2^32 arithmetic, acceptable ACK test (SND.UNA < SEG.ACK <= SND.NXT), segment acceptability 4-case table, SYN/FIN implicit sequence number occupancy",
+      "defines": [
+        "cumulative_ack", "modulo_arithmetic", "acceptable_ack_test", "segment_acceptability_test",
+        "sequence_space_occupancy_syn_fin"
+      ],
+      "mentions": ["SND_UNA", "SND_NXT", "RCV_NXT", "RCV_WND", "SEG_SEQ", "SEG_LEN", "SEG_ACK"],
+      "deferred_to": [
+        { "concept_id": "isn_selection", "reason": "mentioned; defined in 3.4.1", "likely_defining_node_id": "0019" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "visual_request"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0019", "reason": "ISN selection is a direct continuation of sequence number semantics", "confidence": "high" }
+      ],
+      "visual_assets": [
+        {
+          "kind": "fsm_table",
+          "caption_or_title": "Table 5: Segment Acceptability Tests",
+          "page": 19,
+          "target_concept_id": "segment_acceptability_test",
+          "why_visual_needed": "Four-case matrix (SegLen × RcvWnd) with specific inequality tests must be read as a table to avoid misreading the zero-window special cases"
+        }
+      ],
+      "risk_notes": [
+        "Symbol '=<' in this document means 'less than or equal (modulo 2^32)' — extractors must not interpret as standard '=<'; preserve semantics note",
+        "Zero-window case: ACK, URG, RST must be processed even when RCV.WND=0 (MUST-66)"
+      ]
+    },
+    {
+      "node_id": "0019",
+      "title": "3.4.1. Initial Sequence Number Selection",
+      "pages": [20, 21, 22],
+      "section_role": "algorithm",
+      "primary_focus": "ISN generation formula (ISN = M + F(localip, localport, remoteip, remoteport, secretkey)), clock-driven counter, PRF requirement, 3WHS ISN exchange, connection incarnation concept",
+      "defines": [
+        "isn_selection", "isn_formula", "isn_clock_component", "isn_prf_component",
+        "three_way_handshake", "connection_incarnation", "ISS", "IRS"
+      ],
+      "mentions": ["simultaneous_open", "quiet_time", "msl"],
+      "deferred_to": [
+        { "concept_id": "quiet_time", "reason": "mentioned; defined in 3.4.2/3.4.3", "likely_defining_node_id": "0021" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "algorithm"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0022", "reason": "3WHS mechanics introduced here are elaborated in 3.5 with examples and state transitions", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": [
+        "ISN formula must preserve exact PRF requirement: F() MUST NOT be computable from outside (MUST-9)",
+        "SHLD-1 recommends the formula but MUST-8 mandates the clock-driven component — distinguish the two requirement levels"
+      ]
+    },
+    {
+      "node_id": "0020",
+      "title": "3.4.2. Knowing When to Keep Quiet",
+      "pages": [22],
+      "section_role": "algorithm",
+      "primary_focus": "Quiet time rule: wait one MSL (2 min) after reboot before emitting segments with new sequence numbers",
+      "defines": ["quiet_time_rule", "msl"],
+      "mentions": ["isn_selection", "sequence_number_field"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0021", "reason": "3.4.3 is a detailed explanation of the same concept", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": ["Quiet time is explicitly noted as 'not necessary in most current implementations'; extractor should flag as conditional requirement, not a universal mandatory"]
+    },
+    {
+      "node_id": "0021",
+      "title": "3.4.3. The TCP Quiet Time Concept",
+      "pages": [22, 23, 24],
+      "section_role": "algorithm",
+      "primary_focus": "Extended rationale for quiet time; PAWS/Timestamp option interaction at high data rates",
+      "defines": ["quiet_time_concept", "paws_reference"],
+      "mentions": ["msl", "isn_selection", "option_timestamp"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": ["procedure"],
+        "avoid_extracting_as_full_ir": [
+          { "concept_id": "paws_reference", "reason": "PAWS defined in RFC 7323, only referenced here" }
+        ]
+      },
+      "merge_hints": [
+        { "with_node_id": "0020", "reason": "same concept, extended discussion", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0022",
+      "title": "3.5. Establishing a Connection",
+      "pages": [24, 25, 26],
+      "section_role": "mechanism",
+      "primary_focus": "Three-way handshake procedure with sequence diagrams (basic 3WHS, simultaneous open, old duplicate SYN recovery); requirements for simultaneous open support and passive/active tracking",
+      "defines": [
+        "three_way_handshake_procedure", "simultaneous_open", "old_duplicate_syn_recovery"
+      ],
+      "mentions": ["state_SYN_SENT", "state_SYN_RECEIVED", "state_ESTABLISHED", "rst_generation", "isn_selection"],
+      "deferred_to": [
+        { "concept_id": "rst_generation", "reason": "mentioned in context; defined in 3.5.2", "likely_defining_node_id": "0024" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "visual_request"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0062", "reason": "OPEN call event processing (3.10.1) provides the authoritative per-state action table for connection establishment", "confidence": "high" },
+        { "with_node_id": "0071", "reason": "SYN-SENT segment arrival processing completes the 3WHS procedure", "confidence": "high" }
+      ],
+      "visual_assets": [
+        {
+          "kind": "sequence_chart",
+          "caption_or_title": "Figure 6: Basic Three-Way Handshake for Connection Synchronization",
+          "page": 25,
+          "target_concept_id": "three_way_handshake_procedure",
+          "why_visual_needed": "Sequence diagram shows exact segment exchange sequence and state annotations at each step"
+        },
+        {
+          "kind": "sequence_chart",
+          "caption_or_title": "Figure 7: Simultaneous Connection Synchronization",
+          "page": 25,
+          "target_concept_id": "simultaneous_open",
+          "why_visual_needed": "Interleaved segment exchange for simultaneous open is only fully comprehensible in diagram form"
+        },
+        {
+          "kind": "sequence_chart",
+          "caption_or_title": "Figure 8: Recovery from Old Duplicate SYN",
+          "page": 26,
+          "target_concept_id": "old_duplicate_syn_recovery",
+          "why_visual_needed": "RST-based recovery sequence requires visual to show timing of delayed duplicate and fresh SYN"
+        }
+      ],
+      "risk_notes": [
+        "MUST-10: simultaneous open is mandatory, not optional",
+        "MUST-11: implementation must track whether SYN-RECEIVED was reached from passive or active OPEN"
+      ]
+    },
+    {
+      "node_id": "0023",
+      "title": "3.5.1. Half-Open Connections and Other Anomalies",
+      "pages": [26, 27, 28],
+      "section_role": "mechanism",
+      "primary_focus": "Half-open connection scenarios: discovery via unexpected ACK or SYN causing RST; Figures 9-11 with sequence diagrams",
+      "defines": ["half_open_connection", "half_open_discovery"],
+      "mentions": ["rst_generation", "rst_processing", "state_ESTABLISHED", "state_CLOSED"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": ["visual_request"],
+        "avoid_extracting_as_full_ir": [
+          { "concept_id": "rst_generation", "reason": "illustrated here by example; formally defined in 3.5.2" }
+        ]
+      },
+      "merge_hints": [
+        { "with_node_id": "0024", "reason": "RST rules that apply in half-open detection are formally specified in 3.5.2", "confidence": "high" }
+      ],
+      "visual_assets": [
+        {
+          "kind": "sequence_chart",
+          "caption_or_title": "Figure 9: Half-Open Connection Discovery",
+          "page": 27,
+          "target_concept_id": "half_open_discovery",
+          "why_visual_needed": "Post-reboot desynchronization and RST exchange sequence is critical for implementation; visual shows step ordering"
+        },
+        {
+          "kind": "sequence_chart",
+          "caption_or_title": "Figure 10: Active Side Causes Half-Open Connection Discovery",
+          "page": 28,
+          "target_concept_id": "half_open_discovery",
+          "why_visual_needed": "Alternate half-open scenario where remote sends data to non-existing connection"
+        },
+        {
+          "kind": "sequence_chart",
+          "caption_or_title": "Figure 11: Old Duplicate SYN Initiates a Reset on Two Passive Sockets",
+          "page": 28,
+          "target_concept_id": "old_duplicate_syn_recovery",
+          "why_visual_needed": "LISTEN-LISTEN reset exchange requires visual to show SYN-ACK/RST interplay"
+        }
+      ],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0024",
+      "title": "3.5.2. Reset Generation",
+      "pages": [28, 29],
+      "section_role": "mechanism",
+      "primary_focus": "Normative RST generation rules for three connection state groups: CLOSED, non-synchronized (LISTEN/SYN-SENT/SYN-RECEIVED), synchronized (ESTABLISHED through TIME-WAIT); SEQ/ACK field selection for RST; TIME-WAIT entry recommendation",
+      "defines": ["rst_generation_rules", "rst_seq_selection", "rst_ack_selection"],
+      "mentions": ["state_CLOSED", "state_LISTEN", "state_SYN_SENT", "state_SYN_RECEIVED", "state_TIME_WAIT"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0025", "reason": "RST generation and RST processing are two halves of a single mechanism", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": [
+        "Three distinct rule groups based on state: CLOSED, non-synchronized, synchronized — must not conflate them",
+        "RST sender SHOULD enter TIME-WAIT (SHLD — not MUST); preserve this distinction in extracted procedure IR"
+      ]
+    },
+    {
+      "node_id": "0025",
+      "title": "3.5.3. Reset Processing",
+      "pages": [29],
+      "section_role": "mechanism",
+      "primary_focus": "RST validation (SEQ in window, or ACK matches SYN in SYN-SENT), state-specific response to valid RST, RST may include diagnostic data",
+      "defines": ["rst_validation_rule", "rst_processing_rules"],
+      "mentions": ["state_LISTEN", "state_SYN_RECEIVED", "state_CLOSED"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0024", "reason": "RST generation and processing form one mechanism", "confidence": "high" },
+        { "with_node_id": "0072", "reason": "3.10.7.4 second step refines RST processing per RFC 5961 with challenge ACK mechanism", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": [
+        "RFC 5961 mitigation (challenge ACK instead of immediate close) modifies the procedure in 3.10.7.4; extraction of RST processing must reference both sections"
+      ]
+    },
+    {
+      "node_id": "0026",
+      "title": "3.6. Closing a Connection",
+      "pages": [29, 30, 31],
+      "section_role": "mechanism",
+      "primary_focus": "Three close cases: local-initiated, remote-initiated, simultaneous; FIN handshake; normal close and abort via RST; MUST-12 application notification; sequence diagrams Figures 12-13",
+      "defines": [
+        "close_procedure", "close_case_local_initiated", "close_case_remote_initiated",
+        "close_case_simultaneous", "fin_handshake", "abort_via_rst"
+      ],
+      "mentions": ["state_FIN_WAIT_1", "state_FIN_WAIT_2", "state_CLOSE_WAIT", "state_CLOSING",
+                   "state_LAST_ACK", "state_TIME_WAIT", "state_CLOSED"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "visual_request"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0065", "reason": "CLOSE call event processing (3.10.4) provides per-state action tables that complete the close procedure", "confidence": "high" }
+      ],
+      "visual_assets": [
+        {
+          "kind": "sequence_chart",
+          "caption_or_title": "Figure 12: Normal Close Sequence",
+          "page": 31,
+          "target_concept_id": "close_procedure",
+          "why_visual_needed": "FIN/ACK exchange sequence and exact state transitions at each step require visual for correctness"
+        },
+        {
+          "kind": "sequence_chart",
+          "caption_or_title": "Figure 13: Simultaneous Close Sequence",
+          "page": 31,
+          "target_concept_id": "close_case_simultaneous",
+          "why_visual_needed": "Crossing FIN segments and CLOSING→TIME-WAIT path are only clear in diagram form"
+        }
+      ],
+      "risk_notes": ["MUST-12: application MUST be told whether connection closed normally or was aborted — this is a required API contract, not just internal behavior"]
+    },
+    {
+      "node_id": "0027",
+      "title": "3.6.1. Half-Closed Connections",
+      "pages": [31, 32],
+      "section_role": "mechanism",
+      "primary_focus": "Half-duplex close semantics; TIME-WAIT 2×MSL requirement; TIME-WAIT SYN reuse; Timestamp-based TIME-WAIT reduction (SHLD-4)",
+      "defines": [
+        "half_closed_connection", "time_wait_requirement", "time_wait_syn_reuse",
+        "time_wait_timestamp_reduction"
+      ],
+      "mentions": ["state_TIME_WAIT", "option_timestamp", "msl"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["timer_rule", "procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": [
+        "TIME-WAIT SYN reuse (MAY-2) has two strict conditions: (1) new ISS > previous ISS, (2) return to TIME-WAIT if SYN is duplicate — both conditions are implementation constraints that must be extracted",
+        "MUST-13: 2×MSL linger is MUST, not SHOULD"
+      ]
+    },
+    {
+      "node_id": "0028",
+      "title": "3.7. Segmentation",
+      "pages": [32, 33],
+      "section_role": "overview",
+      "primary_focus": "Goals for segment sizing; introduces MSS, PMTUD, Nagle, Jumbograms as sub-mechanisms",
+      "defines": ["segmentation_concept"],
+      "mentions": ["mss_option", "pmtud", "nagle_algorithm", "ipv6_jumbogram"],
+      "deferred_to": [
+        { "concept_id": "mss_option", "reason": "overview mention; defined in 3.7.1", "likely_defining_node_id": "0029" },
+        { "concept_id": "pmtud", "reason": "overview mention; defined in 3.7.2", "likely_defining_node_id": "0030" },
+        { "concept_id": "nagle_algorithm", "reason": "overview mention; defined in 3.7.4", "likely_defining_node_id": "0032" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": [],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0029",
+      "title": "3.7.1. Maximum Segment Size Option",
+      "pages": [33, 34],
+      "section_role": "mechanism",
+      "primary_focus": "Eff.snd.MSS formula, MSS send/receive requirements, default MSS values (536 IPv4, 1220 IPv6), MSS value upper bound (MMS_R - 20)",
+      "defines": [
+        "effective_send_mss", "mss_default_ipv4", "mss_default_ipv6", "mss_calculation_formula",
+        "mms_s", "mms_r"
+      ],
+      "mentions": ["pmtud", "plpmtud", "ipv4_options", "ipv6_extension_headers"],
+      "deferred_to": [
+        { "concept_id": "pmtud", "reason": "referenced for interaction; defined in 3.7.2", "likely_defining_node_id": "0030" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": [
+        "Eff.snd.MSS formula: min(SendMSS+20, MMS_S) - TCPhdrsize - IPoptionsize — all four terms must be captured",
+        "MSS Option MUST-65: MUST NOT be sent on non-SYN segments",
+        "Variable header size (TCPhdrsize can change per segment) means Eff.snd.MSS must be recalculated per segment"
+      ]
+    },
+    {
+      "node_id": "0030",
+      "title": "3.7.2. Path MTU Discovery",
+      "pages": [34],
+      "section_role": "mechanism",
+      "primary_focus": "PMTUD (RFC 1191/RFC 8201) and PLPMTUD (RFC 4821) recommendations and their interaction with MSS",
+      "defines": ["pmtud_interaction", "plpmtud_reference"],
+      "mentions": ["mss_option", "icmp_messages", "ipv4_df_bit"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": ["binding_hint"],
+        "avoid_extracting_as_full_ir": [
+          { "concept_id": "pmtud_interaction", "reason": "details are in external RFCs; this section only states recommendation to use them" }
+        ]
+      },
+      "merge_hints": [
+        { "with_node_id": "0029", "reason": "PMTUD is a complement to MSS calculation", "confidence": "medium" }
+      ],
+      "visual_assets": [],
+      "risk_notes": ["PLPMTUD is RECOMMENDED but not a formal requirement (no MUST label); Appendix B confirms this"]
+    },
+    {
+      "node_id": "0031",
+      "title": "3.7.3. Interfaces with Variable MTU Values",
+      "pages": [35],
+      "section_role": "mechanism",
+      "primary_focus": "Use smallest effective MTU for MSS advertisement on variable-MTU interfaces (SHLD-6)",
+      "defines": ["variable_mtu_mss_rule"],
+      "mentions": ["mss_option", "rohc"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0029", "reason": "refinement of MSS calculation for variable MTU interfaces", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0032",
+      "title": "3.7.4. Nagle Algorithm",
+      "pages": [35],
+      "section_role": "algorithm",
+      "primary_focus": "Nagle algorithm rule: buffer all user data if unacked data exists, unless a full-segment can be sent; must be disableable per connection (MUST-17)",
+      "defines": ["nagle_algorithm"],
+      "mentions": ["SND_NXT", "SND_UNA", "effective_send_mss", "delayed_ack"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0086", "reason": "Appendix A.3 describes a Nagle modification (Minshall) that implementations may use", "confidence": "medium" },
+        { "with_node_id": "0043", "reason": "Sender SWS algorithm and Nagle are complementary and both govern when to send", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": ["Nagle interacts with delayed ACKs — extractor should note the interaction risk mentioned in the text (Appendix A.3 modification)"]
+    },
+    {
+      "node_id": "0033",
+      "title": "3.7.5. IPv6 Jumbograms",
+      "pages": [35, 36],
+      "section_role": "mechanism",
+      "primary_focus": "MSS=65535 treated as infinity for Jumbograms; PMTUD determines actual MSS",
+      "defines": ["ipv6_jumbogram_mss_rule"],
+      "mentions": ["pmtud", "mss_option"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0029", "reason": "Jumbogram rule is a special case of MSS interpretation", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0034",
+      "title": "3.8. Data Communication",
+      "pages": [36],
+      "section_role": "overview",
+      "primary_focus": "Data flow mechanics: SND.NXT advancement on send, RCV.NXT advancement on receive, SND.UNA advancement on ACK receipt; CLOSE/FIN imply PUSH; RTO requirement hook",
+      "defines": ["data_communication_model"],
+      "mentions": ["SND_NXT", "SND_UNA", "RCV_NXT", "retransmission_timeout", "congestion_control"],
+      "deferred_to": [
+        { "concept_id": "retransmission_timeout", "reason": "mentioned; defined in 3.8.1", "likely_defining_node_id": "0035" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": [],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0035",
+      "title": "3.8.1. Retransmission Timeout",
+      "pages": [36, 37],
+      "section_role": "timer_rule",
+      "primary_focus": "RTO must be dynamic per RFC 6298/Karn's algorithm (MUST-18); IPv4 ID field must not be used for duplicate detection (MAY-4 clarification)",
+      "defines": ["rto_requirement"],
+      "mentions": ["karn_algorithm", "rto_computation"],
+      "deferred_to": [
+        { "concept_id": "rto_computation", "reason": "delegated entirely to RFC 6298", "likely_defining_node_id": "0035" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["timer_rule", "binding_hint"],
+        "avoid_extracting_as_full_ir": [
+          { "concept_id": "rto_computation", "reason": "only a normative pointer to RFC 6298; algorithm not reproduced here" }
+        ]
+      },
+      "merge_hints": [
+        { "with_node_id": "0073", "reason": "RETRANSMISSION TIMEOUT event handling in 3.10.8 specifies the retransmit action", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": ["MUST-18 requires RFC 6298 algorithm including Karn; do not substitute a simpler procedure"]
+    },
+    {
+      "node_id": "0036",
+      "title": "3.8.2. TCP Congestion Control",
+      "pages": [37],
+      "section_role": "mechanism",
+      "primary_focus": "Mandatory congestion control: slow start, congestion avoidance, exponential backoff (MUST-19); ECN recommendation (SHLD-8); alternative algorithms allowed under conditions (MAY-18)",
+      "defines": ["congestion_control_requirement", "ecn_recommendation"],
+      "mentions": ["slow_start", "congestion_avoidance", "fast_retransmit", "fast_recovery", "ecn"],
+      "deferred_to": [
+        { "concept_id": "slow_start", "reason": "mandated but not defined here; see RFC 5681", "likely_defining_node_id": "0036" },
+        { "concept_id": "congestion_avoidance", "reason": "mandated but not defined here; see RFC 5681", "likely_defining_node_id": "0036" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": ["binding_hint"],
+        "avoid_extracting_as_full_ir": [
+          { "concept_id": "slow_start", "reason": "RFC 5681 defines the algorithm; this section only states MUST-19 requirement" },
+          { "concept_id": "congestion_avoidance", "reason": "RFC 5681 defines the algorithm; this section only states MUST-19 requirement" }
+        ]
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": [
+        "ECN requires both CWR and ECE flag handling; flag definitions are in section 3.1; procedure is in RFC 3168",
+        "MUST-19 covers slow start + congestion avoidance + exponential backoff together as a unit"
+      ]
+    },
+    {
+      "node_id": "0037",
+      "title": "3.8.3. TCP Connection Failures",
+      "pages": [37, 38],
+      "section_role": "mechanism",
+      "primary_focus": "R1/R2 retransmission threshold procedure for data and SYN segments; application configurability of R2; negative advice to IP at R1; connection close at R2",
+      "defines": [
+        "retransmission_threshold_R1", "retransmission_threshold_R2",
+        "connection_failure_procedure", "negative_advice_to_ip"
+      ],
+      "mentions": ["retransmission_timeout", "icmp_messages"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "timer_rule"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": [
+        "R1 and R2 have different values for data segments vs SYN segments (R2 for SYN ≥ 3 minutes, MUST-23)",
+        "MUST-21: application MUST be able to set R2; extractor should include this as an API constraint"
+      ]
+    },
+    {
+      "node_id": "0038",
+      "title": "3.8.4. TCP Keep-Alives",
+      "pages": [38, 39],
+      "section_role": "mechanism",
+      "primary_focus": "Optional keep-alive mechanism: idle detection, probe format (SEQ=SND.NXT-1), configurability requirements, default-off, interval ≥2hr; MUST-29 tolerance of lost ACK probes",
+      "defines": [
+        "keep_alive_mechanism", "keep_alive_probe_format", "keep_alive_timer",
+        "keep_alive_interval_default"
+      ],
+      "mentions": ["SND_NXT", "retransmission_timeout"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "timer_rule"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": [
+        "Keep-alives are MAY (optional) but if implemented, MUST-24 through MUST-29 apply — all six MUSTs apply conditionally",
+        "Probe SEQ=SND.NXT-1 is the canonical probe format; MAY contain one garbage octet (MAY-6)"
+      ]
+    },
+    {
+      "node_id": "0039",
+      "title": "3.8.5. The Communication of Urgent Information",
+      "pages": [39],
+      "section_role": "mechanism",
+      "primary_focus": "Urgent mechanism: URG flag, urgent pointer semantics, urgent/normal mode transitions, asynchronous notification to application (MUST-32, MUST-33); new applications SHOULD NOT use (SHLD-13)",
+      "defines": [
+        "urgent_mechanism", "urgent_mode", "normal_mode", "urgent_pointer_semantics",
+        "urgent_async_notification"
+      ],
+      "mentions": ["flag_URG", "urgent_pointer_field", "RCV_NXT", "RCV_UP"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0072", "reason": "URG bit processing step (sixth step) in 3.10.7.4 implements the urgent mechanism", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": [
+        "Urgent pointer MUST point to sequence number of octet FOLLOWING urgent data (MUST-62) — historical implementations differ on this interpretation",
+        "MUST-30: urgent mechanism support is mandatory even though SHLD-13 discourages its use by applications"
+      ]
+    },
+    {
+      "node_id": "0040",
+      "title": "3.8.6. Managing the Window",
+      "pages": [39, 40],
+      "section_role": "mechanism",
+      "primary_focus": "Window advertisement semantics; discouragement of window shrinking (SHLD-14); sender robustness against shrinking (MUST-34); introduction of ZWP",
+      "defines": ["window_management_rules", "window_shrinking_rule"],
+      "mentions": ["SND_WND", "RCV_WND", "zero_window_probing", "silly_window_syndrome"],
+      "deferred_to": [
+        { "concept_id": "zero_window_probing", "reason": "introduced; defined in 3.8.6.1", "likely_defining_node_id": "0041" },
+        { "concept_id": "silly_window_syndrome", "reason": "introduced; defined in 3.8.6.2", "likely_defining_node_id": "0042" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": ["Window field is unsigned 16-bit (MUST-1); implementations RECOMMENDED to use 32-bit internal variable (REC-1) for window scale support"]
+    },
+    {
+      "node_id": "0041",
+      "title": "3.8.6.1. Zero-Window Probing",
+      "pages": [40, 41],
+      "section_role": "mechanism",
+      "primary_focus": "ZWP mandatory (MUST-36): probe must be sent when window is zero; first probe after RTO, exponential backoff; receiver must ACK probes with zero window; connection must stay open as long as ACKs arrive (MUST-37)",
+      "defines": ["zero_window_probing", "zwp_probe_timing", "zwp_backoff"],
+      "mentions": ["retransmission_timeout", "SND_WND", "RCV_WND"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "timer_rule"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0043", "reason": "ZWP override timeout may share the SWS sender override timer", "confidence": "medium" }
+      ],
+      "visual_assets": [],
+      "risk_notes": ["MUST-37: connection MUST stay open while receiver is ACKing probes — this is a liveness invariant"]
+    },
+    {
+      "node_id": "0042",
+      "title": "3.8.6.2. Silly Window Syndrome Avoidance",
+      "pages": [41],
+      "section_role": "overview",
+      "primary_focus": "SWS concept overview; Nagle vs sender SWS as complementary; defers to subsections for algorithms",
+      "defines": ["silly_window_syndrome"],
+      "mentions": ["nagle_algorithm", "sender_sws_algorithm", "receiver_sws_algorithm"],
+      "deferred_to": [
+        { "concept_id": "sender_sws_algorithm", "reason": "defined in 3.8.6.2.1", "likely_defining_node_id": "0043" },
+        { "concept_id": "receiver_sws_algorithm", "reason": "defined in 3.8.6.2.2", "likely_defining_node_id": "0044" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": [],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0043",
+      "title": "3.8.6.2.1. Sender's Algorithm -- When to Send Data",
+      "pages": [41, 42],
+      "section_role": "algorithm",
+      "primary_focus": "Sender SWS: usable window U = SND.UNA + SND.WND - SND.NXT; four send conditions; Max(SND.WND) as RCV.BUFF estimate; override timeout (0.1-1.0s); Fs=1/2 fraction",
+      "defines": [
+        "sender_sws_algorithm", "usable_window", "max_snd_wnd_estimate", "sws_override_timeout",
+        "sws_send_condition_1", "sws_send_condition_2", "sws_send_condition_3", "sws_send_condition_4"
+      ],
+      "mentions": ["nagle_algorithm", "effective_send_mss", "zero_window_probing"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["algorithm", "procedure", "timer_rule"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0032", "reason": "Nagle and sender SWS are jointly applied to determine when to send", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": [
+        "Four send conditions are ORed; the bracketed [SND.NXT = SND.UNA] part of conditions 2 and 3 is imposed by Nagle",
+        "Override timeout range 0.1-1.0s is implementation guidance only"
+      ]
+    },
+    {
+      "node_id": "0044",
+      "title": "3.8.6.2.2. Receiver's Algorithm -- When to Send a Window Update",
+      "pages": [42, 43],
+      "section_role": "algorithm",
+      "primary_focus": "Receiver SWS: RCV.BUFF partitioned into RCV.USER + RCV.WND + Reduction; advance window only when reduction >= min(Fr*RCV.BUFF, Eff.snd.MSS); Fr=1/2",
+      "defines": [
+        "receiver_sws_algorithm", "rcv_buff_partitioning", "rcv_user", "rcv_wnd_advance_threshold"
+      ],
+      "mentions": ["RCV_NXT", "RCV_WND", "effective_send_mss"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["algorithm", "procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0045", "reason": "delayed ACK and receiver SWS together determine when receiver sends an ACK with window update", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": ["Receiver uses its own Eff.snd.MSS assuming it equals sender's — this assumption must be noted in extracted algorithm IR"]
+    },
+    {
+      "node_id": "0045",
+      "title": "3.8.6.3. Delayed Acknowledgments -- When to Send an ACK Segment",
+      "pages": [43],
+      "section_role": "algorithm",
+      "primary_focus": "Delayed ACK: SHLD-18 recommendation; MUST-40 hard limit of <0.5s delay; SHLD-19 ACK every 2nd full-sized segment or 2*RMSS bytes",
+      "defines": ["delayed_ack_algorithm", "delayed_ack_limit", "delayed_ack_frequency"],
+      "mentions": ["receiver_sws_algorithm", "RCV_NXT"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["timer_rule", "procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0044", "reason": "receiver SWS and delayed ACK jointly determine receiver ACK timing", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": [
+        "MUST-40: delay MUST be less than 0.5 seconds — this is a hard ceiling, not a guideline",
+        "GRO, ACK compression, ACK decimation are mentioned as current practice that further reduces ACK count — these are implementation notes, not normative requirements"
+      ]
+    },
+    {
+      "node_id": "0047",
+      "title": "3.9.1. User/TCP Interface",
+      "pages": [43, 44],
+      "section_role": "api_interface",
+      "primary_focus": "Functional requirements for user/TCP API; minimum required services; call return model (immediate return + delayed signal); error reporting format",
+      "defines": ["user_tcp_interface_model"],
+      "mentions": ["open_call", "send_call", "receive_call", "close_call", "abort_call", "status_call"],
+      "deferred_to": [
+        { "concept_id": "open_call", "reason": "introduced; defined in 3.9.1.1", "likely_defining_node_id": "0048" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": [],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0048",
+      "title": "3.9.1.1. Open",
+      "pages": [44, 45],
+      "section_role": "api_interface",
+      "primary_focus": "OPEN call format, parameters (local port, remote socket, active/passive, timeout, Diffserv, security, local IP), TCB creation, passive/active behavior, multihoming rules",
+      "defines": ["open_call", "passive_open", "active_open", "local_connection_name"],
+      "mentions": ["tcb", "ISS", "state_LISTEN", "state_SYN_SENT", "diffserv_field"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "api_interface"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0062", "reason": "OPEN call event processing (3.10.1) provides the normative per-state action for OPEN", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": [
+        "MUST-43: local IP address parameter MUST be supported",
+        "MUST-46: OPEN to broadcast/multicast MUST be rejected",
+        "MUST-44: TCP must ask IP for source address before first SYN if not specified on active OPEN"
+      ]
+    },
+    {
+      "node_id": "0049",
+      "title": "3.9.1.2. Send",
+      "pages": [45, 46, 47],
+      "section_role": "api_interface",
+      "primary_focus": "SEND call format and parameters (connection name, buffer, byte count, URGENT flag, PUSH flag, timeout); PUSH flag semantics; PSH bit coalescing; urgent pointer update (SND.UP ← SND.NXT)",
+      "defines": ["send_call", "push_flag_semantics", "urgent_flag_semantics"],
+      "mentions": ["SND_UP", "SND_NXT", "nagle_algorithm", "urgent_mechanism", "flag_PSH", "flag_URG"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "api_interface"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0063", "reason": "SEND event processing (3.10.2) provides normative per-state behavior for SEND", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": [
+        "MUST-60/MUST-61: if PUSH flag not implemented, buffering indefinitely is forbidden and PSH must be set on last buffered segment",
+        "Asynchronous SEND model preferred over synchronous to avoid deadlocks"
+      ]
+    },
+    {
+      "node_id": "0050",
+      "title": "3.9.1.3. Receive",
+      "pages": [47, 48],
+      "section_role": "api_interface",
+      "primary_focus": "RECEIVE call format; PUSH flag passing (MAY-17); urgent data boundary handling; buffer fill semantics",
+      "defines": ["receive_call"],
+      "mentions": ["flag_PSH", "flag_URG", "urgent_mechanism", "RCV_UP"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["api_interface"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0064", "reason": "RECEIVE event processing (3.10.3) provides per-state behavior", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0051",
+      "title": "3.9.1.4. Close",
+      "pages": [48, 49],
+      "section_role": "api_interface",
+      "primary_focus": "CLOSE call: graceful termination; implies PUSH; outstanding SENDs transmitted before close; user must continue receiving; CLOSE→ABORT on timeout",
+      "defines": ["close_call"],
+      "mentions": ["flag_FIN", "retransmission_timeout"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["api_interface", "procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0065", "reason": "CLOSE event processing (3.10.4) provides per-state behavior", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0052",
+      "title": "3.9.1.5. Status",
+      "pages": [49],
+      "section_role": "api_interface",
+      "primary_focus": "STATUS call: returns TCB data (local/remote socket, state, windows, buffers, urgent state, Diffserv, timeout)",
+      "defines": ["status_call"],
+      "mentions": ["tcb"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["api_interface"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0067", "reason": "STATUS event processing (3.10.6) provides per-state responses", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0053",
+      "title": "3.9.1.6. Abort",
+      "pages": [49],
+      "section_role": "api_interface",
+      "primary_focus": "ABORT call: flushes queues, deletes TCB, sends RST to remote",
+      "defines": ["abort_call"],
+      "mentions": ["flag_RST", "tcb"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["api_interface", "procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0066", "reason": "ABORT event processing (3.10.5) provides per-state behavior", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0054",
+      "title": "3.9.1.7. Flush",
+      "pages": [49, 50],
+      "section_role": "api_interface",
+      "primary_focus": "FLUSH call (MAY-14): empties send queue without losing sequence sync",
+      "defines": ["flush_call"],
+      "mentions": ["SND_WND"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["api_interface"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": ["FLUSH is optional (MAY-14); extractors should mark as conditional"]
+    },
+    {
+      "node_id": "0055",
+      "title": "3.9.1.8. Asynchronous Reports",
+      "pages": [50],
+      "section_role": "api_interface",
+      "primary_focus": "ERROR_REPORT upcall mechanism (MUST-47); three mandatory trigger conditions: ICMP error, excessive retransmissions, urgent pointer advance; application can disable (SHLD-20)",
+      "defines": ["error_report_mechanism", "async_error_conditions"],
+      "mentions": ["icmp_messages", "retransmission_threshold_R1", "urgent_mechanism"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["api_interface", "error"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0056",
+      "title": "3.9.1.9. Set Differentiated Services Field",
+      "pages": [50],
+      "section_role": "api_interface",
+      "primary_focus": "Application sets DSCP per direction independently (MUST-48); TCP passes unchanged to IP (SHLD-22); per-connection and optionally per-segment",
+      "defines": ["diffserv_interface"],
+      "mentions": ["diffserv_field", "dscp"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["api_interface"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0057",
+      "title": "3.9.2. TCP/Lower-Level Interface",
+      "pages": [50, 51],
+      "section_role": "api_interface",
+      "primary_focus": "TCP↔IP interface: Diffserv field, TTL must be configurable (MUST-49), IP options handling, source routing, ICMP message processing",
+      "defines": ["tcp_ip_interface", "ttl_configurability"],
+      "mentions": ["ipv4", "ipv6", "icmp_messages", "source_routing", "diffserv_field"],
+      "deferred_to": [
+        { "concept_id": "source_routing", "reason": "detailed in 3.9.2.1", "likely_defining_node_id": "0058" },
+        { "concept_id": "icmp_messages", "reason": "detailed in 3.9.2.2", "likely_defining_node_id": "0059" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": [],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0058",
+      "title": "3.9.2.1. Source Routing",
+      "pages": [51],
+      "section_role": "mechanism",
+      "primary_focus": "Source route application control (MUST-51/MUST-52); return route preservation on passive OPEN (MUST-53); later source route override (SHLD-24)",
+      "defines": ["source_routing_rules"],
+      "mentions": ["passive_open", "checksum_pseudo_header"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0059",
+      "title": "3.9.2.2. ICMP Messages",
+      "pages": [51, 52],
+      "section_role": "error_handling",
+      "primary_focus": "ICMP message handling: Source Quench silently discarded (MUST-55); soft errors (Dest Unreach 0,1,5; Time Exceeded; Param Problem) MUST NOT abort (MUST-56); hard errors (Dest Unreach 2-4) SHOULD abort (SHLD-26)",
+      "defines": [
+        "icmp_source_quench_rule", "icmp_soft_error_handling", "icmp_hard_error_handling",
+        "icmpv6_error_handling"
+      ],
+      "mentions": ["error_report_mechanism", "state_ESTABLISHED"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["error", "procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": [
+        "Soft vs hard error classification differs for IPv4 ICMP vs ICMPv6 — both must be captured separately",
+        "Soft errors MUST NOT abort connection but SHOULD inform application — both conditions apply"
+      ]
+    },
+    {
+      "node_id": "0060",
+      "title": "3.9.2.3. Source Address Validation",
+      "pages": [52, 53],
+      "section_role": "mechanism",
+      "primary_focus": "Discard SYN with invalid source address (MUST-63); silently discard SYN to broadcast/multicast (MUST-57)",
+      "defines": ["source_address_validation_rules"],
+      "mentions": ["flag_SYN", "state_LISTEN"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0061",
+      "title": "3.10. Event Processing",
+      "pages": [53, 54],
+      "section_role": "overview",
+      "primary_focus": "Event categories (user calls, segment arrivals, timeouts); modulo-2^32 arithmetic reminder; sequence-ordered segment processing model; aggregated ACK processing rule",
+      "defines": ["event_processing_model", "segment_ordering_model"],
+      "mentions": ["modulo_arithmetic", "cumulative_ack", "three_event_categories"],
+      "deferred_to": [
+        { "concept_id": "open_call_processing", "reason": "overview; defined in 3.10.1", "likely_defining_node_id": "0062" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": [],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0017", "reason": "state machine overview and event processing are co-specifications of the FSM", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": ["Note that 3.10 is explicitly described as 'one possible implementation'; minor ordering variations are allowed but substance must be preserved"]
+    },
+    {
+      "node_id": "0062",
+      "title": "3.10.1. OPEN Call",
+      "pages": [54, 55],
+      "section_role": "algorithm",
+      "primary_focus": "Per-state behavior for OPEN call: CLOSED creates TCB and either enters LISTEN or sends SYN→SYN-SENT; LISTEN can be converted to active; all other states return 'connection already exists'",
+      "defines": ["open_call_event_processing"],
+      "mentions": ["tcb", "ISS", "SND_UNA", "SND_NXT", "state_LISTEN", "state_SYN_SENT"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "state_machine"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0048", "reason": "API specification (3.9.1.1) and event processing (3.10.1) together define OPEN", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0063",
+      "title": "3.10.2. SEND Call",
+      "pages": [55, 56],
+      "section_role": "algorithm",
+      "primary_focus": "Per-state behavior for SEND: errors in CLOSED/FIN-WAIT-*/CLOSING/LAST-ACK/TIME-WAIT; queue in LISTEN/SYN-SENT/SYN-RECEIVED; segmentize and send in ESTABLISHED/CLOSE-WAIT with urgent pointer update",
+      "defines": ["send_call_event_processing"],
+      "mentions": ["SND_UP", "SND_NXT", "RCV_NXT", "flag_URG", "flag_PSH"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "state_machine"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0049", "reason": "API spec and event processing together define SEND", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0064",
+      "title": "3.10.3. RECEIVE Call",
+      "pages": [56, 57],
+      "section_role": "algorithm",
+      "primary_focus": "Per-state behavior for RECEIVE: queue in pre-ESTABLISHED states; deliver data and ACK in ESTABLISHED/FIN-WAIT-*; CLOSE-WAIT serves buffered data; errors in CLOSING/LAST-ACK/TIME-WAIT",
+      "defines": ["receive_call_event_processing"],
+      "mentions": ["RCV_NXT", "RCV_UP", "flag_PSH"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "state_machine"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0050", "reason": "API spec and event processing together define RECEIVE", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0065",
+      "title": "3.10.4. CLOSE Call",
+      "pages": [57, 58],
+      "section_role": "algorithm",
+      "primary_focus": "Per-state behavior for CLOSE: TCB delete in LISTEN/SYN-SENT; FIN in SYN-RECEIVED→FIN-WAIT-1; queue FIN in ESTABLISHED→FIN-WAIT-1; FIN then LAST-ACK in CLOSE-WAIT; errors in other states",
+      "defines": ["close_call_event_processing"],
+      "mentions": ["flag_FIN", "state_FIN_WAIT_1", "state_LAST_ACK"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "state_machine"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0051", "reason": "API spec and event processing together define CLOSE", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0066",
+      "title": "3.10.5. ABORT Call",
+      "pages": [58, 59],
+      "section_role": "algorithm",
+      "primary_focus": "Per-state ABORT: send RST in synchronized states (SYN-RECEIVED through CLOSE-WAIT); flush queues; delete TCB; 'ok' response in CLOSING/LAST-ACK/TIME-WAIT",
+      "defines": ["abort_call_event_processing"],
+      "mentions": ["flag_RST", "tcb", "SND_NXT"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "state_machine"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0053", "reason": "API spec and event processing together define ABORT", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0067",
+      "title": "3.10.6. STATUS Call",
+      "pages": [59, 60],
+      "section_role": "algorithm",
+      "primary_focus": "Per-state STATUS: returns state name and TCB pointer; error in CLOSED",
+      "defines": ["status
+      "mentions": ["tcb"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "state_machine"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0052", "reason": "API spec and event processing together define STATUS", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0068",
+      "title": "3.10.7. SEGMENT ARRIVES",
+      "pages": [60],
+      "section_role": "overview",
+      "primary_focus": "Event category header for segment arrival; defers to per-state sub-sections",
+      "defines": [],
+      "mentions": ["segment_acceptability_test", "modulo_arithmetic"],
+      "deferred_to": [
+        { "concept_id": "segment_arrival_closed", "reason": "in 3.10.7.1", "likely_defining_node_id": "0069" },
+        { "concept_id": "segment_arrival_listen", "reason": "in 3.10.7.2", "likely_defining_node_id": "0070" },
+        { "concept_id": "segment_arrival_syn_sent", "reason": "in 3.10.7.3", "likely_defining_node_id": "0071" }
+      ],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": [],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0069", "reason": "all SEGMENT ARRIVES sub-sections form one mechanism", "confidence": "high" },
+        { "with_node_id": "0070", "reason": "all SEGMENT ARRIVES sub-sections form one mechanism", "confidence": "high" },
+        { "with_node_id": "0071", "reason": "all SEGMENT ARRIVES sub-sections form one mechanism", "confidence": "high" },
+        { "with_node_id": "0072", "reason": "all SEGMENT ARRIVES sub-sections form one mechanism", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0069",
+      "title": "3.10.7.1. CLOSED STATE",
+      "pages": [60],
+      "section_role": "algorithm",
+      "primary_focus": "Segment arrival in CLOSED: discard RST; for non-RST, generate RST with appropriate SEQ/ACK based on incoming ACK bit",
+      "defines": ["segment_arrival_closed"],
+      "mentions": ["flag_RST", "flag_ACK"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "state_machine"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0072", "reason": "all segment arrival states form one contiguous procedure", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0070",
+      "title": "3.10.7.2. LISTEN STATE",
+      "pages": [60, 61],
+      "section_role": "algorithm",
+      "primary_focus": "Segment arrival in LISTEN: ignore RST; reject ACK with RST; on SYN with valid security, initialize TCB (RCV.NXT=SEG.SEQ+1, IRS=SEG.SEQ), choose ISS, send SYN-ACK, enter SYN-RECEIVED",
+      "defines": ["segment_arrival_listen"],
+      "mentions": ["flag_RST", "flag_ACK", "flag_SYN", "RCV_NXT", "IRS", "ISS", "SND_NXT", "SND_UNA", "state_SYN_RECEIVED"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "state_machine"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0072", "reason": "all segment arrival states form one contiguous procedure", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": ["Security compartment check on SYN is required before accepting in LISTEN state — must not be omitted"]
+    },
+    {
+      "node_id": "0071",
+      "title": "3.10.7.3. SYN-SENT STATE",
+      "pages": [61, 62, 63],
+      "section_role": "algorithm",
+      "primary_focus": "Segment arrival in SYN-SENT: five-step process (ACK check, RST check with RFC 5961 mitigation, security check, SYN check, drop). SYN+ACK → ESTABLISHED with ACK sent; SYN only → SYN-RECEIVED with SYN-ACK. SYN data handling note.",
+      "defines": ["segment_arrival_syn_sent", "syn_ack_processing_syn_sent"],
+      "mentions": ["flag_ACK", "flag_RST", "flag_SYN", "SND_UNA", "SND_NXT", "ISS", "IRS", "RCV_NXT",
+                   "SND_WND", "SND_WL1", "SND_WL2", "state_ESTABLISHED", "state_SYN_RECEIVED"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "state_machine"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0072", "reason": "SYN-SENT segment processing continues into 3.10.7.4 for data/FIN/URG after SYN", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": [
+        "RFC 5961 mitigation: check SEQ exactly matches RCV.NXT before executing RST action — conditional on RFC 5961 implementation",
+        "Data in SYN segments is valid (T/TCP, TFO) — firewalls should not block; extractor should note this as implementation guidance"
+      ]
+    },
+    {
+      "node_id": "0072",
+      "title": "3.10.7.4. Other States",
+      "pages": [63, 64, 65, 66, 67, 68, 69, 70],
+      "section_role": "algorithm",
+      "primary_focus": "Eight-step segment processing pipeline for all synchronized states (SYN-RECEIVED, ESTABLISHED, FIN-WAIT-1, FIN-WAIT-2, CLOSE-WAIT, CLOSING, LAST-ACK, TIME-WAIT): (1) sequence check, (2) RST, (3) security, (4) SYN, (5) ACK, (6) URG, (7) data, (8) FIN. RFC 5961 mitigations woven throughout. Window update logic (SND.WL1/SND.WL2). FIN processing state transitions.",
+      "defines": [
+        "segment_processing_pipeline_8steps",
+        "sequence_number_check_procedure",
+        "rst_bit_check_procedure",
+        "security_check_procedure",
+        "syn_bit_check_synchronized",
+        "ack_field_check_procedure",
+        "window_update_rule_snd_wl1_snd_wl2",
+        "urg_bit_check_procedure",
+        "data_delivery_procedure",
+        "fin_bit_check_procedure",
+        "challenge_ack",
+        "max_snd_wnd_variable"
+      ],
+      "mentions": [
+        "flag_RST", "flag_SYN", "flag_ACK", "flag_URG", "flag_FIN", "flag_PSH",
+        "RCV_NXT", "RCV_WND", "SND_NXT", "SND_UNA", "SND_WND", "SND_WL1", "SND_WL2",
+        "SND_UP", "RCV_UP", "SEG_SEQ", "SEG_ACK", "SEG_WND",
+        "state_ESTABLISHED", "state_FIN_WAIT_1", "state_FIN_WAIT_2",
+        "state_CLOSE_WAIT", "state_CLOSING", "state_LAST_ACK", "state_TIME_WAIT",
+        "rst_validation_rule", "rfc5961_mitigation", "time_wait_timestamp_reduction"
+      ],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["procedure", "state_machine"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0017", "reason": "complete per-state transition details must merge with state machine overview from Figure 5", "confidence": "high" },
+        { "with_node_id": "0025", "reason": "RST processing rules in step 2 refine 3.5.3 with RFC 5961 detail", "confidence": "high" }
+      ],
+      "visual_assets": [
+        {
+          "kind": "fsm_table",
+          "caption_or_title": "Table 6: Segment Acceptability Tests",
+          "page": 63,
+          "target_concept_id": "segment_acceptability_test",
+          "why_visual_needed": "Four-case acceptability table repeated in event processing context; confirm alignment with Table 5 (page 19)"
+        }
+      ],
+      "risk_notes": [
+        "This is the most dense section in the document; eight sequential checks must be applied in order and must not be reordered",
+        "RFC 5961 mitigation introduces conditional branching within steps 2 and 5; two code paths must be maintained",
+        "Window update rule: SND.WND updated only if SND.WL1 < SEG.SEQ OR (SND.WL1 = SEG.SEQ AND SND.WL2 <= SEG.ACK) — exact condition prevents stale window updates",
+        "MAX.SND.WND is a new variable introduced for RFC 5961 ACK check; not present in base RFC 793 TCB",
+        "FIN processing differs by current state — eight distinct outcomes must all be captured"
+      ]
+    },
+    {
+      "node_id": "0073",
+      "title": "3.10.8. Timeouts",
+      "pages": [70],
+      "section_role": "timer_rule",
+      "primary_focus": "Three timeout handlers: USER TIMEOUT (flush, signal error, delete TCB, CLOSED), RETRANSMISSION TIMEOUT (resend front of retransmit queue, reset timer), TIME-WAIT TIMEOUT (delete TCB, CLOSED)",
+      "defines": [
+        "user_timeout_handler", "retransmission_timeout_handler", "time_wait_timeout_handler"
+      ],
+      "mentions": ["state_CLOSED", "retransmission_timeout", "time_wait_timer"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["timer_rule", "procedure"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0035", "reason": "RTO computation (3.8.1) and timeout handler (3.10.8) form one timer mechanism", "confidence": "high" }
+      ],
+      "visual_assets": [],
+      "risk_notes": []
+    },
+    {
+      "node_id": "0074",
+      "title": "4. Glossary",
+      "pages": [70, 71, 72, 73, 74, 75],
+      "section_role": "appendix",
+      "primary_focus": "Authoritative definitions of TCP terminology: ACK, connection, datagram, FIN, flush, fragment, host, IRS, ISN, ISS, MSL, NOP, Options, port, PUSH, RCV.NXT, RCV.UP, RCV.WND, RST, SEG.*, segment, SND.*, socket, SYN, TCB, TOS, URG, urgent pointer",
+      "defines": ["glossary_terms"],
+      "mentions": [],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": [],
+        "avoid_extracting_as_full_ir": [
+          { "concept_id": "glossary_terms", "reason": "normative definitions come from sections 3.1–3.10; glossary is a secondary reference for surface_form alignment" }
+        ]
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": ["Use glossary to resolve surface form aliases and canonical names, not as primary definition source"]
+    },
+    {
+      "node_id": "0075",
+      "title": "5. Changes from RFC 793",
+      "pages": [75, 76],
+      "section_role": "boilerplate",
+      "primary_focus": "Changelog vs RFC 793; lists incorporated errata IDs and updated RFCs",
+      "defines": [],
+      "mentions": [],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": [],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": ["Useful for understanding what changed from RFC 793 but not a source of normative behavior"]
+    },
+    {
+      "node_id": "0076",
+      "title": "6. IANA Considerations",
+      "pages": [76, 77],
+      "section_role": "table_carrier",
+      "primary_focus": "TCP Header Flags registry; bit offset table for CWR(8), ECE(9), URG(10), ACK(11), PSH(12), RST(13), SYN(14), FIN(15) and four reserved bits (4-7)",
+      "defines": ["flag_bit_offsets_registry"],
+      "mentions": ["flag_CWR", "flag_ECE", "flag_URG", "flag_ACK", "flag_PSH", "flag_RST", "flag_SYN", "flag_FIN"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": true,
+        "allowed_ir_families": ["message", "visual_request"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [
+        { "with_node_id": "0011", "reason": "flag bit offsets here are the authoritative complement to flag definitions in 3.1", "confidence": "high" }
+      ],
+      "visual_assets": [
+        {
+          "kind": "fsm_table",
+          "caption_or_title": "Table 7: TCP Header Flags",
+          "page": 76,
+          "target_concept_id": "flag_bit_offsets_registry",
+          "why_visual_needed": "Bit offset assignments for all 12 control bits (4 reserved + 8 flags) in a table; offsets are critical for correct header bitmap extraction"
+        }
+      ],
+      "risk_notes": ["Bit offset is within 16-bit aligned view of TCP header; bits 0-3 are the Data Offset field, not flags — this distinction must be preserved"]
+    },
+    {
+      "node_id": "0077",
+      "title": "7. Security and Privacy Considerations",
+      "pages": [77, 78, 79],
+      "section_role": "appendix",
+      "primary_focus": "TCP security limitations; IPsec/TLS/TCP-AO as external solutions; ISN generation, blind attack mitigations (RFC 5961), SYN flooding, resource exhaustion, wire image, fingerprinting",
+      "defines": [],
+      "mentions": ["isn_selection", "rfc5961_mitigation", "tcp_ao", "tls", "ipsec", "ecn"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": [],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": ["Security section confirms that RST mitigation (RFC 5961 challenge ACK) and ISN PRF are the only in-spec security mechanisms; external protocols handle the rest"]
+    },
+    {
+      "node_id": "0081",
+      "title": "Appendix A. Other Implementation Notes",
+      "pages": [86, 87, 88],
+      "section_role": "appendix",
+      "primary_focus": "Non-normative implementation notes: IP precedence/Diffserv transition, MLS security compartments, sequence number validation edge cases, Nagle modification, low watermark socket options",
+      "defines": [],
+      "mentions": ["diffserv_field", "mls_systems", "nagle_algorithm", "sequence_number_validation_edge_cases"],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": ["binding_hint"],
+        "avoid_extracting_as_full_ir": [
+          { "concept_id": "nagle_algorithm", "reason": "A.3 is non-normative Nagle modification; normative definition is in 3.7.4" }
+        ]
+      },
+      "merge_hints": [],
+      "visual_assets": [],
+      "risk_notes": ["Appendix A content is explicitly non-normative ('not a part of the RFC series or included within the TCP standard'); do not generate mandatory procedure IR from here"]
+    },
+    {
+      "node_id": "0089",
+      "title": "Appendix B. TCP Requirement Summary",
+      "pages": [88, 89, 90, 91, 92, 93, 94, 95, 96, 97],
+      "section_role": "table_carrier",
+      "primary_focus": "Comprehensive MUST/SHOULD/MAY/SHOULD-NOT/MUST-NOT requirement summary table organized by feature (Table 8), covering all 69+ labeled requirements",
+      "defines": [],
+      "mentions": [],
+      "deferred_to": [],
+      "extraction_policy": {
+        "should_extract_full_ir_here": false,
+        "allowed_ir_families": ["visual_request"],
+        "avoid_extracting_as_full_ir": []
+      },
+      "merge_hints": [],
+      "visual_assets": [
+        {
+          "kind": "fsm_table",
+          "caption_or_title": "Table 8: TCP Requirements Summary",
+          "page": 88,
+          "target_concept_id": "requirement_summary",
+          "why_visual_needed": "Multi-page structured table (pages 88-97) maps each requirement ID to feature, MUST/SHOULD/MAY/SHOULD-NOT/MUST-NOT columns; essential for compliance checking and requirement-level annotation of extracted IR"
+        }
+      ],
+      "risk_notes": [
+        "Appendix B should be used as a cross-reference and validation layer for extracted IR, not as a primary IR source",
+        "PLPMTUD is noted here as having no MUST requirement, only RECOMMENDED — confirms 3.7.2 notes"
+      ]
+    }
+  ],
+
+  "concepts": [
+    {
+      "concept_id": "tcp_protocol",
+      "kind": "mechanism",
+      "canonical_name": "Transmission Control Protocol",
+      "surface_forms": ["TCP", "Transmission Control Protocol"],
+      "defined_in": ["0006", "0007", "0011"],
+      "mentioned_in": ["0002", "0009"],
+      "description": "A reliable, in-order, connection-oriented, bidirectional byte-stream transport protocol operating over IP, using port-based multiplexing and sequence-number-based reliability.",
+      "implementation_role": "The protocol being implemented; encompasses all mechanisms in section 3",
+      "do_not_over_extract_from": [
+        { "node_id": "0002", "reason": "abstract only" },
+        { "node_id": "0006", "reason": "scope statement only" }
+      ],
+      "related_concepts": []
+    },
+    {
+      "concept_id": "tcp_header_format",
+      "kind": "message",
+      "canonical_name": "TCP Header Format",
+      "surface_forms": ["TCP header", "TCP segment header", "Figure 1"],
+      "defined_in": ["0011"],
+      "mentioned_in": ["0009"],
+      "description": "Fixed 20-byte header (extensible by options) containing: Source Port (16b), Destination Port (16b), Sequence Number (32b), Acknowledgment Number (32b), Data Offset (4b), Reserved (4b), Control Bits (8b: CWR ECE URG ACK PSH RST SYN FIN), Window (16b), Checksum (16b), Urgent Pointer (16b), Options (variable), Data (variable).",
+      "implementation_role": "Primary wire format; all sent and received TCP segments use this layout",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "contains", "target_concept_id": "control_bits", "evidence": "section 3.1 defines all flag bits within the header", "confidence": "high" },
+        { "relation": "contains", "target_concept_id": "options_field", "evidence": "Options occupy (DOffset-5)*32 bits after fixed header", "confidence": "high" },
+        { "relation": "uses", "target_concept_id": "checksum_pseudo_header", "evidence": "Checksum computation includes pseudo-header", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "tcb",
+      "kind": "variable",
+      "canonical_name": "Transmission Control Block",
+      "surface_forms": ["TCB", "Transmission Control Block", "connection record", "connection state"],
+      "defined_in": ["0016"],
+      "mentioned_in": ["0048", "0052", "0053", "0062", "0067"],
+      "description": "Per-connection data structure storing: local/remote socket pair, IP security/compartment, Diffserv value, user timeout, send/receive buffer pointers, retransmit queue pointer, current segment pointer, all send/receive sequence variables (SND.UNA, SND.NXT, SND.WND, SND.UP, SND.WL1, SND.WL2, ISS, RCV.NXT, RCV.WND, RCV.UP, IRS), connection state.",
+      "implementation_role": "Central state record; created on OPEN, deleted on CLOSE/ABORT/timeout; absence means CLOSED state",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "contains", "target_concept_id": "SND_UNA", "evidence": "Table 2 lists SND.UNA as TCB variable", "confidence": "high" },
+        { "relation": "contains", "target_concept_id": "RCV_NXT", "evidence": "Table 3 lists RCV.NXT as TCB variable", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "tcp_fsm",
+      "kind": "state_machine",
+      "canonical_name": "TCP Connection State Machine",
+      "surface_forms": ["TCP state machine", "connection states", "Figure 5: TCP Connection State Diagram"],
+      "defined_in": ["0017", "0072"],
+      "mentioned_in": ["0015", "0022", "0026", "0061"],
+      "description": "11-state FSM (CLOSED, LISTEN, SYN-SENT, SYN-RECEIVED, ESTABLISHED, FIN-WAIT-1, FIN-WAIT-2, CLOSE-WAIT, CLOSING, LAST-ACK, TIME-WAIT) driven by user calls, segment arrivals, and timeouts.",
+      "implementation_role": "Governs all connection lifecycle behavior; each TCB has one current state",
+      "do_not_over_extract_from": [
+        { "node_id": "0017", "reason": "Figure 5 is explicitly a summary diagram; full per-state detail is in section 3.10" }
+      ],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "tcb", "evidence": "Each state is held in the TCB; CLOSED = no TCB", "confidence": "high" },
+        { "relation": "uses", "target_concept_id": "event_processing_model", "evidence": "State transitions driven by three event categories", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "state_CLOSED",
+      "kind": "state",
+      "canonical_name": "CLOSED",
+      "surface_forms": ["CLOSED", "CLOSED state", "closed", "no TCB"],
+      "defined_in": ["0017"],
+      "mentioned_in": ["0062", "0063", "0064", "0065", "0066", "0067", "0069", "0073"],
+      "description": "Fictional state representing absence of a TCB. No connection exists. Incoming non-RST segments generate a RST response.",
+      "implementation_role": "Start and terminal state of all connections",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "transitions_to", "target_concept_id": "state_LISTEN", "evidence": "passive OPEN from CLOSED → LISTEN", "confidence": "high" },
+        { "relation": "transitions_to", "target_concept_id": "state_SYN_SENT", "evidence": "active OPEN from CLOSED → SYN-SENT", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "state_LISTEN",
+      "kind": "state",
+      "canonical_name": "LISTEN",
+      "surface_forms": ["LISTEN", "LISTEN state", "passive open", "listening"],
+      "defined_in": ["0017"],
+      "mentioned_in": ["0070", "0062"],
+      "description": "Waiting for incoming connection request from any remote TCP peer and port.",
+      "implementation_role": "Server-side wait state after passive OPEN",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "transitions_to", "target_concept_id": "state_SYN_RECEIVED", "evidence": "SYN received in LISTEN → SYN-RECEIVED", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "state_SYN_SENT",
+      "kind": "state",
+      "canonical_name": "SYN-SENT",
+      "surface_forms": ["SYN-SENT", "SYN SENT"],
+      "defined_in": ["0017"],
+      "mentioned_in": ["0071", "0062"],
+      "description": "Waiting for a matching connection request ACK after having sent a SYN.",
+      "implementation_role": "Active-open initiator state",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "transitions_to", "target_concept_id": "state_ESTABLISHED", "evidence": "SYN-ACK received in SYN-SENT with valid ACK → ESTABLISHED", "confidence": "high" },
+        { "relation": "transitions_to", "target_concept_id": "state_SYN_RECEIVED", "evidence": "SYN (no ACK) received in SYN-SENT → SYN-RECEIVED (simultaneous open)", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "state_SYN_RECEIVED",
+      "kind": "state",
+      "canonical_name": "SYN-RECEIVED",
+      "surface_forms": ["SYN-RECEIVED", "SYN RECEIVED", "SYN-RCVD"],
+      "defined_in": ["0017"],
+      "mentioned_in": ["0070", "0071", "0072"],
+      "description": "Waiting for confirming ACK after having both received and sent a SYN. TCB must record whether arrived from passive (LISTEN) or active (SYN-SENT) OPEN.",
+      "implementation_role": "Handshake intermediate state; server or simultaneous-open path",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "transitions_to", "target_concept_id": "state_ESTABLISHED", "evidence": "ACK of SYN in SYN-RECEIVED → ESTABLISHED", "confidence": "high" },
+        { "relation": "transitions_to", "target_concept_id": "state_LISTEN", "evidence": "RST in SYN-RECEIVED (if from passive OPEN) → LISTEN", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "state_ESTABLISHED",
+      "kind": "state",
+      "canonical_name": "ESTABLISHED",
+      "surface_forms": ["ESTABLISHED", "established state", "open connection"],
+      "defined_in": ["0017"],
+      "mentioned_in": ["0034", "0072"],
+      "description": "Open connection; data received can be delivered to user. Normal state for data transfer phase.",
+      "implementation_role": "Primary data-transfer state; all data communication occurs here",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "transitions_to", "target_concept_id": "state_FIN_WAIT_1", "evidence": "local CLOSE in ESTABLISHED → FIN-WAIT-1", "confidence": "high" },
+        { "relation": "transitions_to", "target_concept_id": "state_CLOSE_WAIT", "evidence": "FIN received in ESTABLISHED → CLOSE-WAIT", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "state_FIN_WAIT_1",
+      "kind": "state",
+      "canonical_name": "FIN-WAIT-1",
+      "surface_forms": ["FIN-WAIT-1", "FIN WAIT 1"],
+      "defined_in": ["0017"],
+      "mentioned_in": ["0026", "0072"],
+      "description": "Waiting for FIN from remote or ACK of local FIN.",
+      "implementation_role": "First half of active close sequence",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "transitions_to", "target_concept_id": "state_FIN_WAIT_2", "evidence": "ACK of FIN in FIN-WAIT-1 → FIN-WAIT-2", "confidence": "high" },
+        { "relation": "transitions_to", "target_concept_id": "state_CLOSING", "evidence": "FIN received (before ACK of local FIN) in FIN-WAIT-1 → CLOSING", "confidence": "high" },
+        { "relation": "transitions_to", "target_concept_id": "state_TIME_WAIT", "evidence": "FIN received and local FIN ACKed simultaneously in FIN-WAIT-1 → TIME-WAIT (omitted from Figure 5)", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "state_FIN_WAIT_2",
+      "kind": "state",
+      "canonical_name": "FIN-WAIT-2",
+      "surface_forms": ["FIN-WAIT-2", "FIN WAIT 2"],
+      "defined_in": ["0017"],
+      "mentioned_in": ["0026", "0072"],
+      "description": "Waiting for FIN from remote TCP peer; local FIN has been ACKed.",
+      "implementation_role": "Second half of active close; half-closed state",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "transitions_to", "target_concept_id": "state_TIME_WAIT", "evidence": "FIN received in FIN-WAIT-2 → TIME-WAIT", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "state_CLOSE_WAIT",
+      "kind": "state",
+      "canonical_name": "CLOSE-WAIT",
+      "surface_forms": ["CLOSE-WAIT", "CLOSE WAIT"],
+      "defined_in": ["0017"],
+      "mentioned_in": ["0026", "0072"],
+      "description": "Remote FIN received; waiting for local user to CLOSE.",
+      "implementation_role": "Passive-close server state; application must call CLOSE to proceed",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "transitions_to", "target_concept_id": "state_LAST_ACK", "evidence": "local CLOSE in CLOSE-WAIT → LAST-ACK", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "state_CLOSING",
+      "kind": "state",
+      "canonical_name": "CLOSING",
+      "surface_forms": ["CLOSING"],
+      "defined_in": ["0017"],
+      "mentioned_in": ["0026", "0072"],
+      "description": "Both sides have sent FIN; waiting for ACK of local FIN.",
+      "implementation_role": "Simultaneous close intermediate state",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "transitions_to", "target_concept_id": "state_TIME_WAIT", "evidence": "ACK of FIN in CLOSING → TIME-WAIT", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "state_LAST_ACK",
+      "kind": "state",
+      "canonical_name": "LAST-ACK",
+      "surface_forms": ["LAST-ACK", "LAST ACK"],
+      "defined_in": ["0017"],
+      "mentioned_in": ["0026", "0072"],
+      "description": "Waiting for ACK of the FIN sent by the passive close side.",
+      "implementation_role": "Final state before CLOSED on passive close path",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "transitions_to", "target_concept_id": "state_CLOSED", "evidence": "ACK of FIN in LAST-ACK → CLOSED (TCB deleted)", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "state_TIME_WAIT",
+      "kind": "state",
+      "canonical_name": "TIME-WAIT",
+      "surface_forms": ["TIME-WAIT", "TIME WAIT", "2MSL wait"],
+      "defined_in": ["0017", "0027"],
+      "mentioned_in": ["0026", "0072", "0073"],
+      "description": "Waiting 2×MSL (4 minutes) after active close to ensure remote received final ACK and to prevent delayed segments from contaminating new connections.",
+      "implementation_role": "Mandatory linger state; prevents stale segment confusion for new incarnations",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "transitions_to", "target_concept_id": "state_CLOSED", "evidence": "TIME-WAIT timer expiry → CLOSED", "confidence": "high" },
+        { "relation": "uses", "target_concept_id": "msl", "evidence": "TIME-WAIT duration = 2×MSL", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "SND_UNA",
+      "kind": "variable",
+      "canonical_name": "SND.UNA",
+      "surface_forms": ["SND.UNA", "send unacknowledged", "oldest unacknowledged sequence number", "left sequence"],
+      "defined_in": ["0016"],
+      "mentioned_in": ["0018", "0034", "0040", "0041", "0043", "0062", "0063", "0072"],
+      "description": "Oldest unacknowledged sequence number; left edge of the send window in sequence space.",
+      "implementation_role": "Tracks retransmission boundary; advanced when ACKs arrive",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "SND_WND", "evidence": "SND.UNA + SND.WND defines right edge of send window", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "SND_NXT",
+      "kind": "variable",
+      "canonical_name": "SND.NXT",
+      "surface_forms": ["SND.NXT", "send next", "send sequence", "next sequence number to be sent"],
+      "defined_in": ["0016"],
+      "mentioned_in": ["0018", "0034", "0043", "0062", "0063", "0072"],
+      "description": "Next sequence number to be sent; advanced when segments are sent.",
+      "implementation_role": "Tracks send position; defines upper boundary of allowed new data",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "SND_UNA", "evidence": "SND.UNA < SEG.ACK <= SND.NXT defines acceptable ACK range", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "SND_WND",
+      "kind": "variable",
+      "canonical_name": "SND.WND",
+      "surface_forms": ["SND.WND", "send window", "window offered by remote"],
+      "defined_in": ["0016"],
+      "mentioned_in": ["0040", "0041", "0043", "0072"],
+      "description": "Send window: number of octets the remote receiver is willing to accept, expressed as offset from SND.UNA.",
+      "implementation_role": "Flow control bound on new data transmission",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "depends_on", "target_concept_id": "SND_WL1", "evidence": "SND.WND updated only if SND.WL1/SND.WL2 conditions met", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "SND_WL1",
+      "kind": "variable",
+      "canonical_name": "SND.WL1",
+      "surface_forms": ["SND.WL1", "segment sequence number used for last window update", "SND.WL1"],
+      "defined_in": ["0016"],
+      "mentioned_in": ["0072"],
+      "description": "SEG.SEQ of the segment that last caused SND.WND to be updated; used to prevent stale window updates.",
+      "implementation_role": "Anti-stale window update guard",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "guards", "target_concept_id": "SND_WND", "evidence": "SND.WND updated only if SND.WL1 < SEG.SEQ or (SND.WL1 = SEG.SEQ and SND.WL2 <= SEG.ACK)", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "SND_WL2",
+      "kind": "variable",
+      "canonical_name": "SND.WL2",
+      "surface_forms": ["SND.WL2", "segment acknowledgment number used for last window update"],
+      "defined_in": ["0016"],
+      "mentioned_in": ["0072"],
+      "description": "SEG.ACK of the segment that last caused SND.WND to be updated.",
+      "implementation_role": "Anti-stale window update guard (acknowledgment axis)",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "guards", "target_concept_id": "SND_WND", "evidence": "SND.WL2 used in window update condition check", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "SND_UP",
+      "kind": "variable",
+      "canonical_name": "SND.UP",
+      "surface_forms": ["SND.UP", "send urgent pointer"],
+      "defined_in": ["0016"],
+      "mentioned_in": ["0063", "0039"],
+      "description": "Send urgent pointer; updated to SND.NXT when URGENT flag set on SEND call.",
+      "implementation_role": "Marks urgency boundary in outgoing stream",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "urgent_mechanism", "evidence": "SND.UP updated when urgent send is issued", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "ISS",
+      "kind": "variable",
+      "canonical_name": "ISS",
+      "surface_forms": ["ISS", "initial send sequence number", "initial send sequence"],
+      "defined_in": ["0016", "0019"],
+      "mentioned_in": ["0062", "0063", "0070", "0071"],
+      "description": "Initial send sequence number; selected at connection establishment using ISN generator.",
+      "implementation_role": "Starting point for all send sequence numbering on a connection",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "isn_formula", "evidence": "ISS is selected using ISN = M + F(...) formula", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "RCV_NXT",
+      "kind": "variable",
+      "canonical_name": "RCV.NXT",
+      "surface_forms": ["RCV.NXT", "receive next sequence number", "receive next"],
+      "defined_in": ["0016"],
+      "mentioned_in": ["0018", "0019", "0034", "0039", "0044", "0069", "0070", "0071", "0072"],
+      "description": "Next sequence number expected on incoming segment; left edge of receive window.",
+      "implementation_role": "Tracks receive position; used in ACK generation and segment acceptability checks",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "RCV_WND", "evidence": "RCV.NXT + RCV.WND = right edge of receive window", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "RCV_WND",
+      "kind": "variable",
+      "canonical_name": "RCV.WND",
+      "surface_forms": ["RCV.WND", "receive window", "window"],
+      "defined_in": ["0016"],
+      "mentioned_in": ["0018", "0040", "0042", "0044", "0072"],
+      "description": "Receive window: sequence number range receiver is currently willing to accept.",
+      "implementation_role": "Flow control advertisement to sender; must be managed by SWS algorithm",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "depends_on", "target_concept_id": "receiver_sws_algorithm", "evidence": "RCV.WND advancement governed by receiver SWS algorithm", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "RCV_UP",
+      "kind": "variable",
+      "canonical_name": "RCV.UP",
+      "surface_forms": ["RCV.UP", "receive urgent pointer"],
+      "defined_in": ["0016"],
+      "mentioned_in": ["0039", "0072"],
+      "description": "Receive urgent pointer; tracks the highest urgent pointer seen so far.",
+      "implementation_role": "Governs urgent/normal mode transitions at receiver",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "urgent_mechanism", "evidence": "RCV.UP updated when URG bit set; RCV.UP > RCV.NXT means urgent mode", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "IRS",
+      "kind": "variable",
+      "canonical_name": "IRS",
+      "surface_forms": ["IRS", "initial receive sequence number"],
+      "defined_in": ["0016", "0019"],
+      "mentioned_in": ["0070", "0071"],
+      "description": "Initial receive sequence number; learned from the SYN of the remote peer during handshake.",
+      "implementation_role": "Anchors receive sequence space at connection start",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "depends_on", "target_concept_id": "three_way_handshake_procedure", "evidence": "IRS = SEG.SEQ of incoming SYN", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "SEG_SEQ",
+      "kind": "variable",
+      "canonical_name": "SEG.SEQ",
+      "surface_forms": ["SEG.SEQ", "segment sequence", "segment sequence number"],
+      "defined_in": ["0016"],
+      "mentioned_in": ["0018", "0072"],
+      "description": "Sequence number field value of the current incoming segment.",
+      "implementation_role": "Transient per-segment variable used in all acceptability and ACK computations",
+      "do_not_over_extract_from": [],
+      "related_concepts": []
+    },
+    {
+      "concept_id": "SEG_ACK",
+      "kind": "variable",
+      "canonical_name": "SEG.ACK",
+      "surface_forms": ["SEG.ACK", "segment acknowledgment", "acknowledgment from the receiving TCP peer"],
+      "defined_in": ["0016"],
+      "mentioned_in": ["0018", "0072"],
+      "description": "Acknowledgment number field value of the current incoming segment.",
+      "implementation_role": "Used to advance SND.UNA and validate ACKs",
+      "do_not_over_extract_from": [],
+      "related_concepts": []
+    },
+    {
+      "concept_id": "SEG_LEN",
+      "kind": "variable",
+      "canonical_name": "SEG.LEN",
+      "surface_forms": ["SEG.LEN", "segment length"],
+      "defined_in": ["0016"],
+      "mentioned_in": ["0018"],
+      "description": "Number of octets occupied by the segment including SYN and FIN control bits.",
+      "implementation_role": "Used to compute last sequence number of segment and acceptability checks",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "sequence_space_occupancy_syn_fin", "evidence": "SEG.LEN counts SYN and FIN as one sequence number each", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "segment_acceptability_test",
+      "kind": "procedure",
+      "canonical_name": "Segment Acceptability Test",
+      "surface_forms": ["segment acceptability", "acceptability test", "Table 5", "Table 6"],
+      "defined_in": ["0018"],
+      "mentioned_in": ["0072"],
+      "description": "Four-case test based on (SEG.LEN × RCV.WND): zero-len/zero-win: SEG.SEQ=RCV.NXT; zero-len/pos-win: RCV.NXT<=SEG.SEQ<RCV.NXT+RCV.WND; pos-len/zero-win: not acceptable; pos-len/pos-win: either SEG.SEQ or SEG.SEQ+SEG.LEN-1 in window.",
+      "implementation_role": "Gate for all incoming segment processing; unacceptable segments generate ACK and are dropped",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "modulo_arithmetic", "evidence": "All comparisons are modulo 2^32", "confidence": "high" },
+        { "relation": "uses", "target_concept_id": "RCV_NXT", "evidence": "RCV.NXT is left edge of acceptability window", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "isn_formula",
+      "kind": "procedure",
+      "canonical_name": "ISN Generator Formula",
+      "surface_forms": ["ISN = M + F(...)", "initial sequence number generator", "clock-driven ISN"],
+      "defined_in": ["0019"],
+      "mentioned_in": ["0020", "0021"],
+      "description": "ISN = M + F(localip, localport, remoteip, remoteport, secretkey) where M is a 4-µs incrementing counter (MUST-8) and F is a PRF (SHLD-1) that MUST NOT be externally computable (MUST-9).",
+      "implementation_role": "Security-critical ISN generation to prevent sequence number prediction attacks",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "sets", "target_concept_id": "ISS", "evidence": "ISN formula produces ISS at connection start", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "three_way_handshake_procedure",
+      "kind": "procedure",
+      "canonical_name": "Three-Way Handshake",
+      "surface_forms": ["three-way handshake", "3WHS", "three message handshake", "connection synchronization"],
+      "defined_in": ["0019", "0022"],
+      "mentioned_in": ["0017", "0023"],
+      "description": "Connection establishment exchange: (1) A→B SYN(ISS_A); (2) B→A SYN-ACK(ISS_B, ISS_A+1); (3) A→B ACK(ISS_B+1). Prevents old duplicate connections. Simultaneous open variant also supported (MUST-10).",
+      "implementation_role": "Mandatory connection initiation protocol; establishes ISS/IRS and moves both peers to ESTABLISHED",
+      "do_not_over_extract_from": [
+        { "node_id": "0017", "reason": "Figure 5 is only a state-change summary; full procedure is in 3.5 and 3.10.1/3.10.7.2/3.10.7.3" }
+      ],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "flag_SYN", "evidence": "3WHS uses SYN flag to synchronize sequence numbers", "confidence": "high" },
+        { "relation": "uses", "target_concept_id": "flag_ACK", "evidence": "Steps 2 and 3 both set ACK bit", "confidence": "high" },
+        { "relation": "uses", "target_concept_id": "ISS", "evidence": "Each peer chooses ISS and communicates it via SYN", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "rst_generation_rules",
+      "kind": "procedure",
+      "canonical_name": "Reset Generation Rules",
+      "surface_forms": ["RST generation", "reset generation", "reset segment", "sending a RST"],
+      "defined_in": ["0024"],
+      "mentioned_in": ["0023", "0025", "0069", "0070", "0071", "0072"],
+      "description": "Three-group RST generation rules by connection state: (1) CLOSED: RST for all non-RST segments; (2) Non-synchronized (LISTEN/SYN-SENT/SYN-RECEIVED): RST on unacceptable ACK or security mismatch; (3) Synchronized: empty ACK for out-of-window; RST only for security mismatch. SEQ/ACK field selection rules differ per case.",
+      "implementation_role": "Error signaling mechanism; triggers connection reset at remote peer",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "triggers", "target_concept_id": "rst_processing_rules", "evidence": "RST sent by one peer triggers RST processing at the other", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "rst_processing_rules",
+      "kind": "procedure",
+      "canonical_name": "Reset Processing",
+      "surface_forms": ["RST processing", "reset processing", "validating a RST"],
+      "defined_in": ["0025", "0072"],
+      "mentioned_in": ["0023"],
+      "description": "RST validation: SEQ must be in receive window (except SYN-SENT: SEG.ACK must match SYN). Per-state response: LISTEN ignores RST; SYN-RECEIVED (from LISTEN) returns to LISTEN; all others abort and go to CLOSED. RFC 5961 adds challenge-ACK variant for in-window but not-exact RST.",
+      "implementation_role": "Connection reset reception handling",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "transitions_to", "target_concept_id": "state_CLOSED", "evidence": "Valid RST in most synchronized states causes CLOSED transition", "confidence": "high" },
+        { "relation": "uses", "target_concept_id": "challenge_ack", "evidence": "RFC 5961 mitigation uses challenge ACK for in-window non-exact RST", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "challenge_ack",
+      "kind": "mechanism",
+      "canonical_name": "Challenge ACK",
+      "surface_forms": ["challenge ACK", "challenge acknowledgment", "RFC 5961 mitigation"],
+      "defined_in": ["0072"],
+      "mentioned_in": ["0071", "0025"],
+      "description": "RFC 5961 mitigation: when RST or SYN is received in synchronized states with in-window but non-exact sequence number, send <SEQ=SND.NXT><ACK=RCV.NXT><CTL=ACK> as a challenge instead of immediately resetting. Throttling of challenge ACKs is implementation-specific.",
+      "implementation_role": "Security hardening against blind in-window reset/injection attacks",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "contrasts_with", "target_concept_id": "rst_processing_rules", "evidence": "Challenge ACK is an alternative to direct RST action specified in RFC 5961", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "close_procedure",
+      "kind": "procedure",
+      "canonical_name": "Connection Close Procedure",
+      "surface_forms": ["CLOSE", "closing a connection", "FIN handshake", "graceful close"],
+      "defined_in": ["0026", "0065"],
+      "mentioned_in": ["0027", "0051"],
+      "description": "Three-case close: (1) local-initiated: ESTABLISHED→FIN-WAIT-1 on CLOSE; (2) remote-initiated: ESTABLISHED→CLOSE-WAIT on FIN receipt, then LAST-ACK on local CLOSE; (3) simultaneous: both→CLOSING→TIME-WAIT. CLOSE means 'no more data to send' but receiving continues until remote FIN.",
+      "implementation_role": "Graceful connection termination; ensures all buffered data delivered",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "flag_FIN", "evidence": "FIN flag signals no more data from sender", "confidence": "high" },
+        { "relation": "transitions_to", "target_concept_id": "state_TIME_WAIT", "evidence": "Active close side reaches TIME-WAIT before CLOSED", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "msl",
+      "kind": "variable",
+      "canonical_name": "Maximum Segment Lifetime",
+      "surface_forms": ["MSL", "Maximum Segment Lifetime", "2 minutes"],
+      "defined_in": ["0020", "0074"],
+      "mentioned_in": ["0021", "0027", "0073"],
+      "description": "Engineering constant: maximum time a TCP segment can exist in the network, arbitrarily set to 2 minutes. TIME-WAIT linger = 2×MSL = 4 minutes.",
+      "implementation_role": "Foundation for TIME-WAIT timer and quiet time rule",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "time_wait_requirement", "evidence": "TIME-WAIT must last 2×MSL (MUST-13)", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "effective_send_mss",
+      "kind": "variable",
+      "canonical_name": "Effective Send MSS",
+      "surface_forms": ["Eff.snd.MSS", "effective send MSS", "effective send segment size"],
+      "defined_in": ["0029"],
+      "mentioned_in": ["0032", "0043", "0044"],
+      "description": "Eff.snd.MSS = min(SendMSS+20, MMS_S) - TCPhdrsize - IPoptionsize. Limits actual segment data size accounting for local IP/TCP options and remote reassembly limit.",
+      "implementation_role": "Per-segment data size ceiling; must be recalculated when header sizes change",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "depends_on", "target_concept_id": "option_MSS", "evidence": "SendMSS is the MSS Option value received from remote", "confidence": "high" },
+        { "relation": "uses", "target_concept_id": "mms_s", "evidence": "MMS_S from IP layer constrains Eff.snd.MSS", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "nagle_algorithm",
+      "kind": "procedure",
+      "canonical_name": "Nagle Algorithm",
+      "surface_forms": ["Nagle algorithm", "Nagle", "coalescing short segments"],
+      "defined_in": ["0032"],
+      "mentioned_in": ["0028", "0042", "0043"],
+      "description": "If SND.NXT > SND.UNA (unacked data exists), buffer all user data until either outstanding data acknowledged or a full-sized segment (Eff.snd.MSS) can be sent. Must be disableable per-connection (MUST-17).",
+      "implementation_role": "Prevents excessive small-packet overhead on interactive connections",
+      "do_not_over_extract_from": [
+        { "node_id": "0086", "reason": "Appendix A.3 Nagle modification is non-normative" }
+      ],
+      "related_concepts": [
+        { "relation": "contrasts_with", "target_concept_id": "sender_sws_algorithm", "evidence": "Nagle and sender SWS serve complementary roles (section 3.8.6.2)", "confidence": "high" },
+        { "relation": "uses", "target_concept_id": "SND_NXT", "evidence": "SND.NXT > SND.UNA is the Nagle trigger condition", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "retransmission_timeout",
+      "kind": "timer",
+      "canonical_name": "Retransmission Timeout",
+      "surface_forms": ["RTO", "retransmission timeout", "retransmission timer"],
+      "defined_in": ["0035"],
+      "mentioned_in": ["0034", "0037", "0041", "0073"],
+      "description": "Dynamic timer computed per RFC 6298 including Karn's algorithm. On expiry: retransmit front of queue, reinitialize timer (exponential backoff).",
+      "implementation_role": "Core reliability mechanism for lost segment recovery",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "karn_algorithm", "evidence": "MUST-18 requires Karn's algorithm for RTT sampling", "confidence": "high" },
+        { "relation": "triggers", "target_concept_id": "retransmission_timeout_handler", "evidence": "Timer expiry triggers 3.10.8 RETRANSMISSION TIMEOUT handler", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "congestion_control_requirement",
+      "kind": "mechanism",
+      "canonical_name": "TCP Congestion Control",
+      "surface_forms": ["congestion control", "slow start", "congestion avoidance", "exponential backoff", "MUST-19"],
+      "defined_in": ["0036"],
+      "mentioned_in": ["0005", "0035"],
+      "description": "MUST-19: slow start, congestion avoidance, and exponential RTO backoff are mandatory. Defined in RFC 5681 (slow start/congestion avoidance) and RFC 6298 (backoff). ECN recommended (SHLD-8). Alternative conformant algorithms allowed (MAY-18).",
+      "implementation_role": "Prevents network congestion collapse; required for IETF compliance",
+      "do_not_over_extract_from": [
+        { "node_id": "0036", "reason": "This section only states the requirement; algorithms are in external RFCs (5681, 6298)" }
+      ],
+      "related_concepts": [
+        { "relation": "depends_on", "target_concept_id": "retransmission_timeout", "evidence": "Exponential backoff is applied to RTO", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "keep_alive_mechanism",
+      "kind": "mechanism",
+      "canonical_name": "TCP Keep-Alive",
+      "surface_forms": ["keep-alive", "keep-alive probe", "keepalive"],
+      "defined_in": ["0038"],
+      "mentioned_in": [],
+      "description": "Optional (MAY-5) idle connection probe: SEG.SEQ=SND.NXT-1, with no data. Default off (MUST-25). Interval ≥2hr (MUST-28), configurable (MUST-27). Must not conclude dead connection on single probe loss (MUST-29).",
+      "implementation_role": "Liveness detection on idle connections",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "SND_NXT", "evidence": "Probe uses SEQ=SND.NXT-1", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "urgent_mechanism",
+      "kind": "mechanism",
+      "canonical_name": "TCP Urgent Mechanism",
+      "surface_forms": ["urgent mechanism", "urgent data", "urgent mode", "urgent pointer", "URG"],
+      "defined_in": ["0039"],
+      "mentioned_in": ["0040", "0072"],
+      "description": "Allows sender to signal out-of-band urgency. URG flag + urgent pointer (= offset to first non-urgent octet, MUST-62). Receiver enters urgent mode when RCV.UP > RCV.NXT; exits when RCV.NXT catches up. Must notify application asynchronously (MUST-32). Arbitrary length urgent sequences supported (MUST-31). New applications SHOULD NOT use (SHLD-13) but implementations MUST support (MUST-30).",
+      "implementation_role": "Legacy out-of-band signaling; mandatory to support even if discouraged",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "flag_URG", "evidence": "URG flag makes urgent_pointer_field meaningful", "confidence": "high" },
+        { "relation": "uses", "target_concept_id": "RCV_UP", "evidence": "RCV.UP tracks urgent boundary at receiver", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "zero_window_probing",
+      "kind": "procedure",
+      "canonical_name": "Zero-Window Probing",
+      "surface_forms": ["Zero-Window Probing", "ZWP", "probing zero windows", "window probe"],
+      "defined_in": ["0041"],
+      "mentioned_in": ["0040", "0043"],
+      "description": "When SND.WND=0, sender MUST periodically probe (MUST-36). First probe after one RTO (SHLD-29); subsequent probes exponentially backed off (SHLD-30). Connection stays open while receiver ACKs probes (MUST-37).",
+      "implementation_role": "Prevents permanent deadlock when receiver closes window",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "retransmission_timeout", "evidence": "First ZWP sent after RTO expiry", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "sender_sws_algorithm",
+      "kind": "procedure",
+      "canonical_name": "Sender SWS Avoidance Algorithm",
+      "surface_forms": ["sender SWS avoidance", "SWS avoidance algorithm", "sender's algorithm", "usable window"],
+      "defined_in": ["0043"],
+      "mentioned_in": ["0042"],
+      "description": "Usable window U = SND.UNA + SND.WND - SND.NXT. Send only if: (1) min(D,U)>=Eff.snd.MSS; or (2) PUSH and all data fits in U; or (3) min(D,U)>=Fs*Max(SND.WND) [Fs=1/2]; or (4) override timeout. MUST be implemented (MUST-38).",
+      "implementation_role": "Prevents Silly Window Syndrome on sender side",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "contrasts_with", "target_concept_id": "nagle_algorithm", "evidence": "Nagle and sender SWS serve complementary roles", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "receiver_sws_algorithm",
+      "kind": "procedure",
+      "canonical_name": "Receiver SWS Avoidance Algorithm",
+      "surface_forms": ["receiver SWS avoidance", "receiver's algorithm", "when to send a window update"],
+      "defined_in": ["0044"],
+      "mentioned_in": ["0042"],
+      "description": "Keep RCV.NXT+RCV.WND fixed until (RCV.BUFF - RCV.USER - RCV.WND) >= min(Fr*RCV.BUFF, Eff.snd.MSS) with Fr=1/2. Then advance RCV.WND to RCV.BUFF-RCV.USER. MUST be implemented (MUST-39).",
+      "implementation_role": "Prevents Silly Window Syndrome on receiver side",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "effective_send_mss", "evidence": "Receiver uses its own Eff.snd.MSS as threshold", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "delayed_ack_algorithm",
+      "kind": "procedure",
+      "canonical_name": "Delayed Acknowledgment",
+      "surface_forms": ["delayed ACK", "delayed acknowledgment", "delayed ack"],
+      "defined_in": ["0045"],
+      "mentioned_in": ["0032", "0044"],
+      "description": "ACK may be delayed (SHLD-18) but MUST be sent within 0.5 seconds (MUST-40) and SHOULD be sent at least every second full-sized segment or 2*RMSS bytes (SHLD-19).",
+      "implementation_role": "Reduces ACK traffic; must not delay excessively to avoid RTT disruption",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "depends_on", "target_concept_id": "receiver_sws_algorithm", "evidence": "Delayed ACK and receiver SWS jointly control when receiver sends ACK segment", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "open_call",
+      "kind": "procedure",
+      "canonical_name": "OPEN Call",
+      "surface_forms": ["OPEN", "OPEN call", "open command", "active OPEN", "passive OPEN"],
+      "defined_in": ["0048", "0062"],
+      "mentioned_in": ["0016", "0017", "0047"],
+      "description": "Format: OPEN(local port, remote socket, active/passive [,timeout] [,Diffserv] [,security] [,local IP] [,options])→local connection name. Creates TCB, enters LISTEN (passive) or sends SYN→SYN-SENT (active).",
+      "implementation_role": "API entry point for connection initiation",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "triggers", "target_concept_id": "three_way_handshake_procedure", "evidence": "Active OPEN initiates 3WHS by sending SYN", "confidence": "high" },
+        { "relation": "sets", "target_concept_id": "tcb", "evidence": "OPEN creates and initializes the TCB", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "send_call",
+      "kind": "procedure",
+      "canonical_name": "SEND Call",
+      "surface_forms": ["SEND", "SEND call", "send command"],
+      "defined_in": ["0049", "0063"],
+      "mentioned_in": ["0047"],
+      "description": "Format: SEND(local conn name, buffer addr, byte count, URGENT flag [,PUSH flag] [,timeout]). Causes buffered data to be segmentized and sent. Urgent flag sets SND.UP←SND.NXT.",
+      "implementation_role": "API call for data transmission",
+      "do_not_over_extract_from": [],
+      "related_concepts": []
+    },
+    {
+      "concept_id": "close_call",
+      "kind": "procedure",
+      "canonical_name": "CLOSE Call",
+      "surface_forms": ["CLOSE", "CLOSE call", "close command"],
+      "defined_in": ["0051", "0065"],
+      "mentioned_in": ["0026", "0047"],
+      "description": "Format: CLOSE(local conn name). Graceful termination; queues FIN after all pending SENDs. Implies PUSH. User must continue RECEIVEing after CLOSE.",
+      "implementation_role": "API call for graceful connection termination",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "triggers", "target_concept_id": "close_procedure", "evidence": "CLOSE call initiates FIN exchange and state transitions", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "abort_call",
+      "kind": "procedure",
+      "canonical_name": "ABORT Call",
+      "surface_forms": ["ABORT", "ABORT call", "abort command"],
+      "defined_in": ["0053", "0066"],
+      "mentioned_in": ["0047"],
+      "description": "Format: ABORT(local conn name). Flushes all queues, sends RST, deletes TCB, enters CLOSED immediately.",
+      "implementation_role": "API call for immediate connection termination",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "rst_generation_rules", "evidence": "ABORT sends <SEQ=SND.NXT><CTL=RST>", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "error_report_mechanism",
+      "kind": "procedure",
+      "canonical_name": "ERROR_REPORT",
+      "surface_forms": ["ERROR_REPORT", "asynchronous reports", "error reporting", "asynchronous error"],
+      "defined_in": ["0055"],
+      "mentioned_in": ["0037", "0059"],
+      "description": "Mandatory (MUST-47) upcall ERROR_REPORT(local conn name, reason, subreason). Triggered by: ICMP error arrival, excessive retransmissions (R1 threshold), urgent pointer advance. Application may disable (SHLD-20).",
+      "implementation_role": "Asynchronous error notification channel to application layer",
+      "do_not_over_extract_from": [],
+      "related_concepts": []
+    },
+    {
+      "concept_id": "checksum_pseudo_header",
+      "kind": "mechanism",
+      "canonical_name": "TCP Checksum Pseudo-Header",
+      "surface_forms": ["pseudo-header", "Figure 2: IPv4 Pseudo-header", "checksum pseudo-header"],
+      "defined_in": ["0011"],
+      "mentioned_in": ["0058"],
+      "description": "IPv4: 96-bit pseudo-header (Source Addr, Dest Addr, zero, PTCL, TCP Length). IPv6: 320-bit per RFC 8200 Section 8.1 (source/dest addr, upper-layer pkt length, 3 zero bytes, Next Header). Included in checksum to protect against misrouted segments.",
+      "implementation_role": "Required input to TCP checksum; differs between IPv4 and IPv6",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "checksum_field", "evidence": "Pseudo-header prefixed to TCP header for checksum computation", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "pmtud",
+      "kind": "mechanism",
+      "canonical_name": "Path MTU Discovery",
+      "surface_forms": ["PMTUD", "Path MTU Discovery", "PLPMTUD", "Packetization Layer Path MTU Discovery"],
+      "defined_in": ["0030"],
+      "mentioned_in": ["0028", "0029", "0033"],
+      "description": "PMTUD (RFC 1191/RFC 8201): uses DF bit and ICMP to discover path MTU. PLPMTUD (RFC 4821): Standards Track improvement that relaxes ICMP dependency. Both strongly recommended; PLPMTUD has no formal MUST requirement.",
+      "implementation_role": "Dynamic segment size optimization; avoids fragmentation across the network path",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "effective_send_mss", "evidence": "PMTUD result feeds into Eff.snd.MSS computation", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "icmp_soft_error_handling",
+      "kind": "error",
+      "canonical_name": "ICMP Soft Error Handling",
+      "surface_forms": ["soft error", "soft ICMP error", "Destination Unreachable codes 0,1,5", "Time Exceeded"],
+      "defined_in": ["0059"],
+      "mentioned_in": ["0055"],
+      "description": "IPv4: Dest Unreachable codes 0,1,5; Time Exceeded codes 0,1; Parameter Problem. ICMPv6: Dest Unreachable codes 0,3; Time Exceeded codes 0,1; Parameter Problem codes 0,1,2. MUST NOT abort connection (MUST-56); SHOULD inform application (SHLD-25).",
+      "implementation_role": "Soft error handling: connection preserved, application notified",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "error_report_mechanism", "evidence": "Soft errors should be passed to ERROR_REPORT", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "icmp_hard_error_handling",
+      "kind": "error",
+      "canonical_name": "ICMP Hard Error Handling",
+      "surface_forms": ["hard error", "hard ICMP error", "Destination Unreachable codes 2-4"],
+      "defined_in": ["0059"],
+      "mentioned_in": [],
+      "description": "IPv4 ICMP Dest Unreachable codes 2-4. SHOULD abort the connection (SHLD-26). Some implementations do not abort in synchronized states.",
+      "implementation_role": "Hard error handling: connection normally aborted",
+      "do_not_over_extract_from": [],
+      "related_concepts": []
+    },
+    {
+      "concept_id": "segment_processing_pipeline_8steps",
+      "kind": "procedure",
+      "canonical_name": "Segment Processing Pipeline",
+      "surface_forms": ["eight-step processing", "segment processing", "incoming segment processing"],
+      "defined_in": ["0072"],
+      "mentioned_in": ["0061"],
+      "description": "For all synchronized states (SYN-RECEIVED through TIME-WAIT): (1) sequence number check; (2) RST bit check [RFC 5961 variant]; (3) security/compartment check; (4) SYN bit check [RFC 5961 challenge ACK]; (5) ACK field check [RFC 5961 MAX.SND.WND]; (6) URG bit check; (7) segment text delivery; (8) FIN bit check. Steps must execute in order.",
+      "implementation_role": "Core segment handling logic; authoritative per-state behavior for all synchronized states",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "segment_acceptability_test", "evidence": "Step 1 applies acceptability test", "confidence": "high" },
+        { "relation": "uses", "target_concept_id": "challenge_ack", "evidence": "Steps 2 and 4 may use challenge ACK per RFC 5961", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "modulo_arithmetic",
+      "kind": "mechanism",
+      "canonical_name": "Modulo 2^32 Sequence Arithmetic",
+      "surface_forms": ["modulo 2^32", "modulo arithmetic", "=< means less than or equal (modulo 2^32)", "unsigned arithmetic"],
+      "defined_in": ["0018"],
+      "mentioned_in": ["0061"],
+      "description": "All sequence number, ACK, and window arithmetic is modulo 2^32. The symbol '=<' in this document means 'less than or equal (modulo 2^32)'. Sequence space wraps from 2^32-1 to 0.",
+      "implementation_role": "Fundamental arithmetic model for all sequence number operations; must use unsigned 32-bit wraparound comparison",
+      "do_not_over_extract_from": [],
+      "related_concepts": []
+    },
+    {
+      "concept_id": "diffserv_field",
+      "kind": "field",
+      "canonical_name": "Differentiated Services Field",
+      "surface_forms": ["Diffserv field", "DSCP", "Differentiated Services Codepoint", "TOS", "Type of Service", "IPv6 Traffic Class"],
+      "defined_in": ["0056"],
+      "mentioned_in": ["0048", "0057", "0082"],
+      "description": "6-bit DSCP value in IP header. Application MUST be able to specify per connection (MUST-48); specified independently per direction. TCP SHOULD pass unchanged to IP (SHLD-22). Generally SHOULD NOT change during connection (SHLD-23).",
+      "implementation_role": "QoS marking for IP layer; set by application, passed through by TCP",
+      "do_not_over_extract_from": [
+        { "node_id": "0082", "reason": "Appendix A.1 is non-normative discussion of obsolete TOS→Diffserv transition" }
+      ],
+      "related_concepts": []
+    },
+    {
+      "concept_id": "option_MSS",
+      "kind": "message",
+      "canonical_name": "Maximum Segment Size Option",
+      "surface_forms": ["MSS Option", "Maximum Segment Size Option", "MSS", "Kind=2"],
+      "defined_in": ["0012", "0029"],
+      "mentioned_in": ["0011", "0013", "0028", "0030"],
+      "description": "Kind=2, Length=4, MSS value (2 bytes). Communicates maximum receive segment size. MUST be sent/received (MUST-14). MUST NOT be sent on non-SYN segments (MUST-65). Defaults: 536 (IPv4) or 1220 (IPv6) if not received (MUST-15).",
+      "implementation_role": "Negotiates receive buffer limit at connection setup",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "effective_send_mss", "evidence": "SendMSS in Eff.snd.MSS formula is the received MSS option value", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "option_EOL",
+      "kind": "message",
+      "canonical_name": "End of Option List Option",
+      "surface_forms": ["EOL", "End of Option List Option", "Kind=0"],
+      "defined_in": ["0012"],
+      "mentioned_in": ["0011"],
+      "description": "Kind=0, no length field. Signals end of option list; may precede end of header according to DOffset.",
+      "implementation_role": "Option list terminator; required only when option list doesn't extend to header boundary",
+      "do_not_over_extract_from": [],
+      "related_concepts": []
+    },
+    {
+      "concept_id": "option_NOP",
+      "kind": "message",
+      "canonical_name": "No-Operation Option",
+      "surface_forms": ["NOP", "No-Operation", "Kind=1"],
+      "defined_in": ["0012"],
+      "mentioned_in": ["0011"],
+      "description": "Kind=1, no length field. Used as padding between options to align subsequent options on word boundaries.",
+      "implementation_role": "Option padding; receiver must handle options at any byte boundary (MUST-64)",
+      "do_not_over_extract_from": [],
+      "related_concepts": []
+    },
+    {
+      "concept_id": "flag_SYN",
+      "kind": "flag",
+      "canonical_name": "SYN",
+      "surface_forms": ["SYN", "SYN bit", "Synchronize sequence numbers", "bit offset 14"],
+      "defined_in": ["0011", "0076"],
+      "mentioned_in": ["0018", "0019", "0022", "0070", "0071", "0072"],
+      "description": "1-bit control flag (bit offset 14 in 16-bit aligned view). Indicates synchronization of sequence numbers; used at connection initiation. Occupies one sequence number.",
+      "implementation_role": "Connection initiation signal; triggers ISN exchange in 3WHS",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "sequence_space_occupancy_syn_fin", "evidence": "SYN consumes one sequence number", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "flag_ACK",
+      "kind": "flag",
+      "canonical_name": "ACK",
+      "surface_forms": ["ACK", "ACK bit", "Acknowledgment field is significant", "bit offset 11"],
+      "defined_in": ["0011", "0076"],
+      "mentioned_in": ["0018", "0070", "0071", "0072"],
+      "description": "1-bit control flag (bit offset 11). When set, the Acknowledgment Number field is valid. Once ESTABLISHED, always sent.",
+      "implementation_role": "Enables cumulative acknowledgment mechanism",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "acknowledgment_number_field", "evidence": "ACK flag makes acknowledgment number field meaningful", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "flag_RST",
+      "kind": "flag",
+      "canonical_name": "RST",
+      "surface_forms": ["RST", "RST bit", "Reset the connection", "bit offset 13"],
+      "defined_in": ["0011", "0076"],
+      "mentioned_in": ["0024", "0025", "0069", "0070", "0071", "0072"],
+      "description": "1-bit control flag (bit offset 13). Instructs receiver to delete connection without further interaction. Receipt of RST must never generate another RST.",
+      "implementation_role": "Abortive connection reset signal",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "triggers", "target_concept_id": "rst_processing_rules", "evidence": "Incoming RST triggers reset processing procedure", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "flag_FIN",
+      "kind": "flag",
+      "canonical_name": "FIN",
+      "surface_forms": ["FIN", "FIN bit", "No more data from sender", "bit offset 15"],
+      "defined_in": ["0011", "0076"],
+      "mentioned_in": ["0026", "0072"],
+      "description": "1-bit control flag (bit offset 15). Signals sender will send no more data or control occupying sequence space. Occupies one sequence number. Implies PUSH.",
+      "implementation_role": "Graceful close signal; triggers close state transitions",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "sequence_space_occupancy_syn_fin", "evidence": "FIN occupies one sequence number", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "flag_URG",
+      "kind": "flag",
+      "canonical_name": "URG",
+      "surface_forms": ["URG", "URG bit", "Urgent pointer field is significant", "bit offset 10"],
+      "defined_in": ["0011", "0076"],
+      "mentioned_in": ["0039", "0072"],
+      "description": "1-bit control flag (bit offset 10). When set, the Urgent Pointer field is meaningful.",
+      "implementation_role": "Activates urgent data mechanism",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "urgent_pointer_field", "evidence": "URG flag makes urgent pointer field meaningful", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "flag_PSH",
+      "kind": "flag",
+      "canonical_name": "PSH",
+      "surface_forms": ["PSH", "PSH bit", "Push function", "PUSH", "bit offset 12"],
+      "defined_in": ["0011", "0076"],
+      "mentioned_in": ["0032", "0043", "0049", "0050"],
+      "description": "1-bit control flag (bit offset 12). Signals that data should be pushed through to receiving application. Not a record marker; implementation may coalesce successive PSH bits.",
+      "implementation_role": "Hints to receiver to deliver data promptly; set on last buffered segment when PUSH flag not supported",
+      "do_not_over_extract_from": [],
+      "related_concepts": []
+    },
+    {
+      "concept_id": "flag_CWR",
+      "kind": "flag",
+      "canonical_name": "CWR",
+      "surface_forms": ["CWR", "Congestion Window Reduced", "bit offset 8"],
+      "defined_in": ["0011", "0076"],
+      "mentioned_in": ["0036"],
+      "description": "1-bit control flag (bit offset 8). Congestion Window Reduced; defined in RFC 3168 for ECN.",
+      "implementation_role": "ECN congestion notification signal",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "ecn_recommendation", "evidence": "CWR and ECE are the ECN flag pair (RFC 3168)", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "flag_ECE",
+      "kind": "flag",
+      "canonical_name": "ECE",
+      "surface_forms": ["ECE", "ECN-Echo", "bit offset 9"],
+      "defined_in": ["0011", "0076"],
+      "mentioned_in": ["0036"],
+      "description": "1-bit control flag (bit offset 9). ECN-Echo; defined in RFC 3168 for ECN.",
+      "implementation_role": "ECN echo signal from receiver to sender",
+      "do_not_over_extract_from": [],
+      "related_concepts": []
+    },
+    {
+      "concept_id": "retransmission_threshold_R1",
+      "kind": "variable",
+      "canonical_name": "Retransmission Threshold R1",
+      "surface_forms": ["R1", "threshold R1", "retransmission threshold R1"],
+      "defined_in": ["0037"],
+      "mentioned_in": ["0055"],
+      "description": "Retransmission count or time threshold at which negative advice is sent to IP layer (dead gateway diagnosis) and application is notified. SHOULD correspond to at least 3 retransmissions (SHLD-10).",
+      "implementation_role": "Triggers network-layer diagnosis and application warning",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "triggers", "target_concept_id": "error_report_mechanism", "evidence": "Reaching R1 triggers ERROR_REPORT to application", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "retransmission_threshold_R2",
+      "kind": "variable",
+      "canonical_name": "Retransmission Threshold R2",
+      "surface_forms": ["R2", "threshold R2", "retransmission threshold R2"],
+      "defined_in": ["0037"],
+      "mentioned_in": [],
+      "description": "Retransmission count or time threshold at which connection is closed. SHOULD correspond to at least 100 seconds (SHLD-11). Application MUST be able to set R2 (MUST-21). For SYN: MUST be ≥3 minutes (MUST-23).",
+      "implementation_role": "Connection failure threshold; triggers connection abort",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "triggers", "target_concept_id": "close_procedure", "evidence": "Exceeding R2 causes connection close", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "source_routing_rules",
+      "kind": "procedure",
+      "canonical_name": "Source Routing Rules",
+      "surface_forms": ["source routing", "source route", "IP Source Route Option"],
+      "defined_in": ["0058"],
+      "mentioned_in": ["0057"],
+      "description": "Application MUST specify source route on active OPEN (MUST-51); it MUST override datagram source route (MUST-52). On passive OPEN with completed IP Source Route, TCP MUST save and use return route (MUST-53); later source routes SHOULD override (SHLD-24).",
+      "implementation_role": "Ensures TCP checksum validity and return path correctness with IP source routing",
+      "do_not_over_extract_from": [],
+      "related_concepts": []
+    },
+    {
+      "concept_id": "source_address_validation_rules",
+      "kind": "procedure",
+      "canonical_name": "Source Address Validation",
+      "surface_forms": ["source address validation", "invalid source address", "broadcast/multicast address"],
+      "defined_in": ["0060"],
+      "mentioned_in": [],
+      "description": "SYN with invalid source address MUST be ignored (MUST-63). SYN addressed to broadcast or multicast MUST be silently discarded (MUST-57).",
+      "implementation_role": "Prevents spurious connection state and replay attacks",
+      "do_not_over_extract_from": [],
+      "related_concepts": []
+    },
+    {
+      "concept_id": "event_processing_model",
+      "kind": "mechanism",
+      "canonical_name": "Event Processing Model",
+      "surface_forms": ["event processing", "three categories of events", "user calls", "arriving segments", "timeouts"],
+      "defined_in": ["0061"],
+      "mentioned_in": ["0017"],
+      "description": "TCP endpoint responds to three event categories: (1) User Calls: OPEN, SEND, RECEIVE, CLOSE, ABORT, STATUS; (2) Arriving Segments: SEGMENT ARRIVES; (3) Timeouts: USER TIMEOUT, RETRANSMISSION TIMEOUT, TIME-WAIT TIMEOUT. Model is immediate-return with delayed signal.",
+      "implementation_role": "Architectural model for all TCP state machine behavior",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "tcp_fsm", "evidence": "Event processing drives FSM state transitions", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "user_timeout_handler",
+      "kind": "timer",
+      "canonical_name": "User Timeout",
+      "surface_forms": ["USER TIMEOUT", "user timeout", "transmission timeout"],
+      "defined_in": ["0073"],
+      "mentioned_in": ["0048"],
+      "description": "Per-connection user-settable timeout. On expiry from any state: flush all queues, signal 'error: connection aborted due to user timeout', delete TCB, enter CLOSED. Default global 5 minutes.",
+      "implementation_role": "Application-level send deadline; triggers abort if data not delivered in time",
+      "do_not_over_extract_from": [],
+      "related_concepts": []
+    },
+    {
+      "concept_id": "time_wait_timeout_handler",
+      "kind": "timer",
+      "canonical_name": "TIME-WAIT Timeout",
+      "surface_forms": ["TIME-WAIT TIMEOUT", "time-wait timer", "2MSL timer"],
+      "defined_in": ["0073"],
+      "mentioned_in": ["0027"],
+      "description": "On TIME-WAIT TIMEOUT expiry: delete TCB, enter CLOSED state. Restarted if retransmitted remote FIN arrives during TIME-WAIT.",
+      "implementation_role": "Enforces 2×MSL linger; triggers final TCB cleanup",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "depends_on", "target_concept_id": "msl", "evidence": "Timer duration = 2×MSL = 4 minutes", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "window_update_rule_snd_wl1_snd_wl2",
+      "kind": "procedure",
+      "canonical_name": "Send Window Update Rule",
+      "surface_forms": ["window update rule", "SND.WL1/SND.WL2 check", "anti-stale window update"],
+      "defined_in": ["0072"],
+      "mentioned_in": ["0016"],
+      "description": "SND.WND is updated only if (SND.WL1 < SEG.SEQ) OR (SND.WL1 = SEG.SEQ AND SND.WL2 <= SEG.ACK). Updates SND.WL1←SEG.SEQ, SND.WL2←SEG.ACK alongside SND.WND←SEG.WND.",
+      "implementation_role": "Prevents out-of-order ACKs from incorrectly shrinking the send window",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "sets", "target_concept_id": "SND_WND", "evidence": "Rule governs when SND.WND is updated from incoming SEG.WND", "confidence": "high" },
+        { "relation": "uses", "target_concept_id": "SND_WL1", "evidence": "SND.WL1 is the sequence number guard variable", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "max_snd_wnd_variable",
+      "kind": "variable",
+      "canonical_name": "MAX.SND.WND",
+      "surface_forms": ["MAX.SND.WND", "largest window", "maximum send window"],
+      "defined_in": ["0072"],
+      "mentioned_in": ["0043"],
+      "description": "RFC 5961 variable: largest window ever received from peer (subject to window scaling), or a hard-coded maximum permissible window value. Used in RFC 5961 ACK validation check: SEG.ACK must satisfy (SND.UNA - MAX.SND.WND) <= SEG.ACK <= SND.NXT.",
+      "implementation_role": "RFC 5961 guard against blind data injection; not in original RFC 793 TCB",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "guards", "target_concept_id": "segment_processing_pipeline_8steps", "evidence": "MAX.SND.WND used in step 5 ACK validation per RFC 5961", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "option_SACK",
+      "kind": "other",
+      "canonical_name": "TCP Selective Acknowledgment Option",
+      "surface_forms": ["SACK", "TCP SACK Option", "TCP Selective Acknowledgment"],
+      "defined_in": [],
+      "mentioned_in": ["0013"],
+      "description": "RFC 2018/2883 option; recommended but not required for basic TCP interoperability.",
+      "implementation_role": "High-performance loss recovery; defined externally",
+      "do_not_over_extract_from": [
+        { "node_id": "0013", "reason": "Only listed as a reference; not defined in this document" }
+      ],
+      "related_concepts": []
+    },
+    {
+      "concept_id": "option_timestamp",
+      "kind": "other",
+      "canonical_name": "TCP Timestamps Option",
+      "surface_forms": ["Timestamp Option", "TCP Timestamps", "TS Option"],
+      "defined_in": [],
+      "mentioned_in": ["0013", "0021", "0027"],
+      "description": "RFC 7323 option; recommended for high-performance. Used for PAWS (Protection Against Wrapped Sequences) and TIME-WAIT reduction (SHLD-4).",
+      "implementation_role": "PAWS and TIME-WAIT optimization; defined externally",
+      "do_not_over_extract_from": [
+        { "node_id": "0013", "reason": "Only referenced; not defined in this document" }
+      ],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "time_wait_timestamp_reduction", "evidence": "Timestamps enable TIME-WAIT reduction per RFC 6191", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "karn_algorithm",
+      "kind": "mechanism",
+      "canonical_name": "Karn's Algorithm",
+      "surface_forms": ["Karn's algorithm", "Karn"],
+      "defined_in": [],
+      "mentioned_in": ["0035"],
+      "description": "RTT sampling algorithm: do not use retransmitted segments for RTT measurement. Defined in RFC 6298. Required by MUST-18.",
+      "implementation_role": "Prevents spurious RTO updates from retransmitted segments",
+      "do_not_over_extract_from": [
+        { "node_id": "0035", "reason": "Only referenced via MUST-18; algorithm defined in RFC 6298" }
+      ],
+      "related_concepts": []
+    },
+    {
+      "concept_id": "quiet_time_rule",
+      "kind": "procedure",
+      "canonical_name": "TCP Quiet Time",
+      "surface_forms": ["quiet time", "quiet time concept", "quiet time restriction"],
+      "defined_in": ["0020", "0021"],
+      "mentioned_in": ["0019"],
+      "description": "After reboot or loss of sequence number memory, host SHOULD delay emitting TCP segments for one MSL to prevent stale segment confusion. Not necessary in most modern implementations due to ISN randomization and faster reboots.",
+      "implementation_role": "Historical reliability measure for post-reboot ISN uniqueness; largely obsolete",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "msl", "evidence": "Quiet time duration = one MSL (2 minutes)", "confidence": "high" }
+      ]
+    },
+    {
+      "concept_id": "half_open_connection",
+      "kind": "mechanism",
+      "canonical_name": "Half-Open Connection",
+      "surface_forms": ["half-open", "half-open connection"],
+      "defined_in": ["0023"],
+      "mentioned_in": ["0022"],
+      "description": "One peer has closed/rebooted while the other believes the connection is still ESTABLISHED. Detected when the still-connected peer receives a RST in response to unexpected data or SYN.",
+      "implementation_role": "Anomaly condition handled by RST exchange; auto-resolves on data attempt",
+      "do_not_over_extract_from": [],
+      "related_concepts": [
+        { "relation": "uses", "target_concept_id": "rst_generation_rules", "evidence": "RST is used to signal and resolve half-open connections", "confidence": "high" }
+      ]
+    }
+  ],
+
+  "route_planning_guidance": {
+    "co_extract_groups": [
+      {
+        "group_id": "grp_header_format",
+        "topic": "TCP Segment Header Format and Option Definitions",
+        "node_ids": ["0011", "0012", "0076"],
+        "primary_ir_families": ["message", "visual_request"],
+        "reason": "Header field definitions (3.1), option formats (3.2), and bit-offset IANA registry (Section 6) together constitute the complete wire format. Figure 1 (TCP header bitmap), Figure 2 (IPv4 pseudo-header), Table 7 (flag offsets), and option diagrams all require visual extraction.",
+        "confidence": "high"
+      },
+      {
+        "group_id": "grp_state_machine",
+        "topic": "TCP Connection State Machine",
+        "node_ids": ["0017", "0061", "0062", "0063", "0064", "0065", "0066", "0067", "0069", "0070", "0071", "0072", "0073"],
+        "primary_ir_families": ["state_machine", "procedure"],
+        "reason": "The FSM overview (3.3.2/Figure 5) and all event processing sections (3.10.1-3.10.8) together define the complete state machine. Figure 5 must be visually extracted; event processing sections provide the authoritative per-state action tables. All must be co-extracted to produce a complete FSM IR.",
+        "confidence": "high"
+      },
+      {
+        "group_id": "grp_sequence_numbers",
+        "topic": "Sequence Number Management",
+        "node_ids": ["0016", "0018", "0019", "0020", "0021"],
+        "primary_ir_families": ["procedure", "visual_request"],
+        "reason": "TCB variables (3.3.1), sequence number mechanics (3.4), ISN generation (3.4.1), and quiet time (3.4.2-3.4.3) together define the complete sequence number subsystem. Figures 3 and 4 (sequence space diagrams) must be visually extracted.",
+        "confidence": "high"
+      },
+      {
+        "group_id": "grp_connection_establishment",
+        "topic": "Connection Establishment Procedures",
+        "node_ids": ["0022", "0023", "0024", "0025", "0062", "0070", "0071"],
+        "primary_ir_families": ["procedure", "visual_request"],
+        "reason": "3WHS mechanics (3.5), half-open handling (3.5.1), RST generation (3.5.2), RST processing (3.5.3), OPEN call processing (3.10.1), LISTEN segment arrival (3.10.7.2), and SYN-SENT processing (3.10.7.3) are one interconnected establishment mechanism. Figures 6-11 (sequence diagrams) require visual extraction.",
+        "confidence": "high"
+      },
+      {
+        "group_id": "grp_connection_close",
+        "topic": "Connection Teardown Procedures",
+        "node_ids": ["0026", "0027", "0065", "0066"],
+        "primary_ir_families": ["procedure", "state_machine"],
+        "reason": "Close sequence (3.6), half-closed/TIME-WAIT rules (3.6.1), CLOSE call event processing (3.10.4), and ABORT call event processing (3.10.5) define the teardown mechanism. Figures 12-13 require visual extraction.",
+        "confidence": "high"
+      },
+      {
+        "group_id": "grp_flow_control",
+        "topic": "Flow Control and Window Management",
+        "node_ids": ["0040", "0041", "0042", "0043", "0044", "0045"],
+        "primary_ir_families": ["procedure", "algorithm", "timer_rule"],
+        "reason": "Window management (3.8.6), ZWP (3.8.6.1), SWS overview (3.8.6.2), sender SWS algorithm (3.8.6.2.1), receiver SWS algorithm (3.8.6.2.2), and delayed ACK (3.8.6.3) together define the complete flow-control subsystem.",
+        "confidence": "high"
+      },
+      {
+        "group_id": "grp_segmentation",
+        "topic": "Segmentation and MSS",
+        "node_ids": ["0028", "0029", "0030", "0031", "0032", "0033"],
+        "primary_ir_families": ["procedure"],
+        "reason": "Segmentation overview (3.7), MSS option (3.7.1), PMTUD (3.7.2), variable MTU (3.7.3), Nagle algorithm (3.7.4), and Jumbograms (3.7.5) define the segmentation subsystem; all interact through Eff.snd.MSS.",
+        "confidence": "high"
+      },
+      {
+        "group_id": "grp_reliability_timers",
+        "topic": "Retransmission, RTO, and Connection Failure",
+        "node_ids": ["0035", "0036", "0037", "0073"],
+        "primary_ir_families": ["timer_rule", "procedure", "binding_hint"],
+        "reason": "RTO requirement (3.8.1), congestion control hooks (3.8.2), connection failure thresholds R1/R2 (3.8.3), and timeout handlers (3.10.8) form the reliability timer subsystem.",
+        "confidence": "high"
+      },
+      {
+        "group_id": "grp_urgent",
+        "topic": "Urgent Data Mechanism",
+        "node_ids": ["0039", "0072"],
+        "primary_ir_families": ["procedure"],
+        "reason": "Urgent mechanism definition (3.8.5) and URG bit processing (step 6 of 3.10.7.4) together define the complete urgent data implementation.",
+        "confidence": "high"
+      },
+      {
+        "group_id": "grp_user_api",
+        "topic": "User/TCP API",
+        "node_ids": ["0047", "0048", "0049", "0050", "0051", "0052", "0053", "0054", "0055", "0056"],
+        "primary_ir_families": ["api_interface"],
+        "reason": "All API call format definitions (3.9.1.x) define the user-facing TCP API contract; they should be extracted together to capture the complete interface specification.",
+        "confidence": "high"
+      },
+      {
+        "group_id": "grp_ip_interface",
+        "topic": "TCP/IP Interface",
+        "node_ids": ["0057", "0058", "0059", "0060"],
+        "primary_ir_families": ["procedure", "error"],
+        "reason": "TCP/lower-level interface (3.9.2), source routing (3.9.2.1), ICMP handling (3.9.2.2), and source address validation (3.9.2.3) define the TCP↔IP integration boundary.",
+        "confidence": "high"
+      },
+      {
+        "group_id": "grp_rst_mechanism",
+        "topic": "RST Generation and Processing",
+        "node_ids": ["0024", "0025", "0069", "0072"],
+        "primary_ir_families": ["procedure"],
+        "reason": "RST generation rules (3.5.2), RST processing rules (3.5.3), CLOSED state RST behavior (3.10.7.1), and synchronized state RST check in 3.10.7.4 step 2 must all be co-extracted to produce complete RST handling IR.",
+        "confidence": "high"
+      }
+    ],
+
+    "split_warnings": [
+      {
+        "node_id": "0072",
+        "reason": "Section 3.10.7.4 covers eight sequential processing steps across eight connection states (SYN-RECEIVED through TIME-WAIT) — this is the largest and most complex single section. Extractors should process each of the eight steps as a separate sub-procedure IR, then union them by state. Do not attempt single-pass extraction.",
+        "suggested_split": [
+          "segment_processing_step1_sequence_check",
+          "segment_processing_step2_rst_check",
+          "segment_processing_step3_security_check",
+          "segment_processing_step4_syn_check",
+          "segment_processing_step5_ack_check",
+          "segment_processing_step6_urg_check",
+          "segment_processing_step7_data_delivery",
+          "segment_processing_step8_fin_check"
+        ]
+      },
+      {
+        "node_id": "0019",
+        "reason": "Section 3.4.1 contains both the ISN selection algorithm and the three-way handshake description; these are distinct mechanisms that should be extracted into separate IR families (algorithm IR for ISN, procedure IR for 3WHS).",
+        "suggested_split": ["isn_selection_algorithm", "three_way_handshake_intro"]
+      },
+      {
+        "node_id": "0089",
+        "reason": "Appendix B spans 10 pages (88-97) as a single multi-page requirements table; it should be processed as a series of visual table extraction requests rather than as a single text extraction unit.",
+        "suggested_split": ["req_summary_push_window", "req_summary_urgent_options", "req_summary_checksum_isn", "req_summary_open_close", "req_summary_retransmission_ack", "req_summary_keepalive_ip", "req_summary_interface_security"]
+      }
+    ],
+
+    "reference_only_nodes": [
+      { "node_id": "0003", "reason": "Status of This Memo — IETF boilerplate, no protocol content" },
+      { "node_id": "0004", "reason": "Copyright Notice — legal boilerplate, no protocol content" },
+      { "node_id": "0005", "reason": "Table of Contents — navigation only" },
+      { "node_id": "0013", "reason": "3.2.1 only lists SACK/Timestamps/Window Scale by name; all definitions are in external RFCs" },
+      { "node_id": "0014", "reason": "3.2.2 only points to RFC 4727 and RFC 6994; no normative content here" },
+      { "node_id": "0075", "reason": "Section 5 (Changes from RFC 793) is a changelog; useful for diff-tracing but not for protocol IR extraction" },
+      { "node_id": "0077", "reason": "Section 7 (Security) is informative; does confirm which mechanisms are in-spec but does not define new procedures" },
+      { "node_id": "0078", "reason": "Section 8 (References) — bibliography only" },
+      { "node_id": "0079", "reason": "8.1 Normative References — bibliography only" },
+      { "node_id": "0080", "reason": "8.2 Informative References — bibliography only" },
+      { "node_id": "0082", "reason": "Appendix A.1 (IP Security Compartment and Precedence) — non-normative implementation note; MLS-specific" },
+      { "node_id": "0083", "reason": "Appendix A.1.1 (Precedence) — non-normative; describes obsolete TOS→Diffserv transition" },
+      { "node_id": "0084", "reason": "Appendix A.1.2 (MLS Systems) — non-normative; MLS-specific IPSO/CIPSO/CALIPSO notes" },
+      { "node_id": "0085", "reason": "Appendix A.2 (Sequence Number Validation) — non-normative; describes edge cases for simultaneous open/self-connects" },
+      { "node_id": "0086", "reason": "Appendix A.3 (Nagle Modification) — non-normative; describes Minshall modification not in standard" },
+      { "node_id": "0087", "reason": "Appendix A.4 (Low Watermark Settings) — non-normative; SO_SNDLOWAT/SO_RCVLOWAT/TCP_NOTSENT_LOWAT socket options" },
+      { "node_id": "0092", "reason": "Acknowledgments — contributor credits only" },
+      { "node_id": "0093", "reason": "Author's Address — contact info only" }
+    ]
+  },
+
+  "extraction_depth_rules": [
+    {
+      "rule": "overview sections may introduce concepts but should not produce full procedure/message IR unless the behavior is actually defined there"
+    },
+    {
+      "rule": "message format IR should be extracted from sections that define fields/layout/options, not from sections that merely mention message names or flags"
+    },
+    {
+      "rule": "procedure IR should be extracted from sections that define ordered behavior, not from sections that only list API names or events"
+    },
+    {
+      "rule": "state machine IR may be extracted from overview diagrams, but visual_requests should be emitted when topology depends on a figure/table"
+    },
+    {
+      "rule": "Figure 5 (TCP Connection State Diagram) is explicitly labeled 'only a summary and must not be taken as the total specification' — FSM IR must always be supplemented from section 3.10 event processing, not built from Figure 5 alone"
+    },
+    {
+      "rule": "all sequence number comparisons use modulo-2^32 unsigned arithmetic; the symbol '=<' in this document means 'less than or equal modulo 2^32' and must not be treated as standard comparison"
+    },
+    {
+      "rule": "RFC 5961 mitigations (challenge ACK for RST and SYN in synchronized states; MAX.SND.WND guard for ACK validation) introduce conditional code paths in section 3.10.7 that must be represented as separate branches in procedure IR, not folded into the base RFC 793 logic"
+    },
+    {
+      "rule": "requirement labels (MUST-N, SHLD-N, MAY-N, REC-N) appear throughout the document; each represents a distinct normative requirement that should be preserved as an annotation on extracted IR, not discarded"
+    },
+    {
+      "rule": "Appendix A nodes are explicitly non-normative; do not generate MUST-level procedure IR from any Appendix A section"
+    },
+    {
+      "rule": "external RFCs referenced for algorithms (RFC 5681 for congestion control, RFC 6298 for RTO computation, RFC 7323 for timestamps/window scale, RFC 2018/2883 for SACK) must be flagged as runtime_dependencies in extracted IR, not reproduced as inline algorithms"
+    }
+  ],
+
+  "open_questions": [
+    {
+      "question": "The FIN-WAIT-1→TIME-WAIT shortcut transition (when FIN is received and local FIN is simultaneously acknowledged) is explicitly noted as omitted from Figure 5. Is this transition covered completely in 3.10.7.4 step 8, or is there additional prose elsewhere?",
+      "why_it_matters": "Missing this transition would produce an incomplete FSM IR that fails to handle the simultaneous FIN+ACK case correctly",
+      "affected_nodes": ["0017", "0072"]
+    },
+    {
+      "question": "Section 3.10.7.4 step 5 introduces MAX.SND.WND as a new TCB variable for RFC 5961 support, but this variable is not listed in the TCB definition in section 3.3.1. Should extractors add MAX.SND.WND to the TCB variable list or treat it as a local per-check variable?",
+      "why_it_matters": "If MAX.SND.WND must persist across segments it is a TCB field; if it can be computed on the fly from the window history it may not need TCB storage",
+      "affected_nodes": ["0016", "0072"]
+    },
+    {
+      "question": "The SWS override timer (0.1-1.0 seconds) described in section 3.8.6.2.1 is noted as potentially shareable with the ZWP timer (section 3.8.6.1). Is this a normative option or merely an implementation suggestion?",
+      "why_it_matters": "If the timers can be unified, the timer model needs only two timers instead of three in the flow-control subsystem",
+      "affected_nodes": ["0041", "0043"]
+    },
+    {
+      "question": "The 3WHS description in section 3.4.1 states that the ISN formula is SHLD-1 (SHOULD) while the clock-driven component is MUST-8 (MUST). How should extractors handle an implementation that uses a clock-driven ISN without a PRF component — is it partially conformant?",
+      "why_it_matters": "The distinction between MUST-8 and SHLD-1 affects whether a conformance checker can pass an implementation lacking the PRF",
+      "affected_nodes": ["0019"]
+    },
+    {
+      "question": "Section 3.10.7.3 (SYN-SENT) notes that data may be included with SYN segments (TCP Fast Open, T/TCP). The acceptance and processing of this data is described informally. Is there a normative path for delivering SYN data to the application before ESTABLISHED is reached?",
+      "why_it_matters": "TFO data delivery timing affects buffering and application interface semantics",
+      "affected_nodes": ["0071", "0062"]
+    },
+    {
+      "question": "Section 3.9.1.2 states that when PUSH flags are not implemented, PSH bit must be set on the 'last buffered segment' (MUST-61). The document does not define exactly when buffering ends — is 'last buffered' determined by current send buffer or send window?",
+      "why_it_matters": "Ambiguity in MUST-61 could lead to non-interoperable PSH bit behavior",
+      "affected_nodes": ["0049", "0063"]
+    },
+    {
+      "question": "Section 5 lists 19 incorporated errata. Are any of these errata changes behavioral (affecting procedure IR) rather than purely textual, and if so, which sections in section 3 reflect which errata?",
+      "why_it_matters": "If an errata changed a specific procedure, extractors should know which version of the text is authoritative",
+      "affected_nodes": ["0075"]
+    }
+  ]
+}

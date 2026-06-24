@@ -1,0 +1,20 @@
+{
+  "rows": [
+    [
+      "Bits",
+      "Meaning"
+    ],
+    [
+      "31",
+      "Reserved."
+    ],
+    [
+      "30",
+      "Reserved."
+    ],
+    [
+      "29",
+      "Switch:\nWhen set to one, indicates that the incident port is a port on a switch node. When set\nto zero, indicates that the incident port is not a port on a switch node."
+    ]
+  ]
+}

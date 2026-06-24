@@ -1,0 +1,364 @@
+{
+  "doc_id": "FC-LS",
+  "units": [
+    {
+      "unit_id": "fc_ls_fabric_login_proc",
+      "doc_id": "FC-LS",
+      "title": "Fabric login procedure",
+      "kind": "procedure",
+      "reason": "Section 6.2 defines a required login flow with explicit request, response branches, completion conditions, and relogin behavior for establishing Fabric operating characteristics before other Nx_Port communication.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p153_s0007",
+          "quote": "Login with the Fabric is required for all Nx_Ports, regardless of the class supported."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p153_s0027",
+          "quote": "The explicit Fabric Login procedure shall require an Nx_Port to transmit a Fabric Login (FLOGI) Link"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p153_s0033",
+          "quote": "The Nx_Port shall transmit the FLOGI in a new Exchange."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0004",
+          "quote": "The following are possible responses the Nx_Port may receive when transmitting a FLOGI:"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p156_s0014",
+          "quote": "The Originator of the FLOGI request considers Fabric Login to have ended when"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p156_s0028",
+          "quote": "The Responder of the FLOGI request considers Fabric Login to have ended when"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0026",
+          "quote": "During a Login with the Fabric, if the Nx_Port was previously logged in with the Fabric and the"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fc_ls_fabric_login_responses",
+      "doc_id": "FC-LS",
+      "title": "Fabric login response branches",
+      "kind": "procedure",
+      "reason": "The explicit Fabric Login response section enumerates normal Fabric acceptance, point-to-point detection, busy, reject, retry, and self-connection branches, which are implementation-facing control-flow outcomes.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p154_s0003",
+          "quote": "6.2.2.3  Responses to Explicit Fabric Login"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0005",
+          "quote": "a) LS_ACC reply Sequence with OX_ID equal to the OX_ID of the FLOGI"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0016",
+          "quote": "b) LS_ACC reply Sequence with OX_ID equal to the OX_ID of the FLOGI"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0025",
+          "quote": "F_BSY with OX_ID equal to the OX_ID of the FLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p154_s0031",
+          "quote": "e) F_RJT Sequence with OX_ID equal to the OX_ID of the FLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0003",
+          "quote": "g) LS_RJT Sequence with OX_ID equal to the OX_ID of the FLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0009",
+          "quote": "h) No Response may indicate a delivery error, e.g., error on the physical transport."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p155_s0013",
+          "quote": "If the received N_Port_Name is equal to its N_Port_Name, then the Nx_Port is connected to it-"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fc_ls_nport_login_proc",
+      "doc_id": "FC-LS",
+      "title": "N_Port login procedure",
+      "kind": "procedure",
+      "reason": "Sections 6.3.1-6.3.2 define explicit N_Port Login after Fabric Login, with separate operational flows depending on whether a Fabric is present.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p156_s0044",
+          "quote": "N_Port Login follows the Fabric Login procedure."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0006",
+          "quote": "The explicit N_Port Login procedure shall require an Nx_Port to transmit a PLOGI Link request Se-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0022",
+          "quote": "The destination Nx_Port explicit Login procedure requires transmission of a N_Port Login (PLOGI)"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0034",
+          "quote": "6.3.2.4  N_Port Login - No Fabric present"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fc_ls_nport_login_responses_fabric",
+      "doc_id": "FC-LS",
+      "title": "N_Port login responses with Fabric present",
+      "kind": "procedure",
+      "reason": "Section 6.3.2.3 enumerates implementation branches for PLOGI with a Fabric present, including accept, Fabric busy/reject, destination busy/reject, collision, LS_RJT, timeout, and self-connection outcomes.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p158_s0033",
+          "quote": "6.3.2.3  Responses to N_Port Login - Fabric present"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0036",
+          "quote": "a) LS_ACC reply Sequence with OX_ID equal to the OX_ID of the PLOGI"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p158_s0044",
+          "quote": "b) F_BSY with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0004",
+          "quote": "F_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0009",
+          "quote": "d) P_BSY Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0011",
+          "quote": "e) P_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0016",
+          "quote": "PLOGI Sequence.  The D_ID is the N_Port_ID of receiving Nx_Port."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0024",
+          "quote": "g) LS_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p159_s0028",
+          "quote": "h) No Response may indicate a delivery error, e.g., error on the physical transport."
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fc_ls_nport_login_responses_no_fabric",
+      "doc_id": "FC-LS",
+      "title": "N_Port login responses with no Fabric present",
+      "kind": "procedure",
+      "reason": "Section 6.3.2.5 gives the point-to-point response branches for PLOGI when no Fabric is present, including normal accept, busy/reject branches, collision handling, timeout, and self-connection handling.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p160_s0003",
+          "quote": "6.3.2.5  Responses to N_Port Login - No Fabric present"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0006",
+          "quote": "a) LS_ACC reply Sequence with OX_ID equal to the OX_ID of the PLOGI"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0014",
+          "quote": "b) P_BSY Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0017",
+          "quote": "P_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0021",
+          "quote": "d) LS_RJT Sequence with OX_ID equal to the OX_ID of the PLOGI."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0025",
+          "quote": "e) PLOGI Sequence.  The D_ID is the address identifier of receiving Nx_Port."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0034",
+          "quote": "No Response may indicate a delivery error, e.g., error on the physical transport."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p160_s0037",
+          "quote": "g) If the received N_Port_Name is equal to its N_Port_Name, then the Nx_Port is connected to it-"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fc_ls_prli_proc",
+      "doc_id": "FC-LS",
+      "title": "Process login procedure",
+      "kind": "procedure",
+      "reason": "Section 7.1 defines PRLI as the explicit procedure for establishing an operating environment and image pairs after N_Port login, with retry/error behavior and separate PA relationship modes.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p197_s0009",
+          "quote": "The Process Login (PRLI) ELS request shall be used to establish the operating environment between"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p197_s0023",
+          "quote": "b) Explicit Process Login is accomplished by using the PRLI ELS Sequence within a separate Ex-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p198_s0004",
+          "quote": "PRLI, if required, is performed after N_Port Login is successful and prior to other FC-4 transfers."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p198_s0014",
+          "quote": "An image pair may be established or modified with a PRLI request and LS_ACC reply Sequence set."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0003",
+          "quote": "The Nx_Port originating the PRLI request shall not consider the image pair to be established until it"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0008",
+          "quote": "If a link error is detected when a PRLI request is received, the appropriate response, if any, is made,"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0012",
+          "quote": "If an LS_RJT is sent in response to a PRLI request for an image pair that is already established, the"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fc_ls_prlo_proc",
+      "doc_id": "FC-LS",
+      "title": "Process logout procedure",
+      "kind": "procedure",
+      "reason": "Section 7.2 defines PRLO as the inverse of PRLI for invalidating an image-pair operating environment, freeing resources, resetting TYPE-specific parameters, and retrying after certain failures.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p202_s0007",
+          "quote": "The Process Logout (PRLO) ELS request shall be used to request invalidation of the operating envi-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0009",
+          "quote": "frees resources committed by a previous PRLI function."
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0013",
+          "quote": "TYPE-specific Service Parameter settings may be reset or image pairs removed with a PRLO re-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0019",
+          "quote": "If a PRLO request is received for an image pair or FC-4 TYPE that does not exist, the request is ac-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0021",
+          "quote": "The Nx_Port originating the PRLO request shall not consider an image pair to be removed until it re-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p202_s0031",
+          "quote": "A PRLO page identifies a particular image pair to logout by marking either or both the Originator Pro-"
+        }
+      ],
+      "related_assets": []
+    },
+    {
+      "unit_id": "fc_ls_logo_proc",
+      "doc_id": "FC-LS",
+      "title": "Explicit logout procedure",
+      "kind": "procedure",
+      "reason": "LOGO is the explicit logout mechanism used to remove service between Nx_Ports or between an Nx_Port and the Fabric, and it is also referenced as a PRLI prerequisite/error response when N_Port login is absent.",
+      "evidence_refs": [
+        {
+          "type": "text_span",
+          "span_id": "p049_s0028",
+          "quote": "The LOGO ELS provides a method for explicitly removing service between two Nx_Port_IDs or be-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p050_s0008",
+          "quote": "For an explicit Nx_Port Logout, the S_ID field designates the source Nx_Port_ID re-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p050_s0010",
+          "quote": "explicit Fabric Logout originated by an Nx_Port, the S_ID field shall be the Nx_Port_ID to be logged"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p050_s0021",
+          "quote": "LS_ACC signifies that service has been removed for the N_Port_ID indicated in the pay-"
+        },
+        {
+          "type": "text_span",
+          "span_id": "p199_s0010",
+          "quote": "port it shall reply with a LOGO ELS Sequence, or with an LS_RJT ELS Sequence with a reason code"
+        }
+      ],
+      "related_assets": [
+        {
+          "type": "table",
+          "asset_id": "table_0015"
+        },
+        {
+          "type": "table",
+          "asset_id": "table_0016"
+        }
+      ]
+    }
+  ]
+}

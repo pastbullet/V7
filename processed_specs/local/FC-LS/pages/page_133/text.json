@@ -1,0 +1,792 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 133,
+  "spans": [
+    {
+      "span_id": "p133_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0002",
+      "text": " 114",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0003",
+      "text": "Descriptor Control:",
+      "bbox": [
+        96.0,
+        57.65,
+        189.34,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0004",
+      "text": " Specifies the behavior of the receiving entity if the descriptor is unsupported.",
+      "bbox": [
+        189.48,
+        57.65,
+        540.02,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p133_s0005",
+      "text": "The defined codes are shown in table 122.",
+      "bbox": [
+        96.0,
+        69.65,
+        284.33,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0006",
+      "text": "Descriptor Type:",
+      "bbox": [
+        96.0,
+        262.96,
+        175.35,
+        274.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0007",
+      "text": " Specifies the type of the descriptor. The defined descriptors are summarized in ta-",
+      "bbox": [
+        175.32,
+        262.96,
+        539.96,
+        274.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p133_s0008",
+      "text": "ble 123.",
+      "bbox": [
+        96.0,
+        274.96,
+        131.52,
+        286.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0009",
+      "text": "Descriptor Length:",
+      "bbox": [
+        96.0,
+        466.96,
+        185.35,
+        478.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0010",
+      "text": " Specifies the length in bytes of the Descriptor Value.",
+      "bbox": [
+        185.4,
+        466.96,
+        419.82,
+        478.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p133_s0011",
+      "text": "4.2.43.2.2  Tagging Administrative Status Descriptor",
+      "bbox": [
+        96.0,
+        490.96,
+        343.19,
+        502.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0012",
+      "text": "The format of the Tagging Administrative Status descriptor is shown in table 124.",
+      "bbox": [
+        96.0,
+        514.96,
+        453.27,
+        526.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0013",
+      "text": " Table 122 – Descriptor Control Codes",
+      "bbox": [
+        227.46,
+        91.66,
+        408.45,
+        102.78
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0014",
+      "text": "Value",
+      "bbox": [
+        119.04,
+        113.62,
+        145.74,
+        124.74
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0015",
+      "text": "Description",
+      "bbox": [
+        317.09,
+        113.62,
+        372.06,
+        124.74
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0016",
+      "text": "01h",
+      "bbox": [
+        124.02,
+        135.64,
+        140.65,
+        146.76
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0017",
+      "text": "Critical. Abort the EVFP transaction if the descriptor is unsupported.",
+      "bbox": [
+        165.84,
+        134.62,
+        465.22,
+        145.74
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0018",
+      "text": "a",
+      "bbox": [
+        465.3,
+        132.46,
+        469.74,
+        141.36
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 2
+    },
+    {
+      "span_id": "p133_s0019",
+      "text": "02h",
+      "bbox": [
+        124.02,
+        162.65,
+        140.66,
+        173.76
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0020",
+      "text": "Non critical. Skip the descriptor if unsupported and continue the EVFP ",
+      "bbox": [
+        165.84,
+        155.63,
+        478.12,
+        166.74
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0021",
+      "text": "transaction.",
+      "bbox": [
+        165.84,
+        167.63,
+        217.51,
+        178.74
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0022",
+      "text": "a",
+      "bbox": [
+        217.56,
+        165.46,
+        222.0,
+        174.36
+      ],
+      "block_index": 11,
+      "line_index": 3,
+      "span_index": 2
+    },
+    {
+      "span_id": "p133_s0023",
+      "text": "all others",
+      "bbox": [
+        112.08,
+        189.65,
+        152.64,
+        200.76
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0024",
+      "text": "Reserved",
+      "bbox": [
+        165.84,
+        188.63,
+        208.63,
+        199.74
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0025",
+      "text": "a",
+      "bbox": [
+        119.04,
+        210.26,
+        123.04,
+        218.3
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0026",
+      "text": " The Descriptor Control provides extensibility to the protocol. An implementation supporting a subset ",
+      "bbox": [
+        123.04,
+        208.64,
+        524.35,
+        222.28
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p133_s0027",
+      "text": "of the descriptors is able to process the unknown ones as specified by the Descriptor Control value.",
+      "bbox": [
+        129.84,
+        223.28,
+        524.04,
+        233.32
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0028",
+      "text": " Table 123 – Descriptor Types",
+      "bbox": [
+        247.44,
+        296.99,
+        388.5,
+        308.1
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0029",
+      "text": "Value",
+      "bbox": [
+        170.22,
+        319.01,
+        196.81,
+        330.12
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0030",
+      "text": "Description",
+      "bbox": [
+        296.64,
+        319.01,
+        351.67,
+        330.12
+      ],
+      "block_index": 15,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0031",
+      "text": "Reference",
+      "bbox": [
+        434.5,
+        319.01,
+        482.8,
+        330.12
+      ],
+      "block_index": 15,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0032",
+      "text": "01h",
+      "bbox": [
+        175.2,
+        340.97,
+        191.84,
+        352.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0033",
+      "text": "Tagging Administrative Status Descriptor",
+      "bbox": [
+        233.64,
+        340.01,
+        414.65,
+        351.12
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0034",
+      "text": "4.2.43.2.2",
+      "bbox": [
+        436.38,
+        340.97,
+        480.8,
+        352.08
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0035",
+      "text": "02h",
+      "bbox": [
+        175.2,
+        362.99,
+        191.84,
+        374.1
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0036",
+      "text": "Port VF_ID Descriptor",
+      "bbox": [
+        233.64,
+        361.97,
+        331.44,
+        373.08
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0037",
+      "text": "4.2.43.2.3",
+      "bbox": [
+        436.38,
+        362.99,
+        480.8,
+        374.1
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0038",
+      "text": "03h",
+      "bbox": [
+        175.2,
+        385.0,
+        191.84,
+        396.12
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0039",
+      "text": "Locally-Enabled VF_ID List Descriptor",
+      "bbox": [
+        233.64,
+        383.98,
+        402.51,
+        395.1
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0040",
+      "text": "4.2.43.2.4",
+      "bbox": [
+        436.38,
+        385.0,
+        480.8,
+        396.12
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0041",
+      "text": "F0h .. FEh",
+      "bbox": [
+        160.2,
+        406.96,
+        206.83,
+        418.08
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0042",
+      "text": "Vendor Specific Descriptor",
+      "bbox": [
+        233.64,
+        406.0,
+        351.87,
+        417.12
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0043",
+      "text": "4.2.43.2.5",
+      "bbox": [
+        436.38,
+        406.96,
+        480.8,
+        418.08
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0044",
+      "text": "all others",
+      "bbox": [
+        163.26,
+        428.98,
+        203.75,
+        440.1
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0045",
+      "text": "Reserved",
+      "bbox": [
+        233.64,
+        427.96,
+        276.33,
+        439.08
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0046",
+      "text": " Table 124 – Tagging Administrative Status Descriptor",
+      "bbox": [
+        189.72,
+        536.98,
+        446.32,
+        548.1
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0047",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        559.0,
+        133.06,
+        570.12
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0048",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        571.0,
+        136.35,
+        582.12
+      ],
+      "block_index": 22,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0049",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        559.0,
+        233.97,
+        570.12
+      ],
+      "block_index": 22,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0050",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        559.0,
+        328.42,
+        570.12
+      ],
+      "block_index": 22,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0051",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        559.0,
+        427.0,
+        570.12
+      ],
+      "block_index": 22,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0052",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        559.0,
+        522.83,
+        570.12
+      ],
+      "block_index": 22,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0053",
+      "text": "0",
+      "bbox": [
+        120.84,
+        595.0,
+        126.38,
+        606.12
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0054",
+      "text": "Descriptor Control = ",
+      "bbox": [
+        151.92,
+        589.96,
+        243.8,
+        601.08
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0055",
+      "text": "01h",
+      "bbox": [
+        188.16,
+        601.96,
+        204.8,
+        613.08
+      ],
+      "block_index": 23,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0056",
+      "text": "Descriptor Type = ",
+      "bbox": [
+        254.1,
+        589.96,
+        336.1,
+        601.08
+      ],
+      "block_index": 23,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0057",
+      "text": "01h",
+      "bbox": [
+        285.36,
+        601.96,
+        302.0,
+        613.08
+      ],
+      "block_index": 23,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0058",
+      "text": "Descriptor Length = 0004h",
+      "bbox": [
+        380.46,
+        595.96,
+        498.48,
+        607.08
+      ],
+      "block_index": 23,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0059",
+      "text": "1",
+      "bbox": [
+        120.84,
+        619.96,
+        126.38,
+        631.08
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p133_s0060",
+      "text": "Administrative Tagging Mode",
+      "bbox": [
+        277.56,
+        620.98,
+        407.06,
+        632.1
+      ],
+      "block_index": 24,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0126",
+    "table_0127",
+    "table_0128"
+  ]
+}

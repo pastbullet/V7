@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0101",
+  "type": "table",
+  "caption": "Table 97 – CSR LS_ACC Payload",
+  "pages": [
+    115
+  ],
+  "bbox": [
+    94.14,
+    531.99,
+    541.86,
+    635.34
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 115,
+  "logical_table": false
+}

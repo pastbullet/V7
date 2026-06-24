@@ -1,0 +1,65 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Bits\nWord", "page": 132, "bbox": [100.23, 171.96, 147.15, 199.7]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "31 .. 24", "page": 132, "bbox": [147.15, 171.96, 245.13, 199.7]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "23 .. 16", "page": 132, "bbox": [245.13, 171.96, 342.33, 199.7]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "15 .. 08", "page": 132, "bbox": [342.33, 171.96, 439.53, 199.7]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "07 .. 00", "page": 132, "bbox": [439.53, 171.96, 536.12, 199.7]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 132, "bbox": [100.23, 199.7, 147.15, 217.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Descriptor #1 = Tagging Administrative Status (see 4.2.43.2.2)a", "page": 132, "bbox": [147.15, 199.7, 536.12, 234.33]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "1", "page": 132, "bbox": [100.23, 217.35, 147.15, 234.33]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "2", "page": 132, "bbox": [100.23, 234.33, 147.15, 251.37]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Descriptor #2 = Port VF_ID (see 4.2.43.2.3)b", "page": 132, "bbox": [147.15, 234.33, 536.12, 268.35]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "3", "page": 132, "bbox": [100.23, 251.37, 147.15, 268.35]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "4", "page": 132, "bbox": [100.23, 268.35, 147.15, 285.33]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "Descriptor #3 = Locally-Enabled VF_ID List (see 4.2.43.2.4)c", "page": 132, "bbox": [147.15, 268.35, 536.12, 319.35]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r6c4", "row": 6, "col": 4, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r6c5", "row": 6, "col": 5, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "..", "page": 132, "bbox": [100.23, 285.33, 147.15, 302.37]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r7c4", "row": 7, "col": 4, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r7c5", "row": 7, "col": 5, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "132", "page": 132, "bbox": [100.23, 302.37, 147.15, 319.35]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r8c4", "row": 8, "col": 4, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r8c5", "row": 8, "col": 5, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "...", "page": 132, "bbox": [100.23, 319.35, 147.15, 336.39]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "...", "page": 132, "bbox": [147.15, 319.35, 536.12, 353.37]}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r9c4", "row": 9, "col": 4, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r9c5", "row": 9, "col": 5, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "H", "page": 132, "bbox": [100.23, 336.39, 147.15, 353.37]}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r10c3", "row": 10, "col": 3, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r10c4", "row": 10, "col": 4, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r10c5", "row": 10, "col": 5, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r11c1", "row": 11, "col": 1, "text": "...", "page": 132, "bbox": [100.23, 353.37, 147.15, 370.35]}
+{"cell_id": "r11c2", "row": 11, "col": 2, "text": "Descriptor #m", "page": 132, "bbox": [147.15, 353.37, 536.12, 387.33]}
+{"cell_id": "r11c3", "row": 11, "col": 3, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r11c4", "row": 11, "col": 4, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r11c5", "row": 11, "col": 5, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r12c1", "row": 12, "col": 1, "text": "K", "page": 132, "bbox": [100.23, 370.35, 147.15, 387.33]}
+{"cell_id": "r12c2", "row": 12, "col": 2, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r12c3", "row": 12, "col": 3, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r12c4", "row": 12, "col": 4, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r12c5", "row": 12, "col": 5, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r13c1", "row": 13, "col": 1, "text": "a Decriptor #1 is required to be present in EVFP_SYNC request.\nb Decriptor #2 is required to be present in EVFP_SYNC request.\nc Decriptor #3 is required to be present in EVFP_SYNC request.", "page": 132, "bbox": [100.23, 387.33, 536.12, 433.92]}
+{"cell_id": "r13c2", "row": 13, "col": 2, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r13c3", "row": 13, "col": 3, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r13c4", "row": 13, "col": 4, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r13c5", "row": 13, "col": 5, "text": "", "page": 132, "bbox": [0.0, 0.0, 0.0, 0.0]}

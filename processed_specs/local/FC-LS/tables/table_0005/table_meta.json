@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0005",
+  "type": "table",
+  "caption": "Table 3 – ELS_Command codes (Continued)",
+  "pages": [
+    39
+  ],
+  "bbox": [
+    97.11,
+    76.73,
+    538.89,
+    625.41
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 39
+}

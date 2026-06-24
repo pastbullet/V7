@@ -1,0 +1,29 @@
+{
+  "rows": [
+    [
+      "Requesting Nx_Port",
+      "F_Port Configuration",
+      "Behavior"
+    ],
+    [
+      "Virtual Fabrics Bit = 0b",
+      "Virtual Fabrics Not Allowed",
+      "LS_ACC with Virtual Fabrics Bit = 0b"
+    ],
+    [
+      "Virtual Fabrics Bit = 1b",
+      "Virtual Fabrics Not Allowed",
+      "LS_ACC with Virtual Fabrics Bit = 0b"
+    ],
+    [
+      "Virtual Fabrics Bit = 0b",
+      "Virtual Fabrics Allowed",
+      "LS_ACC with Virtual Fabrics Bit = 0b"
+    ],
+    [
+      "Virtual Fabrics Bit = 1b",
+      "Virtual Fabrics Allowed",
+      "LS_ACC with Virtual Fabrics Bit = 1b"
+    ]
+  ]
+}

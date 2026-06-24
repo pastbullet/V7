@@ -1,0 +1,95 @@
+{
+  "rows": [
+    [
+      "Bits\nWord",
+      "31 .. 24",
+      "23 .. 16",
+      "15 .. 08",
+      "07 .. 00"
+    ],
+    [
+      "0",
+      "GAID (30h)",
+      "00h",
+      "00h",
+      "00h"
+    ],
+    [
+      "1",
+      "MSB Alias_Token\n(12 bytes)\nLSB",
+      null,
+      null,
+      null
+    ],
+    [
+      "2",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "3",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "4",
+      "Alias_SP\n(80 bytes)",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "23",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "24",
+      "NP_List_Length\n(Number of NP_List entries = n)",
+      null,
+      null,
+      null
+    ],
+    [
+      "25",
+      "NP_List (1)",
+      null,
+      null,
+      null
+    ],
+    [
+      "..",
+      "..",
+      null,
+      null,
+      null
+    ],
+    [
+      "24 + n",
+      "NP_List (n)",
+      null,
+      null,
+      null
+    ],
+    [
+      "0",
+      "Reserved",
+      "N_Port_ID",
+      null,
+      null
+    ]
+  ]
+}

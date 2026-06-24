@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0023",
+  "type": "table",
+  "caption": "Table 20 – RTV LS_ACC Payload",
+  "pages": [
+    55
+  ],
+  "bbox": [
+    99.94,
+    122.73,
+    536.06,
+    218.7
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 55
+}

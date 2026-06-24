@@ -1,0 +1,48 @@
+{
+  "rows": [
+    [
+      "Value",
+      "Meaning"
+    ],
+    [
+      "00h",
+      "Reserved."
+    ],
+    [
+      "01h",
+      "Implicit incident:\nA condition, caused by an event known to have occurred within the incident port, has\nbeen recognized by the incident port. The condition affects the attached link in such a\nway that it may cause a link incident to be recognized by the connected port."
+    ],
+    [
+      "02h",
+      "Bit-error-rate threshold exceeded:\nThe incident port has detected that the Error Interval Count equals the Error Threshold\n(see FC-FS-2)."
+    ],
+    [
+      "03h",
+      "Link Failure - Loss-of-Signal or synchronization:\nThe incident port has recognized a Loss-of-Synchronization condition, and it persisted\nfor more than the R_T_TOV timeout period (see FC-FS-2)."
+    ],
+    [
+      "04h",
+      "Link Failure - NOS recognized:\nThe NOS has been recognized by the incident port (see FC-FS-2)"
+    ],
+    [
+      "05h",
+      "Link Failure - Primitive Sequence timeout:\nThe incident port has recognized either a Link-Reset-Protocol timeout (see FC-FS-2),\nor a timeout when timing for the appropriate response while in the LF1 State and after\nNOS is no longer recognized (see FC-FS-2)."
+    ],
+    [
+      "06h",
+      "Link Failure - Invalid Primitive Sequence for port state:\nThe incident port recognized either a LR or LRR Primitive Sequence while in the OL3\nState (see FC-FS-2)."
+    ],
+    [
+      "07h",
+      "Link Failure - Loop Initialization time out:\nThe incident port failed to complete loop initialization within the normal loop time out\nperiod (see FC-AL-2)."
+    ],
+    [
+      "08h",
+      "Link Failure – receiving LIP(F8):\nThe incident port is receiving LIP(F8) indicating some other port on the loop is\nexperiencing a Loss-of-Signal condition."
+    ],
+    [
+      "09h - FFh",
+      "Reserved."
+    ]
+  ]
+}

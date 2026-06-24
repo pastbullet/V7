@@ -1,0 +1,593 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 158,
+  "spans": [
+    {
+      "span_id": "p158_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0002",
+      "text": " 139",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0003",
+      "text": "6.3.2",
+      "bbox": [
+        96.0,
+        57.65,
+        118.23,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0004",
+      "text": "Explicit N_Port Login",
+      "bbox": [
+        128.24,
+        57.65,
+        229.3,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0005",
+      "text": "6.3.2.1  Introduction",
+      "bbox": [
+        96.0,
+        82.97,
+        190.41,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0006",
+      "text": "The explicit N_Port Login procedure shall require an Nx_Port to transmit a PLOGI Link request Se-",
+      "bbox": [
+        96.0,
+        106.97,
+        539.97,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0007",
+      "text": "quence. ",
+      "bbox": [
+        96.0,
+        118.97,
+        134.35,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0008",
+      "text": "Explicit N_Port Login replaces previous Service Parameters. The Login procedure shall follow the",
+      "bbox": [
+        96.0,
+        142.96,
+        539.89,
+        154.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0009",
+      "text": "Exchange and Sequence management rules, the buffer-to-buffer flow control rules, and the end-to-",
+      "bbox": [
+        96.0,
+        154.96,
+        539.85,
+        166.08
+      ],
+      "block_index": 6,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0010",
+      "text": "end flow control rules as specified in FC-FS-2.",
+      "bbox": [
+        96.0,
+        166.96,
+        300.4,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0011",
+      "text": "A well-behaved Nx_Port shall Logout with another Nx_Port prior to initiating a new N_Port Login.",
+      "bbox": [
+        96.0,
+        190.96,
+        540.02,
+        202.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0012",
+      "text": "However, if an Nx_Port receives or transmits a PLOGI request with another Nx_Port, it shall abnor-",
+      "bbox": [
+        96.0,
+        202.96,
+        539.99,
+        214.08
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0013",
+      "text": "mally terminate open Sequences and respond to any new Sequences with that Nx_Port as though a",
+      "bbox": [
+        96.0,
+        214.96,
+        539.96,
+        226.08
+      ],
+      "block_index": 7,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0014",
+      "text": "Logout had been previously performed.  During the N_Port Login procedure, other communication",
+      "bbox": [
+        96.0,
+        226.96,
+        539.94,
+        238.08
+      ],
+      "block_index": 7,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0015",
+      "text": "with the destination Nx_Port shall not be initiated or accepted.  Once the N_Port Login procedure has",
+      "bbox": [
+        96.0,
+        238.96,
+        540.04,
+        250.08
+      ],
+      "block_index": 7,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0016",
+      "text": "been successfully completed, communication between the Nx_Ports may be initiated or accepted,",
+      "bbox": [
+        96.0,
+        250.96,
+        539.97,
+        262.08
+      ],
+      "block_index": 7,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0017",
+      "text": "(e.g., if Nx_Port(A) performs a PLOGI request with Nx_Port(B) and Nx_Port(B) transmits the",
+      "bbox": [
+        96.0,
+        262.96,
+        540.0,
+        274.08
+      ],
+      "block_index": 7,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0018",
+      "text": "LS_ACC reply, then either Nx_Port(A) or Nx_Port(B) may initiate communication for other protocols.",
+      "bbox": [
+        96.0,
+        274.96,
+        540.03,
+        286.08
+      ],
+      "block_index": 7,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0019",
+      "text": "Nx_Port(B) shall not be required to transmit a PLOGI request Sequence to Nx_Port(A) unless it wish-",
+      "bbox": [
+        96.0,
+        286.96,
+        540.06,
+        298.08
+      ],
+      "block_index": 7,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0020",
+      "text": "es to invalidate or alter the existing Login parameters).",
+      "bbox": [
+        96.0,
+        298.96,
+        336.44,
+        310.08
+      ],
+      "block_index": 7,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0021",
+      "text": "6.3.2.2  N_Port Login - Fabric present",
+      "bbox": [
+        96.0,
+        322.96,
+        272.55,
+        334.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0022",
+      "text": "The destination Nx_Port explicit Login procedure requires transmission of a N_Port Login (PLOGI)",
+      "bbox": [
+        96.0,
+        346.96,
+        540.03,
+        358.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0023",
+      "text": "Link Service Sequence.  The PLOGI is sent within an Exchange with an assigned OX_ID, the D_ID of",
+      "bbox": [
+        96.0,
+        358.96,
+        540.06,
+        370.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0024",
+      "text": "the destination Nx_Port and a S_ID of originating Nx_Port.  The Payload of this Sequence contains",
+      "bbox": [
+        96.0,
+        370.96,
+        539.98,
+        382.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0025",
+      "text": "the Service Parameters, N_Port_Name, and Node_Name of the Nx_Port originating the PLOGI Se-",
+      "bbox": [
+        96.0,
+        382.96,
+        539.95,
+        394.08
+      ],
+      "block_index": 9,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0026",
+      "text": "quence.  The N_Port Service Parameters are as specified  in 6.6.  The applicability of the Service Pa-",
+      "bbox": [
+        96.0,
+        394.96,
+        540.06,
+        406.08
+      ],
+      "block_index": 9,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0027",
+      "text": "rameters to N_Port Login are given in tables 150 and 155.",
+      "bbox": [
+        96.0,
+        406.96,
+        352.58,
+        418.08
+      ],
+      "block_index": 9,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0028",
+      "text": "The normal reply Sequence to a PLOGI Link Service Sequence by an Nx_Port is a LS_ACC Link",
+      "bbox": [
+        96.0,
+        430.96,
+        539.97,
+        442.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0029",
+      "text": "Service Reply Sequence within the Exchange identified by the OX_ID of the Login Sequence and the",
+      "bbox": [
+        96.0,
+        442.96,
+        539.99,
+        454.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0030",
+      "text": "RX_ID assigned by the Responder with a D_ID of the originating Nx_Port (PLOGI Sequence) and a",
+      "bbox": [
+        96.0,
+        454.96,
+        539.97,
+        466.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0031",
+      "text": "S_ID of the responding Nx_Port.  The Payload of the LS_ACC contains the Service Parameters of",
+      "bbox": [
+        96.0,
+        466.96,
+        540.04,
+        478.08
+      ],
+      "block_index": 10,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0032",
+      "text": "the responding Nx_Port.",
+      "bbox": [
+        96.0,
+        478.96,
+        203.75,
+        490.08
+      ],
+      "block_index": 10,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0033",
+      "text": "6.3.2.3  Responses to N_Port Login - Fabric present",
+      "bbox": [
+        96.0,
+        502.96,
+        340.95,
+        514.07
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0034",
+      "text": "The following are possible responses the Nx_Port may receive in response to transmitting a PLOGI",
+      "bbox": [
+        96.0,
+        526.96,
+        539.99,
+        538.07
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0035",
+      "text": "with a Fabric present:",
+      "bbox": [
+        96.0,
+        538.96,
+        191.54,
+        550.07
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0036",
+      "text": "a) LS_ACC reply Sequence with OX_ID equal to the OX_ID of the PLOGI, and the Common Ser-",
+      "bbox": [
+        106.02,
+        562.96,
+        540.1,
+        574.07
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0037",
+      "text": "vice N_Port/F_Port bit  = 0  (Nx_Port) - This is the normal response to a N_Port Login request.",
+      "bbox": [
+        122.4,
+        574.96,
+        540.16,
+        586.07
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0038",
+      "text": "The D_ID of the LS_ACC shall be the S_ID from the PLOGI.  The S_ID of the LS_ACC shall be",
+      "bbox": [
+        122.4,
+        586.96,
+        539.98,
+        598.07
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0039",
+      "text": "D_ID from the PLOGI.  The Payload shall include the Service Parameters for the destination",
+      "bbox": [
+        122.4,
+        598.96,
+        540.01,
+        610.07
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0040",
+      "text": "Nx_Port, a 64-bit N_Port_Name and a 64-bit Node_Name.  The N_Port Service Parameters",
+      "bbox": [
+        122.4,
+        610.96,
+        539.93,
+        622.07
+      ],
+      "block_index": 13,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0041",
+      "text": "are as specified for in 6.6.  The applicability of the Service Parameters to N_Port Login are giv-",
+      "bbox": [
+        122.4,
+        622.96,
+        540.01,
+        634.07
+      ],
+      "block_index": 13,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0042",
+      "text": "en in tables 150 and 155.  The Nx_Port may begin normal communication with the remote",
+      "bbox": [
+        122.4,
+        634.96,
+        538.9,
+        646.07
+      ],
+      "block_index": 13,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0043",
+      "text": "N_Port.",
+      "bbox": [
+        122.4,
+        647.02,
+        156.25,
+        658.13
+      ],
+      "block_index": 13,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0044",
+      "text": "b) F_BSY with OX_ID equal to the OX_ID of the PLOGI.  The D_ID shall be the S_ID of the PLO-",
+      "bbox": [
+        106.02,
+        671.02,
+        539.91,
+        682.13
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p158_s0045",
+      "text": "GI.  The Fabric is busy.  The Nx_Port may retry the PLOGI again later. ",
+      "bbox": [
+        122.4,
+        683.02,
+        436.77,
+        694.13
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

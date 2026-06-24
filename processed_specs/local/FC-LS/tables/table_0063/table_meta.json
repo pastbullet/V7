@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0063",
+  "type": "table",
+  "caption": "Table 60 – Node Identification Data Format",
+  "pages": [
+    84
+  ],
+  "bbox": [
+    97.45,
+    351.64,
+    538.55,
+    533.04
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 84,
+  "logical_table": false
+}

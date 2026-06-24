@@ -1,0 +1,713 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 83,
+  "spans": [
+    {
+      "span_id": "p083_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0002",
+      "text": " 64",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0003",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence",
+      "bbox": [
+        106.02,
+        57.65,
+        287.89,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0004",
+      "text": "4.2.23.3  Request Sequence",
+      "bbox": [
+        96.0,
+        82.97,
+        227.06,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0005",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        106.97,
+        157.1,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0006",
+      "text": "The S_ID field designates the requesting source port or the Fabric Controller",
+      "bbox": [
+        157.08,
+        106.97,
+        540.02,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p083_s0007",
+      "text": "(FFFFFDh).  The D_ID field designates the Nx_Port or Fx_Port receiving the RNID request or the",
+      "bbox": [
+        96.0,
+        118.97,
+        539.98,
+        130.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0008",
+      "text": "Fabric Controller (FFFFFDh).",
+      "bbox": [
+        96.0,
+        130.97,
+        225.35,
+        142.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0009",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        154.96,
+        140.41,
+        166.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0010",
+      "text": "The format of the RNID Payload is shown in table 57.",
+      "bbox": [
+        140.4,
+        154.96,
+        375.95,
+        166.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p083_s0011",
+      "text": "Node Identification Data Format: ",
+      "bbox": [
+        96.0,
+        281.98,
+        252.88,
+        293.1
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0012",
+      "text": "The format of the Node Identification Data field is shown in table",
+      "bbox": [
+        252.9,
+        281.98,
+        539.93,
+        293.1
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p083_s0013",
+      "text": "58.",
+      "bbox": [
+        96.0,
+        293.98,
+        109.86,
+        305.1
+      ],
+      "block_index": 7,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0014",
+      "text": "4.2.23.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        514.96,
+        214.86,
+        526.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0015",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        538.96,
+        138.19,
+        550.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0016",
+      "text": "Signifies the rejection of the RNID request",
+      "bbox": [
+        138.18,
+        538.96,
+        324.34,
+        550.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p083_s0017",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        562.96,
+        142.05,
+        574.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0018",
+      "text": "Signifies acceptance of the RNID request and presents Node Identification Data Format.",
+      "bbox": [
+        142.08,
+        562.96,
+        540.1,
+        574.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p083_s0019",
+      "text": "The format of the Accept Payload is shown in table 59.",
+      "bbox": [
+        96.0,
+        574.96,
+        337.71,
+        586.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0020",
+      "text": " Table 57 – RNID Payload",
+      "bbox": [
+        258.3,
+        176.98,
+        377.68,
+        188.1
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0021",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        199.0,
+        133.06,
+        210.12
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0022",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        211.0,
+        136.34,
+        222.12
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0023",
+      "text": "31        ...         24",
+      "bbox": [
+        157.62,
+        199.0,
+        235.38,
+        210.12
+      ],
+      "block_index": 12,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0024",
+      "text": "Byte 0",
+      "bbox": [
+        181.5,
+        211.0,
+        211.43,
+        222.12
+      ],
+      "block_index": 12,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0025",
+      "text": "23        ...       16",
+      "bbox": [
+        257.58,
+        199.0,
+        329.79,
+        210.12
+      ],
+      "block_index": 12,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0026",
+      "text": "Byte 1 ",
+      "bbox": [
+        278.7,
+        211.0,
+        311.46,
+        222.12
+      ],
+      "block_index": 12,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0027",
+      "text": "15         ...       08",
+      "bbox": [
+        353.4,
+        199.0,
+        428.4,
+        210.12
+      ],
+      "block_index": 12,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0028",
+      "text": "Byte 2",
+      "bbox": [
+        375.9,
+        211.0,
+        405.83,
+        222.12
+      ],
+      "block_index": 12,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0029",
+      "text": "07        ...       00",
+      "bbox": [
+        451.98,
+        199.0,
+        524.19,
+        210.12
+      ],
+      "block_index": 12,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0030",
+      "text": "Byte 3",
+      "bbox": [
+        473.1,
+        211.0,
+        503.03,
+        222.12
+      ],
+      "block_index": 12,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0031",
+      "text": "0",
+      "bbox": [
+        120.84,
+        227.98,
+        126.38,
+        239.1
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0032",
+      "text": "RNID (78h)",
+      "bbox": [
+        149.88,
+        227.98,
+        200.48,
+        239.1
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0033",
+      "text": "00h",
+      "bbox": [
+        247.14,
+        227.98,
+        263.82,
+        239.1
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0034",
+      "text": "00h",
+      "bbox": [
+        344.32,
+        227.98,
+        361.01,
+        239.1
+      ],
+      "block_index": 13,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0035",
+      "text": "00h",
+      "bbox": [
+        441.51,
+        227.98,
+        458.19,
+        239.1
+      ],
+      "block_index": 13,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0036",
+      "text": "1",
+      "bbox": [
+        120.84,
+        250.96,
+        126.38,
+        262.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0037",
+      "text": "Node Identification ",
+      "bbox": [
+        149.88,
+        244.96,
+        235.44,
+        256.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0038",
+      "text": "Data Format",
+      "bbox": [
+        149.88,
+        256.96,
+        205.44,
+        268.08
+      ],
+      "block_index": 14,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0039",
+      "text": "Reserved",
+      "bbox": [
+        247.08,
+        250.96,
+        289.81,
+        262.08
+      ],
+      "block_index": 14,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0040",
+      "text": " Table 58 – Node Identification Data Format",
+      "bbox": [
+        215.52,
+        316.0,
+        420.38,
+        327.12
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0041",
+      "text": "Value",
+      "bbox": [
+        138.12,
+        337.96,
+        164.71,
+        349.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0042",
+      "text": "Description",
+      "bbox": [
+        343.67,
+        337.96,
+        398.65,
+        349.08
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0043",
+      "text": "00h",
+      "bbox": [
+        143.1,
+        361.96,
+        159.73,
+        373.08
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0044",
+      "text": "Shall be set when the requesting Nx_Port is requesting Common ",
+      "bbox": [
+        206.64,
+        359.98,
+        496.07,
+        371.1
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0045",
+      "text": "Identification Data only (see table 61).",
+      "bbox": [
+        206.64,
+        371.98,
+        374.37,
+        383.1
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0046",
+      "text": "01h – DEh",
+      "bbox": [
+        127.8,
+        395.98,
+        175.0,
+        407.1
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0047",
+      "text": "For Specific Indentification Data corresponding to a specific ULP (e.g., FC-",
+      "bbox": [
+        206.64,
+        394.0,
+        536.57,
+        405.12
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0048",
+      "text": "SB-3), shall be set to the FC-4 TYPE (see FC-FS-2) of that ULP.",
+      "bbox": [
+        206.64,
+        406.0,
+        492.1,
+        417.12
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0049",
+      "text": "DFh",
+      "bbox": [
+        142.02,
+        430.0,
+        160.88,
+        441.12
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0050",
+      "text": "Shall be used if the General Topology Discovery format (see 4.2.23.5) is to ",
+      "bbox": [
+        206.64,
+        427.96,
+        537.0,
+        439.08
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0051",
+      "text": "be returned in the RNID Accept Payload.",
+      "bbox": [
+        206.64,
+        439.96,
+        387.16,
+        451.08
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0052",
+      "text": "E0h – FFh",
+      "bbox": [
+        128.1,
+        463.96,
+        174.74,
+        475.08
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0053",
+      "text": "Shall be used to indicate that Specific Node Identification Data in a vendor ",
+      "bbox": [
+        206.64,
+        461.98,
+        536.71,
+        473.1
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p083_s0054",
+      "text": "specific format is to be returned.",
+      "bbox": [
+        206.64,
+        473.98,
+        348.85,
+        485.1
+      ],
+      "block_index": 20,
+      "line_index": 3,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0060",
+    "table_0061"
+  ]
+}

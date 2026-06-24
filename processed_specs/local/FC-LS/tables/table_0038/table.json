@@ -1,0 +1,59 @@
+{
+  "rows": [
+    [
+      "Bit in Byte\nByte",
+      "7",
+      "6",
+      "5",
+      "4",
+      "3",
+      "2",
+      "1",
+      "0"
+    ],
+    [
+      "0 (Bits 31 - 24)",
+      "reserved",
+      null,
+      "RSCN Event Qualifier",
+      null,
+      null,
+      null,
+      "Address Format",
+      null
+    ],
+    [
+      "1 (Bits 23 - 16)",
+      "affected Port_ID byte 1 (Domain)",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "2 (Bits 15 - 08)",
+      "affected Port_ID byte 2 (Area)",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "3 (Bits 07 - 00)",
+      "affected Port_ID byte 3 (Port)",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

@@ -1,0 +1,567 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 49,
+  "spans": [
+    {
+      "span_id": "p049_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0002",
+      "text": " 30",
+      "bbox": [
+        521.04,
+        723.59,
+        534.92,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0003",
+      "text": "In order to direct the Login ELS frame to a Fibre Channel Service, an Nx_Port shall specify the",
+      "bbox": [
+        96.0,
+        57.65,
+        539.96,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0004",
+      "text": "N_Port_ID for the Nx_Port providing the service or the appropriate well-known Address Identifier",
+      "bbox": [
+        96.0,
+        69.65,
+        539.88,
+        80.76
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0005",
+      "text": "(see FC-FS-2).",
+      "bbox": [
+        96.0,
+        81.65,
+        162.61,
+        92.76
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0006",
+      "text": "When an Nx_Port receives a Login from an Nx_Port, all open Sequences with the Nx_Port perform-",
+      "bbox": [
+        96.0,
+        106.97,
+        540.03,
+        118.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0007",
+      "text": "ing Login shall be abnormally terminated.",
+      "bbox": [
+        96.0,
+        118.97,
+        278.1,
+        130.08
+      ],
+      "block_index": 4,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0008",
+      "text": "4.2.7.2  Protocol",
+      "bbox": [
+        96.0,
+        142.96,
+        172.6,
+        154.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0009",
+      "text": "a) FLOGI or PLOGI Request Sequence",
+      "bbox": [
+        106.02,
+        166.96,
+        285.18,
+        178.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0010",
+      "text": "b) LS_ACC or LS_RJT Reply Sequence",
+      "bbox": [
+        106.02,
+        190.96,
+        287.89,
+        202.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0011",
+      "text": "4.2.7.3  Request Sequence",
+      "bbox": [
+        96.0,
+        214.96,
+        221.54,
+        226.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0012",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        238.96,
+        157.1,
+        250.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0013",
+      "text": "The S_ID field designates the source Nx_Port requesting Login.  If unidentified, as in",
+      "bbox": [
+        157.08,
+        238.96,
+        539.95,
+        250.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p049_s0014",
+      "text": "Fabric Login, binary zeros are used.  The D_ID field designates the destination Nx_Port or Fx_Port of",
+      "bbox": [
+        96.0,
+        250.96,
+        539.95,
+        262.08
+      ],
+      "block_index": 9,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0015",
+      "text": "the Login.",
+      "bbox": [
+        96.0,
+        262.96,
+        139.86,
+        274.08
+      ],
+      "block_index": 9,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0016",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        286.96,
+        140.41,
+        298.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0017",
+      "text": "The format of the Payload is shown in table 149.  The Service Parameters are defined in",
+      "bbox": [
+        140.4,
+        286.96,
+        539.81,
+        298.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p049_s0018",
+      "text": "6.6.",
+      "bbox": [
+        96.0,
+        298.96,
+        112.63,
+        310.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0019",
+      "text": "4.2.7.4  Reply Sequence",
+      "bbox": [
+        96.0,
+        322.96,
+        209.29,
+        334.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0020",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        346.96,
+        138.19,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0021",
+      "text": "LS_RJT signifies rejection of the FLOGI or PLOGI Request Sequence",
+      "bbox": [
+        138.18,
+        346.96,
+        446.98,
+        358.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p049_s0022",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        370.96,
+        142.05,
+        382.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0023",
+      "text": "LS_ACC signifies successful completion of the FLOGI or PLOGI Request Sequence.  The",
+      "bbox": [
+        142.08,
+        370.96,
+        540.06,
+        382.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p049_s0024",
+      "text": "format of the LS_ACC Payload is shown in table 149.  The Service Parameters are defined in 6.6.",
+      "bbox": [
+        96.0,
+        382.96,
+        527.64,
+        394.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0025",
+      "text": "4.2.8",
+      "bbox": [
+        96.0,
+        406.96,
+        118.22,
+        418.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0026",
+      "text": "Logout (LOGO)",
+      "bbox": [
+        128.22,
+        406.96,
+        201.0,
+        418.08
+      ],
+      "block_index": 14,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0027",
+      "text": "4.2.8.1  Description",
+      "bbox": [
+        96.0,
+        430.96,
+        187.03,
+        442.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0028",
+      "text": "The LOGO ELS provides a method for explicitly removing service between two Nx_Port_IDs or be-",
+      "bbox": [
+        96.0,
+        454.96,
+        539.92,
+        466.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0029",
+      "text": "tween an N_Port_ID and a Fabric. Logout releases resources, identifiers, and relationships associat-",
+      "bbox": [
+        96.0,
+        466.96,
+        540.02,
+        478.08
+      ],
+      "block_index": 16,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0030",
+      "text": "ed with maintaining Service between an Nx_Port_ID and a destination Nx_Port_ID or Fabric.",
+      "bbox": [
+        96.0,
+        478.96,
+        504.84,
+        490.07
+      ],
+      "block_index": 16,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0031",
+      "text": "If the S_ID and D_ID of a LOGO ELS are both Address_Identifiers of Nx_Ports, the LOGO requests",
+      "bbox": [
+        96.0,
+        502.96,
+        540.05,
+        514.07
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0032",
+      "text": "removal of service between the N_Port_ID specified in the LOGO Payload and the N_Port_ID speci-",
+      "bbox": [
+        96.0,
+        514.96,
+        540.01,
+        526.07
+      ],
+      "block_index": 17,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0033",
+      "text": "fied in the D_ID. The N_Port_ID in the LOGO Payload may differ from the S_ID. This allows an",
+      "bbox": [
+        96.0,
+        526.96,
+        539.89,
+        538.07
+      ],
+      "block_index": 17,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0034",
+      "text": "Nx_Port to Logout its old Identifier using a new Identifier after its N_Port_ID has changed. Both the",
+      "bbox": [
+        96.0,
+        538.96,
+        539.93,
+        550.07
+      ],
+      "block_index": 17,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0035",
+      "text": "source Nx_Port and the destination Nx_Port of the Logout Request Sequence shall abnormally termi-",
+      "bbox": [
+        96.0,
+        550.96,
+        540.04,
+        562.07
+      ],
+      "block_index": 17,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0036",
+      "text": "nate all open Exchanges (see 6) that used the N_Port_ID indicated in the Payload of the Logout Re-",
+      "bbox": [
+        96.0,
+        562.96,
+        540.15,
+        574.07
+      ],
+      "block_index": 17,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0037",
+      "text": "quest Sequence.",
+      "bbox": [
+        96.0,
+        574.96,
+        170.99,
+        586.07
+      ],
+      "block_index": 17,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0038",
+      "text": "If either the S_ID or D_ID of a LOGO ELS is the F_Port well-known address (FFFFFEh), the LOGO",
+      "bbox": [
+        96.0,
+        598.96,
+        540.1,
+        610.07
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0039",
+      "text": "ELS requests Fabric logout and release of the previously assigned N_Port_ID specified in the LOGO",
+      "bbox": [
+        96.0,
+        610.96,
+        539.94,
+        622.07
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0040",
+      "text": "Payload. An Nx_Port that requests or accepts explicit logout from the Fabric shall implicitly log out",
+      "bbox": [
+        96.0,
+        622.96,
+        540.03,
+        634.07
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0041",
+      "text": "the N_Port_ID indicated in the Payload of the Logout Request Sequence from all other Nx_Port_IDs",
+      "bbox": [
+        96.0,
+        634.96,
+        540.04,
+        646.07
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0042",
+      "text": "and abnormally terminate all open Exchanges (see 6) that used the N_Port_ID indicated in the Pay-",
+      "bbox": [
+        96.0,
+        647.02,
+        540.08,
+        658.13
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p049_s0043",
+      "text": "load of the Logout Request Sequence.",
+      "bbox": [
+        96.0,
+        659.02,
+        266.57,
+        670.13
+      ],
+      "block_index": 18,
+      "line_index": 6,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0080",
+  "type": "table",
+  "caption": "Table 76 – Link Incident Record-Registration Format",
+  "pages": [
+    99
+  ],
+  "bbox": [
+    192.0,
+    447.64,
+    444.0,
+    517.02
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 99,
+  "logical_table": false
+}

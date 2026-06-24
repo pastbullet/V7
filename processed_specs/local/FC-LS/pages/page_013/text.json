@@ -1,0 +1,736 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 13,
+  "spans": [
+    {
+      "span_id": "p013_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0002",
+      "text": " xiii",
+      "bbox": [
+        520.8,
+        723.59,
+        535.18,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0003",
+      "text": "4.2.32  Discover F_Port Service Parameters (FDISC)   . . . . . . . . . . . . . . . . . . . . . . . . .   88",
+      "bbox": [
+        138.0,
+        57.65,
+        540.05,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0004",
+      "text": "4.2.33  Discover Address (ADISC)   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   89",
+      "bbox": [
+        138.0,
+        70.97,
+        540.06,
+        82.08
+      ],
+      "block_index": 3,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0005",
+      "text": "4.2.34  Third Party Process Logout (TPRLO)   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   92",
+      "bbox": [
+        138.0,
+        82.96,
+        539.87,
+        94.08
+      ],
+      "block_index": 3,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0006",
+      "text": "4.2.35  Clock Synchronization Request (CSR)   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   94",
+      "bbox": [
+        138.0,
+        94.96,
+        540.05,
+        106.08
+      ],
+      "block_index": 3,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0007",
+      "text": "4.2.36  Clock Synchronization Update (CSU)   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   98",
+      "bbox": [
+        138.0,
+        106.96,
+        540.05,
+        118.08
+      ],
+      "block_index": 3,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0008",
+      "text": "4.2.37  Report Port Buffer Conditions (RPBC)   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   99",
+      "bbox": [
+        138.0,
+        118.96,
+        539.94,
+        130.08
+      ],
+      "block_index": 3,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0009",
+      "text": "4.2.38  Report node FC-4 Types (RNFT)   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   100",
+      "bbox": [
+        138.0,
+        130.96,
+        539.89,
+        142.08
+      ],
+      "block_index": 3,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0010",
+      "text": "4.2.39  Scan Remote Loop (SRL)   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   102",
+      "bbox": [
+        138.0,
+        142.96,
+        539.94,
+        154.08
+      ],
+      "block_index": 3,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0011",
+      "text": "4.2.40  Set Bit-error Reporting Parameters (SBRP)   . . . . . . . . . . . . . . . . . . . . . . . . . .   104",
+      "bbox": [
+        138.0,
+        154.96,
+        539.94,
+        166.08
+      ],
+      "block_index": 3,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0012",
+      "text": "4.2.41  Report Port Speed Capabilities (RPSC)   . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   107",
+      "bbox": [
+        138.0,
+        166.96,
+        540.04,
+        178.08
+      ],
+      "block_index": 3,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0013",
+      "text": "4.2.42  Read Exchange Concise (REC)   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   108",
+      "bbox": [
+        138.0,
+        178.96,
+        539.95,
+        190.08
+      ],
+      "block_index": 3,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0014",
+      "text": "4.2.43  Exchange Virtual Fabrics Parameters (EVFP)   . . . . . . . . . . . . . . . . . . . . . . . .   110",
+      "bbox": [
+        138.0,
+        190.96,
+        540.03,
+        202.08
+      ],
+      "block_index": 3,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0015",
+      "text": "4.2.44  Link Keep Alive (LKA)   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   117",
+      "bbox": [
+        138.0,
+        202.96,
+        539.92,
+        214.08
+      ],
+      "block_index": 3,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0016",
+      "text": "4.2.45  Define FFI Domain Topology Map (FFI_DTM)   . . . . . . . . . . . . . . . . . . . . . . . .   118",
+      "bbox": [
+        138.0,
+        214.96,
+        540.03,
+        226.08
+      ],
+      "block_index": 3,
+      "line_index": 14,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0017",
+      "text": "4.2.46  Request FFI Domain Topology Map (FFI_RTM)    . . . . . . . . . . . . . . . . . . . . . .   119",
+      "bbox": [
+        138.0,
+        226.96,
+        539.82,
+        238.08
+      ],
+      "block_index": 3,
+      "line_index": 15,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0018",
+      "text": "4.2.47  FFI AE Principal Switch Selector (FFI_PSS)    . . . . . . . . . . . . . . . . . . . . . . . . .   121",
+      "bbox": [
+        138.0,
+        238.96,
+        539.9,
+        250.08
+      ],
+      "block_index": 3,
+      "line_index": 16,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0019",
+      "text": "4.2.48  FFI Map Update Registration (FFI_MUR)   . . . . . . . . . . . . . . . . . . . . . . . . . . . .   122",
+      "bbox": [
+        138.0,
+        250.96,
+        540.0,
+        262.08
+      ],
+      "block_index": 3,
+      "line_index": 17,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0020",
+      "text": "4.2.49  FFI Registered Map Update Notification (FFI_RMUN)   . . . . . . . . . . . . . . . . . .   123",
+      "bbox": [
+        138.0,
+        262.96,
+        540.01,
+        274.08
+      ],
+      "block_index": 3,
+      "line_index": 18,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0021",
+      "text": "4.2.50  FFI Suspend Map Updates (FFI_SMU)    . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   125",
+      "bbox": [
+        138.0,
+        274.96,
+        540.03,
+        286.08
+      ],
+      "block_index": 3,
+      "line_index": 19,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0022",
+      "text": "4.2.51  FFI Resume Map Updates (FFI_RMU)   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   126",
+      "bbox": [
+        138.0,
+        286.96,
+        540.03,
+        298.08
+      ],
+      "block_index": 3,
+      "line_index": 20,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0023",
+      "text": "4.3   Extended Link Service Reply Sequences   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   127",
+      "bbox": [
+        114.0,
+        298.96,
+        540.07,
+        310.08
+      ],
+      "block_index": 3,
+      "line_index": 21,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0024",
+      "text": "4.3.1  Overview   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   127",
+      "bbox": [
+        138.0,
+        310.96,
+        539.94,
+        322.08
+      ],
+      "block_index": 3,
+      "line_index": 22,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0025",
+      "text": "4.3.2  LS_ACC    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   127",
+      "bbox": [
+        138.0,
+        322.96,
+        539.95,
+        334.08
+      ],
+      "block_index": 3,
+      "line_index": 23,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0026",
+      "text": "4.3.3  Reply Sequence   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   127",
+      "bbox": [
+        138.0,
+        334.96,
+        540.02,
+        346.08
+      ],
+      "block_index": 3,
+      "line_index": 24,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0027",
+      "text": "4.3.4  Link Service Reject (LS_RJT)   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   127",
+      "bbox": [
+        138.0,
+        346.96,
+        539.94,
+        358.08
+      ],
+      "block_index": 3,
+      "line_index": 25,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0028",
+      "text": "5   FC-4 Link Service",
+      "bbox": [
+        96.0,
+        370.96,
+        193.72,
+        382.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0029",
+      "text": "   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   132",
+      "bbox": [
+        195.72,
+        370.97,
+        540.13,
+        382.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p013_s0030",
+      "text": "6   Login and Service Parameters",
+      "bbox": [
+        96.0,
+        394.97,
+        253.09,
+        406.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0031",
+      "text": "  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   133",
+      "bbox": [
+        255.12,
+        394.97,
+        540.13,
+        406.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 3
+    },
+    {
+      "span_id": "p013_s0032",
+      "text": "6.1   Introduction    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   133",
+      "bbox": [
+        114.0,
+        406.97,
+        539.95,
+        418.08
+      ],
+      "block_index": 5,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0033",
+      "text": "6.2   Fabric Login   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   134",
+      "bbox": [
+        114.0,
+        418.97,
+        539.95,
+        430.08
+      ],
+      "block_index": 5,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0034",
+      "text": "6.2.1  Introduction   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   134",
+      "bbox": [
+        138.0,
+        430.97,
+        539.94,
+        442.08
+      ],
+      "block_index": 5,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0035",
+      "text": "6.2.2  Explicit Fabric Login    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   134",
+      "bbox": [
+        138.0,
+        442.97,
+        539.98,
+        454.08
+      ],
+      "block_index": 5,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0036",
+      "text": "6.2.3  SOFs   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   136",
+      "bbox": [
+        138.0,
+        454.97,
+        539.94,
+        466.08
+      ],
+      "block_index": 5,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0037",
+      "text": "6.2.4  Frequency   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   137",
+      "bbox": [
+        138.0,
+        466.97,
+        539.95,
+        478.08
+      ],
+      "block_index": 5,
+      "line_index": 7,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0038",
+      "text": "6.2.5  Fabric Login completion - Originator   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   137",
+      "bbox": [
+        138.0,
+        478.96,
+        539.97,
+        490.08
+      ],
+      "block_index": 5,
+      "line_index": 8,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0039",
+      "text": "6.2.6  Fabric Login completion - Responder   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   137",
+      "bbox": [
+        138.0,
+        490.96,
+        539.85,
+        502.08
+      ],
+      "block_index": 5,
+      "line_index": 9,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0040",
+      "text": "6.3   N_Port Login   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   137",
+      "bbox": [
+        114.0,
+        502.96,
+        539.95,
+        514.08
+      ],
+      "block_index": 5,
+      "line_index": 10,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0041",
+      "text": "6.3.1  Introduction   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   137",
+      "bbox": [
+        138.0,
+        514.96,
+        539.94,
+        526.08
+      ],
+      "block_index": 5,
+      "line_index": 11,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0042",
+      "text": "6.3.2  Explicit N_Port Login    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   139",
+      "bbox": [
+        138.0,
+        526.96,
+        539.99,
+        538.08
+      ],
+      "block_index": 5,
+      "line_index": 12,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0043",
+      "text": "6.3.3  SOFs   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   141",
+      "bbox": [
+        138.0,
+        538.96,
+        539.94,
+        550.08
+      ],
+      "block_index": 5,
+      "line_index": 13,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0044",
+      "text": "6.3.4  Frequency   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   142",
+      "bbox": [
+        138.0,
+        550.96,
+        539.95,
+        562.08
+      ],
+      "block_index": 5,
+      "line_index": 14,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0045",
+      "text": "6.3.5  N_Port Login completion - Originator   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   142",
+      "bbox": [
+        138.0,
+        562.96,
+        540.04,
+        574.08
+      ],
+      "block_index": 5,
+      "line_index": 15,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0046",
+      "text": "6.3.6  N_Port Login completion - Responder    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   142",
+      "bbox": [
+        138.0,
+        574.96,
+        540.04,
+        586.08
+      ],
+      "block_index": 5,
+      "line_index": 16,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0047",
+      "text": "6.4   Logout   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   142",
+      "bbox": [
+        114.0,
+        586.96,
+        539.96,
+        598.08
+      ],
+      "block_index": 5,
+      "line_index": 17,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0048",
+      "text": "6.4.1  Introduction   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   142",
+      "bbox": [
+        138.0,
+        598.96,
+        539.94,
+        610.08
+      ],
+      "block_index": 5,
+      "line_index": 18,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0049",
+      "text": "6.4.2  Explicit N_Port Logout    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   142",
+      "bbox": [
+        138.0,
+        610.96,
+        539.96,
+        622.08
+      ],
+      "block_index": 5,
+      "line_index": 19,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0050",
+      "text": "6.4.3  Explicit Fabric Logout   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   143",
+      "bbox": [
+        138.0,
+        622.96,
+        540.02,
+        634.08
+      ],
+      "block_index": 5,
+      "line_index": 20,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0051",
+      "text": "6.4.4  Implicit Logout   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   143",
+      "bbox": [
+        138.0,
+        635.02,
+        539.95,
+        646.14
+      ],
+      "block_index": 5,
+      "line_index": 21,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0052",
+      "text": "6.4.5  The effects of FLOGI, FDISC, and LOGO    . . . . . . . . . . . . . . . . . . . . . . . . . . . .   144",
+      "bbox": [
+        138.0,
+        647.02,
+        539.97,
+        658.14
+      ],
+      "block_index": 5,
+      "line_index": 22,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0053",
+      "text": "6.5   Extended Login Processing   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   145",
+      "bbox": [
+        114.0,
+        659.02,
+        539.96,
+        670.14
+      ],
+      "block_index": 5,
+      "line_index": 23,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0054",
+      "text": "6.6   Service Parameters   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   146",
+      "bbox": [
+        114.0,
+        671.02,
+        539.96,
+        682.14
+      ],
+      "block_index": 5,
+      "line_index": 24,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0055",
+      "text": "6.6.1  ELS and LS_ACC Payload   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   146",
+      "bbox": [
+        138.0,
+        683.02,
+        539.96,
+        694.14
+      ],
+      "block_index": 5,
+      "line_index": 25,
+      "span_index": 1
+    },
+    {
+      "span_id": "p013_s0056",
+      "text": "6.6.2  Common Service Parameters   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   148",
+      "bbox": [
+        138.0,
+        695.02,
+        539.9,
+        706.14
+      ],
+      "block_index": 5,
+      "line_index": 26,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": []
+}

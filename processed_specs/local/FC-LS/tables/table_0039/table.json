@@ -1,0 +1,67 @@
+{
+  "rows": [
+    [
+      "RSCN event Qualifier",
+      "Value",
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      "Bit 5",
+      "Bit 4",
+      "Bit 3",
+      "Bit 2"
+    ],
+    [
+      "Event is not specified",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "CHANGED NAME SERVER OBJECT - An object\nmaintained by the Name Server has changed state for the\nport, area or domain indicated by the affected Port_ID.",
+      "0",
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "CHANGED PORT ATTRIBUTE - An internal state of the\nport specified by the affected Port_ID has changed. The\nchange of state is identified in a protocol specific manner.",
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "CHANGED SERVICE OBJECT - An object maintained by\nthe service identified by the well-known address contained\nin affected Port_ID has changed state. This Event\nQualifier value shall not be used by services accessed\nthrough N_Port_ID that are not well-known addresses.",
+      "0",
+      "0",
+      "1",
+      "1"
+    ],
+    [
+      "CHANGED SWITCH CONFIGURATION - Switch\nconfiguration has changed for the area or domain\nspecified by the affected Port_ID.",
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "REMOVED OBJECT - The port, area or domain indicated\nby the affected Port_ID is no longer accessible on the\nFabric.",
+      "0",
+      "1",
+      "0",
+      "1"
+    ],
+    [
+      "Reserved",
+      "All Other Values",
+      null,
+      null,
+      null
+    ]
+  ]
+}

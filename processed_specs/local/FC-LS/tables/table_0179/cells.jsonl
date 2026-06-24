@@ -1,0 +1,15 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Nx_Port A\nWord 0, Bit 11", "page": 186, "bbox": [132.88, 110.48, 218.67, 138.99]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Nx_Port B\nWord 1, Bit 31", "page": 186, "bbox": [218.67, 110.48, 305.07, 138.99]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Nx_Port A as Sequence Initiator", "page": 186, "bbox": [305.07, 110.48, 503.12, 138.99]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0", "page": 186, "bbox": [132.88, 138.99, 218.67, 156.03]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "0", "page": 186, "bbox": [218.67, 138.99, 305.07, 156.03]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "ACK_0 not supported", "page": 186, "bbox": [305.07, 138.99, 503.12, 156.03]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "0", "page": 186, "bbox": [132.88, 156.03, 218.67, 173.01]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "1", "page": 186, "bbox": [218.67, 156.03, 305.07, 173.01]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "ACK_0 not supported", "page": 186, "bbox": [305.07, 156.03, 503.12, 173.01]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "1", "page": 186, "bbox": [132.88, 173.01, 218.67, 190.05]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "0", "page": 186, "bbox": [218.67, 173.01, 305.07, 190.05]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "ACK_0 not supported", "page": 186, "bbox": [305.07, 173.01, 503.12, 190.05]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "1", "page": 186, "bbox": [132.88, 190.05, 218.67, 206.5]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "1", "page": 186, "bbox": [218.67, 190.05, 305.07, 206.5]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "ACK_0 supported", "page": 186, "bbox": [305.07, 190.05, 503.12, 206.5]}

@@ -1,0 +1,686 @@
+{
+  "doc_id": "FC-LS",
+  "source_pdf": "/Users/zwy/毕设/V7/data/raw/FC-LS.pdf",
+  "page": 143,
+  "spans": [
+    {
+      "span_id": "p143_s0001",
+      "text": "INCITS xxx-200x Link Services Rev 1.61 November 3, 2006",
+      "bbox": [
+        301.08,
+        37.27,
+        539.95,
+        47.32
+      ],
+      "block_index": 1,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0002",
+      "text": " 124",
+      "bbox": [
+        518.28,
+        723.59,
+        537.71,
+        734.7
+      ],
+      "block_index": 2,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0003",
+      "text": "4.2.49.2  Registration to Receive FFI_RMUN Requests",
+      "bbox": [
+        96.0,
+        57.65,
+        349.9,
+        68.76
+      ],
+      "block_index": 3,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0004",
+      "text": "See 4.2.48.",
+      "bbox": [
+        96.0,
+        82.97,
+        147.14,
+        94.08
+      ],
+      "block_index": 4,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0005",
+      "text": "4.2.49.3  Protocol",
+      "bbox": [
+        96.0,
+        106.97,
+        178.28,
+        118.08
+      ],
+      "block_index": 5,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0006",
+      "text": "a) FFI_RMUN Request Sequence.",
+      "bbox": [
+        106.02,
+        130.97,
+        263.48,
+        142.08
+      ],
+      "block_index": 6,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0007",
+      "text": "4.2.49.4  Request Sequence",
+      "bbox": [
+        96.0,
+        154.96,
+        227.12,
+        166.08
+      ],
+      "block_index": 7,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0008",
+      "text": "Addressing: ",
+      "bbox": [
+        96.0,
+        178.96,
+        157.1,
+        190.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0009",
+      "text": "The S_ID is the Domain Controller of the AE Principal Switch (FFFCxxh) and the D_ID",
+      "bbox": [
+        157.14,
+        178.96,
+        540.03,
+        190.08
+      ],
+      "block_index": 8,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p143_s0010",
+      "text": "is the address of the Registered Nx_Port destination. ",
+      "bbox": [
+        96.0,
+        190.96,
+        332.72,
+        202.08
+      ],
+      "block_index": 8,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0011",
+      "text": "Payload: ",
+      "bbox": [
+        96.0,
+        214.96,
+        140.41,
+        226.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0012",
+      "text": "The format of the FFI_RMUN Request Payload is shown in table 141. ",
+      "bbox": [
+        140.4,
+        214.96,
+        450.33,
+        226.08
+      ],
+      "block_index": 9,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p143_s0013",
+      "text": "Payload Length: ",
+      "bbox": [
+        96.0,
+        406.96,
+        176.42,
+        418.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0014",
+      "text": "This field is the length in bytes of the entire Payload, inclusive of the length of word",
+      "bbox": [
+        176.28,
+        406.96,
+        540.01,
+        418.08
+      ],
+      "block_index": 10,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p143_s0015",
+      "text": "0. This value shall be a multiple of 4 bytes. The minimum value of this field is 28 bytes. The maximum",
+      "bbox": [
+        96.0,
+        418.96,
+        540.03,
+        430.08
+      ],
+      "block_index": 10,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0016",
+      "text": "value of this field is 65532.",
+      "bbox": [
+        96.0,
+        430.96,
+        213.76,
+        442.08
+      ],
+      "block_index": 10,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0017",
+      "text": "FFI Incarnation Number:",
+      "bbox": [
+        96.0,
+        454.96,
+        214.47,
+        466.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0018",
+      "text": "  This field contains the current incarnation of the FFI Domain Topology",
+      "bbox": [
+        214.56,
+        454.96,
+        539.97,
+        466.08
+      ],
+      "block_index": 11,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p143_s0019",
+      "text": "Map.",
+      "bbox": [
+        96.0,
+        466.96,
+        118.21,
+        478.08
+      ],
+      "block_index": 11,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0020",
+      "text": "Number of FFI Link State Records:",
+      "bbox": [
+        96.0,
+        490.96,
+        263.71,
+        502.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0021",
+      "text": " This field shall specify the number of FFI Link State Records",
+      "bbox": [
+        263.82,
+        490.96,
+        540.01,
+        502.08
+      ],
+      "block_index": 12,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p143_s0022",
+      "text": "that follow this field. The minimum value is 2.",
+      "bbox": [
+        96.0,
+        502.96,
+        294.23,
+        514.08
+      ],
+      "block_index": 12,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0023",
+      "text": "FFI Link State Records:",
+      "bbox": [
+        96.0,
+        526.96,
+        207.57,
+        538.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0024",
+      "text": " This field contains all of the individual FFI Link State Records that describe",
+      "bbox": [
+        207.54,
+        526.96,
+        539.77,
+        538.08
+      ],
+      "block_index": 13,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p143_s0025",
+      "text": "the Domain Topology Map of the Avionics Fabric.  The format of the FFI Link State Record is de-",
+      "bbox": [
+        96.0,
+        538.96,
+        540.18,
+        550.08
+      ],
+      "block_index": 13,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0026",
+      "text": "scribed in FC-SW-4.",
+      "bbox": [
+        96.0,
+        550.96,
+        185.94,
+        562.08
+      ],
+      "block_index": 13,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0027",
+      "text": "4.2.49.5  Reply Sequence",
+      "bbox": [
+        96.0,
+        574.96,
+        214.96,
+        586.08
+      ],
+      "block_index": 14,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0028",
+      "text": "LS_RJT: ",
+      "bbox": [
+        96.0,
+        598.96,
+        139.27,
+        610.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0029",
+      "text": "none",
+      "bbox": [
+        139.32,
+        598.96,
+        161.53,
+        610.08
+      ],
+      "block_index": 15,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p143_s0030",
+      "text": "LS_ACC: ",
+      "bbox": [
+        96.0,
+        622.96,
+        142.05,
+        634.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0031",
+      "text": "none",
+      "bbox": [
+        142.08,
+        622.96,
+        164.29,
+        634.08
+      ],
+      "block_index": 16,
+      "line_index": 1,
+      "span_index": 2
+    },
+    {
+      "span_id": "p143_s0032",
+      "text": " Table 141 – FFI_RMUN Payload",
+      "bbox": [
+        242.46,
+        236.98,
+        393.52,
+        248.1
+      ],
+      "block_index": 17,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0033",
+      "text": "Bits",
+      "bbox": [
+        114.18,
+        259.0,
+        133.06,
+        270.12
+      ],
+      "block_index": 18,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0034",
+      "text": "Word",
+      "bbox": [
+        110.82,
+        271.0,
+        136.35,
+        282.12
+      ],
+      "block_index": 18,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0035",
+      "text": "31        ..         24",
+      "bbox": [
+        159.0,
+        259.0,
+        233.97,
+        270.12
+      ],
+      "block_index": 18,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0036",
+      "text": "23        ..       16",
+      "bbox": [
+        258.97,
+        259.0,
+        328.42,
+        270.12
+      ],
+      "block_index": 18,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0037",
+      "text": "15         ..       08",
+      "bbox": [
+        354.8,
+        259.0,
+        427.0,
+        270.12
+      ],
+      "block_index": 18,
+      "line_index": 5,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0038",
+      "text": "07        ..       00",
+      "bbox": [
+        453.38,
+        259.0,
+        522.83,
+        270.12
+      ],
+      "block_index": 18,
+      "line_index": 6,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0039",
+      "text": "0",
+      "bbox": [
+        120.84,
+        287.98,
+        126.38,
+        299.1
+      ],
+      "block_index": 19,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0040",
+      "text": "FFI_RMUN (A4h)",
+      "bbox": [
+        149.88,
+        287.98,
+        227.61,
+        299.1
+      ],
+      "block_index": 19,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0041",
+      "text": "00h",
+      "bbox": [
+        247.09,
+        287.98,
+        263.73,
+        299.1
+      ],
+      "block_index": 19,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0042",
+      "text": "Payload Length",
+      "bbox": [
+        344.29,
+        287.98,
+        413.7,
+        299.1
+      ],
+      "block_index": 19,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0043",
+      "text": "1",
+      "bbox": [
+        120.84,
+        304.96,
+        126.38,
+        316.07
+      ],
+      "block_index": 20,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0044",
+      "text": "FFI Incarnation Number",
+      "bbox": [
+        149.88,
+        304.96,
+        255.46,
+        316.07
+      ],
+      "block_index": 20,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0045",
+      "text": "2",
+      "bbox": [
+        120.84,
+        322.0,
+        126.38,
+        333.11
+      ],
+      "block_index": 21,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0046",
+      "text": "Reserved",
+      "bbox": [
+        149.88,
+        322.0,
+        192.61,
+        333.11
+      ],
+      "block_index": 21,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0047",
+      "text": "Reserved",
+      "bbox": [
+        247.07,
+        322.0,
+        289.8,
+        333.11
+      ],
+      "block_index": 21,
+      "line_index": 3,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0048",
+      "text": "Number of FFI Link State Records",
+      "bbox": [
+        344.26,
+        322.0,
+        495.89,
+        333.11
+      ],
+      "block_index": 21,
+      "line_index": 4,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0049",
+      "text": "3",
+      "bbox": [
+        120.84,
+        338.98,
+        126.38,
+        350.09
+      ],
+      "block_index": 22,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0050",
+      "text": "FFI Link State Records",
+      "bbox": [
+        291.18,
+        356.98,
+        393.33,
+        368.09
+      ],
+      "block_index": 23,
+      "line_index": 1,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0051",
+      "text": "..",
+      "bbox": [
+        120.84,
+        355.96,
+        126.37,
+        367.07
+      ],
+      "block_index": 23,
+      "line_index": 2,
+      "span_index": 1
+    },
+    {
+      "span_id": "p143_s0052",
+      "text": "n",
+      "bbox": [
+        120.54,
+        373.0,
+        126.63,
+        384.11
+      ],
+      "block_index": 24,
+      "line_index": 1,
+      "span_index": 1
+    }
+  ],
+  "asset_ids": [
+    "table_0144"
+  ]
+}

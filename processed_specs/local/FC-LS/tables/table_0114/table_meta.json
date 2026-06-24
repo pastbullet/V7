@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0114",
+  "type": "table",
+  "caption": "Table 110 – SBRP Payload",
+  "pages": [
+    124
+  ],
+  "bbox": [
+    90.79,
+    196.21,
+    542.6,
+    318.33
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 124,
+  "logical_table": false
+}

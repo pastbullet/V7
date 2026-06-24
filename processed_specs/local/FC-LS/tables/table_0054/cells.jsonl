@@ -1,0 +1,18 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Encoded Value\nWord 0, Bits 11-8", "page": 78, "bbox": [100.25, 399.64, 189.39, 433.32]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Description", "page": 78, "bbox": [189.39, 399.64, 535.75, 433.32]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "0000b", "page": 78, "bbox": [100.25, 433.32, 189.39, 457.35]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Reserved", "page": 78, "bbox": [189.39, 433.32, 535.75, 457.35]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "0001b", "page": 78, "bbox": [100.25, 457.35, 189.39, 481.35]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Request executed", "page": 78, "bbox": [189.39, 457.35, 535.75, 481.35]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "0010b - 0011b", "page": 78, "bbox": [100.25, 481.35, 189.39, 505.35]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Reserved", "page": 78, "bbox": [189.39, 481.35, 535.75, 505.35]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "0100b", "page": 78, "bbox": [100.25, 505.35, 189.39, 551.37]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "The Exchange recipient corresponding to the Responder Process_Associator\nspecified in the PRLO Request and PRLO LS_ACC response does not exist.\nThe PRLO Request shall not be retried.", "page": 78, "bbox": [189.39, 505.35, 535.75, 551.37]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "0101b - 0110b", "page": 78, "bbox": [100.25, 551.37, 189.39, 575.37]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "Reserved", "page": 78, "bbox": [189.39, 551.37, 535.75, 575.37]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "0111b", "page": 78, "bbox": [100.25, 575.37, 189.39, 599.37]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "Obsolete", "page": 78, "bbox": [189.39, 575.37, 535.75, 599.37]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "1000b", "page": 78, "bbox": [100.25, 599.37, 189.39, 623.37]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "Obsolete", "page": 78, "bbox": [189.39, 599.37, 535.75, 623.37]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "1001b - 1111b", "page": 78, "bbox": [100.25, 623.37, 189.39, 647.04]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "Reserved", "page": 78, "bbox": [189.39, 623.37, 535.75, 647.04]}

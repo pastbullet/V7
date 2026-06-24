@@ -1,0 +1,17 @@
+{
+  "asset_id": "table_0140",
+  "type": "table",
+  "caption": "Table 136 – FFI_PSS Payload",
+  "pages": [
+    140
+  ],
+  "bbox": [
+    99.3,
+    580.0,
+    536.7,
+    624.69
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 140
+}

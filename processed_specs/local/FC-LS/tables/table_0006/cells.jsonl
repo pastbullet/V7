@@ -1,0 +1,60 @@
+{"cell_id": "r1c1", "row": 1, "col": 1, "text": "Value\n(Bits 31-24)", "page": 40, "bbox": [96.92, 76.73, 154.23, 121.98]}
+{"cell_id": "r1c2", "row": 1, "col": 2, "text": "Description", "page": 40, "bbox": [154.23, 76.73, 366.69, 121.98]}
+{"cell_id": "r1c3", "row": 1, "col": 3, "text": "Abbr.", "page": 40, "bbox": [366.69, 76.73, 436.47, 121.98]}
+{"cell_id": "r1c4", "row": 1, "col": 4, "text": "Reference", "page": 40, "bbox": [436.47, 76.73, 488.31, 121.98]}
+{"cell_id": "r1c5", "row": 1, "col": 5, "text": "N_Port\nLogin\nRequired", "page": 40, "bbox": [488.31, 76.73, 539.08, 121.98]}
+{"cell_id": "r2c1", "row": 2, "col": 1, "text": "90h", "page": 40, "bbox": [96.92, 121.98, 154.23, 146.01]}
+{"cell_id": "r2c2", "row": 2, "col": 2, "text": "Authentication ELS", "page": 40, "bbox": [154.23, 121.98, 366.69, 146.01]}
+{"cell_id": "r2c3", "row": 2, "col": 3, "text": "AUTH_ELS", "page": 40, "bbox": [366.69, 121.98, 436.47, 146.01]}
+{"cell_id": "r2c4", "row": 2, "col": 4, "text": "see FC-SP", "page": 40, "bbox": [436.47, 121.98, 488.31, 146.01]}
+{"cell_id": "r2c5", "row": 2, "col": 5, "text": "see FC-SP", "page": 40, "bbox": [488.31, 121.98, 539.08, 146.01]}
+{"cell_id": "r3c1", "row": 3, "col": 1, "text": "97h", "page": 40, "bbox": [96.92, 146.01, 154.23, 170.01]}
+{"cell_id": "r3c2", "row": 3, "col": 2, "text": "Request Fabric Change Notification", "page": 40, "bbox": [154.23, 146.01, 366.69, 170.01]}
+{"cell_id": "r3c3", "row": 3, "col": 3, "text": "RFCN", "page": 40, "bbox": [366.69, 146.01, 436.47, 170.01]}
+{"cell_id": "r3c4", "row": 3, "col": 4, "text": "see FC-SP", "page": 40, "bbox": [436.47, 146.01, 488.31, 170.01]}
+{"cell_id": "r3c5", "row": 3, "col": 5, "text": "see FC-SP", "page": 40, "bbox": [488.31, 146.01, 539.08, 170.01]}
+{"cell_id": "r4c1", "row": 4, "col": 1, "text": "A0h", "page": 40, "bbox": [96.92, 170.01, 154.23, 194.01]}
+{"cell_id": "r4c2", "row": 4, "col": 2, "text": "Define FFI Domain Topology Map", "page": 40, "bbox": [154.23, 170.01, 366.69, 194.01]}
+{"cell_id": "r4c3", "row": 4, "col": 3, "text": "FFI_DTM", "page": 40, "bbox": [366.69, 170.01, 436.47, 194.01]}
+{"cell_id": "r4c4", "row": 4, "col": 4, "text": "4.2.45", "page": 40, "bbox": [436.47, 170.01, 488.31, 194.01]}
+{"cell_id": "r4c5", "row": 4, "col": 5, "text": "Yes", "page": 40, "bbox": [488.31, 170.01, 539.08, 194.01]}
+{"cell_id": "r5c1", "row": 5, "col": 1, "text": "A1h", "page": 40, "bbox": [96.92, 194.01, 154.23, 218.01]}
+{"cell_id": "r5c2", "row": 5, "col": 2, "text": "Request FFI Domain Topology Map", "page": 40, "bbox": [154.23, 194.01, 366.69, 218.01]}
+{"cell_id": "r5c3", "row": 5, "col": 3, "text": "FFI_RTM", "page": 40, "bbox": [366.69, 194.01, 436.47, 218.01]}
+{"cell_id": "r5c4", "row": 5, "col": 4, "text": "4.2.46", "page": 40, "bbox": [436.47, 194.01, 488.31, 218.01]}
+{"cell_id": "r5c5", "row": 5, "col": 5, "text": "Yes", "page": 40, "bbox": [488.31, 194.01, 539.08, 218.01]}
+{"cell_id": "r6c1", "row": 6, "col": 1, "text": "A2h", "page": 40, "bbox": [96.92, 218.01, 154.23, 242.01]}
+{"cell_id": "r6c2", "row": 6, "col": 2, "text": "FFI AE Principal Switch Selector", "page": 40, "bbox": [154.23, 218.01, 366.69, 242.01]}
+{"cell_id": "r6c3", "row": 6, "col": 3, "text": "FFI_PSS", "page": 40, "bbox": [366.69, 218.01, 436.47, 242.01]}
+{"cell_id": "r6c4", "row": 6, "col": 4, "text": "4.2.47", "page": 40, "bbox": [436.47, 218.01, 488.31, 242.01]}
+{"cell_id": "r6c5", "row": 6, "col": 5, "text": "Yes", "page": 40, "bbox": [488.31, 218.01, 539.08, 242.01]}
+{"cell_id": "r7c1", "row": 7, "col": 1, "text": "A3h", "page": 40, "bbox": [96.92, 242.01, 154.23, 266.01]}
+{"cell_id": "r7c2", "row": 7, "col": 2, "text": "FFI Map Update Registration", "page": 40, "bbox": [154.23, 242.01, 366.69, 266.01]}
+{"cell_id": "r7c3", "row": 7, "col": 3, "text": "FFI_MUR", "page": 40, "bbox": [366.69, 242.01, 436.47, 266.01]}
+{"cell_id": "r7c4", "row": 7, "col": 4, "text": "4.2.48", "page": 40, "bbox": [436.47, 242.01, 488.31, 266.01]}
+{"cell_id": "r7c5", "row": 7, "col": 5, "text": "Yes", "page": 40, "bbox": [488.31, 242.01, 539.08, 266.01]}
+{"cell_id": "r8c1", "row": 8, "col": 1, "text": "A4h", "page": 40, "bbox": [96.92, 266.01, 154.23, 290.01]}
+{"cell_id": "r8c2", "row": 8, "col": 2, "text": "FFI Registered Map Update Notification", "page": 40, "bbox": [154.23, 266.01, 366.69, 290.01]}
+{"cell_id": "r8c3", "row": 8, "col": 3, "text": "FFI_RMUN", "page": 40, "bbox": [366.69, 266.01, 436.47, 290.01]}
+{"cell_id": "r8c4", "row": 8, "col": 4, "text": "4.2.49", "page": 40, "bbox": [436.47, 266.01, 488.31, 290.01]}
+{"cell_id": "r8c5", "row": 8, "col": 5, "text": "Yes", "page": 40, "bbox": [488.31, 266.01, 539.08, 290.01]}
+{"cell_id": "r9c1", "row": 9, "col": 1, "text": "A5h", "page": 40, "bbox": [96.92, 290.01, 154.23, 314.01]}
+{"cell_id": "r9c2", "row": 9, "col": 2, "text": "FFI Suspend Map Updates", "page": 40, "bbox": [154.23, 290.01, 366.69, 314.01]}
+{"cell_id": "r9c3", "row": 9, "col": 3, "text": "FFI_SMU", "page": 40, "bbox": [366.69, 290.01, 436.47, 314.01]}
+{"cell_id": "r9c4", "row": 9, "col": 4, "text": "4.2.50", "page": 40, "bbox": [436.47, 290.01, 488.31, 314.01]}
+{"cell_id": "r9c5", "row": 9, "col": 5, "text": "Yes", "page": 40, "bbox": [488.31, 290.01, 539.08, 314.01]}
+{"cell_id": "r10c1", "row": 10, "col": 1, "text": "A6h", "page": 40, "bbox": [96.92, 314.01, 154.23, 338.01]}
+{"cell_id": "r10c2", "row": 10, "col": 2, "text": "FFI Resume Map Updates", "page": 40, "bbox": [154.23, 314.01, 366.69, 338.01]}
+{"cell_id": "r10c3", "row": 10, "col": 3, "text": "FFI_RMU", "page": 40, "bbox": [366.69, 314.01, 436.47, 338.01]}
+{"cell_id": "r10c4", "row": 10, "col": 4, "text": "4.2.51", "page": 40, "bbox": [436.47, 314.01, 488.31, 338.01]}
+{"cell_id": "r10c5", "row": 10, "col": 5, "text": "Yes", "page": 40, "bbox": [488.31, 314.01, 539.08, 338.01]}
+{"cell_id": "r11c1", "row": 11, "col": 1, "text": "Others", "page": 40, "bbox": [96.92, 338.01, 154.23, 361.23]}
+{"cell_id": "r11c2", "row": 11, "col": 2, "text": "Reserved", "page": 40, "bbox": [154.23, 338.01, 366.69, 361.23]}
+{"cell_id": "r11c3", "row": 11, "col": 3, "text": "", "page": 40, "bbox": [366.69, 338.01, 436.47, 361.23]}
+{"cell_id": "r11c4", "row": 11, "col": 4, "text": "", "page": 40, "bbox": [436.47, 338.01, 488.31, 361.23]}
+{"cell_id": "r11c5", "row": 11, "col": 5, "text": "", "page": 40, "bbox": [488.31, 338.01, 539.08, 361.23]}
+{"cell_id": "r12c1", "row": 12, "col": 1, "text": "a Some early implementations of FCP-2 may have used the value 14h for SRR (Sequence Retransmission\nRequest). This code is permanently reserved in this standard to avoid conflicts with such implementations.\nSee FCP-3 for the standard implementation of SRR as an FC-4 Link Service.", "page": 40, "bbox": [96.92, 361.23, 539.08, 409.41]}
+{"cell_id": "r12c2", "row": 12, "col": 2, "text": "", "page": 40, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r12c3", "row": 12, "col": 3, "text": "", "page": 40, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r12c4", "row": 12, "col": 4, "text": "", "page": 40, "bbox": [0.0, 0.0, 0.0, 0.0]}
+{"cell_id": "r12c5", "row": 12, "col": 5, "text": "", "page": 40, "bbox": [0.0, 0.0, 0.0, 0.0]}

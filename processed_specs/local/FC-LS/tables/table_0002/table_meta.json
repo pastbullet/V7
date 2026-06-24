@@ -1,0 +1,18 @@
+{
+  "asset_id": "table_0002",
+  "type": "table",
+  "caption": "Table 2 – Extended Link Services Routing Bits and Information Categories",
+  "pages": [
+    36
+  ],
+  "bbox": [
+    168.4,
+    327.64,
+    467.25,
+    468.72
+  ],
+  "source_crop": "crop.png",
+  "context_file": "context.md",
+  "source_pdf_page": 36,
+  "logical_table": false
+}
